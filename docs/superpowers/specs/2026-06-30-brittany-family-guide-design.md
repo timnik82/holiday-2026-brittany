@@ -42,8 +42,8 @@ Home
 │   ├── Accommodation and budget
 │   └── Food
 └── Sources
-    ├── Originals and translations
-    └── Coverage and conflicts
+    ├── Original research documents
+    └── English evidence, coverage, and conflicts
 ```
 
 The primary routes are:
@@ -54,8 +54,8 @@ The primary routes are:
 - `/things-to-do` and `/things-to-do/[slug]` — filterable directory and individual place guides;
 - `/swimming` — sea, tidal pools, lakes, safety, water temperature, and water quality;
 - `/plan/[slug]` — shared practical guidance that would otherwise be duplicated across bases;
-- `/sources` and `/sources/[slug]` — source archive with original/English toggle;
-- `/sources/coverage` — source-block coverage and conflict register.
+- `/sources` and `/sources/[slug]` — unchanged original-language research archive;
+- `/sources/coverage` — English evidence blocks, source-block coverage, and conflict register.
 
 `Sources` is a secondary utility destination rather than part of the main trip-planning journey. It remains accessible from citations, the footer, and a compact utility navigation.
 
@@ -162,19 +162,21 @@ The separate bathing-suitability score gives equal weight to six dimensions:
 
 Missing evidence is shown as unknown and lowers confidence; it is not silently converted to a neutral or positive score.
 
-## Source Preservation, Translation, and Synthesis
+## Source Preservation, English Evidence, and Synthesis
 
 Every file in `research/raw/` is immutable source material after ingestion. Corrections arrive as new revisions rather than edits to the original.
 
-For every non-English source, the repository contains a complete reviewable English translation that preserves headings, lists, tables, links, numbers, and notes. An English original serves as its own English reading version and is not translated redundantly.
+The original documents remain in their supplied language. The application does not create or display full-document translations.
 
-Each document is divided into substantive source blocks. A source block receives a stable identifier derived from its document identity and position. Synthesized English content is authored in reviewable Markdown. Each substantive synthesized paragraph records the source-block identifiers that support it.
+Each document is divided into substantive source blocks. A source block receives a stable identifier derived from its document identity and position. Reviewable English evidence records are created directly from those blocks. An evidence record is a concise factual claim, recommendation, price, warning, or planning qualification rather than a line-by-line translation. It can consolidate agreeing blocks from several documents, but it must retain every source-block identifier, number, date, caveat, and source URL needed to audit the claim.
+
+Synthesized English content is authored from the evidence records in reviewable Markdown. Each substantive synthesized paragraph records the evidence identifiers that support it, and every evidence record links back to its original-language source blocks.
 
 The coverage register assigns every substantive source block one of three outcomes:
 
-- retained, with links to the resulting synthesized paragraph or paragraphs;
-- duplicate, with a link to the retained equivalent;
-- conflict, with links to every conflicting version and the pages where the conflict is disclosed.
+- retained, with links to the English evidence record and resulting synthesized paragraph or paragraphs;
+- duplicate, with a link to the retained English evidence record;
+- conflict, with separate English evidence records for each version and links to the pages where the conflict is disclosed.
 
 Conflicting claims are never silently blended. The guide presents both claims with their source and checked date, then gives a clearly labeled planning interpretation when one is needed.
 
@@ -212,7 +214,7 @@ On a cache hit, the server returns the existing private audio without calling Ri
 
 The browser offers `Listen`, `Generating…`, `Pause`, `Resume`, `Replay`, and `Retry` states plus 0.8×, 1×, 1.2×, and 1.5× playback. Only one paragraph plays at a time. Changing speed uses browser playback rate and does not create more audio files.
 
-Synthesized English pages and English translations receive narration. Non-English originals do not.
+Synthesized English guide pages receive narration. Original-language source documents and the evidence audit table do not.
 
 ## Privacy and Security
 
@@ -224,7 +226,7 @@ The entire application is private. A password page verifies against `SITE_PASSWO
 
 - Missing content produces a useful not-found page with a path back to the relevant directory.
 - A source block without a coverage outcome fails content validation rather than disappearing silently.
-- Invalid cross-links, duplicate stable identifiers, missing translations, and malformed metadata fail the build with a file-specific message.
+- Invalid cross-links, duplicate stable identifiers, missing evidence mappings, and malformed metadata fail the build with a file-specific message.
 - Stale changeable facts remain readable but are visibly labeled as stale.
 - Rime errors and quota failures return a retryable state without removing the paragraph text.
 - Concurrent requests for the same uncached paragraph must not create duplicate audio objects.

@@ -8,7 +8,7 @@ Create a private English-language application on Next.js and Vercel rather than 
 - comprehensive region and attraction pages;
 - routes, climate, swimming, prices, and logistics;
 - a complete synthesis of supplied Deep Research Markdown files;
-- a bilingual source archive;
+- an original-language source archive with traceable English evidence;
 - on-demand paragraph-level narration through Rime.
 
 Primary stack: Next.js App Router, TypeScript, Markdown/Remark, Vercel Functions, private Vercel Blob, and Rime Coda.
@@ -16,13 +16,13 @@ Primary stack: Next.js App Router, TypeScript, Markdown/Remark, Vercel Functions
 ## Content and Deep Research
 
 - Accept every Markdown source from `research/raw/` and preserve it unchanged.
-- Create reviewable complete translations in `research/translated/`, preserving headings, tables, lists, links, numbers, and notes.
+- Divide every source into stable substantive blocks and create concise, reviewable English evidence records directly from those blocks. Preserve every source reference, number, date, caveat, and URL needed to audit each claim.
 - Merge documents by topic, removing duplicated wording while retaining every unique fact, example, argument, price, warning, and recommendation.
 - Do not impose a length limit. Every attraction or major subject receives its own comprehensive page with a table of contents.
 - Do not silently resolve conflicting information: show both versions with their dates and sources.
-- Create a coverage table that maps every substantive source block to resulting paragraphs or marks it as a duplicate with a link to where the information was retained.
-- The Sources archive displays the original Markdown and complete English translation through a view toggle.
-- Narration is available for synthesized English pages and English translations. Source-language originals do not receive TTS unless they are English.
+- Create a coverage table that maps every substantive source block to English evidence and resulting paragraphs, or marks it as a duplicate or conflict with a link to where the information was retained.
+- The Sources archive displays the unchanged original Markdown in its supplied language. The coverage view displays the corresponding concise English evidence; it does not present a full-document translation.
+- Narration is available for synthesized English guide pages. Source originals and the evidence audit view do not receive TTS.
 
 Primary application routes:
 
@@ -31,7 +31,7 @@ Primary application routes:
 - `/attractions/[slug]` — individual attractions;
 - `/routes/[slug]` — three detailed itineraries;
 - `/swimming` — sea bathing, tidal pools, lakes, and water quality;
-- `/sources/[slug]` — original research document and translation.
+- `/sources/[slug]` — unchanged original research document; `/sources/coverage` — English evidence and source mapping.
 
 ## Brittany travel research
 
@@ -73,7 +73,7 @@ type ParagraphRecord = {
 ## Verification and acceptance criteria
 
 - The coverage table accounts for 100% of substantive Deep Research blocks.
-- All synthesized application pages are in English; original documents and translations are available in Sources.
+- All synthesized application pages are in English; original-language documents and their English evidence mappings are available in Sources.
 - Reject unknown paragraph IDs, arbitrary text, and unauthenticated requests.
 - A cache hit never calls Rime; a cache miss creates one file; changing source text invalidates the cached audio.
 - Rime errors and quota failures produce a clear retryable state.

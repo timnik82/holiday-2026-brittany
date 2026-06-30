@@ -4,7 +4,7 @@
 
 **Goal:** Build a private, decision-first English family guide for choosing and planning an August 2026 Brittany holiday, with traceable research coverage and cached paragraph narration.
 
-**Architecture:** A Next.js App Router application reads version-controlled Markdown and structured JSON at build time. A typed content compiler validates pages, citations, rankings, translations, and coverage; runtime server code is limited to password sessions, approved paragraph lookup, Rime Coda generation, and authenticated private Blob delivery.
+**Architecture:** A Next.js App Router application reads version-controlled Markdown and structured JSON at build time. A typed content compiler validates pages, English evidence records, citations, rankings, and source coverage; runtime server code is limited to password sessions, approved paragraph lookup, Rime Coda generation, and authenticated private Blob delivery.
 
 **Tech Stack:** Next.js App Router, React, TypeScript, CSS Modules and CSS custom properties, Zod, Unified/Remark, React Markdown, Vitest, Testing Library, Playwright, `jose`, `bcryptjs`, Vercel Functions, private Vercel Blob, and Rime Coda.
 
@@ -28,23 +28,19 @@ The current Rime documentation exposes Coda HTTP audio as `audio/mpeg`. The impl
 | 1 | Runnable Next.js application and test harness | — |
 | 2 | Typed Markdown content compiler and paragraph manifest | 1 |
 | 3 | Immutable source corpus, source-block inventory, and validation | 2 |
-| 4 | Complete English translation for Perplexity | 3 |
-| 5 | Complete English translation for OperaAI | 3 |
-| 6 | Complete English translation for Gemini | 3 |
-| 7 | Complete English translation for ChatGPT | 3 |
-| 8 | Protected-ready Sources archive and coverage interface | 4–7 |
-| 9 | Ranking engine, six-base dataset, and comparison page | 2 |
-| 10 | Northern Brittany content slice | 3, 9 |
-| 11 | Western Brittany content slice | 3, 9 |
-| 12 | Southern Brittany content slice | 3, 9 |
-| 13 | Routes and filterable Things to do directory | 10–12 |
-| 14 | Swimming and Plan your trip guides with freshness metadata | 10–12 |
-| 15 | Personalized decision-first home page | 9, 13, 14 |
-| 16 | Password authentication across pages and APIs | 1 |
-| 17 | Rime TTS, private Blob cache, and accessible player | 2, 16 |
-| 18 | Coverage closure, responsive/print QA, CI, and Preview verification | 8–17 |
+| 4 | English evidence registry, Sources archive, and coverage interface | 3 |
+| 5 | Ranking engine, six-base dataset, and comparison page | 2, 4 |
+| 6 | Northern Brittany content and evidence slice | 4, 5 |
+| 7 | Western Brittany content and evidence slice | 4, 5 |
+| 8 | Southern Brittany content and evidence slice | 4, 5 |
+| 9 | Routes and filterable Things to do directory | 6–8 |
+| 10 | Swimming and Plan your trip guides with freshness metadata | 6–8 |
+| 11 | Personalized decision-first home page | 5, 9, 10 |
+| 12 | Password authentication across pages and APIs | 1 |
+| 13 | Rime TTS, private Blob cache, and accessible player | 2, 12 |
+| 14 | Coverage closure, responsive/print QA, CI, and Preview verification | 4–13 |
 
-PRs 3 and 9 can proceed independently after PR 2. PRs 4–7 can proceed in parallel after PR 3. PR 16 can proceed after PR 1, but must merge before PR 17.
+PR 3 begins after PR 2. PR 12 can proceed independently after PR 1. PR 5 begins when PR 4 establishes the evidence contract, and PR 12 must merge before PR 13.
 
 ## Target file structure
 
@@ -60,8 +56,8 @@ content/
   facts/transport.json
 research/
   raw/*.md
-  translated/*.md
   blocks/*.json
+  evidence/*.json
   source-manifest.json
   block-decisions.json
   coverage.json
@@ -83,11 +79,11 @@ tests/
 Synthesized Markdown paragraphs use an explicit metadata comment immediately before each narrated paragraph:
 
 ```md
-<!-- paragraph id="saint-malo-verdict" sources="chatgpt:b004,gemini-brittany:b021" -->
+<!-- paragraph id="saint-malo-verdict" sources="evidence:saint-malo-balanced-base,evidence:saint-malo-logistics" -->
 Saint-Malo is the strongest all-round base when history and easy logistics matter as much as beach time.
 ```
 
-The compiler removes the comment from rendered output, applies the ID to the paragraph, validates every source reference, and adds approved English text to the server-only narration manifest.
+The compiler removes the comment from rendered output, applies the ID to the paragraph, validates every English evidence reference, and adds approved English text to the server-only narration manifest. Evidence records provide the link back to original-language source blocks.
 
 ## PR 1: Scaffold the application and quality gates
 
@@ -225,7 +221,7 @@ Test that the compiler:
 
 - removes the metadata comment;
 - assigns the declared paragraph ID;
-- extracts comma-separated source references;
+- extracts comma-separated English evidence references;
 - hashes normalized text with SHA-256;
 - rejects duplicate IDs, missing metadata, and narration paragraphs over Rime's 500-character request limit;
 - ignores headings, lists, tables, captions, and non-English original source pages for narration.
@@ -244,11 +240,11 @@ The immediately following paragraph becomes narratable. `paragraphs.ts` imports 
 
 - [ ] **Step 5: Implement rendering and validation**
 
-`MarkdownArticle` renders GFM through `react-markdown`, converts source references to links under `/sources/coverage`, and provides a generated table of contents. The validation script loads every content file and exits non-zero with file path plus reason for any schema, ID, link, or citation failure.
+`MarkdownArticle` renders GFM through `react-markdown`, converts evidence references to links under `/sources/coverage`, and provides a generated table of contents. The validation script loads every content file and exits non-zero with file path plus reason for any schema, ID, link, or citation failure.
 
 - [ ] **Step 6: Add one real explanatory content page**
 
-`content/plan/about-this-guide.md` explains the decision-first method, ranking transparency, source preservation, and freshness labels. Every factual paragraph uses valid source references only after PR 3; until then this methodology page contains no destination claims and does not need citations.
+`content/plan/about-this-guide.md` explains the decision-first method, ranking transparency, source preservation, and freshness labels. Every factual paragraph uses valid evidence references only after PR 4; until then this methodology page contains no destination claims and does not need citations.
 
 - [ ] **Step 7: Verify and commit PR 2**
 
@@ -320,178 +316,76 @@ git add research src/lib/content scripts/content package.json
 git commit -m "docs: ingest Brittany research corpus"
 ```
 
-## PR 4: Translate Perplexity completely
+## PR 4: Build the English evidence registry and Sources archive
 
-**Outcome:** The Perplexity document has a reviewable block-aligned English translation and establishes translation validation for the remaining sources.
-
-**Files:**
-
-- Create: `research/translated/Perplexity.md`
-- Create: `src/lib/content/translation-validation.ts`
-- Create: `src/lib/content/__tests__/translation-validation.test.ts`
-- Modify: `research/source-manifest.json`, `scripts/content/validate-content.ts`
-
-- [ ] **Step 1: Add a failing alignment test**
-
-Require each substantive raw block to appear exactly once in its translation as:
-
-```md
-<!-- source-block id="perplexity:b014" -->
-Complete English translation of that block, preserving its links, numbers, lists, and caveats.
-```
-
-The validator rejects missing, repeated, unknown, or out-of-order IDs.
-
-- [ ] **Step 2: Translate Perplexity block by block**
-
-Preserve every heading, table, list, number, source link, qualification, recommendation, and conflict. Do not improve factual claims during translation; corrections belong in synthesis or conflict records.
-
-- [ ] **Step 3: Perform bilingual review**
-
-Compare block counts, all numeric tokens, URLs, and heading order automatically. Manually inspect every warning and recommendation. Set the Perplexity translation entry to `reviewed` only after this review.
-
-- [ ] **Step 4: Verify and commit PR 4**
-
-Run `npm run validate:content` and `npm test`. Expected: 100% alignment for Perplexity.
-
-```bash
-git add research/translated research/source-manifest.json src/lib/content scripts/content
-git commit -m "docs: translate Perplexity research"
-```
-
-## PR 5: Translate OperaAI completely
-
-**Outcome:** OperaAI has a separately reviewable complete English translation.
+**Outcome:** Original documents remain unchanged in their own language, while concise English evidence records provide the auditable input for synthesis.
 
 **Files:**
 
-- Create: `research/translated/OperaAI.md`
-- Modify: `research/source-manifest.json`
-
-- [ ] **Step 1: Translate OperaAI block by block**
-
-Preserve headings, tables, lists, links, prices, climate values, route days, recommendations, and the source-specific ranking even where it disagrees with Perplexity.
-
-- [ ] **Step 2: Perform bilingual review**
-
-Run block count, numeric-token, URL, and heading-order parity checks. Manually inspect all warnings, rankings, and itinerary days before marking the translation reviewed.
-
-- [ ] **Step 3: Verify and commit PR 5**
-
-Run `npm run validate:content` and `npm test`. Expected: 100% alignment for OperaAI.
-
-```bash
-git add research/translated/OperaAI.md research/source-manifest.json
-git commit -m "docs: translate OperaAI research"
-```
-
-## PR 6: Translate Gemini completely
-
-**Outcome:** Gemini has a separately reviewable complete English translation.
-
-**Files:**
-
-- Create: `research/translated/Gemini-Britany.md`
-- Modify: `research/source-manifest.json`
-
-- [ ] **Step 1: Translate Gemini block by block**
-
-Preserve the August 2026 event dates, travel-cost ranges, named attractions, and all cited URLs exactly. Flag suspicious claims in review notes without altering the original meaning.
-
-- [ ] **Step 2: Perform bilingual review**
-
-Run block count, numeric-token, URL, and heading-order parity checks. Manually inspect every event, safety claim, budget table, and recommendation before marking the translation reviewed.
-
-- [ ] **Step 3: Verify and commit PR 6**
-
-Run `npm run validate:content` and `npm test`. Expected: 100% alignment for Gemini.
-
-```bash
-git add research/translated/Gemini-Britany.md research/source-manifest.json
-git commit -m "docs: translate Gemini research"
-```
-
-## PR 7: Translate ChatGPT and enforce complete translation coverage
-
-**Outcome:** ChatGPT has a complete English translation and every supplied research document now has a reviewed English reading version.
-
-**Files:**
-
-- Create: `research/translated/ChatGPT.md`
-- Modify: `research/source-manifest.json`, `scripts/content/validate-content.ts`
-
-- [ ] **Step 1: Translate ChatGPT block by block**
-
-Preserve the research methodology, current schedule claims, rating rationale, tables, and citation markers. Do not convert planning ranges into promises.
-
-- [ ] **Step 2: Complete cross-document translation QA**
-
-Run numeric-token and URL parity checks. Manually compare a sample from every top-level section and all paragraphs that contain warnings, rankings, or prices.
-
-- [ ] **Step 3: Turn on complete-corpus enforcement**
-
-Update validation so every non-English source in `source-manifest.json` requires a reviewed translation and exact substantive-block alignment.
-
-- [ ] **Step 4: Verify and commit PR 7**
-
-Run `npm run validate:content`, `npm test`, and `npm run build`. Expected: all four source documents pass translation validation.
-
-```bash
-git add research/translated research/source-manifest.json scripts/content
-git commit -m "docs: translate ChatGPT research"
-```
-
-## PR 8: Build the Sources archive and coverage interface
-
-**Outcome:** Readers can inspect originals, translations, block coverage, duplicates, and conflicts.
-
-**Files:**
-
-- Create: `research/coverage.json`
+- Create: `research/evidence/registry.json`, `research/coverage.json`
 - Create: `src/app/sources/page.tsx`, `src/app/sources/[slug]/page.tsx`, `src/app/sources/coverage/page.tsx`
-- Create: `src/components/sources/SourceToggle.tsx`, `CoverageTable.tsx`, styles and tests
-- Create: `src/lib/content/coverage.ts`, `coverage.test.ts`
+- Create: `src/components/sources/EvidenceCard.tsx`, `CoverageTable.tsx`, styles and tests
+- Create: `src/lib/content/evidence.ts`, `coverage.ts`, tests
 
-- [ ] **Step 1: Define and test the coverage contract**
+- [ ] **Step 1: Define and test the English evidence contract**
+
+```ts
+const evidenceSchema = z.object({
+  id: z.string().regex(/^evidence:[a-z0-9-]+$/),
+  text: z.string().min(1),
+  kind: z.enum(['fact', 'recommendation', 'price', 'warning', 'qualification']),
+  sourceBlockRefs: z.array(z.string()).min(1),
+  sourceUrls: z.array(z.url()),
+  qualifiers: z.array(z.string()),
+  timeSensitive: z.boolean(),
+  checkedAt: z.iso.date().optional(),
+});
+```
+
+Require `checkedAt` when `timeSensitive` is true. Each record is written directly in English from one or more agreeing source blocks; it is not a block-by-block translation. Numeric values, dates, caveats, and supporting URLs must remain auditable.
+
+- [ ] **Step 2: Define and test the coverage contract**
 
 ```ts
 const outcomeSchema = z.discriminatedUnion('status', [
-  z.object({ status: z.literal('retained'), paragraphIds: z.array(z.string()).min(1) }),
-  z.object({ status: z.literal('duplicate'), retainedAt: z.string().min(1) }),
-  z.object({ status: z.literal('conflict'), conflictId: z.string(), paragraphIds: z.array(z.string()).min(1) }),
+  z.object({ status: z.literal('draft'), plannedArea: z.string().min(1) }),
+  z.object({ status: z.literal('retained'), evidenceIds: z.array(z.string()).min(1), paragraphIds: z.array(z.string()).min(1) }),
+  z.object({ status: z.literal('duplicate'), retainedEvidenceId: z.string().min(1) }),
+  z.object({ status: z.literal('conflict'), conflictId: z.string(), evidenceIds: z.array(z.string()).min(2), paragraphIds: z.array(z.string()).min(1) }),
 ]);
 ```
 
-Validation requires exactly one outcome for every substantive block. During content PRs, coverage can be incomplete only when `status` is explicitly `draft`; PR 18 removes this temporary allowance.
+Validation requires exactly one outcome for every substantive block. During content PRs, coverage can be incomplete only when `status` is explicitly `draft`; PR 14 removes this temporary allowance.
 
-- [ ] **Step 2: Implement the source index and document pages**
+- [ ] **Step 3: Implement the source index and original-document pages**
 
-The index shows document, original language, translation status, and block count. The document page defaults to English and offers an accessible Original/English tab control while preserving headings, tables, lists, and links.
+The index shows document, original language, checksum, and substantive block count. A document page renders only the unchanged original Markdown in its supplied language while preserving headings, tables, lists, and links. It links each source block to the coverage view; it does not offer or imply a full English translation.
 
-- [ ] **Step 3: Implement coverage and conflict views**
+- [ ] **Step 4: Implement English evidence, coverage, and conflict views**
 
-The table filters by source and outcome, links retained blocks to guide paragraphs, links duplicates to their retained equivalent, and groups conflict records with source dates and planning interpretation.
+The table filters by source and outcome, displays the concise English evidence beside its original block link, connects retained evidence to guide paragraphs, links duplicates to retained evidence, and groups conflicting English claims with source dates and planning interpretation.
 
-- [ ] **Step 4: Add component and browser tests**
+- [ ] **Step 5: Add component and browser tests**
 
-Test keyboard tab switching, deep links to source blocks, filter state, and a representative conflict containing two claims.
+Test original-language rendering, deep links to source blocks, filter state, a retained English evidence record, and a representative conflict containing two English claims.
 
-- [ ] **Step 5: Verify and commit PR 8**
+- [ ] **Step 6: Verify and commit PR 4**
 
 Run `npm run check` and `npm run test:e2e -- --grep Sources`. Expected: archive and coverage routes render successfully.
 
 ```bash
-git add research/coverage.json src/app/sources src/components/sources src/lib/content
-git commit -m "feat: add research sources archive"
+git add research/evidence research/coverage.json src/app/sources src/components/sources src/lib/content
+git commit -m "feat: add English evidence and source archive"
 ```
 
-## PR 9: Implement rankings and the six-base comparison
+## PR 5: Implement rankings and the six-base comparison
 
 **Outcome:** The agreed priorities produce an explainable, tested base ranking.
 
 **Files:**
 
 - Create: `content/rankings/bases.json`
+- Create: `research/evidence/rankings.json`
 - Create: `src/lib/ranking/weights.ts`, `calculate.ts`, tests
 - Create: `src/app/bases/page.tsx`
 - Create: `src/components/bases/BaseComparison.tsx`, `ScoreBreakdown.tsx`, styles and tests
@@ -516,31 +410,36 @@ The test must assert the weights sum to exactly 1 and must fail if a key is adde
 
 Test weighted totals, stable tie-breaking by slug, component display, and missing evidence. A missing dimension yields `total: null` plus a confidence ratio; it is never treated as zero, average, or five.
 
-- [ ] **Step 3: Add the six reviewed base records**
+- [ ] **Step 3: Extract and review ranking evidence**
 
-Create records for Saint-Malo/Dinan, Côte de Granit Rose, Brest/Finistère, Quimper/South Finistère, Vannes/Carnac/Morbihan, and Crozon/Douarnenez. Every component score requires rationale and source-block references.
+Create English evidence records for every base and each of the seven ranking dimensions. Preserve disagreements between source rankings, retain source-block references, and use concise claims rather than translating surrounding prose.
 
-- [ ] **Step 4: Build the comparison interface**
+- [ ] **Step 4: Add the six reviewed base records**
+
+Create records for Saint-Malo/Dinan, Côte de Granit Rose, Brest/Finistère, Quimper/South Finistère, Vannes/Carnac/Morbihan, and Crozon/Douarnenez. Every component score requires rationale and English evidence references; those evidence records provide the links to original source blocks.
+
+- [ ] **Step 5: Build the comparison interface**
 
 Show the weighted total, seven component scores, confidence, “best for”, compromises, expected car need, and price band. On narrow screens use stacked cards; at wide widths use a comparison table without horizontal page overflow.
 
-- [ ] **Step 5: Verify and commit PR 9**
+- [ ] **Step 6: Verify and commit PR 5**
 
 Run `npm test -- src/lib/ranking src/components/bases`, `npm run validate:content`, and `npm run build`. Expected: deterministic ranking and no missing score evidence.
 
 ```bash
-git add content/rankings src/lib/ranking src/app/bases src/components/bases
+git add content/rankings research/evidence/rankings.json src/lib/ranking src/app/bases src/components/bases
 git commit -m "feat: add explainable base comparison"
 ```
 
-## PR 10: Publish the northern Brittany content slice
+## PR 6: Publish the northern Brittany content and evidence slice
 
-**Outcome:** Two complete base pages and their northern day-trip content are usable end to end.
+**Outcome:** Audited English evidence produces two complete base pages and their northern day-trip content.
 
 **Files:**
 
 - Create: `content/bases/saint-malo-dinan.md`, `cote-de-granit-rose.md`
 - Create: `content/things-to-do/{saint-malo-walls,bon-secours,grand-aquarium,dinan,cap-frehel-fort-la-latte,cancale,mont-saint-michel,ploumanach,sept-iles,parc-du-radome,paimpol-brehat}.md`
+- Create: `research/evidence/northern.json`
 - Create: `src/app/bases/[slug]/page.tsx`
 - Create: `src/components/bases/BaseHero.tsx`, `BaseFacts.tsx`, `RelatedPlaces.tsx`
 - Modify: `research/coverage.json`
@@ -549,111 +448,130 @@ git commit -m "feat: add explainable base comparison"
 
 Use `generateStaticParams()` from reviewed base slugs and `notFound()` for unknown slugs. The template renders verdict, score breakdown, climate, swimming, transport, accommodation, food, rainy-day options, related places, routes, and citations.
 
-- [ ] **Step 2: Synthesize Saint-Malo/Dinan**
+- [ ] **Step 2: Extract and review northern English evidence**
+
+Read all source blocks concerning Saint-Malo, Dinan, Côte de Granit Rose, Paimpol, Bréhat, and their linked places. Create concise English evidence records that preserve unique facts, numbers, qualifications, warnings, recommendations, and URLs. Consolidate agreeing blocks; keep conflicting claims as separate records under one `conflictId`.
+
+- [ ] **Step 3: Synthesize Saint-Malo/Dinan**
 
 Retain unique facts from all four research documents, expose disagreements about price and ranking, separate climate normals from forecast language, and include tide safety prominently.
 
-- [ ] **Step 3: Synthesize Côte de Granit Rose**
+- [ ] **Step 4: Synthesize Côte de Granit Rose**
 
 Cover Perros-Guirec, Trégastel, Lannion access, Ploumanac'h, Sept-Îles, Parc du Radôme, beaches, car trade-offs, and science-family appeal.
 
-- [ ] **Step 4: Add canonical northern Things to do pages**
+- [ ] **Step 5: Add canonical northern Things to do pages**
 
-Each page includes base links, visit duration, age fit, weather fit, booking, transport, safety, price/check date where relevant, and paragraph source references. Paimpol/Bréhat remains a linked area/day trip rather than a seventh base.
+Each page includes base links, visit duration, age fit, weather fit, booking, transport, safety, price/check date where relevant, and paragraph evidence references. Paimpol/Bréhat remains a linked area/day trip rather than a seventh base.
 
-- [ ] **Step 5: Close coverage for the northern slice**
+- [ ] **Step 6: Close coverage for the northern slice**
 
-Map each northern substantive block to a retained paragraph, documented duplicate, or conflict. Run `npm run validate:content`; expected: no northern draft outcomes remain.
+Map each northern substantive block to retained evidence and paragraphs, a documented duplicate, or a conflict. Run `npm run validate:content`; expected: no northern draft outcomes remain.
 
-- [ ] **Step 6: Verify and commit PR 10**
+- [ ] **Step 7: Verify and commit PR 6**
 
 Run `npm run check` and a Playwright journey from `/bases` to both bases and three linked places.
 
 ```bash
-git add content/bases content/things-to-do src/app/bases src/components/bases research/coverage.json
+git add content/bases content/things-to-do src/app/bases src/components/bases research/evidence/northern.json research/coverage.json
 git commit -m "feat: add northern Brittany guide content"
 ```
 
-## PR 11: Publish the western Brittany content slice
+## PR 7: Publish the western Brittany content and evidence slice
 
-**Outcome:** Brest, Quimper, and Crozon are complete, with Morlaix/Roscoff retained as linked area content.
+**Outcome:** Audited English evidence produces complete Brest, Quimper, and Crozon pages, with Morlaix/Roscoff retained as linked area content.
 
 **Files:**
 
 - Create: `content/bases/brest-finistere.md`, `quimper-south-finistere.md`, `crozon-douarnenez.md`
 - Create: `content/things-to-do/{oceanopolis,chateau-de-brest,crozon-pen-hir,morgat,maison-des-mineraux,quimper,locronan,concarneau,pont-aven,benodet,haliotika,pointe-du-raz,morlaix-roscoff}.md`
+- Create: `research/evidence/western.json`
 - Modify: `research/coverage.json`
 
-- [ ] **Step 1: Synthesize Brest/Finistère**
+- [ ] **Step 1: Extract and review western English evidence**
+
+Create concise records for Brest, Finistère, Quimper, Crozon, Douarnenez, Morlaix, Roscoff, and linked places. Preserve source-block references, numbers, caveats, warnings, and URLs; consolidate only genuinely agreeing claims.
+
+- [ ] **Step 2: Synthesize Brest/Finistère**
 
 Cover the direct Porto flight claim with a fresh official check, airport access, Océanopolis, maritime museum, city-without-car option, and car-dependent coastal extensions.
 
-- [ ] **Step 2: Synthesize Quimper/South Finistère**
+- [ ] **Step 3: Synthesize Quimper/South Finistère**
 
 Cover cultural strengths, beach access, Locronan, Concarneau, Pont-Aven, Bénodet, family rainy-day options, and the relevant August 2026 festival only after checking its official dates.
 
-- [ ] **Step 3: Synthesize Crozon/Douarnenez**
+- [ ] **Step 4: Synthesize Crozon/Douarnenez**
 
 Cover wild-coast strengths, wind/rain trade-offs, Morgat, Pen-Hir, safe viewpoints, car dependency, and the restricted-access status of Plage de l'Île Vierge.
 
-- [ ] **Step 4: Add canonical western Things to do pages**
+- [ ] **Step 5: Add canonical western Things to do pages**
 
 Morlaix/Roscoff is represented as a linked area guide, not a base. Every changeable transport, opening, event, or safety claim has a checked date.
 
-- [ ] **Step 5: Close coverage and commit PR 11**
+- [ ] **Step 6: Close coverage and commit PR 7**
 
 Run `npm run validate:content`, `npm run check`, and western-base browser journeys. Expected: no western draft outcomes.
 
 ```bash
-git add content/bases content/things-to-do research/coverage.json
+git add content/bases content/things-to-do research/evidence/western.json research/coverage.json
 git commit -m "feat: add western Brittany guide content"
 ```
 
-## PR 12: Publish the southern Brittany content slice
+## PR 8: Publish the southern Brittany content and evidence slice
 
-**Outcome:** Vannes/Carnac/Morbihan and the relaxed-family supporting places are complete.
+**Outcome:** Audited English evidence produces Vannes/Carnac/Morbihan and the relaxed-family supporting places.
 
 **Files:**
 
 - Create: `content/bases/vannes-carnac-morbihan.md`
 - Create: `content/things-to-do/{carnac-alignments,vannes,ile-aux-moines,ile-d-arz,suscinio,quiberon,branfere,broceliande,lac-de-tremelin,auray-saint-goustan}.md`
+- Create: `research/evidence/southern.json`
 - Modify: `research/coverage.json`
 
-- [ ] **Step 1: Synthesize the southern base**
+- [ ] **Step 1: Extract and review southern English evidence**
+
+Create concise records for Vannes, Carnac, Morbihan, Quiberon, islands, Brocéliande, Lac de Trémelin, and linked places. Preserve every unique fact, value, caveat, warning, and source URL while consolidating agreeing blocks.
+
+- [ ] **Step 2: Synthesize the southern base**
 
 Cover Vannes as the lower-car option, Carnac as the beach/megalith option, protected water, heat trade-off, islands, accommodation pressure, food strengths, and Nantes transfer logic.
 
-- [ ] **Step 2: Add canonical southern Things to do pages**
+- [ ] **Step 3: Add canonical southern Things to do pages**
 
-Include family visit profiles, booking/transport needs, weather fit, safety, price/check date, and source references for every place.
+Include family visit profiles, booking/transport needs, weather fit, safety, price/check date, and evidence references for every place.
 
-- [ ] **Step 3: Preserve inland relaxed-route evidence**
+- [ ] **Step 4: Preserve inland relaxed-route evidence**
 
 Create Brocéliande and Lac de Trémelin pages so their research is not forced into the coastal base article. Link them to the relaxed route and relevant practical transport guidance.
 
-- [ ] **Step 4: Close coverage and commit PR 12**
+- [ ] **Step 5: Close coverage and commit PR 8**
 
 Run `npm run validate:content`, `npm run check`, and a southern-base browser journey. Expected: no southern draft outcomes.
 
 ```bash
-git add content/bases content/things-to-do research/coverage.json
+git add content/bases content/things-to-do research/evidence/southern.json research/coverage.json
 git commit -m "feat: add southern Brittany guide content"
 ```
 
-## PR 13: Add routes and the Things to do directory
+## PR 9: Add routes and the Things to do directory
 
 **Outcome:** Readers can choose a travel style and browse canonical activities without duplicated articles.
 
 **Files:**
 
 - Create: `content/routes/cultural.md`, `nature.md`, `relaxed-family.md`
+- Create: `research/evidence/routes.json`
 - Create: `src/app/routes/page.tsx`, `src/app/routes/[slug]/page.tsx`
 - Create: `src/app/things-to-do/page.tsx`, `src/app/things-to-do/[slug]/page.tsx`
 - Create: `src/components/routes/RouteTimeline.tsx`
 - Create: `src/components/places/PlaceFilters.tsx`, `PlaceCard.tsx`, tests
 - Modify: `research/coverage.json`
 
-- [ ] **Step 1: Author the three complete routes**
+- [ ] **Step 1: Extract and review cross-region route evidence**
+
+Create English evidence records for travel sequencing, transfer times, recommended stay lengths, pace, and route-level trade-offs that are not already represented by the geographic evidence files. Link every record to original source blocks and consolidate duplicates.
+
+- [ ] **Step 2: Author the three complete routes**
 
 Use the approved shapes:
 
@@ -661,30 +579,30 @@ Use the approved shapes:
 - nature, 10 days: Côte de Granit Rose and Crozon;
 - relaxed family swimming, 8 days: Vannes/Carnac and Brocéliande/Lac de Trémelin.
 
-Each day specifies base, travel burden, main activity, weather alternative, linked place IDs, and source references.
+Each day specifies base, travel burden, main activity, weather alternative, linked place IDs, and evidence references.
 
-- [ ] **Step 2: Build route templates and comparison**
+- [ ] **Step 3: Build route templates and comparison**
 
 Show duration, pace, number of accommodation changes, car requirement, best-fit statement, and day-by-day timeline. Links always target canonical base/place pages.
 
-- [ ] **Step 3: Write filter behavior tests**
+- [ ] **Step 4: Write filter behavior tests**
 
 Test filtering by base, category, weather suitability, and child age. Filters are encoded in URL search parameters and remain usable without pointer input.
 
-- [ ] **Step 4: Implement directory and place templates**
+- [ ] **Step 5: Implement directory and place templates**
 
 The directory renders all reviewed places. Unknown filters fall back to the unfiltered list with a visible correction message; unknown place slugs return not found.
 
-- [ ] **Step 5: Close route/activity coverage and commit PR 13**
+- [ ] **Step 6: Close route/activity coverage and commit PR 9**
 
 Run `npm run validate:content`, focused unit tests, `npm run build`, and Playwright filter/route journeys.
 
 ```bash
-git add content/routes src/app/routes src/app/things-to-do src/components/routes src/components/places research/coverage.json
+git add content/routes research/evidence/routes.json src/app/routes src/app/things-to-do src/components/routes src/components/places research/coverage.json
 git commit -m "feat: add routes and activity directory"
 ```
 
-## PR 14: Add Swimming and Plan your trip
+## PR 10: Add Swimming and Plan your trip
 
 **Outcome:** Shared practical decisions and swimming safety are detailed, dated, and not duplicated across bases.
 
@@ -693,6 +611,7 @@ git commit -m "feat: add routes and activity directory"
 - Create: `content/swimming/locations.json`
 - Create: `content/plan/getting-there.md`, `getting-around.md`, `weather.md`, `accommodation-budget.md`, `food.md`
 - Create: `content/facts/accommodation.json`, `transport.json`
+- Create: `research/evidence/practical.json`
 - Create: `src/app/swimming/page.tsx`, `src/app/plan/[slug]/page.tsx`
 - Create: `src/lib/ranking/bathing.ts`, tests
 - Create: `src/components/swimming/SwimmingComparison.tsx`, `FreshnessLabel.tsx`
@@ -702,32 +621,36 @@ git commit -m "feat: add routes and activity directory"
 
 Use equal weight for temperature/shelter, tides, easy access, lifeguards, water quality, and alternatives. Missing official water-quality evidence produces no total and a visible confidence warning.
 
-- [ ] **Step 2: Add swimming records**
+- [ ] **Step 2: Extract and review practical English evidence**
+
+Create English evidence records for climate, water conditions, transport, accommodation, food, prices, and safety. Keep conflicting values separate, mark time-sensitive records, and retain original source-block references and URLs.
+
+- [ ] **Step 3: Add swimming records**
 
 Include Bon-Secours, Lac de Trémelin, Lac de Guerlédan, Lac au Duc, representative monitored coastal beaches, and any additional officially monitored location supported by the research. Every record has official-source URL, checked date, warning status, and linked bases.
 
-- [ ] **Step 3: Author the five shared practical guides**
+- [ ] **Step 4: Author the five shared practical guides**
 
 Separate climate normals from forecasts. Explain LIS/OPO access, car trade-offs, August packing, realistic accommodation thresholds, and family food. The food guide receives prominence equal to accommodation in links and summaries, matching the 15% ranking weight.
 
-- [ ] **Step 4: Perform the time-sensitive refresh**
+- [ ] **Step 5: Perform the time-sensitive refresh**
 
 Using the project's external-source rules, verify official flight schedules, SNCF travel times, official attraction details, ARS/water-quality status, and live accommodation samples for both date windows. Record values and `checkedAt`; do not silently replace research claims.
 
-- [ ] **Step 5: Build freshness UI and stale behavior**
+- [ ] **Step 6: Build freshness UI and stale behavior**
 
 Facts older than their configured review window render “Needs recheck” rather than disappearing. The build fails only for missing checked dates, not merely because time passes.
 
-- [ ] **Step 6: Verify and commit PR 14**
+- [ ] **Step 7: Verify and commit PR 10**
 
 Run bathing tests, `npm run validate:content`, `npm run check`, and a 390 px swimming-page browser check.
 
 ```bash
-git add content/swimming content/plan content/facts src/app/swimming src/app/plan src/lib/ranking/bathing.ts src/components/swimming research/coverage.json
+git add content/swimming content/plan content/facts research/evidence/practical.json src/app/swimming src/app/plan src/lib/ranking/bathing.ts src/components/swimming research/coverage.json
 git commit -m "feat: add swimming and trip planning guides"
 ```
 
-## PR 15: Build the personalized decision-first home page
+## PR 11: Build the personalized decision-first home page
 
 **Outcome:** The home page answers the family's decision in the approved order and links into all deeper content.
 
@@ -759,7 +682,7 @@ Render: suitability verdict, three leading bases, complete comparison link, date
 
 State family size, child age, origin airports, date windows, and budget assumptions. Provide an “About this recommendation” link rather than presenting the ranking as universal.
 
-- [ ] **Step 4: Verify and commit PR 15**
+- [ ] **Step 4: Verify and commit PR 11**
 
 Run component tests, the decision journey, `npm run check`, and inspect 390 px and 1440 px screenshots.
 
@@ -768,7 +691,7 @@ git add src/app/page.tsx src/components/home tests/e2e/decision-journey.spec.ts
 git commit -m "feat: add personalized guide home"
 ```
 
-## PR 16: Protect the application with password sessions
+## PR 12: Protect the application with password sessions
 
 **Outcome:** Pages, RSC requests, source content, APIs, and later audio delivery share one stateless private-family session.
 
@@ -806,7 +729,7 @@ Compare submitted password only with `SITE_PASSWORD_HASH`. Return the same visib
 
 Test unauthenticated redirect, wrong password, successful login, protected Sources access, logout, and direct API rejection.
 
-- [ ] **Step 6: Verify and commit PR 16**
+- [ ] **Step 6: Verify and commit PR 12**
 
 Run tests with temporary local secrets, `npm run check`, and auth E2E. Confirm `.env*` is ignored except `.env.example`.
 
@@ -815,7 +738,7 @@ git add src/lib/auth src/app/login src/proxy.ts scripts/auth .env.example .gitig
 git commit -m "feat: protect private family guide"
 ```
 
-## PR 17: Add cached paragraph narration
+## PR 13: Add cached paragraph narration
 
 **Outcome:** Approved English paragraphs generate once through Rime Coda, live in private Blob, and play through one accessible global controller.
 
@@ -864,16 +787,16 @@ Use Vercel Blob `get(pathname, { access: 'private' })` and stream the complete s
 
 `AudioProvider` owns one `HTMLAudioElement`. Each `ListenButton` exposes Listen, Generating, Pause, Resume, Replay, and Retry, with `aria-live` status. Starting another paragraph stops the previous one. Speeds 0.8×, 1×, 1.2×, and 1.5× modify `playbackRate` only.
 
-- [ ] **Step 7: Verify and commit PR 17**
+- [ ] **Step 7: Verify and commit PR 13**
 
-Run TTS unit/component tests and mocked E2E. Locally confirm browser play/pause/replay without a real API key. Do not make the paid real request until PR 18 Preview verification.
+Run TTS unit/component tests and mocked E2E. Locally confirm browser play/pause/replay without a real API key. Do not make the paid real request until PR 14 Preview verification.
 
 ```bash
 git add src/lib/tts src/app/api src/components/tts src/app/layout.tsx .env.example package.json package-lock.json
 git commit -m "feat: add cached paragraph narration"
 ```
 
-## PR 18: Close coverage, add CI, and verify Preview
+## PR 14: Close coverage, add CI, and verify Preview
 
 **Outcome:** The guide meets the design acceptance criteria and is ready for private family use.
 
@@ -894,7 +817,7 @@ Check that ranking labels match the 20/15/10/15/10/15/15 weights everywhere; rou
 
 - [ ] **Step 3: Complete responsive, print, and accessibility checks**
 
-At 390 px and 1440 px verify home, comparison, one long base, one route, Swimming, one source, and coverage. Test long tables, focus order, skip link, filter controls, source toggle, color contrast, reduced motion, print headings, URL visibility, and page overflow.
+At 390 px and 1440 px verify home, comparison, one long base, one route, Swimming, one original-language source, and coverage. Test long tables, focus order, skip link, filter controls, evidence links, color contrast, reduced motion, print headings, URL visibility, and page overflow.
 
 - [ ] **Step 4: Add CI**
 
@@ -908,7 +831,7 @@ Link the repository to Vercel, create a private Blob store, and set `SITE_PASSWO
 
 Authenticate on Preview, play one paragraph, confirm one Rime request and one private Blob object, replay it, and confirm the second request is a cache hit with no Rime call. Change the test paragraph in a temporary Preview-only branch or fixture, confirm a new cache key, then discard that temporary verification change.
 
-- [ ] **Step 7: Run final acceptance and commit PR 18**
+- [ ] **Step 7: Run final acceptance and commit PR 14**
 
 Run:
 

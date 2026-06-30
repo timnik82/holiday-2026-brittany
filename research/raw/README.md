@@ -13,11 +13,11 @@ Place all completed Deep Research documents in this directory **before applicati
 ## What the application pipeline will do
 
 - preserve the original Markdown;
-- create a complete English translation;
+- create concise English evidence records directly from substantive source blocks;
 - merge all unique facts into comprehensive destination and topic pages;
 - remove duplicated wording without discarding unique information;
 - record conflicts and source attribution;
 - map every substantive source block to its resulting page paragraphs;
 - create stable paragraph identifiers for text-to-speech playback.
 
-The source archive in the private application will expose both the original document and its English translation.
+The source archive in the private application will expose each unchanged original document in its supplied language. A separate coverage view will show the concise English evidence derived from each substantive block; no full-document translation is required.

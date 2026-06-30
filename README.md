@@ -6,7 +6,7 @@ This private repository will contain an English-language family travel guide for
 
 The project is in the planning and research-ingestion phase. Application development has not started yet.
 
-The approved product and implementation plan is saved in [docs/plans/brittany-family-guide.md](docs/plans/brittany-family-guide.md).
+The approved information architecture is saved in [the design specification](docs/superpowers/specs/2026-06-30-brittany-family-guide-design.md). The implementation sequence is saved in [the implementation plan](docs/superpowers/plans/2026-06-30-brittany-family-guide.md).
 
 ## Before coding starts
 
@@ -14,7 +14,7 @@ Provide all completed Deep Research documents as Markdown files and place them i
 
 - the final destination and attraction page hierarchy;
 - the amount and structure of long-form content;
-- translation and source-attribution requirements;
+- English evidence extraction and source-attribution requirements;
 - paragraph identifiers used by the text-to-speech system.
 
 See [`research/raw/README.md`](research/raw/README.md) for the ingestion rules.
