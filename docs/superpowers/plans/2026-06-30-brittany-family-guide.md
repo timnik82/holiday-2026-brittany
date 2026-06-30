@@ -44,24 +44,29 @@ PR 7 Step 2 (the Porto flight claim) and PR 10 Step 5 (the time-sensitive refres
 
 ## Pull-request map
 
-| PR | Outcome | Depends on |
-|---|---|---|
-| 1 | Runnable Next.js application and test harness | — |
-| 2 | Typed Markdown content compiler and paragraph manifest | 1 |
-| 3 | Immutable source corpus, source-block inventory, and validation | 2 |
-| 4 | English evidence registry, Sources archive, and coverage interface | 3 |
-| 5 | Ranking engine, six-base dataset, and comparison page | 2, 4 |
-| 6 | Northern Brittany content and evidence slice | 4, 5 |
-| 7 | Western Brittany content and evidence slice | 4, 5 |
-| 8 | Southern Brittany content and evidence slice | 4, 5 |
-| 9 | Routes and filterable Things to do directory | 6–8 |
-| 10 | Swimming and Plan your trip guides with freshness metadata | 6–8 |
-| 11 | Personalized decision-first home page | 5, 9, 10 |
-| 12 | Password authentication across pages and APIs | 1 |
-| 13 | Rime TTS, private Blob cache, and accessible player | 2, 12 |
-| 14 | Coverage closure, responsive/print QA, CI, and Preview verification | 4–13 |
+This plan was converted into one GitHub issue per slice in [timnik82/holiday-2026-brittany](https://github.com/timnik82/holiday-2026-brittany/issues). During conversion, the original PR 9, PR 10, and PR 14 were each split into two independently-gravbable issues (routes vs. directory, swimming vs. practical guides, automated QA/CI vs. human-in-the-loop Preview setup). The table below reflects the issue numbering actually in use; PR sections later in this document keep their original numbers and note where they were split.
 
-PR 3 begins after PR 2. PR 12 can proceed independently after PR 1. PR 5 begins when PR 4 establishes the evidence contract, and PR 12 must merge before PR 13.
+| # | Outcome | Depends on | Issue |
+|---|---|---|---|
+| 1 | Runnable Next.js application and test harness | — | [#1](https://github.com/timnik82/holiday-2026-brittany/issues/1) |
+| 2 | Typed Markdown content compiler and paragraph manifest | 1 | [#2](https://github.com/timnik82/holiday-2026-brittany/issues/2) |
+| 3 | Immutable source corpus, source-block inventory, and validation | 2 | [#3](https://github.com/timnik82/holiday-2026-brittany/issues/3) |
+| 4 | English evidence registry, Sources archive, and coverage interface | 3 | [#4](https://github.com/timnik82/holiday-2026-brittany/issues/4) |
+| 5 | Ranking engine, six-base dataset, and comparison page | 2, 4 | [#5](https://github.com/timnik82/holiday-2026-brittany/issues/5) |
+| 6 | Northern Brittany content and evidence slice | 4, 5 | [#6](https://github.com/timnik82/holiday-2026-brittany/issues/6) |
+| 7 | Western Brittany content and evidence slice | 4, 5 | [#7](https://github.com/timnik82/holiday-2026-brittany/issues/7) |
+| 8 | Southern Brittany content and evidence slice | 4, 5 | [#8](https://github.com/timnik82/holiday-2026-brittany/issues/8) |
+| 9a | Routes (cultural, nature, relaxed-family itineraries) | 6–8 | [#9](https://github.com/timnik82/holiday-2026-brittany/issues/9) |
+| 9b | Things-to-do directory and filters | 6–8 | [#10](https://github.com/timnik82/holiday-2026-brittany/issues/10) |
+| 10a | Swimming guide and bathing-suitability score | 6–8 | [#11](https://github.com/timnik82/holiday-2026-brittany/issues/11) |
+| 10b | Plan-your-trip guides and time-sensitive refresh | 6–8 | [#12](https://github.com/timnik82/holiday-2026-brittany/issues/12) |
+| 11 | Personalized decision-first home page | 5, 9a, 9b, 10a, 10b | [#13](https://github.com/timnik82/holiday-2026-brittany/issues/13) |
+| 12 | Password authentication across pages and APIs | 1 | [#14](https://github.com/timnik82/holiday-2026-brittany/issues/14) |
+| 13 | Rime TTS, private Blob cache, and accessible player | 2, 12 | [#15](https://github.com/timnik82/holiday-2026-brittany/issues/15) |
+| 14a | Coverage closure, content consistency, responsive/print/a11y QA, and CI | 4–13 | [#16](https://github.com/timnik82/holiday-2026-brittany/issues/16) |
+| 14b | Vercel Preview setup, production secrets, and paid TTS verification (HITL) | 14a | [#17](https://github.com/timnik82/holiday-2026-brittany/issues/17) |
+
+PR 3 begins after PR 2. PR 12 can proceed independently after PR 1. PR 5 begins when PR 4 establishes the evidence contract, and PR 12 must merge before PR 13. PR 14b is the only human-in-the-loop slice — it needs real Vercel/Rime account access and a deliberate decision to spend money, so it cannot be picked up by an autonomous agent.
 
 ## Target file structure
 
@@ -576,6 +581,8 @@ git commit -m "feat: add southern Brittany guide content"
 
 ## PR 9: Add routes and the Things to do directory
 
+> Split into two GitHub issues for tracking: routes ([#9](https://github.com/timnik82/holiday-2026-brittany/issues/9)) and the Things-to-do directory ([#10](https://github.com/timnik82/holiday-2026-brittany/issues/10)). Steps 1–3 and 6 (route evidence, authoring, route templates, route coverage) belong to #9; steps 4–5 (filter tests, directory/place templates) belong to #10. They have no dependency on each other beyond the shared #6–#8 prerequisite.
+
 **Outcome:** Readers can choose a travel style and browse canonical activities without duplicated articles.
 
 **Files:**
@@ -624,6 +631,8 @@ git commit -m "feat: add routes and activity directory"
 ```
 
 ## PR 10: Add Swimming and Plan your trip
+
+> Split into two GitHub issues for tracking: Swimming ([#11](https://github.com/timnik82/holiday-2026-brittany/issues/11)) and Plan-your-trip ([#12](https://github.com/timnik82/holiday-2026-brittany/issues/12)). Steps 1, 3, and the water/safety portion of step 2 belong to #11; steps 4–5 and the transport/accommodation/food portion of step 2 belong to #12. Step 6 (freshness UI) is shared — `FreshnessLabel` lives in #12 and #11 reuses or locally duplicates it; see the issue bodies for the current split.
 
 **Outcome:** Shared practical decisions and swimming safety are detailed, dated, and not duplicated across bases.
 
@@ -818,6 +827,8 @@ git commit -m "feat: add cached paragraph narration"
 ```
 
 ## PR 14: Close coverage, add CI, and verify Preview
+
+> Split into two GitHub issues for tracking: automated QA/CI ([#16](https://github.com/timnik82/holiday-2026-brittany/issues/16)) and human-in-the-loop Preview/secrets/paid verification ([#17](https://github.com/timnik82/holiday-2026-brittany/issues/17)). Steps 1–4 and the non-Preview part of step 7 belong to #16; steps 5–6 and the Preview-dependent part of step 7 belong to #17, which is blocked by #16 and requires your Vercel/Rime account access.
 
 **Outcome:** The guide meets the design acceptance criteria and is ready for private family use.
 
