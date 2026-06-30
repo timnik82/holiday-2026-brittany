@@ -14,6 +14,8 @@ out/
 dist/
 coverage/
 .vercel/
+next-env.d.ts
+tsconfig.tsbuildinfo
 
 # Logs and local caches
 *.log
@@ -25,6 +27,12 @@ coverage/
 # Temporary research artifacts
 research/tmp/
 research/.cache/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
 # Operating systems and editors
 .DS_Store

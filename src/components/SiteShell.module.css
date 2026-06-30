@@ -1,0 +1,86 @@
+.skipLink {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skipLink:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: #fff;
+  z-index: 100;
+}
+
+.header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem;
+}
+
+.headerInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.siteTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.primaryNav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.primaryNav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.primaryNav a:hover,
+.primaryNav a:focus {
+  text-decoration: underline;
+}
+
+.utilityNav {
+  font-size: 0.875rem;
+}
+
+.utilityNav a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.utilityNav a:hover,
+.utilityNav a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+}
