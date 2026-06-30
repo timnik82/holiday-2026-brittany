@@ -208,7 +208,7 @@ type ParagraphRecord = {
 
 `POST /api/tts` accepts only `{ paragraphId }`. The server resolves the approved text and never accepts arbitrary narration text. The cache key includes the Rime model, voice, language, output format, and SHA-256 text hash.
 
-On a cache hit, the server returns the existing private audio without calling Rime. On a miss, it generates the complete paragraph once through Rime Coda using the English `astra` voice, 24 kHz audio, and WebM/Opus output, stores it in private Blob storage, and returns authenticated playback access.
+On a cache hit, the server returns the existing private audio without calling Rime. On a miss, it generates the complete paragraph once through Rime Coda using the English `astra` voice, 24 kHz audio, and MP3 output (`audio/mpeg`), stores it in private Blob storage, and returns authenticated playback access. MP3 is the documented Coda HTTP output and avoids adding a server-side transcoding step.
 
 The browser offers `Listen`, `Generating…`, `Pause`, `Resume`, `Replay`, and `Retry` states plus 0.8×, 1×, 1.2×, and 1.5× playback. Only one paragraph plays at a time. Changing speed uses browser playback rate and does not create more audio files.
 
