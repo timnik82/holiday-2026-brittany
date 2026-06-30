@@ -1,0 +1,52 @@
+{
+  "name": "holiday-2026-brittany",
+  "version": "1.0.0",
+  "description": "This private repository will contain an English-language family travel guide for Brittany, France, for August 2026. The planned application combines detailed destination research, family itineraries, swimming options, travel logistics, accommodation guidance, and paragraph-level text-to-speech playback.",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timnik82/holiday-2026-brittany.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/timnik82/holiday-2026-brittany/issues"
+  },
+  "homepage": "https://github.com/timnik82/holiday-2026-brittany#readme",
+  "dependencies": {
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.61.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^10.6.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "jsdom": "^29.1.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^4.1.9"
+  },
+  "private": true
+}
