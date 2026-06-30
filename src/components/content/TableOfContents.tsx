@@ -1,4 +1,5 @@
 import React from "react";
+import { slugify, stripInlineMarkdown } from "@/lib/content/slug";
 
 interface TocItem {
   id: string;
@@ -34,17 +35,39 @@ export function TableOfContents({ markdown }: TableOfContentsProps) {
 }
 
 function extractHeadings(markdown: string): TocItem[] {
-  const headingRe = /^(#{2,4})\s+(.+)$/gm;
+  const headingRe = /^(#{2,4})\s+(.+)$/;
+  // Matches the opening fence of a fenced code block: ``` or ~~~ (3+ chars).
+  const fenceRe = /^(`{3,}|~{3,})/;
   const items: TocItem[] = [];
-  let match;
 
-  while ((match = headingRe.exec(markdown)) !== null) {
+  const lines = markdown.split("\n");
+  let inFencedCode = false;
+  let fenceMarker = "";
+
+  for (const line of lines) {
+    const fenceMatch = line.match(fenceRe);
+    if (fenceMatch) {
+      const marker = fenceMatch[1][0];
+      if (!inFencedCode) {
+        // Entering a fenced code block.
+        inFencedCode = true;
+        fenceMarker = marker;
+      } else if (marker === fenceMarker) {
+        // Closing fence must use the same character.
+        inFencedCode = false;
+        fenceMarker = "";
+      }
+      continue;
+    }
+
+    if (inFencedCode) continue;
+
+    const match = line.match(headingRe);
+    if (!match) continue;
+
     const level = match[1].length;
-    const text = match[2].trim();
-    const id = text
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-|-$/g, "");
+    const text = stripInlineMarkdown(match[2]);
+    const id = slugify(text);
     items.push({ id, text, level });
   }
 

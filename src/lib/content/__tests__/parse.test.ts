@@ -98,6 +98,27 @@ describe("parseContent", () => {
     const result = parseContent(md) as ParsedContent;
     expect(result.paragraphs).toHaveLength(0);
   });
+
+  it("tolerates a blank line between the comment and the paragraph", () => {
+    const md = `<!-- paragraph id="p1" sources="src-a" -->\n\nHello world.`;
+    const result = parseContent(md) as ParsedContent;
+    expect(result.paragraphs).toHaveLength(1);
+    expect(result.paragraphs[0].id).toBe("p1");
+    expect(result.paragraphs[0].text).toBe("Hello world.");
+    expect(result.paragraphs[0].evidenceRefs).toEqual(["src-a"]);
+  });
+
+  it("tolerates a blank line before a non-narratable node", () => {
+    const md = [
+      `<!-- paragraph id="h1" sources="" -->`,
+      ``,
+      `# A Heading`,
+    ].join("\n");
+    const result = parseContent(md) as ParsedContent;
+    expect(result.paragraphs).toHaveLength(1);
+    expect(result.paragraphs[0].id).toBe("h1");
+    expect(result.paragraphs[0].narratable).toBe(false);
+  });
 });
 
 describe("validateParsedContent", () => {
@@ -124,5 +145,12 @@ describe("validateParsedContent", () => {
     const md = `<!-- paragraph id="ok" sources="s1" -->\nValid paragraph.`;
     const errors = validateParsedContent(md, "test.md");
     expect(errors).toHaveLength(0);
+  });
+
+  it("flags oversized paragraphs even with a blank line before them", () => {
+    const longText = "C".repeat(501);
+    const md = `<!-- paragraph id="big" sources="" -->\n\n${longText}`;
+    const errors = validateParsedContent(md, "test.md");
+    expect(errors.some((e) => e.message.includes("exceeds"))).toBe(true);
   });
 });

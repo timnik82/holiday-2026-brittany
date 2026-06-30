@@ -1,10 +1,29 @@
 import path from "node:path";
 import { listContentFiles, readContentFile } from "../../src/lib/content/files";
-import { pageFrontmatterSchema, practicalFrontmatterSchema } from "../../src/lib/content/schemas";
+import {
+  pageFrontmatterSchema,
+  baseFrontmatterSchema,
+  routeFrontmatterSchema,
+  thingsToDoFrontmatterSchema,
+  practicalFrontmatterSchema,
+} from "../../src/lib/content/schemas";
 import { validateParsedContent } from "../../src/lib/content/parse";
 import type { z } from "zod";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "content");
+
+/**
+ * Per-category frontmatter schema. Each content type validates its specific
+ * extended fields (region for bases, mode for routes, etc.) instead of falling
+ * back to the generic page schema.
+ */
+const SCHEMA_BY_CATEGORY: Record<string, z.ZodType> = {
+  plan: practicalFrontmatterSchema,
+  bases: baseFrontmatterSchema,
+  routes: routeFrontmatterSchema,
+  "things-to-do": thingsToDoFrontmatterSchema,
+  practical: practicalFrontmatterSchema,
+};
 
 interface ValidationError {
   file: string;
@@ -26,13 +45,8 @@ function main() {
       const { frontmatter, body } = readContentFile(filePath);
       const relPath = path.relative(process.cwd(), filePath);
 
-      // Validate frontmatter
-      let schema: z.ZodType;
-      if (category === "practical" || category === "plan") {
-        schema = practicalFrontmatterSchema;
-      } else {
-        schema = pageFrontmatterSchema;
-      }
+      // Validate frontmatter against the category-specific schema
+      const schema = SCHEMA_BY_CATEGORY[category] ?? pageFrontmatterSchema;
 
       const parsed = schema.safeParse(frontmatter);
       if (!parsed.success) {

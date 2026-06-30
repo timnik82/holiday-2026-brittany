@@ -27,6 +27,28 @@ function hashText(text: string): string {
   return createHash("sha256").update(normalized).digest("hex");
 }
 
+/**
+ * Find the 0-indexed line of the metadata comment that immediately precedes a
+ * node starting at the given 1-indexed AST line. Blank lines between the
+ * comment and its content are tolerated so that paragraphs are not silently
+ * dropped. Returns null when the nearest non-blank line above the node is not a
+ * comment (meaning the node has no associated metadata).
+ */
+function findPrecedingCommentLine(
+  startLine: number,
+  lines: string[]
+): number | null {
+  let idx = startLine - 2; // line immediately before the node (0-indexed)
+  while (idx >= 0) {
+    if (lines[idx].trim() === "") {
+      idx--;
+      continue;
+    }
+    return idx;
+  }
+  return null;
+}
+
 export interface ParseError {
   message: string;
 }
@@ -72,8 +94,10 @@ export function parseContent(markdown: string): ParsedContent | ParseError {
       const startLine = para.position?.start.line;
       if (startLine == null) return;
 
-      // Check if the previous line (0-indexed: startLine - 2) is a comment
-      const commentLineIdx = startLine - 2; // lines are 0-indexed, AST is 1-indexed
+      // Associate with the preceding comment, tolerating blank lines between
+      // the marker and the paragraph text (lines are 0-indexed, AST is 1-indexed).
+      const commentLineIdx = findPrecedingCommentLine(startLine, lines);
+      if (commentLineIdx == null) return;
       const meta = commentLineMap.get(commentLineIdx);
 
       if (!meta) return; // No metadata comment = not a tracked paragraph
@@ -101,7 +125,8 @@ export function parseContent(markdown: string): ParsedContent | ParseError {
       // Check if there's a comment before this non-narratable node
       const startLine = node.position?.start.line;
       if (startLine == null) return;
-      const commentLineIdx = startLine - 2;
+      const commentLineIdx = findPrecedingCommentLine(startLine, lines);
+      if (commentLineIdx == null) return;
       const meta = commentLineMap.get(commentLineIdx);
       if (!meta) return;
 
@@ -153,8 +178,9 @@ export function validateParsedContent(
   visit(tree, "paragraph", (node: Paragraph) => {
     const startLine = node.position?.start.line;
     if (startLine == null) return;
-    const commentLineIdx = startLine - 2;
-    const commentMatch = lines[commentLineIdx]?.trim().match(PARAGRAPH_COMMENT_RE);
+    const commentLineIdx = findPrecedingCommentLine(startLine, lines);
+    if (commentLineIdx == null) return;
+    const commentMatch = lines[commentLineIdx].trim().match(PARAGRAPH_COMMENT_RE);
     if (!commentMatch) return;
 
     const text = toString(node);
