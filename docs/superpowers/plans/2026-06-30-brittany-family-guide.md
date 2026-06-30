@@ -21,6 +21,27 @@
 
 The current Rime documentation exposes Coda HTTP audio as `audio/mpeg`. The implementation therefore stores 24 kHz MP3 instead of adding server-side WebM/Opus transcoding. This changes neither the playback controls nor browser speed adjustment.
 
+## External-source verification rules
+
+The four supplied Deep Research documents are the only source for destination judgment and narrative content. They are not re-verified or second-guessed. A small set of facts changes independently of that research and must instead be checked against live official sources before the relevant content slice ships: flight schedules, accommodation prices and availability for both date windows, attraction opening details and festival dates, and ARS/official water-quality status.
+
+This live verification uses the One CLI, following its standard discovery-before-execution workflow:
+
+```bash
+one --agent connection list
+one --agent actions search <platform> "<query>" -t execute
+one --agent actions knowledge <platform> <actionId>
+one --agent actions execute <platform> <actionId> <key> -d '{}'
+```
+
+- Accommodation, car hire, and activity prices/availability: Booking.com, via `one --agent`.
+- General web and place lookups (ranking corroboration, business details, opening hours): EXA, Tavily/Perplexity, and Google Places, via `one --agent`.
+- Official pages (tourist offices, SNCF, ARS, museums, festivals): direct EXA and Firecrawl.
+- If a listed connector is no longer available when a PR runs, use the nearest equivalent surfaced by `one --agent connection list` and note the substitution next to the recorded fact.
+- Every value obtained this way is written into the relevant `content/facts/*.json` file or evidence record together with its `checkedAt` date. It is recorded as a dated update alongside the original research claim, never as a silent replacement of it.
+
+PR 7 Step 2 (the Porto flight claim) and PR 10 Step 5 (the time-sensitive refresh) apply these rules.
+
 ## Pull-request map
 
 | PR | Outcome | Depends on |
@@ -494,7 +515,7 @@ Create concise records for Brest, Finistère, Quimper, Crozon, Douarnenez, Morla
 
 - [ ] **Step 2: Synthesize Brest/Finistère**
 
-Cover the direct Porto flight claim with a fresh official check, airport access, Océanopolis, maritime museum, city-without-car option, and car-dependent coastal extensions.
+Cover the direct Porto flight claim with a fresh official check using the [external-source verification rules](#external-source-verification-rules), airport access, Océanopolis, maritime museum, city-without-car option, and car-dependent coastal extensions.
 
 - [ ] **Step 3: Synthesize Quimper/South Finistère**
 
@@ -635,7 +656,7 @@ Separate climate normals from forecasts. Explain LIS/OPO access, car trade-offs,
 
 - [ ] **Step 5: Perform the time-sensitive refresh**
 
-Using the project's external-source rules, verify official flight schedules, SNCF travel times, official attraction details, ARS/water-quality status, and live accommodation samples for both date windows. Record values and `checkedAt`; do not silently replace research claims.
+Using the [external-source verification rules](#external-source-verification-rules), verify official flight schedules, SNCF travel times, official attraction details, ARS/water-quality status, and live accommodation samples for both date windows. Record values and `checkedAt`; do not silently replace research claims.
 
 - [ ] **Step 6: Build freshness UI and stale behavior**
 

@@ -172,6 +172,8 @@ Each document is divided into substantive source blocks. A source block receives
 
 Synthesized English content is authored from the evidence records in reviewable Markdown. Each substantive synthesized paragraph records the evidence identifiers that support it, and every evidence record links back to its original-language source blocks.
 
+Synthesis does not impose a length limit. Every base, route, and thing-to-do page is as comprehensive as the supporting evidence allows: it retains every unique fact, example, number, and recommendation found across the four source documents rather than trimming for brevity. Long pages use the generated table of contents for navigation instead of being shortened.
+
 The coverage register assigns every substantive source block one of three outcomes:
 
 - retained, with links to the English evidence record and resulting synthesized paragraph or paragraphs;
