@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./SiteShell.module.css";
 
 const PRIMARY_NAV_ITEMS = [
@@ -23,14 +24,14 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             <ul>
               {PRIMARY_NAV_ITEMS.map(({ label, href }) => (
                 <li key={href}>
-                  <a href={href}>{label}</a>
+                  <Link href={href}>{label}</Link>
                 </li>
               ))}
             </ul>
           </nav>
 
           <nav aria-label="Utility" className={styles.utilityNav}>
-            <a href="/sources">Sources</a>
+            <Link href="/sources">Sources</Link>
           </nav>
         </div>
       </header>
