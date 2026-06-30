@@ -139,15 +139,15 @@ Shared logistics live under `Plan your trip`. Base pages show only the local con
 
 ## Ranking Model
 
-The overall family score uses the existing approved weighting:
+The overall family score uses the approved weighting:
 
-- climate: 25%;
-- nature: 20%;
-- culture: 15%;
+- climate: 20%;
+- nature: 15%;
+- culture: 10%;
 - family activities: 15%;
 - logistics: 10%;
-- accommodation: 10%;
-- food: 5%.
+- accommodation: 15%;
+- food: 15%.
 
 Each dimension is scored on the same documented scale. The interface shows both the total and the component scores so the recommendation can be understood rather than treated as a black box.
 
