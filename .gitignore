@@ -1,0 +1,35 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# JavaScript / Next.js
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.vercel/
+
+# Logs and local caches
+*.log
+.npm/
+.cache/
+.firecrawl/
+.superpowers/
+
+# Temporary research artifacts
+research/tmp/
+research/.cache/
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
