@@ -1,0 +1,321 @@
+.sourcesPage {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sourcesIntro {
+  color: #555;
+  max-width: 45rem;
+}
+
+.sourceList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sourceCard {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+
+.sourceCardTitle {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.sourceCardMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.sourceCardCode {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.8rem;
+}
+
+/* Original document page */
+.docPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.docNotice {
+  background: #f0f4f8;
+  border-left: 4px solid var(--color-primary);
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.docBlocks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.docBlock {
+  border: 1px solid #e5e5e5;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+}
+
+.docBlockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.docBlockId {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  color: var(--color-primary);
+}
+
+.docBlockHeading {
+  color: #888;
+}
+
+.docBlockMarkdown {
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
+
+.docBlockMarkdown pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Coverage page */
+.coveragePage {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.coverageFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 0.5rem;
+}
+
+.coverageFilters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.coverageFilters select {
+  padding: 0.35rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.filterButton {
+  padding: 0.4rem 1rem;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  opacity: 0.9;
+}
+
+.coverageSummary {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* Evidence card */
+.evidenceCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  background: #fafafa;
+}
+
+.evidenceCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.evidenceCardKind {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.2rem;
+  background: #e0e0e0;
+}
+
+.kindFact {
+  background: #d4e6f1;
+}
+.kindRecommendation {
+  background: #d5f5e3;
+}
+.kindPrice {
+  background: #fcf3cf;
+}
+.kindWarning {
+  background: #fadbd8;
+}
+.kindQualification {
+  background: #e8daef;
+}
+
+.evidenceCardChecked {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.evidenceCardText {
+  margin: 0 0 0.4rem;
+}
+
+.evidenceCardQualifiers {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 0 0.4rem 1rem;
+}
+
+.evidenceCardSources {
+  font-size: 0.78rem;
+  color: #777;
+}
+
+.evidenceCardSourceLink {
+  margin-right: 0.5rem;
+}
+
+.evidenceCardUrls {
+  font-size: 0.78rem;
+  margin: 0.25rem 0 0 1rem;
+  list-style: none;
+}
+
+/* Coverage table */
+.coverageTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coverageTable th {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 2px solid #ccc;
+  font-size: 0.85rem;
+}
+
+.coverageTable td {
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.coverageTableBlock {
+  white-space: nowrap;
+}
+
+.coverageTableHeading {
+  display: block;
+  font-size: 0.78rem;
+  color: #888;
+  margin-top: 0.15rem;
+  white-space: normal;
+}
+
+.coverageTableBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+
+.badgeDraft {
+  background: #eee;
+  color: #666;
+}
+.badgeRetained {
+  background: #d5f5e3;
+  color: #1e7e34;
+}
+.badgeDuplicate {
+  background: #fcf3cf;
+  color: #856404;
+}
+.badgeConflict {
+  background: #fadbd8;
+  color: #c0392b;
+}
+
+.coverageTableDraft {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.coverageTableRetained,
+.coverageTableConflict {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coverageTableConflictLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #c0392b;
+  margin: 0;
+}
+
+.coverageTableInterpretation {
+  font-size: 0.85rem;
+  background: #fff9e6;
+  border-left: 3px solid #f0ad4e;
+  padding: 0.4rem 0.6rem;
+  margin: 0;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.coverageTableParagraphs {
+  font-size: 0.78rem;
+  color: #777;
+  margin: 0;
+}
+
+.coverageTableEmpty {
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .coverageTable {
+    font-size: 0.85rem;
+  }
+  .coverageTable th,
+  .coverageTable td {
+    padding: 0.4rem 0.3rem;
+  }
+}

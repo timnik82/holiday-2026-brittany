@@ -1,0 +1,801 @@
+{
+  "chatgpt:b001": {
+    "status": "conflict",
+    "conflictId": "conflict:august-sea-temperature",
+    "evidenceIds": [
+      "evidence:sea-temperature-narrow",
+      "evidence:sea-temperature-wide"
+    ],
+    "paragraphIds": [
+      "sources-1"
+    ],
+    "interpretation": "The three-source consensus gives a wider 16 to 19 degree range; ChatGPT alone narrows it to 17 to 18.5. For planning, treat 16 to 19 degrees as the safe expectation and pack shorty wetsuits for water sports."
+  },
+  "chatgpt:b002": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-primary-gateway-from-portugal"
+    ],
+    "paragraphIds": [
+      "sources-2"
+    ]
+  },
+  "chatgpt:b003": {
+    "status": "draft",
+    "plannedArea": "Pending review — Краткое резюме (content PRs 5–8)"
+  },
+  "chatgpt:b004": {
+    "status": "draft",
+    "plannedArea": "Pending review — Допущения и методика (content PRs 5–8)"
+  },
+  "chatgpt:b005": {
+    "status": "draft",
+    "plannedArea": "Pending review — Допущения и методика (content PRs 5–8)"
+  },
+  "chatgpt:b006": {
+    "status": "draft",
+    "plannedArea": "Pending review — Климат и доступность в августе (content PRs 5–8)"
+  },
+  "chatgpt:b007": {
+    "status": "draft",
+    "plannedArea": "Pending review — Климат и доступность в августе (content PRs 5–8)"
+  },
+  "chatgpt:b008": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сводная таблица по климату (content PRs 5–8)"
+  },
+  "chatgpt:b009": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:saint-malo-best-overall-base"
+    ],
+    "paragraphIds": [
+      "ranking-1"
+    ]
+  },
+  "chatgpt:b010": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+  },
+  "chatgpt:b011": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+  },
+  "chatgpt:b012": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+  },
+  "chatgpt:b013": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+  },
+  "chatgpt:b014": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+  },
+  "chatgpt:b015": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+  },
+  "chatgpt:b016": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+  },
+  "chatgpt:b017": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+  },
+  "chatgpt:b018": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+  },
+  "chatgpt:b019": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+  },
+  "chatgpt:b020": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+  },
+  "chatgpt:b021": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+  },
+  "chatgpt:b022": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+  },
+  "chatgpt:b023": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+  },
+  "chatgpt:b024": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+  },
+  "chatgpt:b025": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+  },
+  "chatgpt:b026": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+  },
+  "chatgpt:b027": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+  },
+  "chatgpt:b028": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+  },
+  "chatgpt:b029": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+  },
+  "chatgpt:b030": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+  },
+  "chatgpt:b031": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+  },
+  "chatgpt:b032": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+  },
+  "chatgpt:b033": {
+    "status": "draft",
+    "plannedArea": "Pending review — Presqu’île de Crozon и Douarnenez (content PRs 5–8)"
+  },
+  "chatgpt:b034": {
+    "status": "draft",
+    "plannedArea": "Pending review — Presqu’île de Crozon и Douarnenez (content PRs 5–8)"
+  },
+  "chatgpt:b035": {
+    "status": "draft",
+    "plannedArea": "Pending review — Presqu’île de Crozon и Douarnenez (content PRs 5–8)"
+  },
+  "chatgpt:b036": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сводное сравнение логистики, машины и бюджета (content PRs 5–8)"
+  },
+  "chatgpt:b037": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сводное сравнение логистики, машины и бюджета (content PRs 5–8)"
+  },
+  "chatgpt:b038": {
+    "status": "draft",
+    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+  },
+  "chatgpt:b039": {
+    "status": "draft",
+    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+  },
+  "chatgpt:b040": {
+    "status": "draft",
+    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+  },
+  "chatgpt:b041": {
+    "status": "draft",
+    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+  },
+  "chatgpt:b042": {
+    "status": "draft",
+    "plannedArea": "Pending review — Реалистичные маршруты на 7–10 дней (content PRs 5–8)"
+  },
+  "chatgpt:b043": {
+    "status": "draft",
+    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b044": {
+    "status": "draft",
+    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b045": {
+    "status": "draft",
+    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b046": {
+    "status": "draft",
+    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b047": {
+    "status": "draft",
+    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b048": {
+    "status": "draft",
+    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b049": {
+    "status": "draft",
+    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b050": {
+    "status": "draft",
+    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b051": {
+    "status": "draft",
+    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b052": {
+    "status": "draft",
+    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b053": {
+    "status": "draft",
+    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b054": {
+    "status": "draft",
+    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b055": {
+    "status": "draft",
+    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b056": {
+    "status": "draft",
+    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b057": {
+    "status": "draft",
+    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+  },
+  "chatgpt:b058": {
+    "status": "draft",
+    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+  },
+  "chatgpt:b059": {
+    "status": "draft",
+    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+  },
+  "chatgpt:b060": {
+    "status": "draft",
+    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+  },
+  "chatgpt:b061": {
+    "status": "draft",
+    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+  },
+  "gemini-britany:b001": {
+    "status": "draft",
+    "plannedArea": "Pending review — Анализ потенциала Бретани как направления для летнего семейного отдыха в августе 2026 года (content PRs 5–8)"
+  },
+  "gemini-britany:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:brittany-august-air-temperature"
+  },
+  "gemini-britany:b003": {
+    "status": "draft",
+    "plannedArea": "Pending review — Климатический профиль Бретани в августе: температура, осадки и риски (content PRs 5–8)"
+  },
+  "gemini-britany:b004": {
+    "status": "draft",
+    "plannedArea": "Pending review — Логистический анализ: маршруты из Португалии в Бретань (content PRs 5–8)"
+  },
+  "gemini-britany:b005": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сценарий 1: Авиаперелет + аренда автомобиля в Бретани (content PRs 5–8)"
+  },
+  "gemini-britany:b006": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сценарий 1: Авиаперелет + аренда автомобиля в Бретани (content PRs 5–8)"
+  },
+  "gemini-britany:b007": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сценарий 1: Авиаперелет + аренда автомобиля в Бретани (content PRs 5–8)"
+  },
+  "gemini-britany:b008": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сценарий 2: Автомобильное путешествие на собственной машине из Португалии (content PRs 5–8)"
+  },
+  "gemini-britany:b009": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сценарий 2: Автомобильное путешествие на собственной машине из Португалии (content PRs 5–8)"
+  },
+  "gemini-britany:b010": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сравнительный анализ баз размещения в Бретани (content PRs 5–8)"
+  },
+  "gemini-britany:b011": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сен-Мало и Динан (Изумрудный берег) (content PRs 5–8)"
+  },
+  "gemini-britany:b012": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сен-Мало и Динан (Изумрудный берег) (content PRs 5–8)"
+  },
+  "gemini-britany:b013": {
+    "status": "draft",
+    "plannedArea": "Pending review — Берег Розового Гранита (Côte de Granit Rose) (content PRs 5–8)"
+  },
+  "gemini-britany:b014": {
+    "status": "draft",
+    "plannedArea": "Pending review — Берег Розового Гранита (Côte de Granit Rose) (content PRs 5–8)"
+  },
+  "gemini-britany:b015": {
+    "status": "draft",
+    "plannedArea": "Pending review — Брест и Западный Финистер (content PRs 5–8)"
+  },
+  "gemini-britany:b016": {
+    "status": "draft",
+    "plannedArea": "Pending review — Брест и Западный Финистер (content PRs 5–8)"
+  },
+  "gemini-britany:b017": {
+    "status": "draft",
+    "plannedArea": "Pending review — Кемпер и Южный Финистер (Беноде, Конкарно) (content PRs 5–8)"
+  },
+  "gemini-britany:b018": {
+    "status": "draft",
+    "plannedArea": "Pending review — Кемпер и Южный Финистер (Беноде, Конкарно) (content PRs 5–8)"
+  },
+  "gemini-britany:b019": {
+    "status": "draft",
+    "plannedArea": "Pending review — Карнак и залив Морбиан (content PRs 5–8)"
+  },
+  "gemini-britany:b020": {
+    "status": "draft",
+    "plannedArea": "Pending review — Карнак и залив Морбиан (content PRs 5–8)"
+  },
+  "gemini-britany:b021": {
+    "status": "draft",
+    "plannedArea": "Pending review — Финансовый анализ проживания и аренды в августе 2026 года (content PRs 5–8)"
+  },
+  "gemini-britany:b022": {
+    "status": "draft",
+    "plannedArea": "Pending review — Финансовый анализ проживания и аренды в августе 2026 года (content PRs 5–8)"
+  },
+  "gemini-britany:b023": {
+    "status": "draft",
+    "plannedArea": "Pending review — Семейная гастрономия: бретонские кулинарные традиции (content PRs 5–8)"
+  },
+  "gemini-britany:b024": {
+    "status": "draft",
+    "plannedArea": "Pending review — Семейная гастрономия: бретонские кулинарные традиции (content PRs 5–8)"
+  },
+  "gemini-britany:b025": {
+    "status": "draft",
+    "plannedArea": "Pending review — Семейная гастрономия: бретонские кулинарные традиции (content PRs 5–8)"
+  },
+  "gemini-britany:b026": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сценарии реалистичных семейных маршрутов на 7–10 дней (content PRs 5–8)"
+  },
+  "gemini-britany:b027": {
+    "status": "draft",
+    "plannedArea": "Pending review — Вариант 1: Культурно-исторический маршрут «Эпоха рыцарей, пиратов и легенд» (content PRs 5–8)"
+  },
+  "gemini-britany:b028": {
+    "status": "draft",
+    "plannedArea": "Pending review — Вариант 1: Культурно-исторический маршрут «Эпоха рыцарей, пиратов и легенд» (content PRs 5–8)"
+  },
+  "gemini-britany:b029": {
+    "status": "draft",
+    "plannedArea": "Pending review — Вариант 2: Природно-приключенческий маршрут «Скалы, океанография и научные открытия» (content PRs 5–8)"
+  },
+  "gemini-britany:b030": {
+    "status": "draft",
+    "plannedArea": "Pending review — Вариант 2: Природно-приключенческий маршрут «Скалы, океанография и научные открытия» (content PRs 5–8)"
+  },
+  "gemini-britany:b031": {
+    "status": "draft",
+    "plannedArea": "Pending review — Вариант 3: Спокойный семейный маршрут «Солнечное побережье, песчаные пляжи и эко-парки» (content PRs 5–8)"
+  },
+  "gemini-britany:b032": {
+    "status": "draft",
+    "plannedArea": "Pending review — Вариант 3: Спокойный семейный маршрут «Солнечное побережье, песчаные пляжи и эко-парки» (content PRs 5–8)"
+  },
+  "gemini-britany:b033": {
+    "status": "draft",
+    "plannedArea": "Pending review — Резюме и ключевые рекомендации по планированию (content PRs 5–8)"
+  },
+  "gemini-britany:b034": {
+    "status": "draft",
+    "plannedArea": "Pending review — Резюме и ключевые рекомендации по планированию (content PRs 5–8)"
+  },
+  "operaai:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:brittany-august-air-temperature"
+  },
+  "operaai:b002": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b003": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b004": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b005": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b006": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b007": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b008": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b009": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+  },
+  "operaai:b010": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+  },
+  "operaai:b011": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+  },
+  "operaai:b012": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+  },
+  "operaai:b013": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+  },
+  "operaai:b014": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+  },
+  "operaai:b015": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.1. Сен-Мало и Динан (Изумрудный берег / Иль-и-Вилен) (content PRs 5–8)"
+  },
+  "operaai:b016": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.1. Сен-Мало и Динан (Изумрудный берег / Иль-и-Вилен) (content PRs 5–8)"
+  },
+  "operaai:b017": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.2. Берег Розового Гранита (Кот-д'Армор) (content PRs 5–8)"
+  },
+  "operaai:b018": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.2. Берег Розового Гранита (Кот-д'Армор) (content PRs 5–8)"
+  },
+  "operaai:b019": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.3. Брест и Северный Финистер (content PRs 5–8)"
+  },
+  "operaai:b020": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.3. Брест и Северный Финистер (content PRs 5–8)"
+  },
+  "operaai:b021": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.4. Кемпер и Южный Финистер (content PRs 5–8)"
+  },
+  "operaai:b022": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.4. Кемпер и Южный Финистер (content PRs 5–8)"
+  },
+  "operaai:b023": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.5. Карнак и залив Морбиан (Юг) (content PRs 5–8)"
+  },
+  "operaai:b024": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3.5. Карнак и залив Морбиан (Юг) (content PRs 5–8)"
+  },
+  "operaai:b025": {
+    "status": "draft",
+    "plannedArea": "Pending review — 4. Сравнительная таблица: Цены и Климат (Август) (content PRs 5–8)"
+  },
+  "operaai:b026": {
+    "status": "draft",
+    "plannedArea": "Pending review — 5. Рейтинг лучших баз для семейного отдыха (content PRs 5–8)"
+  },
+  "operaai:b027": {
+    "status": "draft",
+    "plannedArea": "Pending review — 5. Рейтинг лучших баз для семейного отдыха (content PRs 5–8)"
+  },
+  "operaai:b028": {
+    "status": "draft",
+    "plannedArea": "Pending review — 6. Предлагаемые маршруты (7–10 дней) (content PRs 5–8)"
+  },
+  "operaai:b029": {
+    "status": "draft",
+    "plannedArea": "Pending review — Маршрут 1: «Пираты, рыцари и легенды» (Культурно-исторический) (content PRs 5–8)"
+  },
+  "operaai:b030": {
+    "status": "draft",
+    "plannedArea": "Pending review — Маршрут 1: «Пираты, рыцари и легенды» (Культурно-исторический) (content PRs 5–8)"
+  },
+  "operaai:b031": {
+    "status": "draft",
+    "plannedArea": "Pending review — Маршрут 2: «Дикая Бретань и розовые скалы» (Природно-исследовательский) (content PRs 5–8)"
+  },
+  "operaai:b032": {
+    "status": "draft",
+    "plannedArea": "Pending review — Маршрут 2: «Дикая Бретань и розовые скалы» (Природно-исследовательский) (content PRs 5–8)"
+  },
+  "operaai:b033": {
+    "status": "draft",
+    "plannedArea": "Pending review — Маршрут 3: «Острова, мегалиты и теплый залив» (Спокойный семейный) (content PRs 5–8)"
+  },
+  "operaai:b034": {
+    "status": "draft",
+    "plannedArea": "Pending review — Маршрут 3: «Острова, мегалиты и теплый залив» (Спокойный семейный) (content PRs 5–8)"
+  },
+  "perplexity:b004": {
+    "status": "draft",
+    "plannedArea": "Pending review — Исследуй Бретань во Франции как вариант семейного отпуска в августе 2026 с выездом из Португалии для 2 взрослых и ребёнка 9–10 лет. Главная цель — свежий климат без сильной жары, интересная природа, море, исторические города, замки, музеи и хорошие семейные активности. (content PRs 5–8)"
+  },
+  "perplexity:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:brittany-august-air-temperature"
+    ],
+    "paragraphIds": [
+      "fresh-1"
+    ]
+  },
+  "perplexity:b006": {
+    "status": "draft",
+    "plannedArea": "Pending review — Климат и море в августе (content PRs 5–8)"
+  },
+  "perplexity:b007": {
+    "status": "draft",
+    "plannedArea": "Pending review — Климат и море в августе (content PRs 5–8)"
+  },
+  "perplexity:b008": {
+    "status": "draft",
+    "plannedArea": "Pending review — Климат и море в августе (content PRs 5–8)"
+  },
+  "perplexity:b009": {
+    "status": "draft",
+    "plannedArea": "Pending review — Перелёт (content PRs 5–8)"
+  },
+  "perplexity:b010": {
+    "status": "draft",
+    "plannedArea": "Pending review — Перелёт (content PRs 5–8)"
+  },
+  "perplexity:b011": {
+    "status": "draft",
+    "plannedArea": "Pending review — Перелёт (content PRs 5–8)"
+  },
+  "perplexity:b012": {
+    "status": "draft",
+    "plannedArea": "Pending review — Поездка на машине из Португалии (content PRs 5–8)"
+  },
+  "perplexity:b013": {
+    "status": "draft",
+    "plannedArea": "Pending review — Нужна ли машина в Бретани (content PRs 5–8)"
+  },
+  "perplexity:b014": {
+    "status": "draft",
+    "plannedArea": "Pending review — Цены на жильё (общая оценка) (content PRs 5–8)"
+  },
+  "perplexity:b015": {
+    "status": "draft",
+    "plannedArea": "Pending review — Цены на жильё (общая оценка) (content PRs 5–8)"
+  },
+  "perplexity:b016": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+  },
+  "perplexity:b017": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+  },
+  "perplexity:b018": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+  },
+  "perplexity:b019": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+  },
+  "perplexity:b020": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+  },
+  "perplexity:b021": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+  },
+  "perplexity:b022": {
+    "status": "draft",
+    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+  },
+  "perplexity:b023": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+  },
+  "perplexity:b024": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+  },
+  "perplexity:b025": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+  },
+  "perplexity:b026": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+  },
+  "perplexity:b027": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+  },
+  "perplexity:b028": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+  },
+  "perplexity:b029": {
+    "status": "draft",
+    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+  },
+  "perplexity:b030": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+  },
+  "perplexity:b031": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+  },
+  "perplexity:b032": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+  },
+  "perplexity:b033": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+  },
+  "perplexity:b034": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+  },
+  "perplexity:b035": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+  },
+  "perplexity:b036": {
+    "status": "draft",
+    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+  },
+  "perplexity:b037": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+  },
+  "perplexity:b038": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+  },
+  "perplexity:b039": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+  },
+  "perplexity:b040": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+  },
+  "perplexity:b041": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+  },
+  "perplexity:b042": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+  },
+  "perplexity:b043": {
+    "status": "draft",
+    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+  },
+  "perplexity:b044": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+  },
+  "perplexity:b045": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+  },
+  "perplexity:b046": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+  },
+  "perplexity:b047": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+  },
+  "perplexity:b048": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+  },
+  "perplexity:b049": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+  },
+  "perplexity:b050": {
+    "status": "draft",
+    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+  },
+  "perplexity:b051": {
+    "status": "draft",
+    "plannedArea": "Pending review — Другие удачные базы: Ванн, Киберон, Ренн (content PRs 5–8)"
+  },
+  "perplexity:b052": {
+    "status": "draft",
+    "plannedArea": "Pending review — Сводная сравнительная таблица (content PRs 5–8)"
+  },
+  "perplexity:b053": {
+    "status": "draft",
+    "plannedArea": "Pending review — Рейтинг баз для вашей семьи (content PRs 5–8)"
+  },
+  "perplexity:b054": {
+    "status": "draft",
+    "plannedArea": "Pending review — Рейтинг баз для вашей семьи (content PRs 5–8)"
+  },
+  "perplexity:b055": {
+    "status": "draft",
+    "plannedArea": "Pending review — Маршруты 7–10 дней (content PRs 5–8)"
+  },
+  "perplexity:b056": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+  },
+  "perplexity:b057": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+  },
+  "perplexity:b058": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+  },
+  "perplexity:b059": {
+    "status": "draft",
+    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+  },
+  "perplexity:b060": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+  },
+  "perplexity:b061": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+  },
+  "perplexity:b062": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+  },
+  "perplexity:b063": {
+    "status": "draft",
+    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+  },
+  "perplexity:b064": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+  },
+  "perplexity:b065": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+  },
+  "perplexity:b066": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+  },
+  "perplexity:b067": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+  },
+  "perplexity:b068": {
+    "status": "draft",
+    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+  }
+}
