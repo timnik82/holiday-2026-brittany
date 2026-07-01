@@ -16,7 +16,7 @@ export interface SourceBlock {
   headingPath: string[];
   /** The underlying mdast node type (paragraph, list, table, code, html, blockquote). */
   nodeType: string;
-  /** The original Markdown source for this block, unmodified. */
+  /** Original Markdown content, with line endings normalized to repository LF. */
   markdown: string;
   /** 1-indexed, inclusive source line range of the block. */
   startLine: number;
@@ -70,8 +70,15 @@ export function extractBlocks(
   slug: string,
   stopHeadings: string[] = []
 ): SourceBlock[] {
-  const tree = unified().use(remarkParse).use(remarkGfm).parse(markdown) as Root;
-  const lines = markdown.split("\n");
+  // Git stores these text sources with LF endings, but Windows may check them
+  // out as CRLF. Extract from the repository-canonical representation so IDs,
+  // line ranges, and generated JSON stay identical on every platform.
+  const normalizedMarkdown = markdown.replace(/\r\n/g, "\n");
+  const tree = unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .parse(normalizedMarkdown) as Root;
+  const lines = normalizedMarkdown.split("\n");
   const stopSet = new Set(stopHeadings.map((h) => h.trim()));
 
   const blocks: SourceBlock[] = [];

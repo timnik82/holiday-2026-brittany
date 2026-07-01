@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  readValidatedJson,
+  resolveSourcePath,
   sourceManifestSchema,
   validateManifestChecksums,
   type SourceManifest,
@@ -11,21 +13,26 @@ const ROOT = path.resolve(process.cwd());
 const MANIFEST_PATH = path.join(ROOT, "research", "source-manifest.json");
 const BLOCKS_DIR = path.join(ROOT, "research", "blocks");
 
-function loadManifest(): SourceManifest {
-  const raw = fs.readFileSync(MANIFEST_PATH, "utf-8");
-  const parsed = sourceManifestSchema.safeParse(JSON.parse(raw));
-  if (!parsed.success) {
-    console.error("research/source-manifest.json is invalid:");
-    for (const issue of parsed.error.issues) {
-      console.error(`  ${issue.path.join(".")}: ${issue.message}`);
+function loadManifest(): SourceManifest | null {
+  const result = readValidatedJson(
+    MANIFEST_PATH,
+    "research/source-manifest.json",
+    sourceManifestSchema
+  );
+  if (!result.data) {
+    for (const error of result.errors) {
+      console.error(error.message);
     }
-    process.exit(1);
+    return null;
   }
-  return parsed.data;
+  return result.data;
 }
 
 function main() {
   const manifest = loadManifest();
+  if (!manifest) {
+    process.exit(1);
+  }
 
   const checksumErrors = validateManifestChecksums(manifest, ROOT);
   if (checksumErrors.length > 0) {
@@ -44,7 +51,11 @@ function main() {
   let blockCount = 0;
 
   for (const entry of manifest) {
-    const markdown = fs.readFileSync(path.join(ROOT, entry.path), "utf-8");
+    // Checksum validation above guarantees every source path is contained and
+    // exists; this guard keeps that invariant explicit at the read site.
+    const sourcePath = resolveSourcePath(entry.path, ROOT);
+    if (!sourcePath) continue;
+    const markdown = fs.readFileSync(sourcePath, "utf-8");
     const blocks = extractBlocks(markdown, entry.slug, entry.stopHeadings);
     blockCount += blocks.length;
 

@@ -58,4 +58,13 @@ describe("extractBlocks", () => {
     const second = extractBlocks(md, "chatgpt");
     expect(second).toEqual(first);
   });
+
+  it("produces identical blocks for LF and CRLF checkouts", () => {
+    const lf = `# Doc\n\nParagraph.\n\n- one\n- two\n`;
+    const crlf = lf.replace(/\n/g, "\r\n");
+
+    expect(extractBlocks(crlf, "chatgpt")).toEqual(
+      extractBlocks(lf, "chatgpt")
+    );
+  });
 });

@@ -24,7 +24,7 @@ The source archive in the private application will expose each unchanged origina
 
 ## Manifest, blocks, and decisions
 
-Every file in this directory must have a matching entry in `research/source-manifest.json` (slug, path, language, SHA-256 checksum, and any `stopHeadings` such as "Works cited" or "Источники" sections to exclude). If a source file changes, recompute its checksum (`shasum -a 256 research/raw/*.md`) and update the manifest entry as a new revision — validation fails otherwise.
+Every file in this directory must have a matching entry in `research/source-manifest.json` (slug, path, language, SHA-256 checksum, and any `stopHeadings` such as "Works cited" or "Источники" sections to exclude). Checksums use the repository's canonical LF line endings so they remain stable on Windows, macOS, and Linux. If a source intentionally changes as a new revision, run `npm run validate:content` and copy its reported actual checksum into the new manifest entry; validation fails until the manifest records it.
 
 Run `npm run build:source-blocks` to deterministically split each source into stable, reviewable blocks under `research/blocks/<slug>.json`. Running it twice must produce no diff. Every extracted block requires an explicit entry in `research/block-decisions.json` (`{ "substantive": true }` or `{ "substantive": false, "reason": "..." }`); `npm run validate:content` enforces both the checksums and the decision coverage.
 

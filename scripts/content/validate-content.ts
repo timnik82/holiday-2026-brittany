@@ -7,6 +7,8 @@ import { extractBlocks, type SourceBlock } from "../../src/lib/content/source-bl
 import {
   sourceManifestSchema,
   blockDecisionsSchema,
+  readValidatedJson,
+  resolveSourcePath,
   validateManifestChecksums,
   validateBlockDecisions,
 } from "../../src/lib/content/source-validation";
@@ -61,28 +63,43 @@ function main() {
   // manifest, and every extracted block must have an explicit decision.
   let blockCount = 0;
   if (fs.existsSync(MANIFEST_PATH)) {
-    const manifest = sourceManifestSchema.parse(
-      JSON.parse(fs.readFileSync(MANIFEST_PATH, "utf-8"))
+    const manifestResult = readValidatedJson(
+      MANIFEST_PATH,
+      "research/source-manifest.json",
+      sourceManifestSchema
     );
+    errors.push(...manifestResult.errors);
 
-    const checksumErrors = validateManifestChecksums(manifest, process.cwd());
-    errors.push(...checksumErrors);
-
-    const decisions = fs.existsSync(DECISIONS_PATH)
-      ? blockDecisionsSchema.parse(
-          JSON.parse(fs.readFileSync(DECISIONS_PATH, "utf-8"))
+    const decisionsResult = fs.existsSync(DECISIONS_PATH)
+      ? readValidatedJson(
+          DECISIONS_PATH,
+          "research/block-decisions.json",
+          blockDecisionsSchema
         )
-      : {};
+      : { data: {}, errors: [] };
+    errors.push(...decisionsResult.errors);
 
-    const allBlocks: SourceBlock[] = [];
-    for (const entry of manifest) {
-      const absPath = path.join(process.cwd(), entry.path);
-      if (!fs.existsSync(absPath)) continue;
-      const markdown = fs.readFileSync(absPath, "utf-8");
-      allBlocks.push(...extractBlocks(markdown, entry.slug, entry.stopHeadings));
+    if (manifestResult.data) {
+      const manifest = manifestResult.data;
+      const checksumErrors = validateManifestChecksums(manifest, process.cwd());
+      errors.push(...checksumErrors);
+
+      const allBlocks: SourceBlock[] = [];
+      for (const entry of manifest) {
+        const absPath = resolveSourcePath(entry.path, process.cwd());
+        if (!absPath || !fs.existsSync(absPath)) continue;
+        const markdown = fs.readFileSync(absPath, "utf-8");
+        allBlocks.push(
+          ...extractBlocks(markdown, entry.slug, entry.stopHeadings)
+        );
+      }
+      blockCount = allBlocks.length;
+      if (decisionsResult.data) {
+        errors.push(
+          ...validateBlockDecisions(allBlocks, decisionsResult.data)
+        );
+      }
     }
-    blockCount = allBlocks.length;
-    errors.push(...validateBlockDecisions(allBlocks, decisions));
   }
 
   if (errors.length > 0) {

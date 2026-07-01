@@ -31,10 +31,87 @@ export interface ValidationError {
   message: string;
 }
 
-/** Compute the SHA-256 hex digest of a file's raw bytes. */
+export interface JsonValidationResult<T> {
+  data: T | null;
+  errors: ValidationError[];
+}
+
+/**
+ * Read and validate a JSON file without allowing JSON or schema failures to
+ * escape as stack traces from command-line validation scripts.
+ */
+export function readValidatedJson<T>(
+  filePath: string,
+  displayPath: string,
+  schema: z.ZodType<T>
+): JsonValidationResult<T> {
+  let raw: string;
+  try {
+    raw = fs.readFileSync(filePath, "utf8");
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    return {
+      data: null,
+      errors: [{ message: `${displayPath}: Could not read file (${detail}).` }],
+    };
+  }
+
+  let value: unknown;
+  try {
+    value = JSON.parse(raw);
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    return {
+      data: null,
+      errors: [{ message: `${displayPath}: Invalid JSON (${detail}).` }],
+    };
+  }
+
+  const parsed = schema.safeParse(value);
+  if (!parsed.success) {
+    return {
+      data: null,
+      errors: parsed.error.issues.map((issue) => ({
+        message: `${displayPath}: ${issue.path.join(".") || "root"} - ${issue.message}`,
+      })),
+    };
+  }
+
+  return { data: parsed.data, errors: [] };
+}
+
+/**
+ * Resolve a manifest source path only when it remains inside research/raw.
+ */
+export function resolveSourcePath(
+  sourcePath: string,
+  cwd: string = process.cwd()
+): string | null {
+  const sourceRoot = path.resolve(cwd, "research", "raw");
+  const resolvedPath = path.resolve(cwd, sourcePath);
+  const relative = path.relative(sourceRoot, resolvedPath);
+
+  if (
+    relative === "" ||
+    relative === ".." ||
+    relative.startsWith(`..${path.sep}`) ||
+    path.isAbsolute(relative)
+  ) {
+    return null;
+  }
+
+  return resolvedPath;
+}
+
+/**
+ * Compute the SHA-256 digest of repository-canonical Markdown text. Git stores
+ * these files with LF endings, while Windows may check them out as CRLF.
+ */
 export function computeSha256(filePath: string): string {
-  const buffer = fs.readFileSync(filePath);
-  return createHash("sha256").update(buffer).digest("hex");
+  const canonicalMarkdown = fs
+    .readFileSync(filePath, "utf8")
+    .replace(/\r\n/g, "\n");
+  return createHash("sha256").update(canonicalMarkdown, "utf8").digest("hex");
 }
 
 /**
@@ -49,7 +126,14 @@ export function validateManifestChecksums(
   const errors: ValidationError[] = [];
 
   for (const entry of manifest) {
-    const absPath = path.join(cwd, entry.path);
+    const absPath = resolveSourcePath(entry.path, cwd);
+    if (!absPath) {
+      errors.push({
+        message: `${entry.path}: Source path for slug "${entry.slug}" must stay within research/raw.`,
+      });
+      continue;
+    }
+
     if (!fs.existsSync(absPath)) {
       errors.push({
         message: `${entry.path}: File referenced by source-manifest.json (slug "${entry.slug}") does not exist.`,
