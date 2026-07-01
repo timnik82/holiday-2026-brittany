@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./SiteShell.module.css";
 
 const PRIMARY_NAV_ITEMS = [
-  { label: "Compare bases", href: "/compare" },
+  { label: "Compare bases", href: "/bases" },
   { label: "Routes", href: "/routes" },
   { label: "Things to do", href: "/things-to-do" },
   { label: "Swimming", href: "/swimming" },

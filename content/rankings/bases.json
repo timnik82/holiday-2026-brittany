@@ -1,0 +1,117 @@
+{
+  "scale": {
+    "minimum": 1,
+    "maximum": 10,
+    "description": "Editorial scores on a shared 1–10 scale for this family's stated priorities. A higher score means a stronger fit; the rationale and evidence remain visible beside every value."
+  },
+  "bases": [
+    {
+      "slug": "saint-malo-dinan",
+      "name": "Saint-Malo / Dinan",
+      "summary": "The most balanced first-trip base, combining coast, medieval history, family attractions, food and unusually workable car-free days.",
+      "bestFor": "A first Brittany trip that needs a bit of everything",
+      "compromises": ["Among the highest accommodation costs", "Tides require planning", "A car still helps for the best day trips"],
+      "carNeed": "optional",
+      "priceBand": "high",
+      "scores": {
+        "climate": { "score": 9, "rationale": "Cool coastal August conditions with rare extreme heat, tempered by wind and tides.", "evidenceRefs": ["evidence:ranking-saint-malo-dinan-climate"] },
+        "nature": { "score": 8, "rationale": "Beaches, tidal islands, cliffs and the Rance estuary offer variety, though less wilderness than the western bases.", "evidenceRefs": ["evidence:ranking-saint-malo-dinan-nature"] },
+        "culture": { "score": 10, "rationale": "Walled Saint-Malo, medieval Dinan, forts and nearby castles form the strongest historical cluster.", "evidenceRefs": ["evidence:ranking-saint-malo-dinan-culture"] },
+        "familyActivities": { "score": 9.5, "rationale": "The aquarium, family beaches, ramparts, forts and short day trips work well for a 9–10-year-old in mixed weather.", "evidenceRefs": ["evidence:ranking-saint-malo-dinan-family-activities"] },
+        "logistics": { "score": 9, "rationale": "Rail access and walkable centres make this the easiest base to use without a car.", "evidenceRefs": ["evidence:ranking-saint-malo-dinan-logistics"] },
+        "accommodation": { "score": 6, "rationale": "The choice is broad, but August prices near the walls and beach are among the highest in the shortlist.", "evidenceRefs": ["evidence:ranking-saint-malo-dinan-accommodation"] },
+        "food": { "score": 9, "rationale": "Seafood, Cancale oysters, markets and abundant crêperies make family meals easy and distinctive.", "evidenceRefs": ["evidence:ranking-saint-malo-dinan-food"] }
+      }
+    },
+    {
+      "slug": "cote-de-granit-rose",
+      "name": "Côte de Granit Rose",
+      "summary": "The strongest nature-first choice: cool air, remarkable coastal scenery and a rare science-and-outdoors mix for children.",
+      "bestFor": "Scenery, short walks, wildlife and science activities",
+      "compromises": ["A car makes the coast much easier", "Less urban history than Saint-Malo", "Cold water and exposed weather"],
+      "carNeed": "recommended",
+      "priceBand": "moderate",
+      "scores": {
+        "climate": { "score": 9.5, "rationale": "One of the coolest coastal choices, with low heat risk and an exposed, breezy feel.", "evidenceRefs": ["evidence:ranking-cote-de-granit-rose-climate"] },
+        "nature": { "score": 10, "rationale": "Pink granite formations, the GR34, beaches, islands and birdlife are the base's defining strength.", "evidenceRefs": ["evidence:ranking-cote-de-granit-rose-nature"] },
+        "culture": { "score": 7, "rationale": "Lannion and coastal heritage add interest, but the area has a thinner city-and-castle layer than eastern Brittany.", "evidenceRefs": ["evidence:ranking-cote-de-granit-rose-culture"] },
+        "familyActivities": { "score": 9, "rationale": "Parc du Radôme, Cité des Télécoms, the planetarium, boats and manageable coastal walks give strong variety.", "evidenceRefs": ["evidence:ranking-cote-de-granit-rose-family-activities"] },
+        "logistics": { "score": 7, "rationale": "Lannion provides a rail anchor, but dispersed beaches and viewpoints are substantially easier by car.", "evidenceRefs": ["evidence:ranking-cote-de-granit-rose-logistics"] },
+        "accommodation": { "score": 7, "rationale": "Usually below Saint-Malo pricing, although sea-view properties become expensive in peak season.", "evidenceRefs": ["evidence:ranking-cote-de-granit-rose-accommodation"] },
+        "food": { "score": 8, "rationale": "Markets, crêperies and seafood are reliable, though less concentrated than in Saint-Malo or Morbihan.", "evidenceRefs": ["evidence:ranking-cote-de-granit-rose-food"] }
+      }
+    },
+    {
+      "slug": "brest-finistere",
+      "name": "Brest / Finistère",
+      "summary": "A cool, good-value western base with excellent science attractions and access to dramatic coast, but less postcard charm.",
+      "bestFor": "Ocean science, cool weather and western day trips",
+      "compromises": ["Less medieval atmosphere", "A car unlocks the best coastal day trips", "Wetter and windier than southern Brittany"],
+      "carNeed": "helpful",
+      "priceBand": "budget",
+      "scores": {
+        "climate": { "score": 10, "rationale": "The most oceanic option, with the shortlist's lowest heat risk but more wind and rain exposure.", "evidenceRefs": ["evidence:ranking-brest-finistere-climate"] },
+        "nature": { "score": 9, "rationale": "It opens the door to wild western coasts, islands, Armorique and Crozon, though many highlights are outside the city.", "evidenceRefs": ["evidence:ranking-brest-finistere-nature"] },
+        "culture": { "score": 6, "rationale": "Maritime heritage is strong, but the rebuilt city offers less medieval character than Saint-Malo or Quimper.", "evidenceRefs": ["evidence:ranking-brest-finistere-culture"] },
+        "familyActivities": { "score": 8.5, "rationale": "Océanopolis, the maritime museum and Capucins provide an excellent all-weather family core.", "evidenceRefs": ["evidence:ranking-brest-finistere-family-activities"] },
+        "logistics": { "score": 8, "rationale": "Brest works without a car in the city and can be a convenient western gateway, but coastal exploration needs one.", "evidenceRefs": ["evidence:ranking-brest-finistere-logistics"] },
+        "accommodation": { "score": 8, "rationale": "City accommodation is generally better value than the famous coastal resorts.", "evidenceRefs": ["evidence:ranking-brest-finistere-accommodation"] },
+        "food": { "score": 7, "rationale": "Seafood and markets are solid, but food is not the main reason the sources recommend Brest.", "evidenceRefs": ["evidence:ranking-brest-finistere-food"] }
+      }
+    },
+    {
+      "slug": "quimper-south-finistere",
+      "name": "Quimper / South Finistère",
+      "summary": "A charming and comparatively affordable cultural base for day trips, with beaches and wild coast reached rather than on the doorstep.",
+      "bestFor": "A walkable historic city with varied coastal day trips",
+      "compromises": ["The city is inland", "A car is recommended for beaches and villages", "Slightly warmer than the north and west"],
+      "carNeed": "recommended",
+      "priceBand": "budget",
+      "scores": {
+        "climate": { "score": 7.5, "rationale": "August remains moderate, but inland Quimper is a little warmer than the exposed western and northern coast.", "evidenceRefs": ["evidence:ranking-quimper-south-finistere-climate"] },
+        "nature": { "score": 7, "rationale": "Excellent coast lies within day-trip range, but nature is not immediately outside the accommodation.", "evidenceRefs": ["evidence:ranking-quimper-south-finistere-nature"] },
+        "culture": { "score": 9, "rationale": "The historic centre, museums, cathedral and nearby art and fishing towns form a strong cultural circuit.", "evidenceRefs": ["evidence:ranking-quimper-south-finistere-culture"] },
+        "familyActivities": { "score": 7, "rationale": "Family museum formats and nearby attractions are good, but require more day-trip planning than the leaders.", "evidenceRefs": ["evidence:ranking-quimper-south-finistere-family-activities"] },
+        "logistics": { "score": 6.5, "rationale": "The city has rail access and is walkable, while the beaches and smaller towns are much easier by car.", "evidenceRefs": ["evidence:ranking-quimper-south-finistere-logistics"] },
+        "accommodation": { "score": 9, "rationale": "The research consistently presents Quimper as one of the more affordable bases.", "evidenceRefs": ["evidence:ranking-quimper-south-finistere-accommodation"] },
+        "food": { "score": 8.5, "rationale": "Markets, crêperies, pastry and cider culture fit a relaxed, walkable city stay.", "evidenceRefs": ["evidence:ranking-quimper-south-finistere-food"] }
+      }
+    },
+    {
+      "slug": "vannes-carnac-morbihan",
+      "name": "Vannes / Carnac / Morbihan",
+      "summary": "The easiest relaxed-family rhythm, with sheltered water, islands and megaliths, traded against warmer weather and peak-season pressure.",
+      "bestFor": "Gentler swimming, boats, islands and a slower pace",
+      "compromises": ["Warmest option in the shortlist", "Busy and costly in August", "Carnac is easier with a car"],
+      "carNeed": "helpful",
+      "priceBand": "high",
+      "scores": {
+        "climate": { "score": 7.5, "rationale": "Morbihan is warmer and drier, pleasant for water time but less aligned with the family's anti-heat priority.", "evidenceRefs": ["evidence:ranking-vannes-carnac-morbihan-climate"] },
+        "nature": { "score": 8.5, "rationale": "The gulf, islands, sheltered bays and nearby peninsula create varied, accessible coastal nature.", "evidenceRefs": ["evidence:ranking-vannes-carnac-morbihan-nature"] },
+        "culture": { "score": 8.5, "rationale": "Carnac's megaliths, Vannes and Suscinio give the relaxed beach area substantial historical depth.", "evidenceRefs": ["evidence:ranking-vannes-carnac-morbihan-culture"] },
+        "familyActivities": { "score": 9.5, "rationale": "Sheltered beaches, islands, boats, Branféré and adventure activities suit a child particularly well.", "evidenceRefs": ["evidence:ranking-vannes-carnac-morbihan-family-activities"] },
+        "logistics": { "score": 8.5, "rationale": "Vannes is easy to reach and usable without a car; spreading the stay toward Carnac and the gulf benefits from one.", "evidenceRefs": ["evidence:ranking-vannes-carnac-morbihan-logistics"] },
+        "accommodation": { "score": 6.5, "rationale": "Popular coastal locations carry high August prices and availability pressure.", "evidenceRefs": ["evidence:ranking-vannes-carnac-morbihan-accommodation"] },
+        "food": { "score": 9.5, "rationale": "Markets, oysters, seafood and crêperies are a major part of the area's family appeal.", "evidenceRefs": ["evidence:ranking-vannes-carnac-morbihan-food"] }
+      }
+    },
+    {
+      "slug": "crozon-douarnenez",
+      "name": "Crozon / Douarnenez",
+      "summary": "The wildest landscape and freshest coastal feel, best for a family happy to drive and accept fewer easy fallbacks.",
+      "bestFor": "Wild coast, geology, viewpoints and an outdoors-led stay",
+      "compromises": ["A car is effectively essential", "Exposed wind and changeable weather", "Fewer all-weather family anchors"],
+      "carNeed": "essential",
+      "priceBand": "moderate",
+      "scores": {
+        "climate": { "score": 9.5, "rationale": "Ocean exposure keeps heat risk very low, with wind and rain as the corresponding trade-off.", "evidenceRefs": ["evidence:ranking-crozon-douarnenez-climate"] },
+        "nature": { "score": 10, "rationale": "Headlands, cliffs, coves and geology make this the shortlist's most dramatic wilderness base.", "evidenceRefs": ["evidence:ranking-crozon-douarnenez-nature"] },
+        "culture": { "score": 6.5, "rationale": "Maritime and fishing heritage adds interest, but culture is secondary to landscape.", "evidenceRefs": ["evidence:ranking-crozon-douarnenez-culture"] },
+        "familyActivities": { "score": 7.5, "rationale": "Beaches, boats and outdoor exploration are strong in good weather, with fewer rainy-day anchors.", "evidenceRefs": ["evidence:ranking-crozon-douarnenez-family-activities"] },
+        "logistics": { "score": 4.5, "rationale": "Dispersed sights and limited alternatives make a car effectively essential.", "evidenceRefs": ["evidence:ranking-crozon-douarnenez-logistics"] },
+        "accommodation": { "score": 7.5, "rationale": "Prices sit between Brest and the most expensive coastal resorts, with fewer urban choices.", "evidenceRefs": ["evidence:ranking-crozon-douarnenez-accommodation"] },
+        "food": { "score": 7.5, "rationale": "Fishing-port food and seafood are attractive, though the choice is less concentrated than in larger bases.", "evidenceRefs": ["evidence:ranking-crozon-douarnenez-food"] }
+      }
+    }
+  ]
+}
