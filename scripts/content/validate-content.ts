@@ -15,13 +15,16 @@ import {
 } from "../../src/lib/content/source-validation";
 import { evidenceRegistrySchema } from "../../src/lib/content/evidence";
 import { coverageSchema, validateCoverage } from "../../src/lib/content/coverage";
+import { baseRankingsSchema } from "../../src/lib/ranking/schema";
+import { RANKING_DIMENSIONS } from "../../src/lib/ranking/weights";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "content");
 const RESEARCH_ROOT = path.resolve(process.cwd(), "research");
 const MANIFEST_PATH = path.join(RESEARCH_ROOT, "source-manifest.json");
 const DECISIONS_PATH = path.join(RESEARCH_ROOT, "block-decisions.json");
-const EVIDENCE_PATH = path.join(RESEARCH_ROOT, "evidence", "registry.json");
+const EVIDENCE_DIR = path.join(RESEARCH_ROOT, "evidence");
 const COVERAGE_PATH = path.join(RESEARCH_ROOT, "coverage.json");
+const RANKINGS_PATH = path.resolve(process.cwd(), "content", "rankings", "bases.json");
 
 interface ValidationError {
   /** Fully-formatted, print-ready message (file path included exactly once). */
@@ -105,14 +108,35 @@ function main() {
         );
 
         // Validate evidence registry and coverage completeness.
-        const evidenceResult = fs.existsSync(EVIDENCE_PATH)
-          ? readValidatedJson(
-              EVIDENCE_PATH,
-              "research/evidence/registry.json",
-              evidenceRegistrySchema
-            )
-          : { data: [] as z.infer<typeof evidenceRegistrySchema>, errors: [] };
-        errors.push(...evidenceResult.errors);
+        const evidenceFiles = fs.existsSync(EVIDENCE_DIR)
+          ? fs.readdirSync(EVIDENCE_DIR).filter((name) => name.endsWith(".json")).sort()
+          : [];
+        const evidenceRecords: z.infer<typeof evidenceRegistrySchema> = [];
+        let evidenceFilesValid = true;
+        for (const fileName of evidenceFiles) {
+          const displayPath = `research/evidence/${fileName}`;
+          const evidenceResult = readValidatedJson(
+            path.join(EVIDENCE_DIR, fileName),
+            displayPath,
+            evidenceRegistrySchema
+          );
+          errors.push(...evidenceResult.errors);
+          if (evidenceResult.data) {
+            evidenceRecords.push(...evidenceResult.data);
+          } else {
+            evidenceFilesValid = false;
+          }
+        }
+
+        const evidenceIds = new Set<string>();
+        for (const evidence of evidenceRecords) {
+          if (evidenceIds.has(evidence.id)) {
+            errors.push({
+              message: `research/evidence: Duplicate evidence id "${evidence.id}".`,
+            });
+          }
+          evidenceIds.add(evidence.id);
+        }
 
         const coverageResult = fs.existsSync(COVERAGE_PATH)
           ? readValidatedJson(
@@ -127,23 +151,43 @@ function main() {
           .filter((b) => decisionsResult.data![b.id]?.substantive === true)
           .map((b) => b.id);
 
-        if (evidenceResult.data) {
+        if (evidenceFilesValid) {
           const knownBlockIds = new Set(allBlocks.map((b) => b.id));
-          for (const evidence of evidenceResult.data) {
+          for (const evidence of evidenceRecords) {
             for (const ref of evidence.sourceBlockRefs) {
               if (!knownBlockIds.has(ref)) {
                 errors.push({
-                  message: `research/evidence/registry.json: ${evidence.id} references unknown source block "${ref}".`,
+                  message: `research/evidence: ${evidence.id} references unknown source block "${ref}".`,
                 });
               }
             }
           }
         }
 
+        if (fs.existsSync(RANKINGS_PATH)) {
+          const rankingsResult = readValidatedJson(
+            RANKINGS_PATH,
+            "content/rankings/bases.json",
+            baseRankingsSchema
+          );
+          errors.push(...rankingsResult.errors);
+          if (rankingsResult.data && evidenceFilesValid) {
+            for (const base of rankingsResult.data.bases) {
+              for (const dimension of RANKING_DIMENSIONS) {
+                for (const evidenceRef of base.scores[dimension].evidenceRefs) {
+                  if (!evidenceIds.has(evidenceRef)) {
+                    errors.push({
+                      message: `content/rankings/bases.json: ${base.slug}.${dimension} references unknown evidence id "${evidenceRef}".`,
+                    });
+                  }
+                }
+              }
+            }
+          }
+        }
+
         if (coverageResult.data) {
-          const knownEvidenceIds = evidenceResult.data
-            ? new Set(evidenceResult.data.map((e) => e.id))
-            : undefined;
+          const knownEvidenceIds = evidenceFilesValid ? evidenceIds : undefined;
           errors.push(
             ...validateCoverage(
               substantiveBlockIds,

@@ -12,7 +12,7 @@ import type {
 const RESEARCH_ROOT = path.resolve(process.cwd(), "research");
 const MANIFEST_PATH = path.join(RESEARCH_ROOT, "source-manifest.json");
 const BLOCKS_DIR = path.join(RESEARCH_ROOT, "blocks");
-const EVIDENCE_PATH = path.join(RESEARCH_ROOT, "evidence", "registry.json");
+const EVIDENCE_DIR = path.join(RESEARCH_ROOT, "evidence");
 const COVERAGE_PATH = path.join(RESEARCH_ROOT, "coverage.json");
 const DECISIONS_PATH = path.join(RESEARCH_ROOT, "block-decisions.json");
 
@@ -82,7 +82,16 @@ export function loadSourceEntry(
  * Load the English evidence registry.
  */
 export function loadEvidenceRegistry(): EvidenceRecord[] {
-  return readJson<EvidenceRecord[]>(EVIDENCE_PATH) ?? [];
+  if (!fs.existsSync(EVIDENCE_DIR)) return [];
+
+  return fs
+    .readdirSync(EVIDENCE_DIR)
+    .filter((fileName) => fileName.endsWith(".json"))
+    .sort()
+    .flatMap(
+      (fileName) =>
+        readJson<EvidenceRecord[]>(path.join(EVIDENCE_DIR, fileName)) ?? []
+    );
 }
 
 /**

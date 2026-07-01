@@ -1,0 +1,225 @@
+.page {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  color: #123c54;
+}
+
+.eyebrow {
+  color: #9a4f2c;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.methodNote,
+.sourceDisagreement {
+  border-left: 0.3rem solid #d8794b;
+  background: #fff7ef;
+  padding: 1rem 1.25rem;
+}
+
+.weightList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.weightList li {
+  border: 1px solid #cad9df;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.88rem;
+}
+
+.sourceDisagreement {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.sourceDisagreement ul {
+  padding-left: 1.25rem;
+}
+
+.mobileCards {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.baseCard {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.3rem 1.25rem rgb(18 60 84 / 7%);
+}
+
+.cardHeader {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.cardHeader h2 {
+  color: #123c54;
+  line-height: 1.2;
+}
+
+.rank,
+.tableRank {
+  color: #9a4f2c;
+  font-weight: 800;
+}
+
+.totalScore {
+  color: #41616f;
+  font-size: 0.9rem;
+}
+
+.bestFor {
+  color: #244d5f;
+}
+
+.scoreBreakdown {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.scoreItem {
+  display: grid;
+  gap: 0.18rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid #e1e9ec;
+}
+
+.scoreItem dt {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  color: #244d5f;
+  font-weight: 700;
+}
+
+.scoreItem dd {
+  display: grid;
+  gap: 0.25rem;
+  color: #3f555e;
+  font-size: 0.9rem;
+}
+
+.scoreValue {
+  white-space: nowrap;
+  color: #9a4f2c;
+}
+
+.evidenceLinks {
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.practicalDetails {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+}
+
+.practicalDetails ul {
+  padding-left: 1.2rem;
+}
+
+.desktopComparison {
+  display: none;
+}
+
+@media (min-width: 58rem) {
+  .mobileCards {
+    display: none;
+  }
+
+  .desktopComparison {
+    display: block;
+  }
+
+  .comparisonTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+
+  .comparisonTable caption {
+    text-align: left;
+    padding-bottom: 0.6rem;
+    color: #41616f;
+  }
+
+  .comparisonTable th,
+  .comparisonTable td {
+    vertical-align: top;
+    padding: 0.8rem 0.65rem;
+    border-bottom: 1px solid #cad9df;
+    overflow-wrap: anywhere;
+  }
+
+  .comparisonTable thead th {
+    color: #fff;
+    background: #1a5276;
+    text-align: left;
+  }
+
+  .comparisonTable thead th:first-child { width: 14%; }
+  .comparisonTable thead th:nth-child(2) { width: 12%; }
+  .comparisonTable thead th:nth-child(3) { width: 20%; }
+  .comparisonTable thead th:nth-child(4) { width: 34%; }
+  .comparisonTable thead th:nth-child(5) { width: 20%; }
+
+  .comparisonTable tbody th {
+    color: #123c54;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .comparisonTable tbody tr:nth-child(even) {
+    background: #f3f7f8;
+  }
+
+  .comparisonTable td > span,
+  .comparisonTable td > strong {
+    display: block;
+  }
+
+  .tableRank {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .tableTotal {
+    color: #9a4f2c;
+    font-size: 1.05rem;
+  }
+
+  .scoreItem {
+    grid-template-columns: minmax(7.5rem, 0.8fr) 1.4fr;
+    gap: 0.45rem;
+  }
+
+  .scoreItem dd {
+    font-size: 0.78rem;
+  }
+}
