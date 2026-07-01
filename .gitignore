@@ -12,7 +12,7 @@ node_modules/
 .next/
 out/
 dist/
-coverage/
+/coverage/
 .vercel/
 next-env.d.ts
 tsconfig.tsbuildinfo

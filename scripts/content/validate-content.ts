@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { z } from "zod";
 import { listContentFiles, readContentFile } from "../../src/lib/content/files";
 import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY } from "../../src/lib/content/schemas";
 import { validateParsedContent } from "../../src/lib/content/parse";
@@ -12,11 +13,15 @@ import {
   validateManifestChecksums,
   validateBlockDecisions,
 } from "../../src/lib/content/source-validation";
+import { evidenceRegistrySchema } from "../../src/lib/content/evidence";
+import { coverageSchema, validateCoverage } from "../../src/lib/content/coverage";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "content");
 const RESEARCH_ROOT = path.resolve(process.cwd(), "research");
 const MANIFEST_PATH = path.join(RESEARCH_ROOT, "source-manifest.json");
 const DECISIONS_PATH = path.join(RESEARCH_ROOT, "block-decisions.json");
+const EVIDENCE_PATH = path.join(RESEARCH_ROOT, "evidence", "registry.json");
+const COVERAGE_PATH = path.join(RESEARCH_ROOT, "coverage.json");
 
 interface ValidationError {
   /** Fully-formatted, print-ready message (file path included exactly once). */
@@ -98,6 +103,55 @@ function main() {
         errors.push(
           ...validateBlockDecisions(allBlocks, decisionsResult.data)
         );
+
+        // Validate evidence registry and coverage completeness.
+        const evidenceResult = fs.existsSync(EVIDENCE_PATH)
+          ? readValidatedJson(
+              EVIDENCE_PATH,
+              "research/evidence/registry.json",
+              evidenceRegistrySchema
+            )
+          : { data: [] as z.infer<typeof evidenceRegistrySchema>, errors: [] };
+        errors.push(...evidenceResult.errors);
+
+        const coverageResult = fs.existsSync(COVERAGE_PATH)
+          ? readValidatedJson(
+              COVERAGE_PATH,
+              "research/coverage.json",
+              coverageSchema
+            )
+          : { data: {} as z.infer<typeof coverageSchema>, errors: [] };
+        errors.push(...coverageResult.errors);
+
+        const substantiveBlockIds = allBlocks
+          .filter((b) => decisionsResult.data![b.id]?.substantive === true)
+          .map((b) => b.id);
+
+        if (evidenceResult.data) {
+          const knownBlockIds = new Set(allBlocks.map((b) => b.id));
+          for (const evidence of evidenceResult.data) {
+            for (const ref of evidence.sourceBlockRefs) {
+              if (!knownBlockIds.has(ref)) {
+                errors.push({
+                  message: `research/evidence/registry.json: ${evidence.id} references unknown source block "${ref}".`,
+                });
+              }
+            }
+          }
+        }
+
+        if (coverageResult.data) {
+          const knownEvidenceIds = evidenceResult.data
+            ? new Set(evidenceResult.data.map((e) => e.id))
+            : undefined;
+          errors.push(
+            ...validateCoverage(
+              substantiveBlockIds,
+              coverageResult.data,
+              knownEvidenceIds
+            )
+          );
+        }
       }
     }
   }

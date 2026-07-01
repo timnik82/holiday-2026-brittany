@@ -1,0 +1,69 @@
+[
+  {
+    "id": "evidence:brittany-august-air-temperature",
+    "text": "In August, Brittany's coastal daytime temperatures typically range from 20 to 24 degrees Celsius, with cool nights of 12 to 14 degrees Celsius. The Atlantic keeps heat waves rare, making it one of France's most heat-free coastal regions.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "chatgpt:b001",
+      "perplexity:b005",
+      "gemini-britany:b002",
+      "operaai:b001"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Coastal readings; inland areas can be marginally warmer by day."
+    ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:sea-temperature-narrow",
+    "text": "August sea temperatures along the Brittany coast are approximately 17 to 18.5 degrees Celsius, making swimming refreshing rather than warm.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b001"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "ChatGPT gives a narrower range than the other three sources."
+    ],
+    "timeSensitive": false,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:sea-temperature-wide",
+    "text": "August sea temperatures along the Brittany coast usually range 16 to 19 degrees Celsius, with about 18.5 degrees Celsius at Saint-Malo and up to roughly 19 degrees Celsius in the warmer Morbihan Gulf. Swimming is described as refreshing and short rather than prolonged.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "gemini-britany:b002",
+      "perplexity:b007",
+      "operaai:b001"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Gemini, Perplexity, and OperaAI agree on a 16 to 19 degree range."
+    ],
+    "timeSensitive": false,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:saint-malo-best-overall-base",
+    "text": "Saint-Malo and Dinan together form the strongest all-round base for a family that wants history, tidal forts, medieval streets, and family beaches in equal measure. The combination is workable without a rental car thanks to rail links.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b003", "chatgpt:b009"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "ChatGPT ranks it as the most balanced base overall."
+    ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:nantes-primary-gateway-from-portugal",
+    "text": "Nantes is the primary gateway into Brittany from Portugal, with seasonal direct flights from Lisbon and Porto and fast onward trains to Vannes, Saint-Malo, Quimper, and Lannion. Brest offers a direct Porto summer flight, and Rennes suits transfer-based itineraries around Saint-Malo and Dinan.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b002", "gemini-britany:b034", "operaai:b001"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Flight schedules are seasonal and must be re-checked before booking."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  }
+]
