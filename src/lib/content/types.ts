@@ -1,3 +1,5 @@
+import type { PageFrontmatter } from "./schemas";
+
 export interface ParagraphRecord {
   /** Unique paragraph identifier from the metadata comment */
   id: string;
@@ -23,7 +25,7 @@ export interface ContentPage {
   title: string;
   summary: string;
   updatedAt: string;
-  status: string;
+  status: PageFrontmatter["status"];
   content: string;
   paragraphs: ParagraphRecord[];
 }

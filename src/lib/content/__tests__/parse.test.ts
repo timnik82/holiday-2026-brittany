@@ -153,4 +153,16 @@ describe("validateParsedContent", () => {
     const errors = validateParsedContent(md, "test.md");
     expect(errors.some((e) => e.message.includes("exceeds"))).toBe(true);
   });
+
+  it("flags a malformed paragraph comment (e.g. single quotes)", () => {
+    const md = `<!-- paragraph id='bad' sources='' -->\nSome text.`;
+    const errors = validateParsedContent(md, "test.md");
+    expect(errors.some((e) => e.message.includes("Malformed"))).toBe(true);
+  });
+
+  it("does not flag unrelated HTML comments", () => {
+    const md = `<!-- just a regular comment -->\nSome text.`;
+    const errors = validateParsedContent(md, "test.md");
+    expect(errors).toHaveLength(0);
+  });
 });

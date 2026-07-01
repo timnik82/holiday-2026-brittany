@@ -1,38 +1,52 @@
 import path from "node:path";
 import { readContentFile, listContentFiles } from "./files";
-import { pageFrontmatterSchema } from "./schemas";
+import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY } from "./schemas";
 import { parseContent } from "./parse";
 import type { ContentPage } from "./types";
-import type { ParsedContent } from "./types";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "content");
+const CATEGORIES = ["plan", "bases", "routes", "things-to-do", "practical"];
 
 export interface RegistryEntry {
   page: ContentPage;
   category: string;
 }
 
+let cachedEntries: RegistryEntry[] | null = null;
+
 /**
- * Load all content pages from the content directory.
+ * Load all content pages from the content directory. Validates each file's
+ * frontmatter against its category-specific schema (matching the CLI
+ * validator) and skips files that fail validation or parsing, logging a
+ * warning so missing pages are noticed instead of silently disappearing.
+ *
+ * Results are cached in production to avoid re-reading and re-parsing every
+ * content file on each call (this is invoked by both `getContentPage` and
+ * `getStaticContentParams`). Development builds always re-read from disk so
+ * content edits are picked up without a restart.
  */
 export function loadContentPages(): RegistryEntry[] {
-  const entries: RegistryEntry[] = [];
-  const categories = ["plan", "bases", "routes", "things-to-do", "practical"];
+  if (cachedEntries && process.env.NODE_ENV === "production") {
+    return cachedEntries;
+  }
 
-  for (const category of categories) {
+  const entries: RegistryEntry[] = [];
+
+  for (const category of CATEGORIES) {
     const dir = path.join(CONTENT_ROOT, category);
     const files = listContentFiles(dir);
 
     for (const filePath of files) {
       const { frontmatter, body } = readContentFile(filePath);
 
-      const parsed = pageFrontmatterSchema.safeParse(frontmatter);
-      if (!parsed.success) continue;
+      const schema = SCHEMA_BY_CATEGORY[category] ?? pageFrontmatterSchema;
+      const parsed = schema.safeParse(frontmatter);
+      if (!parsed.success) {
+        console.warn(`Warning: Failed to parse frontmatter for ${filePath}. Skipping.`);
+        continue;
+      }
 
-      const result = parseContent(body);
-      if ("message" in result) continue;
-
-      const content = result as ParsedContent;
+      const content = parseContent(body);
 
       entries.push({
         category,
@@ -49,6 +63,7 @@ export function loadContentPages(): RegistryEntry[] {
     }
   }
 
+  cachedEntries = entries;
   return entries;
 }
 
@@ -63,8 +78,16 @@ export function getStaticContentParams(): { slug: string; category: string }[] {
 }
 
 /**
- * Find a specific content page by slug.
+ * Find a specific content page by slug. If `category` is provided, the
+ * lookup is scoped to that category so that two categories sharing the same
+ * slug can't return the wrong page; otherwise the first matching slug across
+ * all categories is returned.
  */
-export function getContentPage(slug: string): RegistryEntry | undefined {
-  return loadContentPages().find((e) => e.page.slug === slug);
+export function getContentPage(
+  slug: string,
+  category?: string
+): RegistryEntry | undefined {
+  return loadContentPages().find(
+    (e) => e.page.slug === slug && (category == null || e.category === category)
+  );
 }
