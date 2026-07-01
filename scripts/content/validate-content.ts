@@ -123,15 +123,12 @@ function main() {
           : { data: {} as z.infer<typeof coverageSchema>, errors: [] };
         errors.push(...coverageResult.errors);
 
-        if (evidenceResult.data && coverageResult.data) {
-          const substantiveBlockIds = allBlocks
-            .filter((b) => decisionsResult.data![b.id]?.substantive)
-            .map((b) => b.id);
-          const knownBlockIds = new Set(allBlocks.map((b) => b.id));
-          const knownEvidenceIds = new Set(
-            evidenceResult.data.map((e) => e.id)
-          );
+        const substantiveBlockIds = allBlocks
+          .filter((b) => decisionsResult.data![b.id]?.substantive === true)
+          .map((b) => b.id);
 
+        if (evidenceResult.data) {
+          const knownBlockIds = new Set(allBlocks.map((b) => b.id));
           for (const evidence of evidenceResult.data) {
             for (const ref of evidence.sourceBlockRefs) {
               if (!knownBlockIds.has(ref)) {
@@ -141,7 +138,12 @@ function main() {
               }
             }
           }
+        }
 
+        if (coverageResult.data) {
+          const knownEvidenceIds = evidenceResult.data
+            ? new Set(evidenceResult.data.map((e) => e.id))
+            : undefined;
           errors.push(
             ...validateCoverage(
               substantiveBlockIds,

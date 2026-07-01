@@ -47,8 +47,8 @@ export function CoverageTable({ rows }: { rows: CoverageRow[] }) {
       </thead>
       <tbody>
         {rows.map((row) => (
-          <tr key={row.blockId}>
-            <td className={styles.coverageTableBlock}>
+          <tr key={row.blockId} id={`block-${row.blockId}`}>
+            <th scope="row" className={styles.coverageTableBlock}>
               <Link href={`/sources/${row.slug}#block-${row.blockId}`}>
                 {row.blockId}
               </Link>
@@ -57,7 +57,7 @@ export function CoverageTable({ rows }: { rows: CoverageRow[] }) {
                   {row.headingPath[row.headingPath.length - 1]}
                 </span>
               )}
-            </td>
+            </th>
             <td>
               <span className={`${styles.coverageTableBadge} ${BADGE_CLASSES[row.outcome.status]}`}>
                 {OUTCOME_LABELS[row.outcome.status]}

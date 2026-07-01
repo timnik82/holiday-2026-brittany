@@ -145,6 +145,10 @@
   color: #555;
 }
 
+.coverageTableWrap {
+  overflow-x: auto;
+}
+
 /* Evidence card */
 .evidenceCard {
   border: 1px solid #e0e0e0;
@@ -232,6 +236,11 @@
   padding: 0.6rem 0.5rem;
   border-bottom: 1px solid #eee;
   vertical-align: top;
+}
+
+.coverageTable tbody th {
+  vertical-align: top;
+  font-weight: normal;
 }
 
 .coverageTableBlock {

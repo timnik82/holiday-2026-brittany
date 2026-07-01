@@ -75,7 +75,7 @@ function outcomeEvidenceIds(outcome: CoverageOutcome): string[] {
 export function validateCoverage(
   substantiveBlockIds: string[],
   coverage: Coverage,
-  knownEvidenceIds: Set<string>
+  knownEvidenceIds?: Set<string>
 ): CoverageError[] {
   const errors: CoverageError[] = [];
   const substantiveSet = new Set(substantiveBlockIds);
@@ -96,12 +96,14 @@ export function validateCoverage(
     }
   }
 
-  for (const [blockId, outcome] of Object.entries(coverage)) {
-    for (const evidenceId of outcomeEvidenceIds(outcome)) {
-      if (!knownEvidenceIds.has(evidenceId)) {
-        errors.push({
-          message: `${blockId}: Coverage references unknown evidence id "${evidenceId}".`,
-        });
+  if (knownEvidenceIds) {
+    for (const [blockId, outcome] of Object.entries(coverage)) {
+      for (const evidenceId of outcomeEvidenceIds(outcome)) {
+        if (!knownEvidenceIds.has(evidenceId)) {
+          errors.push({
+            message: `${blockId}: Coverage references unknown evidence id "${evidenceId}".`,
+          });
+        }
       }
     }
   }
