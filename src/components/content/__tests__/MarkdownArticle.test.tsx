@@ -56,4 +56,29 @@ describe("MarkdownArticle heading anchors", () => {
     expect(container.querySelector("h3")?.getAttribute("id")).toBe("b");
     expect(container.querySelector("h4")?.getAttribute("id")).toBe("c");
   });
+
+  it("de-duplicates ids for repeated headings across levels", () => {
+    const { container } = render(
+      <MarkdownArticle
+        content={"## Overview\n## Overview\n### Overview"}
+        paragraphs={[]}
+        showToc={false}
+      />
+    );
+    const headings = container.querySelectorAll("h2, h3");
+    const ids = Array.from(headings).map((h) => h.getAttribute("id"));
+    expect(ids).toEqual(["overview", "overview-2", "overview-3"]);
+  });
+
+  it("generates a non-empty id for an image-only heading using alt text", () => {
+    const { container } = render(
+      <MarkdownArticle
+        content="## ![Alt text](https://example.com/icon.png)"
+        paragraphs={[]}
+        showToc={false}
+      />
+    );
+    const h2 = container.querySelector("h2");
+    expect(h2?.getAttribute("id")).toBe("alt-text");
+  });
 });

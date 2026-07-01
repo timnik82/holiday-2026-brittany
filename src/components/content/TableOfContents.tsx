@@ -1,5 +1,5 @@
 import React from "react";
-import { slugify, stripInlineMarkdown } from "@/lib/content/slug";
+import { createSlugger, stripInlineMarkdown } from "@/lib/content/slug";
 
 interface TocItem {
   id: string;
@@ -24,8 +24,8 @@ export function TableOfContents({ markdown }: TableOfContentsProps) {
     <nav aria-label="Table of contents" className="toc">
       <h2 className="toc-title">Contents</h2>
       <ol className="toc-list">
-        {headings.map((h) => (
-          <li key={h.id} className={`toc-item toc-level-${h.level}`}>
+        {headings.map((h, index) => (
+          <li key={`${index}-${h.id}`} className={`toc-item toc-level-${h.level}`}>
             <a href={`#${h.id}`}>{h.text}</a>
           </li>
         ))}
@@ -35,10 +35,12 @@ export function TableOfContents({ markdown }: TableOfContentsProps) {
 }
 
 function extractHeadings(markdown: string): TocItem[] {
-  const headingRe = /^(#{2,4})\s+(.+)$/;
+  // CommonMark allows up to three leading spaces before an ATX heading marker.
+  const headingRe = /^ {0,3}(#{2,4})\s+(.+)$/;
   // Matches the opening fence of a fenced code block: ``` or ~~~ (3+ chars).
   const fenceRe = /^(`{3,}|~{3,})/;
   const items: TocItem[] = [];
+  const nextId = createSlugger();
 
   const lines = markdown.split("\n");
   let inFencedCode = false;
@@ -67,7 +69,7 @@ function extractHeadings(markdown: string): TocItem[] {
 
     const level = match[1].length;
     const text = stripInlineMarkdown(match[2]);
-    const id = slugify(text);
+    const id = nextId(text);
     items.push({ id, text, level });
   }
 

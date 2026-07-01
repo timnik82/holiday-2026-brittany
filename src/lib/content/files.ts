@@ -23,7 +23,7 @@ export function readContentFile(filePath: string): RawContentFile {
 export function listContentFiles(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
   return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith(".md"))
-    .map((f) => path.join(dir, f));
+    .readdirSync(dir, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
+    .map((entry) => path.join(dir, entry.name));
 }

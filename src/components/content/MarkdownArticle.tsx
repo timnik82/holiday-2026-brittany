@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { CitationLink } from "./CitationLink";
 import { TableOfContents } from "./TableOfContents";
-import { slugify } from "@/lib/content/slug";
+import { createSlugger } from "@/lib/content/slug";
 import type { ParagraphRecord } from "@/lib/content/types";
 
 interface MarkdownArticleProps {
@@ -31,6 +31,10 @@ export function MarkdownArticle({
     }
   }
 
+  // Shared across all heading levels (in render/document order) so repeated
+  // headings get unique, de-duplicated anchor ids instead of colliding.
+  const nextId = createSlugger();
+
   return (
     <article className="markdown-article">
       {showToc && <TableOfContents markdown={content} />}
@@ -39,7 +43,7 @@ export function MarkdownArticle({
           remarkPlugins={[remarkGfm]}
           components={{
             h2: ({ children, ...props }) => {
-              const id = slugify(extractText(children));
+              const id = nextId(extractText(children));
               return (
                 <h2 id={id} {...props}>
                   {children}
@@ -47,7 +51,7 @@ export function MarkdownArticle({
               );
             },
             h3: ({ children, ...props }) => {
-              const id = slugify(extractText(children));
+              const id = nextId(extractText(children));
               return (
                 <h3 id={id} {...props}>
                   {children}
@@ -55,7 +59,7 @@ export function MarkdownArticle({
               );
             },
             h4: ({ children, ...props }) => {
-              const id = slugify(extractText(children));
+              const id = nextId(extractText(children));
               return (
                 <h4 id={id} {...props}>
                   {children}
@@ -90,7 +94,8 @@ export function MarkdownArticle({
  * Recursively extract plain text from React children so that headings rendered
  * with bold, italic, code, or link formatting produce a stable anchor id.
  * `String(children)` returns "[object Object]" for nested elements, which would
- * otherwise break the generated anchor links.
+ * otherwise break the generated anchor links. Elements like `<img>` have no
+ * `children`, so their `alt` (or `title`) text prop is used instead.
  */
 function extractText(children: React.ReactNode): string {
   if (children == null || children === false || children === true) return "";
@@ -101,9 +106,14 @@ function extractText(children: React.ReactNode): string {
     return children.map(extractText).join("");
   }
   if (React.isValidElement(children)) {
-    return extractText(
-      (children.props as { children?: React.ReactNode }).children
-    );
+    const props = children.props as {
+      children?: React.ReactNode;
+      alt?: string;
+      title?: string;
+    };
+    const nested = extractText(props.children);
+    if (nested) return nested;
+    return props.alt ?? props.title ?? "";
   }
   return "";
 }

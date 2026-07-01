@@ -35,3 +35,17 @@ export type BaseFrontmatter = z.infer<typeof baseFrontmatterSchema>;
 export type RouteFrontmatter = z.infer<typeof routeFrontmatterSchema>;
 export type ThingsToDoFrontmatter = z.infer<typeof thingsToDoFrontmatterSchema>;
 export type PracticalFrontmatter = z.infer<typeof practicalFrontmatterSchema>;
+
+/**
+ * Per-category frontmatter schema. Each content type validates its specific
+ * extended fields (region for bases, mode for routes, etc.) instead of
+ * falling back to the generic page schema. Shared between the CLI validator
+ * and the runtime registry loader so both enforce the same rules.
+ */
+export const SCHEMA_BY_CATEGORY: Record<string, z.ZodType<PageFrontmatter>> = {
+  plan: practicalFrontmatterSchema,
+  bases: baseFrontmatterSchema,
+  routes: routeFrontmatterSchema,
+  "things-to-do": thingsToDoFrontmatterSchema,
+  practical: practicalFrontmatterSchema,
+};

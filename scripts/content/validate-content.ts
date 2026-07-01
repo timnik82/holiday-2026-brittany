@@ -1,33 +1,13 @@
 import path from "node:path";
 import { listContentFiles, readContentFile } from "../../src/lib/content/files";
-import {
-  pageFrontmatterSchema,
-  baseFrontmatterSchema,
-  routeFrontmatterSchema,
-  thingsToDoFrontmatterSchema,
-  practicalFrontmatterSchema,
-} from "../../src/lib/content/schemas";
+import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY } from "../../src/lib/content/schemas";
 import { validateParsedContent } from "../../src/lib/content/parse";
-import type { z } from "zod";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "content");
 
-/**
- * Per-category frontmatter schema. Each content type validates its specific
- * extended fields (region for bases, mode for routes, etc.) instead of falling
- * back to the generic page schema.
- */
-const SCHEMA_BY_CATEGORY: Record<string, z.ZodType> = {
-  plan: practicalFrontmatterSchema,
-  bases: baseFrontmatterSchema,
-  routes: routeFrontmatterSchema,
-  "things-to-do": thingsToDoFrontmatterSchema,
-  practical: practicalFrontmatterSchema,
-};
-
 interface ValidationError {
-  file: string;
-  reason: string;
+  /** Fully-formatted, print-ready message (file path included exactly once). */
+  message: string;
 }
 
 function main() {
@@ -52,16 +32,16 @@ function main() {
       if (!parsed.success) {
         for (const issue of parsed.error.issues) {
           errors.push({
-            file: relPath,
-            reason: `Frontmatter: ${issue.path.join(".")} - ${issue.message}`,
+            message: `${relPath}: Frontmatter: ${issue.path.join(".")} - ${issue.message}`,
           });
         }
       }
 
-      // Validate content
+      // Validate content. `validateParsedContent` already prefixes each
+      // message with the file path, so it isn't repeated here.
       const contentErrors = validateParsedContent(body, relPath);
       for (const err of contentErrors) {
-        errors.push({ file: relPath, reason: err.message });
+        errors.push({ message: err.message });
       }
     }
   }
@@ -69,7 +49,7 @@ function main() {
   if (errors.length > 0) {
     console.error("\n❌ Content validation failed:\n");
     for (const err of errors) {
-      console.error(`  ${err.file}: ${err.reason}`);
+      console.error(`  ${err.message}`);
     }
     console.error(`\n${errors.length} error(s) found.\n`);
     process.exit(1);

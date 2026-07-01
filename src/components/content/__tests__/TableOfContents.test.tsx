@@ -51,4 +51,20 @@ describe("TableOfContents", () => {
     const { container } = render(<TableOfContents markdown="Just text." />);
     expect(container.querySelector("nav")).toBeNull();
   });
+
+  it("de-duplicates repeated headings so anchors don't collide", () => {
+    const md = "## Repeat\n## Repeat";
+    render(<TableOfContents markdown={md} />);
+    const links = screen.getAllByRole("link");
+    expect(links).toHaveLength(2);
+    expect(links[0]).toHaveAttribute("href", "#repeat");
+    expect(links[1]).toHaveAttribute("href", "#repeat-2");
+  });
+
+  it("detects ATX headings indented by up to three spaces", () => {
+    const md = " ## Indented heading";
+    render(<TableOfContents markdown={md} />);
+    const link = screen.getByRole("link");
+    expect(link).toHaveAttribute("href", "#indented-heading");
+  });
 });

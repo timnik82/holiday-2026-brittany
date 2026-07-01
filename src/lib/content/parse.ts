@@ -53,7 +53,14 @@ export interface ParseError {
   message: string;
 }
 
-export function parseContent(markdown: string): ParsedContent | ParseError {
+/**
+ * Parse markdown with paragraph metadata comments into stripped markdown plus
+ * paragraph records. Invalid records (duplicate IDs, oversized paragraphs) are
+ * silently omitted from the result rather than surfaced as errors here; use
+ * `validateParsedContent` to detect and report those issues explicitly (e.g.
+ * in the content validation script) before this function is ever called.
+ */
+export function parseContent(markdown: string): ParsedContent {
   const tree = unified().use(remarkParse).use(remarkGfm).parse(markdown);
 
   const paragraphs: ParagraphRecord[] = [];
@@ -148,7 +155,9 @@ export function parseContent(markdown: string): ParsedContent | ParseError {
 }
 
 /**
- * Validate parsed content, returning errors if any.
+ * Validate parsed content, returning errors if any. Each error's `message`
+ * is prefixed once with `filePath` here; callers should not add another
+ * copy of the path when printing.
  */
 export function validateParsedContent(
   markdown: string,
@@ -162,7 +171,8 @@ export function validateParsedContent(
 
   // Find all comments and validate
   for (let i = 0; i < lines.length; i++) {
-    const match = lines[i].trim().match(PARAGRAPH_COMMENT_RE);
+    const trimmed = lines[i].trim();
+    const match = trimmed.match(PARAGRAPH_COMMENT_RE);
     if (match) {
       const id = match[1];
       if (seenIds.has(id)) {
@@ -171,6 +181,13 @@ export function validateParsedContent(
         });
       }
       seenIds.add(id);
+    } else if (trimmed.startsWith("<!--") && trimmed.includes("paragraph")) {
+      // Looks like a paragraph metadata comment but doesn't match the strict
+      // format (typo, wrong quotes, reordered attributes, etc). Flag it so
+      // the paragraph isn't silently rendered as raw HTML with no tracking.
+      errors.push({
+        message: `${filePath}: Malformed paragraph comment at line ${i + 1}. Expected format: <!-- paragraph id="..." sources="..." -->`,
+      });
     }
   }
 
