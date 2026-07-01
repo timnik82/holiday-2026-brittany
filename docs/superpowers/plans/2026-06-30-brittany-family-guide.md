@@ -44,7 +44,7 @@ PR 7 Step 2 (the Porto flight claim) and PR 10 Step 5 (the time-sensitive refres
 
 ## Risk-based testing strategy
 
-This is a small informational application with a few higher-risk subsystems. Test count is not a delivery goal. This section overrides any generic blanket-TDD instruction to create a test merely because a file, page, or presentational component is new. Existing useful tests remain; do not remove stable coverage simply to reduce the count.
+This is a personal information guide for one family. It will be used locally and for a small number of private deployed visits, not by a public or growing audience. Test count is not a delivery goal. This section overrides any generic blanket-TDD instruction to create a test merely because a file, page, or presentational component is new. Existing useful tests may remain when they are cheap and stable.
 
 Add automated tests when a regression could silently corrupt information, calculations, privacy, paid integrations, or a stateful user interaction:
 
@@ -52,17 +52,18 @@ Add automated tests when a regression could silently corrupt information, calcul
 - ranking and bathing calculations, including missing-evidence behavior;
 - authentication, authorization, redirect safety, and protection of pages and APIs;
 - TTS approval, cache keys, concurrency, private audio delivery, retry behavior, and player state;
-- interactive filters or controls whose state changes URLs, accessibility state, or persisted behavior;
-- one representative end-to-end journey for each critical capability.
+- stateful filter parsing or URL serialization when that logic can be tested cheaply outside the browser;
+- one end-to-end smoke journey for the whole application: sign in, open the guide, visit one attraction, and open one route.
 
 Do not add automated tests solely for:
 
 - static copy, headings, cards, layout wrappers, or presentational components;
 - each regional content slice or each Markdown page when the shared compiler and template are already covered;
+- separate browser journeys for Sources, filters, the home page, authentication, TTS, or individual content areas;
 - the same behavior at unit, component, and browser levels;
 - exhaustive viewport/page combinations better handled by a short representative manual check.
 
-Choose the cheapest layer that proves the behavior. Prefer unit tests for pure transformations and security rules, component tests only for meaningful interaction state, and Playwright only for boundaries that must work in a real browser. Content-only PRs run the existing regression suite and content validator but normally add no new test files. `npm run check` is a regression gate, not a requirement to manufacture new tests in every PR.
+Choose the cheapest layer that proves the behavior. Prefer unit tests for pure transformations, security rules, TTS service behavior, and filter-state logic; use component tests only for the TTS player's meaningful state transitions. Playwright is limited to the single whole-application smoke journey. Content-only and presentational PRs run the existing regression suite and content validator but add no new test files. `npm run check` is a regression gate, not a requirement to manufacture new tests in every PR.
 
 Where an already-created issue asks for broader test creation, this strategy and the narrower verification steps below take precedence.
 
@@ -376,7 +377,6 @@ git commit -m "docs: ingest Brittany research corpus"
 - Create: `src/app/sources/page.tsx`, `src/app/sources/[slug]/page.tsx`, `src/app/sources/coverage/page.tsx`
 - Create: `src/components/sources/EvidenceCard.tsx`, `CoverageTable.tsx`, styles
 - Create: `src/lib/content/evidence.ts`, `coverage.ts`, tests
-- Create: `tests/e2e/sources.spec.ts`
 
 - [ ] **Step 1: Define and test the English evidence contract**
 
@@ -416,16 +416,16 @@ The index shows document, original language, checksum, and substantive block cou
 
 The table filters by source and outcome, displays the concise English evidence beside its original block link, connects retained evidence to guide paragraphs, links duplicates to retained evidence, and groups conflicting English claims with source dates and planning interpretation.
 
-- [ ] **Step 5: Add one representative Sources browser journey**
+- [ ] **Step 5: Check one representative Sources path manually**
 
-Keep contract and transformation coverage in `src/lib/content` tests. Add one browser journey that opens an original-language document, follows a source-block deep link, changes the coverage filter, and confirms one representative conflict contains two English claims. Do not add separate render tests for `EvidenceCard` or `CoverageTable` unless they gain stateful behavior.
+Keep contract and transformation coverage in `src/lib/content` tests. Manually open one original-language document, follow one source-block deep link, change the coverage filter, and confirm one representative conflict contains two English claims. Do not add browser or component render tests for these presentational views.
 
 - [ ] **Step 6: Verify and commit PR 4**
 
-Run `npm run check` and `npm run test:e2e -- --grep Sources`. Expected: archive and coverage routes render successfully.
+Run `npm run check`, then perform the short manual Sources check above. Expected: archive and coverage routes render successfully.
 
 ```bash
-git add research/evidence research/coverage.json src/app/sources src/components/sources src/lib/content tests/e2e/sources.spec.ts
+git add research/evidence research/coverage.json src/app/sources src/components/sources src/lib/content
 git commit -m "feat: add English evidence and source archive"
 ```
 
@@ -618,7 +618,6 @@ git commit -m "feat: add southern Brittany guide content"
 - Create: `src/app/things-to-do/page.tsx`, `src/app/things-to-do/[slug]/page.tsx`
 - Create: `src/components/routes/RouteTimeline.tsx`
 - Create: `src/components/places/PlaceFilters.tsx`, `PlaceCard.tsx`; test only the stateful filter behavior
-- Create: `tests/e2e/directory-filters.spec.ts`
 - Modify: `research/coverage.json`
 
 - [ ] **Step 1: Extract and review cross-region route evidence**
@@ -639,9 +638,9 @@ Each day specifies base, travel burden, main activity, weather alternative, link
 
 Show duration, pace, number of accommodation changes, car requirement, best-fit statement, and day-by-day timeline. Links always target canonical base/place pages.
 
-- [ ] **Step 4: Write filter behavior tests**
+- [ ] **Step 4: Test only reusable filter-state logic**
 
-Test filtering by base, category, weather suitability, and child age. Filters are encoded in URL search parameters and remain usable without pointer input.
+If filter parsing and URL serialization are extracted as reusable logic, test valid and unknown values there. Do not add a browser suite or presentational card tests. Filters remain encoded in URL search parameters and usable without pointer input.
 
 - [ ] **Step 5: Implement directory and place templates**
 
@@ -649,10 +648,10 @@ The directory renders all reviewed places. Unknown filters fall back to the unfi
 
 - [ ] **Step 6: Close route/activity coverage and commit PR 9**
 
-Run `npm run validate:content`, focused filter tests, and `npm run build`. Add one Playwright journey for the stateful directory filters; route pages rely on content validation and one manual template spot-check rather than route-specific browser tests.
+Run `npm run validate:content`, any focused filter-state tests, and `npm run build`. Manually try one directory filter and open one route through the shared template. Do not add feature-specific Playwright tests.
 
 ```bash
-git add content/routes research/evidence/routes.json src/app/routes src/app/things-to-do src/components/routes src/components/places research/coverage.json tests/e2e/directory-filters.spec.ts
+git add content/routes research/evidence/routes.json src/app/routes src/app/things-to-do src/components/routes src/components/places research/coverage.json
 git commit -m "feat: add routes and activity directory"
 ```
 
@@ -714,36 +713,21 @@ git commit -m "feat: add swimming and trip planning guides"
 
 - Modify: `src/app/page.tsx`
 - Create: `src/components/home/Verdict.tsx`, `TopBases.tsx`, `DateWindows.tsx`, `RouteChoices.tsx`, `CriticalWarnings.tsx`
-- Create: `tests/e2e/decision-journey.spec.ts`
 
-- [ ] **Step 1: Write the decision-journey test**
-
-```ts
-test('family can move from verdict to a complete option', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.getByRole('heading', { name: /best bases/i })).toBeVisible();
-  await page.getByRole('link', { name: /compare all bases/i }).click();
-  await page.getByRole('link', { name: /saint-malo/i }).first().click();
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Saint-Malo');
-});
-```
-
-Expected before implementation: FAIL because the final home sections are absent.
-
-- [ ] **Step 2: Implement the approved answer order**
+- [ ] **Step 1: Implement the approved answer order**
 
 Render: suitability verdict, three leading bases, complete comparison link, date-window differences, three route choices, and material warnings. Each summary is computed from reviewed content and ranking data, not copied into a second data source.
 
-- [ ] **Step 3: Add transparent personalization**
+- [ ] **Step 2: Add transparent personalization**
 
 State family size, child age, origin airports, date windows, and budget assumptions. Provide an “About this recommendation” link rather than presenting the ranking as universal.
 
-- [ ] **Step 4: Verify and commit PR 11**
+- [ ] **Step 3: Verify and commit PR 11**
 
-Run the single decision journey and `npm run check`, then inspect the home page at 390 px and 1440 px. The static home sections do not need separate component tests.
+Run `npm run check`, then inspect the home page once at narrow and wide widths and follow one recommendation link. The static home sections do not need component or feature-specific browser tests.
 
 ```bash
-git add src/app/page.tsx src/components/home tests/e2e/decision-journey.spec.ts
+git add src/app/page.tsx src/components/home
 git commit -m "feat: add personalized guide home"
 ```
 
@@ -781,13 +765,13 @@ Compare submitted password only with `SITE_PASSWORD_HASH`. Return the same visib
 
 `src/proxy.ts` redirects unauthenticated page/RSC requests to `/login`. Every API route must also call `requireSession()`; Proxy is not treated as the sole security boundary.
 
-- [ ] **Step 5: Add authentication E2E coverage**
+- [ ] **Step 5: Test the security rules at the focused layer**
 
-Test unauthenticated redirect, wrong password, successful login, protected Sources access, logout, and direct API rejection.
+Focused tests cover blank/wrong password handling, safe same-origin redirects, rejection of external redirect targets, expired/tampered sessions, and direct API authorization through `requireSession()`. The final whole-application smoke journey proves successful browser login; do not add a separate authentication browser suite.
 
 - [ ] **Step 6: Verify and commit PR 12**
 
-Run tests with temporary local secrets, `npm run check`, and auth E2E. Confirm `.env*` is ignored except `.env.example`.
+Run focused auth tests with temporary local secrets and `npm run check`. Manually confirm login and logout once. Confirm `.env*` is ignored except `.env.example`.
 
 ```bash
 git add src/lib/auth src/app/login src/proxy.ts scripts/auth .env.example .gitignore package.json package-lock.json tests
@@ -803,7 +787,6 @@ git commit -m "feat: protect private family guide"
 - Create: `src/lib/tts/config.ts`, `cache-key.ts`, `rime.ts`, `blob.ts`, `locks.ts`, `service.ts`, tests
 - Create: `src/app/api/tts/route.ts`, `src/app/api/audio/[cacheKey]/route.ts`
 - Create: `src/components/tts/AudioProvider.tsx`, `ListenButton.tsx`, styles and tests
-- Create: `tests/e2e/tts.spec.ts`
 - Modify: `src/app/layout.tsx`, `.env.example`, `package.json`
 
 - [ ] **Step 1: Install Blob and write contract tests**
@@ -846,10 +829,10 @@ Use Vercel Blob `get(pathname, { access: 'private' })` and stream the complete s
 
 - [ ] **Step 7: Verify and commit PR 13**
 
-Run focused TTS service and player-state tests plus one mocked browser journey covering generate, play, pause, replay, and retry. Locally confirm the same journey without a real API key. Do not create separate component tests for every visible label, and do not make the paid real request until PR 14 Preview verification.
+Run focused TTS service tests and one compact player-state component test covering generate, play, pause, replay, and retry. Manually confirm the player once with mocked adapters. Do not add a TTS browser suite or separate tests for every visible label, and do not make the paid real request until PR 14 Preview verification.
 
 ```bash
-git add src/lib/tts src/app/api src/components/tts src/app/layout.tsx .env.example package.json package-lock.json tests/e2e/tts.spec.ts
+git add src/lib/tts src/app/api src/components/tts src/app/layout.tsx .env.example package.json package-lock.json
 git commit -m "feat: add cached paragraph narration"
 ```
 
@@ -862,7 +845,8 @@ git commit -m "feat: add cached paragraph narration"
 **Files:**
 
 - Modify: all remaining draft entries in `research/coverage.json`
-- Create: `src/app/print.css`, `tests/e2e/release-smoke.spec.ts`
+- Create: `src/app/print.css`
+- Modify: `tests/e2e/smoke.spec.ts`
 - Create: `.github/workflows/ci.yml`
 - Modify: `src/app/globals.css`, relevant component styles, `README.md`
 
@@ -876,11 +860,11 @@ Check that ranking labels match the 20/15/10/15/10/15/15 weights everywhere; rou
 
 - [ ] **Step 3: Complete representative responsive, print, and accessibility checks**
 
-Automate one compact release smoke covering the home page at 390 px and the coverage table without horizontal page overflow. Reuse the existing directory-filter, decision-journey, authentication, and TTS browser tests from earlier PRs rather than duplicating them here. Manually inspect the home page, comparison, one longest article, and coverage at 390 px and 1440 px, plus one representative print preview. Check focus order, skip link, color contrast, reduced motion, print headings, URL visibility, and long-table behavior during that review. Do not create a page-by-viewport test matrix.
+Expand the existing smoke spec into the application's only end-to-end journey: sign in, open the guide, visit one attraction, and open one route. Keep it independent of real Rime and Blob credentials. Manually inspect the home page, comparison, one longest article, and coverage once at narrow and wide widths, plus one representative print preview. Check focus order, skip link, color contrast, reduced motion, print headings, URL visibility, and long-table behavior during that short review. Do not create separate feature journeys or a page-by-viewport matrix.
 
 - [ ] **Step 4: Add CI**
 
-The GitHub Actions workflow uses the current Node LTS, `npm ci`, Playwright Chromium cache/install, `npm run validate:content`, lint, typecheck, unit tests, build, and Chromium E2E. It does not require Rime, Blob, or production auth secrets because external adapters are mocked and environment access is lazy.
+The GitHub Actions workflow uses the current Node LTS, `npm ci`, Playwright Chromium cache/install, `npm run validate:content`, lint, typecheck, focused tests, build, and the single Chromium smoke journey. It does not require Rime, Blob, or production auth secrets because external adapters are mocked and environment access is lazy.
 
 - [ ] **Step 5: Create and configure Vercel Preview resources**
 
