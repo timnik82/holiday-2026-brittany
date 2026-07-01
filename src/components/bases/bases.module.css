@@ -54,6 +54,10 @@
   padding-left: 1.25rem;
 }
 
+.sourceLinks {
+  font-size: 0.88em;
+}
+
 .mobileCards {
   display: grid;
   gap: 1rem;
@@ -179,7 +183,7 @@
 
   .comparisonTable thead th {
     color: #fff;
-    background: #1a5276;
+    background: var(--color-primary);
     text-align: left;
   }
 

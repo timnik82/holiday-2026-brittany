@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BaseComparison } from "@/components/bases/BaseComparison";
 import styles from "@/components/bases/bases.module.css";
+import {
+  getSourceBlockLinks,
+  requireEvidenceRecords,
+} from "@/lib/content/evidence-links";
 import { loadEvidenceRegistry } from "@/lib/content/sources-data";
 import { loadBaseRankings } from "@/lib/ranking/data";
 import {
@@ -25,6 +29,11 @@ export default function BasesPage() {
   const rankings = loadBaseRankings();
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((record) => [record.id, record]));
+  const sourceRankings = requireEvidenceRecords(
+    evidenceById,
+    SOURCE_RANKING_IDS,
+    "Source ranking comparison"
+  );
 
   return (
     <div className={styles.page}>
@@ -59,15 +68,20 @@ export default function BasesPage() {
           order from the visible weighted dimensions below.
         </p>
         <ul>
-          {SOURCE_RANKING_IDS.map((id) => {
-            const record = evidenceById.get(id);
-            if (!record) return null;
-            const ref = record.sourceBlockRefs[0];
-            const sourceSlug = ref.split(":")[0];
+          {sourceRankings.map((record) => {
+            const sourceLinks = getSourceBlockLinks([record]);
             return (
-              <li key={id}>
+              <li key={record.id}>
                 {record.text}{" "}
-                <Link href={`/sources/${sourceSlug}#block-${ref}`}>See source block</Link>
+                <span className={styles.sourceLinks}>
+                  Sources:{" "}
+                  {sourceLinks.map((link, index) => (
+                    <span key={`${link.ref}-${index}`}>
+                      {index > 0 && ", "}
+                      <Link href={link.href}>{link.ref}</Link>
+                    </span>
+                  ))}
+                </span>
               </li>
             );
           })}

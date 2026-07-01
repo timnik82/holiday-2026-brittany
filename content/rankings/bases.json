@@ -46,7 +46,7 @@
       "name": "Brest / Finistère",
       "summary": "A cool, good-value western base with excellent science attractions and access to dramatic coast, but less postcard charm.",
       "bestFor": "Ocean science, cool weather and western day trips",
-      "compromises": ["Less medieval atmosphere", "A car is needed for the best coast", "Wetter and windier than southern Brittany"],
+      "compromises": ["Less medieval atmosphere", "A car unlocks the best coastal day trips", "Wetter and windier than southern Brittany"],
       "carNeed": "helpful",
       "priceBand": "budget",
       "scores": {
@@ -64,7 +64,7 @@
       "name": "Quimper / South Finistère",
       "summary": "A charming and comparatively affordable cultural base for day trips, with beaches and wild coast reached rather than on the doorstep.",
       "bestFor": "A walkable historic city with varied coastal day trips",
-      "compromises": ["The city is inland", "A car helps for beaches and villages", "Slightly warmer than the north and west"],
+      "compromises": ["The city is inland", "A car is recommended for beaches and villages", "Slightly warmer than the north and west"],
       "carNeed": "recommended",
       "priceBand": "budget",
       "scores": {

@@ -1,5 +1,9 @@
 import Link from "next/link";
 import type { EvidenceRecord } from "@/lib/content/evidence";
+import {
+  getSourceBlockLinks,
+  requireEvidenceRecords,
+} from "@/lib/content/evidence-links";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import {
   RANKING_DIMENSIONS,
@@ -18,10 +22,12 @@ export function ScoreBreakdown({
     <dl className={styles.scoreBreakdown}>
       {RANKING_DIMENSIONS.map((dimension) => {
         const item = scores[dimension];
-        const evidence = item.evidenceRefs.flatMap((id) => {
-          const record = evidenceById.get(id);
-          return record ? [record] : [];
-        });
+        const evidence = requireEvidenceRecords(
+          evidenceById,
+          item.evidenceRefs,
+          `${RANKING_DIMENSION_LABELS[dimension]} score`
+        );
+        const sourceLinks = getSourceBlockLinks(evidence);
 
         return (
           <div className={styles.scoreItem} key={dimension}>
@@ -33,21 +39,15 @@ export function ScoreBreakdown({
             </dt>
             <dd>
               <span>{item.rationale}</span>
-              {evidence.length > 0 && (
+              {sourceLinks.length > 0 && (
                 <span className={styles.evidenceLinks}>
                   Evidence:{" "}
-                  {evidence.map((record, index) => {
-                    const ref = record.sourceBlockRefs[0];
-                    const sourceSlug = ref.split(":")[0];
-                    return (
-                      <span key={record.id}>
+                  {sourceLinks.map((link, index) => (
+                      <span key={`${link.ref}-${index}`}>
                         {index > 0 && ", "}
-                        <Link href={`/sources/${sourceSlug}#block-${ref}`}>
-                          {record.id.replace("evidence:ranking-", "")}
-                        </Link>
+                        <Link href={link.href}>{link.ref}</Link>
                       </span>
-                    );
-                  })}
+                    ))}
                 </span>
               )}
             </dd>
