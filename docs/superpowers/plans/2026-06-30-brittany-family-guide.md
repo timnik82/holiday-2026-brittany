@@ -376,6 +376,7 @@ git commit -m "docs: ingest Brittany research corpus"
 - Create: `src/app/sources/page.tsx`, `src/app/sources/[slug]/page.tsx`, `src/app/sources/coverage/page.tsx`
 - Create: `src/components/sources/EvidenceCard.tsx`, `CoverageTable.tsx`, styles
 - Create: `src/lib/content/evidence.ts`, `coverage.ts`, tests
+- Create: `tests/e2e/sources.spec.ts`
 
 - [ ] **Step 1: Define and test the English evidence contract**
 
@@ -424,7 +425,7 @@ Keep contract and transformation coverage in `src/lib/content` tests. Add one br
 Run `npm run check` and `npm run test:e2e -- --grep Sources`. Expected: archive and coverage routes render successfully.
 
 ```bash
-git add research/evidence research/coverage.json src/app/sources src/components/sources src/lib/content
+git add research/evidence research/coverage.json src/app/sources src/components/sources src/lib/content tests/e2e/sources.spec.ts
 git commit -m "feat: add English evidence and source archive"
 ```
 
@@ -617,6 +618,7 @@ git commit -m "feat: add southern Brittany guide content"
 - Create: `src/app/things-to-do/page.tsx`, `src/app/things-to-do/[slug]/page.tsx`
 - Create: `src/components/routes/RouteTimeline.tsx`
 - Create: `src/components/places/PlaceFilters.tsx`, `PlaceCard.tsx`; test only the stateful filter behavior
+- Create: `tests/e2e/directory-filters.spec.ts`
 - Modify: `research/coverage.json`
 
 - [ ] **Step 1: Extract and review cross-region route evidence**
@@ -650,7 +652,7 @@ The directory renders all reviewed places. Unknown filters fall back to the unfi
 Run `npm run validate:content`, focused filter tests, and `npm run build`. Add one Playwright journey for the stateful directory filters; route pages rely on content validation and one manual template spot-check rather than route-specific browser tests.
 
 ```bash
-git add content/routes research/evidence/routes.json src/app/routes src/app/things-to-do src/components/routes src/components/places research/coverage.json
+git add content/routes research/evidence/routes.json src/app/routes src/app/things-to-do src/components/routes src/components/places research/coverage.json tests/e2e/directory-filters.spec.ts
 git commit -m "feat: add routes and activity directory"
 ```
 
@@ -801,6 +803,7 @@ git commit -m "feat: protect private family guide"
 - Create: `src/lib/tts/config.ts`, `cache-key.ts`, `rime.ts`, `blob.ts`, `locks.ts`, `service.ts`, tests
 - Create: `src/app/api/tts/route.ts`, `src/app/api/audio/[cacheKey]/route.ts`
 - Create: `src/components/tts/AudioProvider.tsx`, `ListenButton.tsx`, styles and tests
+- Create: `tests/e2e/tts.spec.ts`
 - Modify: `src/app/layout.tsx`, `.env.example`, `package.json`
 
 - [ ] **Step 1: Install Blob and write contract tests**
@@ -846,7 +849,7 @@ Use Vercel Blob `get(pathname, { access: 'private' })` and stream the complete s
 Run focused TTS service and player-state tests plus one mocked browser journey covering generate, play, pause, replay, and retry. Locally confirm the same journey without a real API key. Do not create separate component tests for every visible label, and do not make the paid real request until PR 14 Preview verification.
 
 ```bash
-git add src/lib/tts src/app/api src/components/tts src/app/layout.tsx .env.example package.json package-lock.json
+git add src/lib/tts src/app/api src/components/tts src/app/layout.tsx .env.example package.json package-lock.json tests/e2e/tts.spec.ts
 git commit -m "feat: add cached paragraph narration"
 ```
 
