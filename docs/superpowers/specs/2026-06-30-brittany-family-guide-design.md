@@ -261,6 +261,23 @@ Application verification must demonstrate:
 
 On a protected Vercel Preview deployment, verification includes one real Rime request followed by a confirmed cache hit for the same paragraph.
 
+## Testing and Deployment Context
+
+This is a personal information guide for one family. It will be used locally and may be deployed for a small number of private visits; it is not intended for a public or growing audience. Testing therefore protects only failures that would be costly, misleading, or difficult to notice.
+
+Automated coverage is limited to:
+
+- content parsing and validation, so broken links, citations, identifiers, or malformed guide data fail clearly;
+- ranking and bathing calculations, where a quiet arithmetic or missing-data error could change a recommendation;
+- authentication and authorization, because the deployed guide remains private;
+- TTS request approval, caching, private audio delivery, and player state, because these cross a paid external service boundary;
+- stateful directory-filter logic, if its URL behavior cannot be proved more cheaply at the pure-function level;
+- one end-to-end smoke journey that signs in, opens the guide, visits one attraction, and opens one route.
+
+Static copy, cards, headings, layout wrappers, individual regional pages, individual routes, and page-by-viewport combinations do not receive dedicated automated tests. Before deployment, one short manual review checks representative desktop and mobile pages plus print output if print styling changed. Stable existing tests may remain when they are cheap and useful, but new work does not preserve or increase a test count for its own sake.
+
+CI runs content validation, lint, type checking, focused tests, a production build, and the single smoke journey. The suite should remain small enough that a future personal maintenance change is easy to understand and repair.
+
 ## Delivery Principle
 
 Implementation is divided into small pull requests. Each pull request must leave the repository in a coherent, testable state and must avoid mixing unrelated infrastructure, content ingestion, interface, authentication, and TTS work. The detailed pull-request sequence belongs in the implementation plan created after this design is reviewed.
