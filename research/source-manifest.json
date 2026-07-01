@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "chatgpt",
+    "path": "research/raw/ChatGPT.md",
+    "language": "ru",
+    "sha256": "deb872d50b4b032713308fd21a33886403776be7bea77525f367390b58014742",
+    "stopHeadings": []
+  },
+  {
+    "slug": "gemini-britany",
+    "path": "research/raw/Gemini-Britany.md",
+    "language": "ru",
+    "sha256": "dc178b29732c9887c900fe61cec10a658459c85e7c770e05e49341ea95196835",
+    "stopHeadings": ["Works cited"]
+  },
+  {
+    "slug": "operaai",
+    "path": "research/raw/OperaAI.md",
+    "language": "ru",
+    "sha256": "52c1f97f8c21c3364811ea3a0bcc88872cdcb20fa4f5788eadfbfb1d597aa28c",
+    "stopHeadings": ["Источники"]
+  },
+  {
+    "slug": "perplexity",
+    "path": "research/raw/Perplexity.md",
+    "language": "ru",
+    "sha256": "4f8856e3d9bbee62b2a61ed10ef1785d1c925e9ae8c69d9347e9c3dcd04b8cbf",
+    "stopHeadings": []
+  }
+]
