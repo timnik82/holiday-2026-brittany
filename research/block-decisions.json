@@ -1,0 +1,600 @@
+{
+  "chatgpt:b001": {
+    "substantive": true
+  },
+  "chatgpt:b002": {
+    "substantive": true
+  },
+  "chatgpt:b003": {
+    "substantive": true
+  },
+  "chatgpt:b004": {
+    "substantive": true
+  },
+  "chatgpt:b005": {
+    "substantive": true
+  },
+  "chatgpt:b006": {
+    "substantive": true
+  },
+  "chatgpt:b007": {
+    "substantive": true
+  },
+  "chatgpt:b008": {
+    "substantive": true
+  },
+  "chatgpt:b009": {
+    "substantive": true
+  },
+  "chatgpt:b010": {
+    "substantive": true
+  },
+  "chatgpt:b011": {
+    "substantive": true
+  },
+  "chatgpt:b012": {
+    "substantive": true
+  },
+  "chatgpt:b013": {
+    "substantive": true
+  },
+  "chatgpt:b014": {
+    "substantive": true
+  },
+  "chatgpt:b015": {
+    "substantive": true
+  },
+  "chatgpt:b016": {
+    "substantive": true
+  },
+  "chatgpt:b017": {
+    "substantive": true
+  },
+  "chatgpt:b018": {
+    "substantive": true
+  },
+  "chatgpt:b019": {
+    "substantive": true
+  },
+  "chatgpt:b020": {
+    "substantive": true
+  },
+  "chatgpt:b021": {
+    "substantive": true
+  },
+  "chatgpt:b022": {
+    "substantive": true
+  },
+  "chatgpt:b023": {
+    "substantive": true
+  },
+  "chatgpt:b024": {
+    "substantive": true
+  },
+  "chatgpt:b025": {
+    "substantive": true
+  },
+  "chatgpt:b026": {
+    "substantive": true
+  },
+  "chatgpt:b027": {
+    "substantive": true
+  },
+  "chatgpt:b028": {
+    "substantive": true
+  },
+  "chatgpt:b029": {
+    "substantive": true
+  },
+  "chatgpt:b030": {
+    "substantive": true
+  },
+  "chatgpt:b031": {
+    "substantive": true
+  },
+  "chatgpt:b032": {
+    "substantive": true
+  },
+  "chatgpt:b033": {
+    "substantive": true
+  },
+  "chatgpt:b034": {
+    "substantive": true
+  },
+  "chatgpt:b035": {
+    "substantive": true
+  },
+  "chatgpt:b036": {
+    "substantive": true
+  },
+  "chatgpt:b037": {
+    "substantive": true
+  },
+  "chatgpt:b038": {
+    "substantive": true
+  },
+  "chatgpt:b039": {
+    "substantive": true
+  },
+  "chatgpt:b040": {
+    "substantive": true
+  },
+  "chatgpt:b041": {
+    "substantive": true
+  },
+  "chatgpt:b042": {
+    "substantive": true
+  },
+  "chatgpt:b043": {
+    "substantive": true
+  },
+  "chatgpt:b044": {
+    "substantive": true
+  },
+  "chatgpt:b045": {
+    "substantive": true
+  },
+  "chatgpt:b046": {
+    "substantive": true
+  },
+  "chatgpt:b047": {
+    "substantive": true
+  },
+  "chatgpt:b048": {
+    "substantive": true
+  },
+  "chatgpt:b049": {
+    "substantive": true
+  },
+  "chatgpt:b050": {
+    "substantive": true
+  },
+  "chatgpt:b051": {
+    "substantive": true
+  },
+  "chatgpt:b052": {
+    "substantive": true
+  },
+  "chatgpt:b053": {
+    "substantive": true
+  },
+  "chatgpt:b054": {
+    "substantive": true
+  },
+  "chatgpt:b055": {
+    "substantive": true
+  },
+  "chatgpt:b056": {
+    "substantive": true
+  },
+  "chatgpt:b057": {
+    "substantive": true
+  },
+  "chatgpt:b058": {
+    "substantive": true
+  },
+  "chatgpt:b059": {
+    "substantive": true
+  },
+  "chatgpt:b060": {
+    "substantive": true
+  },
+  "chatgpt:b061": {
+    "substantive": true
+  },
+  "gemini-britany:b001": {
+    "substantive": true
+  },
+  "gemini-britany:b002": {
+    "substantive": true
+  },
+  "gemini-britany:b003": {
+    "substantive": true
+  },
+  "gemini-britany:b004": {
+    "substantive": true
+  },
+  "gemini-britany:b005": {
+    "substantive": true
+  },
+  "gemini-britany:b006": {
+    "substantive": true
+  },
+  "gemini-britany:b007": {
+    "substantive": true
+  },
+  "gemini-britany:b008": {
+    "substantive": true
+  },
+  "gemini-britany:b009": {
+    "substantive": true
+  },
+  "gemini-britany:b010": {
+    "substantive": true
+  },
+  "gemini-britany:b011": {
+    "substantive": true
+  },
+  "gemini-britany:b012": {
+    "substantive": true
+  },
+  "gemini-britany:b013": {
+    "substantive": true
+  },
+  "gemini-britany:b014": {
+    "substantive": true
+  },
+  "gemini-britany:b015": {
+    "substantive": true
+  },
+  "gemini-britany:b016": {
+    "substantive": true
+  },
+  "gemini-britany:b017": {
+    "substantive": true
+  },
+  "gemini-britany:b018": {
+    "substantive": true
+  },
+  "gemini-britany:b019": {
+    "substantive": true
+  },
+  "gemini-britany:b020": {
+    "substantive": true
+  },
+  "gemini-britany:b021": {
+    "substantive": true
+  },
+  "gemini-britany:b022": {
+    "substantive": true
+  },
+  "gemini-britany:b023": {
+    "substantive": true
+  },
+  "gemini-britany:b024": {
+    "substantive": true
+  },
+  "gemini-britany:b025": {
+    "substantive": true
+  },
+  "gemini-britany:b026": {
+    "substantive": true
+  },
+  "gemini-britany:b027": {
+    "substantive": true
+  },
+  "gemini-britany:b028": {
+    "substantive": true
+  },
+  "gemini-britany:b029": {
+    "substantive": true
+  },
+  "gemini-britany:b030": {
+    "substantive": true
+  },
+  "gemini-britany:b031": {
+    "substantive": true
+  },
+  "gemini-britany:b032": {
+    "substantive": true
+  },
+  "gemini-britany:b033": {
+    "substantive": true
+  },
+  "gemini-britany:b034": {
+    "substantive": true
+  },
+  "operaai:b001": {
+    "substantive": true
+  },
+  "operaai:b002": {
+    "substantive": true
+  },
+  "operaai:b003": {
+    "substantive": true
+  },
+  "operaai:b004": {
+    "substantive": true
+  },
+  "operaai:b005": {
+    "substantive": true
+  },
+  "operaai:b006": {
+    "substantive": true
+  },
+  "operaai:b007": {
+    "substantive": true
+  },
+  "operaai:b008": {
+    "substantive": true
+  },
+  "operaai:b009": {
+    "substantive": true
+  },
+  "operaai:b010": {
+    "substantive": true
+  },
+  "operaai:b011": {
+    "substantive": true
+  },
+  "operaai:b012": {
+    "substantive": true
+  },
+  "operaai:b013": {
+    "substantive": true
+  },
+  "operaai:b014": {
+    "substantive": true
+  },
+  "operaai:b015": {
+    "substantive": true
+  },
+  "operaai:b016": {
+    "substantive": true
+  },
+  "operaai:b017": {
+    "substantive": true
+  },
+  "operaai:b018": {
+    "substantive": true
+  },
+  "operaai:b019": {
+    "substantive": true
+  },
+  "operaai:b020": {
+    "substantive": true
+  },
+  "operaai:b021": {
+    "substantive": true
+  },
+  "operaai:b022": {
+    "substantive": true
+  },
+  "operaai:b023": {
+    "substantive": true
+  },
+  "operaai:b024": {
+    "substantive": true
+  },
+  "operaai:b025": {
+    "substantive": true
+  },
+  "operaai:b026": {
+    "substantive": true
+  },
+  "operaai:b027": {
+    "substantive": true
+  },
+  "operaai:b028": {
+    "substantive": true
+  },
+  "operaai:b029": {
+    "substantive": true
+  },
+  "operaai:b030": {
+    "substantive": true
+  },
+  "operaai:b031": {
+    "substantive": true
+  },
+  "operaai:b032": {
+    "substantive": true
+  },
+  "operaai:b033": {
+    "substantive": true
+  },
+  "operaai:b034": {
+    "substantive": true
+  },
+  "perplexity:b001": {
+    "substantive": false,
+    "reason": "Source branding/logo image, not research content"
+  },
+  "perplexity:b002": {
+    "substantive": false,
+    "reason": "Original user prompt"
+  },
+  "perplexity:b003": {
+    "substantive": false,
+    "reason": "Original user prompt"
+  },
+  "perplexity:b004": {
+    "substantive": true
+  },
+  "perplexity:b005": {
+    "substantive": true
+  },
+  "perplexity:b006": {
+    "substantive": true
+  },
+  "perplexity:b007": {
+    "substantive": true
+  },
+  "perplexity:b008": {
+    "substantive": true
+  },
+  "perplexity:b009": {
+    "substantive": true
+  },
+  "perplexity:b010": {
+    "substantive": true
+  },
+  "perplexity:b011": {
+    "substantive": true
+  },
+  "perplexity:b012": {
+    "substantive": true
+  },
+  "perplexity:b013": {
+    "substantive": true
+  },
+  "perplexity:b014": {
+    "substantive": true
+  },
+  "perplexity:b015": {
+    "substantive": true
+  },
+  "perplexity:b016": {
+    "substantive": true
+  },
+  "perplexity:b017": {
+    "substantive": true
+  },
+  "perplexity:b018": {
+    "substantive": true
+  },
+  "perplexity:b019": {
+    "substantive": true
+  },
+  "perplexity:b020": {
+    "substantive": true
+  },
+  "perplexity:b021": {
+    "substantive": true
+  },
+  "perplexity:b022": {
+    "substantive": true
+  },
+  "perplexity:b023": {
+    "substantive": true
+  },
+  "perplexity:b024": {
+    "substantive": true
+  },
+  "perplexity:b025": {
+    "substantive": true
+  },
+  "perplexity:b026": {
+    "substantive": true
+  },
+  "perplexity:b027": {
+    "substantive": true
+  },
+  "perplexity:b028": {
+    "substantive": true
+  },
+  "perplexity:b029": {
+    "substantive": true
+  },
+  "perplexity:b030": {
+    "substantive": true
+  },
+  "perplexity:b031": {
+    "substantive": true
+  },
+  "perplexity:b032": {
+    "substantive": true
+  },
+  "perplexity:b033": {
+    "substantive": true
+  },
+  "perplexity:b034": {
+    "substantive": true
+  },
+  "perplexity:b035": {
+    "substantive": true
+  },
+  "perplexity:b036": {
+    "substantive": true
+  },
+  "perplexity:b037": {
+    "substantive": true
+  },
+  "perplexity:b038": {
+    "substantive": true
+  },
+  "perplexity:b039": {
+    "substantive": true
+  },
+  "perplexity:b040": {
+    "substantive": true
+  },
+  "perplexity:b041": {
+    "substantive": true
+  },
+  "perplexity:b042": {
+    "substantive": true
+  },
+  "perplexity:b043": {
+    "substantive": true
+  },
+  "perplexity:b044": {
+    "substantive": true
+  },
+  "perplexity:b045": {
+    "substantive": true
+  },
+  "perplexity:b046": {
+    "substantive": true
+  },
+  "perplexity:b047": {
+    "substantive": true
+  },
+  "perplexity:b048": {
+    "substantive": true
+  },
+  "perplexity:b049": {
+    "substantive": true
+  },
+  "perplexity:b050": {
+    "substantive": true
+  },
+  "perplexity:b051": {
+    "substantive": true
+  },
+  "perplexity:b052": {
+    "substantive": true
+  },
+  "perplexity:b053": {
+    "substantive": true
+  },
+  "perplexity:b054": {
+    "substantive": true
+  },
+  "perplexity:b055": {
+    "substantive": true
+  },
+  "perplexity:b056": {
+    "substantive": true
+  },
+  "perplexity:b057": {
+    "substantive": true
+  },
+  "perplexity:b058": {
+    "substantive": true
+  },
+  "perplexity:b059": {
+    "substantive": true
+  },
+  "perplexity:b060": {
+    "substantive": true
+  },
+  "perplexity:b061": {
+    "substantive": true
+  },
+  "perplexity:b062": {
+    "substantive": true
+  },
+  "perplexity:b063": {
+    "substantive": true
+  },
+  "perplexity:b064": {
+    "substantive": true
+  },
+  "perplexity:b065": {
+    "substantive": true
+  },
+  "perplexity:b066": {
+    "substantive": true
+  },
+  "perplexity:b067": {
+    "substantive": true
+  },
+  "perplexity:b068": {
+    "substantive": true
+  },
+  "perplexity:b069": {
+    "substantive": false,
+    "reason": "Formatting-only decorative divider"
+  }
+}
