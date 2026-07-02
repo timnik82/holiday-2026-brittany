@@ -161,40 +161,93 @@
     ]
   },
   "chatgpt:b019": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-strongest-west",
+      "evidence:western-brest-oceanopolis",
+      "evidence:western-brest-maritime-museum"
+    ],
+    "paragraphIds": [
+      "brest-verdict",
+      "brest-oceanopolis-anchor",
+      "brest-maritime-heritage"
+    ]
   },
   "chatgpt:b020": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-porto-flight",
+      "evidence:western-brest-airport-access"
+    ],
+    "paragraphIds": [
+      "brest-porto-flight"
+    ]
   },
   "chatgpt:b021": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-accommodation"
+    ],
+    "paragraphIds": [
+      "brest-accommodation"
+    ]
   },
   "chatgpt:b022": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest и западный Finistère (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-car-tradeoff"
+    ],
+    "paragraphIds": [
+      "brest-car-tradeoff"
+    ]
   },
   "chatgpt:b023": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-locronan",
+      "evidence:western-pont-aven"
+    ],
+    "paragraphIds": [
+      "quimper-verdict",
+      "quimper-day-trips"
+    ]
   },
   "chatgpt:b024": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-family-museums"
+    ],
+    "paragraphIds": [
+      "quimper-family-museums"
+    ]
   },
   "chatgpt:b025": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-logistics"
+    ],
+    "paragraphIds": [
+      "quimper-logistics-rail"
+    ]
   },
   "chatgpt:b026": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-accommodation"
+    ],
+    "paragraphIds": [
+      "quimper-accommodation"
+    ]
   },
   "chatgpt:b027": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-food"
+    ],
+    "paragraphIds": [
+      "quimper-food"
+    ]
   },
   "chatgpt:b028": {
     "status": "draft",
@@ -217,16 +270,34 @@
     "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
   },
   "chatgpt:b033": {
-    "status": "draft",
-    "plannedArea": "Pending review — Presqu’île de Crozon и Douarnenez (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-crozon-wild-coast",
+      "evidence:western-maison-des-mineraux"
+    ],
+    "paragraphIds": [
+      "crozon-verdict",
+      "crozon-pen-hir-cap-chevre",
+      "maison-des-mineraux-what"
+    ]
   },
   "chatgpt:b034": {
-    "status": "draft",
-    "plannedArea": "Pending review — Presqu’île de Crozon и Douarnenez (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-crozon-logistics-car"
+    ],
+    "paragraphIds": [
+      "crozon-car-tradeoff"
+    ]
   },
   "chatgpt:b035": {
-    "status": "draft",
-    "plannedArea": "Pending review — Presqu’île de Crozon и Douarnenez (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-crozon-accommodation"
+    ],
+    "paragraphIds": [
+      "crozon-accommodation"
+    ]
   },
   "chatgpt:b036": {
     "status": "draft",
@@ -419,20 +490,52 @@
     ]
   },
   "gemini-britany:b015": {
-    "status": "draft",
-    "plannedArea": "Pending review — Брест и Западный Финистер (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-strongest-west"
   },
   "gemini-britany:b016": {
-    "status": "draft",
-    "plannedArea": "Pending review — Брест и Западный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-oceanopolis",
+      "evidence:western-brest-maritime-museum",
+      "evidence:western-brest-accommodation",
+      "evidence:western-brest-climate",
+      "evidence:western-crozon-wild-coast",
+      "evidence:western-crozon-climate",
+      "evidence:western-crozon-accommodation",
+      "evidence:western-morgat-beach",
+      "evidence:western-ile-vierge-restricted"
+    ],
+    "paragraphIds": [
+      "brest-oceanopolis-anchor",
+      "brest-maritime-heritage",
+      "brest-accommodation",
+      "brest-climate-normals",
+      "crozon-verdict",
+      "crozon-climate-normals",
+      "crozon-accommodation",
+      "crozon-morgat-beach",
+      "crozon-ile-vierge"
+    ]
   },
   "gemini-britany:b017": {
-    "status": "draft",
-    "plannedArea": "Pending review — Кемпер и Южный Финистер (Беноде, Конкарно) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
   },
   "gemini-britany:b018": {
-    "status": "draft",
-    "plannedArea": "Pending review — Кемпер и Южный Финистер (Беноде, Конкарно) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-concarneau-filets-bleus",
+      "evidence:western-haliotika",
+      "evidence:western-benodet-glenan"
+    ],
+    "paragraphIds": [
+      "quimper-verdict",
+      "concarneau-what",
+      "benodet-what",
+      "haliotika-what"
+    ]
   },
   "gemini-britany:b019": {
     "status": "draft",
@@ -596,20 +699,49 @@
     ]
   },
   "operaai:b019": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.3. Брест и Северный Финистер (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-strongest-west"
   },
   "operaai:b020": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.3. Брест и Северный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-oceanopolis",
+      "evidence:western-brest-maritime-museum",
+      "evidence:western-brest-car-tradeoff",
+      "evidence:western-brest-accommodation"
+    ],
+    "paragraphIds": [
+      "brest-oceanopolis-anchor",
+      "brest-maritime-heritage",
+      "brest-car-tradeoff",
+      "brest-accommodation"
+    ]
   },
   "operaai:b021": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.4. Кемпер и Южный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base"
+    ],
+    "paragraphIds": [
+      "quimper-verdict",
+      "quimper-what"
+    ]
   },
   "operaai:b022": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.4. Кемпер и Южный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-family-museums",
+      "evidence:western-pointe-du-raz",
+      "evidence:western-quimper-accommodation"
+    ],
+    "paragraphIds": [
+      "quimper-verdict",
+      "quimper-what",
+      "quimper-family-museums",
+      "pointe-du-raz-what",
+      "quimper-accommodation"
+    ]
   },
   "operaai:b023": {
     "status": "draft",
@@ -822,60 +954,121 @@
     "retainedEvidenceId": "evidence:northern-granit-rose-nature-first"
   },
   "perplexity:b030": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-climate"
   },
   "perplexity:b031": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-climate",
+      "evidence:western-crozon-climate"
+    ],
+    "paragraphIds": [
+      "brest-climate-normals",
+      "brest-sea-normals",
+      "crozon-climate-normals"
+    ]
   },
   "perplexity:b032": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-islands-park"
   },
   "perplexity:b033": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-strongest-west",
+      "evidence:western-brest-oceanopolis",
+      "evidence:western-brest-maritime-museum",
+      "evidence:western-brest-islands-park",
+      "evidence:western-crozon-wild-coast"
+    ],
+    "paragraphIds": [
+      "brest-verdict",
+      "brest-oceanopolis-anchor",
+      "brest-maritime-heritage",
+      "brest-islands-park",
+      "crozon-verdict"
+    ]
   },
   "perplexity:b034": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-strongest-west"
   },
   "perplexity:b035": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-strongest-west",
+      "evidence:western-quimper-south-coast"
+    ],
+    "paragraphIds": [
+      "brest-verdict"
+    ]
   },
   "perplexity:b036": {
-    "status": "draft",
-    "plannedArea": "Pending review — Brest / Финистер («конец света») (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-strongest-west"
+    ],
+    "paragraphIds": [
+      "brest-verdict"
+    ]
   },
   "perplexity:b037": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
   },
   "perplexity:b038": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-food"
+    ],
+    "paragraphIds": [
+      "quimper-verdict",
+      "quimper-what",
+      "quimper-food"
+    ]
   },
   "perplexity:b039": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-south-coast"
   },
   "perplexity:b040": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-south-coast",
+      "evidence:western-locronan",
+      "evidence:western-pont-aven",
+      "evidence:western-benodet-glenan"
+    ],
+    "paragraphIds": [
+      "quimper-day-trips",
+      "locronan-what",
+      "pont-aven-what",
+      "benodet-what"
+    ]
   },
   "perplexity:b041": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-south-coast"
   },
   "perplexity:b042": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-south-coast"
+    ],
+    "paragraphIds": [
+      "quimper-climate-normals"
+    ]
   },
   "perplexity:b043": {
-    "status": "draft",
-    "plannedArea": "Pending review — Quimper и южный Финистер (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base"
+    ],
+    "paragraphIds": [
+      "quimper-verdict"
+    ]
   },
   "perplexity:b044": {
     "status": "draft",

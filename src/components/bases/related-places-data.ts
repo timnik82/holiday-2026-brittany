@@ -6,6 +6,23 @@ export interface RelatedPlace {
 }
 
 /**
+ * Canonical display titles for places that belong to more than one base, so a
+ * slug/title edit only happens here. `note` still varies per base, so callers
+ * pass it explicitly via `place()`. Declared before RELATED_PLACES because the
+ * map is built by calling `place()` at module init.
+ */
+const PLACE_TITLES: Record<string, string> = {
+  "crozon-pen-hir": "Pen-Hir and Cap de la Chèvre",
+  morgat: "Morgat beach and bay",
+  "maison-des-mineraux": "Maison des Minéraux",
+};
+
+/** Build a RelatedPlace from a shared title, keeping the per-base note. */
+function place(slug: string, note: string): RelatedPlace {
+  return { slug, title: PLACE_TITLES[slug] ?? slug, note };
+}
+
+/**
  * Editorial mapping of each base to the linked Things to do pages that belong
  * to it but are not separate bases themselves (e.g. Paimpol/Bréhat, Cap Fréhel,
  * Cancale, Mont-Saint-Michel). Kept in a dedicated module so the base route
@@ -29,6 +46,28 @@ export const RELATED_PLACES: Record<string, RelatedPlace[]> = {
     { slug: "sept-iles", title: "Sept-Îles bird reserve", note: "Boat trip" },
     { slug: "parc-du-radome", title: "Parc du Radôme / Cité des Télécoms", note: "Rainy-day anchor" },
     { slug: "paimpol-brehat", title: "Paimpol and Bréhat island", note: "Linked area" },
+  ],
+  "brest-finistere": [
+    { slug: "oceanopolis", title: "Océanopolis", note: "Rainy-day anchor" },
+    { slug: "chateau-de-brest", title: "Château de Brest / Marine museum", note: "City culture" },
+    place("crozon-pen-hir", "Day trip · car"),
+    place("morgat", "Day trip · car"),
+    place("maison-des-mineraux", "Family geology"),
+    { slug: "morlaix-roscoff", title: "Morlaix and Roscoff", note: "Linked area" },
+  ],
+  "quimper-south-finistere": [
+    { slug: "quimper", title: "Quimper historic centre", note: "On-site" },
+    { slug: "locronan", title: "Locronan", note: "~20–30 min · car" },
+    { slug: "concarneau", title: "Concarneau & Filets Bleus", note: "~30 min · car" },
+    { slug: "pont-aven", title: "Pont-Aven", note: "Day trip · car" },
+    { slug: "benodet", title: "Bénodet and Glénan islands", note: "Beach + boat" },
+    { slug: "haliotika", title: "Haliotika (Le Guilvinec)", note: "Rainy-day option" },
+    { slug: "pointe-du-raz", title: "Pointe du Raz", note: "Wild headland · car" },
+  ],
+  "crozon-douarnenez": [
+    place("crozon-pen-hir", "On-site"),
+    place("morgat", "Sheltered swim"),
+    place("maison-des-mineraux", "Family geology"),
   ],
 };
 
