@@ -1,0 +1,169 @@
+.page {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  color: #123c54;
+}
+
+.eyebrow {
+  color: #9a4f2c;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.heroIntro {
+  color: #41616f;
+  max-width: 45rem;
+}
+
+/* Filter bar — mirrors the sources coverage filter pattern. */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 0.5rem;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.filters select {
+  padding: 0.35rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.filterButton {
+  padding: 0.4rem 1rem;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.filterButton:hover,
+.filterButton:focus-visible {
+  opacity: 0.9;
+}
+
+.filterButton:focus-visible {
+  outline: 2px solid #123c54;
+  outline-offset: 2px;
+}
+
+.correction {
+  font-size: 0.875rem;
+  color: #8a4b00;
+  background: #fff7ef;
+  border-left: 0.3rem solid #d8794b;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.summary {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.places {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.placeCard {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 0.3rem 1rem rgb(18 60 84 / 6%);
+}
+
+.placeCardTitle {
+  color: #123c54;
+  line-height: 1.2;
+  font-size: 1.15rem;
+}
+
+.placeCardTitle a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.placeCardTitle a:hover,
+.placeCardTitle a:focus-visible {
+  text-decoration: underline;
+}
+
+.placeCardTitle a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.placeCardSummary {
+  color: #3f555e;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.placeCardMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.placeCardBase {
+  color: #9a4f2c;
+  text-decoration: none;
+}
+
+.placeCardBase:hover,
+.placeCardBase:focus-visible {
+  text-decoration: underline;
+}
+
+.placeCardBase:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.placeCardBadge {
+  border: 1px solid #cad9df;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  color: #244d5f;
+}
+
+.emptyState {
+  color: #555;
+  font-style: italic;
+}
