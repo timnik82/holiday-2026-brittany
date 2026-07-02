@@ -1,6 +1,7 @@
 import { describe, it, expect, afterEach } from "vitest";
 import { cleanup, render, screen } from "@testing-library/react";
 import { SiteShell } from "./SiteShell";
+import { guideConfig } from "@/config/guide";
 
 afterEach(cleanup);
 
@@ -45,5 +46,14 @@ describe("SiteShell", () => {
     render(<SiteShell><p>Test content</p></SiteShell>);
     const main = screen.getByRole("main");
     expect(main).toHaveTextContent("Test content");
+  });
+
+  it("renders the configured guide identity", () => {
+    render(<SiteShell>content</SiteShell>);
+
+    expect(screen.getByText(guideConfig.shortTitle)).toBeInTheDocument();
+    expect(screen.getByRole("contentinfo")).toHaveTextContent(
+      `Family trip planning — ${guideConfig.regionName}, ${guideConfig.countryName}, ${guideConfig.seasonLabel}`
+    );
   });
 });

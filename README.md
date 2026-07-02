@@ -2,6 +2,19 @@
 
 This private repository will contain an English-language family travel guide for Brittany, France, for August 2026. The planned application combines detailed destination research, family itineraries, swimming options, travel logistics, accommodation guidance, and paragraph-level text-to-speech playback.
 
+## Single-region template
+
+The application is a reusable template for one region at a time, not a
+multi-region platform. Shared application code reads the destination and trip
+assumptions from [`src/config/guide.ts`](src/config/guide.ts); facts about
+Brittany remain in the reviewed content and research data.
+
+To adapt a clone for another region, replace the guide configuration together
+with `research/raw/`, `research/source-manifest.json`, the evidence and coverage
+records, rankings, and the files under `content/`. Shared components should not
+introduce new hardcoded region, country, season, traveler, origin, date, or
+budget assumptions.
+
 ## Current status
 
 The project is in the planning and research-ingestion phase. Application development has not started yet.
