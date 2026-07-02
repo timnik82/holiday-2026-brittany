@@ -1,11 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { guideConfig } from "@/config/guide";
 import { loadSourceSummaries } from "@/lib/content/sources-data";
 import styles from "@/components/sources/sources.module.css";
 
 export const metadata: Metadata = {
-  title: "Sources — Brittany Family Guide",
-  description: "Original-language research documents behind the Brittany family guide.",
+  title: `Sources — ${guideConfig.shortTitle}`,
+  description: `Original-language research documents behind the ${guideConfig.regionName} family guide.`,
 };
 
 const LANGUAGE_NAMES: Record<string, string> = {
