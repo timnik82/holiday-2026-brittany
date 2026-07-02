@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import { BaseHero } from "@/components/bases/BaseHero";
 import { BaseFacts } from "@/components/bases/BaseFacts";
 import { RelatedPlaces } from "@/components/bases/RelatedPlaces";
+import { guideConfig } from "@/config/guide";
 import styles from "@/components/bases/base-detail.module.css";
 
 import { getContentPage, getBaseFrontmatter, loadContentPages } from "@/lib/content/registry";
@@ -56,7 +57,7 @@ export async function generateMetadata({
   const entry = await getBasePage(slug);
   if (!entry) return {};
   return {
-    title: `${entry.page.title} — Brittany Family Guide`,
+    title: `${entry.page.title} — ${guideConfig.shortTitle}`,
     description: entry.page.summary,
   };
 }

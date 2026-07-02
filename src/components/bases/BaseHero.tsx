@@ -1,3 +1,4 @@
+import { guideConfig } from "@/config/guide";
 import type { BaseFrontmatter } from "@/lib/content/schemas";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import { CAR_NEED_LABELS, PRICE_BAND_LABELS } from "./labels";
@@ -51,9 +52,9 @@ export function BaseHero({
   );
 }
 
-// Fixed en-GB locale so the rendered date is stable across build environments
+// The configured locale keeps rendered dates stable across build environments
 // rather than depending on the build server's locale.
-const updatedDateFormatter = new Intl.DateTimeFormat("en-GB", {
+const updatedDateFormatter = new Intl.DateTimeFormat(guideConfig.locale, {
   day: "numeric",
   month: "long",
   year: "numeric",

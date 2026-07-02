@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+import { guideConfig } from "@/config/guide";
 import { getContentPage, loadContentPages } from "@/lib/content/registry";
 import styles from "@/components/bases/base-detail.module.css";
 
@@ -32,7 +33,7 @@ export async function generateMetadata({
   const entry = getContentPage(slug, "things-to-do");
   if (!entry) return {};
   return {
-    title: `${entry.page.title} — Things to do — Brittany Family Guide`,
+    title: `${entry.page.title} — Things to do — ${guideConfig.shortTitle}`,
     description: entry.page.summary,
   };
 }

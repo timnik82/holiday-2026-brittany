@@ -1,3 +1,4 @@
+import { guideConfig } from "@/config/guide";
 import type { EvidenceRecord } from "@/lib/content/evidence";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import { ScoreBreakdown } from "./ScoreBreakdown";
@@ -34,7 +35,7 @@ export function BaseFacts({
           <dd>{CAR_NEED_LABELS[base.carNeed]}</dd>
         </div>
         <div className={sharedStyles.scoreItem}>
-          <dt>August price band</dt>
+          <dt>{guideConfig.seasonLabel} price band</dt>
           <dd>{PRICE_BAND_LABELS[base.priceBand]}</dd>
         </div>
       </dl>
