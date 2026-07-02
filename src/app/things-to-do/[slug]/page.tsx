@@ -11,9 +11,8 @@ import styles from "@/components/bases/base-detail.module.css";
 
 /**
  * Static params come only from reviewed things-to-do pages (status !== "draft").
- * The full filterable Things to do directory lands in PR 9; this route exists
- * now so that base pages' "Linked places" links resolve to real pages instead
- * of 404s.
+ * The filterable Things to do directory lives at `/things-to-do`; this route
+ * renders each individual canonical activity page.
  */
 export async function generateStaticParams() {
   return loadContentPages()
@@ -57,7 +56,7 @@ export default async function ThingToDoPage({
   return (
     <div className={styles.page}>
       <p className={styles.backLink}>
-        <Link href="/bases">← Back to bases</Link>
+        <Link href="/things-to-do">← Back to Things to do</Link>
       </p>
 
       <header className={styles.hero}>
