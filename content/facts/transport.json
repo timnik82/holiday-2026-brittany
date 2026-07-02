@@ -1,0 +1,90 @@
+{
+  "scale": {
+    "minimum": 1,
+    "maximum": 10,
+    "description": "Indicative transfer times and access facts for reaching and moving around Brittany from the family's origin airports (Lisbon and Porto). Times are typical scheduled durations, not door-to-door guarantees."
+  },
+  "facts": [
+    {
+      "id": "gateway-nantes",
+      "label": "Primary gateway: Nantes (NTE)",
+      "value": "Direct seasonal flights from Lisbon and Porto",
+      "officialSource": "Nantes Atlantique Airport",
+      "checkedAt": "2026-06-30",
+      "reviewWindowDays": 30,
+      "notes": "Nantes is the primary gateway for all three route styles, with fast onward trains. Flight schedules are seasonal — re-check days before booking.",
+      "evidenceRef": "evidence:nantes-primary-gateway-from-portugal"
+    },
+    {
+      "id": "gateway-brest",
+      "label": "Nature-route gateway: Brest (BES)",
+      "value": "Direct Transavia flight from Porto, Mon/Fri from 31 Mar 2026",
+      "officialSource": "Brest Bretagne Airport destinations",
+      "sourceUrl": "https://www.brest.aeroport.bzh/destinations",
+      "checkedAt": "2026-07-02",
+      "reviewWindowDays": 30,
+      "notes": "Cuts the long transfer to the Côte de Granit Rose. No direct Lisbon–Brest flight for summer 2026.",
+      "evidenceRef": "evidence:western-brest-porto-flight"
+    },
+    {
+      "id": "train-nantes-saint-malo",
+      "label": "Train Nantes → Saint-Malo",
+      "value": "from 2 h 24 min",
+      "officialSource": "SNCF Connect",
+      "checkedAt": "2026-06-30",
+      "reviewWindowDays": 30,
+      "notes": "Airport shuttle to Gare Sud ~25 min, then direct train. Schedules are seasonal — re-check before booking.",
+      "evidenceRef": "evidence:northern-saint-malo-logistics-rail"
+    },
+    {
+      "id": "train-nantes-vannes",
+      "label": "Train Nantes → Vannes",
+      "value": "from 1 h 12 min",
+      "officialSource": "SNCF Connect",
+      "checkedAt": "2026-07-02",
+      "reviewWindowDays": 30,
+      "notes": "The softest door-to-destination transfer of the three routes; onward to Carnac by car or bus.",
+      "evidenceRef": "evidence:southern-logistics-nantes"
+    },
+    {
+      "id": "train-nantes-quimper",
+      "label": "Train Nantes → Quimper",
+      "value": "about 2 h 23 min",
+      "officialSource": "SNCF Connect",
+      "checkedAt": "2026-07-02",
+      "reviewWindowDays": 30,
+      "notes": "Quimper also reachable from Paris in about 3 h 29 min.",
+      "evidenceRef": "evidence:western-quimper-logistics"
+    },
+    {
+      "id": "train-brest-lannion",
+      "label": "Train Brest → Lannion (Côte de Granit Rose)",
+      "value": "from 1 h 15 min",
+      "officialSource": "SNCF Connect / TER Bretagne",
+      "checkedAt": "2026-06-30",
+      "reviewWindowDays": 30,
+      "notes": "Combines with the direct Porto–Brest flight for an efficient arrival onto the north coast.",
+      "evidenceRef": "evidence:northern-granit-rose-logistics-car"
+    },
+    {
+      "id": "car-required-overview",
+      "label": "Rental car at Nantes airport",
+      "value": "Recommended across all routes",
+      "officialSource": "Synthesis across research sources",
+      "checkedAt": "2026-07-02",
+      "reviewWindowDays": 90,
+      "notes": "Public transport (trains, BreizhGo buses) connects cities and resorts but not beaches, megaliths, capes and island ferries. Saint-Malo old town is walkable; a car matters most for day trips.",
+      "evidenceRef": "evidence:routes-car-required-flexible"
+    },
+    {
+      "id": "own-car-impractical",
+      "label": "Driving own car from Portugal",
+      "value": "1,640–1,900 km, 15–19 h one way",
+      "officialSource": "ViaMichelin route estimates",
+      "checkedAt": "2026-06-30",
+      "reviewWindowDays": 90,
+      "notes": "Fuel and tolls ~€300–400 one way; needs a 2-day split with an overnight stop. Flying plus a local rental is the lighter option.",
+      "evidenceRef": "evidence:routes-own-car-impractical"
+    }
+  ]
+}

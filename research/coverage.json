@@ -33,16 +33,37 @@
     "plannedArea": "Pending review — Допущения и методика (content PRs 5–8)"
   },
   "chatgpt:b006": {
-    "status": "draft",
-    "plannedArea": "Pending review — Климат и доступность в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-overview",
+      "evidence:practical-daylight-hours",
+      "evidence:brittany-august-air-temperature"
+    ],
+    "paragraphIds": [
+      "plan-weather-overview",
+      "plan-weather-daylight"
+    ]
   },
   "chatgpt:b007": {
-    "status": "draft",
-    "plannedArea": "Pending review — Климат и доступность в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-microclimate-split"
+    ],
+    "paragraphIds": [
+      "plan-weather-microclimate"
+    ]
   },
   "chatgpt:b008": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сводная таблица по климату (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-overview",
+      "evidence:brittany-august-air-temperature",
+      "evidence:sea-temperature-wide"
+    ],
+    "paragraphIds": [
+      "plan-weather-overview",
+      "plan-weather-sea"
+    ]
   },
   "chatgpt:b009": {
     "status": "retained",
@@ -338,12 +359,33 @@
     ]
   },
   "chatgpt:b036": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сводное сравнение логистики, машины и бюджета (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-accommodation-budget-overview",
+      "evidence:practical-accommodation-types",
+      "evidence:practical-accommodation-book-early",
+      "evidence:practical-car-tradeoffs",
+      "evidence:practical-food-overview"
+    ],
+    "paragraphIds": [
+      "plan-accommodation-budget",
+      "plan-accommodation-types",
+      "plan-accommodation-book-early",
+      "plan-getting-around-car",
+      "plan-food-overview"
+    ]
   },
   "chatgpt:b037": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сводное сравнение логистики, машины и бюджета (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-food-overview",
+      "evidence:practical-food-regional-highlights"
+    ],
+    "paragraphIds": [
+      "plan-food-overview",
+      "plan-food-regional",
+      "plan-food-child"
+    ]
   },
   "chatgpt:b038": {
     "status": "draft",
@@ -557,12 +599,28 @@
     "retainedEvidenceId": "evidence:brittany-august-air-temperature"
   },
   "gemini-britany:b003": {
-    "status": "draft",
-    "plannedArea": "Pending review — Климатический профиль Бретани в августе: температура, осадки и риски (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-microclimate-split",
+      "evidence:practical-climate-overview"
+    ],
+    "paragraphIds": [
+      "plan-weather-microclimate",
+      "plan-weather-overview"
+    ]
   },
   "gemini-britany:b004": {
-    "status": "draft",
-    "plannedArea": "Pending review — Логистический анализ: маршруты из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-transport-two-scenarios",
+      "evidence:practical-car-tradeoffs",
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "plan-getting-there-scenarios",
+      "plan-getting-around-own-car",
+      "plan-getting-around-tradeoffs"
+    ]
   },
   "gemini-britany:b005": {
     "status": "draft",
@@ -824,24 +882,59 @@
     "retainedEvidenceId": "evidence:brittany-august-air-temperature"
   },
   "operaai:b002": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-transport-two-scenarios",
+      "evidence:nantes-primary-gateway-from-portugal"
+    ],
+    "paragraphIds": [
+      "plan-getting-there-scenarios",
+      "plan-getting-there-nantes"
+    ]
   },
   "operaai:b003": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-transport-two-scenarios",
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "plan-getting-there-scenarios",
+      "plan-getting-around-own-car"
+    ]
   },
   "operaai:b004": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-car-tradeoffs"
+    ],
+    "paragraphIds": [
+      "plan-getting-around-car",
+      "plan-getting-around-tradeoffs"
+    ]
   },
   "operaai:b005": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-car-tradeoffs",
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "plan-getting-around-car",
+      "plan-getting-around-own-car"
+    ]
   },
   "operaai:b006": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-car-tradeoffs",
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "plan-getting-around-car",
+      "plan-getting-around-tradeoffs",
+      "plan-getting-around-own-car"
+    ]
   },
   "operaai:b007": {
     "status": "retained",
@@ -873,24 +966,60 @@
     ]
   },
   "operaai:b010": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-overview",
+      "evidence:practical-weather-variability",
+      "evidence:practical-packing"
+    ],
+    "paragraphIds": [
+      "plan-weather-overview",
+      "plan-weather-variability",
+      "plan-weather-packing"
+    ]
   },
   "operaai:b011": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-overview"
+    ],
+    "paragraphIds": [
+      "plan-weather-overview"
+    ]
   },
   "operaai:b012": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-overview",
+      "evidence:brittany-august-air-temperature",
+      "evidence:practical-daylight-hours"
+    ],
+    "paragraphIds": [
+      "plan-weather-overview",
+      "plan-weather-daylight",
+      "plan-weather-packing"
+    ]
   },
   "operaai:b013": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-overview",
+      "evidence:sea-temperature-wide"
+    ],
+    "paragraphIds": [
+      "plan-weather-overview",
+      "plan-weather-sea"
+    ]
   },
   "operaai:b014": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:sea-temperature-wide",
+      "evidence:sea-temperature-narrow"
+    ],
+    "paragraphIds": [
+      "plan-weather-sea"
+    ]
   },
   "operaai:b015": {
     "status": "duplicate",
@@ -1005,8 +1134,15 @@
     ]
   },
   "operaai:b025": {
-    "status": "draft",
-    "plannedArea": "Pending review — 4. Сравнительная таблица: Цены и Климат (Август) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-accommodation-budget-overview",
+      "evidence:practical-food-regional-highlights"
+    ],
+    "paragraphIds": [
+      "plan-accommodation-budget",
+      "plan-food-regional"
+    ]
   },
   "operaai:b026": {
     "status": "draft",
@@ -1104,8 +1240,15 @@
     ]
   },
   "perplexity:b004": {
-    "status": "draft",
-    "plannedArea": "Pending review — Исследуй Бретань во Франции как вариант семейного отпуска в августе 2026 с выездом из Португалии для 2 взрослых и ребёнка 9–10 лет. Главная цель — свежий климат без сильной жары, интересная природа, море, исторические города, замки, музеи и хорошие семейные активности. (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-transport-two-scenarios",
+      "evidence:practical-climate-overview"
+    ],
+    "paragraphIds": [
+      "plan-getting-there-scenarios",
+      "plan-weather-overview"
+    ]
   },
   "perplexity:b005": {
     "status": "retained",
@@ -1118,16 +1261,37 @@
     ]
   },
   "perplexity:b006": {
-    "status": "draft",
-    "plannedArea": "Pending review — Климат и море в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:sea-temperature-wide",
+      "evidence:sea-temperature-narrow"
+    ],
+    "paragraphIds": [
+      "plan-weather-sea"
+    ]
   },
   "perplexity:b007": {
-    "status": "draft",
-    "plannedArea": "Pending review — Климат и море в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:sea-temperature-wide",
+      "evidence:sea-temperature-narrow"
+    ],
+    "paragraphIds": [
+      "plan-weather-sea"
+    ]
   },
   "perplexity:b008": {
-    "status": "draft",
-    "plannedArea": "Pending review — Климат и море в августе (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-climate-overview",
+      "evidence:practical-weather-variability",
+      "evidence:practical-packing"
+    ],
+    "paragraphIds": [
+      "plan-weather-overview",
+      "plan-weather-variability",
+      "plan-weather-packing"
+    ]
   },
   "perplexity:b009": {
     "status": "draft",
@@ -1162,12 +1326,26 @@
     ]
   },
   "perplexity:b014": {
-    "status": "draft",
-    "plannedArea": "Pending review — Цены на жильё (общая оценка) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-accommodation-budget-overview",
+      "evidence:practical-accommodation-types",
+      "evidence:practical-accommodation-book-early"
+    ],
+    "paragraphIds": [
+      "plan-accommodation-budget",
+      "plan-accommodation-types",
+      "plan-accommodation-book-early"
+    ]
   },
   "perplexity:b015": {
-    "status": "draft",
-    "plannedArea": "Pending review — Цены на жильё (общая оценка) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:practical-accommodation-budget-overview"
+    ],
+    "paragraphIds": [
+      "plan-accommodation-budget"
+    ]
   },
   "perplexity:b016": {
     "status": "duplicate",
