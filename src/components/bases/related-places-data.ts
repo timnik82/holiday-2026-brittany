@@ -30,6 +30,28 @@ export const RELATED_PLACES: Record<string, RelatedPlace[]> = {
     { slug: "parc-du-radome", title: "Parc du Radôme / Cité des Télécoms", note: "Rainy-day anchor" },
     { slug: "paimpol-brehat", title: "Paimpol and Bréhat island", note: "Linked area" },
   ],
+  "brest-finistere": [
+    { slug: "oceanopolis", title: "Océanopolis", note: "Rainy-day anchor" },
+    { slug: "chateau-de-brest", title: "Château de Brest / Marine museum", note: "City culture" },
+    { slug: "crozon-pen-hir", title: "Pen-Hir and Cap de la Chèvre", note: "Day trip · car" },
+    { slug: "morgat", title: "Morgat beach and bay", note: "Day trip · car" },
+    { slug: "maison-des-mineraux", title: "Maison des Minéraux", note: "Family geology" },
+    { slug: "morlaix-roscoff", title: "Morlaix and Roscoff", note: "Linked area" },
+  ],
+  "quimper-south-finistere": [
+    { slug: "quimper", title: "Quimper historic centre", note: "On-site" },
+    { slug: "locronan", title: "Locronan", note: "~20–30 min · car" },
+    { slug: "concarneau", title: "Concarneau & Filets Bleus", note: "~30 min · car" },
+    { slug: "pont-aven", title: "Pont-Aven", note: "Day trip · car" },
+    { slug: "benodet", title: "Bénodet and Glénan islands", note: "Beach + boat" },
+    { slug: "haliotika", title: "Haliotika (Le Guilvinec)", note: "Rainy-day option" },
+    { slug: "pointe-du-raz", title: "Pointe du Raz", note: "Wild headland · car" },
+  ],
+  "crozon-douarnenez": [
+    { slug: "crozon-pen-hir", title: "Pen-Hir and Cap de la Chèvre", note: "On-site" },
+    { slug: "morgat", title: "Morgat beach and bay", note: "Sheltered swim" },
+    { slug: "maison-des-mineraux", title: "Maison des Minéraux", note: "Family geology" },
+  ],
 };
 
 export function getRelatedPlaces(slug: string): RelatedPlace[] {
