@@ -17,7 +17,7 @@
     "validate:content": "tsx scripts/content/validate-content.ts",
     "build:source-blocks": "tsx scripts/content/build-source-blocks.ts",
     "check": "npm run lint && npm run typecheck && npm run test && npm run validate:content && npm run build",
-    "clean": "rm -rf .next .playwright-mcp test-results playwright-report blob-report coverage && find . -maxdepth 1 -name '*.png' -delete"
+    "clean": "tsx scripts/clean.ts"
   },
   "repository": {
     "type": "git",
