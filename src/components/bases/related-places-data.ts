@@ -1,4 +1,9 @@
-import type { RelatedPlace } from "./RelatedPlaces";
+export interface RelatedPlace {
+  slug: string;
+  title: string;
+  /** Short hint of the relationship, e.g. "Day trip · 1h drive". */
+  note: string;
+}
 
 /**
  * Editorial mapping of each base to the linked Things to do pages that belong

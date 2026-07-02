@@ -1,4 +1,5 @@
 import { guideConfig } from "@/config/guide";
+import { CONTENT_STATUS_LABELS } from "@/components/content/labels";
 import type { BaseFrontmatter } from "@/lib/content/schemas";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import { CAR_NEED_LABELS, PRICE_BAND_LABELS } from "./labels";
@@ -32,7 +33,9 @@ export function BaseHero({
       <p className={styles.summary}>{base.summary}</p>
       <p className={styles.practical}>
         <span className={styles.chip}>{base.bestFor}</span>
-        <span className={styles.chip}>Car {CAR_NEED_LABELS[base.carNeed].toLowerCase()}</span>
+        <span className={styles.chip}>
+          Car need: {CAR_NEED_LABELS[base.carNeed]}
+        </span>
         <span className={styles.chip}>{PRICE_BAND_LABELS[base.priceBand]}</span>
         {rankedTotal !== null && (
           <span className={styles.chip}>
@@ -46,7 +49,7 @@ export function BaseHero({
         <time dateTime={frontmatter.updatedAt}>
           {formatUpdatedDate(frontmatter.updatedAt)}
         </time>{" "}
-        · status: {frontmatter.status}
+        · status: {CONTENT_STATUS_LABELS[frontmatter.status]}
       </p>
     </header>
   );

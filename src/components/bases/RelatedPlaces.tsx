@@ -1,12 +1,6 @@
 import Link from "next/link";
+import type { RelatedPlace } from "./related-places-data";
 import styles from "./base-detail.module.css";
-
-export interface RelatedPlace {
-  slug: string;
-  title: string;
-  /** Short hint of the relationship, e.g. "Day trip · 1h drive". */
-  note: string;
-}
 
 /**
  * Renders links to nearby Things to do pages that belong to a base but are

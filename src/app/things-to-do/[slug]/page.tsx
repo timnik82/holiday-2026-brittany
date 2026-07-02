@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+import { CONTENT_STATUS_LABELS } from "@/components/content/labels";
 import { guideConfig } from "@/config/guide";
 import { getContentPage, loadContentPages } from "@/lib/content/registry";
 import styles from "@/components/bases/base-detail.module.css";
@@ -24,13 +25,19 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
+function getPublishedThingToDoPage(slug: string) {
+  const entry = getContentPage(slug, "things-to-do");
+  if (!entry || entry.page.status === "draft") return undefined;
+  return entry;
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getContentPage(slug, "things-to-do");
+  const entry = getPublishedThingToDoPage(slug);
   if (!entry) return {};
   return {
     title: `${entry.page.title} — Things to do — ${guideConfig.shortTitle}`,
@@ -44,8 +51,8 @@ export default async function ThingToDoPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const entry = getContentPage(slug, "things-to-do");
-  if (!entry || entry.page.status === "draft") notFound();
+  const entry = getPublishedThingToDoPage(slug);
+  if (!entry) notFound();
 
   return (
     <div className={styles.page}>
@@ -59,7 +66,7 @@ export default async function ThingToDoPage({
         <p className={styles.updated}>
           Last updated{" "}
           <time dateTime={entry.page.updatedAt}>{entry.page.updatedAt}</time> ·
-          status: {entry.page.status}
+          status: {CONTENT_STATUS_LABELS[entry.page.status]}
         </p>
       </header>
 
