@@ -69,6 +69,18 @@ export const RELATED_PLACES: Record<string, RelatedPlace[]> = {
     place("morgat", "Sheltered swim"),
     place("maison-des-mineraux", "Family geology"),
   ],
+  "vannes-carnac-morbihan": [
+    { slug: "vannes", title: "Vannes medieval town", note: "Walkable hub" },
+    { slug: "carnac-alignments", title: "Carnac megaliths", note: "On-site" },
+    { slug: "ile-aux-moines", title: "Île-aux-Moines", note: "Boat trip" },
+    { slug: "ile-d-arz", title: "Île d'Arz", note: "Boat trip" },
+    { slug: "suscinio", title: "Château de Suscinio", note: "Day trip · car" },
+    { slug: "quiberon", title: "Quiberon peninsula", note: "Day trip · car" },
+    { slug: "branfere", title: "Parc de Branféré", note: "Family anchor" },
+    { slug: "auray-saint-goustan", title: "Auray / Saint-Goustan", note: "Short detour" },
+    { slug: "broceliande", title: "Brocéliande forest", note: "Inland · relaxed route" },
+    { slug: "lac-de-tremelin", title: "Lac de Trémelin", note: "Inland · relaxed route" },
+  ],
 };
 
 export function getRelatedPlaces(slug: string): RelatedPlace[] {
