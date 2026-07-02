@@ -7,7 +7,12 @@ export interface RouteTimelineProps {
   frontmatter: RouteFrontmatter;
   /** baseSlug → baseTitle lookup, built once by the caller from the registry. */
   baseTitles: Map<string, string>;
-  /** Use compact variant on the index page (no bestFit, links to base pages). */
+  /**
+   * Compact variant (index page): omits bestFit and renders base names as
+   * plain text, since the whole card is already a link to the route page.
+   * Full variant (detail page): renders base names as links to /bases/[slug]
+   * and includes the bestFit pitch.
+   */
   variant?: "full" | "compact";
 }
 
