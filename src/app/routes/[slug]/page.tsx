@@ -6,11 +6,9 @@ import remarkGfm from "remark-gfm";
 
 import { CONTENT_STATUS_LABELS } from "@/components/content/labels";
 import { guideConfig } from "@/config/guide";
-import {
-  getContentPage,
-  getRouteFrontmatter,
-  loadContentPages,
-} from "@/lib/content/registry";
+import { loadContentPages } from "@/lib/content/registry";
+import { routeFrontmatterSchema } from "@/lib/content/schemas";
+import type { RouteFrontmatter } from "@/lib/content/schemas";
 import { RouteTimeline } from "@/components/routes/RouteTimeline";
 import {
   getSourceBlockLinks,
@@ -18,6 +16,7 @@ import {
 } from "@/lib/content/evidence-links";
 import { loadEvidenceRegistry } from "@/lib/content/sources-data";
 import styles from "@/components/routes/routes.module.css";
+import type { RegistryEntry } from "@/lib/content/registry";
 
 /**
  * Static params come only from reviewed route pages (status !== "draft").
@@ -30,10 +29,43 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
-function getVisibleRoutePage(slug: string) {
-  const entry = getContentPage(slug, "routes");
-  if (!entry || entry.page.status === "draft") return undefined;
-  return entry;
+interface RoutePageData {
+  entry: RegistryEntry;
+  frontmatter: RouteFrontmatter;
+  baseTitles: Map<string, string>;
+}
+
+/**
+ * Resolve a route page from a single registry load, deriving the route entry,
+ * its validated route frontmatter, and the baseSlug → baseTitle map from one
+ * pass over `loadContentPages()`. The registry cache is disabled in dev, so
+ * loading once here avoids three separate full content-directory scans per
+ * request (mirroring the directory-data pattern).
+ */
+function loadRoutePageData(slug: string): RoutePageData | undefined {
+  const allPages = loadContentPages();
+
+  let entry: RegistryEntry | undefined;
+  const baseTitles = new Map<string, string>();
+  for (const e of allPages) {
+    if (e.category === "routes" && e.page.slug === slug && e.page.status !== "draft") {
+      entry = e;
+    } else if (e.category === "bases") {
+      baseTitles.set(e.page.slug, e.page.title);
+    }
+  }
+  if (!entry) return undefined;
+
+  // A reviewed route page must have valid route frontmatter; if it doesn't,
+  // the content is out of sync — surface it loudly at build time.
+  const parsed = routeFrontmatterSchema.safeParse(entry.frontmatter);
+  if (!parsed.success) {
+    throw new Error(
+      `Route page "${slug}" has no valid route frontmatter (trip-level fields are required).`
+    );
+  }
+
+  return { entry, frontmatter: parsed.data, baseTitles };
 }
 
 export async function generateMetadata({
@@ -42,27 +74,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getVisibleRoutePage(slug);
-  if (!entry) return {};
+  const data = loadRoutePageData(slug);
+  if (!data) return {};
   return {
-    title: `${entry.page.title} — Routes — ${guideConfig.shortTitle}`,
-    description: entry.page.summary,
+    title: `${data.entry.page.title} — Routes — ${guideConfig.shortTitle}`,
+    description: data.entry.page.summary,
   };
-}
-
-/**
- * Build a baseSlug → baseTitle lookup from a single registry load so the
- * timeline's base links use the canonical base titles without a per-base
- * content scan.
- */
-function buildBaseTitles(): Map<string, string> {
-  const titles = new Map<string, string>();
-  for (const entry of loadContentPages()) {
-    if (entry.category === "bases") {
-      titles.set(entry.page.slug, entry.page.title);
-    }
-  }
-  return titles;
 }
 
 export default async function RoutePage({
@@ -71,17 +88,9 @@ export default async function RoutePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const entry = getVisibleRoutePage(slug);
-  if (!entry) notFound();
-
-  // A reviewed route page must have valid route frontmatter; if it doesn't,
-  // the content is out of sync — surface it loudly at build time.
-  const frontmatter = getRouteFrontmatter(slug);
-  if (!frontmatter) {
-    throw new Error(
-      `Route page "${slug}" has no valid route frontmatter (trip-level fields are required).`
-    );
-  }
+  const data = loadRoutePageData(slug);
+  if (!data) notFound();
+  const { entry, frontmatter, baseTitles } = data;
 
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((r) => [r.id, r]));
@@ -98,7 +107,6 @@ export default async function RoutePage({
     `Route page ${slug}`
   );
   const sourceLinks = dedupe(getSourceBlockLinks(paragraphEvidence));
-  const baseTitles = buildBaseTitles();
 
   return (
     <div className={styles.page}>

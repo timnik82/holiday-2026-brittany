@@ -9,7 +9,8 @@ export interface RouteTimelineProps {
   baseTitles: Map<string, string>;
   /**
    * Compact variant (index page): omits bestFit and renders base names as
-   * plain text, since the whole card is already a link to the route page.
+   * plain text. The index card links the route title to the detail page;
+   * base names are left non-interactive to avoid competing click targets.
    * Full variant (detail page): renders base names as links to /bases/[slug]
    * and includes the bestFit pitch.
    */
