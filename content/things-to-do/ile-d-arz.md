@@ -12,7 +12,7 @@ ageRange: all
 
 ## What it is
 
-<!-- paragraph id="ile-d-arz-what" sources="evidence:southern-islands-gulf,evidence:southern-vannes-town" -->
+<!-- paragraph id="ile-d-arz-what" sources="evidence:southern-islands-gulf" -->
 The Île d'Arz is a second, quieter gulf island reached by passenger ferry, offering a calmer boat-and-bike day than the busier Île-aux-Moines. It rounds out the gulf's island options alongside the kayaking, SUP and catamaran cruises available from the mainland ports.
 
 ## Planning

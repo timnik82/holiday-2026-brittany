@@ -105,7 +105,7 @@
   },
   {
     "id": "evidence:southern-accommodation-pressure",
-    "text": "This is one of the most expensive zones after Saint-Malo, especially by the sea. Indicative August ranges are apartments at €130 to €260 per night, family hotels at €110 to €240 per night, and gîtes at €450 to €1,100 per week; a 5-star campsite week runs €1,400 to €2,200 and Carnac beach hotels cluster around $109 to $214 per night. Vannes is usually a little better value than Carnac itself. August is peak season — book ahead.",
+    "text": "This is one of the most expensive zones after Saint-Malo, especially by the sea. Indicative August ranges are apartments at €130 to €260 per night, family hotels at €110 to €240 per night, and gîtes at €450 to €1,100 per week; a 5-star campsite week runs €1,400 to €2,200. Aggregator Carnac beach-hotel listings cluster around $109 to $214 per night (a USD sample figure from the supplied research). Vannes is usually a little better value than Carnac itself. August is peak season — book ahead.",
     "kind": "price",
     "sourceBlockRefs": ["chatgpt:b031", "gemini-britany:b020", "operaai:b024"],
     "sourceUrls": [],

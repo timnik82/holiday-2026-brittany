@@ -17,7 +17,7 @@ Lac de Trémelin is an inland forest lake in the Brocéliande area, used for rel
 
 ## Planning
 
-- **Why it is here:** a calm freshwater option that balances the coastal base — but its details are outside the audited research.
+- **Why it is here:** a calm freshwater option that balances the coastal base for the relaxed route.
 - **Before you go:** verify swimming access, lifeguard cover, and water quality against official sources for 2026.
 - **Transport:** inland — a car is recommended.
 - **Safety:** follow official local guidance for any freshwater swimming.

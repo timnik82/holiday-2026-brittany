@@ -627,8 +627,13 @@
     "plannedArea": "Pending review — Вариант 1: Культурно-исторический маршрут «Эпоха рыцарей, пиратов и легенд» (content PRs 5–8)"
   },
   "gemini-britany:b028": {
-    "status": "draft",
-    "plannedArea": "Pending review — Вариант 1: Культурно-исторический маршрут «Эпоха рыцарей, пиратов и легенд» (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-broceliande"
+    ],
+    "paragraphIds": [
+      "broceliande-what"
+    ]
   },
   "gemini-britany:b029": {
     "status": "draft",
@@ -1186,6 +1191,7 @@
       "evidence:southern-auray-saint-goustan"
     ],
     "paragraphIds": [
+      "morbihan-verdict",
       "vannes-what",
       "morbihan-food",
       "auray-saint-goustan-what"

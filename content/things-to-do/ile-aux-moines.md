@@ -20,7 +20,6 @@ The Île-aux-Moines is the largest island in the Morbihan gulf, reached by a sho
 - **Visit duration:** a full day.
 - **Age fit:** all ages; cycling and beach play suit a 9 to 10-year-old.
 - **Weather fit:** best in fair weather; the crossing is sea-condition dependent.
-- **Booking:** ferries run on a seasonal schedule — check times and book ahead in August.
+- **Booking:** ferries run on a seasonal, weather-dependent schedule — check times and book ahead in August (last reviewed against the supplied research on 2026-07-02).
 - **Transport:** passenger ferry from the gulf ports; the island itself is car-free (bikes and walking).
 - **Safety:** supervise children on the ferry and around the water.
-- **Last checked:** boat schedules are seasonal and weather-dependent — re-check before booking (last reviewed against the supplied research on 2026-07-02).
