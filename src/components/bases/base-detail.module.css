@@ -66,6 +66,11 @@
   font-size: 1.4rem;
 }
 
+.subheading {
+  color: #123c54;
+  font-size: 1.05rem;
+}
+
 .prose {
   max-width: 48rem;
 }

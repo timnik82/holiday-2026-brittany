@@ -47,7 +47,10 @@
   "chatgpt:b009": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:saint-malo-best-overall-base"
+      "evidence:saint-malo-best-overall-base",
+      "evidence:northern-saint-malo-allround-base",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-dinan-medieval-town"
     ],
     "paragraphIds": [
       "ranking-1"
@@ -56,7 +59,8 @@
   "chatgpt:b010": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:northern-saint-malo-logistics-rail"
+      "evidence:northern-saint-malo-logistics-rail",
+      "evidence:northern-cap-frehel-fort-la-latte"
     ],
     "paragraphIds": [
       "saint-malo-transport-rail"
@@ -78,7 +82,9 @@
     "status": "retained",
     "evidenceIds": [
       "evidence:northern-saint-malo-tides-planning",
-      "evidence:northern-saint-malo-food"
+      "evidence:northern-saint-malo-food",
+      "evidence:northern-cancale-oysters",
+      "evidence:northern-cap-frehel-fort-la-latte"
     ],
     "paragraphIds": [
       "saint-malo-tide-safety",
@@ -90,7 +96,10 @@
     "evidenceIds": [
       "evidence:northern-saint-malo-ramparts-walk",
       "evidence:northern-saint-malo-grand-aquarium",
-      "evidence:northern-bon-secours-tidal-pool"
+      "evidence:northern-bon-secours-tidal-pool",
+      "evidence:northern-saint-malo-tides-planning",
+      "evidence:northern-cancale-oysters",
+      "evidence:northern-cap-frehel-fort-la-latte"
     ],
     "paragraphIds": [
       "saint-malo-ramparts-aquarium"
@@ -100,7 +109,12 @@
     "status": "retained",
     "evidenceIds": [
       "evidence:northern-granit-rose-nature-first",
-      "evidence:northern-granit-rose-lannion-anchor"
+      "evidence:northern-granit-rose-lannion-anchor",
+      "evidence:northern-granit-rose-science-mix",
+      "evidence:northern-granit-rose-ploumanach-gr34",
+      "evidence:northern-granit-rose-beaches",
+      "evidence:northern-granit-rose-climate",
+      "evidence:northern-paimpol-brehat-linked-area"
     ],
     "paragraphIds": [
       "granit-rose-verdict"
@@ -120,7 +134,8 @@
   "chatgpt:b016": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:northern-granit-rose-logistics-car"
+      "evidence:northern-granit-rose-logistics-car",
+      "evidence:northern-granit-rose-lannion-anchor"
     ],
     "paragraphIds": [
       "granit-rose-car-tradeoff"
@@ -138,7 +153,8 @@
   "chatgpt:b018": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:northern-granit-rose-food"
+      "evidence:northern-granit-rose-food",
+      "evidence:northern-granit-rose-lannion-anchor"
     ],
     "paragraphIds": [
       "granit-rose-food"
@@ -368,7 +384,9 @@
       "evidence:northern-saint-malo-grand-aquarium",
       "evidence:northern-saint-malo-accommodation-high",
       "evidence:northern-saint-malo-cobac-labyrinthe",
-      "evidence:northern-dinan-medieval-town"
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-saint-malo-tides-planning",
+      "evidence:northern-saint-malo-food"
     ],
     "paragraphIds": [
       "saint-malo-walls-what",
@@ -390,7 +408,8 @@
       "evidence:northern-granit-rose-sept-iles",
       "evidence:northern-granit-rose-beaches",
       "evidence:northern-granit-rose-tregastel-aquarium",
-      "evidence:northern-granit-rose-accommodation"
+      "evidence:northern-granit-rose-accommodation",
+      "evidence:northern-granit-rose-food"
     ],
     "paragraphIds": [
       "ploumanach-what",
@@ -546,7 +565,8 @@
       "evidence:northern-saint-malo-grand-aquarium",
       "evidence:northern-dinan-medieval-town",
       "evidence:northern-saint-malo-accommodation-high",
-      "evidence:northern-saint-malo-tides-planning"
+      "evidence:northern-saint-malo-tides-planning",
+      "evidence:northern-saint-malo-logistics-rail"
     ],
     "paragraphIds": [
       "saint-malo-walls-what",
@@ -646,7 +666,8 @@
   "perplexity:b005": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:brittany-august-air-temperature"
+      "evidence:brittany-august-air-temperature",
+      "evidence:northern-saint-malo-climate"
     ],
     "paragraphIds": [
       "fresh-1"
@@ -754,7 +775,8 @@
     "evidenceIds": [
       "evidence:northern-granit-rose-climate",
       "evidence:northern-sea-temperature-north-coast",
-      "evidence:northern-granit-rose-beaches"
+      "evidence:northern-granit-rose-beaches",
+      "evidence:northern-granit-rose-logistics-car"
     ],
     "paragraphIds": [
       "granit-rose-climate-normals",
@@ -770,7 +792,8 @@
     "evidenceIds": [
       "evidence:northern-granit-rose-nature-first",
       "evidence:northern-granit-rose-ploumanach-gr34",
-      "evidence:northern-granit-rose-sept-iles"
+      "evidence:northern-granit-rose-sept-iles",
+      "evidence:northern-paimpol-brehat-linked-area"
     ],
     "paragraphIds": [
       "granit-rose-verdict",
@@ -786,7 +809,8 @@
     "status": "retained",
     "evidenceIds": [
       "evidence:northern-granit-rose-logistics-car",
-      "evidence:northern-granit-rose-accommodation"
+      "evidence:northern-granit-rose-accommodation",
+      "evidence:northern-granit-rose-lannion-anchor"
     ],
     "paragraphIds": [
       "granit-rose-car-tradeoff",

@@ -1,6 +1,7 @@
 import path from "node:path";
 import { readContentFile, listContentFiles } from "./files";
-import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY } from "./schemas";
+import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY, baseFrontmatterSchema } from "./schemas";
+import type { BaseFrontmatter } from "./schemas";
 import { parseContent } from "./parse";
 import type { ContentPage } from "./types";
 
@@ -90,4 +91,21 @@ export function getContentPage(
   return loadContentPages().find(
     (e) => e.page.slug === slug && (category == null || e.category === category)
   );
+}
+
+/**
+ * Read the full, category-specific frontmatter for a base page (including
+ * `region` and `coordinates`) by slug. The registry's `ContentPage` only
+ * carries the generic fields shared by every category, so base-specific
+ * fields are re-read and re-validated here against `baseFrontmatterSchema`.
+ * Returns undefined if the base page does not exist or fails validation.
+ */
+export function getBaseFrontmatter(slug: string): BaseFrontmatter | undefined {
+  const files = listContentFiles(path.join(CONTENT_ROOT, "bases"));
+  const match = files.find((f) => path.basename(f, ".md") === slug);
+  if (!match) return undefined;
+
+  const { frontmatter } = readContentFile(match);
+  const parsed = baseFrontmatterSchema.safeParse(frontmatter);
+  return parsed.success ? parsed.data : undefined;
 }

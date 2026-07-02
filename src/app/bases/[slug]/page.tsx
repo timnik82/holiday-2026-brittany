@@ -9,7 +9,7 @@ import { BaseFacts } from "@/components/bases/BaseFacts";
 import { RelatedPlaces } from "@/components/bases/RelatedPlaces";
 import styles from "@/components/bases/base-detail.module.css";
 
-import { getContentPage, loadContentPages } from "@/lib/content/registry";
+import { getContentPage, getBaseFrontmatter, loadContentPages } from "@/lib/content/registry";
 import {
   getSourceBlockLinks,
   requireEvidenceRecords,
@@ -18,7 +18,7 @@ import { loadEvidenceRegistry } from "@/lib/content/sources-data";
 import { loadBaseRankings } from "@/lib/ranking/data";
 import { rankBases } from "@/lib/ranking/calculate";
 import { RANKING_DIMENSIONS } from "@/lib/ranking/weights";
-import type { BaseFrontmatter } from "@/lib/content/schemas";
+import { getRelatedPlaces } from "@/components/bases/related-places-data";
 
 /**
  * Static params come only from reviewed base pages (status !== "draft").
@@ -94,18 +94,30 @@ export default async function BaseDetailPage({
   const rankIndex = ranked.findIndex((r) => r.slug === slug);
   const result = ranked[rankIndex];
 
-  const frontmatter = entry.page as unknown as BaseFrontmatter;
+  // Read the full base-specific frontmatter (region, coordinates) that the
+  // generic ContentPage type does not carry. A reviewed base page must have
+  // valid base frontmatter; if it doesn't, the content is out of sync.
+  const frontmatter = getBaseFrontmatter(slug);
+  if (!frontmatter) {
+    throw new Error(
+      `Base page "${slug}" has no valid base frontmatter (region is required).`
+    );
+  }
 
-  // Evidence referenced anywhere in this base's paragraphs.
+  // Every evidence reference on this base's paragraphs must resolve to a
+  // registered record. The raw refs are passed straight to
+  // requireEvidenceRecords (no pre-filtering) so a typo or deleted evidence
+  // id fails loudly at build time instead of silently dropping a citation.
   const paragraphEvidenceIds = Array.from(
     new Set(entry.page.paragraphs.flatMap((p) => p.evidenceRefs))
-  ).filter((id) => evidenceById.has(id));
+  );
   const paragraphEvidence = requireEvidenceRecords(
     evidenceById,
     paragraphEvidenceIds,
     `Base page ${slug}`
   );
   const sourceLinks = getSourceBlockLinks(paragraphEvidence);
+  const places = getRelatedPlaces(slug);
 
   return (
     <div className={styles.page}>
@@ -119,6 +131,7 @@ export default async function BaseDetailPage({
         rankedTotal={result.total}
         confidence={result.confidence}
         rank={rankIndex + 1}
+        totalBases={rankings.bases.length}
       />
 
       <BaseFacts base={base} evidenceById={evidenceById} />
@@ -134,7 +147,7 @@ export default async function BaseDetailPage({
         </div>
       </section>
 
-      <RelatedPlaces places={relatedPlacesFor(slug)} />
+      <RelatedPlaces places={places} />
 
       {sourceLinks.length > 0 && (
         <section
@@ -168,30 +181,4 @@ function dedupe(
     out.push(link);
   }
   return out;
-}
-
-/**
- * Editorial mapping of each base to its linked Things to do pages. Kept in
- * the route so the relationship lives next to the base page without forcing
- * every base frontmatter to duplicate it.
- */
-function relatedPlacesFor(slug: string) {
-  const map: Record<string, { slug: string; title: string; note: string }[]> = {
-    "saint-malo-dinan": [
-      { slug: "saint-malo-walls", title: "Saint-Malo walled city", note: "On-site" },
-      { slug: "bon-secours", title: "Plage du Bon-Secours", note: "City beach" },
-      { slug: "grand-aquarium", title: "Grand Aquarium", note: "Rainy-day anchor" },
-      { slug: "dinan", title: "Dinan medieval town", note: "~40 min train" },
-      { slug: "cancale", title: "Cancale oysters", note: "Day trip" },
-      { slug: "cap-frehel-fort-la-latte", title: "Cap Fréhel & Fort La Latte", note: "Day trip · car" },
-      { slug: "mont-saint-michel", title: "Mont-Saint-Michel", note: "Day trip · ~1h" },
-    ],
-    "cote-de-granit-rose": [
-      { slug: "ploumanach", title: "Ploumanac'h and the pink rocks", note: "On-site" },
-      { slug: "sept-iles", title: "Sept-Îles bird reserve", note: "Boat trip" },
-      { slug: "parc-du-radome", title: "Parc du Radôme / Cité des Télécoms", note: "Rainy-day anchor" },
-      { slug: "paimpol-brehat", title: "Paimpol and Bréhat island", note: "Linked area" },
-    ],
-  };
-  return map[slug] ?? [];
 }

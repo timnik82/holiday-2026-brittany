@@ -21,6 +21,6 @@ The Parc du Radôme groups the Cité des Télécoms (advertised at over four hou
 - **Age fit:** 6+; ideal for a 9 to 10-year-old.
 - **Weather fit:** the Cité des Télécoms and planetarium are fully indoor — strong rainy-day options.
 - **Booking:** check the official site for current opening times and ticket prices; confirm the Village Gaulois reopening status for 2026 before visiting.
-- **Transport:** easiest by car; near Plômeur-Bodou, between Lannion and Perros-Guirec.
+- **Transport:** easiest by car; near Pleumeur-Bodou, between Lannion and Perros-Guirec.
 - **Safety:** standard attraction supervision; rope park has height and harness rules.
 - **Price / checked date:** opening status and prices change — re-check on the official site before visiting (last reviewed against the supplied research on 2026-06-30).

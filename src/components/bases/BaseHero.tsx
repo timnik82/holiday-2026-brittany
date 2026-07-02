@@ -21,6 +21,9 @@ export interface BaseHeroProps {
   rankedTotal: number | null;
   confidence: number;
   rank: number;
+  /** Total number of ranked bases, so the "Base X of Y" header stays
+   *  correct if the dataset size ever changes. */
+  totalBases: number;
 }
 
 export function BaseHero({
@@ -29,11 +32,12 @@ export function BaseHero({
   rankedTotal,
   confidence,
   rank,
+  totalBases,
 }: BaseHeroProps) {
   return (
     <header className={styles.hero}>
       <p className={styles.eyebrow}>
-        Base {rank} of 6 · {frontmatter.region}
+        Base {rank} of {totalBases} · {frontmatter.region}
       </p>
       <h1>{frontmatter.title}</h1>
       <p className={styles.summary}>{base.summary}</p>
@@ -49,7 +53,9 @@ export function BaseHero({
         )}
       </p>
       <p className={styles.updated}>
-        Last updated {frontmatter.updatedAt} · status: {frontmatter.status}
+        Last updated{" "}
+        <time dateTime={frontmatter.updatedAt}>{frontmatter.updatedAt}</time>{" "}
+        · status: {frontmatter.status}
       </p>
     </header>
   );

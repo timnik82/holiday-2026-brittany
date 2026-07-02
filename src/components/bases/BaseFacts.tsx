@@ -51,7 +51,7 @@ export function BaseFacts({
         </div>
       </dl>
       <div>
-        <strong>Main compromises</strong>
+        <h3 className={detailStyles.subheading}>Main compromises</h3>
         <ul>
           {base.compromises.map((item) => (
             <li key={item}>{item}</li>
