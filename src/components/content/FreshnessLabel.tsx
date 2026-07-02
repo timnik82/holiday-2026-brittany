@@ -49,14 +49,14 @@ export function FreshnessLabel({
   if (!state.fresh) {
     return (
       <span className={`${styles.label} ${styles.stale}`}>
-        Needs recheck · {dateText}
+        Needs recheck · <time dateTime={checkedAt}>{dateText}</time>
       </span>
     );
   }
 
   return (
     <span className={`${styles.label} ${styles.fresh}`}>
-      Checked {dateText}
+      Checked <time dateTime={checkedAt}>{dateText}</time>
     </span>
   );
 }
