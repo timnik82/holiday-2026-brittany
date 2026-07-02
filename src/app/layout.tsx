@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
+import { guideConfig } from "@/config/guide";
 
 export const metadata: Metadata = {
-  title: "Holiday 2026 — Brittany Family Guide",
-  description:
-    "An English-language family travel guide for Brittany, France, August 2026.",
+  title: guideConfig.siteTitle,
+  description: guideConfig.siteDescription,
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang={guideConfig.language}>
       <body>
         <SiteShell>{children}</SiteShell>
       </body>

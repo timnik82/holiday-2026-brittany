@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BaseComparison } from "@/components/bases/BaseComparison";
+import { guideConfig } from "@/config/guide";
 import styles from "@/components/bases/bases.module.css";
 import {
   getSourceBlockLinks,
@@ -14,10 +15,14 @@ import {
   RANKING_DIMENSION_LABELS,
 } from "@/lib/ranking/weights";
 
-export const metadata: Metadata = {
-  title: "Compare Brittany bases — Brittany Family Guide",
-  description: "An evidence-backed comparison of six Brittany bases for this family's August 2026 priorities.",
-};
+export function generateMetadata(): Metadata {
+  const baseCount = loadBaseRankings().bases.length;
+
+  return {
+    title: `Compare ${guideConfig.regionName} bases — ${guideConfig.shortTitle}`,
+    description: `An evidence-backed comparison of ${baseCount} ${guideConfig.regionName} bases for this family's ${guideConfig.seasonLabel} priorities.`,
+  };
+}
 
 const SOURCE_RANKING_IDS = [
   "evidence:ranking-source-chatgpt-overall",
@@ -27,6 +32,7 @@ const SOURCE_RANKING_IDS = [
 
 export default function BasesPage() {
   const rankings = loadBaseRankings();
+  const baseCount = rankings.bases.length;
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((record) => [record.id, record]));
   const sourceRankings = requireEvidenceRecords(
@@ -38,8 +44,12 @@ export default function BasesPage() {
   return (
     <div className={styles.page}>
       <header className={styles.hero}>
-        <p className={styles.eyebrow}>Decision guide · August 2026</p>
-        <h1>Compare six Brittany bases</h1>
+        <p className={styles.eyebrow}>
+          Decision guide · {guideConfig.seasonLabel}
+        </p>
+        <h1>
+          Compare {baseCount} {guideConfig.regionName} bases
+        </h1>
         <p>
           This is a family-specific comparison, not a universal destination ranking.
           Each score uses the same 1–10 scale and links back to the supplied research.

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { guideConfig } from "@/config/guide";
 import styles from "./SiteShell.module.css";
 
 const PRIMARY_NAV_ITEMS = [
@@ -18,7 +19,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
       <header className={styles.header}>
         <div className={styles.headerInner}>
-          <span className={styles.siteTitle}>Brittany 2026</span>
+          <span className={styles.siteTitle}>{guideConfig.shortTitle}</span>
 
           <nav aria-label="Primary" className={styles.primaryNav}>
             <ul>
@@ -41,7 +42,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       </main>
 
       <footer className={styles.footer}>
-        <p>Family trip planning — Brittany, France, August 2026</p>
+        <p>
+          Family trip planning — {guideConfig.regionName},{" "}
+          {guideConfig.countryName}, {guideConfig.seasonLabel}
+        </p>
       </footer>
     </>
   );

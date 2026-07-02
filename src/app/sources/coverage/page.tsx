@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { guideConfig } from "@/config/guide";
 import {
   CoverageTable,
   type CoverageRow,
@@ -14,7 +15,7 @@ import {
 } from "@/lib/content/sources-data";
 
 export const metadata: Metadata = {
-  title: "Research coverage — Brittany Family Guide",
+  title: `Research coverage — ${guideConfig.shortTitle}`,
   description:
     "Coverage outcomes and English evidence for the original research documents.",
 };
