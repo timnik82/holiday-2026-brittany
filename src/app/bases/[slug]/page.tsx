@@ -147,7 +147,7 @@ export default async function BaseDetailPage({
         </div>
       </section>
 
-      <RelatedPlaces places={places} />
+      <RelatedPlaces places={places} idBase={`related-${slug}`} />
 
       {sourceLinks.length > 0 && (
         <section
@@ -160,7 +160,12 @@ export default async function BaseDetailPage({
           <ul className={styles.citationsList}>
             {dedupe(sourceLinks).map((link) => (
               <li key={link.ref}>
-                <Link href={link.href}>{link.ref}</Link>
+                <Link
+                  href={link.href}
+                  aria-label={`Source ${link.sourceSlug}, block ${link.ref}`}
+                >
+                  {link.ref}
+                </Link>
               </li>
             ))}
           </ul>

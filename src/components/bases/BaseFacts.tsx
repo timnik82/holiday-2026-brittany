@@ -1,21 +1,9 @@
 import type { EvidenceRecord } from "@/lib/content/evidence";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import { ScoreBreakdown } from "./ScoreBreakdown";
+import { CAR_NEED_LABELS, PRICE_BAND_LABELS } from "./labels";
 import detailStyles from "./base-detail.module.css";
 import sharedStyles from "./bases.module.css";
-
-const CAR_LABELS: Record<BaseRecord["carNeed"], string> = {
-  optional: "Optional",
-  helpful: "Helpful",
-  recommended: "Recommended",
-  essential: "Essential",
-};
-
-const PRICE_LABELS: Record<BaseRecord["priceBand"], string> = {
-  budget: "Better value",
-  moderate: "Moderate",
-  high: "High",
-};
 
 /**
  * Renders the seven-dimension score breakdown plus the practical trade-offs
@@ -43,11 +31,11 @@ export function BaseFacts({
       <dl className={sharedStyles.practicalDetails}>
         <div className={sharedStyles.scoreItem}>
           <dt>Car need</dt>
-          <dd>{CAR_LABELS[base.carNeed]}</dd>
+          <dd>{CAR_NEED_LABELS[base.carNeed]}</dd>
         </div>
         <div className={sharedStyles.scoreItem}>
           <dt>August price band</dt>
-          <dd>{PRICE_LABELS[base.priceBand]}</dd>
+          <dd>{PRICE_BAND_LABELS[base.priceBand]}</dd>
         </div>
       </dl>
       <div>

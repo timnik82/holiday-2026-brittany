@@ -1,19 +1,7 @@
 import type { BaseFrontmatter } from "@/lib/content/schemas";
 import type { BaseRecord } from "@/lib/ranking/schema";
+import { CAR_NEED_LABELS, PRICE_BAND_LABELS } from "./labels";
 import styles from "./base-detail.module.css";
-
-const CAR_LABELS: Record<BaseRecord["carNeed"], string> = {
-  optional: "Car optional",
-  helpful: "Car helpful",
-  recommended: "Car recommended",
-  essential: "Car essential",
-};
-
-const PRICE_LABELS: Record<BaseRecord["priceBand"], string> = {
-  budget: "Better value",
-  moderate: "Moderate price",
-  high: "High price",
-};
 
 export interface BaseHeroProps {
   base: BaseRecord;
@@ -43,8 +31,8 @@ export function BaseHero({
       <p className={styles.summary}>{base.summary}</p>
       <p className={styles.practical}>
         <span className={styles.chip}>{base.bestFor}</span>
-        <span className={styles.chip}>{CAR_LABELS[base.carNeed]}</span>
-        <span className={styles.chip}>{PRICE_LABELS[base.priceBand]}</span>
+        <span className={styles.chip}>Car {CAR_NEED_LABELS[base.carNeed].toLowerCase()}</span>
+        <span className={styles.chip}>{PRICE_BAND_LABELS[base.priceBand]}</span>
         {rankedTotal !== null && (
           <span className={styles.chip}>
             {rankedTotal.toFixed(2)}/10 · {Math.round(confidence * 100)}%
@@ -54,9 +42,25 @@ export function BaseHero({
       </p>
       <p className={styles.updated}>
         Last updated{" "}
-        <time dateTime={frontmatter.updatedAt}>{frontmatter.updatedAt}</time>{" "}
+        <time dateTime={frontmatter.updatedAt}>
+          {formatUpdatedDate(frontmatter.updatedAt)}
+        </time>{" "}
         · status: {frontmatter.status}
       </p>
     </header>
   );
+}
+
+// Fixed en-GB locale so the rendered date is stable across build environments
+// rather than depending on the build server's locale.
+const updatedDateFormatter = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
+function formatUpdatedDate(iso: string): string {
+  // updatedAt is validated as YYYY-MM-DD by the frontmatter schema.
+  const date = new Date(`${iso}T00:00:00`);
+  return updatedDateFormatter.format(date);
 }
