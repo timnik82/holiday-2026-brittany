@@ -1,6 +1,7 @@
 import path from "node:path";
 import { readContentFile, listContentFiles } from "./files";
-import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY } from "./schemas";
+import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY, baseFrontmatterSchema } from "./schemas";
+import type { BaseFrontmatter, PageFrontmatter } from "./schemas";
 import { parseContent } from "./parse";
 import type { ContentPage } from "./types";
 
@@ -10,6 +11,7 @@ const CATEGORIES = ["plan", "bases", "routes", "things-to-do", "practical"];
 export interface RegistryEntry {
   page: ContentPage;
   category: string;
+  frontmatter: PageFrontmatter;
 }
 
 let cachedEntries: RegistryEntry[] | null = null;
@@ -50,6 +52,7 @@ export function loadContentPages(): RegistryEntry[] {
 
       entries.push({
         category,
+        frontmatter: parsed.data,
         page: {
           slug: parsed.data.slug,
           title: parsed.data.title,
@@ -90,4 +93,19 @@ export function getContentPage(
   return loadContentPages().find(
     (e) => e.page.slug === slug && (category == null || e.category === category)
   );
+}
+
+/**
+ * Read the full, category-specific frontmatter for a base page (including
+ * `region` and `coordinates`) by slug. The registry's `ContentPage` only
+ * carries the generic fields shared by every category, so base-specific
+ * fields are re-read and re-validated here against `baseFrontmatterSchema`.
+ * Returns undefined if the base page does not exist or fails validation.
+ */
+export function getBaseFrontmatter(slug: string): BaseFrontmatter | undefined {
+  const entry = getContentPage(slug, "bases");
+  if (!entry) return undefined;
+
+  const parsed = baseFrontmatterSchema.safeParse(entry.frontmatter);
+  return parsed.success ? parsed.data : undefined;
 }

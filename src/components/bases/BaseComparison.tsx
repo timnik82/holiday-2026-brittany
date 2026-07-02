@@ -1,22 +1,11 @@
 import type { EvidenceRecord } from "@/lib/content/evidence";
+import { guideConfig } from "@/config/guide";
 import { rankBases } from "@/lib/ranking/calculate";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import { RANKING_DIMENSIONS } from "@/lib/ranking/weights";
 import { ScoreBreakdown } from "./ScoreBreakdown";
+import { CAR_NEED_LABELS, PRICE_BAND_LABELS } from "./labels";
 import styles from "./bases.module.css";
-
-const CAR_LABELS: Record<BaseRecord["carNeed"], string> = {
-  optional: "Optional",
-  helpful: "Helpful",
-  recommended: "Recommended",
-  essential: "Essential",
-};
-
-const PRICE_LABELS: Record<BaseRecord["priceBand"], string> = {
-  budget: "Better value",
-  moderate: "Moderate",
-  high: "High",
-};
 
 export function BaseComparison({
   bases,
@@ -109,8 +98,11 @@ export function BaseComparison({
 function PracticalDetails({ base }: { base: BaseRecord }) {
   return (
     <div className={styles.practicalDetails}>
-      <p><strong>Car:</strong> {CAR_LABELS[base.carNeed]}</p>
-      <p><strong>August price:</strong> {PRICE_LABELS[base.priceBand]}</p>
+      <p><strong>Car:</strong> {CAR_NEED_LABELS[base.carNeed]}</p>
+      <p>
+        <strong>{guideConfig.seasonLabel} price:</strong>{" "}
+        {PRICE_BAND_LABELS[base.priceBand]}
+      </p>
       <div>
         <strong>Compromises:</strong>
         <ul>

@@ -47,47 +47,118 @@
   "chatgpt:b009": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:saint-malo-best-overall-base"
+      "evidence:saint-malo-best-overall-base",
+      "evidence:northern-saint-malo-allround-base",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-dinan-medieval-town"
     ],
     "paragraphIds": [
       "ranking-1"
     ]
   },
   "chatgpt:b010": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-logistics-rail",
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "saint-malo-transport-rail"
+    ]
   },
   "chatgpt:b011": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+    "status": "conflict",
+    "conflictId": "conflict:saint-malo-accommodation-price",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-accommodation-high",
+      "evidence:northern-saint-malo-accommodation-lower"
+    ],
+    "paragraphIds": [
+      "saint-malo-accommodation-conflict"
+    ],
+    "interpretation": "ChatGPT and Gemini place Saint-Malo at the expensive end (roughly EUR 130-300/night in August), while Perplexity gives lower family figures around EUR 120-200/night. Budget toward the higher range inside the walls or near the Sillon, and book early."
   },
   "chatgpt:b012": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-tides-planning",
+      "evidence:northern-saint-malo-food",
+      "evidence:northern-cancale-oysters",
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "saint-malo-tide-safety",
+      "saint-malo-food"
+    ]
   },
   "chatgpt:b013": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo и Dinan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-bon-secours-tidal-pool",
+      "evidence:northern-saint-malo-tides-planning",
+      "evidence:northern-cancale-oysters",
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "saint-malo-ramparts-aquarium"
+    ]
   },
   "chatgpt:b014": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-nature-first",
+      "evidence:northern-granit-rose-lannion-anchor",
+      "evidence:northern-granit-rose-science-mix",
+      "evidence:northern-granit-rose-ploumanach-gr34",
+      "evidence:northern-granit-rose-beaches",
+      "evidence:northern-granit-rose-climate",
+      "evidence:northern-paimpol-brehat-linked-area"
+    ],
+    "paragraphIds": [
+      "granit-rose-verdict"
+    ]
   },
   "chatgpt:b015": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-science-mix",
+      "evidence:northern-granit-rose-sept-iles"
+    ],
+    "paragraphIds": [
+      "granit-rose-science-mix",
+      "granit-rose-sept-iles"
+    ]
   },
   "chatgpt:b016": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-logistics-car",
+      "evidence:northern-granit-rose-lannion-anchor"
+    ],
+    "paragraphIds": [
+      "granit-rose-car-tradeoff"
+    ]
   },
   "chatgpt:b017": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-accommodation"
+    ],
+    "paragraphIds": [
+      "granit-rose-accommodation"
+    ]
   },
   "chatgpt:b018": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-food",
+      "evidence:northern-granit-rose-lannion-anchor"
+    ],
+    "paragraphIds": [
+      "granit-rose-food"
+    ]
   },
   "chatgpt:b019": {
     "status": "draft",
@@ -302,20 +373,50 @@
     "plannedArea": "Pending review — Сравнительный анализ баз размещения в Бретани (content PRs 5–8)"
   },
   "gemini-britany:b011": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сен-Мало и Динан (Изумрудный берег) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-allround-base"
   },
   "gemini-britany:b012": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сен-Мало и Динан (Изумрудный берег) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-bon-secours-tidal-pool",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-saint-malo-accommodation-high",
+      "evidence:northern-saint-malo-cobac-labyrinthe",
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-saint-malo-tides-planning",
+      "evidence:northern-saint-malo-food"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "bon-secours-what",
+      "grand-aquarium-what",
+      "saint-malo-accommodation-conflict",
+      "dinan-what"
+    ]
   },
   "gemini-britany:b013": {
-    "status": "draft",
-    "plannedArea": "Pending review — Берег Розового Гранита (Côte de Granit Rose) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-granit-rose-nature-first"
   },
   "gemini-britany:b014": {
-    "status": "draft",
-    "plannedArea": "Pending review — Берег Розового Гранита (Côte de Granit Rose) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-ploumanach-gr34",
+      "evidence:northern-granit-rose-science-mix",
+      "evidence:northern-granit-rose-sept-iles",
+      "evidence:northern-granit-rose-beaches",
+      "evidence:northern-granit-rose-tregastel-aquarium",
+      "evidence:northern-granit-rose-accommodation",
+      "evidence:northern-granit-rose-food"
+    ],
+    "paragraphIds": [
+      "ploumanach-what",
+      "parc-du-radome-what",
+      "sept-iles-what",
+      "granit-rose-beaches"
+    ]
   },
   "gemini-britany:b015": {
     "status": "draft",
@@ -454,20 +555,45 @@
     "plannedArea": "Pending review — 2. Климат и условия для купания в августе (content PRs 5–8)"
   },
   "operaai:b015": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.1. Сен-Мало и Динан (Изумрудный берег / Иль-и-Вилен) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-allround-base"
   },
   "operaai:b016": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.1. Сен-Мало и Динан (Изумрудный берег / Иль-и-Вилен) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-saint-malo-accommodation-high",
+      "evidence:northern-saint-malo-tides-planning",
+      "evidence:northern-saint-malo-logistics-rail"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "grand-aquarium-what",
+      "dinan-what",
+      "saint-malo-tide-safety"
+    ]
   },
   "operaai:b017": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.2. Берег Розового Гранита (Кот-д'Армор) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-granit-rose-nature-first"
   },
   "operaai:b018": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.2. Берег Розового Гранита (Кот-д'Армор) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-ploumanach-gr34",
+      "evidence:northern-granit-rose-sept-iles",
+      "evidence:northern-granit-rose-science-mix",
+      "evidence:northern-granit-rose-logistics-car",
+      "evidence:northern-granit-rose-accommodation"
+    ],
+    "paragraphIds": [
+      "ploumanach-what",
+      "sept-iles-what",
+      "parc-du-radome-what",
+      "granit-rose-car-tradeoff"
+    ]
   },
   "operaai:b019": {
     "status": "draft",
@@ -540,7 +666,8 @@
   "perplexity:b005": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:brittany-august-air-temperature"
+      "evidence:brittany-august-air-temperature",
+      "evidence:northern-saint-malo-climate"
     ],
     "paragraphIds": [
       "fresh-1"
@@ -587,60 +714,112 @@
     "plannedArea": "Pending review — Цены на жильё (общая оценка) (content PRs 5–8)"
   },
   "perplexity:b016": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-climate"
   },
   "perplexity:b017": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-climate"
+    ],
+    "paragraphIds": [
+      "saint-malo-climate-normals"
+    ]
   },
   "perplexity:b018": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
   },
   "perplexity:b019": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-saint-malo-cobac-labyrinthe",
+      "evidence:northern-mont-saint-michel-day-trip"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "grand-aquarium-what",
+      "dinan-what",
+      "mont-saint-michel-what"
+    ]
   },
   "perplexity:b020": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-accommodation-high"
   },
   "perplexity:b021": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-allround-base",
+      "evidence:northern-saint-malo-accommodation-lower",
+      "evidence:northern-mont-saint-michel-day-trip"
+    ],
+    "paragraphIds": [
+      "saint-malo-verdict",
+      "mont-saint-michel-what"
+    ]
   },
   "perplexity:b022": {
-    "status": "draft",
-    "plannedArea": "Pending review — Saint-Malo / Dinan (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-allround-base"
   },
   "perplexity:b023": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-granit-rose-nature-first"
   },
   "perplexity:b024": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-climate",
+      "evidence:northern-sea-temperature-north-coast",
+      "evidence:northern-granit-rose-beaches",
+      "evidence:northern-granit-rose-logistics-car"
+    ],
+    "paragraphIds": [
+      "granit-rose-climate-normals",
+      "granit-rose-sea-normals"
+    ]
   },
   "perplexity:b025": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-granit-rose-logistics-car"
   },
   "perplexity:b026": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-nature-first",
+      "evidence:northern-granit-rose-ploumanach-gr34",
+      "evidence:northern-granit-rose-sept-iles",
+      "evidence:northern-paimpol-brehat-linked-area"
+    ],
+    "paragraphIds": [
+      "granit-rose-verdict",
+      "ploumanach-what",
+      "sept-iles-what"
+    ]
   },
   "perplexity:b027": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-granit-rose-logistics-car"
   },
   "perplexity:b028": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-granit-rose-logistics-car",
+      "evidence:northern-granit-rose-accommodation",
+      "evidence:northern-granit-rose-lannion-anchor"
+    ],
+    "paragraphIds": [
+      "granit-rose-car-tradeoff",
+      "granit-rose-accommodation"
+    ]
   },
   "perplexity:b029": {
-    "status": "draft",
-    "plannedArea": "Pending review — Côte de Granit Rose (Розовый гранитный берег) (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-granit-rose-nature-first"
   },
   "perplexity:b030": {
     "status": "draft",

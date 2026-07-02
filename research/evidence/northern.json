@@ -1,0 +1,278 @@
+[
+  {
+    "id": "evidence:northern-saint-malo-allround-base",
+    "text": "Saint-Malo and Dinan together are described as the best all-round northern base when a family wants a bit of everything: a walled corsair city, medieval Dinan, tidal forts and islands, family beaches, a strong aquarium, and good short day trips. The tourist office positions Bon-Secours as a family beach and the Grand Aquarium as a key family attraction.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b009", "perplexity:b021", "operaai:b015", "gemini-britany:b011"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-saint-malo-tides-planning",
+    "text": "Tides are the single most important natural planning factor at Saint-Malo. They are also what makes the base distinctive: at low tide you can walk out to the islands of Grand Bé and Petit Bé and their 17th-century fort, and at high tide the sea reclaims the causeways. Respecting the tide schedule is the main safety rule with a child.",
+    "kind": "warning",
+    "sourceBlockRefs": ["chatgpt:b012", "chatgpt:b013", "operaai:b016", "gemini-britany:b012"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Always check the daily tide table before walking to any tidal island."
+    ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-saint-malo-ramparts-walk",
+    "text": "The roughly 2 km walk atop Saint-Malo's ramparts (Intra-Muros) is a highlight for a 9 to 10-year-old, with views over the English Channel, the fort islands, and the beaches. It is the natural spine of a visit and works in most weather.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["operaai:b016", "gemini-britany:b012", "perplexity:b019"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-saint-malo-grand-aquarium",
+    "text": "The Grand Aquarium de Saint-Malo is consistently named as the area's leading family attraction, with a submarine-style descent and hands-on marine contact. It is the base's main rainy-day anchor.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b009", "operaai:b016", "gemini-britany:b012", "perplexity:b019"],
+    "sourceUrls": [],
+    "qualifiers": ["Opening times and ticket prices change and should be re-checked before visiting."],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-bon-secours-tidal-pool",
+    "text": "Plage de Bon-Secours is a family beach inside Saint-Malo with a unique seawater tidal pool complete with a diving tower, set against the city walls. Plage du Sillon, the long 3 km sandy beach, is better for walks and windsurfing but is fully exposed to the large tides.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b013", "gemini-britany:b012"],
+    "sourceUrls": [],
+    "qualifiers": ["Sillon's tide range is extreme; check tide times before settling on the sand."],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-dinan-medieval-town",
+    "text": "Dinan is a medieval town about 30 km from the coast, built above the Rance estuary, with a 14th-century castle, half-timbered houses, and the steep cobbled rue du Jerzual leading down to a picturesque port. It is reached in roughly 40 minutes by car from Saint-Malo, by train via Rennes, or in summer by a river cruise along the Rance.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b009", "operaai:b016", "gemini-britany:b012", "perplexity:b019"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-cancale-oysters",
+    "text": "Cancale, a short trip from Saint-Malo, is the area's oyster capital: the harbour-side stalls (marché à l'huître) sell freshly opened oysters to eat right on the seawall. It pairs seafood with a relaxed harbour walk and is an easy food-focused half-day trip.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b012", "chatgpt:b013"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-cap-frehel-fort-la-latte",
+    "text": "Cap Fréhel and the neighbouring Fort La Latte are a classic day trip from Saint-Malo by car: dramatic clifftop heath, a fortified headland castle, and coastal views. The route is a primary reason a car is described as helpful for this base even though the town itself is walkable.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b010", "chatgpt:b012", "chatgpt:b013"],
+    "sourceUrls": [],
+    "qualifiers": ["Most practical by car; public transport to the headland is limited."],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-mont-saint-michel-day-trip",
+    "text": "Mont-Saint-Michel sits about one hour from Saint-Malo and is repeatedly named as the signature day trip from the base. It adds a major historical and cultural anchor without committing the family to a second base.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["perplexity:b021", "perplexity:b019"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Although administratively in Normandy, the sources treat it as a natural Saint-Malo day trip.",
+      "August is extremely busy; arrive early or late in the day."
+    ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-saint-malo-cobac-labyrinthe",
+    "text": "Several child-focused parks back up the northern base for fair and wet weather, including the Cobac Parc water and amusement park and the 11-hectare pirate-themed Labyrinthe du Corsaire corn maze, plus rope parks and zoos in the surrounding area.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["perplexity:b019", "gemini-britany:b012"],
+    "sourceUrls": [],
+    "qualifiers": ["Seasonal opening; verify before visiting."],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-saint-malo-logistics-rail",
+    "text": "Saint-Malo is one of the easiest northern bases to reach without a car: a direct flight into Nantes followed by a train of about 2 h 24 min to Saint-Malo, or via Rennes (Nantes to Rennes about 1 h 49 min, Rennes to Dinan from 54 min). Dinard airport is about 20 minutes from both towns but has no Portugal direct flights for summer 2026.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b010", "perplexity:b052", "operaai:b016"],
+    "sourceUrls": [],
+    "qualifiers": ["Train and flight schedules are seasonal and must be re-checked before booking."],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-saint-malo-accommodation-high",
+    "text": "Saint-Malo is repeatedly described as one of the shortlist's most expensive August bases, especially inside the walls and near the Sillon beach. The research points to nightly family-hotel and apartment rates broadly in the €130 to €300 range, with sea views and parking pushing prices up sharply.",
+    "kind": "price",
+    "sourceBlockRefs": ["chatgpt:b011", "gemini-britany:b012"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "August is peak season; book well ahead."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-saint-malo-accommodation-lower",
+    "text": "Some sources give lower Saint-Malo family accommodation figures, around €120 to €200 per night for family apartments and hotels in August, treating it as attainable for family travel.",
+    "kind": "price",
+    "sourceBlockRefs": ["perplexity:b021", "perplexity:b052"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "These figures are lower than ChatGPT and Gemini's €130 to €300 range."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-saint-malo-food",
+    "text": "Food is a strength of the base: seafood and Cancale oysters, Dinan's Thursday market, and abundant crêperies make family meals easy and distinctive. Galettes, crêpes, moules-frites, and simple fish dishes are easy to find for a child.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b012", "gemini-britany:b012"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-saint-malo-climate",
+    "text": "Saint-Malo has a typical oceanic August: average daytime maxima around 21 to 23 degrees Celsius (about 22.3 / 13.7 degrees Celsius at Dinard), rare heat (Dinard records roughly 0.2 days at or above 30 degrees Celsius in August), and sea temperatures near 18 degrees Celsius. Daylight lasts about 14 h 25 to 30 min.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b008", "perplexity:b017", "perplexity:b005", "perplexity:b007"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August normals, not a forecast.",
+      "Inland Dinan is marginally warmer by day than the exposed Saint-Malo seafront."
+    ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-nature-first",
+    "text": "The Côte de Granit Rose is the strongest nature-first northern choice, defined less by a historic city than by landscape: pink granite formations, the customs path GR34, weather-beaten headlands, sandy family beaches, and island birdlife. Perros-Guirec offers about 13 km of coast and three sandy beaches, with Ploumanac'h as the main focal point.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b014", "perplexity:b026", "operaai:b017", "gemini-britany:b013"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-science-mix",
+    "text": "The area's distinctive strength for a 9 to 10-year-old is a rare science-and-nature combination: the Parc du Radôme groups the Cité des Télécoms (advertised at over 4 hours of family visit), the 360-degree Planétarium de Bretagne, a reconstructed Gallic village reopening after renovation in 2026, and the nearby Vivons Perchés rope park. Sept-Îles boat trips add seabird and marine life.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b015", "chatgpt:b014", "operaai:b018", "gemini-britany:b014"],
+    "sourceUrls": [],
+    "qualifiers": ["Opening status of the renovated Village Gaulois for 2026 should be confirmed before visiting."],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-granit-rose-ploumanach-gr34",
+    "text": "Ploumanac'h and the GR34 customs path past the pink rocks to the Mean Ruz (Ploumanac'h) lighthouse is the area's signature walk. Children enjoy scrambling over the granite boulders and reading animal shapes into them; short, manageable sections suit a family that does not want heavy mileage.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b014", "operaai:b018", "gemini-britany:b014", "perplexity:b026"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-sept-iles",
+    "text": "From Perros-Guirec, boat excursions run to the Sept-Îles archipelago, a seabird reserve that is one of France's largest Atlantic puffin sites. The trip combines wildlife viewing with a coastal cruise.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b015", "operaai:b018", "gemini-britany:b014", "perplexity:b026"],
+    "sourceUrls": [],
+    "qualifiers": ["Landings are restricted; most visits are boat-based viewing."],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-beaches",
+    "text": "The base has well-regarded sandy beaches: Trestraou at Perros-Guirec with full facilities, and Coz-Pors at Trégastel, dotted with pink boulders and sheltered from the open ocean. The water is described as refreshing rather than warm.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["gemini-britany:b014", "perplexity:b024", "chatgpt:b014"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-tregastel-aquarium",
+    "text": "Trégastel has a small marine aquarium built directly into pink-granite caves, offering a compact, weather-proof stop with a geological twist.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["gemini-britany:b014"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-climate",
+    "text": "The Côte de Granit Rose is one of the coolest-feeling northern options: typical August maxima around 20 degrees Celsius at Perros-Guirec (about 20 / 15 degrees Celsius), sea temperatures of roughly 16 to 17.5 degrees Celsius, very low heat risk on the exposed shore, and roughly five rainy days in an August pattern. Wind on the open headlands makes it feel fresher still.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b008", "perplexity:b024", "chatgpt:b014"],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August normals, not a forecast.",
+      "Sheltered coves feel warmer than exposed headlands."
+    ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-logistics-car",
+    "text": "A car markedly improves the Côte de Granit Rose: the beaches and viewpoints are dispersed along local roads, and the classic combination is a flight into Brest (with the direct Porto summer flight) plus a train to Lannion of about 1 h 15 min, or via Nantes (Nantes to Lannion about 3 h 14 min). A car-free stay is feasible from Perros-Guirec, Lannion, or Trégastel but less convenient.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b016", "operaai:b018", "perplexity:b028", "perplexity:b024"],
+    "sourceUrls": [],
+    "qualifiers": ["Flight and train schedules are seasonal and must be re-checked before booking."],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-granit-rose-accommodation",
+    "text": "Accommodation here is usually described as somewhat cheaper than Saint-Malo, though sea-view properties climb steeply in peak season. Indicative August ranges are apartments at €120 to €220 per night, family hotels at €110 to €260, and gîtes at €450 to €1,000 per week; a stone cottage is quoted around €900 to €1,400 per week.",
+    "kind": "price",
+    "sourceBlockRefs": ["chatgpt:b017", "gemini-britany:b014", "perplexity:b014", "perplexity:b028"],
+    "sourceUrls": [],
+    "qualifiers": ["August is peak season; book ahead for sea-view properties."],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-granit-rose-food",
+    "text": "Food is reliable if less concentrated than Saint-Malo or Morbihan: Lannion's large Thursday market, many crêperies, and small seafood restaurants support a calm family evening of beach, a short walk, crêpes, and an early night.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b018", "gemini-britany:b014"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-granit-rose-lannion-anchor",
+    "text": "Lannion provides the area's rail anchor and practical services, with Perros-Guirec and Trégastel as the coastal accommodation points. The three towns function together as the base rather than a single centre.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b016", "chatgpt:b018", "perplexity:b028"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-paimpol-brehat-linked-area",
+    "text": "Paimpol and the Île de Bréhat to the west of the granite coast are treated as a linked day-trip area rather than a seventh base: a working fishing port, a boat crossing to the car-free flower island, and a quieter coastal contrast to Perros-Guirec.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["perplexity:b052", "perplexity:b026", "chatgpt:b014"],
+    "sourceUrls": [],
+    "qualifiers": ["Boat schedules to Bréhat are seasonal."],
+    "timeSensitive": true,
+    "checkedAt": "2026-06-30"
+  },
+  {
+    "id": "evidence:northern-sea-temperature-north-coast",
+    "text": "Along the north coast (Saint-Malo, Perros-Guirec, Trégastel, Trébeurden) the August sea is the season's warmest but still cool, around 16 to 18 degrees Celsius. Swimming is described as refreshing and playful rather than long.",
+    "kind": "fact",
+    "sourceBlockRefs": ["perplexity:b024", "perplexity:b007", "chatgpt:b008"],
+    "sourceUrls": [],
+    "qualifiers": ["Historical August sea temperatures, not a forecast."],
+    "timeSensitive": false
+  }
+]
