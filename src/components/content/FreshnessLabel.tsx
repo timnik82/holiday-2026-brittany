@@ -12,18 +12,21 @@ export interface FreshnessLabelProps {
   reviewWindowDays?: number;
 }
 
-// The configured locale keeps rendered dates stable across build environments.
+// The configured locale keeps rendered dates stable across build environments;
+// timeZone: "UTC" makes `YYYY-MM-DD` dates render identically on server and
+// client (avoiding Next.js hydration mismatches regardless of server TZ).
 const checkedDateFormatter = new Intl.DateTimeFormat(guideConfig.locale, {
   day: "numeric",
   month: "short",
   year: "numeric",
+  timeZone: "UTC",
 });
 
 /**
  * Renders a fact's verification state: "Checked {date}" while fresh, or
  * "Needs recheck · {date}" once it is older than its review window. The fact
- * itself never disappears — passing time only changes the label. A missing
- * `checkedAt` renders "Needs recheck" without a date.
+ * itself never disappears — passing time only changes the label. A missing or
+ * unparseable `checkedAt` renders "Needs recheck" without a date.
  */
 export function FreshnessLabel({
   checkedAt,
@@ -31,20 +34,22 @@ export function FreshnessLabel({
 }: FreshnessLabelProps) {
   const state = getFreshness(checkedAt, reviewWindowDays);
 
-  if (!checkedAt) {
+  // A missing or unparseable checkedAt has no date to show.
+  if (Number.isNaN(state.ageDays)) {
     return (
-      <span className={`${styles.label} ${styles.stale}`} role="status">
+      <span className={`${styles.label} ${styles.stale}`}>
         Needs recheck
       </span>
     );
   }
 
-  const dateText = checkedDateFormatter.format(new Date(`${checkedAt}T00:00:00`));
+  // Parse the YYYY-MM-DD string as UTC to format consistently.
+  const dateText = checkedDateFormatter.format(new Date(`${checkedAt}T00:00:00Z`));
 
   if (!state.fresh) {
     return (
-      <span className={`${styles.label} ${styles.stale}`} role="status">
-        Needs recheck · checked {dateText}
+      <span className={`${styles.label} ${styles.stale}`}>
+        Needs recheck · {dateText}
       </span>
     );
   }

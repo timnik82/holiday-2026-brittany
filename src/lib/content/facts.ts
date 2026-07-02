@@ -9,8 +9,8 @@ const FACTS_DIR = path.resolve(process.cwd(), "content", "facts");
 /**
  * A single time-sensitive fact (transport time, accommodation price, etc.).
  * `checkedAt` is the date it was last verified against an official source, and
- * drives the FreshnessLabel. `reviewWindowDays` defaults per-category when
- * omitted by the caller (see `loadFacts`).
+ * drives the FreshnessLabel. `reviewWindowDays` is optional; when omitted, the
+ * FreshnessLabel falls back to its own 30-day default (see freshness.ts).
  */
 const factSchema = z.object({
   id: z.string().min(1),

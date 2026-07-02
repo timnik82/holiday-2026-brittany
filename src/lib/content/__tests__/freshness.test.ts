@@ -83,4 +83,21 @@ describe("getFreshness", () => {
       ageDays: Number.NaN,
     });
   });
+
+  it("rejects an impossible calendar date that Date would silently normalise", () => {
+    // 2026-02-31 is not a real date, but `new Date("2026-02-31")` yields
+    // 2026-03-03. Strict validation must reject it rather than mis-age it.
+    expect(getFreshness("2026-02-31", DEFAULT_REVIEW_WINDOW_DAYS, now)).toEqual({
+      fresh: false,
+      ageDays: Number.NaN,
+    });
+    expect(getFreshness("2026-13-01", DEFAULT_REVIEW_WINDOW_DAYS, now)).toEqual({
+      fresh: false,
+      ageDays: Number.NaN,
+    });
+    expect(getFreshness("2026-06-31", DEFAULT_REVIEW_WINDOW_DAYS, now)).toEqual({
+      fresh: false,
+      ageDays: Number.NaN,
+    });
+  });
 });
