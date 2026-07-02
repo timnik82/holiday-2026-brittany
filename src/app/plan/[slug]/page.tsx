@@ -78,15 +78,19 @@ export default async function PlanGuidePage({
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((r) => [r.id, r]));
 
-  // Every evidence reference on this guide's paragraphs must resolve to a
-  // registered record; a typo or deleted evidence id fails loudly at build
-  // time instead of silently dropping a citation.
-  const paragraphEvidenceIds = Array.from(
-    new Set(entry.page.paragraphs.flatMap((p) => p.evidenceRefs))
+  // Every evidence reference on this guide's paragraphs — and every fact's
+  // backing evidenceRef — must resolve to a registered record; a typo or a
+  // deleted evidence id fails loudly at build time instead of silently
+  // dropping a citation or an unverified fact.
+  const requiredEvidenceIds = Array.from(
+    new Set([
+      ...entry.page.paragraphs.flatMap((p) => p.evidenceRefs),
+      ...facts.map((f) => f.evidenceRef).filter((ref): ref is string => Boolean(ref)),
+    ])
   );
   const paragraphEvidence = requireEvidenceRecords(
     evidenceById,
-    paragraphEvidenceIds,
+    requiredEvidenceIds,
     `Plan guide ${slug}`
   );
   const sourceLinks = dedupe(getSourceBlockLinks(paragraphEvidence));
