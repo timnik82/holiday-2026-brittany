@@ -28,7 +28,7 @@ Quimper works better for a child than it might seem: the Musée des Beaux-Arts o
 ## Day trips
 
 <!-- paragraph id="quimper-day-trips" sources="evidence:western-locronan,evidence:western-pont-aven,evidence:western-concarneau-filets-bleus,evidence:western-benodet-glenan,evidence:western-pointe-du-raz,evidence:western-haliotika" -->
-Within 20 to 30 minutes of Quimper the day trips multiply: Locronan (a most-beautiful granite village), Pont-Aven (the riverside painters' town), Concarneau (its walled Ville Close and the August Festival des Filets Bleus), Bénodet (family beach and boats to the Glénan islands), the Pointe du Raz (a wild end-of-the-land headland), and the Haliotika fishing discovery centre at Le Guilvinec. Southern Finistère adds broad sandy beaches, family resorts, and water sports.
+Day trips multiply close to Quimper: Locronan (a most-beautiful granite village, about 20 to 30 minutes away), Pont-Aven (the riverside painters' town), Concarneau (its walled Ville Close and the August Festival des Filets Bleus), and Bénodet (family beach and boats to the Glénan islands) all sit within easy reach. A little farther out, the Pointe du Raz (a wild end-of-the-land headland) and the Haliotika fishing discovery centre at Le Guilvinec extend the range.
 
 ## Reaching Quimper
 

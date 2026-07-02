@@ -6,6 +6,23 @@ export interface RelatedPlace {
 }
 
 /**
+ * Canonical display titles for places that belong to more than one base, so a
+ * slug/title edit only happens here. `note` still varies per base, so callers
+ * pass it explicitly via `place()`. Declared before RELATED_PLACES because the
+ * map is built by calling `place()` at module init.
+ */
+const PLACE_TITLES: Record<string, string> = {
+  "crozon-pen-hir": "Pen-Hir and Cap de la Chèvre",
+  morgat: "Morgat beach and bay",
+  "maison-des-mineraux": "Maison des Minéraux",
+};
+
+/** Build a RelatedPlace from a shared title, keeping the per-base note. */
+function place(slug: string, note: string): RelatedPlace {
+  return { slug, title: PLACE_TITLES[slug] ?? slug, note };
+}
+
+/**
  * Editorial mapping of each base to the linked Things to do pages that belong
  * to it but are not separate bases themselves (e.g. Paimpol/Bréhat, Cap Fréhel,
  * Cancale, Mont-Saint-Michel). Kept in a dedicated module so the base route
@@ -33,9 +50,9 @@ export const RELATED_PLACES: Record<string, RelatedPlace[]> = {
   "brest-finistere": [
     { slug: "oceanopolis", title: "Océanopolis", note: "Rainy-day anchor" },
     { slug: "chateau-de-brest", title: "Château de Brest / Marine museum", note: "City culture" },
-    { slug: "crozon-pen-hir", title: "Pen-Hir and Cap de la Chèvre", note: "Day trip · car" },
-    { slug: "morgat", title: "Morgat beach and bay", note: "Day trip · car" },
-    { slug: "maison-des-mineraux", title: "Maison des Minéraux", note: "Family geology" },
+    place("crozon-pen-hir", "Day trip · car"),
+    place("morgat", "Day trip · car"),
+    place("maison-des-mineraux", "Family geology"),
     { slug: "morlaix-roscoff", title: "Morlaix and Roscoff", note: "Linked area" },
   ],
   "quimper-south-finistere": [
@@ -48,9 +65,9 @@ export const RELATED_PLACES: Record<string, RelatedPlace[]> = {
     { slug: "pointe-du-raz", title: "Pointe du Raz", note: "Wild headland · car" },
   ],
   "crozon-douarnenez": [
-    { slug: "crozon-pen-hir", title: "Pen-Hir and Cap de la Chèvre", note: "On-site" },
-    { slug: "morgat", title: "Morgat beach and bay", note: "Sheltered swim" },
-    { slug: "maison-des-mineraux", title: "Maison des Minéraux", note: "Family geology" },
+    place("crozon-pen-hir", "On-site"),
+    place("morgat", "Sheltered swim"),
+    place("maison-des-mineraux", "Family geology"),
   ],
 };
 

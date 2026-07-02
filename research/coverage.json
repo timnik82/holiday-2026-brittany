@@ -499,15 +499,21 @@
       "evidence:western-brest-oceanopolis",
       "evidence:western-brest-maritime-museum",
       "evidence:western-brest-accommodation",
+      "evidence:western-brest-climate",
       "evidence:western-crozon-wild-coast",
       "evidence:western-crozon-climate",
+      "evidence:western-crozon-accommodation",
       "evidence:western-morgat-beach",
       "evidence:western-ile-vierge-restricted"
     ],
     "paragraphIds": [
       "brest-oceanopolis-anchor",
       "brest-maritime-heritage",
+      "brest-accommodation",
+      "brest-climate-normals",
       "crozon-verdict",
+      "crozon-climate-normals",
+      "crozon-accommodation",
       "crozon-morgat-beach",
       "crozon-ile-vierge"
     ]
@@ -954,11 +960,13 @@
   "perplexity:b031": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:western-brest-climate"
+      "evidence:western-brest-climate",
+      "evidence:western-crozon-climate"
     ],
     "paragraphIds": [
       "brest-climate-normals",
-      "brest-sea-normals"
+      "brest-sea-normals",
+      "crozon-climate-normals"
     ]
   },
   "perplexity:b032": {
@@ -978,7 +986,8 @@
       "brest-verdict",
       "brest-oceanopolis-anchor",
       "brest-maritime-heritage",
-      "brest-islands-park"
+      "brest-islands-park",
+      "crozon-verdict"
     ]
   },
   "perplexity:b034": {

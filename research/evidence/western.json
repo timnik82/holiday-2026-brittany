@@ -3,7 +3,7 @@
     "id": "evidence:western-brest-strongest-west",
     "text": "Brest is a strong western base for a family that wants maximum coolness, a pronounced oceanic character, and high-quality museums rather than postcard medieval charm. It is a large rebuilt port and France's main naval base — less picture-postcard than Saint-Malo or Quimper — but content-rich: Océanopolis, maritime heritage, the roadstead, boats, capes, and lighthouses, with fast access to the western coast and islands. Finistère offers a strong balance between wild nature and educational attractions (aquariums, museums) well suited to a science- and nature-curious child.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b019", "operaai:b019", "gemini-britany:b015", "perplexity:b033", "perplexity:b035"],
+    "sourceBlockRefs": ["chatgpt:b019", "operaai:b019", "gemini-britany:b015", "perplexity:b033", "perplexity:b035", "perplexity:b036"],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -22,7 +22,7 @@
     "id": "evidence:western-brest-maritime-museum",
     "text": "Maritime history is the base's cultural core: the Château de Brest houses the Musée national de la Marine, and the Les Ateliers des Capucins cultural centre sits across the military harbour. A ride on France's first urban cable car crosses above the military harbour — a novelty for a child.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b019", "operaai:b020", "gemini-britany:b016"],
+    "sourceBlockRefs": ["chatgpt:b019", "operaai:b020", "gemini-britany:b016", "perplexity:b033"],
     "sourceUrls": [],
     "qualifiers": ["Opening days and hours change — re-check before visiting."],
     "timeSensitive": true,
@@ -93,7 +93,7 @@
     "id": "evidence:western-quimper-culture-base",
     "text": "Quimper is the base for a family that wants a handsome historic city with museums, markets, and day trips to the little gems of southern Finistère rather than a beach on the doorstep. Its strengths are architecture, the cathedral core of Saint-Corentin, half-timbered houses, and the faïence quarter; it is described as much more charming than Brest and the cultural capital of Brittany. It sits close to Locronan, Concarneau, Pont-Aven, Fouesnant, and Bénodet, making it a smart cultural-and-coastal hub.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b023", "operaai:b021", "gemini-britany:b017", "perplexity:b038", "gemini-britany:b018"],
+    "sourceBlockRefs": ["chatgpt:b023", "operaai:b021", "gemini-britany:b017", "perplexity:b038", "gemini-britany:b018", "operaai:b022", "perplexity:b043"],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false

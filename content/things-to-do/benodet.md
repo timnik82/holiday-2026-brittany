@@ -23,4 +23,4 @@ Bénodet pairs a sheltered, well-equipped family beach with regular boats to the
 - **Booking:** book Glénan boats ahead in August — they fill and run on a seasonal schedule.
 - **Transport:** within day-trip range of Quimper; a car is recommended.
 - **Safety:** supervise children on the ferry and around the water.
-- **Price / checked date:** boat schedules are seasonal and weather-dependent — check and book ahead (last reviewed against the supplied research on 2026-07-02).
+- **Last checked:** boat schedules and conditions are seasonal and weather-dependent — re-check before booking (last reviewed against the supplied research on 2026-07-02).
