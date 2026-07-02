@@ -1,7 +1,7 @@
 import path from "node:path";
 import { readContentFile, listContentFiles } from "./files";
-import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY, baseFrontmatterSchema } from "./schemas";
-import type { BaseFrontmatter, PageFrontmatter } from "./schemas";
+import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY, baseFrontmatterSchema, routeFrontmatterSchema } from "./schemas";
+import type { BaseFrontmatter, PageFrontmatter, RouteFrontmatter } from "./schemas";
 import { parseContent } from "./parse";
 import type { ContentPage } from "./types";
 
@@ -107,5 +107,21 @@ export function getBaseFrontmatter(slug: string): BaseFrontmatter | undefined {
   if (!entry) return undefined;
 
   const parsed = baseFrontmatterSchema.safeParse(entry.frontmatter);
+  return parsed.success ? parsed.data : undefined;
+}
+
+/**
+ * Read the full, route-specific frontmatter (origin/destination/mode plus
+ * trip-level fields like durationDays, pace, bases) for a route page by slug.
+ * Mirrors getBaseFrontmatter: the registry's ContentPage only carries generic
+ * fields, so the route-specific fields are re-validated here against
+ * routeFrontmatterSchema. Returns undefined if the route page does not exist
+ * or fails validation.
+ */
+export function getRouteFrontmatter(slug: string): RouteFrontmatter | undefined {
+  const entry = getContentPage(slug, "routes");
+  if (!entry) return undefined;
+
+  const parsed = routeFrontmatterSchema.safeParse(entry.frontmatter);
   return parsed.success ? parsed.data : undefined;
 }

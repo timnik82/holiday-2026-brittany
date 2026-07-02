@@ -1,0 +1,222 @@
+/* ===== Route detail page ===== */
+
+.page {
+  display: grid;
+  gap: 2rem;
+}
+
+.backLink {
+  font-size: 0.9rem;
+}
+
+.hero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.1;
+  color: #123c54;
+}
+
+.summary {
+  color: #244d5f;
+  font-size: 1.05rem;
+}
+
+.updated {
+  color: #6f828a;
+  font-size: 0.8rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.5rem;
+  border: 1px solid #cad9df;
+  border-radius: 1rem;
+  background: #fff;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 0.3rem 1.25rem rgb(18 60 84 / 7%);
+  max-width: 48rem;
+}
+
+.timelineRow {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.7fr) 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e1e9ec;
+}
+
+.timelineRow:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.timelineRow dt {
+  color: #244d5f;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.timelineRow dd {
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.baseSequence {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.baseSequenceItem {
+  display: inline;
+}
+
+.baseLink:focus-visible {
+  outline: 2px solid #123c54;
+  outline-offset: 0.15rem;
+  border-radius: 0.15rem;
+}
+
+.bodySection {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.sectionHeading {
+  color: #123c54;
+  font-size: 1.4rem;
+}
+
+.prose {
+  max-width: 48rem;
+}
+
+.prose :global(h2) {
+  color: #123c54;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.prose :global(h3) {
+  color: #244d5f;
+  font-size: 1.05rem;
+  margin-top: 1.1rem;
+}
+
+.prose :global(p),
+.prose :global(ul),
+.prose :global(ol) {
+  color: #1a1a1a;
+}
+
+.prose :global(ul),
+.prose :global(ol) {
+  padding-left: 1.25rem;
+}
+
+.prose :global(li) {
+  margin-top: 0.25rem;
+}
+
+.citationsSection {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.citationsList {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.citationsList a {
+  overflow-wrap: anywhere;
+}
+
+/* ===== Route index page ===== */
+
+.indexPage {
+  display: grid;
+  gap: 2rem;
+}
+
+.indexHero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.indexHero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  color: #123c54;
+}
+
+.eyebrow {
+  color: #9a4f2c;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.routeList {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.routeCard {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.3rem 1.25rem rgb(18 60 84 / 7%);
+}
+
+.routeCardTitle {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.routeCardTitle a {
+  color: #123c54;
+}
+
+.routeCardTitle a:focus-visible {
+  outline: 2px solid #123c54;
+  outline-offset: 0.15rem;
+  border-radius: 0.15rem;
+}
+
+.routeCardSummary {
+  color: #3f555e;
+  font-size: 0.95rem;
+}
+
+.routeCardChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  border: 1px solid #cad9df;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.82rem;
+  color: #244d5f;
+}

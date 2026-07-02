@@ -366,64 +366,171 @@
     "plannedArea": "Pending review — Реалистичные маршруты на 7–10 дней (content PRs 5–8)"
   },
   "chatgpt:b043": {
-    "status": "draft",
-    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-overview"
+    ],
+    "paragraphIds": [
+      "routes-cultural-overview"
+    ]
   },
   "chatgpt:b044": {
-    "status": "draft",
-    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-sequencing",
+      "evidence:routes-cultural-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-cultural-sequencing",
+      "routes-cultural-fit"
+    ]
   },
   "chatgpt:b045": {
-    "status": "draft",
-    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-transfers"
+    ],
+    "paragraphIds": [
+      "routes-cultural-entry",
+      "routes-cultural-day-1"
+    ]
   },
   "chatgpt:b046": {
-    "status": "draft",
-    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-cultural-day-2",
+      "routes-cultural-day-3",
+      "routes-cultural-day-5"
+    ]
   },
   "chatgpt:b047": {
-    "status": "draft",
-    "plannedArea": "Pending review — Культурный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-sequencing",
+      "evidence:routes-cultural-transfers"
+    ],
+    "paragraphIds": [
+      "routes-cultural-sequencing",
+      "routes-cultural-day-6",
+      "routes-cultural-day-9"
+    ]
   },
   "chatgpt:b048": {
-    "status": "draft",
-    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-overview"
+    ],
+    "paragraphIds": [
+      "routes-nature-overview"
+    ]
   },
   "chatgpt:b049": {
-    "status": "draft",
-    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-sequencing",
+      "evidence:routes-nature-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-nature-sequencing",
+      "routes-nature-stay-lengths"
+    ]
   },
   "chatgpt:b050": {
-    "status": "draft",
-    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-transfers",
+      "evidence:routes-entry-airports"
+    ],
+    "paragraphIds": [
+      "routes-nature-entry",
+      "routes-nature-day-1"
+    ]
   },
   "chatgpt:b051": {
-    "status": "draft",
-    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-overview",
+      "evidence:routes-nature-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-nature-day-2",
+      "routes-nature-day-3",
+      "routes-nature-day-4",
+      "routes-nature-day-5"
+    ]
   },
   "chatgpt:b052": {
-    "status": "draft",
-    "plannedArea": "Pending review — Природный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-sequencing",
+      "evidence:routes-nature-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-nature-sequencing",
+      "routes-nature-stay-lengths"
+    ]
   },
   "chatgpt:b053": {
-    "status": "draft",
-    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-overview"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-overview"
+    ]
   },
   "chatgpt:b054": {
-    "status": "draft",
-    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-sequencing",
+      "evidence:routes-relaxed-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-sequencing",
+      "routes-relaxed-stay-lengths"
+    ]
   },
   "chatgpt:b055": {
-    "status": "draft",
-    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-transfers",
+      "evidence:routes-entry-airports"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-entry",
+      "routes-relaxed-day-1",
+      "routes-relaxed-day-8"
+    ]
   },
   "chatgpt:b056": {
-    "status": "draft",
-    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-overview",
+      "evidence:routes-relaxed-sequencing",
+      "evidence:routes-relaxed-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-overview",
+      "routes-relaxed-day-2",
+      "routes-relaxed-day-3"
+    ]
   },
   "chatgpt:b057": {
-    "status": "draft",
-    "plannedArea": "Pending review — Расслабленный семейный маршрут (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-stay-lengths",
+      "evidence:routes-relaxed-pace",
+      "evidence:routes-relaxed-sequencing"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-stay-lengths",
+      "routes-relaxed-pace",
+      "routes-relaxed-day-5",
+      "routes-relaxed-day-7"
+    ]
   },
   "chatgpt:b058": {
     "status": "draft",
@@ -466,16 +573,28 @@
     "plannedArea": "Pending review — Сценарий 1: Авиаперелет + аренда автомобиля в Бретани (content PRs 5–8)"
   },
   "gemini-britany:b007": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сценарий 1: Авиаперелет + аренда автомобиля в Бретани (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-car-required-flexible"
+    ],
+    "paragraphIds": [
+      "routes-cultural-car",
+      "routes-nature-car",
+      "routes-relaxed-car"
+    ]
   },
   "gemini-britany:b008": {
     "status": "draft",
     "plannedArea": "Pending review — Сценарий 2: Автомобильное путешествие на собственной машине из Португалии (content PRs 5–8)"
   },
   "gemini-britany:b009": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сценарий 2: Автомобильное путешествие на собственной машине из Португалии (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "routes-cultural-entry"
+    ]
   },
   "gemini-britany:b010": {
     "status": "draft",
@@ -619,12 +738,26 @@
     "plannedArea": "Pending review — Семейная гастрономия: бретонские кулинарные традиции (content PRs 5–8)"
   },
   "gemini-britany:b026": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сценарии реалистичных семейных маршрутов на 7–10 дней (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-overview",
+      "evidence:routes-nature-overview",
+      "evidence:routes-relaxed-overview"
+    ],
+    "paragraphIds": [
+      "routes-cultural-overview",
+      "routes-nature-overview",
+      "routes-relaxed-overview"
+    ]
   },
   "gemini-britany:b027": {
-    "status": "draft",
-    "plannedArea": "Pending review — Вариант 1: Культурно-исторический маршрут «Эпоха рыцарей, пиратов и легенд» (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-overview"
+    ],
+    "paragraphIds": [
+      "routes-cultural-overview"
+    ]
   },
   "gemini-britany:b028": {
     "status": "retained",
@@ -636,20 +769,47 @@
     ]
   },
   "gemini-britany:b029": {
-    "status": "draft",
-    "plannedArea": "Pending review — Вариант 2: Природно-приключенческий маршрут «Скалы, океанография и научные открытия» (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-overview"
+    ],
+    "paragraphIds": [
+      "routes-nature-overview"
+    ]
   },
   "gemini-britany:b030": {
-    "status": "draft",
-    "plannedArea": "Pending review — Вариант 2: Природно-приключенческий маршрут «Скалы, океанография и научные открытия» (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-transfers",
+      "evidence:routes-nature-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-nature-entry",
+      "routes-nature-day-1"
+    ]
   },
   "gemini-britany:b031": {
-    "status": "draft",
-    "plannedArea": "Pending review — Вариант 3: Спокойный семейный маршрут «Солнечное побережье, песчаные пляжи и эко-парки» (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-overview",
+      "evidence:routes-relaxed-pace"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-overview",
+      "routes-relaxed-pace"
+    ]
   },
   "gemini-britany:b032": {
-    "status": "draft",
-    "plannedArea": "Pending review — Вариант 3: Спокойный семейный маршрут «Солнечное побережье, песчаные пляжи и эко-парки» (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-transfers",
+      "evidence:routes-relaxed-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-entry",
+      "routes-relaxed-day-4",
+      "routes-relaxed-day-5"
+    ]
   },
   "gemini-britany:b033": {
     "status": "draft",
@@ -684,16 +844,33 @@
     "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
   },
   "operaai:b007": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "routes-cultural-entry"
+    ]
   },
   "operaai:b008": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "routes-cultural-entry"
+    ]
   },
   "operaai:b009": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Логистика и транспорт: из Португалии в Бретань (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-car-required-flexible"
+    ],
+    "paragraphIds": [
+      "routes-cultural-car",
+      "routes-nature-car",
+      "routes-relaxed-car"
+    ]
   },
   "operaai:b010": {
     "status": "draft",
@@ -836,36 +1013,95 @@
     "plannedArea": "Pending review — 5. Рейтинг лучших баз для семейного отдыха (content PRs 5–8)"
   },
   "operaai:b027": {
-    "status": "draft",
-    "plannedArea": "Pending review — 5. Рейтинг лучших баз для семейного отдыха (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-overview",
+      "evidence:routes-cultural-overview"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-overview",
+      "routes-cultural-overview"
+    ]
   },
   "operaai:b028": {
-    "status": "draft",
-    "plannedArea": "Pending review — 6. Предлагаемые маршруты (7–10 дней) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-entry-airports",
+      "evidence:routes-car-required-flexible"
+    ],
+    "paragraphIds": [
+      "routes-cultural-entry",
+      "routes-cultural-car"
+    ]
   },
   "operaai:b029": {
-    "status": "draft",
-    "plannedArea": "Pending review — Маршрут 1: «Пираты, рыцари и легенды» (Культурно-исторический) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-overview"
+    ],
+    "paragraphIds": [
+      "routes-cultural-overview"
+    ]
   },
   "operaai:b030": {
-    "status": "draft",
-    "plannedArea": "Pending review — Маршрут 1: «Пираты, рыцари и легенды» (Культурно-исторический) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-sequencing",
+      "evidence:routes-cultural-transfers",
+      "evidence:routes-cultural-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-cultural-day-4",
+      "routes-cultural-day-5",
+      "routes-cultural-day-6"
+    ]
   },
   "operaai:b031": {
-    "status": "draft",
-    "plannedArea": "Pending review — Маршрут 2: «Дикая Бретань и розовые скалы» (Природно-исследовательский) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-sequencing",
+      "evidence:routes-nature-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-nature-sequencing",
+      "routes-nature-day-6"
+    ]
   },
   "operaai:b032": {
-    "status": "draft",
-    "plannedArea": "Pending review — Маршрут 2: «Дикая Бретань и розовые скалы» (Природно-исследовательский) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-sequencing",
+      "evidence:routes-nature-transfers"
+    ],
+    "paragraphIds": [
+      "routes-nature-day-6",
+      "routes-nature-day-9"
+    ]
   },
   "operaai:b033": {
-    "status": "draft",
-    "plannedArea": "Pending review — Маршрут 3: «Острова, мегалиты и теплый залив» (Спокойный семейный) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-overview",
+      "evidence:routes-relaxed-pace"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-overview",
+      "routes-relaxed-pace",
+      "routes-relaxed-day-7"
+    ]
   },
   "operaai:b034": {
-    "status": "draft",
-    "plannedArea": "Pending review — Маршрут 3: «Острова, мегалиты и теплый залив» (Спокойный семейный) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-sequencing",
+      "evidence:routes-relaxed-transfers",
+      "evidence:routes-relaxed-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-sequencing",
+      "routes-relaxed-day-4",
+      "routes-relaxed-day-5"
+    ]
   },
   "perplexity:b004": {
     "status": "draft",
@@ -906,12 +1142,24 @@
     "plannedArea": "Pending review — Перелёт (content PRs 5–8)"
   },
   "perplexity:b012": {
-    "status": "draft",
-    "plannedArea": "Pending review — Поездка на машине из Португалии (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-own-car-impractical"
+    ],
+    "paragraphIds": [
+      "routes-cultural-entry"
+    ]
   },
   "perplexity:b013": {
-    "status": "draft",
-    "plannedArea": "Pending review — Нужна ли машина в Бретани (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-car-required-flexible"
+    ],
+    "paragraphIds": [
+      "routes-cultural-car",
+      "routes-nature-car",
+      "routes-relaxed-car"
+    ]
   },
   "perplexity:b014": {
     "status": "draft",
@@ -1234,56 +1482,139 @@
     "plannedArea": "Pending review — Рейтинг баз для вашей семьи (content PRs 5–8)"
   },
   "perplexity:b055": {
-    "status": "draft",
-    "plannedArea": "Pending review — Маршруты 7–10 дней (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-overview",
+      "evidence:routes-nature-overview",
+      "evidence:routes-relaxed-overview"
+    ],
+    "paragraphIds": [
+      "routes-cultural-overview",
+      "routes-nature-overview",
+      "routes-relaxed-overview"
+    ]
   },
   "perplexity:b056": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-overview"
+    ],
+    "paragraphIds": [
+      "routes-cultural-overview"
+    ]
   },
   "perplexity:b057": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-sequencing"
+    ],
+    "paragraphIds": [
+      "routes-cultural-sequencing"
+    ]
   },
   "perplexity:b058": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-transfers",
+      "evidence:routes-cultural-sequencing",
+      "evidence:routes-cultural-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-cultural-day-2",
+      "routes-cultural-day-4",
+      "routes-cultural-day-6"
+    ]
   },
   "perplexity:b059": {
-    "status": "draft",
-    "plannedArea": "Pending review — 1. Более культурный маршрут (крепости, города, музеи) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-cultural-overview"
+    ],
+    "paragraphIds": [
+      "routes-cultural-overview",
+      "routes-cultural-fit"
+    ]
   },
   "perplexity:b060": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-overview"
+    ],
+    "paragraphIds": [
+      "routes-nature-overview"
+    ]
   },
   "perplexity:b061": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-sequencing"
+    ],
+    "paragraphIds": [
+      "routes-nature-sequencing"
+    ]
   },
   "perplexity:b062": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-sequencing",
+      "evidence:routes-nature-stay-lengths",
+      "evidence:routes-nature-overview"
+    ],
+    "paragraphIds": [
+      "routes-nature-sequencing",
+      "routes-nature-day-6",
+      "routes-nature-day-9"
+    ]
   },
   "perplexity:b063": {
-    "status": "draft",
-    "plannedArea": "Pending review — 2. Более природный маршрут (скалы, нацпарки, острова) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-nature-overview"
+    ],
+    "paragraphIds": [
+      "routes-nature-overview",
+      "routes-nature-fit"
+    ]
   },
   "perplexity:b064": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-overview"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-overview"
+    ]
   },
   "perplexity:b065": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-sequencing"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-sequencing"
+    ]
   },
   "perplexity:b066": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-sequencing",
+      "evidence:routes-relaxed-stay-lengths"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-sequencing",
+      "routes-relaxed-day-6",
+      "routes-relaxed-day-7"
+    ]
   },
   "perplexity:b067": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:routes-relaxed-pace"
+    ],
+    "paragraphIds": [
+      "routes-relaxed-pace",
+      "routes-relaxed-fit"
+    ]
   },
   "perplexity:b068": {
     "status": "draft",

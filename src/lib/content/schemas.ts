@@ -19,6 +19,16 @@ export const routeFrontmatterSchema = pageFrontmatterSchema.extend({
   origin: z.string().min(1),
   destination: z.string().min(1),
   mode: z.enum(["car", "train", "ferry", "flight"]),
+  // Trip-level facts surfaced in the route's "at a glance" card. The
+  // day-by-day itinerary itself lives in the markdown body (each day's
+  // facts cited via paragraph evidence comments), mirroring how base and
+  // things-to-do pages already work.
+  durationDays: z.number().int().positive(),
+  pace: z.enum(["relaxed", "moderate", "active"]),
+  bases: z.array(z.string().min(1)).min(1),
+  accommodationChanges: z.number().int().nonnegative(),
+  carRequirement: z.enum(["optional", "recommended", "essential"]),
+  bestFit: z.string().min(1),
 });
 
 export const thingsToDoFrontmatterSchema = pageFrontmatterSchema.extend({
