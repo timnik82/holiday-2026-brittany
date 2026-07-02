@@ -1,5 +1,10 @@
 import { describe, it, expect } from "vitest";
-import { loadContentPages, getStaticContentParams, getContentPage } from "../registry";
+import {
+  getBaseFrontmatter,
+  getContentPage,
+  getStaticContentParams,
+  loadContentPages,
+} from "../registry";
 
 describe("registry", () => {
   it("loads content pages from the content directory", () => {
@@ -27,5 +32,17 @@ describe("registry", () => {
 
     const wrongCategory = getContentPage("about-this-guide", "bases");
     expect(wrongCategory).toBeUndefined();
+  });
+
+  it("keeps validated base frontmatter addressable by its declared slug", () => {
+    const entry = getContentPage("cote-de-granit-rose", "bases");
+
+    expect(entry?.frontmatter).toMatchObject({
+      slug: "cote-de-granit-rose",
+      region: "North Brittany — Côtes-d'Armor",
+    });
+    expect(getBaseFrontmatter("cote-de-granit-rose")?.region).toBe(
+      "North Brittany — Côtes-d'Armor"
+    );
   });
 });

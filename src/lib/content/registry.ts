@@ -1,7 +1,7 @@
 import path from "node:path";
 import { readContentFile, listContentFiles } from "./files";
 import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY, baseFrontmatterSchema } from "./schemas";
-import type { BaseFrontmatter } from "./schemas";
+import type { BaseFrontmatter, PageFrontmatter } from "./schemas";
 import { parseContent } from "./parse";
 import type { ContentPage } from "./types";
 
@@ -11,6 +11,7 @@ const CATEGORIES = ["plan", "bases", "routes", "things-to-do", "practical"];
 export interface RegistryEntry {
   page: ContentPage;
   category: string;
+  frontmatter: PageFrontmatter;
 }
 
 let cachedEntries: RegistryEntry[] | null = null;
@@ -51,6 +52,7 @@ export function loadContentPages(): RegistryEntry[] {
 
       entries.push({
         category,
+        frontmatter: parsed.data,
         page: {
           slug: parsed.data.slug,
           title: parsed.data.title,
@@ -101,11 +103,9 @@ export function getContentPage(
  * Returns undefined if the base page does not exist or fails validation.
  */
 export function getBaseFrontmatter(slug: string): BaseFrontmatter | undefined {
-  const files = listContentFiles(path.join(CONTENT_ROOT, "bases"));
-  const match = files.find((f) => path.basename(f, ".md") === slug);
-  if (!match) return undefined;
+  const entry = getContentPage(slug, "bases");
+  if (!entry) return undefined;
 
-  const { frontmatter } = readContentFile(match);
-  const parsed = baseFrontmatterSchema.safeParse(frontmatter);
+  const parsed = baseFrontmatterSchema.safeParse(entry.frontmatter);
   return parsed.success ? parsed.data : undefined;
 }

@@ -25,7 +25,7 @@ export async function generateStaticParams() {
 
 export const dynamicParams = false;
 
-function getPublishedThingToDoPage(slug: string) {
+function getVisibleThingToDoPage(slug: string) {
   const entry = getContentPage(slug, "things-to-do");
   if (!entry || entry.page.status === "draft") return undefined;
   return entry;
@@ -37,7 +37,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getPublishedThingToDoPage(slug);
+  const entry = getVisibleThingToDoPage(slug);
   if (!entry) return {};
   return {
     title: `${entry.page.title} — Things to do — ${guideConfig.shortTitle}`,
@@ -51,7 +51,7 @@ export default async function ThingToDoPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const entry = getPublishedThingToDoPage(slug);
+  const entry = getVisibleThingToDoPage(slug);
   if (!entry) notFound();
 
   return (
@@ -70,7 +70,10 @@ export default async function ThingToDoPage({
         </p>
       </header>
 
-      <section className={styles.bodySection}>
+      <section
+        className={styles.bodySection}
+        aria-label={`${entry.page.title} guide content`}
+      >
         <div className={styles.prose}>
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {entry.page.content}
