@@ -34,6 +34,12 @@ research/.cache/
 /blob-report/
 /playwright/.cache/
 
+# Playwright MCP — ad-hoc snapshots/screenshots written during manual
+# browser checks. Removed by `npm run clean`; kept out of version control
+# so they never land in a commit.
+/.playwright-mcp/
+/*.png
+
 # Operating systems and editors
 .DS_Store
 Thumbs.db
