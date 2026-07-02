@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { RouteFrontmatter } from "@/lib/content/schemas";
 import { carRequirementLabel, paceLabel } from "./labels";
 import styles from "./routes.module.css";
@@ -41,12 +42,12 @@ export function RouteTimeline({ frontmatter, baseTitles, variant = "full" }: Rou
                 {variant === "compact" ? (
                   <span>{base.title}</span>
                 ) : (
-                  <a
+                  <Link
                     href={`/bases/${base.slug}`}
                     className={styles.baseLink}
                   >
                     {base.title}
-                  </a>
+                  </Link>
                 )}
                 {index < bases.length - 1 && (
                   <span className={styles.baseArrow} aria-hidden="true">
