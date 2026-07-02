@@ -1,0 +1,144 @@
+[
+  {
+    "id": "evidence:southern-base-rhythm",
+    "text": "The Vannes, Carnac and Morbihan area is the base with the gentlest family rhythm. It pairs a slightly warmer feel than the western and northern coasts with the shortlist's best combination of islands, calm water, megaliths, the lively historic town of Vannes, an oyster theme, and short sea crossings. It is strongest for a family that prefers boats, sheltered coves, markets and soft southern Breton light over dramatic ocean and rocks.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b028", "gemini-britany:b019", "operaai:b023", "perplexity:b050"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-family-base-conclusion",
+    "text": "For a child the beaches here give one of the most comfortable holidays of the shortlist: less dramatic surf, more calm water, small coves and boat outings. The single drawback is that if a maximally cool trip is the priority, Morbihan loses to the north and west. As the most relaxed family base, though, it is among the best.",
+    "kind": "qualification",
+    "sourceBlockRefs": ["chatgpt:b032", "perplexity:b049", "chatgpt:b028"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-heat-tradeoff",
+    "text": "The south coast can be noticeably warmer than the rest of Brittany and is sometimes described as very hot in July and August, though the sea air still moderates the heat and it remains a less-hot alternative to the Mediterranean. The water reaches about 19 degrees Celsius in August, making swimming a little more comfortable than on the north coast. This is the shortlist's highest heat risk, but still ocean-limited rather than extreme.",
+    "kind": "qualification",
+    "sourceBlockRefs": ["chatgpt:b028", "perplexity:b045", "perplexity:b050"],
+    "sourceUrls": [],
+    "qualifiers": ["Historical August conditions, not a forecast — check a current forecast before you travel."],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-protected-water-beaches",
+    "text": "Carnac's beaches have fine sand and clean water, and several (such as Grande Plage and Plage de Saint-Colomban) carry a Blue Flag. The Quiberon peninsula shelters them from heavy swell, so the water is calm and safe for children; lifeguards and beach clubs run in August. Grande Plage de Carnac runs about 2 km with a gentle slope and children's clubs.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["operaai:b023", "operaai:b024", "gemini-britany:b020", "perplexity:b047", "chatgpt:b032", "perplexity:b045"],
+    "sourceUrls": [],
+    "qualifiers": ["Lifeguard and beach-club seasons change — check locally before relying on them."],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-carnac-megaliths",
+    "text": "Carnac is famous for its megalithic alignements — thousands of menhirs in long rows, the largest such complex in the world, dated to roughly 4600 to 4300 BC, plus the Maison des Mégalithes visitor centre. Close access to the stones is by paid guided tour in season, but a tourist centre shows short video presentations that suit a restless child.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b029", "gemini-britany:b020", "operaai:b024", "perplexity:b047"],
+    "sourceUrls": [],
+    "qualifiers": ["Tour and visitor-centre schedules change — re-check on the official site before visiting."],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-02"
+  },
+  {
+    "id": "evidence:southern-islands-gulf",
+    "text": "The whole Morbihan gulf is a family draw: the Île-aux-Moines (bikes and calm beaches), the Île d'Arz, Arzon and Port du Crouesty with their beaches and marinas, and traditional sea trips such as the wooden schooner Le Corbeau des mers, where children can help raise the sails. Kayaking, SUP and catamaran cruises are widely available.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b029", "operaai:b024", "perplexity:b047"],
+    "sourceUrls": [],
+    "qualifiers": ["Boat and ferry schedules are seasonal and weather-dependent — check and book ahead in August."],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-02"
+  },
+  {
+    "id": "evidence:southern-vannes-town",
+    "text": "Vannes is a handsome medieval town with a port and walls, well placed for the Morbihan gulf and the Rhuys peninsula, and often used as a walkable urban base for radial trips to beaches and castles. Its market is one of the region's best city markets, and a weekly family route around the gulf (Carnac, Auray, Vannes) is officially recommended.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b029", "perplexity:b051", "perplexity:b049"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-quiberon",
+    "text": "Quiberon is a peninsula with a wild western side (cliffs and waves) and softer, sheltered sandy beaches, easy to reach from Carnac or Vannes and used as part of a coastal route.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["gemini-britany:b020", "perplexity:b051"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-suscinio",
+    "text": "The Château de Suscinio, a ducal Brittany castle on the Rhuys peninsula, runs interactive knight quests, night light shows and costumed tours for children, pairing history with a beach walk.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b029", "gemini-britany:b020"],
+    "sourceUrls": [],
+    "qualifiers": ["Show and tour days change — re-check on the official site before visiting."],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-02"
+  },
+  {
+    "id": "evidence:southern-branfere",
+    "text": "The Parc de Branféré at Le Guerno is the area's key child attraction: a unique mix of a cage-free zoo and the giant Parcabout adventure park, where children bounce on safety nets strung between trees.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["gemini-britany:b020"],
+    "sourceUrls": [],
+    "qualifiers": ["Opening days and hours change — re-check on the official site before visiting."],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-02"
+  },
+  {
+    "id": "evidence:southern-logistics-nantes",
+    "text": "Logistics here are good, with no over-long transfers. From Portugal the simplest route is usually via Nantes: a direct flight, then a Nantes–Vannes train from about 1 h 12 min, and onward to Carnac by car, taxi or bus. Staying in Vannes itself strengthens the car-free option; staying in Carnac or La Trinité-sur-Mer makes a car very desirable. From Lisbon a fly-plus-train to Vannes fits in about seven hours.",
+    "kind": "fact",
+    "sourceBlockRefs": ["chatgpt:b030", "perplexity:b051"],
+    "sourceUrls": [],
+    "qualifiers": ["Flight and train schedules are seasonal and must be re-checked before booking."],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-02"
+  },
+  {
+    "id": "evidence:southern-accommodation-pressure",
+    "text": "This is one of the most expensive zones after Saint-Malo, especially by the sea. Indicative August ranges are apartments at €130 to €260 per night, family hotels at €110 to €240 per night, and gîtes at €450 to €1,100 per week; a 5-star campsite week runs €1,400 to €2,200 and Carnac beach hotels cluster around $109 to $214 per night. Vannes is usually a little better value than Carnac itself. August is peak season — book ahead.",
+    "kind": "price",
+    "sourceBlockRefs": ["chatgpt:b031", "gemini-britany:b020", "operaai:b024"],
+    "sourceUrls": [],
+    "qualifiers": ["August is peak season; aggregator prices move quickly and should be re-checked for the exact dates before booking."],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-02"
+  },
+  {
+    "id": "evidence:southern-food",
+    "text": "Food is a clear strength of the base: markets, oysters and seafood, and crêperies are a major part of the area's family appeal. Vannes's market is one of the region's best, and galettes, crêpes and simple fish dishes are easy to find for a child.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["chatgpt:b029", "perplexity:b049"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-auray-saint-goustan",
+    "text": "Auray and its old port of Saint-Goustan make a small historic stop that pairs well with the gulf route — a harbour of cobbled streets and timbered houses reached as a short detour from Carnac or Vannes.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["perplexity:b049"],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-broceliande",
+    "text": "The Brocéliande forest (around Paimpont) is the legendary forest of Merlin and the fairy Vivian. Its main family stop is La Porte des Secrets, an interactive show-space at Paimpont that tells the Arthurian legends of Merlin, Vivian and the Knights of the Round Table. It is an inland, myth-and-forest contrast to the coastal south.",
+    "kind": "recommendation",
+    "sourceBlockRefs": ["gemini-britany:b028"],
+    "sourceUrls": [],
+    "qualifiers": ["Opening days and show times change — re-check on the official site before visiting."],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-02"
+  }
+]

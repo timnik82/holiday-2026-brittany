@@ -250,24 +250,62 @@
     ]
   },
   "chatgpt:b028": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-base-rhythm",
+      "evidence:southern-family-base-conclusion",
+      "evidence:southern-heat-tradeoff"
+    ],
+    "paragraphIds": [
+      "morbihan-verdict",
+      "morbihan-climate-normals"
+    ]
   },
   "chatgpt:b029": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-carnac-megaliths",
+      "evidence:southern-islands-gulf",
+      "evidence:southern-vannes-town",
+      "evidence:southern-suscinio",
+      "evidence:southern-food"
+    ],
+    "paragraphIds": [
+      "morbihan-megaliths",
+      "morbihan-islands-gulf",
+      "vannes-what",
+      "suscinio-what",
+      "morbihan-food"
+    ]
   },
   "chatgpt:b030": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-logistics-nantes"
+    ],
+    "paragraphIds": [
+      "morbihan-logistics-nantes"
+    ]
   },
   "chatgpt:b031": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-accommodation-pressure"
+    ],
+    "paragraphIds": [
+      "morbihan-accommodation"
+    ]
   },
   "chatgpt:b032": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac и Golfe du Morbihan (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-family-base-conclusion",
+      "evidence:southern-protected-water-beaches"
+    ],
+    "paragraphIds": [
+      "morbihan-verdict",
+      "morbihan-sea-normals"
+    ]
   },
   "chatgpt:b033": {
     "status": "retained",
@@ -538,12 +576,27 @@
     ]
   },
   "gemini-britany:b019": {
-    "status": "draft",
-    "plannedArea": "Pending review — Карнак и залив Морбиан (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
   },
   "gemini-britany:b020": {
-    "status": "draft",
-    "plannedArea": "Pending review — Карнак и залив Морбиан (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-protected-water-beaches",
+      "evidence:southern-carnac-megaliths",
+      "evidence:southern-quiberon",
+      "evidence:southern-suscinio",
+      "evidence:southern-branfere",
+      "evidence:southern-accommodation-pressure"
+    ],
+    "paragraphIds": [
+      "morbihan-sea-normals",
+      "morbihan-megaliths",
+      "quiberon-what",
+      "suscinio-what",
+      "branfere-what",
+      "morbihan-accommodation"
+    ]
   },
   "gemini-britany:b021": {
     "status": "draft",
@@ -744,12 +797,30 @@
     ]
   },
   "operaai:b023": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.5. Карнак и залив Морбиан (Юг) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-base-rhythm",
+      "evidence:southern-protected-water-beaches"
+    ],
+    "paragraphIds": [
+      "morbihan-verdict",
+      "morbihan-sea-normals"
+    ]
   },
   "operaai:b024": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3.5. Карнак и залив Морбиан (Юг) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-protected-water-beaches",
+      "evidence:southern-carnac-megaliths",
+      "evidence:southern-islands-gulf",
+      "evidence:southern-accommodation-pressure"
+    ],
+    "paragraphIds": [
+      "morbihan-sea-normals",
+      "carnac-alignments-what",
+      "ile-aux-moines-what",
+      "morbihan-accommodation"
+    ]
   },
   "operaai:b025": {
     "status": "draft",
@@ -1071,36 +1142,78 @@
     ]
   },
   "perplexity:b044": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-heat-tradeoff"
   },
   "perplexity:b045": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-heat-tradeoff",
+      "evidence:southern-protected-water-beaches"
+    ],
+    "paragraphIds": [
+      "morbihan-climate-normals",
+      "morbihan-sea-normals"
+    ]
   },
   "perplexity:b046": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-protected-water-beaches"
   },
   "perplexity:b047": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-protected-water-beaches",
+      "evidence:southern-carnac-megaliths",
+      "evidence:southern-islands-gulf"
+    ],
+    "paragraphIds": [
+      "morbihan-sea-normals",
+      "carnac-alignments-what",
+      "ile-aux-moines-what"
+    ]
   },
   "perplexity:b048": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
   },
   "perplexity:b049": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-vannes-town",
+      "evidence:southern-food",
+      "evidence:southern-family-base-conclusion",
+      "evidence:southern-auray-saint-goustan"
+    ],
+    "paragraphIds": [
+      "vannes-what",
+      "morbihan-food",
+      "auray-saint-goustan-what"
+    ]
   },
   "perplexity:b050": {
-    "status": "draft",
-    "plannedArea": "Pending review — Carnac / залив Морбиан и Киберон (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-base-rhythm",
+      "evidence:southern-heat-tradeoff"
+    ],
+    "paragraphIds": [
+      "morbihan-verdict",
+      "morbihan-climate-normals"
+    ]
   },
   "perplexity:b051": {
-    "status": "draft",
-    "plannedArea": "Pending review — Другие удачные базы: Ванн, Киберон, Ренн (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-vannes-town",
+      "evidence:southern-logistics-nantes",
+      "evidence:southern-quiberon"
+    ],
+    "paragraphIds": [
+      "vannes-what",
+      "morbihan-logistics-nantes",
+      "quiberon-what"
+    ]
   },
   "perplexity:b052": {
     "status": "draft",
