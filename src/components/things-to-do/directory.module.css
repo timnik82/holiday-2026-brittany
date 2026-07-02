@@ -61,8 +61,14 @@
   cursor: pointer;
 }
 
-.filterButton:hover {
+.filterButton:hover,
+.filterButton:focus-visible {
   opacity: 0.9;
+}
+
+.filterButton:focus-visible {
+  outline: 2px solid #123c54;
+  outline-offset: 2px;
 }
 
 .correction {
@@ -106,8 +112,15 @@
   text-decoration: none;
 }
 
-.placeCardTitle a:hover {
+.placeCardTitle a:hover,
+.placeCardTitle a:focus-visible {
   text-decoration: underline;
+}
+
+.placeCardTitle a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .placeCardSummary {
@@ -130,8 +143,15 @@
   text-decoration: none;
 }
 
-.placeCardBase:hover {
+.placeCardBase:hover,
+.placeCardBase:focus-visible {
   text-decoration: underline;
+}
+
+.placeCardBase:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .placeCardBadge {
@@ -144,6 +164,6 @@
 }
 
 .emptyState {
-  color: #888;
+  color: #555;
   font-style: italic;
 }

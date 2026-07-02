@@ -1,6 +1,7 @@
-import { loadContentPages, getBaseFrontmatter } from "@/lib/content/registry";
+import { loadContentPages } from "@/lib/content/registry";
 import { RELATED_PLACES } from "@/components/bases/related-places-data";
 import type { ThingsToDoFrontmatter } from "@/lib/content/schemas";
+import { ageLabel, categoryLabel } from "./labels";
 
 /**
  * A Things to do entry flattened into the fields the directory needs. The
@@ -46,53 +47,77 @@ function buildPlaceToBaseMap(): Map<string, string> {
 const PLACE_TO_BASE = buildPlaceToBaseMap();
 
 /**
- * Load every non-draft Things to do page, joined with its base relationship
- * (derived from `RELATED_PLACES`) and things-to-do-specific frontmatter.
+ * Build a baseSlug → baseTitle lookup from a single registry load, so the
+ * directory never triggers a per-place content scan. `getBaseFrontmatter`
+ * re-reads the registry on every call, which in development (cache disabled)
+ * means a full disk scan per place.
  */
-export function loadDirectoryPlaces(): DirectoryPlace[] {
-  const entries = loadContentPages().filter(
-    (e) => e.category === "things-to-do" && e.page.status !== "draft"
-  );
-
-  return entries.map((entry) => {
-    const frontmatter = entry.frontmatter as ThingsToDoFrontmatter;
-    const baseSlug = PLACE_TO_BASE.get(entry.page.slug);
-    const baseFrontmatter = baseSlug
-      ? getBaseFrontmatter(baseSlug)
-      : undefined;
-
-    return {
-      slug: entry.page.slug,
-      title: entry.page.title,
-      summary: entry.page.summary,
-      category: frontmatter.category,
-      ageRange: frontmatter.ageRange,
-      baseSlug,
-      baseTitle: baseFrontmatter?.title,
-      updatedAt: entry.page.updatedAt,
-      status: entry.page.status,
-    };
-  });
+function buildBaseTitleMap(allPages: ReturnType<typeof loadContentPages>): Map<string, string> {
+  const titles = new Map<string, string>();
+  for (const entry of allPages) {
+    if (entry.category === "bases") {
+      titles.set(entry.page.slug, entry.page.title);
+    }
+  }
+  return titles;
 }
 
 /**
- * Derive the set of base filter options from the directory data, preserving
- * the insertion order of bases as they appear in `RELATED_PLACES` (which
- * groups places by base region).
+ * Load every non-draft Things to do page, joined with its base relationship
+ * (derived from `RELATED_PLACES`) and things-to-do-specific frontmatter. Base
+ * titles are resolved from the same single registry load rather than per place.
+ */
+export function loadDirectoryPlaces(): DirectoryPlace[] {
+  const allPages = loadContentPages();
+  const baseTitles = buildBaseTitleMap(allPages);
+
+  return allPages
+    .filter((e) => e.category === "things-to-do" && e.page.status !== "draft")
+    .map((entry) => {
+      const frontmatter = entry.frontmatter as ThingsToDoFrontmatter;
+      const baseSlug = PLACE_TO_BASE.get(entry.page.slug);
+
+      return {
+        slug: entry.page.slug,
+        title: entry.page.title,
+        summary: entry.page.summary,
+        category: frontmatter.category,
+        ageRange: frontmatter.ageRange,
+        baseSlug,
+        baseTitle: baseSlug ? baseTitles.get(baseSlug) : undefined,
+        updatedAt: entry.page.updatedAt,
+        status: entry.page.status,
+      };
+    });
+}
+
+/**
+ * Derive the set of base filter options in the editorial order defined by
+ * `RELATED_PLACES`, restricted to bases that actually have loaded places. This
+ * keeps the dropdown deterministic regardless of content-file ordering.
  */
 export function getBaseOptions(places: DirectoryPlace[]): FilterOption[] {
-  const seen = new Map<string, string>();
+  const placeBaseSlugs = new Set(
+    places.map((p) => p.baseSlug).filter((s): s is string => Boolean(s))
+  );
+  const baseTitles = new Map<string, string>();
   for (const place of places) {
-    if (place.baseSlug && place.baseTitle && !seen.has(place.baseSlug)) {
-      seen.set(place.baseSlug, place.baseTitle);
+    if (place.baseSlug && place.baseTitle && !baseTitles.has(place.baseSlug)) {
+      baseTitles.set(place.baseSlug, place.baseTitle);
     }
   }
-  return [...seen.entries()].map(([value, label]) => ({ value, label }));
+  return Object.keys(RELATED_PLACES)
+    .filter((baseSlug) => placeBaseSlugs.has(baseSlug))
+    .map((baseSlug) => ({
+      value: baseSlug,
+      label: baseTitles.get(baseSlug) ?? baseSlug,
+    }));
 }
 
 /**
  * Derive the set of category filter options from the directory data, ordered
  * by frequency (most common first) so the most useful filters surface first.
+ * Labels are human-readable via `categoryLabel`.
  */
 export function getCategoryOptions(places: DirectoryPlace[]): FilterOption[] {
   const counts = new Map<string, number>();
@@ -101,22 +126,34 @@ export function getCategoryOptions(places: DirectoryPlace[]): FilterOption[] {
   }
   return [...counts.entries()]
     .sort((a, b) => b[1] - a[1])
-    .map(([value]) => ({ value, label: value }));
+    .map(([value]) => ({ value, label: categoryLabel(value) }));
 }
 
+/** Canonical ascending age order for the Age dropdown. */
+const AGE_ORDER = ["all", "4+", "5+", "6+"];
+
 /**
- * Derive the set of age-range filter options from the directory data. Places
- * without an explicit `ageRange` are not represented as a filter option but
- * remain visible when no age filter is active.
+ * Derive the set of age-range filter options in canonical ascending order
+ * (`all` first, then ascending numeric thresholds) rather than content-discovery
+ * order. Labels are human-readable via `ageLabel`. Unknown values sort after
+ * the known ones, alphabetically. Places without an explicit `ageRange` are not
+ * represented as a filter option but remain visible when no age filter is active.
  */
 export function getAgeOptions(places: DirectoryPlace[]): FilterOption[] {
   const seen = new Set<string>();
-  const ordered: string[] = [];
   for (const place of places) {
     if (place.ageRange && !seen.has(place.ageRange)) {
       seen.add(place.ageRange);
-      ordered.push(place.ageRange);
     }
   }
-  return ordered.map((value) => ({ value, label: value }));
+  return [...seen]
+    .sort((a, b) => {
+      const idxA = AGE_ORDER.indexOf(a);
+      const idxB = AGE_ORDER.indexOf(b);
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
+      return a.localeCompare(b);
+    })
+    .map((value) => ({ value, label: ageLabel(value) }));
 }

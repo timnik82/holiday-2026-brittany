@@ -26,6 +26,17 @@ interface DirectoryFilters {
 }
 
 /**
+ * Next.js types a repeated query param (e.g. `?base=a&base=b`) as `string[]`.
+ * The filter form never produces these, but the URL can be hand-edited;
+ * normalize to the first value so the page degrades gracefully instead of
+ * mismatching types and showing a spurious "Unknown filter" correction.
+ */
+function firstParam(value: string | string[] | undefined): string | undefined {
+  if (Array.isArray(value)) return value[0];
+  return value;
+}
+
+/**
  * Validate a raw search-param value against the known filter options. Returns
  * the value when valid, otherwise `undefined` and pushes a correction note so
  * the page can tell the reader the filter was ignored rather than silently
@@ -59,7 +70,7 @@ function filterPlaces(
 export default async function ThingsToDoDirectoryPage({
   searchParams,
 }: {
-  searchParams: Promise<DirectoryFilters>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const params = await searchParams;
   const places = loadDirectoryPlaces();
@@ -69,15 +80,15 @@ export default async function ThingsToDoDirectoryPage({
   const ageOptions = getAgeOptions(places);
 
   const corrections: string[] = [];
-  const base = validateFilter(params.base, baseOptions, "base", "bases", corrections);
+  const base = validateFilter(firstParam(params.base), baseOptions, "base", "bases", corrections);
   const category = validateFilter(
-    params.category,
+    firstParam(params.category),
     categoryOptions,
     "category",
     "categories",
     corrections
   );
-  const age = validateFilter(params.age, ageOptions, "age", "ages", corrections);
+  const age = validateFilter(firstParam(params.age), ageOptions, "age", "ages", corrections);
 
   const filters: DirectoryFilters = { base, category, age };
   const filtered = filterPlaces(places, filters);
