@@ -111,5 +111,14 @@
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
+  },
+  {
+    "id": "evidence:practical-swimming-sea-temperature-by-coast",
+    "text": "August sea temperatures vary sharply by coast and drive where family swimming is most comfortable. Saint-Malo reaches about 18.6 degrees Celsius (up to 20 degrees Celsius on warm days), but a child may need a shorty wetsuit for long spells in the water. The Côte de Granit Rose is colder at roughly 16 to 17 degrees and described as cold bathing; Brest and western Finistère peak near 16 to 16.5 degrees. The standout for families is the Morbihan south coast — Carnac and the Gulf of Morbihan average about 17.6 to 18.7 degrees in a gulf sheltered from the open ocean, described as swimmable and safe for children, with the warmest and calmest bathing water of the shortlist.",
+    "kind": "qualification",
+    "sourceBlockRefs": ["operaai:b014", "operaai:b023", "operaai:b027", "perplexity:b004"],
+    "sourceUrls": [],
+    "qualifiers": ["Historical August sea-temperature ranges, not a forecast — and separate from the official microbiological water-quality status, which the swimming page checks per site."],
+    "timeSensitive": false
   }
 ]

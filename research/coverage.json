@@ -1015,10 +1015,12 @@
     "status": "retained",
     "evidenceIds": [
       "evidence:sea-temperature-wide",
-      "evidence:sea-temperature-narrow"
+      "evidence:sea-temperature-narrow",
+      "evidence:practical-swimming-sea-temperature-by-coast"
     ],
     "paragraphIds": [
-      "plan-weather-sea"
+      "plan-weather-sea",
+      "swimming-comparison"
     ]
   },
   "operaai:b015": {
@@ -1111,11 +1113,13 @@
     "status": "retained",
     "evidenceIds": [
       "evidence:southern-base-rhythm",
-      "evidence:southern-protected-water-beaches"
+      "evidence:southern-protected-water-beaches",
+      "evidence:practical-swimming-sea-temperature-by-coast"
     ],
     "paragraphIds": [
       "morbihan-verdict",
-      "morbihan-sea-normals"
+      "morbihan-sea-normals",
+      "swimming-comparison"
     ]
   },
   "operaai:b024": {
@@ -1152,11 +1156,13 @@
     "status": "retained",
     "evidenceIds": [
       "evidence:routes-relaxed-overview",
-      "evidence:routes-cultural-overview"
+      "evidence:routes-cultural-overview",
+      "evidence:practical-swimming-sea-temperature-by-coast"
     ],
     "paragraphIds": [
       "routes-relaxed-overview",
-      "routes-cultural-overview"
+      "routes-cultural-overview",
+      "swimming-comparison"
     ]
   },
   "operaai:b028": {
@@ -1243,11 +1249,13 @@
     "status": "retained",
     "evidenceIds": [
       "evidence:practical-transport-two-scenarios",
-      "evidence:practical-climate-overview"
+      "evidence:practical-climate-overview",
+      "evidence:practical-swimming-sea-temperature-by-coast"
     ],
     "paragraphIds": [
       "plan-getting-there-scenarios",
-      "plan-weather-overview"
+      "plan-weather-overview",
+      "swimming-comparison"
     ]
   },
   "perplexity:b005": {

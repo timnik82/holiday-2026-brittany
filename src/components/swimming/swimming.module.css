@@ -1,0 +1,280 @@
+.page {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  color: #123c54;
+}
+
+.eyebrow {
+  color: #9a4f2c;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.methodNote {
+  border-left: 0.3rem solid #d8794b;
+  background: #fff7ef;
+  padding: 1rem 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.methodChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.methodNote .methodChips li {
+  border: 1px solid #cad9df;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.88rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.3rem 1.25rem rgb(18 60 84 / 7%);
+  /* Prevent any wide content (URLs, long rationales) from overflowing at 390px. */
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.cardHeader {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cardHeader h2 {
+  color: #123c54;
+  line-height: 1.2;
+}
+
+.typeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.typeBadge,
+.warningBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  white-space: nowrap;
+}
+
+.typeBadge {
+  background: #e1e9ec;
+  color: #244d5f;
+}
+
+.warningBadge {
+  border: 1px solid transparent;
+}
+
+.warning_none {
+  background: #e7f3ec;
+  color: #1f6b3a;
+  border-color: #bfe2c9;
+}
+
+.warning_advisory {
+  background: #fff3df;
+  color: #8a5a00;
+  border-color: #f0d49a;
+}
+
+.warning_closure {
+  background: #fbe4e4;
+  color: #8a2424;
+  border-color: #eeb0b0;
+}
+
+.warning_unknown {
+  background: #eee;
+  color: #555;
+  border-color: #ccc;
+}
+
+.totalBox {
+  flex-shrink: 0;
+  text-align: right;
+  min-width: 0;
+}
+
+.totalNumber {
+  display: block;
+  color: #9a4f2c;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.totalScale {
+  color: #9a4f2c;
+  font-size: 0.85rem;
+}
+
+.totalUnknown {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #8a5a00;
+  line-height: 1.25;
+  max-width: 11rem;
+}
+
+.warningCallout {
+  background: #fff3df;
+  border: 1px solid #f0d49a;
+  color: #8a5a00;
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+}
+
+.confidenceRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: #41616f;
+}
+
+.confidenceBar {
+  display: block;
+  height: 0.55rem;
+  background: #e1e9ec;
+  border-radius: 999px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.confidenceFill {
+  display: block;
+  height: 100%;
+  background: #1a5276;
+  border-radius: 999px;
+}
+
+.confidenceValue {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: #244d5f;
+}
+
+.dimensionList {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.dimension {
+  display: grid;
+  gap: 0.18rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid #e1e9ec;
+}
+
+.dimension dt {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  color: #244d5f;
+  font-weight: 700;
+}
+
+.dimension dd {
+  display: grid;
+  gap: 0.25rem;
+  color: #3f555e;
+  font-size: 0.9rem;
+}
+
+.dimensionScore {
+  white-space: nowrap;
+  color: #9a4f2c;
+  font-variant-numeric: tabular-nums;
+}
+
+.evidenceLinks {
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.cardFooter {
+  display: grid;
+  gap: 0.5rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid #e1e9ec;
+  font-size: 0.88rem;
+}
+
+.source {
+  color: #3f555e;
+  overflow-wrap: anywhere;
+}
+
+.sourceLabel {
+  font-weight: 700;
+  color: #244d5f;
+}
+
+.freshness {
+  display: inline-block;
+  margin-left: 0.4rem;
+}
+
+.notes {
+  color: #3f555e;
+  font-size: 0.85rem;
+}
+
+.linkedBases {
+  color: #41616f;
+}
+
+@media (min-width: 58rem) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
