@@ -33,17 +33,20 @@ export async function requirePageSession(token?: string): Promise<void> {
 }
 
 /**
- * For API routes: throws a `401` `Response` if the session is missing or
- * invalid. Callers should let it propagate so the runtime returns it directly.
+ * For API routes: returns a `401` `Response` if the session is missing or
+ * invalid, or `null` if the session is valid. Callers should check the return
+ * value and return it directly — Next.js App Router route handlers do not
+ * reliably propagate thrown `Response` objects in production.
  */
-export async function requireApiSession(token?: string): Promise<void> {
+export async function requireApiSession(token?: string): Promise<Response | null> {
   const resolved = await resolveToken(token);
   if (!(await verifySessionToken(resolved))) {
-    throw new Response(JSON.stringify({ error: "Unauthorized" }), {
+    return new Response(JSON.stringify({ error: "Unauthorized" }), {
       status: 401,
       headers: { "Content-Type": "application/json" },
     });
   }
+  return null;
 }
 
 /**
