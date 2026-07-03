@@ -2,6 +2,7 @@
 // jose v6 uses the WebCrypto-backed webapi build. Under the default jsdom test
 // environment the cross-realm `Uint8Array instanceof` checks inside jose fail,
 // so these stateless-session tests run in the Node environment instead.
+import { SignJWT } from "jose";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import {
   SESSION_COOKIE_NAME,
@@ -45,6 +46,15 @@ describe("session token", () => {
 
   it("returns false for undefined", async () => {
     expect(await verifySessionToken(undefined)).toBe(false);
+  });
+
+  it("returns false for an expired token", async () => {
+    const expired = await new SignJWT({ authenticated: true })
+      .setProtectedHeader({ alg: "HS256" })
+      .setExpirationTime(Math.floor(Date.now() / 1000) - 1)
+      .setIssuedAt()
+      .sign(new TextEncoder().encode(TEST_SECRET));
+    expect(await verifySessionToken(expired)).toBe(false);
   });
 
   it("returns false for a token signed with a different secret", async () => {

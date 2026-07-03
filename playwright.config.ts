@@ -27,8 +27,9 @@ export default defineConfig({
       AUTH_SECRET: "test-auth-secret-for-playwright-smoke-xxxx",
       SITE_PASSWORD_HASH:
         "$2b$10$bdRRwiDC3tEgqciLCQFTiebYI5USE0XXVIusWx.YGii3bzc0AU/AO",
-      // NODE_ENV left unset so the session cookie is not marked `secure` and
-      // still works over plain HTTP on localhost.
+      // Browsers treat http://localhost as a secure context and accept `Secure`
+      // cookies over loopback HTTP, so the smoke journey works even though the
+      // production build marks the session cookie `Secure`.
     },
   },
 });

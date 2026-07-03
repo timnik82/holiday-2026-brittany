@@ -18,6 +18,22 @@ describe("safeRedirectPath", () => {
     expect(safeRedirectPath("//evil.com")).toBe("/");
   });
 
+  it("rejects a leading backslash", () => {
+    expect(safeRedirectPath("\\evil.com")).toBe("/");
+  });
+
+  it("rejects a backslash after the leading slash", () => {
+    expect(safeRedirectPath("/\\evil.com")).toBe("/");
+  });
+
+  it("rejects a javascript: scheme", () => {
+    expect(safeRedirectPath("javascript:alert(1)")).toBe("/");
+  });
+
+  it("rejects a data: scheme", () => {
+    expect(safeRedirectPath("data:text/html,<script>")).toBe("/");
+  });
+
   it("rejects an absolute URL", () => {
     expect(safeRedirectPath("https://evil.com")).toBe("/");
   });
