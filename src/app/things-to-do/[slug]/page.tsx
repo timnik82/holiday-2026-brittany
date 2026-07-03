@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 import { CONTENT_STATUS_LABELS } from "@/components/content/labels";
+import { NarratableContent } from "@/components/tts/NarratableContent";
 import { guideConfig } from "@/config/guide";
 import { getContentPage, loadContentPages } from "@/lib/content/registry";
 import styles from "@/components/bases/base-detail.module.css";
@@ -74,9 +73,10 @@ export default async function ThingToDoPage({
         aria-label={`${entry.page.title} guide content`}
       >
         <div className={styles.prose}>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {entry.page.content}
-          </ReactMarkdown>
+          <NarratableContent
+            content={entry.page.content}
+            paragraphs={entry.page.paragraphs}
+          />
         </div>
       </section>
     </div>

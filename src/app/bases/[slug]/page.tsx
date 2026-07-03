@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 import { BaseHero } from "@/components/bases/BaseHero";
 import { BaseFacts } from "@/components/bases/BaseFacts";
 import { RelatedPlaces } from "@/components/bases/RelatedPlaces";
+import { NarratableContent } from "@/components/tts/NarratableContent";
 import { guideConfig } from "@/config/guide";
 import styles from "@/components/bases/base-detail.module.css";
 
@@ -142,9 +141,10 @@ export default async function BaseDetailPage({
           What the research says
         </h2>
         <div className={styles.prose}>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {entry.page.content}
-          </ReactMarkdown>
+          <NarratableContent
+            content={entry.page.content}
+            paragraphs={entry.page.paragraphs}
+          />
         </div>
       </section>
 
