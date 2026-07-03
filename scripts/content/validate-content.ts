@@ -17,6 +17,8 @@ import { evidenceRegistrySchema } from "../../src/lib/content/evidence";
 import { coverageSchema, validateCoverage } from "../../src/lib/content/coverage";
 import { baseRankingsSchema } from "../../src/lib/ranking/schema";
 import { RANKING_DIMENSIONS } from "../../src/lib/ranking/weights";
+import { bathingLocationsSchema } from "../../src/lib/ranking/bathing-schema";
+import { BATHING_DIMENSIONS } from "../../src/lib/ranking/bathing-dimensions";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "content");
 const RESEARCH_ROOT = path.resolve(process.cwd(), "research");
@@ -25,6 +27,7 @@ const DECISIONS_PATH = path.join(RESEARCH_ROOT, "block-decisions.json");
 const EVIDENCE_DIR = path.join(RESEARCH_ROOT, "evidence");
 const COVERAGE_PATH = path.join(RESEARCH_ROOT, "coverage.json");
 const RANKINGS_PATH = path.resolve(process.cwd(), "content", "rankings", "bases.json");
+const SWIMMING_PATH = path.resolve(process.cwd(), "content", "swimming", "locations.json");
 
 interface ValidationError {
   /** Fully-formatted, print-ready message (file path included exactly once). */
@@ -178,6 +181,34 @@ function main() {
                   if (!evidenceIds.has(evidenceRef)) {
                     errors.push({
                       message: `content/rankings/bases.json: ${base.slug}.${dimension} references unknown evidence id "${evidenceRef}".`,
+                    });
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // Validate the swimming/bathing locations file: parse it through the
+        // zod schema and resolve any (optional) dimension evidenceRefs. Unlike
+        // base rankings, evidenceRefs are OPTIONAL here because many locations
+        // are official-source-only (ARS water-quality) with no corpus support;
+        // those carry their provenance in location-level officialSource fields.
+        if (fs.existsSync(SWIMMING_PATH)) {
+          const swimmingResult = readValidatedJson(
+            SWIMMING_PATH,
+            "content/swimming/locations.json",
+            bathingLocationsSchema
+          );
+          errors.push(...swimmingResult.errors);
+          if (swimmingResult.data && evidenceFilesValid) {
+            for (const location of swimmingResult.data.locations) {
+              for (const dimension of BATHING_DIMENSIONS) {
+                const refs = location.scores[dimension].evidenceRefs ?? [];
+                for (const evidenceRef of refs) {
+                  if (!evidenceIds.has(evidenceRef)) {
+                    errors.push({
+                      message: `content/swimming/locations.json: ${location.slug}.${dimension} references unknown evidence id "${evidenceRef}".`,
                     });
                   }
                 }
