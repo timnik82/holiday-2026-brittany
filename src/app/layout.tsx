@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { SiteShell } from "@/components/SiteShell";
+import { AudioProvider } from "@/components/tts/AudioProvider";
 import { guideConfig } from "@/config/guide";
 
 export const metadata: Metadata = {
@@ -16,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang={guideConfig.language}>
       <body>
-        <SiteShell>{children}</SiteShell>
+        <SiteShell>
+          <AudioProvider>{children}</AudioProvider>
+        </SiteShell>
       </body>
     </html>
   );
