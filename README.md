@@ -35,3 +35,38 @@ See [`research/raw/README.md`](research/raw/README.md) for the ingestion rules.
 ## Secrets
 
 Do not commit Rime, Vercel, GitHub, or other API keys. Local credentials belong in ignored environment files; the eventual deployment will use Vercel Environment Variables.
+
+## Authentication
+
+The guide is private to the family. Every page, RSC request, and (later) API
+route is protected by a single stateless session: a bcrypt password check that
+issues an HS256 JWT stored in a `httpOnly`, `sameSite: "lax"` cookie.
+
+To run or deploy the app you need two environment variables (see
+[`.env.example`](.env.example)):
+
+- `SITE_PASSWORD_HASH` — a bcrypt hash of the private family password. Generate
+  it with the helper script:
+  ```bash
+  npx tsx scripts/auth/hash-password.ts "your-password"
+  ```
+- `AUTH_SECRET` — the JWT signing secret (a random 32+ byte string):
+  ```bash
+  openssl rand -base64 32
+  ```
+
+Set both in your local `.env` (gitignored) or as Vercel Environment Variables.
+
+### How the boundary works
+
+- `src/proxy.ts` (the Next.js 16 request-interception convention) optimistically
+  redirects unauthenticated page/RSC requests to `/login`. It only uses the
+  edge-safe `jose` library.
+- The proxy is **not** the sole security boundary. Every future API route MUST
+  call `requireApiSession()` (from `src/lib/auth/require-session.ts`), which
+  throws a `401` for an invalid session, and any server component may call
+  `requirePageSession()` for defense in depth.
+
+The end-to-end smoke test signs in through the browser using a committed
+test-only password and hash; real credentials are never committed.
+

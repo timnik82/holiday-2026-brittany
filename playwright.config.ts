@@ -21,5 +21,14 @@ export default defineConfig({
     command: "npm run build && npm run start",
     url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
+    env: {
+      // Test-only credentials for the single smoke journey. The hash below is
+      // bcrypt(10) of the password "test-guide-pass-2026".
+      AUTH_SECRET: "test-auth-secret-for-playwright-smoke-xxxx",
+      SITE_PASSWORD_HASH:
+        "$2b$10$bdRRwiDC3tEgqciLCQFTiebYI5USE0XXVIusWx.YGii3bzc0AU/AO",
+      // NODE_ENV left unset so the session cookie is not marked `secure` and
+      // still works over plain HTTP on localhost.
+    },
   },
 });
