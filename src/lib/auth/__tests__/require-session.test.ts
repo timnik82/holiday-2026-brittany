@@ -33,19 +33,14 @@ describe("require-session guards", () => {
     await expect(requirePageSession("not-a-real-token")).rejects.toThrow();
   });
 
-  it("requireApiSession resolves when given a valid token", async () => {
+  it("requireApiSession resolves to null when given a valid token", async () => {
     const token = await createSessionToken();
-    await expect(requireApiSession(token)).resolves.toBeUndefined();
+    await expect(requireApiSession(token)).resolves.toBeNull();
   });
 
-  it("requireApiSession throws a 401 Response for an invalid token", async () => {
-    let thrown: unknown;
-    try {
-      await requireApiSession("not-a-real-token");
-    } catch (err) {
-      thrown = err;
-    }
-    expect(thrown).toBeInstanceOf(Response);
-    expect((thrown as Response).status).toBe(401);
+  it("requireApiSession returns a 401 Response for an invalid token", async () => {
+    const result = await requireApiSession("not-a-real-token");
+    expect(result).toBeInstanceOf(Response);
+    expect((result as Response).status).toBe(401);
   });
 });

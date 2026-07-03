@@ -43,15 +43,15 @@ describe("POST /api/tts", () => {
   });
 
   it("returns 401 when unauthenticated", async () => {
-    // requireApiSession throws a Response on failure — the route lets it
-    // propagate, so we need to catch it here.
-    mockRequireApiSession.mockRejectedValue(
-      new Response("Unauthorized", { status: 401 }),
+    // requireApiSession returns a 401 Response when the session is invalid;
+    // the route handler checks and returns it directly.
+    mockRequireApiSession.mockResolvedValue(
+      new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401 }),
     );
 
-    await expect(POST(makeRequest({ paragraphId: "test" }))).rejects.toMatchObject({
-      status: 401,
-    });
+    const response = await POST(makeRequest({ paragraphId: "test" }));
+
+    expect(response.status).toBe(401);
   });
 
   it("returns 400 for invalid body (missing paragraphId)", async () => {

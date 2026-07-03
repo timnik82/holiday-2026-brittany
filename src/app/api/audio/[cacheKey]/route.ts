@@ -17,7 +17,8 @@ export async function GET(
   _request: Request,
   { params }: { params: Promise<{ cacheKey: string }> },
 ): Promise<Response> {
-  await requireApiSession();
+  const authResponse = await requireApiSession();
+  if (authResponse) return authResponse;
 
   const { cacheKey } = await params;
 

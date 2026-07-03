@@ -20,7 +20,8 @@ const requestSchema = z.object({
  * cache, no Rime call) or `"generated"` (newly created).
  */
 export async function POST(request: Request): Promise<Response> {
-  await requireApiSession();
+  const authResponse = await requireApiSession();
+  if (authResponse) return authResponse;
 
   let body: unknown;
   try {

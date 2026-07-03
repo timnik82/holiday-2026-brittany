@@ -70,3 +70,49 @@ Set both in your local `.env` (gitignored) or as Vercel Environment Variables.
 The end-to-end smoke test signs in through the browser using a committed
 test-only password and hash; real credentials are never committed.
 
+## Deployment (Vercel)
+
+The guide deploys as a standard Next.js App Router project on Vercel. The
+TTS feature requires a private Blob store and three environment variables.
+
+### Step-by-step
+
+1. **Link the repository** — In Vercel, "Add New → Project", import the
+   GitHub repo. Accept the default framework preset (Next.js).
+
+2. **Create a private Blob store** — In the Vercel dashboard go to
+   "Storage → Create Database → Blob", then link it to the project. This
+   provisions `BLOB_READ_WRITE_TOKEN` automatically in the deployment
+   environment.
+
+3. **Set environment variables** (Settings → Environment Variables, for
+   at least Preview and Production):
+   - `SITE_PASSWORD_HASH` — bcrypt hash of your chosen family password:
+     ```bash
+     npx tsx scripts/auth/hash-password.ts "your-password"
+     ```
+   - `AUTH_SECRET` — random 32+ byte JWT signing secret:
+     ```bash
+     openssl rand -base64 32
+     ```
+   - `RIME_API_KEY` — your Rime API key from https://app.rime.ai
+
+4. **Deploy** — Push to `main` or trigger a Preview deployment. The proxy
+   (`src/proxy.ts`) protects every page; API routes call
+   `requireApiSession()` for defense in depth.
+
+5. **Verify TTS** — On the Preview deployment: sign in, open any base page
+   (e.g. `/bases/saint-malo-dinan`), click "Listen" on a paragraph. Confirm
+   audio plays. Click "Listen" on the same paragraph again — it should be
+   a cache hit (instant playback, no Rime call).
+
+6. **Verify unauthenticated rejection** — In a private browser window,
+   visit the Preview URL. You should be redirected to `/login`. Try
+   `curl -X POST <preview-url>/api/tts` — it should return `401`.
+
+### Secret safety
+
+All three secrets are read lazily via `requireEnv()` inside `server-only`
+modules and API routes (Node runtime). They never appear in the client
+bundle — verified by grepping `.next/static/` after build.
+
