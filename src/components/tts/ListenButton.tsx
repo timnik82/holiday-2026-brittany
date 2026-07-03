@@ -17,6 +17,7 @@ export function ListenButton({
 }) {
   const {
     state,
+    currentParagraphId,
     playParagraph,
     pause,
     resume,
@@ -24,10 +25,18 @@ export function ListenButton({
     error,
   } = useAudioPlayer();
 
+  // Is THIS paragraph the one currently active in the global player?
+  const isActive = currentParagraphId === paragraphId;
+
   let label: string;
   let action: () => void;
 
-  if (state === "error") {
+  // If another paragraph is active, this button stays in its resting "Listen"
+  // state — only the active paragraph shows generating/playing/paused states.
+  if (!isActive) {
+    label = "Listen";
+    action = () => void playParagraph(paragraphId);
+  } else if (state === "error") {
     label = "Retry";
     action = () => void playParagraph(paragraphId);
   } else if (state === "generating") {
@@ -47,19 +56,21 @@ export function ListenButton({
     action = () => void playParagraph(paragraphId);
   }
 
+  const showStatus = isActive && (state === "generating" || state === "error");
+
   return (
     <span className={styles.listenButtonWrapper}>
       <button
         type="button"
         className={styles.listenButton}
         onClick={action}
-        disabled={state === "generating"}
+        disabled={isActive && state === "generating"}
         aria-label={`Listen to this paragraph`}
       >
-        <span aria-hidden="true">{state === "generating" ? "⟳" : "🔊"}</span>{" "}
+        <span aria-hidden="true">{isActive && state === "generating" ? "⟳" : "🔊"}</span>{" "}
         {label}
       </button>
-      {(state === "generating" || state === "error") && (
+      {showStatus && (
         <span className={styles.status} role="status" aria-live="polite">
           {state === "generating" && "Generating audio…"}
           {state === "error" && (error ?? "Generation failed.")}

@@ -33,8 +33,9 @@ export async function putAudio(
 
 /**
  * Attempt to store audio, returning the winning URL. If a concurrent `put`
- * already created the object, Vercel Blob returns the existing URL — so the
- * caller always gets a valid URL even after a lost race.
+ * already created the object (deterministic pathname collision), resolve the
+ * existing object instead. Genuine storage/auth/network failures propagate
+ * rather than being masked — only the specific collision case is caught.
  */
 export async function putAudioIdempotent(
   pathname: string,
@@ -42,19 +43,24 @@ export async function putAudioIdempotent(
 ): Promise<string> {
   try {
     return await putAudio(pathname, audioBytes);
-  } catch {
-    // A put race: another request created the object first. Resolve it.
-    return resolveAudioUrl(pathname);
+  } catch (error) {
+    // Only treat a pathname collision (concurrent put) as recoverable.
+    const message = error instanceof Error ? error.message : String(error);
+    if (message.includes("already exists") || message.includes("conflict")) {
+      const existing = await resolveAudioUrl(pathname);
+      if (existing) return existing;
+    }
+    throw error;
   }
 }
 
-/** Resolve the URL for a private blob pathname via head(). */
-export async function resolveAudioUrl(pathname: string): Promise<string> {
+/** Resolve the URL for a private blob pathname via head(). Returns null if not found. */
+export async function resolveAudioUrl(pathname: string): Promise<string | null> {
   try {
     const blob = await head(pathname);
     return blob.url;
   } catch {
-    return `private/${pathname}`;
+    return null;
   }
 }
 

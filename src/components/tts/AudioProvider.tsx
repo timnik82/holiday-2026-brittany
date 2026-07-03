@@ -25,8 +25,8 @@ const SPEEDS: readonly PlaybackSpeed[] = [0.8, 1, 1.2, 1.5];
 interface AudioContextValue {
   /** Current player state. */
   state: PlayerState;
-  /** The cache key currently loaded, or null if idle. */
-  currentCacheKey: string | null;
+  /** The paragraph id currently active (generating/playing/paused), or null. */
+  currentParagraphId: string | null;
   /** Current playback speed. */
   speed: PlaybackSpeed;
   /** Available speed options. */
@@ -62,6 +62,7 @@ const AudioContext = createContext<AudioContextValue | null>(null);
 export function AudioProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [state, setState] = useState<PlayerState>("idle");
+  const [currentParagraphId, setCurrentParagraphId] = useState<string | null>(null);
   const [currentCacheKey, setCurrentCacheKey] = useState<string | null>(null);
   const [speed, setSpeedState] = useState<PlaybackSpeed>(1);
   const [error, setError] = useState<string | null>(null);
@@ -119,6 +120,7 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
     async (paragraphId: string) => {
       setState("generating");
       setError(null);
+      setCurrentParagraphId(paragraphId);
       try {
         const response = await fetch("/api/tts", {
           method: "POST",
@@ -165,6 +167,7 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
     audio.currentTime = 0;
     audio.src = "";
     setState("idle");
+    setCurrentParagraphId(null);
     setCurrentCacheKey(null);
     setError(null);
   }, []);
@@ -178,6 +181,7 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
   const value = useMemo<AudioContextValue>(
     () => ({
       state,
+      currentParagraphId,
       currentCacheKey,
       speed,
       speeds: SPEEDS,
@@ -189,7 +193,7 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
       stop,
       setSpeed,
     }),
-    [state, currentCacheKey, speed, error, playParagraph, pause, resume, replay, stop, setSpeed],
+    [state, currentParagraphId, currentCacheKey, speed, error, playParagraph, pause, resume, replay, stop, setSpeed],
   );
 
   return <AudioContext.Provider value={value}>{children}</AudioContext.Provider>;
