@@ -1,0 +1,33 @@
+.listenButtonWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.listenButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid #cad9df;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.82rem;
+  color: #1a5276;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.listenButton:hover:not(:disabled) {
+  background: #eef5f8;
+}
+
+.listenButton:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.status {
+  font-size: 0.78rem;
+  color: #41616f;
+}
