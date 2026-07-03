@@ -40,13 +40,13 @@ test("sign-in journey: home, one attraction, and one route", async ({ page }) =>
   await page.goto("/things-to-do/grand-aquarium");
   await expect(page).toHaveURL(/\/things-to-do\/grand-aquarium/);
   await expect(
-    page.getByRole("heading", { level: 1 }),
+    page.getByRole("heading", { level: 1, name: /Grand Aquarium/i }),
   ).toBeVisible();
 
   // Visit one route detail page and confirm it renders content.
   await page.goto("/routes/cultural");
   await expect(page).toHaveURL(/\/routes\/cultural/);
   await expect(
-    page.getByRole("heading", { level: 1 }),
+    page.getByRole("heading", { level: 1, name: /Cultural Brittany/i }),
   ).toBeVisible();
 });

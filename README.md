@@ -87,14 +87,8 @@ TTS feature requires a private Blob store and three environment variables.
 
 3. **Set environment variables** (Settings → Environment Variables, for
    at least Preview and Production):
-   - `SITE_PASSWORD_HASH` — bcrypt hash of your chosen family password:
-     ```bash
-     npx tsx scripts/auth/hash-password.ts "your-password"
-     ```
-   - `AUTH_SECRET` — random 32+ byte JWT signing secret:
-     ```bash
-     openssl rand -base64 32
-     ```
+   - `SITE_PASSWORD_HASH` — bcrypt hash (see [Authentication](#authentication) above)
+   - `AUTH_SECRET` — JWT signing secret (see [Authentication](#authentication) above)
    - `RIME_API_KEY` — your Rime API key from https://app.rime.ai
 
 4. **Deploy** — Push to `main` or trigger a Preview deployment. The proxy
