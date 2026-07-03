@@ -1,0 +1,243 @@
+.page {
+  display: grid;
+  gap: 2rem;
+}
+
+/*
+ * Hero. Mirrors the .hero / .eyebrow idiom from bases.module.css so the home
+ * page reads as part of the same decision-guide family.
+ */
+.hero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.05;
+  color: #123c54;
+}
+
+.eyebrow {
+  color: #9a4f2c;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Verdict — the lead answer, given visual weight. */
+.verdict {
+  border-left: 0.3rem solid var(--color-primary);
+  background: #eef5f8;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.verdictHeadline {
+  font-size: 1.15rem;
+  color: #123c54;
+  font-weight: 700;
+}
+
+.verdictTotal {
+  color: #9a4f2c;
+  font-weight: 800;
+}
+
+/* Section headings. */
+.sectionHeading {
+  color: #123c54;
+  font-size: 1.4rem;
+}
+
+.sectionIntro {
+  color: #41616f;
+  max-width: 48rem;
+}
+
+/* Top-bases ranked cards. */
+.baseList {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.baseCard {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.3rem 1.25rem rgb(18 60 84 / 7%);
+}
+
+.baseCardHead {
+  display: flex;
+  gap: 0.8rem;
+  align-items: baseline;
+}
+
+.rank {
+  color: #9a4f2c;
+  font-weight: 800;
+}
+
+.baseCardHead h3 {
+  color: #123c54;
+  line-height: 1.2;
+}
+
+.baseCardTotal {
+  color: #41616f;
+  font-size: 0.9rem;
+}
+
+.bestFor {
+  color: #244d5f;
+}
+
+.seeAll {
+  justify-self: start;
+}
+
+/* Date windows — two columns on wide screens. */
+.windows {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .windows {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.windowCard {
+  padding: 1rem 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 0.75rem;
+  background: #fff;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.windowLabel {
+  color: #9a4f2c;
+  font-weight: 700;
+}
+
+.windowDates {
+  color: #41616f;
+  font-size: 0.9rem;
+}
+
+.windowNote {
+  color: #3f555e;
+  font-size: 0.88rem;
+}
+
+/* Routes — compact cards. */
+.routeList {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.routeCard {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.routeCard h3 {
+  color: #123c54;
+  line-height: 1.2;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  border: 1px solid #cad9df;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.82rem;
+  color: #41616f;
+}
+
+/* Critical warnings grid. */
+.warnings {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .warnings {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.warningCard {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem 1.25rem;
+  border-left: 0.3rem solid #d8794b;
+  background: #fff7ef;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.warningCard h3 {
+  color: #9a4f2c;
+  font-size: 1rem;
+}
+
+.warningCard p {
+  color: #3f555e;
+  font-size: 0.9rem;
+}
+
+.warningLinks {
+  font-size: 0.85rem;
+}
+
+/* Personalization assumptions. */
+.assumptions {
+  border-top: 1px solid #cad9df;
+  padding-top: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.assumptionGrid {
+  display: grid;
+  gap: 0.5rem 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .assumptionGrid {
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+.assumptionKey {
+  color: #9a4f2c;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.assumptionValue {
+  color: #244d5f;
+  font-size: 0.92rem;
+}
