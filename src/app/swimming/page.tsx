@@ -65,12 +65,12 @@ export default function SwimmingPage() {
       <section className={styles.methodNote} aria-labelledby="method-heading">
         <h2 id="method-heading">How the bathing score works</h2>
         <p>
-          Six dimensions carry equal weight ({(100 / dimensionCount).toFixed(0)}%
+          Six dimensions carry equal weight ({(100 / dimensionCount).toFixed(1)}%
           each). A missing score, or missing official water-quality data, produces
           an unknown total instead of a guessed number — so a spot with no
           verifiable water-quality evidence never shows a neutral-looking score.
         </p>
-        <ul className={styles.dimensionList}>
+        <ul className={styles.methodChips}>
           {BATHING_DIMENSIONS.map((dimension) => (
             <li key={dimension}>{BATHING_DIMENSION_LABELS[dimension]}</li>
           ))}

@@ -31,7 +31,7 @@
   gap: 0.5rem;
 }
 
-.dimensionList {
+.methodChips {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -40,7 +40,7 @@
   margin: 0;
 }
 
-.methodNote .dimensionList li {
+.methodNote .methodChips li {
   border: 1px solid #cad9df;
   border-radius: 999px;
   background: #fff;
