@@ -21,7 +21,6 @@ export const metadata: Metadata = {
 };
 
 const COVERAGE_STATUSES: CoverageStatus[] = [
-  "draft",
   "retained",
   "duplicate",
   "conflict",
@@ -34,8 +33,6 @@ function evidenceIds(outcome: CoverageOutcome): string[] {
       return outcome.evidenceIds;
     case "duplicate":
       return [outcome.retainedEvidenceId];
-    case "draft":
-      return [];
   }
 }
 
