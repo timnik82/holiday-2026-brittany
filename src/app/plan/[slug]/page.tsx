@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 import { CONTENT_STATUS_LABELS } from "@/components/content/labels";
 import { FreshnessLabel } from "@/components/content/FreshnessLabel";
+import { NarratableContent } from "@/components/tts/NarratableContent";
 import { guideConfig } from "@/config/guide";
 import { loadContentPages, getContentPage } from "@/lib/content/registry";
 import type { PracticalFrontmatter } from "@/lib/content/schemas";
@@ -138,9 +137,10 @@ export default async function PlanGuidePage({
 
       <section className={styles.bodySection} aria-label={`${entry.page.title} guide content`}>
         <div className={styles.prose}>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {entry.page.content}
-          </ReactMarkdown>
+          <NarratableContent
+            content={entry.page.content}
+            paragraphs={entry.page.paragraphs}
+          />
         </div>
       </section>
 
