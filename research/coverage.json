@@ -21,16 +21,16 @@
     ]
   },
   "chatgpt:b003": {
-    "status": "draft",
-    "plannedArea": "Pending review — Краткое резюме (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:saint-malo-best-overall-base"
   },
   "chatgpt:b004": {
-    "status": "draft",
-    "plannedArea": "Pending review — Допущения и методика (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:practical-climate-overview"
   },
   "chatgpt:b005": {
-    "status": "draft",
-    "plannedArea": "Pending review — Допущения и методика (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:sea-temperature-wide"
   },
   "chatgpt:b006": {
     "status": "retained",
@@ -388,24 +388,28 @@
     ]
   },
   "chatgpt:b038": {
-    "status": "draft",
-    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:ranking-source-chatgpt-overall"],
+    "paragraphIds": ["ranking-1", "ranking-2"]
   },
   "chatgpt:b039": {
-    "status": "draft",
-    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:ranking-source-chatgpt-overall", "evidence:ranking-cote-de-granit-rose-culture"],
+    "paragraphIds": ["ranking-1", "ranking-2"]
   },
   "chatgpt:b040": {
-    "status": "draft",
-    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:ranking-source-chatgpt-overall"],
+    "paragraphIds": ["ranking-1", "ranking-2"]
   },
   "chatgpt:b041": {
-    "status": "draft",
-    "plannedArea": "Pending review — Лучшие базы по вашему запросу (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:ranking-source-chatgpt-overall", "evidence:ranking-crozon-douarnenez-culture"],
+    "paragraphIds": ["ranking-1", "ranking-2"]
   },
   "chatgpt:b042": {
-    "status": "draft",
-    "plannedArea": "Pending review — Реалистичные маршруты на 7–10 дней (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:routes-entry-airports"
   },
   "chatgpt:b043": {
     "status": "retained",
@@ -575,24 +579,25 @@
     ]
   },
   "chatgpt:b058": {
-    "status": "draft",
-    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:saint-malo-best-overall-base"
   },
   "chatgpt:b059": {
-    "status": "draft",
-    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:routes-cultural-stay-lengths"
   },
   "chatgpt:b060": {
-    "status": "draft",
-    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:saint-malo-best-overall-base", "evidence:routes-nature-overview", "evidence:routes-relaxed-overview"],
+    "paragraphIds": ["ranking-1", "routes-nature-overview", "routes-relaxed-overview"]
   },
   "chatgpt:b061": {
-    "status": "draft",
-    "plannedArea": "Pending review — Какой маршрут я бы выбрал лично под ваш запрос (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-family-base-conclusion"
   },
   "gemini-britany:b001": {
-    "status": "draft",
-    "plannedArea": "Pending review — Анализ потенциала Бретани как направления для летнего семейного отдыха в августе 2026 года (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:practical-climate-overview"
   },
   "gemini-britany:b002": {
     "status": "duplicate",
@@ -623,12 +628,12 @@
     ]
   },
   "gemini-britany:b005": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сценарий 1: Авиаперелет + аренда автомобиля в Бретани (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:nantes-primary-gateway-from-portugal"
   },
   "gemini-britany:b006": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сценарий 1: Авиаперелет + аренда автомобиля в Бретани (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:nantes-primary-gateway-from-portugal"
   },
   "gemini-britany:b007": {
     "status": "retained",
@@ -642,8 +647,8 @@
     ]
   },
   "gemini-britany:b008": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сценарий 2: Автомобильное путешествие на собственной машине из Португалии (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:routes-own-car-impractical"
   },
   "gemini-britany:b009": {
     "status": "retained",
@@ -655,8 +660,8 @@
     ]
   },
   "gemini-britany:b010": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сравнительный анализ баз размещения в Бретани (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:ranking-source-chatgpt-overall"
   },
   "gemini-britany:b011": {
     "status": "duplicate",
@@ -776,24 +781,25 @@
     ]
   },
   "gemini-britany:b021": {
-    "status": "draft",
-    "plannedArea": "Pending review — Финансовый анализ проживания и аренды в августе 2026 года (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:practical-accommodation-budget-overview"
   },
   "gemini-britany:b022": {
-    "status": "draft",
-    "plannedArea": "Pending review — Финансовый анализ проживания и аренды в августе 2026 года (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:practical-accommodation-budget-overview", "evidence:practical-car-tradeoffs", "evidence:practical-food-overview"],
+    "paragraphIds": ["plan-accommodation-budget", "plan-getting-around-car", "plan-food-overview"]
   },
   "gemini-britany:b023": {
-    "status": "draft",
-    "plannedArea": "Pending review — Семейная гастрономия: бретонские кулинарные традиции (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:practical-food-regional-highlights"
   },
   "gemini-britany:b024": {
-    "status": "draft",
-    "plannedArea": "Pending review — Семейная гастрономия: бретонские кулинарные традиции (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:ranking-saint-malo-dinan-food"
   },
   "gemini-britany:b025": {
-    "status": "draft",
-    "plannedArea": "Pending review — Семейная гастрономия: бретонские кулинарные традиции (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:practical-food-regional-highlights"
   },
   "gemini-britany:b026": {
     "status": "retained",
@@ -870,12 +876,12 @@
     ]
   },
   "gemini-britany:b033": {
-    "status": "draft",
-    "plannedArea": "Pending review — Резюме и ключевые рекомендации по планированию (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:saint-malo-best-overall-base"
   },
   "gemini-britany:b034": {
-    "status": "draft",
-    "plannedArea": "Pending review — Резюме и ключевые рекомендации по планированию (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:nantes-primary-gateway-from-portugal"
   },
   "operaai:b001": {
     "status": "duplicate",
@@ -1149,8 +1155,8 @@
     ]
   },
   "operaai:b026": {
-    "status": "draft",
-    "plannedArea": "Pending review — 5. Рейтинг лучших баз для семейного отдыха (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:ranking-source-operaai-overall"
   },
   "operaai:b027": {
     "status": "retained",
@@ -1302,16 +1308,16 @@
     ]
   },
   "perplexity:b009": {
-    "status": "draft",
-    "plannedArea": "Pending review — Перелёт (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:routes-entry-airports"
   },
   "perplexity:b010": {
-    "status": "draft",
-    "plannedArea": "Pending review — Перелёт (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:routes-entry-airports"
   },
   "perplexity:b011": {
-    "status": "draft",
-    "plannedArea": "Pending review — Перелёт (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:routes-entry-airports"
   },
   "perplexity:b012": {
     "status": "retained",
@@ -1656,16 +1662,32 @@
     ]
   },
   "perplexity:b052": {
-    "status": "draft",
-    "plannedArea": "Pending review — Сводная сравнительная таблица (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:ranking-saint-malo-dinan-climate",
+      "evidence:ranking-saint-malo-dinan-logistics",
+      "evidence:ranking-saint-malo-dinan-accommodation",
+      "evidence:ranking-cote-de-granit-rose-climate",
+      "evidence:ranking-cote-de-granit-rose-accommodation",
+      "evidence:ranking-brest-finistere-climate",
+      "evidence:ranking-brest-finistere-logistics",
+      "evidence:ranking-quimper-south-finistere-climate",
+      "evidence:ranking-quimper-south-finistere-logistics",
+      "evidence:ranking-quimper-south-finistere-accommodation",
+      "evidence:ranking-vannes-carnac-morbihan-climate",
+      "evidence:ranking-vannes-carnac-morbihan-logistics",
+      "evidence:ranking-vannes-carnac-morbihan-accommodation"
+    ],
+    "paragraphIds": ["ranking-1", "ranking-2"]
   },
   "perplexity:b053": {
-    "status": "draft",
-    "plannedArea": "Pending review — Рейтинг баз для вашей семьи (content PRs 5–8)"
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:ranking-source-perplexity-overall"
   },
   "perplexity:b054": {
-    "status": "draft",
-    "plannedArea": "Pending review — Рейтинг баз для вашей семьи (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:ranking-source-perplexity-overall", "evidence:ranking-cote-de-granit-rose-culture", "evidence:ranking-brest-finistere-culture"],
+    "paragraphIds": ["ranking-1", "ranking-2"]
   },
   "perplexity:b055": {
     "status": "retained",
@@ -1803,7 +1825,8 @@
     ]
   },
   "perplexity:b068": {
-    "status": "draft",
-    "plannedArea": "Pending review — 3. Более спокойный семейный маршрут (море, пляжи, мягкая программа) (content PRs 5–8)"
+    "status": "retained",
+    "evidenceIds": ["evidence:routes-nature-overview", "evidence:routes-cultural-overview", "evidence:routes-relaxed-overview"],
+    "paragraphIds": ["routes-nature-overview", "routes-cultural-overview", "routes-relaxed-overview"]
   }
 }
