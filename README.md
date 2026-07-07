@@ -17,7 +17,9 @@ budget assumptions.
 
 ## Current status
 
-The project is in the planning and research-ingestion phase. Application development has not started yet.
+The guide application is implemented. Research coverage, content validation,
+authentication, rankings, routes, swimming guidance, and paragraph narration
+are part of the current release candidate.
 
 The approved information architecture is saved in [the design specification](docs/superpowers/specs/2026-06-30-brittany-family-guide-design.md). The implementation sequence is saved in [the implementation plan](docs/superpowers/plans/2026-06-30-brittany-family-guide.md).
 
@@ -69,6 +71,24 @@ Set both in your local `.env` (gitignored) or as Vercel Environment Variables.
 
 The end-to-end smoke test signs in through the browser using a committed
 test-only password and hash; real credentials are never committed.
+
+## Verification
+
+Run the complete local code and content gate with:
+
+```bash
+npm run check
+```
+
+Run the application's single browser journey with:
+
+```bash
+npm run test:e2e
+```
+
+GitHub Actions runs both gates on pull requests and pushes to `main`. CI uses
+test-only authentication from `playwright.config.ts`; it does not require Rime,
+Blob, or production authentication secrets.
 
 ## Deployment (Vercel)
 
