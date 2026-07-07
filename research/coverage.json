@@ -1025,8 +1025,7 @@
       "evidence:practical-swimming-sea-temperature-by-coast"
     ],
     "paragraphIds": [
-      "plan-weather-sea",
-      "swimming-comparison"
+      "plan-weather-sea"
     ]
   },
   "operaai:b015": {
@@ -1124,8 +1123,7 @@
     ],
     "paragraphIds": [
       "morbihan-verdict",
-      "morbihan-sea-normals",
-      "swimming-comparison"
+      "morbihan-sea-normals"
     ]
   },
   "operaai:b024": {
@@ -1168,7 +1166,7 @@
     "paragraphIds": [
       "routes-relaxed-overview",
       "routes-cultural-overview",
-      "swimming-comparison"
+      "plan-weather-sea"
     ]
   },
   "operaai:b028": {
@@ -1261,7 +1259,7 @@
     "paragraphIds": [
       "plan-getting-there-scenarios",
       "plan-weather-overview",
-      "swimming-comparison"
+      "plan-weather-sea"
     ]
   },
   "perplexity:b005": {

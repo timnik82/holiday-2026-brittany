@@ -33,14 +33,12 @@
   h3,
   h4 {
     break-after: avoid;
-    page-break-after: avoid;
   }
 
   blockquote,
   tr,
   figure {
     break-inside: avoid;
-    page-break-inside: avoid;
   }
 
   p,
