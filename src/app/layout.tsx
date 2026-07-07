@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./print.css";
 import { SiteShell } from "@/components/SiteShell";
 import { AudioProvider } from "@/components/tts/AudioProvider";
 import { guideConfig } from "@/config/guide";

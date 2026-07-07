@@ -13,11 +13,11 @@ const PRIMARY_NAV_ITEMS = [
 export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <a className={styles.skipLink} href="#main-content">
+      <a className={styles.skipLink} href="#main-content" data-print-hidden>
         Skip to main content
       </a>
 
-      <header className={styles.header}>
+      <header className={styles.header} data-print-hidden>
         <div className={styles.headerInner}>
           <span className={styles.siteTitle}>{guideConfig.shortTitle}</span>
 
@@ -41,7 +41,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
 
-      <footer className={styles.footer}>
+      <footer className={styles.footer} data-print-hidden>
         <p>
           Family trip planning — {guideConfig.regionName},{" "}
           {guideConfig.countryName}, {guideConfig.seasonLabel}

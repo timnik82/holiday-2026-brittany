@@ -263,10 +263,6 @@
   white-space: nowrap;
 }
 
-.badgeDraft {
-  background: #eee;
-  color: #666;
-}
 .badgeRetained {
   background: #d5f5e3;
   color: #1e7e34;
@@ -278,11 +274,6 @@
 .badgeConflict {
   background: #fadbd8;
   color: #c0392b;
-}
-
-.coverageTableDraft {
-  color: #888;
-  font-size: 0.85rem;
 }
 
 .coverageTableRetained,
