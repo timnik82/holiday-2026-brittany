@@ -20,7 +20,7 @@ budget assumptions.
 ## Current status
 
 The guide application is implemented. Research coverage, content validation,
-authentication, rankings, routes, swimming guidance, and paragraph narration
+authentication, rankings, the booked trip, swimming guidance, and paragraph narration
 are part of the current release candidate.
 
 The approved information architecture is saved in [the design specification](docs/superpowers/specs/2026-06-30-brittany-family-guide-design.md). The implementation sequence is saved in [the implementation plan](docs/superpowers/plans/2026-06-30-brittany-family-guide.md).

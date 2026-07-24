@@ -389,23 +389,45 @@
   },
   "chatgpt:b038": {
     "status": "retained",
-    "evidenceIds": ["evidence:ranking-source-chatgpt-overall"],
-    "paragraphIds": ["ranking-1", "ranking-2"]
+    "evidenceIds": [
+      "evidence:ranking-source-chatgpt-overall"
+    ],
+    "paragraphIds": [
+      "ranking-1",
+      "ranking-2"
+    ]
   },
   "chatgpt:b039": {
     "status": "retained",
-    "evidenceIds": ["evidence:ranking-source-chatgpt-overall", "evidence:ranking-cote-de-granit-rose-culture"],
-    "paragraphIds": ["ranking-1", "ranking-2"]
+    "evidenceIds": [
+      "evidence:ranking-source-chatgpt-overall",
+      "evidence:ranking-cote-de-granit-rose-culture"
+    ],
+    "paragraphIds": [
+      "ranking-1",
+      "ranking-2"
+    ]
   },
   "chatgpt:b040": {
     "status": "retained",
-    "evidenceIds": ["evidence:ranking-source-chatgpt-overall"],
-    "paragraphIds": ["ranking-1", "ranking-2"]
+    "evidenceIds": [
+      "evidence:ranking-source-chatgpt-overall"
+    ],
+    "paragraphIds": [
+      "ranking-1",
+      "ranking-2"
+    ]
   },
   "chatgpt:b041": {
     "status": "retained",
-    "evidenceIds": ["evidence:ranking-source-chatgpt-overall", "evidence:ranking-crozon-douarnenez-culture"],
-    "paragraphIds": ["ranking-1", "ranking-2"]
+    "evidenceIds": [
+      "evidence:ranking-source-chatgpt-overall",
+      "evidence:ranking-crozon-douarnenez-culture"
+    ],
+    "paragraphIds": [
+      "ranking-1",
+      "ranking-2"
+    ]
   },
   "chatgpt:b042": {
     "status": "duplicate",
@@ -417,7 +439,7 @@
       "evidence:routes-cultural-overview"
     ],
     "paragraphIds": [
-      "routes-cultural-overview"
+      "stay-saint-malo-overview"
     ]
   },
   "chatgpt:b044": {
@@ -427,8 +449,7 @@
       "evidence:routes-cultural-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-cultural-sequencing",
-      "routes-cultural-fit"
+      "stay-saint-malo-shape"
     ]
   },
   "chatgpt:b045": {
@@ -437,8 +458,8 @@
       "evidence:routes-cultural-transfers"
     ],
     "paragraphIds": [
-      "routes-cultural-entry",
-      "routes-cultural-day-1"
+      "stay-saint-malo-arrival",
+      "stay-saint-malo-day-1"
     ]
   },
   "chatgpt:b046": {
@@ -447,9 +468,9 @@
       "evidence:routes-cultural-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-cultural-day-2",
-      "routes-cultural-day-3",
-      "routes-cultural-day-5"
+      "stay-saint-malo-day-2",
+      "stay-saint-malo-rain",
+      "stay-saint-malo-alternatives"
     ]
   },
   "chatgpt:b047": {
@@ -459,9 +480,9 @@
       "evidence:routes-cultural-transfers"
     ],
     "paragraphIds": [
-      "routes-cultural-sequencing",
-      "routes-cultural-day-6",
-      "routes-cultural-day-9"
+      "stay-saint-malo-shape",
+      "stay-saint-malo-day-4",
+      "stay-saint-malo-arrival"
     ]
   },
   "chatgpt:b048": {
@@ -470,7 +491,7 @@
       "evidence:routes-nature-overview"
     ],
     "paragraphIds": [
-      "routes-nature-overview"
+      "granit-rose-verdict"
     ]
   },
   "chatgpt:b049": {
@@ -480,8 +501,7 @@
       "evidence:routes-nature-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-nature-sequencing",
-      "routes-nature-stay-lengths"
+      "stay-quimper-shape"
     ]
   },
   "chatgpt:b050": {
@@ -491,8 +511,7 @@
       "evidence:routes-entry-airports"
     ],
     "paragraphIds": [
-      "routes-nature-entry",
-      "routes-nature-day-1"
+      "plan-getting-there-brest"
     ]
   },
   "chatgpt:b051": {
@@ -502,10 +521,10 @@
       "evidence:routes-nature-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-nature-day-2",
-      "routes-nature-day-3",
-      "routes-nature-day-4",
-      "routes-nature-day-5"
+      "granit-rose-ploumanach-walk",
+      "granit-rose-sept-iles",
+      "granit-rose-science-mix",
+      "granit-rose-verdict"
     ]
   },
   "chatgpt:b052": {
@@ -515,8 +534,7 @@
       "evidence:routes-nature-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-nature-sequencing",
-      "routes-nature-stay-lengths"
+      "stay-quimper-shape"
     ]
   },
   "chatgpt:b053": {
@@ -525,7 +543,7 @@
       "evidence:routes-relaxed-overview"
     ],
     "paragraphIds": [
-      "routes-relaxed-overview"
+      "stay-vannes-overview"
     ]
   },
   "chatgpt:b054": {
@@ -535,8 +553,8 @@
       "evidence:routes-relaxed-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-relaxed-sequencing",
-      "routes-relaxed-stay-lengths"
+      "stay-vannes-base-plan",
+      "stay-vannes-pace"
     ]
   },
   "chatgpt:b055": {
@@ -546,9 +564,8 @@
       "evidence:routes-entry-airports"
     ],
     "paragraphIds": [
-      "routes-relaxed-entry",
-      "routes-relaxed-day-1",
-      "routes-relaxed-day-8"
+      "stay-vannes-arrival",
+      "stay-vannes-day-1"
     ]
   },
   "chatgpt:b056": {
@@ -559,9 +576,9 @@
       "evidence:routes-relaxed-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-relaxed-overview",
-      "routes-relaxed-day-2",
-      "routes-relaxed-day-3"
+      "stay-vannes-overview",
+      "stay-vannes-day-2",
+      "stay-vannes-day-3"
     ]
   },
   "chatgpt:b057": {
@@ -572,10 +589,10 @@
       "evidence:routes-relaxed-sequencing"
     ],
     "paragraphIds": [
-      "routes-relaxed-stay-lengths",
-      "routes-relaxed-pace",
-      "routes-relaxed-day-5",
-      "routes-relaxed-day-7"
+      "stay-vannes-pace",
+      "stay-vannes-day-4",
+      "stay-vannes-reserve",
+      "stay-vannes-inland"
     ]
   },
   "chatgpt:b058": {
@@ -588,8 +605,16 @@
   },
   "chatgpt:b060": {
     "status": "retained",
-    "evidenceIds": ["evidence:saint-malo-best-overall-base", "evidence:routes-nature-overview", "evidence:routes-relaxed-overview"],
-    "paragraphIds": ["ranking-1", "routes-nature-overview", "routes-relaxed-overview"]
+    "evidenceIds": [
+      "evidence:saint-malo-best-overall-base",
+      "evidence:routes-nature-overview",
+      "evidence:routes-relaxed-overview"
+    ],
+    "paragraphIds": [
+      "ranking-1",
+      "granit-rose-verdict",
+      "stay-vannes-overview"
+    ]
   },
   "chatgpt:b061": {
     "status": "duplicate",
@@ -641,9 +666,9 @@
       "evidence:routes-car-required-flexible"
     ],
     "paragraphIds": [
-      "routes-cultural-car",
-      "routes-nature-car",
-      "routes-relaxed-car"
+      "stay-saint-malo-car",
+      "plan-getting-around-car",
+      "stay-vannes-car"
     ]
   },
   "gemini-britany:b008": {
@@ -656,7 +681,7 @@
       "evidence:routes-own-car-impractical"
     ],
     "paragraphIds": [
-      "routes-cultural-entry"
+      "stay-saint-malo-arrival"
     ]
   },
   "gemini-britany:b010": {
@@ -786,8 +811,16 @@
   },
   "gemini-britany:b022": {
     "status": "retained",
-    "evidenceIds": ["evidence:practical-accommodation-budget-overview", "evidence:practical-car-tradeoffs", "evidence:practical-food-overview"],
-    "paragraphIds": ["plan-accommodation-budget", "plan-getting-around-car", "plan-food-overview"]
+    "evidenceIds": [
+      "evidence:practical-accommodation-budget-overview",
+      "evidence:practical-car-tradeoffs",
+      "evidence:practical-food-overview"
+    ],
+    "paragraphIds": [
+      "plan-accommodation-budget",
+      "plan-getting-around-car",
+      "plan-food-overview"
+    ]
   },
   "gemini-britany:b023": {
     "status": "duplicate",
@@ -809,9 +842,9 @@
       "evidence:routes-relaxed-overview"
     ],
     "paragraphIds": [
-      "routes-cultural-overview",
-      "routes-nature-overview",
-      "routes-relaxed-overview"
+      "stay-saint-malo-overview",
+      "granit-rose-verdict",
+      "stay-vannes-overview"
     ]
   },
   "gemini-britany:b027": {
@@ -820,7 +853,7 @@
       "evidence:routes-cultural-overview"
     ],
     "paragraphIds": [
-      "routes-cultural-overview"
+      "stay-saint-malo-overview"
     ]
   },
   "gemini-britany:b028": {
@@ -838,7 +871,7 @@
       "evidence:routes-nature-overview"
     ],
     "paragraphIds": [
-      "routes-nature-overview"
+      "granit-rose-verdict"
     ]
   },
   "gemini-britany:b030": {
@@ -848,8 +881,7 @@
       "evidence:routes-nature-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-nature-entry",
-      "routes-nature-day-1"
+      "plan-getting-there-brest"
     ]
   },
   "gemini-britany:b031": {
@@ -859,8 +891,8 @@
       "evidence:routes-relaxed-pace"
     ],
     "paragraphIds": [
-      "routes-relaxed-overview",
-      "routes-relaxed-pace"
+      "stay-vannes-overview",
+      "stay-vannes-pace"
     ]
   },
   "gemini-britany:b032": {
@@ -870,9 +902,9 @@
       "evidence:routes-relaxed-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-relaxed-entry",
-      "routes-relaxed-day-4",
-      "routes-relaxed-day-5"
+      "stay-vannes-arrival",
+      "stay-vannes-base-plan",
+      "stay-vannes-day-4"
     ]
   },
   "gemini-britany:b033": {
@@ -948,7 +980,7 @@
       "evidence:routes-own-car-impractical"
     ],
     "paragraphIds": [
-      "routes-cultural-entry"
+      "stay-saint-malo-arrival"
     ]
   },
   "operaai:b008": {
@@ -957,7 +989,7 @@
       "evidence:routes-own-car-impractical"
     ],
     "paragraphIds": [
-      "routes-cultural-entry"
+      "stay-saint-malo-arrival"
     ]
   },
   "operaai:b009": {
@@ -966,9 +998,9 @@
       "evidence:routes-car-required-flexible"
     ],
     "paragraphIds": [
-      "routes-cultural-car",
-      "routes-nature-car",
-      "routes-relaxed-car"
+      "stay-saint-malo-car",
+      "plan-getting-around-car",
+      "stay-vannes-car"
     ]
   },
   "operaai:b010": {
@@ -1164,8 +1196,8 @@
       "evidence:practical-swimming-sea-temperature-by-coast"
     ],
     "paragraphIds": [
-      "routes-relaxed-overview",
-      "routes-cultural-overview",
+      "stay-vannes-overview",
+      "stay-saint-malo-overview",
       "plan-weather-sea"
     ]
   },
@@ -1176,8 +1208,8 @@
       "evidence:routes-car-required-flexible"
     ],
     "paragraphIds": [
-      "routes-cultural-entry",
-      "routes-cultural-car"
+      "stay-saint-malo-arrival",
+      "stay-saint-malo-car"
     ]
   },
   "operaai:b029": {
@@ -1186,7 +1218,7 @@
       "evidence:routes-cultural-overview"
     ],
     "paragraphIds": [
-      "routes-cultural-overview"
+      "stay-saint-malo-overview"
     ]
   },
   "operaai:b030": {
@@ -1197,9 +1229,9 @@
       "evidence:routes-cultural-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-cultural-day-4",
-      "routes-cultural-day-5",
-      "routes-cultural-day-6"
+      "stay-saint-malo-day-3",
+      "stay-saint-malo-alternatives",
+      "stay-saint-malo-day-4"
     ]
   },
   "operaai:b031": {
@@ -1209,8 +1241,8 @@
       "evidence:routes-nature-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-nature-sequencing",
-      "routes-nature-day-6"
+      "stay-quimper-shape",
+      "stay-quimper-day-3"
     ]
   },
   "operaai:b032": {
@@ -1220,8 +1252,8 @@
       "evidence:routes-nature-transfers"
     ],
     "paragraphIds": [
-      "routes-nature-day-6",
-      "routes-nature-day-9"
+      "stay-quimper-day-3",
+      "stay-quimper-oceanopolis"
     ]
   },
   "operaai:b033": {
@@ -1231,9 +1263,10 @@
       "evidence:routes-relaxed-pace"
     ],
     "paragraphIds": [
-      "routes-relaxed-overview",
-      "routes-relaxed-pace",
-      "routes-relaxed-day-7"
+      "stay-vannes-overview",
+      "stay-vannes-pace",
+      "stay-vannes-reserve",
+      "stay-vannes-inland"
     ]
   },
   "operaai:b034": {
@@ -1244,9 +1277,8 @@
       "evidence:routes-relaxed-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-relaxed-sequencing",
-      "routes-relaxed-day-4",
-      "routes-relaxed-day-5"
+      "stay-vannes-base-plan",
+      "stay-vannes-day-4"
     ]
   },
   "perplexity:b004": {
@@ -1323,7 +1355,7 @@
       "evidence:routes-own-car-impractical"
     ],
     "paragraphIds": [
-      "routes-cultural-entry"
+      "stay-saint-malo-arrival"
     ]
   },
   "perplexity:b013": {
@@ -1332,9 +1364,9 @@
       "evidence:routes-car-required-flexible"
     ],
     "paragraphIds": [
-      "routes-cultural-car",
-      "routes-nature-car",
-      "routes-relaxed-car"
+      "stay-saint-malo-car",
+      "plan-getting-around-car",
+      "stay-vannes-car"
     ]
   },
   "perplexity:b014": {
@@ -1676,7 +1708,10 @@
       "evidence:ranking-vannes-carnac-morbihan-logistics",
       "evidence:ranking-vannes-carnac-morbihan-accommodation"
     ],
-    "paragraphIds": ["ranking-1", "ranking-2"]
+    "paragraphIds": [
+      "ranking-1",
+      "ranking-2"
+    ]
   },
   "perplexity:b053": {
     "status": "duplicate",
@@ -1684,8 +1719,15 @@
   },
   "perplexity:b054": {
     "status": "retained",
-    "evidenceIds": ["evidence:ranking-source-perplexity-overall", "evidence:ranking-cote-de-granit-rose-culture", "evidence:ranking-brest-finistere-culture"],
-    "paragraphIds": ["ranking-1", "ranking-2"]
+    "evidenceIds": [
+      "evidence:ranking-source-perplexity-overall",
+      "evidence:ranking-cote-de-granit-rose-culture",
+      "evidence:ranking-brest-finistere-culture"
+    ],
+    "paragraphIds": [
+      "ranking-1",
+      "ranking-2"
+    ]
   },
   "perplexity:b055": {
     "status": "retained",
@@ -1695,9 +1737,9 @@
       "evidence:routes-relaxed-overview"
     ],
     "paragraphIds": [
-      "routes-cultural-overview",
-      "routes-nature-overview",
-      "routes-relaxed-overview"
+      "stay-saint-malo-overview",
+      "granit-rose-verdict",
+      "stay-vannes-overview"
     ]
   },
   "perplexity:b056": {
@@ -1706,7 +1748,7 @@
       "evidence:routes-cultural-overview"
     ],
     "paragraphIds": [
-      "routes-cultural-overview"
+      "stay-saint-malo-overview"
     ]
   },
   "perplexity:b057": {
@@ -1715,7 +1757,7 @@
       "evidence:routes-cultural-sequencing"
     ],
     "paragraphIds": [
-      "routes-cultural-sequencing"
+      "stay-saint-malo-shape"
     ]
   },
   "perplexity:b058": {
@@ -1726,9 +1768,9 @@
       "evidence:routes-cultural-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-cultural-day-2",
-      "routes-cultural-day-4",
-      "routes-cultural-day-6"
+      "stay-saint-malo-day-2",
+      "stay-saint-malo-day-3",
+      "stay-saint-malo-day-4"
     ]
   },
   "perplexity:b059": {
@@ -1737,8 +1779,8 @@
       "evidence:routes-cultural-overview"
     ],
     "paragraphIds": [
-      "routes-cultural-overview",
-      "routes-cultural-fit"
+      "stay-saint-malo-overview",
+      "stay-saint-malo-shape"
     ]
   },
   "perplexity:b060": {
@@ -1747,7 +1789,7 @@
       "evidence:routes-nature-overview"
     ],
     "paragraphIds": [
-      "routes-nature-overview"
+      "granit-rose-verdict"
     ]
   },
   "perplexity:b061": {
@@ -1756,7 +1798,7 @@
       "evidence:routes-nature-sequencing"
     ],
     "paragraphIds": [
-      "routes-nature-sequencing"
+      "stay-quimper-shape"
     ]
   },
   "perplexity:b062": {
@@ -1767,9 +1809,9 @@
       "evidence:routes-nature-overview"
     ],
     "paragraphIds": [
-      "routes-nature-sequencing",
-      "routes-nature-day-6",
-      "routes-nature-day-9"
+      "stay-quimper-shape",
+      "stay-quimper-day-3",
+      "stay-quimper-oceanopolis"
     ]
   },
   "perplexity:b063": {
@@ -1778,8 +1820,7 @@
       "evidence:routes-nature-overview"
     ],
     "paragraphIds": [
-      "routes-nature-overview",
-      "routes-nature-fit"
+      "granit-rose-verdict"
     ]
   },
   "perplexity:b064": {
@@ -1788,7 +1829,7 @@
       "evidence:routes-relaxed-overview"
     ],
     "paragraphIds": [
-      "routes-relaxed-overview"
+      "stay-vannes-overview"
     ]
   },
   "perplexity:b065": {
@@ -1797,7 +1838,7 @@
       "evidence:routes-relaxed-sequencing"
     ],
     "paragraphIds": [
-      "routes-relaxed-sequencing"
+      "stay-vannes-base-plan"
     ]
   },
   "perplexity:b066": {
@@ -1807,9 +1848,10 @@
       "evidence:routes-relaxed-stay-lengths"
     ],
     "paragraphIds": [
-      "routes-relaxed-sequencing",
-      "routes-relaxed-day-6",
-      "routes-relaxed-day-7"
+      "stay-vannes-base-plan",
+      "stay-vannes-day-5",
+      "stay-vannes-reserve",
+      "stay-vannes-inland"
     ]
   },
   "perplexity:b067": {
@@ -1818,13 +1860,20 @@
       "evidence:routes-relaxed-pace"
     ],
     "paragraphIds": [
-      "routes-relaxed-pace",
-      "routes-relaxed-fit"
+      "stay-vannes-pace"
     ]
   },
   "perplexity:b068": {
     "status": "retained",
-    "evidenceIds": ["evidence:routes-nature-overview", "evidence:routes-cultural-overview", "evidence:routes-relaxed-overview"],
-    "paragraphIds": ["routes-nature-overview", "routes-cultural-overview", "routes-relaxed-overview"]
+    "evidenceIds": [
+      "evidence:routes-nature-overview",
+      "evidence:routes-cultural-overview",
+      "evidence:routes-relaxed-overview"
+    ],
+    "paragraphIds": [
+      "granit-rose-verdict",
+      "stay-saint-malo-overview",
+      "stay-vannes-overview"
+    ]
   }
 }

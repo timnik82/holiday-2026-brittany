@@ -16,7 +16,14 @@ function sharesMonth(stay: Stay): boolean {
  * compare — the choice is made and paid for, so the useful view is the sequence
  * we are actually travelling.
  */
-export function TripOverview({ date }: { date: string }) {
+export function TripOverview({
+  date,
+  writtenStayIds,
+}: {
+  date: string;
+  /** Stay ids with a page under /trip; others link to their base instead. */
+  writtenStayIds: Set<string>;
+}) {
   const stays = listStays();
   const current = getTripDay(date).stay;
 
@@ -39,7 +46,12 @@ export function TripOverview({ date }: { date: string }) {
               aria-current={isCurrent ? "step" : undefined}
             >
               <span className={styles.stayPlace}>
-                {stay.baseSlug ? (
+                {/* The stay's own day-by-day page is the more useful
+                    destination; the base page is the fallback until a stay is
+                    written up, and plain text when it has neither. */}
+                {writtenStayIds.has(stay.id) ? (
+                  <Link href={`/trip/${stay.id}`}>{stay.place}</Link>
+                ) : stay.baseSlug ? (
                   <Link href={`/bases/${stay.baseSlug}`}>{stay.place}</Link>
                 ) : (
                   stay.place

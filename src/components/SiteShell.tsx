@@ -4,7 +4,7 @@ import styles from "./SiteShell.module.css";
 
 const PRIMARY_NAV_ITEMS = [
   { label: "Compare bases", href: "/bases" },
-  { label: "Routes", href: "/routes" },
+  { label: "The trip", href: "/trip" },
   { label: "Things to do", href: "/things-to-do" },
   { label: "Swimming", href: "/swimming" },
   { label: "Plan your trip", href: "/plan" },

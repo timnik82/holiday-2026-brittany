@@ -12,7 +12,14 @@ import styles from "./home.module.css";
  * but the day. Task 4 adds the weather and time toggles below this card; until
  * then it links straight to the stay's base and its places.
  */
-export function TodayCard({ date }: { date: string }) {
+export function TodayCard({
+  date,
+  writtenStayIds,
+}: {
+  date: string;
+  /** Stay ids with a page under /trip, so the card never links into a 404. */
+  writtenStayIds: Set<string>;
+}) {
   const day = getTripDay(date);
   const { start, stays } = guideConfig.trip;
 
@@ -68,12 +75,19 @@ export function TodayCard({ date }: { date: string }) {
         {day.moving && <span className={styles.chip}>Moving from {day.leaving?.place}</span>}
       </p>
       {stay.note && <p>{stay.note}</p>}
-      {stay.baseSlug && (
-        <p className={styles.todayLinks}>
-          <Link href={`/bases/${stay.baseSlug}`}>About this base →</Link>{" "}
-          <Link href={`/things-to-do?base=${stay.baseSlug}`}>What is nearby →</Link>
-        </p>
-      )}
+      <p className={styles.todayLinks}>
+        {writtenStayIds.has(stay.id) && (
+          <>
+            <Link href={`/trip/${stay.id}`}>This stay, day by day →</Link>{" "}
+          </>
+        )}
+        {stay.baseSlug && (
+          <>
+            <Link href={`/bases/${stay.baseSlug}`}>About this base →</Link>{" "}
+            <Link href={`/things-to-do?base=${stay.baseSlug}`}>What is nearby →</Link>
+          </>
+        )}
+      </p>
     </section>
   );
 }

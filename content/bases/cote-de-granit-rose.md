@@ -12,7 +12,7 @@ coordinates:
 
 ## Verdict
 
-<!-- paragraph id="granit-rose-verdict" sources="evidence:northern-granit-rose-nature-first,evidence:northern-granit-rose-lannion-anchor" -->
+<!-- paragraph id="granit-rose-verdict" sources="evidence:northern-granit-rose-nature-first,evidence:northern-granit-rose-lannion-anchor,evidence:routes-nature-overview" -->
 The Côte de Granit Rose is the shortlist's strongest nature-first northern choice. It is defined less by a single historic city than by landscape — pink granite formations, the GR34 customs path, weather-beaten headlands, sandy family beaches, and island birdlife. Perros-Guirec, Trégastel, and the rail anchor Lannion function together as the base.
 
 ## Climate

@@ -6,48 +6,51 @@ import { CONTENT_STATUS_LABELS } from "@/components/content/labels";
 import { NarratableContent } from "@/components/tts/NarratableContent";
 import { guideConfig } from "@/config/guide";
 import { loadContentPages } from "@/lib/content/registry";
-import { routeFrontmatterSchema } from "@/lib/content/schemas";
-import type { RouteFrontmatter } from "@/lib/content/schemas";
-import { RouteTimeline } from "@/components/routes/RouteTimeline";
+import { stayFrontmatterSchema } from "@/lib/content/schemas";
+import type { StayFrontmatter } from "@/lib/content/schemas";
+import { StayTimeline } from "@/components/trip/StayTimeline";
+import { findStay } from "@/lib/trip/stays";
+import type { StayNeighbours } from "@/lib/trip/stays";
 import {
   getSourceBlockLinks,
   requireEvidenceRecords,
 } from "@/lib/content/evidence-links";
 import { loadEvidenceRegistry } from "@/lib/content/sources-data";
-import styles from "@/components/routes/routes.module.css";
+import styles from "@/components/trip/trip.module.css";
 import type { RegistryEntry } from "@/lib/content/registry";
 
 /**
- * Static params come only from reviewed route pages (status !== "draft").
+ * Static params come only from reviewed stay pages (status !== "draft").
  */
 export async function generateStaticParams() {
   return loadContentPages()
-    .filter((e) => e.category === "routes" && e.page.status !== "draft")
+    .filter((e) => e.category === "trip" && e.page.status !== "draft")
     .map((e) => ({ slug: e.page.slug }));
 }
 
 export const dynamicParams = false;
 
-interface RoutePageData {
+interface StayPageData {
   entry: RegistryEntry;
-  frontmatter: RouteFrontmatter;
+  frontmatter: StayFrontmatter;
+  stay: StayNeighbours;
   baseTitles: Map<string, string>;
 }
 
 /**
- * Resolve a route page from a single registry load, deriving the route entry,
- * its validated route frontmatter, and the baseSlug → baseTitle map from one
- * pass over `loadContentPages()`. The registry cache is disabled in dev, so
- * loading once here avoids three separate full content-directory scans per
- * request (mirroring the directory-data pattern).
+ * Resolve a stay page from a single registry load, deriving the stay entry, its
+ * validated frontmatter and the baseSlug → baseTitle map from one pass over
+ * `loadContentPages()`. The registry cache is disabled in dev, so loading once
+ * here avoids repeat full content-directory scans per request (mirroring the
+ * directory-data pattern).
  */
-function loadRoutePageData(slug: string): RoutePageData | undefined {
+function loadStayPageData(slug: string): StayPageData | undefined {
   const allPages = loadContentPages();
 
   let entry: RegistryEntry | undefined;
   const baseTitles = new Map<string, string>();
   for (const e of allPages) {
-    if (e.category === "routes" && e.page.slug === slug && e.page.status !== "draft") {
+    if (e.category === "trip" && e.page.slug === slug && e.page.status !== "draft") {
       entry = e;
     } else if (e.category === "bases") {
       baseTitles.set(e.page.slug, e.page.title);
@@ -55,16 +58,25 @@ function loadRoutePageData(slug: string): RoutePageData | undefined {
   }
   if (!entry) return undefined;
 
-  // A reviewed route page must have valid route frontmatter; if it doesn't,
-  // the content is out of sync — surface it loudly at build time.
-  const parsed = routeFrontmatterSchema.safeParse(entry.frontmatter);
+  // A reviewed stay page must have valid stay frontmatter; if it doesn't, the
+  // content is out of sync — surface it loudly at build time.
+  const parsed = stayFrontmatterSchema.safeParse(entry.frontmatter);
   if (!parsed.success) {
     throw new Error(
-      `Route page "${slug}" has no valid route frontmatter (trip-level fields are required).`
+      `Stay page "${slug}" has no valid stay frontmatter (stayId and carRequirement are required).`
     );
   }
 
-  return { entry, frontmatter: parsed.data, baseTitles };
+  // The itinerary, not the page, owns the dates. A stayId that no longer
+  // resolves means the booking changed without the content following.
+  const stay = findStay(parsed.data.stayId);
+  if (!stay) {
+    throw new Error(
+      `Stay page "${slug}" points at stayId "${parsed.data.stayId}", which is not a booked stay.`
+    );
+  }
+
+  return { entry, frontmatter: parsed.data, stay, baseTitles };
 }
 
 export async function generateMetadata({
@@ -73,28 +85,28 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const data = loadRoutePageData(slug);
+  const data = loadStayPageData(slug);
   if (!data) return {};
   return {
-    title: `${data.entry.page.title} — Routes — ${guideConfig.shortTitle}`,
+    title: `${data.entry.page.title} — The trip — ${guideConfig.shortTitle}`,
     description: data.entry.page.summary,
   };
 }
 
-export default async function RoutePage({
+export default async function StayPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const data = loadRoutePageData(slug);
+  const data = loadStayPageData(slug);
   if (!data) notFound();
-  const { entry, frontmatter, baseTitles } = data;
+  const { entry, frontmatter, stay, baseTitles } = data;
 
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((r) => [r.id, r]));
 
-  // Every evidence reference on this route's paragraphs must resolve to a
+  // Every evidence reference on this stay's paragraphs must resolve to a
   // registered record; a typo or deleted evidence id fails loudly at build
   // time instead of silently dropping a citation.
   const paragraphEvidenceIds = Array.from(
@@ -103,14 +115,14 @@ export default async function RoutePage({
   const paragraphEvidence = requireEvidenceRecords(
     evidenceById,
     paragraphEvidenceIds,
-    `Route page ${slug}`
+    `Stay page ${slug}`
   );
   const sourceLinks = dedupe(getSourceBlockLinks(paragraphEvidence));
 
   return (
     <div className={styles.page}>
       <p className={styles.backLink}>
-        <Link href="/routes">← Back to Routes</Link>
+        <Link href="/trip">← Back to the trip</Link>
       </p>
 
       <header className={styles.hero}>
@@ -123,9 +135,9 @@ export default async function RoutePage({
         </p>
       </header>
 
-      <RouteTimeline frontmatter={frontmatter} baseTitles={baseTitles} />
+      <StayTimeline stay={stay} frontmatter={frontmatter} baseTitles={baseTitles} />
 
-      <section className={styles.bodySection} aria-label={`${entry.page.title} itinerary`}>
+      <section className={styles.bodySection} aria-label={`${entry.page.title} day by day`}>
         <div className={styles.prose}>
           <NarratableContent
             content={entry.page.content}

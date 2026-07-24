@@ -1,5 +1,10 @@
 import { describe, it, expect } from "vitest";
-import { coverageSchema, coverageOutcomeSchema } from "../coverage";
+import {
+  coverageSchema,
+  coverageOutcomeSchema,
+  validateCoverageParagraphs,
+} from "../coverage";
+import type { Coverage } from "../coverage";
 
 describe("coverage outcome schema", () => {
   it("rejects the temporary draft outcome", () => {
@@ -80,5 +85,56 @@ describe("coverage map schema", () => {
       },
     });
     expect(result.success).toBe(true);
+  });
+});
+
+describe("coverage paragraph references", () => {
+  const known = new Set(["stay-vannes-day-1", "granit-rose-verdict"]);
+
+  it("accepts references to paragraphs that exist", () => {
+    const coverage: Coverage = {
+      "chatgpt:b001": {
+        status: "retained",
+        evidenceIds: ["evidence:foo"],
+        paragraphIds: ["stay-vannes-day-1"],
+      },
+    };
+    expect(validateCoverageParagraphs(known, coverage)).toEqual([]);
+  });
+
+  it("reports a paragraph that no longer exists after a page moves", () => {
+    const coverage: Coverage = {
+      "chatgpt:b001": {
+        status: "retained",
+        evidenceIds: ["evidence:foo"],
+        paragraphIds: ["stay-vannes-day-1", "routes-relaxed-day-1"],
+      },
+    };
+    const errors = validateCoverageParagraphs(known, coverage);
+    expect(errors).toHaveLength(1);
+    expect(errors[0].message).toContain("routes-relaxed-day-1");
+    expect(errors[0].message).toContain("chatgpt:b001");
+  });
+
+  it("checks conflict outcomes as well as retained ones", () => {
+    const coverage: Coverage = {
+      "chatgpt:b002": {
+        status: "conflict",
+        conflictId: "conflict:price",
+        evidenceIds: ["evidence:high", "evidence:low"],
+        paragraphIds: ["gone"],
+      },
+    };
+    expect(validateCoverageParagraphs(known, coverage)).toHaveLength(1);
+  });
+
+  it("ignores duplicate outcomes, which connect no paragraph", () => {
+    const coverage: Coverage = {
+      "chatgpt:b003": {
+        status: "duplicate",
+        retainedEvidenceId: "evidence:foo",
+      },
+    };
+    expect(validateCoverageParagraphs(known, coverage)).toEqual([]);
   });
 });

@@ -54,6 +54,23 @@ export interface ParseError {
 }
 
 /**
+ * Every paragraph ID declared in a markdown file, in document order.
+ *
+ * Reads the declarations rather than the parsed result: an oversized or
+ * duplicated paragraph is already reported by `validateParsedContent`, and
+ * reporting it a second time as a dangling coverage reference would bury the
+ * real cause. Used to check `research/coverage.json` against reality.
+ */
+export function listParagraphIds(markdown: string): string[] {
+  const ids: string[] = [];
+  for (const line of markdown.split("\n")) {
+    const match = line.trim().match(PARAGRAPH_COMMENT_RE);
+    if (match) ids.push(match[1]);
+  }
+  return ids;
+}
+
+/**
  * Parse markdown with paragraph metadata comments into stripped markdown plus
  * paragraph records. Invalid records (duplicate IDs, oversized paragraphs) are
  * silently omitted from the result rather than surfaced as errors here; use

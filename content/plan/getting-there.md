@@ -17,8 +17,8 @@ From Portugal there are two viable ways in: fly into a Brittany gateway and rent
 <!-- paragraph id="plan-getting-there-nantes" sources="evidence:nantes-primary-gateway-from-portugal" -->
 Nantes (NTE) is the primary gateway into Brittany from Portugal, with seasonal direct flights from Lisbon and Porto and fast onward trains to Vannes, Saint-Malo, Quimper and Lannion. It suits all three route styles. Flight schedules are seasonal — re-check the direct days before booking.
 
-<!-- paragraph id="plan-getting-there-brest" sources="evidence:western-brest-porto-flight" -->
-For the [nature route](/routes/nature) on the north coast, Brest (BES) is the smarter gateway: a direct Transavia flight from Porto (Mondays and Fridays from 31 March 2026) cuts the long transfer to the Côte de Granit Rose. There is no direct Lisbon–Brest flight for summer 2026.
+<!-- paragraph id="plan-getting-there-brest" sources="evidence:western-brest-porto-flight,evidence:routes-nature-transfers" -->
+For a trip built on the north coast, Brest (BES) is the smarter gateway: a direct Transavia flight from Porto (Mondays and Fridays from 31 March 2026), then the train Brest–Lannion from 1 h 15 min, cuts the long transfer to the [Côte de Granit Rose](/bases/cote-de-granit-rose). Entering via Nantes instead means about 260 km of driving north on day one. There is no direct Lisbon–Brest flight for summer 2026.
 
 ## Onward transfers
 
@@ -27,5 +27,5 @@ Once landed, the standard pattern is an airport shuttle to the city's main stati
 
 ## Choosing the entry airport
 
-<!-- paragraph id="plan-getting-there-choose" sources="evidence:nantes-primary-gateway-from-portugal,evidence:western-brest-porto-flight" -->
-The entry airport drives the route direction, not a north-versus-south preference: Nantes suits the [cultural](/routes/cultural) and [relaxed](/routes/relaxed-family) routes; Brest (from Porto) suits the [nature](/routes/nature) route. If the direct Porto–Brest flight does not run on your day, fall back to Nantes and accept the longer drive north.
+<!-- paragraph id="plan-getting-there-choose" sources="evidence:nantes-primary-gateway-from-portugal,evidence:western-brest-porto-flight,evidence:routes-entry-airports" -->
+The entry airport drives the direction of a trip, not a north-versus-south preference: Nantes is the primary gateway from Portugal and suits a southern or eastern base, Brest (from Porto) suits the far north-west, and Rennes is a secondary rail hub. Our booked trip enters and leaves through Nantes. If a direct flight does not run on your day, fall back to Nantes and accept the longer drive.

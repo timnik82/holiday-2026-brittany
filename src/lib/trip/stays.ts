@@ -23,6 +23,13 @@ export interface StaySummary {
   readonly index: number;
 }
 
+export interface StayNeighbours extends StaySummary {
+  /** The stay we arrive from, or `null` for the first stay of the trip. */
+  readonly previous: Stay | null;
+  /** The stay we move on to, or `null` for the last stay of the trip. */
+  readonly next: Stay | null;
+}
+
 export interface TripDay {
   /** The ISO date this describes. */
   readonly date: string;
@@ -79,6 +86,18 @@ export function listStays(): StaySummary[] {
     nights: stayNights(stay),
     index,
   }));
+}
+
+/** One stay by id, with the stays before and after it in travel order. */
+export function findStay(id: string): StayNeighbours | undefined {
+  const stays = listStays();
+  const index = stays.findIndex((entry) => entry.stay.id === id);
+  if (index === -1) return undefined;
+  return {
+    ...stays[index],
+    previous: stays[index - 1]?.stay ?? null,
+    next: stays[index + 1]?.stay ?? null,
+  };
 }
 
 /** Distinct base slugs the booked trip actually stays on, in travel order. */

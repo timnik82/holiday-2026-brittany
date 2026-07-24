@@ -67,19 +67,6 @@
   margin: 0;
 }
 
-.baseSequence {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.baseSequenceItem {
-  display: inline;
-}
-
 .baseLink:focus-visible {
   outline: 2px solid #123c54;
   outline-offset: 0.15rem;
@@ -170,13 +157,13 @@
   text-transform: uppercase;
 }
 
-.routeList {
+.stayList {
   display: grid;
   gap: 1rem;
   list-style: none;
 }
 
-.routeCard {
+.stayCard {
   display: grid;
   gap: 0.75rem;
   padding: 1.25rem;
@@ -186,27 +173,27 @@
   box-shadow: 0 0.3rem 1.25rem rgb(18 60 84 / 7%);
 }
 
-.routeCardTitle {
+.stayCardTitle {
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
-.routeCardTitle a {
+.stayCardTitle a {
   color: #123c54;
 }
 
-.routeCardTitle a:focus-visible {
+.stayCardTitle a:focus-visible {
   outline: 2px solid #123c54;
   outline-offset: 0.15rem;
   border-radius: 0.15rem;
 }
 
-.routeCardSummary {
+.stayCardSummary {
   color: #3f555e;
   font-size: 0.95rem;
 }
 
-.routeCardChips {
+.stayCardChips {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
