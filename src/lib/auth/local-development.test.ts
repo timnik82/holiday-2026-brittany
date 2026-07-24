@@ -11,7 +11,7 @@ const packageJson = JSON.parse(
 
 describe("local development page authentication bypass", () => {
   it("binds the development server to this computer only", () => {
-    expect(packageJson.scripts.dev).toContain("--hostname 127.0.0.1");
+    expect(packageJson.scripts.dev).toBe("next dev --hostname 127.0.0.1");
   });
 
   it.each(["localhost", "127.0.0.1", "[::1]"])(
