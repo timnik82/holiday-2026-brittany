@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { guideConfig } from "@/config/guide";
 import { getTripDay, listStays } from "@/lib/trip/stays";
-import { formatDateRange } from "@/lib/trip/format";
+import { formatDateRange, formatDay } from "@/lib/trip/format";
+import type { Stay } from "@/config/guide";
 import styles from "./home.module.css";
+
+/** Whether a stay starts and ends in the same month, so the month is said once. */
+function sharesMonth(stay: Stay): boolean {
+  return stay.checkIn.slice(0, 7) === stay.checkOut.slice(0, 7);
+}
 
 /**
  * The whole booked trip, five stays in travel order, with the current one
@@ -30,7 +36,7 @@ export function TripOverview({ date }: { date: string }) {
             <li
               key={stay.id}
               className={`${styles.stayCard} ${isCurrent ? styles.stayCardCurrent : ""}`}
-              aria-current={isCurrent ? "true" : undefined}
+              aria-current={isCurrent ? "step" : undefined}
             >
               <span className={styles.stayPlace}>
                 {stay.baseSlug ? (
@@ -40,7 +46,12 @@ export function TripOverview({ date }: { date: string }) {
                 )}
               </span>
               <span className={styles.stayDates}>
-                <time dateTime={stay.checkIn}>{formatDateRange(stay.checkIn, stay.checkOut)}</time>
+                {/* Two machine-readable dates rather than one wrapping the whole
+                    range, so the markup states check-in and check-out rather than
+                    labelling a range with a single date. */}
+                <time dateTime={stay.checkIn}>{formatDay(stay.checkIn, !sharesMonth(stay))}</time>
+                {" – "}
+                <time dateTime={stay.checkOut}>{formatDay(stay.checkOut, true)}</time>
                 {" · "}
                 {nights} night{nights === 1 ? "" : "s"}
               </span>

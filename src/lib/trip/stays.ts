@@ -62,9 +62,14 @@ export function isIsoDate(value: string): boolean {
   return parsed.toISOString().slice(0, 10) === value;
 }
 
+/** Whole days from one ISO date to another; negative when `to` is earlier. */
+export function daysBetween(from: string, to: string): number {
+  return Math.round((toUtcDay(to) - toUtcDay(from)) / MS_PER_DAY);
+}
+
 /** Nights slept in a stay: the gap between check-in and check-out. */
 export function stayNights(stay: Stay): number {
-  return Math.round((toUtcDay(stay.checkOut) - toUtcDay(stay.checkIn)) / MS_PER_DAY);
+  return daysBetween(stay.checkIn, stay.checkOut);
 }
 
 /** Every stay in travel order, with its night count and position. */

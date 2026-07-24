@@ -1,16 +1,8 @@
 import Link from "next/link";
 import { guideConfig } from "@/config/guide";
-import { getTripDay, stayNights } from "@/lib/trip/stays";
+import { daysBetween, getTripDay, stayNights } from "@/lib/trip/stays";
 import { formatFullDate } from "@/lib/trip/format";
 import styles from "./home.module.css";
-
-const MS_PER_DAY = 24 * 60 * 60 * 1000;
-
-function daysBetween(from: string, to: string): number {
-  return Math.round(
-    (Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / MS_PER_DAY
-  );
-}
 
 /**
  * Where we are on a given date, and the shortest route to what is nearby.

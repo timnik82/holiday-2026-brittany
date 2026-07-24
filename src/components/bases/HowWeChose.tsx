@@ -28,7 +28,8 @@ export function HowWeChose({ bases }: { bases: BaseRecord[] }) {
   );
   const baseBySlug = new Map(bases.map((base) => [base.slug, base]));
   const top = ranked.slice(0, 3);
-  const leader = baseBySlug.get(ranked[0].slug);
+  const winner = ranked[0];
+  const leader = winner ? baseBySlug.get(winner.slug) : undefined;
 
   return (
     <section aria-labelledby="how-we-chose-heading">
@@ -36,7 +37,7 @@ export function HowWeChose({ bases }: { bases: BaseRecord[] }) {
         How the destination was chosen
       </h2>
 
-      {leader && (
+      {leader && winner && (
         <div className={styles.verdict}>
           <p className={styles.verdictHeadline}>
             {guideConfig.regionName} was judged a strong fit for this family in{" "}
@@ -44,8 +45,8 @@ export function HowWeChose({ bases }: { bases: BaseRecord[] }) {
           </p>
           <p>
             The leading base, {leader.name}, scored{" "}
-            <span className={styles.verdictTotal}>{formatTotal(ranked[0].total)}</span>{" "}
-            ({Math.round(ranked[0].confidence * 100)}% confidence) against the family&apos;s
+            <span className={styles.verdictTotal}>{formatTotal(winner.total)}</span>{" "}
+            ({Math.round(winner.confidence * 100)}% confidence) against the family&apos;s
             stated priorities. {leader.bestFor}. The trip that was booked stays on{" "}
             <Link href="/">the trip page</Link>; three of these six bases are on it.
           </p>
