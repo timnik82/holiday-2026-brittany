@@ -111,9 +111,9 @@ export function CriticalWarnings({
             else: attractions with timed entry, boat crossings and restaurants
             fill days ahead.
             {staleAccommodation.length > 0 &&
-              ` ${staleAccommodation.length} price check${
-                staleAccommodation.length > 1 ? "s are" : " is"
-              } older than its review window.`}
+              (staleAccommodation.length === 1
+                ? " 1 price check is older than its review window."
+                : ` ${staleAccommodation.length} price checks are older than their review windows.`)}
           </p>
           <p className={styles.warningLinks}>
             <Link href="/plan/accommodation-budget">Accommodation budget →</Link>

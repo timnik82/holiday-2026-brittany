@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { guideConfig } from "@/config/guide";
-import { rankBases } from "@/lib/ranking/calculate";
-import { RANKING_DIMENSIONS } from "@/lib/ranking/weights";
+import { rankBaseRecords } from "@/lib/ranking/calculate";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import styles from "./how-we-chose.module.css";
 
@@ -18,14 +17,7 @@ function formatTotal(total: number | null): string {
  * what each base is good for. The live comparison table follows below it.
  */
 export function HowWeChose({ bases }: { bases: BaseRecord[] }) {
-  const ranked = rankBases(
-    bases.map((base) => ({
-      slug: base.slug,
-      scores: Object.fromEntries(
-        RANKING_DIMENSIONS.map((dimension) => [dimension, base.scores[dimension].score])
-      ) as Record<(typeof RANKING_DIMENSIONS)[number], number | null>,
-    }))
-  );
+  const ranked = rankBaseRecords(bases);
   const baseBySlug = new Map(bases.map((base) => [base.slug, base]));
   const top = ranked.slice(0, 3);
   const winner = ranked[0];

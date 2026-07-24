@@ -3,6 +3,7 @@ import {
   RANKING_DIMENSIONS,
   type RankingDimension,
 } from "./weights";
+import type { BaseRecord } from "./schema";
 
 export interface BaseRankingInput {
   slug: string;
@@ -32,6 +33,26 @@ export function calculateBaseRanking(input: BaseRankingInput): BaseRankingResult
   );
 
   return { slug: input.slug, total: Math.round(total * 100) / 100, confidence };
+}
+
+/**
+ * Rank loaded base records directly.
+ *
+ * Every view that ranks bases — the selection summary, the comparison table and
+ * each base's detail page — needs the same projection from `BaseRecord` to
+ * `BaseRankingInput`. Doing it inline three times meant a change to the
+ * dimension list or the score shape could leave the views disagreeing about the
+ * order, so the projection lives here once.
+ */
+export function rankBaseRecords(bases: BaseRecord[]): BaseRankingResult[] {
+  return rankBases(
+    bases.map((base) => ({
+      slug: base.slug,
+      scores: Object.fromEntries(
+        RANKING_DIMENSIONS.map((dimension) => [dimension, base.scores[dimension].score])
+      ) as Record<RankingDimension, number | null>,
+    }))
+  );
 }
 
 export function rankBases(inputs: BaseRankingInput[]): BaseRankingResult[] {

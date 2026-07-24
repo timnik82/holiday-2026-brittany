@@ -16,8 +16,7 @@ import {
 } from "@/lib/content/evidence-links";
 import { loadEvidenceRegistry } from "@/lib/content/sources-data";
 import { loadBaseRankings } from "@/lib/ranking/data";
-import { rankBases } from "@/lib/ranking/calculate";
-import { RANKING_DIMENSIONS } from "@/lib/ranking/weights";
+import { rankBaseRecords } from "@/lib/ranking/calculate";
 import { getRelatedPlaces } from "@/components/bases/related-places-data";
 
 /**
@@ -83,14 +82,7 @@ export default async function BaseDetailPage({
     );
   }
 
-  const ranked = rankBases(
-    rankings.bases.map((b) => ({
-      slug: b.slug,
-      scores: Object.fromEntries(
-        RANKING_DIMENSIONS.map((d) => [d, b.scores[d].score])
-      ) as Record<(typeof RANKING_DIMENSIONS)[number], number | null>,
-    }))
-  );
+  const ranked = rankBaseRecords(rankings.bases);
   const rankIndex = ranked.findIndex((r) => r.slug === slug);
   const result = ranked[rankIndex];
 
