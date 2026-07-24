@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { canBypassPageAuth } from "@/lib/auth/local-development";
 import { SESSION_COOKIE_NAME, verifySessionToken } from "@/lib/auth/session";
 
 /**
@@ -15,6 +16,13 @@ import { SESSION_COOKIE_NAME, verifySessionToken } from "@/lib/auth/session";
  */
 export async function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
+
+  // The local computer preview is intentionally frictionless. Production and
+  // Preview builds, plus development requests from other LAN devices, still
+  // require the normal signed family session.
+  if (canBypassPageAuth(request.nextUrl.hostname)) {
+    return NextResponse.next();
+  }
 
   // The login page and its server action must remain reachable while signed out.
   if (pathname === "/login") {
