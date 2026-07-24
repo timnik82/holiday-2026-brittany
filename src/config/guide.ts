@@ -87,7 +87,9 @@ export const guideConfig = {
         baseSlug: null,
         checkIn: "2026-08-06",
         checkOut: "2026-08-09",
-        note: "Lands at 20:05 — no programme on the first evening.",
+        // No time here: `arrivalTime` is the single source and the card already
+        // shows it, so a changed flight cannot leave a stale time in prose.
+        note: "No programme on the arrival evening.",
       },
       {
         id: "vannes-carnac-morbihan",

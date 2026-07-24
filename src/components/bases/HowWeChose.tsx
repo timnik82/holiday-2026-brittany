@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { guideConfig } from "@/config/guide";
 import { rankBaseRecords } from "@/lib/ranking/calculate";
+import { basesOnTrip } from "@/lib/trip/stays";
 import type { BaseRecord } from "@/lib/ranking/schema";
 import styles from "./how-we-chose.module.css";
 
@@ -22,6 +23,9 @@ export function HowWeChose({ bases }: { bases: BaseRecord[] }) {
   const top = ranked.slice(0, 3);
   const winner = ranked[0];
   const leader = winner ? baseBySlug.get(winner.slug) : undefined;
+  // Counted from the booked stays rather than written into the copy, so the
+  // sentence cannot outlive a change to the itinerary or the candidate list.
+  const bookedCount = basesOnTrip().filter((slug) => baseBySlug.has(slug)).length;
 
   return (
     <section aria-labelledby="how-we-chose-heading">
@@ -40,7 +44,8 @@ export function HowWeChose({ bases }: { bases: BaseRecord[] }) {
             <span className={styles.verdictTotal}>{formatTotal(winner.total)}</span>{" "}
             ({Math.round(winner.confidence * 100)}% confidence) against the family&apos;s
             stated priorities. {leader.bestFor}. The trip that was booked stays on{" "}
-            <Link href="/">the trip page</Link>; three of these six bases are on it.
+            <Link href="/">the trip page</Link>; {bookedCount} of these {bases.length}{" "}
+            bases are on it.
           </p>
         </div>
       )}

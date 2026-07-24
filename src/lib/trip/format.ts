@@ -11,23 +11,34 @@ function asUtcDate(iso: string): Date {
   return new Date(`${iso}T00:00:00Z`);
 }
 
+// Formatters are built once at module scope. Construction costs far more than
+// formatting, and these three shapes are used on every trip-facing render.
+const FULL_DATE = new Intl.DateTimeFormat(guideConfig.locale, {
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  timeZone: "UTC",
+});
+
+const DAY_WITH_MONTH = new Intl.DateTimeFormat(guideConfig.locale, {
+  day: "numeric",
+  month: "long",
+  timeZone: "UTC",
+});
+
+const DAY_ONLY = new Intl.DateTimeFormat(guideConfig.locale, {
+  day: "numeric",
+  timeZone: "UTC",
+});
+
 /** "Friday 14 August" — used where the day needs to be recognisable at a glance. */
 export function formatFullDate(iso: string): string {
-  return new Intl.DateTimeFormat(guideConfig.locale, {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    timeZone: "UTC",
-  }).format(asUtcDate(iso));
+  return FULL_DATE.format(asUtcDate(iso));
 }
 
 /** "14" or "14 August", depending on whether the month still needs saying. */
 export function formatDay(iso: string, withMonth: boolean): string {
-  return new Intl.DateTimeFormat(guideConfig.locale, {
-    day: "numeric",
-    ...(withMonth ? { month: "long" } : {}),
-    timeZone: "UTC",
-  }).format(asUtcDate(iso));
+  return (withMonth ? DAY_WITH_MONTH : DAY_ONLY).format(asUtcDate(iso));
 }
 
 /** "9 – 14 August", dropping the repeated month when both dates share one. */
