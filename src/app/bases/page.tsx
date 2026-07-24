@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BaseComparison } from "@/components/bases/BaseComparison";
+import { HowWeChose } from "@/components/bases/HowWeChose";
 import { guideConfig } from "@/config/guide";
 import styles from "@/components/bases/bases.module.css";
 import {
@@ -45,16 +46,20 @@ export default function BasesPage() {
     <div className={styles.page}>
       <header className={styles.hero}>
         <p className={styles.eyebrow}>
-          Decision guide · {guideConfig.seasonLabel}
+          How we chose · {guideConfig.seasonLabel}
         </p>
         <h1>
           Compare {baseCount} {guideConfig.regionName} bases
         </h1>
         <p>
-          This is a family-specific comparison, not a universal destination ranking.
-          Each score uses the same 1–10 scale and links back to the supplied research.
+          The trip is booked, so this page is the record of the decision rather than
+          the decision itself. It stays useful: the scores explain what each base is
+          good at, and three of these six are on the route. Each score uses the same
+          1–10 scale and links back to the supplied research.
         </p>
       </header>
+
+      <HowWeChose bases={rankings.bases} />
 
       <section className={styles.methodNote} aria-labelledby="weight-heading">
         <h2 id="weight-heading">How the total is calculated</h2>

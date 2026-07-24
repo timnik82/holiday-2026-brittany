@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { guideConfig } from "@/config/guide";
 import { loadBaseRankings } from "@/lib/ranking/data";
-import { rankBases } from "@/lib/ranking/calculate";
-import { RANKING_DIMENSIONS } from "@/lib/ranking/weights";
-import { Verdict } from "@/components/home/Verdict";
-import { TopBases, type TopBaseRow } from "@/components/home/TopBases";
-import { DateWindows } from "@/components/home/DateWindows";
-import { RouteChoices } from "@/components/home/RouteChoices";
+import { resolveViewDate } from "@/lib/trip/stays";
+import { formatDateRange } from "@/lib/trip/format";
+import { TodayCard } from "@/components/home/TodayCard";
+import { TripOverview } from "@/components/home/TripOverview";
 import { CriticalWarnings } from "@/components/home/CriticalWarnings";
 import styles from "@/components/home/home.module.css";
 
@@ -17,48 +16,32 @@ export function generateMetadata(): Metadata {
   };
 }
 
-export default function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const params = await searchParams;
+  const requested = Array.isArray(params.date) ? params.date[0] : params.date;
+  const date = resolveViewDate(requested);
   const rankings = loadBaseRankings();
-  const ranked = rankBases(
-    rankings.bases.map((base) => ({
-      slug: base.slug,
-      scores: Object.fromEntries(
-        RANKING_DIMENSIONS.map((dimension) => [
-          dimension,
-          base.scores[dimension].score,
-        ])
-      ) as Record<(typeof RANKING_DIMENSIONS)[number], number | null>,
-    }))
-  );
-  const baseBySlug = new Map(rankings.bases.map((b) => [b.slug, b]));
-
-  const topRows: TopBaseRow[] = ranked.slice(0, 3).map((result, index) => ({
-    result,
-    base: baseBySlug.get(result.slug)!,
-    rank: index + 1,
-  }));
-
-  const topResult = ranked[0];
-  const topBase = baseBySlug.get(topResult.slug)!;
 
   return (
     <div className={styles.page}>
       <header className={styles.hero}>
         <p className={styles.eyebrow}>
-          Decision guide · {guideConfig.seasonLabel}
+          {guideConfig.regionName} · {guideConfig.seasonLabel}
         </p>
-        <h1>{guideConfig.regionName} for this family</h1>
+        <h1>The trip, day by day</h1>
         <p>
-          A personalised, evidence-backed recommendation for {guideConfig.tripYear}{" "}
-          — the shortlist, the routes, and the warnings that could change the
-          decision, all in one place.
+          The route is booked. This is where we are, what is reachable from
+          there, and every fact behind it traced back to the research it came
+          from.
         </p>
       </header>
 
-      <Verdict topResult={topResult} topBase={topBase} />
-      <TopBases rows={topRows} />
-      <DateWindows />
-      <RouteChoices />
+      <TodayCard date={date} />
+      <TripOverview date={date} />
       <CriticalWarnings bases={rankings.bases} />
 
       <section
@@ -67,11 +50,11 @@ export default function Home() {
         className={styles.assumptions}
       >
         <h2 id="assumptions-heading" className={styles.sectionHeading}>
-          About this recommendation
+          Who this trip is for
         </h2>
         <p className={styles.sectionIntro}>
-          This guide is built for one specific family and trip. The ranking is
-          not universal — change any of these and the answer may change.
+          The guide is built for one specific family and one booked trip. Change
+          any of these and its recommendations stop applying.
         </p>
         <dl className={styles.assumptionGrid}>
           <dt className={styles.assumptionKey}>Family</dt>
@@ -84,11 +67,10 @@ export default function Home() {
           <dd className={styles.assumptionValue}>
             {guideConfig.origins.join(" or ")}
           </dd>
-          <dt className={styles.assumptionKey}>Date windows</dt>
+          <dt className={styles.assumptionKey}>Dates</dt>
           <dd className={styles.assumptionValue}>
-            {guideConfig.dateWindows
-              .map((w) => `${w.label} (${w.start} – ${w.end})`)
-              .join("; ")}
+            {formatDateRange(guideConfig.trip.start, guideConfig.trip.end)}{" "}
+            {guideConfig.tripYear}, landing at {guideConfig.trip.arrivalTime}
           </dd>
           <dt className={styles.assumptionKey}>Accommodation budget</dt>
           <dd className={styles.assumptionValue}>
@@ -101,9 +83,8 @@ export default function Home() {
           </dd>
         </dl>
         <p>
-          See the{" "}
-          <a href="/bases">full six-base comparison and methodology</a> for how
-          these priorities are weighted.
+          The bases were compared before booking; that comparison is kept as{" "}
+          <Link href="/bases">how the destination was chosen</Link>.
         </p>
       </section>
     </div>

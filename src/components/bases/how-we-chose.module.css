@@ -1,0 +1,71 @@
+/*
+ * Styles for the archived selection summary. Kept separate from
+ * `bases.module.css` because that file already uses `.baseCard`, `.rank` and
+ * `.bestFor` for the comparison table rows, which mean something different.
+ */
+
+.sectionHeading {
+  color: #123c54;
+  font-size: 1.4rem;
+}
+
+.verdict {
+  border-left: 0.3rem solid var(--color-primary);
+  background: #eef5f8;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.verdictHeadline {
+  font-size: 1.15rem;
+  color: #123c54;
+  font-weight: 700;
+}
+
+.verdictTotal {
+  color: #9a4f2c;
+  font-weight: 800;
+}
+
+.topList {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.topCard {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  border: 1px solid #cad9df;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 0.3rem 1.25rem rgb(18 60 84 / 7%);
+}
+
+.topCardHead {
+  display: flex;
+  gap: 0.8rem;
+  align-items: baseline;
+}
+
+.topCardHead h3 {
+  color: #123c54;
+  line-height: 1.2;
+}
+
+.topRank {
+  color: #9a4f2c;
+  font-weight: 800;
+}
+
+.topTotal {
+  color: #41616f;
+  font-size: 0.9rem;
+}
+
+.topBestFor {
+  color: #244d5f;
+}

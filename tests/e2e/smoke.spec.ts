@@ -17,10 +17,16 @@ test("sign-in journey: home, one attraction, and one route", async ({ page }) =>
   await page.getByLabel("Password").fill(TEST_PASSWORD);
   await page.getByRole("button", { name: "Sign in" }).click();
 
-  // After sign-in the home page is shown.
+  // After sign-in the home page is shown: the booked trip, not a recommendation.
   await expect(page).toHaveURL(/\/$/);
   await expect(
-    page.getByRole("heading", { level: 1, name: /Brittany for this family/i }),
+    page.getByRole("heading", { level: 1, name: /The trip, day by day/i }),
+  ).toBeVisible();
+
+  // A date inside the trip resolves to the stay whose night is spent there.
+  await page.goto("/?date=2026-08-14");
+  await expect(
+    page.getByRole("heading", { level: 2, name: /Quimper \/ South Finistère/i }),
   ).toBeVisible();
 
   const nav = page.getByRole("navigation", { name: /primary/i });
