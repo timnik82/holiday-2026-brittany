@@ -10,6 +10,7 @@ import {
 } from "@/lib/content/evidence-links";
 import { loadEvidenceRegistry } from "@/lib/content/sources-data";
 import { loadBaseRankings } from "@/lib/ranking/data";
+import { basesOnTrip } from "@/lib/trip/stays";
 import {
   FAMILY_WEIGHTS,
   RANKING_DIMENSIONS,
@@ -34,6 +35,8 @@ const SOURCE_RANKING_IDS = [
 export default function BasesPage() {
   const rankings = loadBaseRankings();
   const baseCount = rankings.bases.length;
+  const bookedSlugs = new Set(rankings.bases.map((base) => base.slug));
+  const bookedCount = basesOnTrip().filter((slug) => bookedSlugs.has(slug)).length;
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((record) => [record.id, record]));
   const sourceRankings = requireEvidenceRecords(
@@ -54,8 +57,8 @@ export default function BasesPage() {
         <p>
           The trip is booked, so this page is the record of the decision rather than
           the decision itself. It stays useful: the scores explain what each base is
-          good at, and three of these six are on the route. Each score uses the same
-          1–10 scale and links back to the supplied research.
+          good at, and {bookedCount} of these {baseCount} are on the route. Each score
+          uses the same 1–10 scale and links back to the supplied research.
         </p>
       </header>
 

@@ -81,18 +81,41 @@ export function listStays(): StaySummary[] {
   }));
 }
 
+/** Distinct base slugs the booked trip actually stays on, in travel order. */
+export function basesOnTrip(): string[] {
+  const seen: string[] = [];
+  for (const stay of guideConfig.trip.stays) {
+    if (stay.baseSlug && !seen.includes(stay.baseSlug)) seen.push(stay.baseSlug);
+  }
+  return seen;
+}
+
+/**
+ * Formatter for the destination's calendar date. Built once: constructing an
+ * `Intl.DateTimeFormat` is markedly more expensive than using one.
+ */
+const DESTINATION_DATE_PARTS = new Intl.DateTimeFormat("en-CA", {
+  timeZone: guideConfig.timeZone,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+});
+
 /**
  * Today's date in the destination's timezone. Rendering happens on a UTC
  * server, so using the process date would flip the day at the wrong moment for
  * a traveller standing in France.
+ *
+ * The parts are assembled explicitly rather than trusting a locale to emit
+ * `YYYY-MM-DD`: locale output is ICU-data dependent, and a runtime that
+ * formatted this as `MM/DD/YYYY` would fail `isIsoDate` and silently drop the
+ * reader into the off-trip state.
  */
 export function destinationToday(now: Date = new Date()): string {
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: guideConfig.timeZone,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(now);
+  const parts = DESTINATION_DATE_PARTS.formatToParts(now);
+  const value = (type: Intl.DateTimeFormatPartTypes) =>
+    parts.find((part) => part.type === type)?.value ?? "";
+  return `${value("year")}-${value("month")}-${value("day")}`;
 }
 
 /**
