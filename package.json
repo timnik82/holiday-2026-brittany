@@ -1,7 +1,7 @@
 {
   "name": "holiday-2026-brittany",
   "version": "1.0.0",
-  "description": "This private repository will contain an English-language family travel guide for Brittany, France, for August 2026. The planned application combines detailed destination research, family itineraries, swimming options, travel logistics, accommodation guidance, and paragraph-level text-to-speech playback.",
+  "description": "An English-language family travel guide for Brittany, France, for August 2026. The application combines detailed destination research, family itineraries, swimming options, travel logistics, accommodation guidance, and paragraph-level text-to-speech playback. The repository is public; the deployed guide is password-protected.",
   "directories": {
     "doc": "docs"
   },

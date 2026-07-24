@@ -1,6 +1,8 @@
 # Holiday 2026 — Brittany Family Guide
 
-This private repository will contain an English-language family travel guide for Brittany, France, for August 2026. The planned application combines detailed destination research, family itineraries, swimming options, travel logistics, accommodation guidance, and paragraph-level text-to-speech playback.
+This repository contains an English-language family travel guide for Brittany, France, for August 2026. It combines detailed destination research, family itineraries, swimming options, travel logistics, accommodation guidance, and paragraph-level text-to-speech playback.
+
+**The repository is public; the deployed guide is not.** The application itself is password-protected, but everything committed here — including trip dates, itineraries and research notes — is world-readable. Do not commit personal identifiers (email addresses, local file paths, account names, booking references, addresses) or anything that should stay within the family.
 
 ## Single-region template
 
