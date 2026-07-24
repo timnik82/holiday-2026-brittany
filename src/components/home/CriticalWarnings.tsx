@@ -52,10 +52,11 @@ export function CriticalWarnings({
   return (
     <section aria-labelledby="warnings-heading">
       <h2 id="warnings-heading" className={styles.sectionHeading}>
-        What could change the decision
+        What to watch on this trip
       </h2>
       <p className={styles.sectionIntro}>
-        Six factors to weigh before committing — each links to the full guide.
+        Six conditions that change what a day can hold — each links to the full
+        guide.
       </p>
       <ul className={styles.warnings}>
         <li className={styles.warningCard}>
@@ -106,12 +107,13 @@ export function CriticalWarnings({
         <li className={styles.warningCard}>
           <h3>Availability</h3>
           <p>
-            August is peak season — book accommodation well ahead, especially
-            for the early window.
+            Accommodation is booked, but August is peak season for everything
+            else: attractions with timed entry, boat crossings and restaurants
+            fill days ahead.
             {staleAccommodation.length > 0 &&
-              ` ${staleAccommodation.length} price check${
-                staleAccommodation.length > 1 ? "s need" : " needs"
-              } rechecking before booking.`}
+              (staleAccommodation.length === 1
+                ? " 1 price check is older than its review window."
+                : ` ${staleAccommodation.length} price checks are older than their review windows.`)}
           </p>
           <p className={styles.warningLinks}>
             <Link href="/plan/accommodation-budget">Accommodation budget →</Link>

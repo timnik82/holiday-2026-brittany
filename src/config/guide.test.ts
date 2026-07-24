@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { guideConfig } from "./guide";
+import { isIsoDate } from "@/lib/trip/stays";
 
 describe("guideConfig", () => {
   it("describes the current Brittany family guide", () => {
@@ -27,16 +28,23 @@ describe("guideConfig", () => {
     expect(guideConfig.priorities).toHaveLength(7);
   });
 
-  it("uses valid, ordered ISO date windows", () => {
-    for (const window of guideConfig.dateWindows) {
-      expect(window.start).toMatch(/^\d{4}-\d{2}-\d{2}$/);
-      expect(window.end).toMatch(/^\d{4}-\d{2}-\d{2}$/);
-      expect(Date.parse(window.start)).not.toBeNaN();
-      expect(Date.parse(window.end)).not.toBeNaN();
-      expect(Date.parse(window.start)).toBeLessThanOrEqual(
-        Date.parse(window.end)
-      );
+  it("uses valid, ordered ISO dates for the booked trip", () => {
+    const { start, end, stays } = guideConfig.trip;
+    for (const date of [start, end, ...stays.flatMap((s) => [s.checkIn, s.checkOut])]) {
+      // `isIsoDate` round-trips the date, so an overflow like 2026-02-31 fails
+      // here rather than being silently rolled over to 3 March by `Date.parse`.
+      expect(isIsoDate(date)).toBe(true);
     }
+    expect(Date.parse(start)).toBeLessThan(Date.parse(end));
+
+    for (const stay of stays) {
+      expect(Date.parse(stay.checkIn)).toBeLessThan(Date.parse(stay.checkOut));
+    }
+  });
+
+  it("gives every stay a unique id", () => {
+    const ids = guideConfig.trip.stays.map((stay) => stay.id);
+    expect(new Set(ids).size).toBe(ids.length);
   });
 
   it("keeps the target accommodation budget within the ceiling", () => {

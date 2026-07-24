@@ -1,8 +1,7 @@
 import type { EvidenceRecord } from "@/lib/content/evidence";
 import { guideConfig } from "@/config/guide";
-import { rankBases } from "@/lib/ranking/calculate";
+import { rankBaseRecords } from "@/lib/ranking/calculate";
 import type { BaseRecord } from "@/lib/ranking/schema";
-import { RANKING_DIMENSIONS } from "@/lib/ranking/weights";
 import { ScoreBreakdown } from "./ScoreBreakdown";
 import { CAR_NEED_LABELS, PRICE_BAND_LABELS } from "./labels";
 import styles from "./bases.module.css";
@@ -15,17 +14,7 @@ export function BaseComparison({
   evidence: EvidenceRecord[];
 }) {
   const evidenceById = new Map(evidence.map((record) => [record.id, record]));
-  const ranked = rankBases(
-    bases.map((base) => ({
-      slug: base.slug,
-      scores: Object.fromEntries(
-        RANKING_DIMENSIONS.map((dimension) => [
-          dimension,
-          base.scores[dimension].score,
-        ])
-      ) as Record<(typeof RANKING_DIMENSIONS)[number], number | null>,
-    }))
-  );
+  const ranked = rankBaseRecords(bases);
   const baseBySlug = new Map(bases.map((base) => [base.slug, base]));
   const rows = ranked.map((result, index) => ({
     result,
