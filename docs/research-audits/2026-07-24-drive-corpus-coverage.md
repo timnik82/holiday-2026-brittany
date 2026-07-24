@@ -39,9 +39,8 @@
 
 ## Объём и методика
 
-Проверен корень:
-
-`/Users/timnik/Library/CloudStorage/GoogleDrive-timofnii@gmail.com/My Drive/+Trips/Holidays 2026`
+Проверен корень синхронизированной папки Google Drive `+Trips/Holidays 2026`
+(локальный путь не приводится: репозиторий публичный).
 
 Исключены `.DS_Store` и подпапка `Italy North`. Состояние проекта сравнивалось
 с чистым `main` до создания этого отчёта.
