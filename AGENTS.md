@@ -27,6 +27,8 @@ git -c credential.helper='!f() { echo username=timnik82; echo "password=${GH_TOK
 - Private English-language family travel guide for Brittany (Next.js App Router,
   React 19, TypeScript, Vitest, Playwright). See
   `docs/superpowers/plans/2026-06-30-brittany-family-guide.md` for the full plan.
+- This is a personal, local-use project; avoid excessive tests, checks, or
+  security hardening unless the risk warrants them.
 - Testing follows a risk-based strategy (high-risk subsystems get focused
   automated tests; static/presentational content relies on shared validators and
   representative manual checks). Do not manufacture tests just to raise count.
