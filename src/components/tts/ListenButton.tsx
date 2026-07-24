@@ -59,7 +59,7 @@ export function ListenButton({
   const showStatus = isActive && (state === "generating" || state === "error");
 
   return (
-    <span className={styles.listenButtonWrapper}>
+    <span className={styles.listenButtonWrapper} data-print-hidden>
       <button
         type="button"
         className={styles.listenButton}

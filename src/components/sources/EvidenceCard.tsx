@@ -65,7 +65,12 @@ export function EvidenceCard({ evidence }: EvidenceCardProps) {
         <ul className={styles.evidenceCardUrls}>
           {evidence.sourceUrls.map((url) => (
             <li key={url}>
-              <a href={url} rel="noopener noreferrer" target="_blank">
+              <a
+                href={url}
+                rel="noopener noreferrer"
+                target="_blank"
+                data-print-url-visible
+              >
                 {url}
               </a>
             </li>

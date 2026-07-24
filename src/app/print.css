@@ -1,0 +1,72 @@
+@media print {
+  @page {
+    margin: 16mm;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 10.5pt;
+  }
+
+  [data-print-hidden],
+  form,
+  button,
+  [aria-live] {
+    display: none !important;
+  }
+
+  main {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+
+  blockquote,
+  tr,
+  figure {
+    break-inside: avoid;
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  table {
+    width: 100% !important;
+    table-layout: fixed;
+    font-size: 8.5pt;
+  }
+
+  th,
+  td,
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  a[href^="http"]:not([data-print-url-visible])::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    font-weight: normal;
+  }
+}

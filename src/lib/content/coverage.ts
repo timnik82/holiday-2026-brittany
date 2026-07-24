@@ -4,7 +4,6 @@ import { z } from "zod";
  * Discriminated union of coverage outcomes. Exactly one outcome is required
  * per substantive source block.
  *
- * - `draft`: temporarily unresolved, allowed only until PR 16 closes coverage.
  * - `retained`: the block's content is captured in one or more retained
  *   English evidence records and connected to guide paragraphs.
  * - `duplicate`: the block repeats a claim already captured by a retained
@@ -13,10 +12,6 @@ import { z } from "zod";
  *   more English claims are preserved side-by-side, never silently blended.
  */
 export const coverageOutcomeSchema = z.discriminatedUnion("status", [
-  z.object({
-    status: z.literal("draft"),
-    plannedArea: z.string().min(1),
-  }),
   z.object({
     status: z.literal("retained"),
     evidenceIds: z.array(z.string().min(1)).min(1),

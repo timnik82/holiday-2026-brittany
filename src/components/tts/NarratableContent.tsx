@@ -25,9 +25,6 @@ function hashRenderedText(text: string): string {
  */
 function extractText(children: React.ReactNode): string {
   if (children == null || children === false || children === true) return "";
-  if (typeof children === "string" || typeof typeof children === "number") {
-    return String(children);
-  }
   if (typeof children === "string" || typeof children === "number") {
     return String(children);
   }
@@ -64,12 +61,15 @@ interface NarratableContentProps {
  * Listen button; untracked `<p>` tags (e.g. in tables or lists) render normally.
  */
 export function NarratableContent({ content, paragraphs }: NarratableContentProps) {
-  const narratableByHash = new Map<string, string>();
+  const narratableByHash = new Map<string, string[]>();
   for (const p of paragraphs) {
     if (p.narratable && p.text.length >= MIN_NARRATABLE_LENGTH) {
-      narratableByHash.set(p.hash, p.id);
+      const ids = narratableByHash.get(p.hash) ?? [];
+      ids.push(p.id);
+      narratableByHash.set(p.hash, ids);
     }
   }
+  const occurrenceByHash = new Map<string, number>();
 
   const nextId = createSlugger();
 
@@ -77,25 +77,27 @@ export function NarratableContent({ content, paragraphs }: NarratableContentProp
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
-        h2: ({ children, ...props }) => (
+        h2: ({ node: _node, children, ...props }) => (
           <h2 id={nextId(extractText(children))} {...props}>
             {children}
           </h2>
         ),
-        h3: ({ children, ...props }) => (
+        h3: ({ node: _node, children, ...props }) => (
           <h3 id={nextId(extractText(children))} {...props}>
             {children}
           </h3>
         ),
-        h4: ({ children, ...props }) => (
+        h4: ({ node: _node, children, ...props }) => (
           <h4 id={nextId(extractText(children))} {...props}>
             {children}
           </h4>
         ),
-        p: ({ children, ...props }) => {
+        p: ({ node: _node, children, ...props }) => {
           const text = extractText(children);
           const hash = hashRenderedText(text);
-          const paragraphId = narratableByHash.get(hash);
+          const occurrence = occurrenceByHash.get(hash) ?? 0;
+          const paragraphId = narratableByHash.get(hash)?.[occurrence];
+          occurrenceByHash.set(hash, occurrence + 1);
           if (paragraphId) {
             return (
               <p {...props}>

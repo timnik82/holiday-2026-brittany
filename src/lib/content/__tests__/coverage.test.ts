@@ -2,16 +2,11 @@ import { describe, it, expect } from "vitest";
 import { coverageSchema, coverageOutcomeSchema } from "../coverage";
 
 describe("coverage outcome schema", () => {
-  it("accepts a draft outcome with a planned area", () => {
+  it("rejects the temporary draft outcome", () => {
     const result = coverageOutcomeSchema.safeParse({
       status: "draft",
-      plannedArea: "northern content (PR 6)",
+      plannedArea: "climate",
     });
-    expect(result.success).toBe(true);
-  });
-
-  it("rejects a draft outcome without plannedArea", () => {
-    const result = coverageOutcomeSchema.safeParse({ status: "draft" });
     expect(result.success).toBe(false);
   });
 
@@ -74,7 +69,10 @@ describe("coverage outcome schema", () => {
 describe("coverage map schema", () => {
   it("accepts a record keyed by block id", () => {
     const result = coverageSchema.safeParse({
-      "chatgpt:b001": { status: "draft", plannedArea: "climate" },
+      "chatgpt:b001": {
+        status: "duplicate",
+        retainedEvidenceId: "evidence:foo",
+      },
       "chatgpt:b002": {
         status: "retained",
         evidenceIds: ["evidence:foo"],

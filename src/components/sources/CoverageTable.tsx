@@ -13,14 +13,12 @@ export interface CoverageRow {
 }
 
 const OUTCOME_LABELS: Record<CoverageOutcome["status"], string> = {
-  draft: "Draft",
   retained: "Retained",
   duplicate: "Duplicate",
   conflict: "Conflict",
 };
 
 const BADGE_CLASSES: Record<CoverageOutcome["status"], string> = {
-  draft: styles.badgeDraft,
   retained: styles.badgeRetained,
   duplicate: styles.badgeDuplicate,
   conflict: styles.badgeConflict,
@@ -29,7 +27,7 @@ const BADGE_CLASSES: Record<CoverageOutcome["status"], string> = {
 /**
  * Renders a filterable table of source-block coverage. Each row links back to
  * the original-language block and shows the English evidence (for retained and
- * conflict outcomes), duplicate links, or the planned area (for draft).
+ * conflict outcomes) or duplicate links.
  */
 export function CoverageTable({ rows }: { rows: CoverageRow[] }) {
   if (rows.length === 0) {
@@ -75,10 +73,6 @@ export function CoverageTable({ rows }: { rows: CoverageRow[] }) {
 
 function CoverageCell({ row }: { row: CoverageRow }) {
   const { outcome } = row;
-
-  if (outcome.status === "draft") {
-    return <span className={styles.coverageTableDraft}>{outcome.plannedArea}</span>;
-  }
 
   if (outcome.status === "duplicate") {
     const target = row.evidence.find((e) => e.id === outcome.retainedEvidenceId);
