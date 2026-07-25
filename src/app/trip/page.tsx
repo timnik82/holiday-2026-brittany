@@ -65,8 +65,8 @@ export default function TripPage() {
         <h1>The trip, stay by stay</h1>
         <p>
           {formatDateRange(start, end)} in {guideConfig.regionName}, in travel order.
-          Each stay carries its own day-by-day plan, its weather alternatives, and
-          links to the place and base pages behind it.
+          Open a stay for its day-by-day plan, its weather alternatives, and the
+          place and base pages behind it.
         </p>
       </header>
 
