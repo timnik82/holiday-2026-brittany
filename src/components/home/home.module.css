@@ -113,6 +113,83 @@
   color: #41616f;
 }
 
+/* Day options — weather/time conditions and the ranked reach list. */
+.options {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.conditions {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.conditionGroup {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.conditionLabel {
+  color: #9a4f2c;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.conditionLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.conditionLink,
+.conditionActive {
+  border: 1px solid #cad9df;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.conditionLink {
+  background: #fff;
+  color: #41616f;
+}
+
+.conditionActive {
+  background: #123c54;
+  border-color: #123c54;
+  color: #fff;
+}
+
+.optionList {
+  display: grid;
+  gap: 0.65rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.optionRow {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid #cad9df;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.optionTitle {
+  font-size: 1.05rem;
+  color: #123c54;
+}
+
+.optionReason {
+  color: #9a4f2c;
+  font-size: 0.88rem;
+}
+
 /* Critical warnings grid. */
 .warnings {
   display: grid;

@@ -1,6 +1,7 @@
 import { loadContentPages } from "@/lib/content/registry";
 import { RELATED_PLACES } from "@/components/bases/related-places-data";
 import type { ThingsToDoFrontmatter } from "@/lib/content/schemas";
+import { reachForStay, type ReachTag } from "@/lib/trip/reach";
 import { ageLabel, categoryLabel } from "./labels";
 
 /**
@@ -95,6 +96,32 @@ export function loadDirectoryPlaces(): DirectoryPlace[] {
         status: entry.page.status,
       };
     });
+}
+
+/**
+ * A directory place joined with how it is reached from a given stay. Built
+ * only for the day selector — the directory listing itself does not need
+ * reach, and an unread field on `DirectoryPlace` would invite callers to
+ * trust data nothing exercises.
+ */
+export interface DayOptionPlace extends DirectoryPlace {
+  reach: ReachTag;
+}
+
+/**
+ * Places reachable from a stay, in reach-list order, joined to directory
+ * records. Reach entries whose place is missing or still draft are dropped
+ * (the content validator already guards against that in CI).
+ */
+export function loadDayOptionPlaces(stayId: string): DayOptionPlace[] {
+  const bySlug = new Map(loadDirectoryPlaces().map((place) => [place.slug, place]));
+  const options: DayOptionPlace[] = [];
+  for (const entry of reachForStay(stayId)) {
+    const place = bySlug.get(entry.place);
+    if (!place) continue;
+    options.push({ ...place, reach: entry.reach });
+  }
+  return options;
 }
 
 /**
