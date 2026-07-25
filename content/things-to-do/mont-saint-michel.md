@@ -21,7 +21,7 @@ Mont-Saint-Michel sits about 50–60 minutes from Saint-Malo and is the signatur
 
 ## Planning
 
-<!-- paragraph id="mont-saint-michel-planning" sources="evidence:northern-msm-early-arrival,evidence:northern-msm-parking-2026,evidence:northern-msm-abbey-tickets-2026,evidence:northern-msm-shuttle-passeur,evidence:northern-distances-msm-cluster" -->
+<!-- paragraph id="mont-saint-michel-planning" sources="evidence:northern-msm-early-arrival,evidence:northern-msm-parking-2026,evidence:northern-msm-abbey-tickets-2026,evidence:northern-msm-shuttle-passeur,evidence:northern-distances-msm-cluster,evidence:northern-msm-bay-crossing" -->
 August peaks between 11:00 and mid-afternoon. Leave Saint-Malo around 07:30–07:45 to be on the car parks by **08:30** — the shuttle alone takes about 12 minutes and still leaves a short walk to the walls, so 08:45 is too late for a reliable 09:00 abbey slot. Book a timed abbey ticket online — ticket-office queues often run 30–60 minutes in July–August.
 
 - **Visit duration:** a full day.
@@ -32,6 +32,7 @@ August peaks between 11:00 and mid-afternoon. Leave Saint-Malo around 07:30–07
 - **Abbey tickets:** 1 Apr–30 Sep 2026 €16 adult on the official site; under-18s free with family. Prefer the official tariff — some resellers still show €13; a Grand Aquarium ticket may unlock a €13 rate.
 - **Hours:** 1 May–31 Aug abbey 09:00–19:00 (last entry one hour before close).
 - **Transport:** about 50–60 minutes by car from Saint-Malo; organised coaches also run.
+- **Optional bay walk:** short guided formats (Balade découverte ~2 h, or Cap sur Tombelaine ~3 h) suit ages about 8–10 — never enter the bay alone.
 - **Safety:** August is extremely busy — arrive early; never walk the bay alone.
 - **Last checked:** parking and abbey tariffs for summer 2026.
 

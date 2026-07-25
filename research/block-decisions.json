@@ -2417,10 +2417,12 @@
     "substantive": true
   },
   "mont-saint-michel-guide:b010": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Overnight lodging at the mount is outside this trip's four-night Saint-Malo plan"
   },
   "mont-saint-michel-guide:b011": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Alternate 1-night-at-MSM + 3-in-Saint-Malo base plan; trip stays four nights in Saint-Malo"
   },
   "mont-saint-michel-guide:b012": {
     "substantive": true
@@ -2439,7 +2441,8 @@
     "substantive": true
   },
   "mont-saint-michel-guide:b017": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Section label only"
   },
   "mont-saint-michel-guide:b018": {
     "substantive": true
@@ -2463,7 +2466,8 @@
     "substantive": true
   },
   "mont-saint-michel-guide:b025": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Alternate multi-day itinerary with overnight at MSM; not used in the guide trip plan"
   },
   "mont-saint-michel-guide:b026": {
     "substantive": true
@@ -2492,7 +2496,8 @@
     "substantive": true
   },
   "mont-saint-michel-guide:b034": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Summary restating overnight-at-MSM plan and booking checklist already covered elsewhere"
   },
   "mont-saint-michel-guide:b035": {
     "substantive": true

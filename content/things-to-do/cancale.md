@@ -22,7 +22,7 @@ Cancale, about 25–30 minutes from Saint-Malo, is the area's oyster capital: th
 ## Planning
 
 <!-- paragraph id="cancale-planning" sources="evidence:northern-cancale-oyster-market-detail,evidence:northern-distances-msm-cluster" -->
-Arrive early in summer — free port parking fills fast. A dozen runs about €5.50–7.50 (from ~€6). Pointe du Grouin adds about an hour of coastal views if you want more than the stalls.
+Arrive early in summer — free port parking fills fast. A dozen runs about €5.50–7.50. Pointe du Grouin adds about an hour of coastal views if you want more than the stalls.
 
 - **Visit duration:** 2 to 4 hours.
 - **Age fit:** all ages; oysters are for the curious, crêperies and simple seafood cover the rest.

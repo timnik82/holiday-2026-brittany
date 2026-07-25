@@ -555,7 +555,7 @@
   },
   {
     "id": "evidence:northern-cancale-oyster-market-detail",
-    "text": "Cancale's Marché aux huîtres by the Houle lighthouse is open daily year-round; buy a dozen from the growers (about €5.50–7.50, from ~€6) and eat on the benches overlooking the bay. Arrive early in summer — free port parking fills fast. Pointe du Grouin adds about an hour of coastal views.",
+    "text": "Cancale's Marché aux huîtres by the Houle lighthouse is open daily year-round; buy a dozen from the growers (about €5.50–7.50) and eat on the benches overlooking the bay. Arrive early in summer — free port parking fills fast. Pointe du Grouin adds about an hour of coastal views.",
     "kind": "recommendation",
     "sourceBlockRefs": [
       "mont-saint-michel-guide:b020"
@@ -577,6 +577,34 @@
     ],
     "sourceUrls": [],
     "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-msm-bay-crossing",
+    "text": "Guided Mont-Saint-Michel bay walks suit ages about 8–10 in short formats: Balade découverte (~3 km / 2 h, adult ~€15 / child ~€10) or Cap sur Tombelaine (~6 km / 3 h, adult ~€20 / child ~€15). Walks start from the mount, go barefoot on sand and mudflats with a guide — never enter the bay alone.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b012",
+      "mont-saint-michel-guide:b013"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Prices and formats change — re-check local guide operators."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-dinan-parking",
+    "text": "Dinan has free parking near the station, Esplanade de la Résistance, and the port on rue du Petit Fort, plus barrier-paid options such as Duguesclin (~110 m from the castle) and the underground Centre Historique car park.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b023"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Spaces fill in summer — arrive early or use free lots and walk in."
+    ],
     "timeSensitive": false
   }
 ]

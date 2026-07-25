@@ -5109,23 +5109,20 @@
   },
   "mont-saint-michel-guide:b009": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
-  },
-  "mont-saint-michel-guide:b010": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
-  },
-  "mont-saint-michel-guide:b011": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-mont-saint-michel-day-trip"
   },
   "mont-saint-michel-guide:b012": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-msm-bay-crossing"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-planning"
+    ]
   },
   "mont-saint-michel-guide:b013": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-msm-bay-crossing"
   },
   "mont-saint-michel-guide:b015": {
     "status": "retained",
@@ -5148,10 +5145,6 @@
       "stay-saint-malo-day-3",
       "mont-saint-michel-planning"
     ]
-  },
-  "mont-saint-michel-guide:b017": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
   },
   "mont-saint-michel-guide:b018": {
     "status": "retained",
@@ -5230,14 +5223,15 @@
     ]
   },
   "mont-saint-michel-guide:b023": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-parking"
+    ],
+    "paragraphIds": [
+      "dinan-planning"
+    ]
   },
   "mont-saint-michel-guide:b024": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
-  },
-  "mont-saint-michel-guide:b025": {
     "status": "duplicate",
     "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
   },
@@ -5258,23 +5252,19 @@
   },
   "mont-saint-michel-guide:b028": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-distances-msm-cluster"
   },
   "mont-saint-michel-guide:b030": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-msm-abbey-tickets-2026"
   },
   "mont-saint-michel-guide:b032": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-msm-parking-2026"
   },
   "mont-saint-michel-guide:b033": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
-  },
-  "mont-saint-michel-guide:b034": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-saint-malo-food"
   },
   "mont-saint-michel-guide:b035": {
     "status": "conflict",
