@@ -43,17 +43,17 @@ A boat to [Île-aux-Moines](/things-to-do/ile-aux-moines) or [Île d'Arz](/thing
 
 ### Tuesday 11 August — Suscinio and the Rhuys peninsula
 
-<!-- paragraph id="stay-vannes-day-3" sources="evidence:routes-relaxed-stay-lengths" -->
-Out to [Château de Suscinio](/things-to-do/suscinio) and the beaches of the Rhuys peninsula — a medieval castle on the gulf with sandy swimming close by. It is the clearest castle-and-beach pairing of the stay, and the easiest day to split between the two adults' and the child's interests.
+<!-- paragraph id="stay-vannes-day-3" sources="evidence:routes-relaxed-stay-lengths,evidence:southern-suscinio-indoor-depth" -->
+Out to [Château de Suscinio](/things-to-do/suscinio) and the beaches of the Rhuys peninsula — about 21 scenographed rooms and knight quests indoors, sandy swimming close by. It is the clearest castle-and-beach pairing of the stay, and the easiest day to split between history and a swim.
 
 ### Wednesday 12 August — Carnac megaliths and the Grande Plage
 
-<!-- paragraph id="stay-vannes-day-4" sources="evidence:routes-relaxed-sequencing,evidence:routes-relaxed-stay-lengths" -->
-Morning at the [Carnac alignments and the Maison des Mégalithes](/things-to-do/carnac-alignments), afternoon on the Grande Plage. Wet-weather swap: the [Parc de Branféré](/things-to-do/branfere), a family eco-park and animal reserve nearby.
+<!-- paragraph id="stay-vannes-day-4" sources="evidence:routes-relaxed-sequencing,evidence:routes-relaxed-stay-lengths,evidence:southern-musee-prehistoire-carnac,evidence:southern-carnac-beach-detail" -->
+Morning at the [Carnac alignments and the Maison des Mégalithes](/things-to-do/carnac-alignments), with the [Musée de Préhistoire](/things-to-do/musee-prehistoire-carnac) as the indoor prologue if rain threatens. Afternoon on the Grande Plage or Kervillen. Dry-day alternative: the [Parc de Branféré](/things-to-do/branfere).
 
 ### Thursday 13 August — Quiberon, or something quieter
 
-<!-- paragraph id="stay-vannes-day-5" sources="evidence:routes-relaxed-stay-lengths" -->
+<!-- paragraph id="stay-vannes-day-5" sources="evidence:routes-relaxed-stay-lengths,evidence:southern-quiberon" -->
 The [Quiberon peninsula](/things-to-do/quiberon) — wild coast on the ocean side, sheltered coves on the bay side. The lighter alternative is an oyster lunch at [Auray / Saint-Goustan](/things-to-do/auray-saint-goustan) and a short walk through the market.
 
 ### Friday 14 August — on to Quimper
@@ -61,9 +61,12 @@ The [Quiberon peninsula](/things-to-do/quiberon) — wild coast on the ocean sid
 <!-- paragraph id="stay-vannes-moving-on" sources="" -->
 Check out and move west to Quimper. This crossing is not covered by the research corpus, so treat the timing as something to confirm on the day rather than a figure taken from a source. Nothing else is scheduled for the afternoon.
 
-## The reserve day
+## Rain and reserve
 
-<!-- paragraph id="stay-vannes-reserve" sources="evidence:routes-relaxed-pace,evidence:routes-relaxed-stay-lengths" -->
+<!-- paragraph id="stay-vannes-rain" sources="evidence:southern-musee-prehistoire-hours,evidence:southern-suscinio-indoor-depth,evidence:southern-branfere-scale" -->
+True indoor cover in reach is the [Musée de Préhistoire de Carnac](/things-to-do/musee-prehistoire-carnac); Suscinio's scenographed rooms are the next-best roofed half-day. Branféré stays mostly outdoor — save it for clearer weather.
+
+<!-- paragraph id="stay-vannes-reserve" sources="evidence:routes-relaxed-pace,evidence:routes-relaxed-stay-lengths,evidence:southern-food-vannes-practical" -->
 One day is deliberately left loose. The sources build this region around a reserve: an extra beach, an oyster lunch for the adults, a crêperie, a short market or souvenir stop. With five nights and no internal move, that reserve is real rather than theoretical — any day above can slide into it.
 
 <!-- paragraph id="stay-vannes-inland" sources="evidence:routes-relaxed-inland-extension" -->

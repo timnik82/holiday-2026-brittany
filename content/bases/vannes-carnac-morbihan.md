@@ -2,7 +2,7 @@
 slug: vannes-carnac-morbihan
 title: Vannes / Carnac / Morbihan
 summary: The easiest relaxed-family base — sheltered water, islands, megaliths and a lively historic town, traded against warmer weather and peak-season pressure.
-updatedAt: "2026-07-02"
+updatedAt: "2026-07-25"
 status: review
 region: "South Brittany — Morbihan Gulf"
 coordinates:
@@ -25,14 +25,14 @@ The water reaches about 19 degrees Celsius in August, making swimming a little m
 
 ## What to do
 
-<!-- paragraph id="morbihan-megaliths" sources="evidence:southern-carnac-megaliths" -->
-Carnac is famous for its megalithic alignements — thousands of menhirs in long rows, the largest such complex in the world — plus the Maison des Mégalithes visitor centre. Close access to the stones is by paid guided tour in season; the tourist centre shows short video presentations that suit a restless child.
+<!-- paragraph id="morbihan-megaliths" sources="evidence:southern-carnac-megaliths,evidence:southern-musee-prehistoire-carnac" -->
+Carnac is famous for its megalithic alignements — thousands of menhirs in long rows, the largest such complex in the world — plus the Maison des Mégalithes visitor centre and the Musée de Préhistoire as a true indoor prologue. Close access to the stones is by paid guided tour in season; the tourist centre shows short video presentations that suit a restless child.
 
-<!-- paragraph id="morbihan-islands-gulf" sources="evidence:southern-islands-gulf" -->
-The whole Morbihan gulf is a family draw: the Île-aux-Moines and Île d'Arz by boat, Arzon and Port du Crouesty with their beaches, and traditional sea trips such as the wooden schooner Le Corbeau des mers, where children help raise the sails. Kayaking, SUP and catamaran cruises are widely available.
+<!-- paragraph id="morbihan-islands-gulf" sources="evidence:southern-islands-gulf,evidence:southern-islands-ferry-prices" -->
+The whole Morbihan gulf is a family draw: the Île-aux-Moines and Île d'Arz by boat (ferries from about €8 return), Arzon and Port du Crouesty with their beaches, and traditional sea trips such as the wooden schooner Le Corbeau des mers, where children help raise the sails. Kayaking, SUP and catamaran cruises are widely available.
 
-<!-- paragraph id="morbihan-family-attractions" sources="evidence:southern-branfere,evidence:southern-suscinio" -->
-Two standout child attractions back up the base: the Parc de Branféré at Le Guerno, a cage-free zoo with the giant Parcabout net-bounce adventure park, and the Château de Suscinio on the Rhuys peninsula, with interactive knight quests and costumed tours.
+<!-- paragraph id="morbihan-family-attractions" sources="evidence:southern-branfere,evidence:southern-suscinio,evidence:southern-suscinio-indoor-depth,evidence:southern-branfere-scale" -->
+Two standout child attractions back up the base: the Parc de Branféré at Le Guerno — about 45 hectares of semi-freedom animals plus the Parcabout nets — and the Château de Suscinio on the Rhuys peninsula, with roughly 21 scenographed rooms, knight quests and costumed tours.
 
 ## Reaching the south
 
@@ -46,5 +46,5 @@ This is one of the most expensive zones after Saint-Malo, especially by the sea.
 
 ## Food
 
-<!-- paragraph id="morbihan-food" sources="evidence:southern-food" -->
-Food is a clear strength: markets, oysters and seafood, and crêperies are a major part of the area's family appeal. Vannes's market is one of the region's best, and galettes, crêpes and simple fish dishes are easy to find for a child.
+<!-- paragraph id="morbihan-food" sources="evidence:southern-food,evidence:southern-food-vannes-practical" -->
+Food is a clear strength: markets, oysters and seafood, and crêperies are a major part of the area's family appeal. Vannes's market is one of the region's best, and galettes, crêpes and simple fish dishes are the cheapest authentic family meals without booking a formal restaurant every night.

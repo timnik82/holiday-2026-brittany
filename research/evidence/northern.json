@@ -50,7 +50,8 @@
       "chatgpt:b009",
       "operaai:b016",
       "gemini-britany:b012",
-      "perplexity:b019"
+      "perplexity:b019",
+      "family-attractions-claude:b034"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -81,7 +82,9 @@
       "chatgpt:b009",
       "operaai:b016",
       "gemini-britany:b012",
-      "perplexity:b019"
+      "perplexity:b019",
+      "castles-brittany-chatgpt:b024",
+      "castles-brittany-chatgpt:b025"
     ],
     "sourceUrls": [],
     "qualifiers": [],
