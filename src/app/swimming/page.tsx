@@ -8,6 +8,7 @@ import {
   BATHING_DIMENSIONS,
   BATHING_DIMENSION_LABELS,
 } from "@/lib/ranking/bathing-dimensions";
+import { loadBaseRankings } from "@/lib/ranking/data";
 import styles from "@/components/swimming/swimming.module.css";
 
 export function generateMetadata(): Metadata {
@@ -45,6 +46,9 @@ export default function SwimmingPage() {
     location,
     result: resultBySlug.get(location.slug)!,
   }));
+  const baseNames = new Map(
+    loadBaseRankings().bases.map((base) => [base.slug, base.name])
+  );
 
   const dimensionCount = BATHING_DIMENSIONS.length;
 
@@ -77,7 +81,7 @@ export default function SwimmingPage() {
         </ul>
       </section>
 
-      <SwimmingComparison rows={rows} />
+      <SwimmingComparison rows={rows} baseNames={baseNames} />
     </div>
   );
 }

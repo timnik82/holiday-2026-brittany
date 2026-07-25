@@ -9,12 +9,17 @@ import {
 } from "@/lib/ranking/bathing-dimensions";
 import type { EvidenceRecord } from "@/lib/content/evidence";
 import { loadEvidenceRegistry } from "@/lib/content/sources-data";
-import { loadBaseRankings } from "@/lib/ranking/data";
 import styles from "./swimming.module.css";
 
 export interface SwimmingRow {
   location: BathingLocation;
   result: BathingSuitabilityResult;
+}
+
+export interface SwimmingComparisonProps {
+  rows: SwimmingRow[];
+  /** base slug → display name, resolved by the page/data layer. */
+  baseNames: ReadonlyMap<string, string>;
 }
 
 const TYPE_LABELS: Record<BathingLocation["type"], string> = {
@@ -38,12 +43,9 @@ const WARNING_LABELS: Record<BathingLocation["warningStatus"], string> = {
  * and a freshness label. Loads the evidence registry once to resolve any
  * corpus-backed dimension rationales to their source.
  */
-export function SwimmingComparison({ rows }: { rows: SwimmingRow[] }) {
+export function SwimmingComparison({ rows, baseNames }: SwimmingComparisonProps) {
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((r) => [r.id, r]));
-  const baseNames = new Map(
-    loadBaseRankings().bases.map((base) => [base.slug, base.name])
-  );
 
   return (
     <section aria-label="Bathing-suitability comparison">
