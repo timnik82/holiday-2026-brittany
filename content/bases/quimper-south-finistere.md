@@ -2,7 +2,7 @@
 slug: quimper-south-finistere
 title: Quimper / South Finistère
 summary: A charming, affordable cultural base for a walkable historic city, with the beaches and wild coast of southern Finistère reached by car rather than on the doorstep.
-updatedAt: "2026-07-02"
+updatedAt: "2026-07-25"
 status: review
 region: "West Brittany — South Finistère"
 coordinates:
@@ -12,8 +12,8 @@ coordinates:
 
 ## Verdict
 
-<!-- paragraph id="quimper-verdict" sources="evidence:western-quimper-culture-base" -->
-Quimper is the base for a family that wants a handsome historic city with museums, markets, and day trips to the little gems of southern Finistère rather than a beach on the doorstep. Its strengths are architecture, the cathedral core of Saint-Corentin, half-timbered houses, and the faïence quarter; it is described as much more charming than Brest and the cultural capital of Brittany. It sits near Locronan, Concarneau, Pont-Aven, Fouesnant, and Bénodet — a smart cultural-and-coastal hub.
+<!-- paragraph id="quimper-verdict" sources="evidence:western-quimper-culture-base,evidence:western-quimper-historic-depth" -->
+Quimper is the base for a family that wants a handsome historic city with museums, markets, and day trips to southern Finistère rather than a beach on the doorstep. Ranked among Brittany's strongest inland cultural cities, it sits near Locronan, Concarneau, Pont-Aven, Fouesnant, and Bénodet — a smart cultural-and-coastal hub.
 
 ## Climate
 
@@ -22,8 +22,8 @@ Southern Finistère is a little warmer than the northern and western coasts but 
 
 ## What to do
 
-<!-- paragraph id="quimper-family-museums" sources="evidence:western-quimper-family-museums" -->
-Quimper works better for a child than it might seem: the Musée des Beaux-Arts offers family formats such as livrets-jeux, the faïence museum sits nearby, and a tourist Petit Train runs through the medieval centre. The Domaine de Lanniron estate runs a children's club for ages 4 to 13 in July and August. On pure wow objects for children, though, the base still trails Brest and the Côte de Granit Rose.
+<!-- paragraph id="quimper-family-museums" sources="evidence:western-quimper-family-museums,evidence:western-musee-beaux-arts-quimper" -->
+Quimper works better for a child than it might seem: the Musée des Beaux-Arts (confirm August 2026 opening after works) offers family formats, the faïence museum sits nearby, and a tourist Petit Train runs through the medieval centre. That trio is the local indoor rainy-day plan before driving to Océanopolis.
 
 ## Day trips
 

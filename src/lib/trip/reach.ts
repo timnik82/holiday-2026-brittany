@@ -62,6 +62,7 @@ const REACH: Record<string, readonly ReachEntry[]> = {
   ],
   "quimper-south-finistere": [
     { place: "quimper", reach: "nearby" },
+    { place: "musee-beaux-arts-quimper", reach: "nearby" },
     { place: "locronan", reach: "day-trip" },
     { place: "benodet", reach: "day-trip" },
     { place: "pont-aven", reach: "day-trip" },

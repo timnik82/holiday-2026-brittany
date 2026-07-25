@@ -2,7 +2,7 @@
 slug: quimper-south-finistere
 title: Quimper and South Finistère
 summary: Four nights in a walkable historic city used as a hub — Locronan and the Pointe du Raz to the west, the Crozon peninsula and Océanopolis to the north, Concarneau and Pont-Aven to the east.
-updatedAt: "2026-07-24"
+updatedAt: "2026-07-25"
 status: review
 stayId: quimper-south-finistere
 carRequirement: essential
@@ -31,8 +31,8 @@ For reference, Quimper is reachable by rail via Nantes in about 2 h 23 min, and 
 
 ### Friday 14 August — arrival and the old city
 
-<!-- paragraph id="stay-quimper-day-1" sources="evidence:western-quimper-family-museums" -->
-Arrive from Vannes and walk [Quimper](/things-to-do/quimper) itself. The city works better for a child than it first appears: the Musée des Beaux-Arts runs family formats such as livrets-jeux, the faïence museum sits nearby, and a tourist Petit Train loops the medieval centre.
+<!-- paragraph id="stay-quimper-day-1" sources="evidence:western-quimper-family-museums,evidence:western-quimper-historic-depth,evidence:western-musee-beaux-arts-quimper" -->
+Arrive from Vannes and walk [Quimper](/things-to-do/quimper) itself — cathedral quarter, half-timbered streets and a soft first afternoon. If the weather closes in, use the indoor fallback below rather than forcing a coastal day.
 
 ### Saturday 15 August — Locronan and the Pointe du Raz
 
@@ -41,16 +41,16 @@ West to [Locronan](/things-to-do/locronan), one of France's most-beautiful grani
 
 ### Sunday 16 August — the Crozon peninsula
 
-<!-- paragraph id="stay-quimper-day-3" sources="evidence:routes-nature-sequencing,evidence:western-crozon-wild-coast" -->
-North to [Crozon](/bases/crozon-douarnenez) for the day the sources build into a Quimper base: the clifftop heath and rocks of [Pen-Hir](/things-to-do/crozon-pen-hir), the wild paths of the Cap de la Chèvre, and the strongest end-of-the-land feel of the trip.
+<!-- paragraph id="stay-quimper-day-3" sources="evidence:routes-nature-sequencing,evidence:western-crozon-wild-coast,evidence:western-crozon-pen-hir-detail" -->
+North to [Crozon](/bases/crozon-douarnenez) for the day the sources build into a Quimper base: [Pen-Hir](/things-to-do/crozon-pen-hir) and the Tas de Pois stacks about 63 m above the sea, the Cap de la Chèvre paths, and the strongest end-of-the-land feel of the trip.
 
 <!-- paragraph id="stay-quimper-morgat" sources="evidence:western-morgat-beach,evidence:western-maison-des-mineraux" -->
 The same day has two softer options attached. [Morgat](/things-to-do/morgat) is a golden beach in an enclosed bay — the most sheltered swimming on the peninsula, with kayaks and paddleboards to rent. If the weather turns, the [Maison des Minéraux](/things-to-do/maison-des-mineraux) interprets the peninsula's geology for a child who likes to know how a landscape was made.
 
 ### Monday 17 August — Concarneau, Pont-Aven or Bénodet
 
-<!-- paragraph id="stay-quimper-day-4" sources="evidence:western-concarneau-filets-bleus,evidence:western-pont-aven,evidence:western-benodet-glenan" -->
-East instead of west, and pick by weather. [Concarneau](/things-to-do/concarneau) has its walled Ville Close and, in August, the Festival des Filets Bleus. [Pont-Aven](/things-to-do/pont-aven) is the riverside painters' town. [Bénodet](/things-to-do/benodet) is the family beach, with boats out to the Glénan islands.
+<!-- paragraph id="stay-quimper-day-4" sources="evidence:western-concarneau-filets-bleus,evidence:western-filets-bleus-practical,evidence:western-pont-aven,evidence:western-benodet-glenan" -->
+East instead of west, and pick by weather. [Concarneau](/things-to-do/concarneau) has its Ville Close and, through 16 August, Filets Bleus — park at the station or shuttle car parks on festival days. [Pont-Aven](/things-to-do/pont-aven) is the riverside painters' town. [Bénodet](/things-to-do/benodet) is the family beach, with boats out to the Glénan islands.
 
 ### Tuesday 18 August — north to Saint-Malo and Dinan
 
@@ -59,8 +59,11 @@ The longest move of the trip, right across Brittany from the south-west to the n
 
 ## If it rains, or if there is a spare day
 
-<!-- paragraph id="stay-quimper-oceanopolis" sources="evidence:western-brest-oceanopolis,evidence:routes-nature-overview" -->
-[Océanopolis](/things-to-do/oceanopolis) at Brest is the region's major ocean-science aquarium and the one indoor attraction big enough to hold a whole wet day. The sources treat it as a day trip from a Quimper base rather than a reason to move north.
+<!-- paragraph id="stay-quimper-rain" sources="evidence:western-musee-beaux-arts-quimper,evidence:western-quimper-family-museums" -->
+In town, the local indoor fallback is the [Musée des Beaux-Arts](/things-to-do/musee-beaux-arts-quimper) — confirm August 2026 opening after renovation — plus the faïence museum and Petit Train. That covers a wet morning without leaving Quimper.
+
+<!-- paragraph id="stay-quimper-oceanopolis" sources="evidence:western-brest-oceanopolis,evidence:western-oceanopolis-2026-works,evidence:western-oceanopolis-festivals-closure-note,evidence:routes-nature-overview" -->
+[Océanopolis](/things-to-do/oceanopolis) at Brest remains the big indoor day trip during Métamorphose works (Tropical open again from 4 July 2026; Austral due 2027). The sources treat it as a trip from a Quimper base rather than a reason to move north.
 
 <!-- paragraph id="stay-quimper-haliotika" sources="evidence:western-haliotika" -->
-Closer to hand, the [Haliotika fishing discovery centre](/things-to-do/haliotika) at Le Guilvinec covers the working side of the coast, and Quimper's own museums absorb a morning without a drive.
+Closer to hand, the [Haliotika fishing discovery centre](/things-to-do/haliotika) at Le Guilvinec covers the working side of the coast when you want a shorter drive than Brest.

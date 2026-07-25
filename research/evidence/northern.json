@@ -36,7 +36,9 @@
     "sourceBlockRefs": [
       "operaai:b016",
       "gemini-britany:b012",
-      "perplexity:b019"
+      "perplexity:b019",
+      "historical-cities-chatgpt:b006",
+      "brittany-with-kid-claude:b012"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -84,7 +86,9 @@
       "gemini-britany:b012",
       "perplexity:b019",
       "castles-brittany-chatgpt:b024",
-      "castles-brittany-chatgpt:b025"
+      "castles-brittany-chatgpt:b025",
+      "historical-cities-chatgpt:b008",
+      "brittany-with-kid-claude:b013"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -109,7 +113,8 @@
     "sourceBlockRefs": [
       "chatgpt:b010",
       "chatgpt:b012",
-      "chatgpt:b013"
+      "chatgpt:b013",
+      "brittany-with-kid-claude:b014"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -123,7 +128,9 @@
     "kind": "recommendation",
     "sourceBlockRefs": [
       "perplexity:b021",
-      "perplexity:b019"
+      "perplexity:b019",
+      "brittany-with-kid-claude:b010",
+      "brittany-with-kid-claude:b011"
     ],
     "sourceUrls": [],
     "qualifiers": [

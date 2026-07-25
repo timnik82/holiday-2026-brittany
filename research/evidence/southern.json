@@ -106,7 +106,9 @@
       "chatgpt:b029",
       "perplexity:b051",
       "perplexity:b049",
-      "beaches-claude:b010"
+      "beaches-claude:b010",
+      "historical-cities-chatgpt:b010",
+      "brittany-with-kid-claude:b034"
     ],
     "sourceUrls": [],
     "qualifiers": [],
