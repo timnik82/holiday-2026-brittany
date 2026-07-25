@@ -30,14 +30,14 @@
   {
     "slug": "nante2-perplexity",
     "path": "research/raw/Nante2-Perplexity.md",
-    "language": "en",
+    "language": "ru",
     "sha256": "9249334b4c6633bdce9bc0d02c9c88f45e6cc4ba04bdc7b040b32e9340d8cef2",
     "stopHeadings": ["Works cited", "Sources"]
   },
   {
     "slug": "nante-food-perplexity",
     "path": "research/raw/Nante-Food-Perplexity.md",
-    "language": "en",
+    "language": "ru",
     "sha256": "7eb96859315d29b594c4e84f0318679d25c0ea3f788f999cb4f0a327c3d7de7c",
     "stopHeadings": ["Works cited", "Sources"]
   },

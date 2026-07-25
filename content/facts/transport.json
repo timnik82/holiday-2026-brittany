@@ -94,7 +94,7 @@
       "sourceUrl": "https://naolib.fr/fr/se-rendre-a-laeroport",
       "checkedAt": "2026-07-24",
       "reviewWindowDays": 30,
-      "notes": "Compatible with a 20:05 landing; city stop at gare routière quai A from 30 March 2026. One return included with Pass Nantes after activation.",
+      "notes": "Compatible with a 20:05 landing; city stop at gare routière quai A from 30 March 2026.",
       "evidenceRef": "evidence:nantes-arrival-shuttle"
     },
     {
@@ -127,7 +127,7 @@
       "sourceUrl": "https://www.levoyageanantes.fr/a-faire/pass-nantes/faq-pass-nantes/",
       "checkedAt": "2026-07-24",
       "reviewWindowDays": 30,
-      "notes": "Grand Éléphant and other Machines rides are not included in Pass Nantes — book those separately.",
+      "notes": "Grand Éléphant is not included; Galerie des Machines and Carrousel des Mondes Marins are included once each.",
       "evidenceRef": "evidence:nantes-pass-nantes-inclusions"
     }
   ]

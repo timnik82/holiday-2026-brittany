@@ -4,12 +4,12 @@ title: Musée Jules Verne and Planetarium
 summary: A compact Jules Verne museum on the west bank, pairable with the air-conditioned Planetarium dome for rain or heat.
 updatedAt: "2026-07-25"
 status: review
-category: museums
+category: museum
 ageRange: 6+
 weatherFit: indoor
 durationHours:
-  min: 3
-  max: 4
+  min: 2
+  max: 3
 ---
 
 ## What it is

@@ -447,7 +447,7 @@
   },
   {
     "id": "evidence:nantes-food-talensac",
-    "text": "Marché de Talensac is the main covered market: 08:00–13:00 Tue–Fri and from 07:30 Sat–Sun near the city centre. Ideal for Saturday-morning picnic supplies before Jardin des Plantes — pastries, cheese, fruit and juice rather than a seated meal.",
+    "text": "Marché de Talensac is the main covered market: 08:00–13:00 Tue–Fri and from 08:00 Sat–Sun near the city centre. Ideal for Saturday-morning picnic supplies before Jardin des Plantes — pastries, cheese, fruit and juice rather than a seated meal.",
     "kind": "fact",
     "sourceBlockRefs": ["nante-food-perplexity:b007", "nante2-perplexity:b014"],
     "sourceUrls": [],

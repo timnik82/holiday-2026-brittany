@@ -2594,7 +2594,7 @@
   "nante-3-days-chatgpt:b011": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:nantes-arrival-shuttle"
+      "evidence:nantes-arrival-evening"
     ],
     "paragraphIds": [
       "stay-nantes-arrival-day-0"
@@ -2603,7 +2603,7 @@
   "nante-3-days-chatgpt:b012": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:nantes-arrival-evening"
+      "evidence:nantes-arrival-shuttle"
     ],
     "paragraphIds": [
       "stay-nantes-arrival-day-0"
@@ -2612,23 +2612,42 @@
   "nante-3-days-chatgpt:b013": {
     "status": "retained",
     "evidenceIds": [
+      "evidence:nantes-arrival-evening"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-0"
+    ]
+  },
+  "nante-3-days-chatgpt:b014": {
+    "status": "retained",
+    "evidenceIds": [
       "evidence:nantes-day-7-machines"
     ],
     "paragraphIds": [
       "stay-nantes-arrival-day-1"
     ]
   },
-  "nante-3-days-chatgpt:b014": {
+  "nante-3-days-chatgpt:b015": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:nantes-machines-elephant-booking"
+      "evidence:nantes-machines-elephant-booking",
+      "evidence:nantes-day-7-machines"
     ],
     "paragraphIds": [
       "nantes-machines-planning",
       "stay-nantes-arrival-day-1"
     ]
   },
-  "nante-3-days-chatgpt:b015": {
+  "nante-3-days-chatgpt:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-7-machines"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante-3-days-chatgpt:b017": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-le-voyage-hab-galerie"
@@ -2637,7 +2656,7 @@
       "stay-nantes-arrival-day-1"
     ]
   },
-  "nante-3-days-chatgpt:b016": {
+  "nante-3-days-chatgpt:b018": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-memorial-passage"
@@ -2646,7 +2665,7 @@
       "stay-nantes-arrival-day-1"
     ]
   },
-  "nante-3-days-chatgpt:b017": {
+  "nante-3-days-chatgpt:b019": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-transport-line1-closure"
@@ -2656,7 +2675,7 @@
       "nantes-machines-planning"
     ]
   },
-  "nante-3-days-chatgpt:b018": {
+  "nante-3-days-chatgpt:b020": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-day-8-castle-garden"
@@ -2665,17 +2684,27 @@
       "stay-nantes-arrival-day-2"
     ]
   },
-  "nante-3-days-chatgpt:b019": {
+  "nante-3-days-chatgpt:b021": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-chateau-overview"
+    ],
+    "paragraphIds": [
+      "nantes-chateau-what",
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-3-days-chatgpt:b022": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-jardin-des-plantes"
     ],
     "paragraphIds": [
-      "stay-nantes-arrival-day-2",
-      "nantes-jardin-plantes-what"
+      "nantes-jardin-plantes-what",
+      "stay-nantes-arrival-day-2"
     ]
   },
-  "nante-3-days-chatgpt:b020": {
+  "nante-3-days-chatgpt:b023": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-musee-arts-summer"
@@ -2684,7 +2713,7 @@
       "stay-nantes-arrival-rainy"
     ]
   },
-  "nante-3-days-chatgpt:b021": {
+  "nante-3-days-chatgpt:b024": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-dobree-museum"
@@ -2693,7 +2722,7 @@
       "stay-nantes-arrival-rainy"
     ]
   },
-  "nante-3-days-chatgpt:b022": {
+  "nante-3-days-chatgpt:b025": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-day-9-jules-verne"
@@ -2702,7 +2731,16 @@
       "stay-nantes-arrival-day-3"
     ]
   },
-  "nante-3-days-chatgpt:b023": {
+  "nante-3-days-chatgpt:b026": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-9-jules-verne"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante-3-days-chatgpt:b027": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-jules-verne"
@@ -2712,7 +2750,7 @@
       "stay-nantes-arrival-day-3"
     ]
   },
-  "nante-3-days-chatgpt:b024": {
+  "nante-3-days-chatgpt:b028": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-jardin-extraordinaire"
@@ -2722,7 +2760,7 @@
       "stay-nantes-arrival-day-3"
     ]
   },
-  "nante-3-days-chatgpt:b025": {
+  "nante-3-days-chatgpt:b029": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-planetarium"
@@ -2732,7 +2770,7 @@
       "stay-nantes-arrival-day-3"
     ]
   },
-  "nante-3-days-chatgpt:b026": {
+  "nante-3-days-chatgpt:b030": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-must-do-core"
@@ -2741,7 +2779,16 @@
       "stay-nantes-arrival-overview"
     ]
   },
-  "nante-3-days-chatgpt:b027": {
+  "nante-3-days-chatgpt:b031": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-must-do-core"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-overview"
+    ]
+  },
+  "nante-3-days-chatgpt:b032": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-desirable-second-tier"
@@ -2750,7 +2797,16 @@
       "stay-nantes-arrival-rainy"
     ]
   },
-  "nante-3-days-chatgpt:b028": {
+  "nante-3-days-chatgpt:b033": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-desirable-second-tier"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante-3-days-chatgpt:b034": {
     "status": "retained",
     "evidenceIds": [
       "evidence:nantes-rainy-fallbacks"
@@ -2759,68 +2815,13 @@
       "stay-nantes-arrival-rainy"
     ]
   },
-  "nante-3-days-chatgpt:b029": {
-    "status": "retained",
-    "evidenceIds": [
-      "evidence:nantes-arrival-shuttle"
-    ],
-    "paragraphIds": [
-      "stay-nantes-arrival-day-0"
-    ]
-  },
-  "nante-3-days-chatgpt:b030": {
-    "status": "retained",
-    "evidenceIds": [
-      "evidence:nantes-transport-weekend-free",
-      "evidence:nantes-transport-line1-closure"
-    ],
-    "paragraphIds": [
-      "stay-nantes-arrival-day-2"
-    ]
-  },
-  "nante-3-days-chatgpt:b031": {
-    "status": "retained",
-    "evidenceIds": [
-      "evidence:nantes-pass-nantes-inclusions"
-    ],
-    "paragraphIds": [
-      "nantes-machines-planning"
-    ]
-  },
-  "nante-3-days-chatgpt:b032": {
-    "status": "retained",
-    "evidenceIds": [
-      "evidence:nantes-machines-elephant-booking"
-    ],
-    "paragraphIds": [
-      "nantes-machines-planning"
-    ]
-  },
-  "nante-3-days-chatgpt:b033": {
-    "status": "retained",
-    "evidenceIds": [
-      "evidence:nantes-day-7-machines"
-    ],
-    "paragraphIds": [
-      "stay-nantes-arrival-day-1"
-    ]
-  },
-  "nante-3-days-chatgpt:b034": {
-    "status": "retained",
-    "evidenceIds": [
-      "evidence:nantes-day-8-castle-garden"
-    ],
-    "paragraphIds": [
-      "stay-nantes-arrival-day-2"
-    ]
-  },
   "nante-3-days-chatgpt:b035": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:nantes-day-9-jules-verne"
+      "evidence:nantes-rainy-fallbacks"
     ],
     "paragraphIds": [
-      "stay-nantes-arrival-day-3"
+      "stay-nantes-arrival-rainy"
     ]
   },
   "nante-3-days-chatgpt:b036": {

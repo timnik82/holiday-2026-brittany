@@ -28,4 +28,4 @@ Le Voyage à Nantes is the summer layer over the city: from 4 July to 6 Septembe
 - **Price / checked date:** many works free; Pass Voyage from about €30/24h (last reviewed 2026-07-24). Aux Heures d'Été ends 7 August — do not expect moat concerts on 8–9 August.
 
 <!-- paragraph id="nantes-voyage-planning" sources="evidence:nantes-le-voyage-pass-voyage,evidence:nantes-le-voyage-installations,evidence:nantes-aux-heures-dete-dates" -->
-Distinguish Pass Voyage (certain summer animations) from Pass Nantes (museums and Machines halls). Highlight works in the castle moats, Jardin des Plantes and Jardin Extraordinaire are free to view; crypt and chapel entries may need timed slots.
+Pass Voyage (about €30/24h) covers certain summer animations; Pass Nantes covers museums and Machines halls separately. Works in the castle moats, Jardin des Plantes and Jardin Extraordinaire are free to view; cathedral crypts and chapel installations may need timed entry slots.

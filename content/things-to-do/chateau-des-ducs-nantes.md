@@ -8,14 +8,14 @@ category: history
 ageRange: 6+
 weatherFit: mixed
 durationHours:
-  min: 3
-  max: 4
+  min: 2
+  max: 3
 ---
 
 ## What it is
 
 <!-- paragraph id="nantes-chateau-what" sources="evidence:nantes-chateau-overview" -->
-Château des ducs de Bretagne works on two levels: the courtyard, moat gardens and ramparts are free and give the castle feel a child wants, while the history museum inside adds depth without being essential on a tired day. A family discover kit helps keep a ten-year-old engaged. Summer 2026 Voyage work Notre dit pays sits in the moats.
+Château des ducs de Bretagne works on two levels: the courtyard, moat gardens and ramparts are free and give the castle feel a child wants, while the history museum inside adds depth without being essential on a tired day. A family discovery kit helps keep a ten-year-old engaged. Summer 2026 Voyage work Notre dit pays sits in the moats.
 
 ## Planning
 

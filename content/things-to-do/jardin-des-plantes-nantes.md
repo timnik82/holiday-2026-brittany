@@ -6,7 +6,7 @@ updatedAt: "2026-07-25"
 status: review
 category: nature
 ageRange: all
-weatherFit: mixed
+weatherFit: outdoor
 durationHours:
   min: 2
   max: 3
@@ -21,7 +21,7 @@ Jardin des Plantes is more than a pretty garden: it has a children's play area, 
 
 - **Visit duration:** two to three hours with breaks; shorter if only a picnic pause.
 - **Age fit:** all ages; water play and enclosures suit younger children strongly.
-- **Weather fit:** mostly outdoor; tree shade and shelters help in heat; museum backups are nearby if rain sets in.
+- **Weather fit:** mostly outdoor; swap to the [Musée Jules Verne and Planetarium](/things-to-do/jules-verne-planetarium) or [Château des ducs de Bretagne](/things-to-do/chateau-des-ducs-nantes) museum if rain sets in.
 - **Booking:** none; free public garden.
 - **Transport:** short walk from the castle and Commerce area.
 - **Safety:** water play areas need usual supervision.

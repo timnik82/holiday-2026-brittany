@@ -8,8 +8,8 @@ category: nature
 ageRange: all
 weatherFit: outdoor
 durationHours:
-  min: 2
-  max: 3
+  min: 1
+  max: 2
 ---
 
 ## What it is

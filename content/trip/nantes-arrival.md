@@ -19,7 +19,7 @@ Stay central near Commerce and Bouffay so tram hops and walking stay realistic. 
 ## Getting here
 
 <!-- paragraph id="stay-nantes-arrival-arrival" sources="evidence:nantes-arrival-shuttle,evidence:nantes-primary-gateway-from-portugal" -->
-We land at Nantes Atlantique on 6 August at 20:05. The airport shuttle runs every twenty minutes in summer with the last departure at midnight; allow margin for baggage. A car is optional in the city centre — weekend transport is free on 8–9 August, though Line 1 tram works Jun–Aug 2026 mean bus replacements toward the island.
+We land at Nantes Atlantique on 6 August at 20:05. The airport shuttle runs every twenty minutes in summer with the last departure at midnight; allow margin for baggage. A car is optional in the city centre — weekend transport is free on 8–9 August, though Line 1 tram works June–August 2026 mean bus replacements toward the island.
 
 ## Day by day
 
@@ -41,7 +41,7 @@ Optional early stop at Talensac market for picnic supplies, then [Château des d
 ### Sunday 9 August — west bank, then Vannes
 
 <!-- paragraph id="stay-nantes-arrival-day-3" sources="evidence:nantes-day-9-jules-verne" -->
-Half-day before the train: [Musée Jules Verne and Planetarium](/things-to-do/jules-verne-planetarium) at opening, then [Jardin Extraordinaire](/things-to-do/jardin-extraordinaire) if time allows. Insert the Planetarium only if a session fits the departure window.
+Half-day before the train: [Musée Jules Verne](/things-to-do/jules-verne-planetarium) at opening, then [Jardin Extraordinaire](/things-to-do/jardin-extraordinaire) if time allows. The Planetarium is optional — add a session only if it fits the departure window.
 
 <!-- paragraph id="stay-nantes-arrival-moving-on" sources="evidence:nantes-day-9-departure,evidence:southern-logistics-nantes" -->
 Check out and take the train to Vannes — about one hour twelve minutes, one of the softest transfers on the trip. Re-check SNCF schedules before travel day.

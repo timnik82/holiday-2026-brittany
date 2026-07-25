@@ -36,6 +36,15 @@ describe("reachForStay", () => {
     );
   });
 
+  it("returns a smaller evening-oriented list for Nantes departure", () => {
+    const entries = reachForStay("nantes-departure");
+    expect(entries.map((e) => e.place)).toEqual([
+      "chateau-des-ducs-nantes",
+      "le-voyage-a-nantes",
+      "les-machines-de-l-ile",
+    ]);
+  });
+
   it("returns an empty list for unknown stays", () => {
     expect(reachForStay("not-a-stay")).toEqual([]);
   });

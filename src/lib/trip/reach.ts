@@ -25,8 +25,8 @@ export interface ReachEntry {
   readonly reach: ReachTag;
 }
 
-/** Both Nantes bookends draw from the same curated city pool. */
-const NANTES_REACH: readonly ReachEntry[] = [
+/** Full curated pool for the three-night arrival stay. */
+const NANTES_ARRIVAL_REACH: readonly ReachEntry[] = [
   { place: "les-machines-de-l-ile", reach: "nearby" },
   { place: "chateau-des-ducs-nantes", reach: "nearby" },
   { place: "jardin-des-plantes-nantes", reach: "nearby" },
@@ -35,10 +35,15 @@ const NANTES_REACH: readonly ReachEntry[] = [
   { place: "jardin-extraordinaire", reach: "nearby" },
 ];
 
+/** One-night bookend: evening stroll and optional short revisit only. */
+const NANTES_DEPARTURE_REACH: readonly ReachEntry[] = [
+  { place: "chateau-des-ducs-nantes", reach: "nearby" },
+  { place: "le-voyage-a-nantes", reach: "nearby" },
+  { place: "les-machines-de-l-ile", reach: "nearby" },
+];
+
 /**
  * Stay id → the places reachable from it, most local first.
- *
- * Nantes stays share `NANTES_REACH` because both bookends use the same pool.
  */
 const REACH: Record<string, readonly ReachEntry[]> = {
   "vannes-carnac-morbihan": [
@@ -80,8 +85,8 @@ const REACH: Record<string, readonly ReachEntry[]> = {
     { place: "cap-frehel-fort-la-latte", reach: "day-trip" },
     { place: "mont-saint-michel", reach: "day-trip" },
   ],
-  "nantes-arrival": NANTES_REACH,
-  "nantes-departure": NANTES_REACH,
+  "nantes-arrival": NANTES_ARRIVAL_REACH,
+  "nantes-departure": NANTES_DEPARTURE_REACH,
 };
 
 /**
