@@ -77,6 +77,8 @@ function main() {
   // the fields are derived from what a page already says, and some pages say
   // nothing. Guessing would be worse than an honest blank.
   const unmarkedPlaces: string[] = [];
+  // Reviewed place slugs — the same set the directory loads at runtime.
+  const publishedPlaceSlugs = new Set<string>();
 
   for (const category of CONTENT_CATEGORIES) {
     const dir = path.join(CONTENT_ROOT, category);
@@ -126,6 +128,12 @@ function main() {
           !place.data.durationHours
         ) {
           unmarkedPlaces.push(place.data.slug);
+        }
+        // Reach is checked against this rather than against every place file:
+        // the directory drops drafts at runtime, so a reach entry pointing at
+        // one would pass validation and then vanish from the day's options.
+        if (place.success && place.data.status !== "draft") {
+          publishedPlaceSlugs.add(place.data.slug);
         }
       }
 
@@ -179,9 +187,12 @@ function main() {
         message: `src/lib/trip/reach.ts: Reach list "${stayId}" is not a booked stay.`,
       });
     }
-    if (!slugOwners.has(`things-to-do/${entry.place}`)) {
+    if (!publishedPlaceSlugs.has(entry.place)) {
+      const isDraft = slugOwners.has(`things-to-do/${entry.place}`);
       errors.push({
-        message: `src/lib/trip/reach.ts: ${stayId} reaches "${entry.place}", which has no page in content/things-to-do/.`,
+        message: isDraft
+          ? `src/lib/trip/reach.ts: ${stayId} reaches "${entry.place}", which is a draft and never reaches the directory.`
+          : `src/lib/trip/reach.ts: ${stayId} reaches "${entry.place}", which has no page in content/things-to-do/.`,
       });
     }
   }
