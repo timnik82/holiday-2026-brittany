@@ -1,0 +1,91 @@
+# Three Days in Nantes with a Ten-Year-Old
+
+## Best-fit strategy
+
+For your dates, Nantes is a very good three-day city for a family because the visit can be built around one main child-magnet, **Les Machines de l’Île**, and then layered with a compact historic core, strong free public art, and a few excellent science or curiosity-driven indoor backups. The city’s official **green line** links many of the major stops, and the **Summer Journey** runs from **July 4 to September 6, 2026**, so you will be there when Nantes is at its most playful and visually inventive. citeturn39view1turn39view2
+
+My recommendation is to organize the stay around three themes rather than trying to “check off” everything: **industrial-fantasy Nantes** on Friday, **castle-plus-garden Nantes** on Saturday, and a **lighter west-side science/Jules Verne morning** on Sunday before you leave for Brittany. That keeps walking and transit realistic, leaves margin for weather, and gives your child repeated “wow” moments instead of museum fatigue. This is also wise because some summer sites in Nantes warn that opening conditions can change in heatwaves, especially outdoor or semi-outdoor spaces. citeturn36view0turn42view0turn9view1
+
+I would **not** plan around the Natural History Museum, because the official museum site states that it closed on **November 3, 2025** for a major restructuring project and is expected to reopen only in **2029**. citeturn9view2
+
+## Best family sights
+
+The single strongest must-see for your family is **Les Machines de l’Île**. Officially, the site has three separate ticketed experiences: the **Galerie des Machines**, the **Marine Worlds Carrousel**, and the **Grand Éléphant** ride. The official FAQ says the Galerie takes about **1 hour**, the Carrousel about **50 minutes**, and the Elephant ride about **30 minutes**. It also advises booking in advance when possible, especially on weekends, French school holidays, and public holidays, and notes that Elephant rides can be cancelled in strong wind or very high temperatures. Recent visitor summaries on Tripadvisor consistently describe the site as uniquely imaginative and memorable, but also note crowds and some waiting. citeturn36view0turn18search0turn18search3
+
+The best historic stop for a ten-year-old is the **Château des ducs de Bretagne**. Its strongest advantage is that it works on two levels at once: the **courtyard, moat gardens, and ramparts are free**, while the museum inside adds depth without being essential if energy is low. The castle site also advertises a **family discover kit**, which is exactly the sort of detail that makes the visit easier with a child. In August 2026, the museum and temporary exhibitions are open **10:00–19:00**, while the fortification walk is open **08:30–20:00**; museum admission is **€9 for adults** and **free for under-18s**. Recent visitor reviews especially praise the rampart views and the quality of the history museum. citeturn27view2turn40view0turn19search1
+
+For a decompression stop, the **Jardin des Plantes** is unusually good. The city’s official page highlights both the botanical side and the child side: a **children’s play area**, **water play/paddling area**, rest spaces, animal enclosures, and playful artistic installations including giant flowerpot-inspired play elements. For the week shown in July, official opening hours are **08:30–21:30**, and the site explicitly points to summer use for shade and strolling. citeturn10view0
+
+For science and imagination, you have two excellent west-side options. The **Planetarium** is particularly strong for your child’s age because the official program currently lists sessions for **ages 6–10**, **4–8**, and **8+**, and the site notes that the planetarium hall is **air-conditioned**, which matters in August. The official tourism page lists **€7 full price** and **€3 reduced price**, with the practical point that **Pass Nantes holders must book** on the dedicated phone number. citeturn31view1turn32search1turn14view1
+
+The **Jules Verne Museum** is the other strong fit. In summer **from July 4 to August 31, 2026**, it is open **every day 10:00–19:00**; admission is **€4 for adults**, **€1.50 concession**, and **free for under-18s**. The museum’s official access page shows that it is easy to combine with the west side of Nantes: from **Gare Maritime** it is about a **10-minute walk**, and the nearby **Jardin Extraordinaire** is a natural companion stop. citeturn14view2turn29search0turn24search7
+
+For “unusual indoor” backup, the most relevant non-official but current option is **Illusion Nantes**. Its own site describes **50+ interactive illusions**, July–August opening hours of **09:00–20:00**, prices of **€15 adult** and **€12 child**, and strongly recommends prebooking during weekends and school holidays. Recent Tripadvisor snippets also say it works especially well for children. citeturn17search1turn17search0turn19search7
+
+Two adult-leaning but still worthwhile “shared family” stops are the **Memorial to the Abolition of Slavery** and the **Passage Pommeraye**. The Memorial is one of Nantes’ major historic sites, **free**, open daily in summer **09:00–20:00**, and located directly on the riverfront. The Passage Pommeraye is one of the city’s best pieces of architecture and works well as a short atmospheric stop rather than a destination in itself. citeturn15search0turn15search3turn11search2
+
+## Three-day itinerary
+
+**Thursday, August 6 — arrival evening**
+
+After a 20:05 landing, I would keep the first evening deliberately light. The official airport shuttle runs **every 20 minutes in summer**, operates **7 days a week**, the **last departure from the airport is at midnight**, and the trip to the city is about **20–25 minutes** depending on traffic. A single ticket costs **€10** and is free for Pass Nantes holders. citeturn22view0turn43search0
+
+The best arrival-night plan is simply: hotel check-in, easy dinner, and—only if everyone still has energy—a short walk around the **Water Mirror** and the exterior of the **castle**. The Water Mirror is opposite the castle and its jets activate for about **ten minutes every hour**, which makes it a nice low-effort evening stop for a child. The castle ramparts also remain accessible later than the museum, though on your arrival night I would treat that as optional rather than scheduled. citeturn39view0turn27view2
+
+**Friday, August 7 — Machines, shipyard landscape, riverfront**
+
+Make this your **headline day** and start early at **Les Machines de l’Île**. The best family combination is either **Grand Éléphant + Galerie des Machines** if you can secure an Elephant ride, or **Galerie + Carrousel** if Elephant availability is poor. Officially, some slots can be booked online on weekends, public holidays, and French school holidays, and the FAQ recommends booking several weeks ahead when possible; otherwise it advises being there when the ticket office opens. Because August is French school-holiday season and visitor volumes rise during holidays, I would treat advance booking as strongly advisable even for Friday. citeturn36view0turn25search10
+
+Plan roughly **2.5 to 3.5 hours** on site including the one or two paid experiences and time just watching the machines and the broader shipyard setting. One excellent extra here is the **free “Dring!” shuttle** in the Parc des Chantiers, which runs during the Summer Journey and gives short guided circuits through the area from the Naves toward the Titan crane. That is exactly the kind of lightweight, physical, and slightly unusual activity that tends to work very well with children. citeturn36view0turn25search0turn25search8
+
+After lunch on the island, keep the afternoon mostly free-flowing. Walk the **Parc des Chantiers**, see the **Titan cranes** and the riverfront art environment, and if the mood is still good, add the very good free exhibition at **HAB Galerie**. In summer 2026, the official **INTERSTELLAR: Ré-imaginer la Terre** exhibition runs at HAB Galerie and is open **daily 10:00–19:00** from **July 4 to September 6**, with **free access**. Because it is on the same island, it is an easy no-pressure extension rather than a time-consuming detour. citeturn42view0turn39view2
+
+From there, move toward the river for the **Memorial to the Abolition of Slavery**. I would keep expectations clear here: this is not a playful stop, but it is one of the city’s most important historical places, and for a thoughtful ten-year-old it can work as a short, parent-guided visit rather than a long interpretive one. End the day in the **Passage Pommeraye / Place Graslin** area for a pleasant evening atmosphere rather than another ticketed attraction. citeturn15search3turn15search9turn11search2
+
+One practical note matters on this day: official transport pages state that **Tram Line 1 is suspended between Commerce and François Mitterrand/Jamet from June 14 to August 30, 2026**, with **replacement buses** operating instead. The city also says the Machines area remains accessible via replacement transport plus walking and cycling routes. So if you are staying centrally, allow a bit of extra transfer time when going to the island. citeturn26search3turn25search12
+
+**Saturday, August 8 — castle, garden, and one museum at your own pace**
+
+Start with the **Château des ducs de Bretagne**. This works best in the morning before the hottest part of the day. Give the family about **2 hours** if you want both the free ramparts and a concise museum visit, or **90 minutes** if you only want the ramparts, moat, and courtyards. The family discover kit makes this an especially good second day stop after the spectacle of Machines, because it shifts the tone from fantasy to “real castle” without feeling too school-like. citeturn40view0turn27view2turn19search1
+
+After the castle, cross to the **Water Mirror** for a short break, then walk to the **Jardin des Plantes** for lunch or a relaxed picnic-style pause. This is where I would deliberately slow the pace. The official city page makes clear that this is not just a pretty botanical garden: it has a play area, water play, shelters, rest spaces, and animal enclosures, and the site is large enough to feel like a real breather rather than another “site visit.” citeturn39view0turn10view0
+
+For the second half of Saturday, choose **one** indoor museum rather than two. The most convenient choice is the **Musée d’arts de Nantes**, because in July and August it is open **daily 10:00–19:00**, under-18s enter **free**, adults pay **€9**, and the museum sits right by the station/garden area. This is the better choice if rain arrives or if you want a polished indoor cultural stop without extra transit. Recent reviews praise both the building and the permanent collection. citeturn9view0turn19search2
+
+If, however, your child is more likely to enjoy “strange building and eclectic objects” than paintings, substitute the **Dobrée Museum** instead. Officially, it is open **Wednesday to Sunday**, and in **July and August 10:00–19:00**; admission is **€9 full price**, **€6 reduced**, and **free for under-26s**. Its own museum site emphasizes the unusual architecture: a **neo-medieval palace**, a **15th-century manor house**, and a modern reception building set in an **Anglo-Norman garden**. For a child who likes castles, weird architecture, and treasure-house atmospheres, Dobrée is often a better fit than a conventional art museum. citeturn41view1turn41view0
+
+**Sunday, August 9 — light west-side farewell before Brittany**
+
+Because you leave Nantes after this day, I would keep Sunday intentionally **half-day sized**. The best west-side family plan is **Jules Verne Museum + Jardin Extraordinaire**, with the **Planetarium** inserted only if you have a session that fits your departure window. This combination is thematically strong: Jules Verne’s imaginative science, a dramatic garden landscape inspired by the fantastic, and—if you add it—the dome-based astronomy experience. citeturn14view2turn24search7turn31view1
+
+Start at the **Jules Verne Museum** at opening time. The museum is manageable, summer opening is **10:00–19:00 daily**, and under-18s are **free**. Do not expect a big hands-on science center; it is better framed as a compact imagination-and-invention museum with a strong “Nantes gave us Jules Verne” identity. That is why it works particularly well on a departure day: culturally meaningful, but not exhausting. citeturn14view2turn29search0
+
+Then head to the **Jardin Extraordinaire**, which the official Nantes sources describe as a fantasy-like landscape near Jules Verne’s birthplace area, with a waterfall and, since **May 29, 2026**, a much-appreciated new **700 m² paddling area** for children. Summer access on the official tourism page is **free**, and between **March 15 and October 31** the park is open from **08:30** until **21:30 or 22:00** depending on the day. If your child still has energy before you drive on to Brittany, this is the best “last playful run-around” of the whole itinerary. citeturn24search1turn24search7
+
+If weather is poor or the day is very hot, swap the garden for the **Planetarium**. The hall is air-conditioned, the programming is clearly age-graded, and the official site specifically shows children’s sessions for **6–10 years**, which is ideal for your child’s age. I would only add it if the day’s session times line up cleanly with your onward departure; otherwise, Jules Verne plus the garden is the more relaxed farewell. citeturn31view1turn32search2turn14view1
+
+## Must-do, desirable, and rainy-day reserve
+
+**Must-do**
+
+The truly essential core is **Les Machines de l’Île**, **the Château des ducs de Bretagne**, **Jardin des Plantes**, and the **free green-line walkable city fabric** around the Water Mirror, memorial, and Passage Pommeraye. That set gives you the mechanical, historical, architectural, outdoor, and child-friendly balance you asked for. citeturn36view0turn27view2turn10view0turn39view1turn15search3turn11search2
+
+**Desirable**
+
+Your best second-tier additions are the **Jules Verne Museum**, **Planetarium**, **Dobrée Museum**, **LU Tower**, and the free **INTERSTELLAR** exhibition at **HAB Galerie**. Each adds something distinct: literary science imagination, astronomy, odd architecture plus collections, an easy urban panorama in a converted biscuit-factory tower, and a contemporary “earth/space” exhibition that fits the Nantes creative identity very well. The LU Tower is open in summer **Wednesday to Saturday 14:00–19:00** and **Sunday 15:00–19:00**, with a short **20-minute** visit and prices around **€2–3**, free for under-13s. citeturn14view2turn14view1turn41view1turn14view3turn42view0
+
+**Rainy-day reserve**
+
+For rain, heat, or a tired-child pivot, I would keep these in reserve: **Planetarium**, **Musée d’arts**, **Dobrée Museum**, **Illusion Nantes**, **HAB Galerie**, and optionally **Le Chronographe** if you are happy to go a little farther south to Rezé. Le Chronographe is open **Wednesday to Sunday 14:00–18:00**, the current exhibition runs through your dates, adults pay **€4**, and under-18s are **free**. It is a good archaeology option, but it is less central than the other wet-weather choices. citeturn14view1turn9view0turn41view1turn17search1turn42view0turn14view0
+
+## Practical logistics and booking
+
+For arrival, the airport shuttle is straightforward: **every 20 minutes in summer**, last airport departure **midnight**, about **20–25 minutes** to the city, **€10 per trip**, or included with Pass Nantes. That makes central Nantes very easy to reach even after a 20:05 landing. citeturn22view0turn43search0
+
+For moving around the city, two facts matter. First, **weekend public transport is free in Nantes on Saturdays and Sundays**, which is excellent for your August 8–9 program. Second, because **Tram Line 1 is disrupted through August 30, 2026**, you should not rely on its normal route to the Machines or west-side sites; expect substitute buses or a bit more walking than older guidebooks would suggest. citeturn26search13turn26search3
+
+On tickets, I would be selective rather than automatically buying the **72-hour Pass Nantes**. Officially, the pass costs **€49 adult** and **€31 reduced**, includes museums, public transport, the **airport shuttle**, the **Galerie des Machines**, the **Carrousel des Mondes Marins**, and many other activities—but **the Grand Éléphant ride is not included**. Because weekend transport is already free for everyone, the pass becomes most attractive only if you really intend to do several paid sites: for example, the Machines gallery and carrousel, the château museum, and at least one or two additional museums. If you want the most flexible, lowest-stress version of this itinerary, I would buy the pass **only** if you plan to follow the paid museum-heavy version quite closely. citeturn43search2turn43search7turn26search13
+
+On reservations, the one place I would treat as **priority booking** is **Les Machines de l’Île**, especially if you want the Grand Éléphant. The official FAQ recommends reserving **several weeks in advance** when possible, says some slots are reservable online during weekends and school holidays, and advises early arrival if you are depending on same-day tickets. For **Illusion Nantes**, booking is also recommended on weekends and holidays. For the **Planetarium**, at minimum check the official program in advance so you choose a session age band that suits your child. citeturn36view0turn17search0turn32search2
+
+If I had to compress this into one sentence: **Friday for Machines and the island, Saturday for the castle and garden core, Sunday for Jules Verne plus either the Jardin Extraordinaire or the Planetarium** is the most balanced family plan for your exact dates. It gives you the best of Nantes without rushing, puts the most child-specific highlights first, and leaves robust indoor alternatives if August weather turns wet or very hot. citeturn36view0turn27view2turn10view0turn14view2turn14view1

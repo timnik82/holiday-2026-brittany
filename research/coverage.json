@@ -1875,5 +1875,1363 @@
       "stay-saint-malo-overview",
       "stay-vannes-overview"
     ]
+  },
+  "nante2-perplexity:b002": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-itinerary-overview"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-overview"
+    ]
+  },
+  "nante2-perplexity:b003": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-stay-strategy"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-strategy"
+    ]
+  },
+  "nante2-perplexity:b004": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-machines-overview"
+    ],
+    "paragraphIds": [
+      "nantes-machines-what"
+    ]
+  },
+  "nante2-perplexity:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-musee-arts-summer"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante2-perplexity:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-rainy-fallbacks"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante2-perplexity:b007": {
+    "status": "conflict",
+    "conflictId": "conflict:nantes-pass-elephant",
+    "evidenceIds": [
+      "evidence:nantes-pass-nantes-inclusions",
+      "evidence:nantes-machines-elephant-pricing"
+    ],
+    "paragraphIds": [
+      "nantes-machines-planning"
+    ],
+    "interpretation": "Some sources imply Pass Nantes covers all Machines experiences; official terms exclude the Grand Éléphant ride, which needs a separate ticket."
+  },
+  "nante2-perplexity:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-arrival-shuttle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-0"
+    ]
+  },
+  "nante2-perplexity:b009": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-7-machines"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante2-perplexity:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-machines-elephant-booking"
+    ],
+    "paragraphIds": [
+      "nantes-machines-planning",
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante2-perplexity:b011": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-dring-shuttle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante2-perplexity:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-illusion-price-conflict"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante2-perplexity:b013": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-8-castle-garden"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante2-perplexity:b014": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-talensac"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante2-perplexity:b015": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-chateau-overview"
+    ],
+    "paragraphIds": [
+      "nantes-chateau-what",
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante2-perplexity:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-green-line"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what",
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante2-perplexity:b017": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-9-jules-verne"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante2-perplexity:b018": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-jules-verne"
+    ],
+    "paragraphIds": [
+      "nantes-jules-verne-what",
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante2-perplexity:b019": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-planetarium",
+      "evidence:nantes-jardin-extraordinaire"
+    ],
+    "paragraphIds": [
+      "nantes-jules-verne-planning",
+      "nantes-jardin-extraordinaire-what",
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante2-perplexity:b020": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-9-departure"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-moving-on"
+    ]
+  },
+  "nante2-perplexity:b021": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-pace-balance"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-pace"
+    ]
+  },
+  "nante-food-perplexity:b003": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-strategy"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b004": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-strategy"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-strategy"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-local-dishes"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b007": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-talensac"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-talensac"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b009": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-talensac"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-talensac"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b011": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-chez-cannelle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-chez-cannelle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b013": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-chez-cannelle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b014": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-chez-cannelle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b015": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-barapom"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-barapom"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b017": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-sainte-croix"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b018": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-sainte-croix"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b019": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-sainte-croix"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b020": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-sainte-croix"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b021": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-barapom"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b022": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-barapom"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b023": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-barapom"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b024": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-barapom"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b025": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-ile-nantes"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b026": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-ile-nantes"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b027": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-ile-nantes"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b028": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-ile-nantes"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b029": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b030": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b031": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b032": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b033": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b034": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b035": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b036": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b037": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b038": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b039": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b040": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b041": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b042": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b043": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b044": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b045": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b046": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b047": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b048": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b049": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-food-perplexity:b050": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-food-dinner"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-3-days-chatgpt:b001": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-itinerary-overview"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-overview"
+    ]
+  },
+  "nante-3-days-chatgpt:b002": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-stay-strategy"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-strategy"
+    ]
+  },
+  "nante-3-days-chatgpt:b003": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-natural-history-closed"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante-3-days-chatgpt:b004": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-machines-overview"
+    ],
+    "paragraphIds": [
+      "nantes-machines-what"
+    ]
+  },
+  "nante-3-days-chatgpt:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-chateau-overview"
+    ],
+    "paragraphIds": [
+      "nantes-chateau-what"
+    ]
+  },
+  "nante-3-days-chatgpt:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-jardin-des-plantes"
+    ],
+    "paragraphIds": [
+      "nantes-jardin-plantes-what"
+    ]
+  },
+  "nante-3-days-chatgpt:b007": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-planetarium"
+    ],
+    "paragraphIds": [
+      "nantes-jules-verne-planning"
+    ]
+  },
+  "nante-3-days-chatgpt:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-jules-verne"
+    ],
+    "paragraphIds": [
+      "nantes-jules-verne-what"
+    ]
+  },
+  "nante-3-days-chatgpt:b009": {
+    "status": "conflict",
+    "conflictId": "conflict:nantes-illusion-price",
+    "evidenceIds": [
+      "evidence:nantes-illusion-price-homepage",
+      "evidence:nantes-illusion-price-tickets-page"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ],
+    "interpretation": "Illusion Nantes publishes conflicting adult and child prices on different pages; check the official checkout for the chosen slot rather than quoting a single figure."
+  },
+  "nante-3-days-chatgpt:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-memorial-passage"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-3-days-chatgpt:b011": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-arrival-shuttle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-0"
+    ]
+  },
+  "nante-3-days-chatgpt:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-arrival-evening"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-0"
+    ]
+  },
+  "nante-3-days-chatgpt:b013": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-7-machines"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante-3-days-chatgpt:b014": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-machines-elephant-booking"
+    ],
+    "paragraphIds": [
+      "nantes-machines-planning",
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante-3-days-chatgpt:b015": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-hab-galerie"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante-3-days-chatgpt:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-memorial-passage"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante-3-days-chatgpt:b017": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-transport-line1-closure"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1",
+      "nantes-machines-planning"
+    ]
+  },
+  "nante-3-days-chatgpt:b018": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-8-castle-garden"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-3-days-chatgpt:b019": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-jardin-des-plantes"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2",
+      "nantes-jardin-plantes-what"
+    ]
+  },
+  "nante-3-days-chatgpt:b020": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-musee-arts-summer"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante-3-days-chatgpt:b021": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-dobree-museum"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante-3-days-chatgpt:b022": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-9-jules-verne"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante-3-days-chatgpt:b023": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-jules-verne"
+    ],
+    "paragraphIds": [
+      "nantes-jules-verne-what",
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante-3-days-chatgpt:b024": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-jardin-extraordinaire"
+    ],
+    "paragraphIds": [
+      "nantes-jardin-extraordinaire-what",
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante-3-days-chatgpt:b025": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-planetarium"
+    ],
+    "paragraphIds": [
+      "nantes-jules-verne-planning",
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante-3-days-chatgpt:b026": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-must-do-core"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-overview"
+    ]
+  },
+  "nante-3-days-chatgpt:b027": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-desirable-second-tier"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante-3-days-chatgpt:b028": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-rainy-fallbacks"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "nante-3-days-chatgpt:b029": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-arrival-shuttle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-0"
+    ]
+  },
+  "nante-3-days-chatgpt:b030": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-transport-weekend-free",
+      "evidence:nantes-transport-line1-closure"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-3-days-chatgpt:b031": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-pass-nantes-inclusions"
+    ],
+    "paragraphIds": [
+      "nantes-machines-planning"
+    ]
+  },
+  "nante-3-days-chatgpt:b032": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-machines-elephant-booking"
+    ],
+    "paragraphIds": [
+      "nantes-machines-planning"
+    ]
+  },
+  "nante-3-days-chatgpt:b033": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-7-machines"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "nante-3-days-chatgpt:b034": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-8-castle-garden"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-3-days-chatgpt:b035": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-day-9-jules-verne"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-3"
+    ]
+  },
+  "nante-3-days-chatgpt:b036": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-arrival-shuttle"
+    ],
+    "paragraphIds": [
+      "stay-nantes-departure-shuttle"
+    ]
+  },
+  "nante-3-days-chatgpt:b037": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-transport-weekend-free",
+      "evidence:nantes-transport-line1-closure"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-2"
+    ]
+  },
+  "nante-3-days-chatgpt:b038": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-pass-nantes-inclusions"
+    ],
+    "paragraphIds": [
+      "nantes-machines-planning"
+    ]
+  },
+  "nante-3-days-chatgpt:b039": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-machines-elephant-booking"
+    ],
+    "paragraphIds": [
+      "nantes-machines-planning"
+    ]
+  },
+  "nante-3-days-chatgpt:b040": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-itinerary-overview"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-overview"
+    ]
+  },
+  "events-nantes-perplexity:b001": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what"
+    ]
+  },
+  "events-nantes-perplexity:b002": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what"
+    ]
+  },
+  "events-nantes-perplexity:b003": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what"
+    ]
+  },
+  "events-nantes-perplexity:b004": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-pass-voyage"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-earth-theme"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what"
+    ]
+  },
+  "events-nantes-perplexity:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-earth-theme"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what"
+    ]
+  },
+  "events-nantes-perplexity:b007": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-green-line"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what",
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-green-line"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-what"
+    ]
+  },
+  "events-nantes-perplexity:b009": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-installations"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-installations"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b011": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-installations"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-hab-galerie"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "events-nantes-perplexity:b013": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-hab-galerie"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "events-nantes-perplexity:b014": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-exhibitions"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b015": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-musee-arts-summer"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "events-nantes-perplexity:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-musee-arts-summer"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "events-nantes-perplexity:b017": {
+    "status": "conflict",
+    "conflictId": "conflict:nantes-natural-history-closed",
+    "evidenceIds": [
+      "evidence:nantes-natural-history-closed",
+      "evidence:nantes-natural-history-offsite-claim"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ],
+    "interpretation": "The events source suggests off-site natural history exhibitions; the main building is closed until 2029. Route only to verified off-site programming, not the closed museum."
+  },
+  "events-nantes-perplexity:b018": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-food-installations"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b019": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-food-installations"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b020": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-food-installations"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b021": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-aux-heures-dete-dates"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "events-nantes-perplexity:b022": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-aux-heures-dete-dates"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "events-nantes-perplexity:b023": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-aux-heures-dete-dates"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-day-1"
+    ]
+  },
+  "events-nantes-perplexity:b024": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b025": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b026": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b027": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b028": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b029": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-family-appeal"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b030": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-family-appeal"
+    ],
+    "paragraphIds": [
+      "nantes-jardin-plantes-what",
+      "nantes-jardin-extraordinaire-what"
+    ]
+  },
+  "events-nantes-perplexity:b031": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-family-appeal"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b032": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-musee-arts-summer"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "events-nantes-perplexity:b033": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-musee-arts-summer"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "events-nantes-perplexity:b034": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-musee-arts-summer"
+    ],
+    "paragraphIds": [
+      "stay-nantes-arrival-rainy"
+    ]
+  },
+  "events-nantes-perplexity:b035": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-pass-voyage"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b036": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-pass-voyage"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b037": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-pass-voyage"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b038": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b039": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
+  },
+  "events-nantes-perplexity:b040": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:nantes-le-voyage-overview"
+    ],
+    "paragraphIds": [
+      "nantes-voyage-planning"
+    ]
   }
 }

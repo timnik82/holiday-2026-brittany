@@ -26,5 +26,33 @@
     "language": "ru",
     "sha256": "4f8856e3d9bbee62b2a61ed10ef1785d1c925e9ae8c69d9347e9c3dcd04b8cbf",
     "stopHeadings": []
+  },
+  {
+    "slug": "nante2-perplexity",
+    "path": "research/raw/Nante2-Perplexity.md",
+    "language": "en",
+    "sha256": "9249334b4c6633bdce9bc0d02c9c88f45e6cc4ba04bdc7b040b32e9340d8cef2",
+    "stopHeadings": ["Works cited", "Sources"]
+  },
+  {
+    "slug": "nante-food-perplexity",
+    "path": "research/raw/Nante-Food-Perplexity.md",
+    "language": "en",
+    "sha256": "7eb96859315d29b594c4e84f0318679d25c0ea3f788f999cb4f0a327c3d7de7c",
+    "stopHeadings": ["Works cited", "Sources"]
+  },
+  {
+    "slug": "nante-3-days-chatgpt",
+    "path": "research/raw/Nante-3-days-ChatGPT.md",
+    "language": "en",
+    "sha256": "54c89805f364fcd768c20d1a472ebbbd47cfa1c74d4cf1f46c64a97248c8c722",
+    "stopHeadings": ["Works cited", "Sources"]
+  },
+  {
+    "slug": "events-nantes-perplexity",
+    "path": "research/raw/Events-Nantes-Perplexity.md",
+    "language": "en",
+    "sha256": "5660f457a3a188f3fecd4ed823a0076817297f0c0d92d38ae22f46db14e32ece",
+    "stopHeadings": ["Works cited", "Sources"]
   }
 ]

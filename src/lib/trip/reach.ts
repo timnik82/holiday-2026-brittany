@@ -25,12 +25,20 @@ export interface ReachEntry {
   readonly reach: ReachTag;
 }
 
+/** Both Nantes bookends draw from the same curated city pool. */
+const NANTES_REACH: readonly ReachEntry[] = [
+  { place: "les-machines-de-l-ile", reach: "nearby" },
+  { place: "chateau-des-ducs-nantes", reach: "nearby" },
+  { place: "jardin-des-plantes-nantes", reach: "nearby" },
+  { place: "le-voyage-a-nantes", reach: "nearby" },
+  { place: "jules-verne-planetarium", reach: "nearby" },
+  { place: "jardin-extraordinaire", reach: "nearby" },
+];
+
 /**
  * Stay id → the places reachable from it, most local first.
  *
- * The two Nantes stays are absent rather than empty-listed: their places arrive
- * with the Nantes research, and an empty list would read as "nothing to do
- * here" instead of "not written up yet".
+ * Nantes stays share `NANTES_REACH` because both bookends use the same pool.
  */
 const REACH: Record<string, readonly ReachEntry[]> = {
   "vannes-carnac-morbihan": [
@@ -72,12 +80,14 @@ const REACH: Record<string, readonly ReachEntry[]> = {
     { place: "cap-frehel-fort-la-latte", reach: "day-trip" },
     { place: "mont-saint-michel", reach: "day-trip" },
   ],
+  "nantes-arrival": NANTES_REACH,
+  "nantes-departure": NANTES_REACH,
 };
 
 /**
- * Places reachable from a stay, most local first. Unknown stay ids (including
- * the two Nantes stays, whose places arrive later) return an empty list rather
- * than throwing — the day selector treats empty as "nothing curated yet".
+ * Places reachable from a stay, most local first. Unknown stay ids return an
+ * empty list rather than throwing — the day selector treats empty as "nothing
+ * curated yet".
  */
 export function reachForStay(stayId: string): readonly ReachEntry[] {
   return REACH[stayId] ?? [];

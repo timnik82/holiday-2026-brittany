@@ -596,5 +596,477 @@
   "perplexity:b069": {
     "substantive": false,
     "reason": "Formatting-only decorative divider"
+  },
+  "nante2-perplexity:b001": {
+    "substantive": false,
+    "reason": "Source branding/logo image, not research content"
+  },
+  "nante2-perplexity:b002": {
+    "substantive": true
+  },
+  "nante2-perplexity:b003": {
+    "substantive": true
+  },
+  "nante2-perplexity:b004": {
+    "substantive": true
+  },
+  "nante2-perplexity:b005": {
+    "substantive": true
+  },
+  "nante2-perplexity:b006": {
+    "substantive": true
+  },
+  "nante2-perplexity:b007": {
+    "substantive": true
+  },
+  "nante2-perplexity:b008": {
+    "substantive": true
+  },
+  "nante2-perplexity:b009": {
+    "substantive": true
+  },
+  "nante2-perplexity:b010": {
+    "substantive": true
+  },
+  "nante2-perplexity:b011": {
+    "substantive": true
+  },
+  "nante2-perplexity:b012": {
+    "substantive": true
+  },
+  "nante2-perplexity:b013": {
+    "substantive": true
+  },
+  "nante2-perplexity:b014": {
+    "substantive": true
+  },
+  "nante2-perplexity:b015": {
+    "substantive": true
+  },
+  "nante2-perplexity:b016": {
+    "substantive": true
+  },
+  "nante2-perplexity:b017": {
+    "substantive": true
+  },
+  "nante2-perplexity:b018": {
+    "substantive": true
+  },
+  "nante2-perplexity:b019": {
+    "substantive": true
+  },
+  "nante2-perplexity:b020": {
+    "substantive": true
+  },
+  "nante2-perplexity:b021": {
+    "substantive": true
+  },
+  "nante2-perplexity:b022": {
+    "substantive": false,
+    "reason": "Closing offer to refine further, not a trip fact"
+  },
+  "nante2-perplexity:b023": {
+    "substantive": false,
+    "reason": "Formatting-only decorative divider"
+  },
+  "nante-food-perplexity:b001": {
+    "substantive": false,
+    "reason": "Source branding/logo image, not research content"
+  },
+  "nante-food-perplexity:b002": {
+    "substantive": false,
+    "reason": "Original user prompt"
+  },
+  "nante-food-perplexity:b003": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b004": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b005": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b006": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b007": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b008": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b009": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b010": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b011": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b012": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b013": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b014": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b015": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b016": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b017": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b018": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b019": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b020": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b021": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b022": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b023": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b024": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b025": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b026": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b027": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b028": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b029": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b030": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b031": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b032": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b033": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b034": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b035": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b036": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b037": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b038": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b039": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b040": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b041": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b042": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b043": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b044": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b045": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b046": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b047": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b048": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b049": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b050": {
+    "substantive": true
+  },
+  "nante-food-perplexity:b051": {
+    "substantive": false,
+    "reason": "Formatting-only decorative divider"
+  },
+  "nante-3-days-chatgpt:b001": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b002": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b003": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b004": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b005": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b006": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b007": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b008": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b009": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b010": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b011": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b012": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b013": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b014": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b015": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b016": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b017": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b018": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b019": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b020": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b021": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b022": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b023": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b024": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b025": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b026": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b027": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b028": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b029": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b030": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b031": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b032": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b033": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b034": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b035": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b036": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b037": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b038": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b039": {
+    "substantive": true
+  },
+  "nante-3-days-chatgpt:b040": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b001": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b002": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b003": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b004": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b005": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b006": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b007": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b008": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b009": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b010": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b011": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b012": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b013": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b014": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b015": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b016": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b017": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b018": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b019": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b020": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b021": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b022": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b023": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b024": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b025": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b026": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b027": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b028": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b029": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b030": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b031": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b032": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b033": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b034": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b035": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b036": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b037": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b038": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b039": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b040": {
+    "substantive": true
+  },
+  "events-nantes-perplexity:b041": {
+    "substantive": false,
+    "reason": "Bibliography links only, not substantive claims"
   }
 }
