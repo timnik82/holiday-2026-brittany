@@ -51,7 +51,9 @@
       "gemini-britany:b020",
       "perplexity:b047",
       "chatgpt:b032",
-      "perplexity:b045"
+      "perplexity:b045",
+      "beaches-brittany-perplexity:b007",
+      "beaches-claude:b024"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -68,7 +70,9 @@
       "chatgpt:b029",
       "gemini-britany:b020",
       "operaai:b024",
-      "perplexity:b047"
+      "perplexity:b047",
+      "museums-brittany-perplexity:b032",
+      "museums-brittany-perplexity:b036"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -84,7 +88,8 @@
     "sourceBlockRefs": [
       "chatgpt:b029",
       "operaai:b024",
-      "perplexity:b047"
+      "perplexity:b047",
+      "family-attractions-claude:b022"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -100,7 +105,8 @@
     "sourceBlockRefs": [
       "chatgpt:b029",
       "perplexity:b051",
-      "perplexity:b049"
+      "perplexity:b049",
+      "beaches-claude:b010"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -112,7 +118,8 @@
     "kind": "recommendation",
     "sourceBlockRefs": [
       "gemini-britany:b020",
-      "perplexity:b051"
+      "perplexity:b051",
+      "beaches-claude:b009"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -124,7 +131,10 @@
     "kind": "recommendation",
     "sourceBlockRefs": [
       "chatgpt:b029",
-      "gemini-britany:b020"
+      "gemini-britany:b020",
+      "castles-claude:b001",
+      "castles-claude:b005",
+      "castles-brittany-chatgpt:b012"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -138,7 +148,9 @@
     "text": "The Parc de Branféré at Le Guerno is the area's key child attraction: a unique mix of a cage-free zoo and the giant Parcabout adventure park, where children bounce on safety nets strung between trees.",
     "kind": "recommendation",
     "sourceBlockRefs": [
-      "gemini-britany:b020"
+      "gemini-britany:b020",
+      "family-activities-claude:b006",
+      "family-attractions-claude:b016"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -184,7 +196,8 @@
     "kind": "recommendation",
     "sourceBlockRefs": [
       "chatgpt:b029",
-      "perplexity:b049"
+      "perplexity:b049",
+      "food-brittany:b002"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -206,7 +219,9 @@
     "text": "The Brocéliande forest (around Paimpont) is the legendary forest of Merlin and the fairy Vivian. Its main family stop is La Porte des Secrets, an interactive show-space at Paimpont that tells the Arthurian legends of Merlin, Vivian and the Knights of the Round Table. It is an inland, myth-and-forest contrast to the coastal south.",
     "kind": "recommendation",
     "sourceBlockRefs": [
-      "gemini-britany:b028"
+      "gemini-britany:b028",
+      "family-attractions-claude:b020",
+      "family-attractions-claude:b021"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -214,5 +229,156 @@
     ],
     "timeSensitive": true,
     "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:southern-musee-prehistoire-carnac",
+    "text": "The Musée de Préhistoire de Carnac presents itself as the world's leading megalithism museum, with about 3,000 archaeological objects spanning roughly 450,000 years and a Neolithic focus (4900–2200 BC) on the builders of menhirs and dolmens. It is the natural indoor prologue to the Carnac alignments.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "museums-brittany-perplexity:b032",
+      "museums-brittany-perplexity:b003",
+      "museums-brittany-perplexity:b071",
+      "museums-brittany-perplexity:b073"
+    ],
+    "sourceUrls": [
+      "https://www.museedecarnac.com/?lang=en"
+    ],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-musee-prehistoire-family",
+    "text": "The Carnac prehistory museum is explicitly family-oriented: guided tours, walks to the megalith fields, children's workshops, prehistoric-technique demos and playful temporary-exhibition routes. Interactive sessions suit a ten-year-old; check the events calendar ahead of an August visit.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "museums-brittany-perplexity:b034",
+      "museums-brittany-perplexity:b038"
+    ],
+    "sourceUrls": [
+      "https://www.museedecarnac.com/"
+    ],
+    "qualifiers": [
+      "Workshop and tour calendars change — re-check the official site before visiting."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:southern-musee-prehistoire-hours",
+    "text": "Plan 2–3 hours for the Musée de Préhistoire de Carnac, plus separate time for the stone alignments. In July–August the museum is typically open daily about 10:00–18:30. It pairs well with a morning museum visit and an afternoon among the menhirs and Carnac coast.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "museums-brittany-perplexity:b036",
+      "museums-brittany-perplexity:b038"
+    ],
+    "sourceUrls": [
+      "https://www.museedecarnac.com/?lang=en"
+    ],
+    "qualifiers": [
+      "Opening hours change seasonally — re-check the official site before visiting."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:southern-suscinio-indoor-depth",
+    "text": "Suscinio stands out for indoor substance among Brittany castles: about 21 furnished or scenographed rooms across the ducal and western ('Logis Merveilleux') wings, with an immersive Arthurian Merlin display, dressing-up costumes, playable medieval games, keep and wall walks, and a free children's booklet. Official guidance is roughly a 1 h 30 visit.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "castles-claude:b001",
+      "castles-claude:b005",
+      "castles-brittany-chatgpt:b012",
+      "castles-brittany-chatgpt:b013",
+      "castles-largest-perplexity:b009"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Room counts and programmes change — re-check the official site before visiting."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:southern-branfere-scale",
+    "text": "Parc de Branféré covers about 45 hectares with more than 1,500 animals of 195 species (including about 60 threatened species) living in semi-freedom, plus the Parcabout net-adventure park between the trees — the area's clearest wet-weather family day when castle interiors are not enough.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "family-activities-claude:b006",
+      "family-attractions-claude:b016",
+      "family-attractions-claude:b017"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Opening days and hours change — re-check the official site before visiting."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:southern-carnac-beach-detail",
+    "text": "Carnac's Grande Plage is several kilometres of fine sand with a gentle slope and children's clubs in season; nearby Kervillen is repeatedly described as a family gem at the entrance to Quiberon Bay. Lifeguarded zones run in July–August on the sheltered Morbihan side.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "beaches-brittany-perplexity:b006",
+      "beaches-brittany-perplexity:b007",
+      "beaches-claude:b008",
+      "beaches-claude:b024"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-vannes-beaches-conleau",
+    "text": "Plage de Conleau sits about 5 km from central Vannes and is reachable on city bus line 3 — a short, sheltered gulf beach option when you want swimming without a full Carnac or Quiberon day.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "beaches-claude:b010"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-food-vannes-practical",
+    "text": "Around Vannes and Carnac the cheapest authentic family meals are almost always crêperies and galetteries; markets and simple seafood plates round out a Morbihan food day without needing a formal restaurant booking every night.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "food-brittany:b002",
+      "food-brittany:b001"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:southern-islands-ferry-prices",
+    "text": "Gulf island crossings with Passeur des Îles start from about €8 return; longer mini-cruises cost more. Pair a morning ferry with bike hire on Île-aux-Moines or Île d'Arz rather than trying to see both islands in one day.",
+    "kind": "price",
+    "sourceBlockRefs": [
+      "family-attractions-claude:b023"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Ferry tariffs change seasonally — re-check before travel."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:southern-castles-family-shortlist",
+    "text": "Among Brittany castles ranked for indoor family substance, Suscinio is the clear Morbihan pick; Josselin (doll museum plus furnished floors) is a possible inland day trip from Vannes if the child wants another castle day.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "castles-claude:b003",
+      "castles-brittany-chatgpt:b002",
+      "castles-brittany-chatgpt:b018",
+      "castles-brittany-chatgpt:b019",
+      "castles-largest-perplexity:b002",
+      "castles-largest-perplexity:b007"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   }
 ]

@@ -1,0 +1,784 @@
+[
+  {
+    "id": "museums-brittany-perplexity:b001",
+    "headingPath": [],
+    "nodeType": "paragraph",
+    "markdown": "С учётом семейной поездки в августе 2026 года, в Бретани есть несколько музеев, которые действительно стоят отдельного дня или половины дня и хорошо ложатся в концепцию «качественные впечатления, а не гонка по точкам». Ниже — подборка «лучших» с акцентом на историю, море, науку, необычные темы и детскую вовлечённость. [tripadvisor](https://www.tripadvisor.com/Attractions-g187094-Activities-c49-oa30-Brittany.html)",
+    "startLine": 1,
+    "endLine": 1
+  },
+  {
+    "id": "museums-brittany-perplexity:b002",
+    "headingPath": [
+      "Обзор: какие музеи особенно стоит включить"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "Для семейной поездки (2 взрослых \\+ ребёнок 10 лет) я бы выделил следующую «первую лигу» музеев:",
+    "startLine": 7,
+    "endLine": 7
+  },
+  {
+    "id": "museums-brittany-perplexity:b003",
+    "headingPath": [
+      "Обзор: какие музеи особенно стоит включить"
+    ],
+    "nodeType": "list",
+    "markdown": "1. **Océanopolis (Брест)** — крупнейший океанариум Франции, флагман научно‑популярной «морской» культуры. [gaanwe](https://www.gaanwe.com/parks/oceanopolis-brest)  \n2. **Les Champs Libres в Ренне**: связка **Musée de Bretagne \\+ Espace des Sciences \\+ Planétarium Hubert Reeves** — история Бретани, науки и планетарий в одном комплексе. [tourisme-rennes](https://www.tourisme-rennes.com/sortir/musee-de-bretagne/)  \n3. **Musée de Préhistoire de Carnac** — ведущий в мире музей мегалитизма, идеальный пролог к менгирам и дольменам Карнака. [museedecarnac](https://www.museedecarnac.com/?lang=en)  \n4. **Musée national de la Marine в замке Бреста** — морская история Франции и 17 веков крепости в одном месте. [brest](https://brest.fr/musee-national-de-la-marine-chateau-de-brest)  \n5. **Manoir de l’Automobile et des Vieux Métiers (Лоэак)** — огромный музей автомобилей и «старых ремёсел», очень необычный и впечатляющий даже для не‑автомобилистов. [manoir-automobile](https://www.manoir-automobile.fr/home/)",
+    "startLine": 9,
+    "endLine": 13
+  },
+  {
+    "id": "museums-brittany-perplexity:b004",
+    "headingPath": [
+      "Обзор: какие музеи особенно стоит включить"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "Дополнительно, для более «камерных» и аутентичных впечатлений:",
+    "startLine": 15,
+    "endLine": 15
+  },
+  {
+    "id": "museums-brittany-perplexity:b005",
+    "headingPath": [
+      "Обзор: какие музеи особенно стоит включить"
+    ],
+    "nodeType": "list",
+    "markdown": "- **Musée des Thoniers (Этель)** — живой музей истории тунцового порта, с сильным человеческим и морским сюжетом. [tourismebretagne](https://www.tourismebretagne.com/preparer-mon-sejour/bouger-visiter/toutes-les-activites/musee-des-thoniers-etel-fr-2034424/)  \n- **Musée des Beaux‑Arts de Quimper** — один из богатейших художественных музеев региона, если к моменту поездки он уже полностью открыт после работ. [artsandculture.google](https://artsandculture.google.com/partner/musee-beaux-arts-quimper)",
+    "startLine": 17,
+    "endLine": 18
+  },
+  {
+    "id": "museums-brittany-perplexity:b006",
+    "headingPath": [
+      "Обзор: какие музеи особенно стоит включить"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "Ниже — подробный разбор и практические рекомендации.",
+    "startLine": 20,
+    "endLine": 20
+  },
+  {
+    "id": "museums-brittany-perplexity:b007",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** морской научный центр \\+ крупный океанариум  \n**Масштаб:**",
+    "startLine": 26,
+    "endLine": 27
+  },
+  {
+    "id": "museums-brittany-perplexity:b008",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "list",
+    "markdown": "- Около 10 000 животных, более 1 000 видов, 77 аквариумов, \\~4 млн литров морской воды, 9 000 м² экспозиций — крупнейший океанариум Франции и самый посещаемый платный объект в Бретани. [brest](https://brest.fr/oceanopolis)",
+    "startLine": 29,
+    "endLine": 29
+  },
+  {
+    "id": "museums-brittany-perplexity:b009",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Структура и интерактивность:**",
+    "startLine": 31,
+    "endLine": 31
+  },
+  {
+    "id": "museums-brittany-perplexity:b010",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "list",
+    "markdown": "- Три основных павильона: **Полярный** (крупная колония пингвинов, имитация арктических льдов), **Тропический** (акулы, скаты, рифы) и **Бретань** (местная атлантическая фауна). [marinasbrest](https://www.marinasbrest.fr/en/carte-interactive/oceanopolis-brest-3/)  \n- «Otter Trail» — маршрут с европейскими и амазонскими выдрами в естественных вольерах. [gaanwe](https://www.gaanwe.com/parks/oceanopolis-brest)  \n- **Touch Pool** — тактильный бассейн, где дети могут трогать морские звёзды, морских ежей и др. [gaanwe](https://www.gaanwe.com/parks/oceanopolis-brest)  \n- **Cité des Océanautes** — интерактивная зона для детей, посвящённая исследованию океана. [oceanopolis](https://www.oceanopolis.com/en/welcome/)  \n- В 2026 году идёт программа обновления «Métamorphose» и открыта лаборатория **Oceanolab**, причём с июля по сентябрь 2026 она работает как первый исследовательский морской лабораторный центр, открытый публике. [brest](https://brest.fr/oceanopolis)",
+    "startLine": 33,
+    "endLine": 37
+  },
+  {
+    "id": "museums-brittany-perplexity:b011",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерес для ребёнка 10 лет:**",
+    "startLine": 39,
+    "endLine": 39
+  },
+  {
+    "id": "museums-brittany-perplexity:b012",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "list",
+    "markdown": "- Очень высокий: животные, крупные аквариумы, тактильные зоны и детская «Cité des Océanautes».  \n- Хороший баланс «смотреть» и «потрогать/поучаствовать», много визуальной и эмоциональной информации.",
+    "startLine": 41,
+    "endLine": 42
+  },
+  {
+    "id": "museums-brittany-perplexity:b013",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Рекомендуемое время:**",
+    "startLine": 44,
+    "endLine": 44
+  },
+  {
+    "id": "museums-brittany-perplexity:b014",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "list",
+    "markdown": "- Планируйте **4–6 часов**: минимум половина дня, а лучше почти целый день с перерывами на кафе и прогулку по набережной.",
+    "startLine": 46,
+    "endLine": 46
+  },
+  {
+    "id": "museums-brittany-perplexity:b015",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Практические советы:**",
+    "startLine": 48,
+    "endLine": 48
+  },
+  {
+    "id": "museums-brittany-perplexity:b016",
+    "headingPath": [
+      "Océanopolis (Брест): флагман морской науки"
+    ],
+    "nodeType": "list",
+    "markdown": "- В августе объект открыт ежедневно (обычно 9:30–18:00), январь — единственный месяц, когда он закрыт. [marinasbrest](https://www.marinasbrest.fr/en/carte-interactive/oceanopolis-brest-3/)  \n- Надёжнее покупать билеты онлайн заранее, особенно в высокий сезон. [oceanopolis](https://www.oceanopolis.com/en/welcome/)  \n- Из Нанта удобно закладывать сюда отдельный день: утром переезд в Брест, океанариум, прогулка по порту и замку Бреста.",
+    "startLine": 50,
+    "endLine": 52
+  },
+  {
+    "id": "museums-brittany-perplexity:b017",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Musée de Bretagne (Ренн)"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** историко‑этнографический музей региона  \n**Масштаб:**",
+    "startLine": 60,
+    "endLine": 61
+  },
+  {
+    "id": "museums-brittany-perplexity:b018",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Musée de Bretagne (Ренн)"
+    ],
+    "nodeType": "list",
+    "markdown": "- 600 000 объектов и документов (археология, нумизматика, этнография, фотоархив). [evendo](https://evendo.com/locations/france/rennes/centre/attraction/musee-de-bretagne)  \n- Крупная экспозиция «Bretagne est univers»/«Le monde dans un microcosme» — \\~2 300 объектов, рассказывающих историю Бретани от доисторического периода до современности. [expedia.com](https://www.expedia.com.br/Museu-Da-Bretanha-Rennes-Centre.d6109564.Guia-de-Viagem)  \n- Большой «Фонд Дрейфуса» — около 6 800 предметов, посвящённых делу Дрейфуса и роли Ренна. [artsupp](https://artsupp.com/en/rennes/museums/musee-de-bretagne)",
+    "startLine": 63,
+    "endLine": 65
+  },
+  {
+    "id": "museums-brittany-perplexity:b019",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Musée de Bretagne (Ренн)"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерактивность и семья:**",
+    "startLine": 67,
+    "endLine": 67
+  },
+  {
+    "id": "museums-brittany-perplexity:b020",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Musée de Bretagne (Ренн)"
+    ],
+    "nodeType": "list",
+    "markdown": "- Много мультимедиа, фото, предметов быта, костюмов, карт и т.п.; экспозиция явно рассчитана на широкий круг посетителей, включая семьи. [tourisme-rennes](https://www.tourisme-rennes.com/sortir/musee-de-bretagne/)  \n- Постоянная экспозиция «Bretagne est univers» бесплатна, временные выставки регулярно меняются. [evendo](https://evendo.com/locations/france/rennes/centre/attraction/musee-de-bretagne)",
+    "startLine": 69,
+    "endLine": 70
+  },
+  {
+    "id": "museums-brittany-perplexity:b021",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Musée de Bretagne (Ренн)"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Время посещения:**",
+    "startLine": 72,
+    "endLine": 72
+  },
+  {
+    "id": "museums-brittany-perplexity:b022",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Musée de Bretagne (Ренн)"
+    ],
+    "nodeType": "list",
+    "markdown": "- **1,5–3 часа** — в зависимости от глубины чтения и интереса к делу Дрейфуса и региональной истории.",
+    "startLine": 74,
+    "endLine": 74
+  },
+  {
+    "id": "museums-brittany-perplexity:b023",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** научный центр \\+ планетарий  \n**Масштаб и формат:**",
+    "startLine": 78,
+    "endLine": 79
+  },
+  {
+    "id": "museums-brittany-perplexity:b024",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "list",
+    "markdown": "- Espace des Sciences — региональная платформа популяризации науки с постоянными и временными экспозициями, детским лабораторием «Labo Merlin» и крупным планетарием. [espace-sciences](https://www.espace-sciences.org/)  \n- Планетарий Hubert Reeves — купол диаметром 14 м на 95 мест с 360° проекциями, каждую часовую сессию ведёт живой научный медиатор. [espace-sciences](https://www.espace-sciences.org/rennes/planetarium)  \n- Есть регулярные научные лекции «Les Mardis de l’Espace des sciences» и специальные программы для молодёжи. [espace-sciences](https://www.espace-sciences.org/rennes/planetarium)",
+    "startLine": 81,
+    "endLine": 83
+  },
+  {
+    "id": "museums-brittany-perplexity:b025",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерактивность и интерес ребёнку:**",
+    "startLine": 85,
+    "endLine": 85
+  },
+  {
+    "id": "museums-brittany-perplexity:b026",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "list",
+    "markdown": "- **Labo Merlin** — лаборатория с опытами и играми для детей; Espace des Sciences в отзывах часто упоминается как идеальное место для посещения с детьми в дождливый день. [tripadvisor](https://www.tripadvisor.fr/ShowUserReviews-g187103-d7277076-r311853921-Espace_Des_Sciences-Rennes_Ille_et_Vilaine_Brittany.html)  \n- В планетарии — живые комментарии и разные сценарии полёта по звёздному небу, часть сеансов в 3D. [tripadvisor](https://www.tripadvisor.fr/ShowUserReviews-g187103-d7277076-r311853921-Espace_Des_Sciences-Rennes_Ille_et_Vilaine_Brittany.html)",
+    "startLine": 87,
+    "endLine": 88
+  },
+  {
+    "id": "museums-brittany-perplexity:b027",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Время посещения:**",
+    "startLine": 90,
+    "endLine": 90
+  },
+  {
+    "id": "museums-brittany-perplexity:b028",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "list",
+    "markdown": "- На связку **Musée de Bretagne \\+ Espace des Sciences \\+ один сеанс планетария** разумно выделить **полдня (3–4 часа)**.  \n- Можно разбить на два захода (история и науки по разным дням), если вы несколько ночей будете в Ренне.",
+    "startLine": 92,
+    "endLine": 93
+  },
+  {
+    "id": "museums-brittany-perplexity:b029",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Практические советы:**",
+    "startLine": 95,
+    "endLine": 95
+  },
+  {
+    "id": "museums-brittany-perplexity:b030",
+    "headingPath": [
+      "Les Champs Libres (Ренн): музей Бретани + науки + планетарий",
+      "Espace des Sciences и Planétarium Hubert Reeves"
+    ],
+    "nodeType": "list",
+    "markdown": "- В июле–августе комплекс открыт со вт по пт примерно 13:00–19:00, по выходным — 14:00–19:00, пн — выходной. [espace-sciences](https://www.espace-sciences.org/rennes/your-visit)  \n- Планетарий иногда предлагает бесплатные сеансы для молодёжи/студентов на определённых показах; стоит проверить расписание ближе к дате. [espace-sciences](https://www.espace-sciences.org/rennes/planetarium)  \n- Локация очень удобна логистически: между вокзалом и центром, легко совмещать с прогулкой по старому городу Ренна. [espace-sciences](https://www.espace-sciences.org/rennes/your-visit)",
+    "startLine": 97,
+    "endLine": 99
+  },
+  {
+    "id": "museums-brittany-perplexity:b031",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** археологический и доисторический музей  \n**Масштаб:**",
+    "startLine": 105,
+    "endLine": 106
+  },
+  {
+    "id": "museums-brittany-perplexity:b032",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "list",
+    "markdown": "- Позиционирует себя как **первый в мире музей мегалитизма**, с одной из самых богатых коллекций неолитических артефактов Европы. [museedecarnac](https://www.museedecarnac.com/)  \n- Около 3 000 археологических объектов, хронология \\~450 000 лет — от палеолита до эпохи галло‑римлян, основной фокус на неолите (4900–2200 до н.э.) и строителях менгиров и дольменов. [ot-carnac](https://www.ot-carnac.fr/megalithes/musee-prehistoire/)",
+    "startLine": 108,
+    "endLine": 109
+  },
+  {
+    "id": "museums-brittany-perplexity:b033",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерактивность и семья:**",
+    "startLine": 111,
+    "endLine": 111
+  },
+  {
+    "id": "museums-brittany-perplexity:b034",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "list",
+    "markdown": "- Музей подчёркнуто семейный: предлагает **экскурсии, походы к мегалитическим полям, детские мастер‑классы, демонстрации доисторических техник, игровые маршруты по временным экспозициям**. [museedecarnac](https://www.museedecarnac.com/)  \n- Очень хороший «академический» контекст для последующей прогулки по менгирам: ребёнок лучше понимает, что он видит в поле.",
+    "startLine": 113,
+    "endLine": 114
+  },
+  {
+    "id": "museums-brittany-perplexity:b035",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Время посещения:**",
+    "startLine": 116,
+    "endLine": 116
+  },
+  {
+    "id": "museums-brittany-perplexity:b036",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "list",
+    "markdown": "- Стоит планировать **2–3 часа на музей** плюс отдельное время на сами каменные поля (Alignements de Carnac и др.).  \n- В высокий сезон (июль–август) музей открыт ежедневно примерно с 10:00 до 18:30. [museedecarnac](https://www.museedecarnac.com/?lang=en)",
+    "startLine": 118,
+    "endLine": 119
+  },
+  {
+    "id": "museums-brittany-perplexity:b037",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Практические советы:**",
+    "startLine": 121,
+    "endLine": 121
+  },
+  {
+    "id": "museums-brittany-perplexity:b038",
+    "headingPath": [
+      "Musée de Préhistoire de Carnac: мегалиты и жизнь неолита"
+    ],
+    "nodeType": "list",
+    "markdown": "- Хорошо подходит под день, когда вы сочетаете: утром/днём музей, позже — менгиры и прибрежные прогулки вокруг Карнака и Ла‑Тривьера.  \n- Для 10‑летнего ребёнка особенно «заходят» интерактивные занятия и мастер‑классы; лучше заранее проверить календарь мероприятий. [ot-carnac](https://www.ot-carnac.fr/megalithes/musee-prehistoire/)",
+    "startLine": 123,
+    "endLine": 124
+  },
+  {
+    "id": "museums-brittany-perplexity:b039",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** морской музей в историческом замке  \n**Масштаб и содержание:**",
+    "startLine": 130,
+    "endLine": 131
+  },
+  {
+    "id": "museums-brittany-perplexity:b040",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "list",
+    "markdown": "- Расположен в крепости, история которой тянется от римских оснований до бастионов Вобана — около **17 веков истории**, сегодня это главный морской музей Финистера. [bretagnemusees](https://bretagnemusees.bzh/musee/musee-de-la-marine-de-brest/)  \n- Экспозиции охватывают: декоративное оформление кораблей, историю бани (каторги), роль Бреста в американской войне за независимость, революцию паровых машин и развитие подводного флота. [musee-marine](https://www.musee-marine.fr/nos-musees/brest/le-musee-a-brest/a-propos-du-musee-de-brest/lieu-et-parcours.html)  \n- Дополнительные экспонаты: модели кораблей, карты, объекты с подлодок и судов, а также знаменитый **Canot de l’Empereur** (парадная лодка Наполеона), экспонируемый в соседнем центре Ateliers des Capucins. [cheminsdememoire.gouv](https://www.cheminsdememoire.gouv.fr/fr/musee-national-de-la-marine-brest)",
+    "startLine": 133,
+    "endLine": 135
+  },
+  {
+    "id": "museums-brittany-perplexity:b041",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерактивность и семья:**",
+    "startLine": 137,
+    "endLine": 137
+  },
+  {
+    "id": "museums-brittany-perplexity:b042",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "list",
+    "markdown": "- Музей предлагает тематические маршруты и «паркур‑декуверт» для детей, особенно в рамках временных выставок. [cheminsdememoire.gouv](https://www.cheminsdememoire.gouv.fr/fr/musee-national-de-la-marine-brest)  \n- Сильный визуальный аспект: панорамы на рейд Бреста, вид на судоремонтные доки и реку Пенфельд во время обхода стен и башен. [bretagnemusees](https://bretagnemusees.bzh/musee/musee-de-la-marine-de-brest/)",
+    "startLine": 139,
+    "endLine": 140
+  },
+  {
+    "id": "museums-brittany-perplexity:b043",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Время посещения:**",
+    "startLine": 142,
+    "endLine": 142
+  },
+  {
+    "id": "museums-brittany-perplexity:b044",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "list",
+    "markdown": "- Обычно стоит выделить **2–3 часа** на музей и обход замка; при большом интересе к морской истории можно легко провести больше времени.",
+    "startLine": 144,
+    "endLine": 144
+  },
+  {
+    "id": "museums-brittany-perplexity:b045",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Практические советы:**",
+    "startLine": 146,
+    "endLine": 146
+  },
+  {
+    "id": "museums-brittany-perplexity:b046",
+    "headingPath": [
+      "Musée national de la Marine в замке Бреста"
+    ],
+    "nodeType": "list",
+    "markdown": "- В августе музей работает в летнем режиме (ежедневно с 10:00 до 18:30), во вне‑сезон по будням есть сокращённые часы и выходные. [bretagnemusees](https://bretagnemusees.bzh/musee/musee-de-la-marine-de-brest/)  \n- Комбинируется с Océanopolis в разные дни, либо как «морской» день: утром замок и музей, днём/вечером набережные и лодочные прогулки.",
+    "startLine": 148,
+    "endLine": 149
+  },
+  {
+    "id": "museums-brittany-perplexity:b047",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** морской/социальный музей на уровне экомузея  \n**Масштаб и содержание:**",
+    "startLine": 155,
+    "endLine": 156
+  },
+  {
+    "id": "museums-brittany-perplexity:b048",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "list",
+    "markdown": "- Ассоциативный музей, посвящённый истории **тунцового порта Этель, одного из крупнейших портов Франции в 1930‑е годы**. [museedesthoniers](https://museedesthoniers.fr/)  \n- Экспозиция распределена по 5 залам: история сардиньей ловли, тунцовый флот, траулеры, спасение на море, местное наследие и художественная тема (картины, фотографии и др.). [museedesthoniers](https://museedesthoniers.fr/apercu/)  \n- Много моделей кораблей, диорам, реконструкций такелажа и сцен портовой жизни. [brittanytourism](https://www.brittanytourism.com/plan-my-holiday/things-to-do-see/all-activities/musee-des-thoniers-etel-en-2034424/)",
+    "startLine": 158,
+    "endLine": 160
+  },
+  {
+    "id": "museums-brittany-perplexity:b049",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерактивность и семья:**",
+    "startLine": 162,
+    "endLine": 162
+  },
+  {
+    "id": "museums-brittany-perplexity:b050",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "list",
+    "markdown": "- Музей активно проводит **анимации, видео‑показы, встречи с бывшими моряками**, а в декабре — необычные **морские рождественские вертепы**. [lorientbretagnesudtourisme](https://www.lorientbretagnesudtourisme.fr/fr/fiche/musee-des-thoniers-etel_TFOVMUSEETHONIERS/)  \n- Формат сильно зависит от того, попадёте ли вы на день, когда есть живые рассказы и анимации, но даже без этого экспозиция очень «человеческая» и эмоциональная.",
+    "startLine": 164,
+    "endLine": 165
+  },
+  {
+    "id": "museums-brittany-perplexity:b051",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Время посещения:**",
+    "startLine": 167,
+    "endLine": 167
+  },
+  {
+    "id": "museums-brittany-perplexity:b052",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "list",
+    "markdown": "- Обычно достаточно **1,5–2 часов**, особенно если совмещать с прогулкой по рие Этель и смотровыми точками (Барре д’Этель, маленькие порты). [museedesthoniers](https://museedesthoniers.fr/acces/)",
+    "startLine": 169,
+    "endLine": 169
+  },
+  {
+    "id": "museums-brittany-perplexity:b053",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Практические советы:**",
+    "startLine": 171,
+    "endLine": 171
+  },
+  {
+    "id": "museums-brittany-perplexity:b054",
+    "headingPath": [
+      "Musée des Thoniers (Этель): живая история тунцового порта"
+    ],
+    "nodeType": "list",
+    "markdown": "- В 2026 году музей заявлен как открытый **в течение всего года**, с разными периодами и тарифами. [tourismebretagne](https://www.tourismebretagne.com/preparer-mon-sejour/bouger-visiter/toutes-les-activites/musee-des-thoniers-etel-fr-2034424/)  \n- Вокруг — богатый ландшафтный контекст (малые порты, дюны, тропы Grand Site Dunaire Gâvres‑Quiberon), что хорошо вписывается в дни, посвящённые природе и побережью. [lorientbretagnesudtourisme](https://www.lorientbretagnesudtourisme.fr/fr/fiche/musee-des-thoniers-etel_TFOVMUSEETHONIERS/)",
+    "startLine": 173,
+    "endLine": 174
+  },
+  {
+    "id": "museums-brittany-perplexity:b055",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** автомобильный музей \\+ музей старых ремёсел (необычный)  \n**Масштаб:**",
+    "startLine": 180,
+    "endLine": 181
+  },
+  {
+    "id": "museums-brittany-perplexity:b056",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "list",
+    "markdown": "- Около **400 транспортных средств** (автомобили, мотоциклы, велосипеды, конные экипажи) на площади 15 000 м². [ouest-france](https://www.ouest-france.fr/bretagne/ille-et-vilaine/le-manoir-de-lautomobile-de-loheac-un-lieu-charge-dhistoire-1129cc5a-1d91-11ee-b22c-5396679207dd)  \n- Представлен век истории автомобиля: от конных экипажей и ранних машин до Формулы‑1, раллийных и экзотических моделей (Ferrari, Lamborghini, Cadillac и др.). [brittanytourism](https://www.brittanytourism.com/plan-my-holiday/things-to-do-see/all-activities/manoir-de-lautomobile-et-des-vieux-metiers-loheac-en-2102717/)  \n- Есть «авеню» старых магазинов (парикмахер, мясник, зубной врач, ремесленники), капелла двигателей с коллекцией моторных агрегатов, зал миниатюр (3 000 моделей и 30 диорам). [en.tropical-parc](https://en.tropical-parc.com/308-nearby/322-visiting-and-exploring/323-manoir-de-l-automobile-in-loheac.html)",
+    "startLine": 183,
+    "endLine": 185
+  },
+  {
+    "id": "museums-brittany-perplexity:b057",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерактивность и семья:**",
+    "startLine": 187,
+    "endLine": 187
+  },
+  {
+    "id": "museums-brittany-perplexity:b058",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "list",
+    "markdown": "- Для ребёнка и взрослых это скорее «вау‑эффект» от количества и разнообразия машин, плюс необычные реконструкции деревенских сцен и ремёсел. [franceforfamilies](https://franceforfamilies.com/place/le-manoir-de-lautomobile/)  \n- На территории есть гоночная трасса (2,5 км), используемая школами пилотирования и клубами; в некоторые дни возможно участие или наблюдение за заездами. [brittanytourism](https://www.brittanytourism.com/plan-my-holiday/things-to-do-see/all-activities/manoir-de-lautomobile-et-des-vieux-metiers-loheac-en-2102717/)",
+    "startLine": 189,
+    "endLine": 190
+  },
+  {
+    "id": "museums-brittany-perplexity:b059",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Время посещения:**",
+    "startLine": 192,
+    "endLine": 192
+  },
+  {
+    "id": "museums-brittany-perplexity:b060",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "list",
+    "markdown": "- Официальные рекомендации — **1–2 часа**, но многие посетители проводят **3–4 часа**, учитывая масштаб. [automotivemuseumguide](https://automotivemuseumguide.com/manoir-de-lautomobile/)",
+    "startLine": 194,
+    "endLine": 194
+  },
+  {
+    "id": "museums-brittany-perplexity:b061",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Практические советы:**",
+    "startLine": 196,
+    "endLine": 196
+  },
+  {
+    "id": "museums-brittany-perplexity:b062",
+    "headingPath": [
+      "Manoir de l’Automobile et des Vieux Métiers (Лоэак)"
+    ],
+    "nodeType": "list",
+    "markdown": "- В июле–августе музей открыт **каждый день**, включая понедельник, примерно 10:00–19:00; вне сезона пн — выходной, дневной перерыв 13:00–14:00. [manoir-automobile](https://www.manoir-automobile.fr/home/)  \n- Для семей: дети до 10 лет с родителями проходят бесплатно, что приятно для семейного бюджета. [automotivemuseumguide](https://automotivemuseumguide.com/manoir-de-lautomobile/)  \n- Логистически удобно как дневная вылазка из Ренна (≈1 ч машиной). [ouest-france](https://www.ouest-france.fr/bretagne/ille-et-vilaine/le-manoir-de-lautomobile-de-loheac-un-lieu-charge-dhistoire-1129cc5a-1d91-11ee-b22c-5396679207dd)",
+    "startLine": 198,
+    "endLine": 200
+  },
+  {
+    "id": "museums-brittany-perplexity:b063",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Тип:** художественный музей  \n**Масштаб и содержание:**",
+    "startLine": 206,
+    "endLine": 207
+  },
+  {
+    "id": "museums-brittany-perplexity:b064",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "list",
+    "markdown": "- Около 600 экспонируемых произведений в \\~20 залах, плюс общий фонд живописи и графики \\~1200 полотен и 2000 рисунков. [en.wikipedia](https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Quimper)  \n- Сильная коллекция **бретонской живописи XIX века**, школы Пон‑Авен, а также старых европейских школ (фламандская, голландская, итальянская, французская). [lonelyplanet](https://www.lonelyplanet.fr/poi/musee-des-beaux-arts-de-quimper)  \n- Отдельная комната посвящена поэту Максу Жакобу, открывшему Пикассо. [artsandculture.google](https://artsandculture.google.com/partner/musee-beaux-arts-quimper)  \n- Есть реконструкция интерьеров начала XX века (гостиница de l’Épée). [quimper-tourisme](https://www.quimper-tourisme.bzh/patrimoine_culture/musee-des-beaux-arts-de-quimper/)",
+    "startLine": 209,
+    "endLine": 212
+  },
+  {
+    "id": "museums-brittany-perplexity:b065",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Интерактивность и семья:**",
+    "startLine": 214,
+    "endLine": 214
+  },
+  {
+    "id": "museums-brittany-perplexity:b066",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "list",
+    "markdown": "- Музей регулярно организует **экскурсии, студенческие ночи, мастер‑классы и мероприятия для молодёжи**, акцент на доступности для разных публиок. [artsandculture.google](https://artsandculture.google.com/partner/musee-beaux-arts-quimper)  \n- Для ребёнка 10 лет художественный музей может быть менее «игровым», но если ему интересна живопись и истории художников, визит может быть очень содержательным.",
+    "startLine": 216,
+    "endLine": 217
+  },
+  {
+    "id": "museums-brittany-perplexity:b067",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Время посещения:**",
+    "startLine": 219,
+    "endLine": 219
+  },
+  {
+    "id": "museums-brittany-perplexity:b068",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "list",
+    "markdown": "- Обычно достаточно **1,5–2 часов**; хорошо совмещать с посещением собора Сен‑Корентен и прогулкой по старому городу.",
+    "startLine": 221,
+    "endLine": 221
+  },
+  {
+    "id": "museums-brittany-perplexity:b069",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Практические советы:**",
+    "startLine": 223,
+    "endLine": 223
+  },
+  {
+    "id": "museums-brittany-perplexity:b070",
+    "headingPath": [
+      "Musée des Beaux‑Arts de Quimper"
+    ],
+    "nodeType": "list",
+    "markdown": "- Официальный сайт и туристическое бюро Quimper сообщали о закрытии музея на реконструкцию с октября 2024 до весны 2026; к августу 2026 он, вероятно, уже вновь открыт, но обязательно проверьте актуальные данные ближе к поездке. [mbaq](https://www.mbaq.fr/)",
+    "startLine": 225,
+    "endLine": 225
+  },
+  {
+    "id": "museums-brittany-perplexity:b071",
+    "headingPath": [
+      "Сводная таблица: профиль музеев для семьи"
+    ],
+    "nodeType": "table",
+    "markdown": "| Музей | Тип | Масштаб экспозиции | Интерактивность | Интерес для 10‑летнего | Рекомендуемое время | Локация / логистика |\n| :---- | :---- | :---- | :---- | :---- | :---- | :---- |\n| Océanopolis (Брест) | Морской научный центр, океанариум | Очень крупный: 10 000 животных, 1 000 видов, 77 аквариумов, 9 000 м² [gaanwe](https://www.gaanwe.com/parks/oceanopolis-brest) | Высокая: тактильные бассейны, детская зона, тематические павильоны | Отличный: животные, выдры, пингвины, интерактив [gaanwe](https://www.gaanwe.com/parks/oceanopolis-brest) | 4–6 ч (почти день) | Брест, удобно совместить с морской прогулкой и замком |\n| Musée de Bretagne (Ренн) | История и этнография Бретани | Очень крупный фонд: \\>600 000 объектов, экспозиция \\~2 300 предметов [en.wikipedia](https://en.wikipedia.org/wiki/Museum_of_Brittany) | Средняя/высокая: мультимедиа, разнообразные объекты | Хороший, особенно при интересе к истории региона | 1,5–3 ч | Ренн, в комплексе Les Champs Libres у вокзала [tourisme-rennes](https://www.tourisme-rennes.com/sortir/musee-de-bretagne/) |\n| Espace des Sciences \\+ Планетарий (Ренн) | Научный центр, астрономия | Средний к крупному: постоянные и временные выставки, зал планетария на 95 мест [espace-sciences](https://www.espace-sciences.org/rennes/planetarium) | Очень высокая: эксперименты, Labo Merlin, живые сеансы в куполе [tripadvisor](https://www.tripadvisor.fr/ShowUserReviews-g187103-d7277076-r311853921-Espace_Des_Sciences-Rennes_Ille_et_Vilaine_Brittany.html) | Отличный: формат «наука \\+ космос» обычно очень нравится детям | 2–3 ч (с одним сеансом планетария) | Ренн, тот же комплекс Les Champs Libres [espace-sciences](https://www.espace-sciences.org/rennes/your-visit) |\n| Musée de Préhistoire de Carnac | Археология, мегалиты | Богатая коллекция: \\~3 000 объектов, лидирующий музей мегалитизма [ot-carnac](https://www.ot-carnac.fr/megalithes/musee-prehistoire/) | Высокая: экскурсии, мастер‑классы, походы к менгирам [museedecarnac](https://www.museedecarnac.com/) | Отличный при интересе к «древним людям», каменным кругам | 2–3 ч \\+ время на поля менгиров | Карнак, рядом с прибрежными маршрутами |\n| Musée national de la Marine (Брест) | Морская история, замок | Крупный национальный музей в крепости с 17 веками истории [bretagnemusees](https://bretagnemusees.bzh/musee/musee-de-la-marine-de-brest/) | Средняя/высокая: тематические маршруты для детей, прогулка по замку [bretagnemusees](https://bretagnemusees.bzh/musee/musee-de-la-marine-de-brest/) | Хороший, особенно если ребёнку интересны корабли и форты | 2–3 ч | Брест, совмещается с городом и рейдом |\n| Musée des Thoniers (Этель) | Морской, социальный | Небольшой/средний, но насыщенный диорамами и моделями [tourismebretagne](https://www.tourismebretagne.com/preparer-mon-sejour/bouger-visiter/toutes-les-activites/musee-des-thoniers-etel-fr-2034424/) | Высокая при наличии анимаций и встреч с моряками | Хороший, особенно при интересе к реальным историям моряков | 1,5–2 ч | Этель, в окружении красивой рии и малых портов [lorientbretagnesudtourisme](https://www.lorientbretagnesudtourisme.fr/fr/fiche/musee-des-thoniers-etel_TFOVMUSEETHONIERS/) |\n| Manoir de l’Automobile (Лоэак) | Автомобили, старые ремёсла | Очень крупный: \\>400 транспортных средств, 15 000 м² [manoir-automobile](https://www.manoir-automobile.fr/home/) | Средняя/высокая: огромные коллекции \\+ реконструкции деревни и ремёсел [brittanytourism](https://www.brittanytourism.com/plan-my-holiday/things-to-do-see/all-activities/manoir-de-lautomobile-et-des-vieux-metiers-loheac-en-2102717/) | Отличный, если интересны машины; даже без этого очень впечатляет | 2–4 ч | Лоэак, \\~1 ч от Ренна, удобный дневной выезд |\n| Musée des Beaux‑Arts de Quimper | Искусство | Средний: \\~600 экспонатов, сильная бретонская и европейская живопись [artsandculture.google](https://artsandculture.google.com/partner/musee-beaux-arts-quimper) | Средняя: классический художественный музей с событиями | Хороший при интересе к картинам и художественным историям | 1,5–2 ч | Кимпер, рядом с собором и старым центром |",
+    "startLine": 231,
+    "endLine": 240
+  },
+  {
+    "id": "museums-brittany-perplexity:b072",
+    "headingPath": [
+      "Рейтинг для вашей семьи и как использовать его в маршруте"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "С учётом ваших приоритетов (история, замки, побережье, природа, семейные активности, кухня, качество впечатлений) и возраста ребёнка, я бы предложил такой «рейтинг‑ядро»:",
+    "startLine": 246,
+    "endLine": 246
+  },
+  {
+    "id": "museums-brittany-perplexity:b073",
+    "headingPath": [
+      "Рейтинг для вашей семьи и как использовать его в маршруте"
+    ],
+    "nodeType": "list",
+    "markdown": "1. **Océanopolis (Брест)** — №1 для семьи: сочетание крупной научной экспозиции, живых животных и детской интерактивности; легко провести целый день и при этом не чувствовать спешки. [brest](https://brest.fr/oceanopolis)  \n2. **Musée de Préhistoire de Carnac \\+ менгиры** — уникальный по мировым меркам опыт мегалитизма, очень хорошо дополняет прогулки по природе и побережью. [lonelyplanet](https://www.lonelyplanet.com/france/brittany/carnac/attractions/musee-de-prehistoire/a/poi-sig/1230803/359227)  \n3. **Les Champs Libres в Ренне (Musée de Bretagne \\+ Espace des Sciences \\+ Планетарий)** — один из лучших научно‑культурных комплексов в регионе, позволяет одним визитом охватить и историю, и науку, и космос. [en.wikipedia](https://en.wikipedia.org/wiki/Museum_of_Brittany)  \n4. **Musée national de la Marine (Брест)** — мощный исторический и морской блок в реальном замке с видами на рейд; хорошо ложится в день «морской истории». [brest](https://brest.fr/musee-national-de-la-marine-chateau-de-brest)  \n5. **Manoir de l’Automobile (Лоэак)** — необычное, очень впечатляющее место; отлично добавить как разнообразие в маршрут, особенно если ребёнку нравятся машины и механизмы. [en.tropical-parc](https://en.tropical-parc.com/308-nearby/322-visiting-and-exploring/323-manoir-de-l-automobile-in-loheac.html)",
+    "startLine": 248,
+    "endLine": 252
+  },
+  {
+    "id": "museums-brittany-perplexity:b074",
+    "headingPath": [
+      "Рейтинг для вашей семьи и как использовать его в маршруте"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "**Как практически встроить в 10‑дневный маршрут:**",
+    "startLine": 254,
+    "endLine": 254
+  },
+  {
+    "id": "museums-brittany-perplexity:b075",
+    "headingPath": [
+      "Рейтинг для вашей семьи и как использовать его в маршруте"
+    ],
+    "nodeType": "list",
+    "markdown": "- День Бреста:  \n    \n  - Утро — Musée national de la Marine и прогулка по крепости. [musee-marine](https://www.musee-marine.fr/nos-musees/brest/le-musee-a-brest/a-propos-du-musee-de-brest/lieu-et-parcours.html)  \n  - День/вечер — Océanopolis, ужин с морепродуктами на набережной. [oceanopolis](https://www.oceanopolis.com/en/welcome/)\n\n\n- День Карнака и мегалитов:  \n    \n  - Утро — Musée de Préhistoire, участие в детских активностях при наличии. [museedecarnac](https://www.museedecarnac.com/)  \n  - День — поля менгиров, прибрежные пешие маршруты, купание.\n\n\n- День Ренна:  \n    \n  - Полдня — Les Champs Libres (Musée de Bretagne \\+ Espace des Sciences \\+ планетарий). [tourisme-rennes](https://www.tourisme-rennes.com/sortir/musee-de-bretagne/)  \n  - Полдня — исторический центр и гастрономия (крепы, галеты, cidre).\n\n\n- День Этель и побережья Южной Бретани:  \n    \n  - Musée des Thoniers \\+ прогулка по Барре д’Этель, малым портам и дюнам. [brittanytourism](https://www.brittanytourism.com/plan-my-holiday/things-to-do-see/all-activities/musee-des-thoniers-etel-en-2034424/)\n\n\n- День Лоэак:  \n    \n  - Manoir de l’Automobile \\+ деревенские сцены и, возможно, наблюдение/участие в заездах (по расписанию). [franceforfamilies](https://franceforfamilies.com/place/le-manoir-de-lautomobile/)",
+    "startLine": 256,
+    "endLine": 281
+  },
+  {
+    "id": "museums-brittany-perplexity:b076",
+    "headingPath": [
+      "Рейтинг для вашей семьи и как использовать его в маршруте"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "Оставшиеся дни можно посвятить историческим городам (Сен‑Мало, Динан, Ванн, Кимпер), при необходимости добавляя художественный музей Кимпера, если он будет открыт. [lonelyplanet](https://www.lonelyplanet.fr/poi/musee-des-beaux-arts-de-quimper)",
+    "startLine": 283,
+    "endLine": 283
+  },
+  {
+    "id": "museums-brittany-perplexity:b077",
+    "headingPath": [
+      "Рейтинг для вашей семьи и как использовать его в маршруте"
+    ],
+    "nodeType": "paragraph",
+    "markdown": "Если захотите, мы можем на следующем шаге собрать из этого конкретный 10‑дневный маршрут с разбивкой по дням и логистике из/в Нант (с учётом аренды авто и возможных участков поезда).  ",
+    "startLine": 285,
+    "endLine": 285
+  }
+]

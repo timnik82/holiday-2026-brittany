@@ -3228,5 +3228,1202 @@
     "paragraphIds": [
       "nantes-voyage-planning"
     ]
+  },
+  "museums-brittany-perplexity:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-musee-prehistoire-carnac"
+  },
+  "museums-brittany-perplexity:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-haliotika"
+  },
+  "museums-brittany-perplexity:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-oceanopolis"
+    ],
+    "paragraphIds": [
+      "oceanopolis-what"
+    ]
+  },
+  "museums-brittany-perplexity:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-oceanopolis"
+    ],
+    "paragraphIds": [
+      "oceanopolis-what"
+    ]
+  },
+  "museums-brittany-perplexity:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-oceanopolis"
+  },
+  "museums-brittany-perplexity:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-oceanopolis"
+  },
+  "museums-brittany-perplexity:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-oceanopolis"
+    ],
+    "paragraphIds": [
+      "oceanopolis-what"
+    ]
+  },
+  "museums-brittany-perplexity:b032": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-musee-prehistoire-carnac",
+      "evidence:southern-musee-prehistoire-family",
+      "evidence:southern-musee-prehistoire-hours"
+    ],
+    "paragraphIds": [
+      "musee-prehistoire-carnac-what",
+      "musee-prehistoire-carnac-planning",
+      "stay-vannes-day-4",
+      "stay-vannes-rain",
+      "morbihan-megaliths"
+    ]
+  },
+  "museums-brittany-perplexity:b034": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-musee-prehistoire-carnac",
+      "evidence:southern-musee-prehistoire-family",
+      "evidence:southern-musee-prehistoire-hours"
+    ],
+    "paragraphIds": [
+      "musee-prehistoire-carnac-what",
+      "musee-prehistoire-carnac-planning",
+      "stay-vannes-day-4",
+      "stay-vannes-rain",
+      "morbihan-megaliths"
+    ]
+  },
+  "museums-brittany-perplexity:b036": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-musee-prehistoire-carnac",
+      "evidence:southern-musee-prehistoire-family",
+      "evidence:southern-musee-prehistoire-hours"
+    ],
+    "paragraphIds": [
+      "musee-prehistoire-carnac-what",
+      "musee-prehistoire-carnac-planning",
+      "stay-vannes-day-4",
+      "stay-vannes-rain",
+      "morbihan-megaliths"
+    ]
+  },
+  "museums-brittany-perplexity:b038": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-musee-prehistoire-carnac",
+      "evidence:southern-musee-prehistoire-family",
+      "evidence:southern-musee-prehistoire-hours"
+    ],
+    "paragraphIds": [
+      "musee-prehistoire-carnac-what",
+      "musee-prehistoire-carnac-planning",
+      "stay-vannes-day-4",
+      "stay-vannes-rain",
+      "morbihan-megaliths"
+    ]
+  },
+  "museums-brittany-perplexity:b040": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-maritime-museum"
+    ],
+    "paragraphIds": [
+      "chateau-de-brest-what"
+    ]
+  },
+  "museums-brittany-perplexity:b042": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-maritime-museum"
+  },
+  "museums-brittany-perplexity:b044": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-maritime-museum"
+  },
+  "museums-brittany-perplexity:b046": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-maritime-museum"
+    ],
+    "paragraphIds": [
+      "chateau-de-brest-what"
+    ]
+  },
+  "museums-brittany-perplexity:b048": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-haliotika"
+    ],
+    "paragraphIds": [
+      "haliotika-what"
+    ]
+  },
+  "museums-brittany-perplexity:b050": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-haliotika"
+    ],
+    "paragraphIds": [
+      "haliotika-what"
+    ]
+  },
+  "museums-brittany-perplexity:b052": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-haliotika"
+  },
+  "museums-brittany-perplexity:b054": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-haliotika"
+    ],
+    "paragraphIds": [
+      "haliotika-what"
+    ]
+  },
+  "museums-brittany-perplexity:b064": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-family-museums"
+    ],
+    "paragraphIds": [
+      "quimper-what"
+    ]
+  },
+  "museums-brittany-perplexity:b066": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-family-museums"
+    ],
+    "paragraphIds": [
+      "quimper-what"
+    ]
+  },
+  "museums-brittany-perplexity:b068": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "museums-brittany-perplexity:b070": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-family-museums"
+    ],
+    "paragraphIds": [
+      "quimper-what"
+    ]
+  },
+  "museums-brittany-perplexity:b071": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-musee-prehistoire-carnac"
+  },
+  "museums-brittany-perplexity:b073": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-musee-prehistoire-carnac"
+  },
+  "museums-brittany-perplexity:b075": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-musee-prehistoire-carnac"
+  },
+  "museums-brittany-perplexity:b076": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "beaches-claude:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-protected-water-beaches"
+  },
+  "beaches-claude:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "beaches-claude:b003": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-base-rhythm",
+      "evidence:southern-vannes-town"
+    ],
+    "paragraphIds": [
+      "stay-vannes-overview",
+      "vannes-what",
+      "morbihan-verdict"
+    ]
+  },
+  "beaches-claude:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-quiberon"
+  },
+  "beaches-claude:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b006": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-protected-water-beaches"
+  },
+  "beaches-claude:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-protected-water-beaches",
+      "evidence:southern-carnac-beach-detail"
+    ],
+    "paragraphIds": [
+      "carnac-alignments-beach",
+      "stay-vannes-day-4",
+      "morbihan-sea-normals",
+      "quiberon-what"
+    ]
+  },
+  "beaches-claude:b009": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-quiberon",
+      "evidence:southern-protected-water-beaches"
+    ],
+    "paragraphIds": [
+      "quiberon-what",
+      "quiberon-planning",
+      "stay-vannes-day-5"
+    ]
+  },
+  "beaches-claude:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-vannes-beaches-conleau",
+      "evidence:southern-vannes-town"
+    ],
+    "paragraphIds": [
+      "vannes-what",
+      "vannes-planning",
+      "stay-vannes-day-1"
+    ]
+  },
+  "beaches-claude:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-maritime-museum"
+  },
+  "beaches-claude:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b015": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b017": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b018": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b019": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-claude:b021": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "beaches-claude:b022": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "beaches-claude:b024": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-protected-water-beaches",
+      "evidence:southern-carnac-beach-detail"
+    ],
+    "paragraphIds": [
+      "carnac-alignments-beach",
+      "stay-vannes-day-4",
+      "morbihan-sea-normals",
+      "quiberon-what"
+    ]
+  },
+  "beaches-claude:b026": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "beaches-claude:b027": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "beaches-brittany-perplexity:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-quiberon"
+  },
+  "beaches-brittany-perplexity:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-brittany-perplexity:b004": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "grand-aquarium-what",
+      "saint-malo-ramparts-aquarium"
+    ]
+  },
+  "beaches-brittany-perplexity:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "grand-aquarium-what",
+      "saint-malo-ramparts-aquarium"
+    ]
+  },
+  "beaches-brittany-perplexity:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-protected-water-beaches",
+      "evidence:southern-carnac-beach-detail"
+    ],
+    "paragraphIds": [
+      "carnac-alignments-beach",
+      "stay-vannes-day-4",
+      "morbihan-sea-normals",
+      "quiberon-what"
+    ]
+  },
+  "beaches-brittany-perplexity:b007": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-protected-water-beaches",
+      "evidence:southern-carnac-beach-detail"
+    ],
+    "paragraphIds": [
+      "carnac-alignments-beach",
+      "stay-vannes-day-4",
+      "morbihan-sea-normals",
+      "quiberon-what"
+    ]
+  },
+  "beaches-brittany-perplexity:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-brittany-perplexity:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-brittany-perplexity:b010": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-brittany-perplexity:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-protected-water-beaches"
+  },
+  "beaches-brittany-perplexity:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "beaches-brittany-perplexity:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "beaches-brittany-perplexity:b014": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-base-rhythm",
+      "evidence:southern-vannes-town"
+    ],
+    "paragraphIds": [
+      "stay-vannes-overview",
+      "vannes-what",
+      "morbihan-verdict"
+    ]
+  },
+  "beaches-brittany-perplexity:b015": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-quiberon",
+      "evidence:southern-protected-water-beaches"
+    ],
+    "paragraphIds": [
+      "quiberon-what",
+      "quiberon-planning",
+      "stay-vannes-day-5"
+    ]
+  },
+  "beaches-brittany-perplexity:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-quiberon"
+  },
+  "beaches-brittany-perplexity:b017": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-brittany-perplexity:b018": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-protected-water-beaches"
+  },
+  "beaches-brittany-perplexity:b019": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-brittany-perplexity:b021": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "beaches-brittany-perplexity:b022": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "food-brittany:b001": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-food",
+      "evidence:southern-food-vannes-practical"
+    ],
+    "paragraphIds": [
+      "morbihan-food",
+      "vannes-food",
+      "stay-vannes-reserve"
+    ]
+  },
+  "food-brittany:b002": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-food",
+      "evidence:southern-food-vannes-practical"
+    ],
+    "paragraphIds": [
+      "morbihan-food",
+      "vannes-food",
+      "stay-vannes-reserve"
+    ]
+  },
+  "food-brittany:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "food-brittany:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "food-brittany:b006": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "food-brittany:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "food-brittany:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "food-brittany:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "food-brittany:b010": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "food-brittany:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "food-brittany:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-islands-gulf"
+  },
+  "food-brittany:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-islands-gulf"
+  },
+  "food-brittany:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "food-brittany:b015": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "food-brittany:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "family-activities-claude:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-branfere"
+  },
+  "family-activities-claude:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-activities-claude:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "family-activities-claude:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-food"
+  },
+  "family-activities-claude:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "family-activities-claude:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-branfere",
+      "evidence:southern-branfere-scale"
+    ],
+    "paragraphIds": [
+      "branfere-what",
+      "branfere-planning",
+      "stay-vannes-day-4",
+      "stay-vannes-rain",
+      "morbihan-family-attractions"
+    ]
+  },
+  "family-activities-claude:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-activities-claude:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-islands-gulf"
+  },
+  "family-activities-claude:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-activities-claude:b010": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "family-activities-claude:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "family-activities-claude:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-activities-claude:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "family-activities-claude:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-branfere"
+  },
+  "family-activities-claude:b015": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "family-activities-claude:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "family-activities-claude:b017": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-activities-claude:b018": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-branfere"
+  },
+  "family-attractions-claude:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-branfere"
+  },
+  "family-attractions-claude:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-oceanopolis"
+  },
+  "family-attractions-claude:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-oceanopolis"
+  },
+  "family-attractions-claude:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "family-attractions-claude:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-branfere",
+      "evidence:southern-branfere-scale"
+    ],
+    "paragraphIds": [
+      "branfere-what",
+      "branfere-planning",
+      "stay-vannes-day-4",
+      "stay-vannes-rain",
+      "morbihan-family-attractions"
+    ]
+  },
+  "family-attractions-claude:b017": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-branfere",
+      "evidence:southern-branfere-scale"
+    ],
+    "paragraphIds": [
+      "branfere-what",
+      "branfere-planning",
+      "stay-vannes-day-4",
+      "stay-vannes-rain",
+      "morbihan-family-attractions"
+    ]
+  },
+  "family-attractions-claude:b019": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b020": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-broceliande"
+    ],
+    "paragraphIds": [
+      "broceliande-what",
+      "stay-vannes-inland"
+    ]
+  },
+  "family-attractions-claude:b021": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-broceliande"
+    ],
+    "paragraphIds": [
+      "broceliande-what",
+      "stay-vannes-inland"
+    ]
+  },
+  "family-attractions-claude:b022": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-islands-gulf",
+      "evidence:southern-islands-ferry-prices"
+    ],
+    "paragraphIds": [
+      "ile-aux-moines-what",
+      "ile-d-arz-what",
+      "ile-aux-moines-planning",
+      "stay-vannes-day-2",
+      "morbihan-islands-gulf"
+    ]
+  },
+  "family-attractions-claude:b023": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-islands-gulf",
+      "evidence:southern-islands-ferry-prices"
+    ],
+    "paragraphIds": [
+      "ile-aux-moines-what",
+      "ile-d-arz-what",
+      "ile-aux-moines-planning",
+      "stay-vannes-day-2",
+      "morbihan-islands-gulf"
+    ]
+  },
+  "family-attractions-claude:b024": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b025": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b026": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-maritime-museum"
+  },
+  "family-attractions-claude:b027": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-quiberon"
+  },
+  "family-attractions-claude:b033": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "family-attractions-claude:b034": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "grand-aquarium-what",
+      "saint-malo-ramparts-aquarium"
+    ]
+  },
+  "family-attractions-claude:b036": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-branfere"
+  },
+  "family-attractions-claude:b038": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "castles-claude:b001": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-suscinio",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-claude:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "castles-claude:b003": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-castles-family-shortlist",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-claude:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-suscinio",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-claude:b006": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-claude:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-claude:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-claude:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "castles-claude:b010": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "castles-claude:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-claude:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-claude:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-base-rhythm"
+  },
+  "castles-claude:b015": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-claude:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "castles-claude:b017": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-claude:b018": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "castles-claude:b020": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b021": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b022": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b024": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b025": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b026": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b028": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-claude:b029": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-brittany-chatgpt:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-maritime-museum"
+  },
+  "castles-brittany-chatgpt:b002": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-castles-family-shortlist",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-brittany-chatgpt:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-brittany-chatgpt:b006": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-maritime-museum"
+  },
+  "castles-brittany-chatgpt:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-brest-maritime-museum"
+  },
+  "castles-brittany-chatgpt:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b010": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-suscinio",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-brittany-chatgpt:b013": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-suscinio",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-brittany-chatgpt:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b015": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b017": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b018": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-castles-family-shortlist",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-brittany-chatgpt:b019": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b020": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b021": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b022": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b023": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b024": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "cap-frehel-what",
+      "saint-malo-day-trips"
+    ]
+  },
+  "castles-brittany-chatgpt:b025": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "cap-frehel-what",
+      "saint-malo-day-trips"
+    ]
+  },
+  "castles-brittany-chatgpt:b026": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "castles-brittany-chatgpt:b027": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "castles-brittany-chatgpt:b028": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b029": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-brittany-chatgpt:b030": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-brittany-chatgpt:b031": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-brittany-chatgpt:b032": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-brittany-chatgpt:b033": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-brittany-chatgpt:b034": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-largest-perplexity:b002": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-castles-family-shortlist",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-largest-perplexity:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "castles-largest-perplexity:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b006": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b009": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-suscinio",
+      "evidence:southern-suscinio-indoor-depth"
+    ],
+    "paragraphIds": [
+      "suscinio-what",
+      "suscinio-planning",
+      "stay-vannes-day-3",
+      "morbihan-family-attractions"
+    ]
+  },
+  "castles-largest-perplexity:b010": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b011": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "cap-frehel-what",
+      "saint-malo-day-trips"
+    ]
+  },
+  "castles-largest-perplexity:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-castles-family-shortlist"
+  },
+  "castles-largest-perplexity:b014": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "cap-frehel-what",
+      "saint-malo-day-trips"
+    ]
+  },
+  "castles-largest-perplexity:b015": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-suscinio"
   }
 }

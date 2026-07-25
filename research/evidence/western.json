@@ -23,7 +23,9 @@
       "chatgpt:b019",
       "operaai:b020",
       "gemini-britany:b016",
-      "perplexity:b033"
+      "perplexity:b033",
+      "museums-brittany-perplexity:b008",
+      "museums-brittany-perplexity:b016"
     ],
     "sourceUrls": [
       "https://www.oceanopolis.com/"
@@ -42,7 +44,9 @@
       "chatgpt:b019",
       "operaai:b020",
       "gemini-britany:b016",
-      "perplexity:b033"
+      "perplexity:b033",
+      "museums-brittany-perplexity:b040",
+      "museums-brittany-perplexity:b046"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -163,7 +167,9 @@
     "kind": "recommendation",
     "sourceBlockRefs": [
       "chatgpt:b024",
-      "operaai:b022"
+      "operaai:b022",
+      "museums-brittany-perplexity:b064",
+      "museums-brittany-perplexity:b070"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -264,7 +270,8 @@
     "text": "At the port of Le Guilvinec, the Haliotika fishing discovery centre runs interactive programmes for children, including a tour of the trawler Bara Breizh and a look at a working fish auction — a hands-on option that fits a child curious about how fish reach the table.",
     "kind": "recommendation",
     "sourceBlockRefs": [
-      "gemini-britany:b018"
+      "gemini-britany:b018",
+      "museums-brittany-perplexity:b048"
     ],
     "sourceUrls": [],
     "qualifiers": [

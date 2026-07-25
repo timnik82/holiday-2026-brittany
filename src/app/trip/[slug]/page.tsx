@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
+import { CitationLink } from "@/components/content/CitationLink";
 import { CONTENT_STATUS_LABELS } from "@/components/content/labels";
 import { NarratableContent } from "@/components/tts/NarratableContent";
 import { guideConfig } from "@/config/guide";
@@ -154,12 +155,7 @@ export default async function StayPage({
           <ul className={styles.citationsList}>
             {sourceLinks.map((link) => (
               <li key={link.ref}>
-                <Link
-                  href={link.href}
-                  aria-label={`Source ${link.sourceSlug}, block ${link.ref}`}
-                >
-                  {link.ref}
-                </Link>
+                <CitationLink refKey={link.ref} />
               </li>
             ))}
           </ul>

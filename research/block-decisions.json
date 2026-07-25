@@ -1065,5 +1065,924 @@
   },
   "events-nantes-perplexity:b040": {
     "substantive": true
+  },
+  "museums-brittany-perplexity:b001": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b002": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b003": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b004": {
+    "substantive": false,
+    "reason": "Transitional framing sentence, not a retained claim"
+  },
+  "museums-brittany-perplexity:b005": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b006": {
+    "substantive": false,
+    "reason": "Transitional framing sentence, not a retained claim"
+  },
+  "museums-brittany-perplexity:b007": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b008": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b009": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b010": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b011": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b012": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b013": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b014": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b015": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b016": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b017": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b018": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b019": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b020": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b021": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b022": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b023": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b024": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b025": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b026": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b027": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b028": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b029": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b030": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b031": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b032": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b033": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b034": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b035": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b036": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b037": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b038": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b039": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b040": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b041": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b042": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b043": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b044": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b045": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b046": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b047": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b048": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b049": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b050": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b051": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b052": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b053": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b054": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b055": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b056": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b057": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b058": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b059": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b060": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b061": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b062": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b063": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b064": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b065": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b066": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b067": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b068": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b069": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b070": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b071": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b072": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "museums-brittany-perplexity:b073": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b074": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "museums-brittany-perplexity:b075": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b076": {
+    "substantive": true
+  },
+  "museums-brittany-perplexity:b077": {
+    "substantive": false,
+    "reason": "Closing offer to refine further, not a trip fact"
+  },
+  "beaches-claude:b001": {
+    "substantive": true
+  },
+  "beaches-claude:b002": {
+    "substantive": true
+  },
+  "beaches-claude:b003": {
+    "substantive": true
+  },
+  "beaches-claude:b004": {
+    "substantive": true
+  },
+  "beaches-claude:b005": {
+    "substantive": true
+  },
+  "beaches-claude:b006": {
+    "substantive": true
+  },
+  "beaches-claude:b007": {
+    "substantive": true
+  },
+  "beaches-claude:b008": {
+    "substantive": true
+  },
+  "beaches-claude:b009": {
+    "substantive": true
+  },
+  "beaches-claude:b010": {
+    "substantive": true
+  },
+  "beaches-claude:b011": {
+    "substantive": true
+  },
+  "beaches-claude:b012": {
+    "substantive": true
+  },
+  "beaches-claude:b013": {
+    "substantive": true
+  },
+  "beaches-claude:b014": {
+    "substantive": true
+  },
+  "beaches-claude:b015": {
+    "substantive": true
+  },
+  "beaches-claude:b016": {
+    "substantive": true
+  },
+  "beaches-claude:b017": {
+    "substantive": true
+  },
+  "beaches-claude:b018": {
+    "substantive": true
+  },
+  "beaches-claude:b019": {
+    "substantive": true
+  },
+  "beaches-claude:b020": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "beaches-claude:b021": {
+    "substantive": true
+  },
+  "beaches-claude:b022": {
+    "substantive": true
+  },
+  "beaches-claude:b023": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "beaches-claude:b024": {
+    "substantive": true
+  },
+  "beaches-claude:b025": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "beaches-claude:b026": {
+    "substantive": true
+  },
+  "beaches-claude:b027": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b001": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b002": {
+    "substantive": false,
+    "reason": "Transitional framing sentence, not a retained claim"
+  },
+  "beaches-brittany-perplexity:b003": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b004": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b005": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b006": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b007": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b008": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b009": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b010": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b011": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b012": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b013": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b014": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b015": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b016": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b017": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b018": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b019": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b020": {
+    "substantive": false,
+    "reason": "Bibliography or footnote links only"
+  },
+  "beaches-brittany-perplexity:b021": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b022": {
+    "substantive": true
+  },
+  "beaches-brittany-perplexity:b023": {
+    "substantive": false,
+    "reason": "Bibliography or footnote links only"
+  },
+  "food-brittany:b001": {
+    "substantive": true
+  },
+  "food-brittany:b002": {
+    "substantive": true
+  },
+  "food-brittany:b003": {
+    "substantive": true
+  },
+  "food-brittany:b004": {
+    "substantive": true
+  },
+  "food-brittany:b005": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "food-brittany:b006": {
+    "substantive": true
+  },
+  "food-brittany:b007": {
+    "substantive": true
+  },
+  "food-brittany:b008": {
+    "substantive": true
+  },
+  "food-brittany:b009": {
+    "substantive": true
+  },
+  "food-brittany:b010": {
+    "substantive": true
+  },
+  "food-brittany:b011": {
+    "substantive": true
+  },
+  "food-brittany:b012": {
+    "substantive": true
+  },
+  "food-brittany:b013": {
+    "substantive": true
+  },
+  "food-brittany:b014": {
+    "substantive": true
+  },
+  "food-brittany:b015": {
+    "substantive": true
+  },
+  "food-brittany:b016": {
+    "substantive": true
+  },
+  "food-brittany:b017": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-activities-claude:b001": {
+    "substantive": true
+  },
+  "family-activities-claude:b002": {
+    "substantive": true
+  },
+  "family-activities-claude:b003": {
+    "substantive": true
+  },
+  "family-activities-claude:b004": {
+    "substantive": true
+  },
+  "family-activities-claude:b005": {
+    "substantive": true
+  },
+  "family-activities-claude:b006": {
+    "substantive": true
+  },
+  "family-activities-claude:b007": {
+    "substantive": true
+  },
+  "family-activities-claude:b008": {
+    "substantive": true
+  },
+  "family-activities-claude:b009": {
+    "substantive": true
+  },
+  "family-activities-claude:b010": {
+    "substantive": true
+  },
+  "family-activities-claude:b011": {
+    "substantive": true
+  },
+  "family-activities-claude:b012": {
+    "substantive": true
+  },
+  "family-activities-claude:b013": {
+    "substantive": true
+  },
+  "family-activities-claude:b014": {
+    "substantive": true
+  },
+  "family-activities-claude:b015": {
+    "substantive": true
+  },
+  "family-activities-claude:b016": {
+    "substantive": true
+  },
+  "family-activities-claude:b017": {
+    "substantive": true
+  },
+  "family-activities-claude:b018": {
+    "substantive": true
+  },
+  "family-attractions-claude:b001": {
+    "substantive": true
+  },
+  "family-attractions-claude:b002": {
+    "substantive": true
+  },
+  "family-attractions-claude:b003": {
+    "substantive": true
+  },
+  "family-attractions-claude:b004": {
+    "substantive": true
+  },
+  "family-attractions-claude:b005": {
+    "substantive": true
+  },
+  "family-attractions-claude:b006": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b007": {
+    "substantive": true
+  },
+  "family-attractions-claude:b008": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b009": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b010": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b011": {
+    "substantive": true
+  },
+  "family-attractions-claude:b012": {
+    "substantive": true
+  },
+  "family-attractions-claude:b013": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b014": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b015": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b016": {
+    "substantive": true
+  },
+  "family-attractions-claude:b017": {
+    "substantive": true
+  },
+  "family-attractions-claude:b018": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b019": {
+    "substantive": true
+  },
+  "family-attractions-claude:b020": {
+    "substantive": true
+  },
+  "family-attractions-claude:b021": {
+    "substantive": true
+  },
+  "family-attractions-claude:b022": {
+    "substantive": true
+  },
+  "family-attractions-claude:b023": {
+    "substantive": true
+  },
+  "family-attractions-claude:b024": {
+    "substantive": true
+  },
+  "family-attractions-claude:b025": {
+    "substantive": true
+  },
+  "family-attractions-claude:b026": {
+    "substantive": true
+  },
+  "family-attractions-claude:b027": {
+    "substantive": true
+  },
+  "family-attractions-claude:b028": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b029": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b030": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b031": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b032": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b033": {
+    "substantive": true
+  },
+  "family-attractions-claude:b034": {
+    "substantive": true
+  },
+  "family-attractions-claude:b035": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "family-attractions-claude:b036": {
+    "substantive": true
+  },
+  "family-attractions-claude:b037": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "family-attractions-claude:b038": {
+    "substantive": true
+  },
+  "family-attractions-claude:b039": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "castles-claude:b001": {
+    "substantive": true
+  },
+  "castles-claude:b002": {
+    "substantive": true
+  },
+  "castles-claude:b003": {
+    "substantive": true
+  },
+  "castles-claude:b004": {
+    "substantive": true
+  },
+  "castles-claude:b005": {
+    "substantive": true
+  },
+  "castles-claude:b006": {
+    "substantive": true
+  },
+  "castles-claude:b007": {
+    "substantive": true
+  },
+  "castles-claude:b008": {
+    "substantive": true
+  },
+  "castles-claude:b009": {
+    "substantive": true
+  },
+  "castles-claude:b010": {
+    "substantive": true
+  },
+  "castles-claude:b011": {
+    "substantive": true
+  },
+  "castles-claude:b012": {
+    "substantive": true
+  },
+  "castles-claude:b013": {
+    "substantive": true
+  },
+  "castles-claude:b014": {
+    "substantive": true
+  },
+  "castles-claude:b015": {
+    "substantive": true
+  },
+  "castles-claude:b016": {
+    "substantive": true
+  },
+  "castles-claude:b017": {
+    "substantive": true
+  },
+  "castles-claude:b018": {
+    "substantive": true
+  },
+  "castles-claude:b019": {
+    "substantive": false,
+    "reason": "Outside booked-stay reach for this guide's stays; not retained as guide evidence"
+  },
+  "castles-claude:b020": {
+    "substantive": true
+  },
+  "castles-claude:b021": {
+    "substantive": true
+  },
+  "castles-claude:b022": {
+    "substantive": true
+  },
+  "castles-claude:b023": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "castles-claude:b024": {
+    "substantive": true
+  },
+  "castles-claude:b025": {
+    "substantive": true
+  },
+  "castles-claude:b026": {
+    "substantive": true
+  },
+  "castles-claude:b027": {
+    "substantive": false,
+    "reason": "Section label only, not a trip fact"
+  },
+  "castles-claude:b028": {
+    "substantive": true
+  },
+  "castles-claude:b029": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b001": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b002": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b003": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b004": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b005": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b006": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b007": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b008": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b009": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b010": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b011": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b012": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b013": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b014": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b015": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b016": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b017": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b018": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b019": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b020": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b021": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b022": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b023": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b024": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b025": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b026": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b027": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b028": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b029": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b030": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b031": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b032": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b033": {
+    "substantive": true
+  },
+  "castles-brittany-chatgpt:b034": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b001": {
+    "substantive": false,
+    "reason": "Source branding/logo image, not research content"
+  },
+  "castles-largest-perplexity:b002": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b003": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b004": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b005": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b006": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b007": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b008": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b009": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b010": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b011": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b012": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b013": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b014": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b015": {
+    "substantive": true
+  },
+  "castles-largest-perplexity:b016": {
+    "substantive": false,
+    "reason": "Formatting-only decorative divider"
   }
 }

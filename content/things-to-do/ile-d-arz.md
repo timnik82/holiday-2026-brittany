@@ -2,7 +2,7 @@
 slug: ile-d-arz
 title: Île d'Arz
 summary: A quieter second island in the Morbihan gulf — a calmer alternative to the Île-aux-Moines for a relaxed boat-and-bike day.
-updatedAt: "2026-07-02"
+updatedAt: "2026-07-25"
 status: review
 category: nature
 ageRange: all
@@ -16,8 +16,8 @@ durationHours:
 
 ## What it is
 
-<!-- paragraph id="ile-d-arz-what" sources="evidence:southern-islands-gulf" -->
-The Île d'Arz is a second, quieter gulf island reached by passenger ferry, offering a calmer boat-and-bike day than the busier Île-aux-Moines. It rounds out the gulf's island options alongside the kayaking, SUP and catamaran cruises available from the mainland ports.
+<!-- paragraph id="ile-d-arz-what" sources="evidence:southern-islands-gulf,evidence:southern-islands-ferry-prices" -->
+The Île d'Arz is a second, quieter gulf island reached by passenger ferry (from about €8 return on Passeur des Îles), offering a calmer boat-and-bike day than the busier Île-aux-Moines. It rounds out the gulf's island options alongside kayaking, SUP and catamaran cruises from the mainland ports.
 
 ## Planning
 

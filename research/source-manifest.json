@@ -11,14 +11,18 @@
     "path": "research/raw/Gemini-Britany.md",
     "language": "ru",
     "sha256": "dc178b29732c9887c900fe61cec10a658459c85e7c770e05e49341ea95196835",
-    "stopHeadings": ["Works cited"]
+    "stopHeadings": [
+      "Works cited"
+    ]
   },
   {
     "slug": "operaai",
     "path": "research/raw/OperaAI.md",
     "language": "ru",
     "sha256": "52c1f97f8c21c3364811ea3a0bcc88872cdcb20fa4f5788eadfbfb1d597aa28c",
-    "stopHeadings": ["Источники"]
+    "stopHeadings": [
+      "Источники"
+    ]
   },
   {
     "slug": "perplexity",
@@ -32,27 +36,137 @@
     "path": "research/raw/Nante2-Perplexity.md",
     "language": "ru",
     "sha256": "9249334b4c6633bdce9bc0d02c9c88f45e6cc4ba04bdc7b040b32e9340d8cef2",
-    "stopHeadings": ["Works cited", "Sources"]
+    "stopHeadings": [
+      "Works cited",
+      "Sources"
+    ]
   },
   {
     "slug": "nante-food-perplexity",
     "path": "research/raw/Nante-Food-Perplexity.md",
     "language": "ru",
     "sha256": "7eb96859315d29b594c4e84f0318679d25c0ea3f788f999cb4f0a327c3d7de7c",
-    "stopHeadings": ["Works cited", "Sources"]
+    "stopHeadings": [
+      "Works cited",
+      "Sources"
+    ]
   },
   {
     "slug": "nante-3-days-chatgpt",
     "path": "research/raw/Nante-3-days-ChatGPT.md",
     "language": "en",
     "sha256": "54c89805f364fcd768c20d1a472ebbbd47cfa1c74d4cf1f46c64a97248c8c722",
-    "stopHeadings": ["Works cited", "Sources"]
+    "stopHeadings": [
+      "Works cited",
+      "Sources"
+    ]
   },
   {
     "slug": "events-nantes-perplexity",
     "path": "research/raw/Events-Nantes-Perplexity.md",
     "language": "en",
     "sha256": "5660f457a3a188f3fecd4ed823a0076817297f0c0d92d38ae22f46db14e32ece",
-    "stopHeadings": ["Works cited", "Sources", "References"]
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "References"
+    ]
+  },
+  {
+    "slug": "museums-brittany-perplexity",
+    "path": "research/raw/Museums-Brittany-Perplexity.md",
+    "language": "ru",
+    "sha256": "90cc56593d16170231eb23b782a19f726d4141519687ecc62a53a3122ab1913f",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
+  },
+  {
+    "slug": "beaches-claude",
+    "path": "research/raw/Beaches-Claude.md",
+    "language": "ru",
+    "sha256": "e6a3b9053ef62cc1045b22986953831075da20341a3998810fd47f1797b9e506",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
+  },
+  {
+    "slug": "beaches-brittany-perplexity",
+    "path": "research/raw/Beaches-Brittany-Perplexity.md",
+    "language": "ru",
+    "sha256": "856994473d11052af740b1eb00a2dfb8cc1cb91bbe96147cd5b50fb91ca79c42",
+    "stopHeadings": [
+      "Works cited",
+      "Sources"
+    ]
+  },
+  {
+    "slug": "food-brittany",
+    "path": "research/raw/Food-Brittany.md",
+    "language": "ru",
+    "sha256": "e6fde1427c7f60f3cc424cab90367678270ee7856a97b42f47c658cc1df01965",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
+  },
+  {
+    "slug": "family-activities-claude",
+    "path": "research/raw/Family-activities-Claude.md",
+    "language": "ru",
+    "sha256": "455e753e4c695ca72d219a8798adfda203a3a43dda558907c3b2fc1cae4709a0",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
+  },
+  {
+    "slug": "family-attractions-claude",
+    "path": "research/raw/family-attractions-Claude.md",
+    "language": "ru",
+    "sha256": "54618152d3692d6bbb960be8b7c86998cee7d88f1a3bfcf0021039ac8a685cf7",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
+  },
+  {
+    "slug": "castles-claude",
+    "path": "research/raw/Castles-Claude.md",
+    "language": "ru",
+    "sha256": "3c5e7c8ddec0ba4a43b781228d2b7361520823efcb4ca53b9029056cddd3eb55",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
+  },
+  {
+    "slug": "castles-brittany-chatgpt",
+    "path": "research/raw/Castles-Brittany-ChatGPT.md",
+    "language": "ru",
+    "sha256": "9b53e2b9fc82796bb515d13c31bf29a3796f3468ac09b076082a791e728e8fb4",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
+  },
+  {
+    "slug": "castles-largest-perplexity",
+    "path": "research/raw/Castles-Largest-Perplexity.md",
+    "language": "ru",
+    "sha256": "8311e39cf6bafe1786226a3eb98ad045361fa106b611e20e03f4593f64a4251e",
+    "stopHeadings": [
+      "Works cited",
+      "Sources"
+    ]
   }
 ]

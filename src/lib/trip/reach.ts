@@ -50,6 +50,7 @@ const REACH: Record<string, readonly ReachEntry[]> = {
     { place: "vannes", reach: "nearby" },
     { place: "auray-saint-goustan", reach: "nearby" },
     { place: "carnac-alignments", reach: "day-trip" },
+    { place: "musee-prehistoire-carnac", reach: "day-trip" },
     { place: "suscinio", reach: "day-trip" },
     { place: "ile-aux-moines", reach: "day-trip" },
     { place: "ile-d-arz", reach: "day-trip" },

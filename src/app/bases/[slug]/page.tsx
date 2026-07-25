@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { BaseHero } from "@/components/bases/BaseHero";
 import { BaseFacts } from "@/components/bases/BaseFacts";
 import { RelatedPlaces } from "@/components/bases/RelatedPlaces";
+import { CitationLink } from "@/components/content/CitationLink";
 import { NarratableContent } from "@/components/tts/NarratableContent";
 import { guideConfig } from "@/config/guide";
 import styles from "@/components/bases/base-detail.module.css";
@@ -153,12 +154,7 @@ export default async function BaseDetailPage({
           <ul className={styles.citationsList}>
             {dedupe(sourceLinks).map((link) => (
               <li key={link.ref}>
-                <Link
-                  href={link.href}
-                  aria-label={`Source ${link.sourceSlug}, block ${link.ref}`}
-                >
-                  {link.ref}
-                </Link>
+                <CitationLink refKey={link.ref} />
               </li>
             ))}
           </ul>
