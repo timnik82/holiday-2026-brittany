@@ -3418,8 +3418,18 @@
     ]
   },
   "museums-brittany-perplexity:b068": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-musee-beaux-arts-quimper",
+      "evidence:western-quimper-family-museums"
+    ],
+    "paragraphIds": [
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "quimper-what",
+      "quimper-family-museums",
+      "stay-quimper-rain"
+    ]
   },
   "museums-brittany-perplexity:b070": {
     "status": "retained",

@@ -26,7 +26,7 @@ Allow 1.5–2 hours and combine with Saint-Corentin cathedral next door. Tourism
 
 - **Visit duration:** 1.5 to 2 hours.
 - **Age fit:** 8+; stronger if the child likes painting stories than pure play.
-- **Weather fit:** fully indoor — the local rain fallback in Quimper reach.
+- **Weather fit:** fully indoor — the local rain fallback in Quimper.
 - **Booking:** check mbaq.fr for current opening; workshops may need booking.
 - **Transport:** central Quimper, walkable from the historic centre.
 - **Safety:** standard museum supervision.

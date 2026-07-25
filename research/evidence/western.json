@@ -446,8 +446,7 @@
     "kind": "fact",
     "sourceBlockRefs": [
       "festivals-claude:b005",
-      "brittany-with-kid-claude:b030",
-      "brittany-with-kid-claude:b041"
+      "brittany-with-kid-claude:b030"
     ],
     "sourceUrls": [
       "https://www.festivaldesfiletsbleus.bzh/"

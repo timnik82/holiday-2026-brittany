@@ -23,7 +23,7 @@ At the port of Le Guilvinec, the Haliotika fishing discovery centre runs interac
 
 - **Visit duration:** 2 to 3 hours.
 - **Age fit:** 5+; good for a curious 9 to 10-year-old.
-- **Weather fit:** partly indoor — useful when Beaux-Arts is enough for morning but you still want a port afternoon.
+- **Weather fit:** partly indoor — a useful wet-weather or port-side stop.
 - **Booking:** check tour times and auction-viewing hours before visiting.
 - **Transport:** day-trip range of Quimper; a car is recommended.
 - **Safety:** standard attraction and quayside supervision.
