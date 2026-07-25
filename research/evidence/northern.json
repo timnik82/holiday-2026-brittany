@@ -38,7 +38,8 @@
       "gemini-britany:b012",
       "perplexity:b019",
       "historical-cities-chatgpt:b006",
-      "brittany-with-kid-claude:b012"
+      "brittany-with-kid-claude:b012",
+      "mont-saint-michel-guide:b018"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -53,7 +54,8 @@
       "operaai:b016",
       "gemini-britany:b012",
       "perplexity:b019",
-      "family-attractions-claude:b034"
+      "family-attractions-claude:b034",
+      "mont-saint-michel-guide:b018"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -88,7 +90,9 @@
       "castles-brittany-chatgpt:b024",
       "castles-brittany-chatgpt:b025",
       "historical-cities-chatgpt:b008",
-      "brittany-with-kid-claude:b013"
+      "brittany-with-kid-claude:b013",
+      "mont-saint-michel-guide:b021",
+      "mont-saint-michel-guide:b022"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -100,7 +104,8 @@
     "kind": "recommendation",
     "sourceBlockRefs": [
       "chatgpt:b012",
-      "chatgpt:b013"
+      "chatgpt:b013",
+      "mont-saint-michel-guide:b020"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -130,7 +135,10 @@
       "perplexity:b021",
       "perplexity:b019",
       "brittany-with-kid-claude:b010",
-      "brittany-with-kid-claude:b011"
+      "brittany-with-kid-claude:b011",
+      "mont-saint-michel-guide:b004",
+      "mont-saint-michel-guide:b009",
+      "mont-saint-michel-guide:b027"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -418,6 +426,157 @@
     "qualifiers": [
       "Historical August sea temperatures, not a forecast."
     ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-msm-early-arrival",
+    "text": "In August, Mont-Saint-Michel peaks between 11:00 and 15:00–16:00. Arrive for abbey opening at 09:00, ideally on the car parks by 08:30–08:45; weekday mornings are quieter than weekends. Timed abbey tickets are strongly recommended — July–August ticket-office queues often run 30–60 minutes.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b004",
+      "mont-saint-michel-guide:b003",
+      "mont-saint-michel-guide:b007"
+    ],
+    "sourceUrls": [
+      "https://www.abbaye-mont-saint-michel.fr/"
+    ],
+    "qualifiers": [
+      "Crowd and queue patterns vary by day — re-check closer to the visit."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-msm-parking-2026",
+    "text": "Official MSM car parks (P2–P13, ~2.5 km out) in high season 1 July–31 August 2026 charge about €20 / €24 / €28 for up to 3 / 6 / 24 hours for a car; the first 30 minutes are free year-round. Online booking on msm-parking.com saves €1–2 and helps secure a space. The free evening window (18:30–03:00) does not apply in July–August.",
+    "kind": "price",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b005"
+    ],
+    "sourceUrls": [
+      "https://www.montsaintmichel.gouv.fr/"
+    ],
+    "qualifiers": [
+      "Parking tariffs change — re-check montsaintmichel.gouv.fr / msm-parking.com."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-msm-abbey-tickets-2026",
+    "text": "Abbey entry 1 April–30 September 2026 is €16 adult on the official monuments site; under-18s free with family; EU residents 18–25 free. Hours 1 May–31 August are 09:00–19:00 (last entry one hour before close). Book a timed slot online — some resellers still show an outdated €13 figure.",
+    "kind": "price",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b007",
+      "mont-saint-michel-guide:b035"
+    ],
+    "sourceUrls": [
+      "https://www.abbaye-mont-saint-michel.fr/"
+    ],
+    "qualifiers": [
+      "Prefer the official ticket price over reseller pages; Grand Aquarium tickets may unlock a €13 abbey rate."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-msm-tides-aug-2026",
+    "text": "Strong August 2026 tides peak 13–16 August (coefficient up to 102 on Friday 14 August). The mount fully becomes an island only on the evening of 14 August (high water about 21:28). View from the passerelle or Couesnon dam about two hours before high water; never walk the bay alone.",
+    "kind": "warning",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b008"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Island effect depends on wind and pressure — confirm on-site boards before entering the bay."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-msm-shuttle-passeur",
+    "text": "The free Le Passeur shuttle is included with parking and runs roughly every 5–15 minutes in high season (07:00–01:00), about 12 minutes to within 350 m of the walls. Walking the bridge takes 35–50 minutes; the paid horse cart La Maringote is another option.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b006"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-saint-malo-aquarium-pricing-2026",
+    "text": "Grand Aquarium high-season hours 11 July–31 August are about 09:30–20:00. Tickets run about €19.90 from age 13 and €15.90 ages 4–12 (under 4 free), with Nautibus and Abyssal Descender included and free on-site parking. An aquarium ticket can unlock a reduced €13 Mont-Saint-Michel abbey entry.",
+    "kind": "price",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b018",
+      "mont-saint-michel-guide:b019"
+    ],
+    "sourceUrls": [
+      "https://www.aquarium-st-malo.com/"
+    ],
+    "qualifiers": [
+      "Hours and prices change — re-check aquarium-st-malo.com."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-saint-malo-parking-shuttle",
+    "text": "Intra-Muros street parking is expensive and full in August. Prefer the large intercept car park (~800 spaces, about €3.30/24h) with a free shuttle to the old town every ~20 minutes in summer, or EFFIA parks along the walls; Rocabey is free but a 15–20 minute walk.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b019"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Shuttle frequency and tariffs are indicative — re-check locally."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-chateau-de-dinan",
+    "text": "Château de Dinan (14th-century keep) runs modern scenography on warfare and court life with hands-on facsimiles aimed at ages 6–12. July–August hours are about 10:30–19:00; adults ~€8, concessions €5, under-6 free, family pass (2+2) €21. Allow 45–60 minutes indoors.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b022",
+      "castles-brittany-chatgpt:b024",
+      "castles-brittany-chatgpt:b025"
+    ],
+    "sourceUrls": [
+      "https://www.chateaudedinan.fr/"
+    ],
+    "qualifiers": [
+      "Hours and prices change — re-check chateaudedinan.fr."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:northern-cancale-oyster-market-detail",
+    "text": "Cancale's Marché aux huîtres by the Houle lighthouse is open daily year-round; buy a dozen from the growers (about €5.50–7.50, from ~€6) and eat on the benches overlooking the bay. Arrive early in summer — free port parking fills fast. Pointe du Grouin adds about an hour of coastal views.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b020"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Summer oysters taste milder during spawning season but are still sold year-round."
+    ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:northern-distances-msm-cluster",
+    "text": "By car: Mont-Saint-Michel ↔ Saint-Malo ~50–60 minutes; Saint-Malo ↔ Cancale ~25–30 minutes; Saint-Malo ↔ Dinan ~30–40 minutes. Saint-Malo is the practical hub for the trio; a pure MSM day from Saint-Malo means leaving about 07:45 to park by 08:45.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "mont-saint-michel-guide:b015",
+      "mont-saint-michel-guide:b016",
+      "mont-saint-michel-guide:b027"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
     "timeSensitive": false
   }
 ]

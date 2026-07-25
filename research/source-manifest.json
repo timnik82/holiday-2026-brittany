@@ -211,5 +211,16 @@
       "Источники"
     ],
     "sha256": "bb685a1e6eee25dd3761cb47afe9d2547348832a59252c7683128f044ba1989d"
+  },
+  {
+    "slug": "mont-saint-michel-guide",
+    "path": "research/raw/Mont-Saint-Michel-guide.md",
+    "language": "ru",
+    "sha256": "8b24b039a336f4e529c54e0d705e2d03b858e4454f9df259effda5d0af3ffcbf",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ]
   }
 ]

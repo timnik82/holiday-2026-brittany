@@ -2,7 +2,7 @@
 slug: saint-malo-dinan
 title: Saint-Malo / Dinan
 summary: The most balanced first-trip base, pairing a walled corsair city with a medieval river town, family beaches, a strong aquarium, and day trips that work without a car.
-updatedAt: "2026-07-01"
+updatedAt: "2026-07-25"
 status: review
 region: "North Brittany — Côte d'Émeraude"
 coordinates:
@@ -35,21 +35,21 @@ Inside the walls, Plage de Bon-Secours is the family beach, with a seawater tida
 
 ## What to do
 
-<!-- paragraph id="saint-malo-ramparts-aquarium" sources="evidence:northern-saint-malo-ramparts-walk,evidence:northern-saint-malo-grand-aquarium" -->
-A classic family day starts with the roughly 2 km walk atop the ramparts and Bon-Secours, then the Grand Aquarium — the area's leading family attraction and main rainy-day anchor — and an afternoon walk to Petit Bé at low tide.
+<!-- paragraph id="saint-malo-ramparts-aquarium" sources="evidence:northern-saint-malo-ramparts-walk,evidence:northern-saint-malo-grand-aquarium,evidence:northern-saint-malo-aquarium-pricing-2026" -->
+A classic family day starts with the roughly 2 km walk atop the ramparts and Bon-Secours, then the Grand Aquarium — the area's leading family attraction and main rainy-day anchor — and an afternoon walk to Petit Bé at low tide. Prefer the intercept car park and free summer shuttle over Intra-Muros street parking.
 
-<!-- paragraph id="saint-malo-rainy-activities" sources="evidence:northern-saint-malo-cobac-labyrinthe" -->
-For fair-weather or wet-weather variety, the area also backs up with the Cobac Parc water and amusement park, the pirate-themed Labyrinthe du Corsaire corn maze, and nearby rope parks and zoos. Verify seasonal opening before visiting.
+<!-- paragraph id="saint-malo-rainy-activities" sources="evidence:northern-saint-malo-cobac-labyrinthe,evidence:northern-chateau-de-dinan" -->
+For fair-weather or wet-weather variety, the area also backs up with the Cobac Parc water and amusement park, the pirate-themed Labyrinthe du Corsaire corn maze, and nearby rope parks and zoos. On a Dinan day the Château de Dinan keep is the second clear indoor option. Verify seasonal opening before visiting.
 
 ## Dinan
 
-<!-- paragraph id="saint-malo-dinan-town" sources="evidence:northern-dinan-medieval-town" -->
-Dinan is a medieval town about 30 km inland on the Rance estuary, with a 14th-century castle, half-timbered houses, and the steep cobbled rue du Jerzual down to a picturesque port. It is reached in roughly 40 minutes by car from Saint-Malo, by train via Rennes, or in summer by a Rance river cruise.
+<!-- paragraph id="saint-malo-dinan-town" sources="evidence:northern-dinan-medieval-town,evidence:northern-chateau-de-dinan" -->
+Dinan is a medieval town about 30 km inland on the Rance estuary, with half-timbered houses, the steep cobbled rue du Jerzual down to a picturesque port, and the Château de Dinan keep as the indoor wet-day stop. It is reached in roughly 30–40 minutes by car from Saint-Malo, by train via Rennes, or in summer by a Rance river cruise.
 
 ## Day trips
 
-<!-- paragraph id="saint-malo-day-trips" sources="evidence:northern-cap-frehel-fort-la-latte,evidence:northern-cancale-oysters,evidence:northern-mont-saint-michel-day-trip" -->
-The signature day trips are Cancale (oysters at the harbour stalls), Cap Fréhel and Fort La Latte (clifftop heath and a headland castle, most practical by car), and Mont-Saint-Michel about one hour away. These are the main reasons a car is described as helpful here even though the town itself is walkable.
+<!-- paragraph id="saint-malo-day-trips" sources="evidence:northern-cap-frehel-fort-la-latte,evidence:northern-cancale-oysters,evidence:northern-mont-saint-michel-day-trip,evidence:northern-distances-msm-cluster,evidence:northern-msm-early-arrival" -->
+The signature day trips are Cancale (oysters at the harbour stalls — arrive early for free port parking), Cap Fréhel and Fort La Latte (clifftop heath and a headland castle, most practical by car), and Mont-Saint-Michel about 50–60 minutes away (leave early, timed abbey tickets, paid outer car parks). These are the main reasons a car is described as helpful here even though the town itself is walkable.
 
 ## Transport
 

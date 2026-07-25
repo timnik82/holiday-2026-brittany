@@ -2388,5 +2388,113 @@
   },
   "brittany-with-kid-claude:b044": {
     "substantive": true
+  },
+  "mont-saint-michel-guide:b001": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b002": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b003": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b004": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b005": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b006": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b007": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b008": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b009": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b010": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b011": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b012": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b013": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b014": {
+    "substantive": false,
+    "reason": "Section label only"
+  },
+  "mont-saint-michel-guide:b015": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b016": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b017": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b018": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b019": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b020": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b021": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b022": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b023": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b024": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b025": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b026": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b027": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b028": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b029": {
+    "substantive": false,
+    "reason": "Section label only"
+  },
+  "mont-saint-michel-guide:b030": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b031": {
+    "substantive": false,
+    "reason": "Section label only"
+  },
+  "mont-saint-michel-guide:b032": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b033": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b034": {
+    "substantive": true
+  },
+  "mont-saint-michel-guide:b035": {
+    "substantive": true
   }
 }
