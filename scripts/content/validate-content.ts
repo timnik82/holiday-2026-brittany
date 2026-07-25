@@ -16,6 +16,7 @@ import {
 } from "../../src/lib/content/parse";
 import { guideConfig } from "../../src/config/guide";
 import { allReachEntries } from "../../src/lib/trip/reach";
+import { RELATED_PLACES } from "../../src/components/bases/related-places-data";
 import { extractBlocks, type SourceBlock } from "../../src/lib/content/source-blocks";
 import {
   sourceManifestSchema,
@@ -195,6 +196,25 @@ function main() {
     }
   }
 
+  // The base→places relation names places by slug too, and has never been
+  // checked. It is a separate relation from reach, not a duplicate of it — a
+  // place belongs to one base but is reachable from any number of stays — so
+  // both lists exist on purpose and both need the same integrity check.
+  for (const [baseSlug, places] of Object.entries(RELATED_PLACES)) {
+    if (!baseSlugs.has(baseSlug)) {
+      errors.push({
+        message: `src/components/bases/related-places-data.ts: "${baseSlug}" has no page in content/bases/.`,
+      });
+    }
+    for (const place of places) {
+      if (!publishedPlaceSlugs.has(place.slug)) {
+        errors.push({
+          message: `src/components/bases/related-places-data.ts: ${baseSlug} lists "${place.slug}", which is not a reviewed page in content/things-to-do/.`,
+        });
+      }
+    }
+  }
+
   // Every stay's base must exist as a page. `baseSlug` lives in the trip
   // config, out of reach of content validation, so a renamed base page would
   // otherwise leave the home page and the stay cards linking into a 404.
@@ -371,7 +391,10 @@ function main() {
   }
 
   if (unmarkedPlaces.length > 0) {
-    console.log("\nℹ️  Places missing a situational field (partly invisible to the day filter):");
+    // Worded for what happens today: nothing filters on these fields yet, so an
+    // unmarked place is still listed and still visible. Saying it is hidden
+    // would tell an author the gap is already enforced somewhere.
+    console.log("\nℹ️  Places missing a situational field (they rank neutral once the day selector lands):");
     for (const note of unmarkedPlaces.sort()) {
       console.log(`  ${note}`);
     }

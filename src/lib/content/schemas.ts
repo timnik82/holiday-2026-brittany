@@ -42,8 +42,10 @@ export const thingsToDoFrontmatterSchema = pageFrontmatterSchema.extend({
   /**
    * How long a visit takes, in hours, derived from each page's own "Visit
    * duration" line against one conversion table (half-day 3–4 h, full day
-   * 6–8 h). Optional: a place whose page states no duration is left unmarked
-   * and ranks neutral rather than being guessed at.
+   * 6–8 h). A range may span both buckets: about a third of the corpus reads
+   * "a half-day to a full day", which becomes 3–8 rather than being forced into
+   * one. Optional: a place whose page states no duration is left unmarked and
+   * ranks neutral rather than being guessed at.
    */
   durationHours: z
     .object({

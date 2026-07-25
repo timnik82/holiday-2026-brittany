@@ -75,22 +75,12 @@ const REACH: Record<string, readonly ReachEntry[]> = {
 };
 
 /**
- * Everything reachable from one stay, most local first; empty if unwritten.
+ * Every (stayId, place, reach) triple, for validation and inverse lookups.
  *
- * Own-property lookups only: a plain object inherits `toString` and friends, so
- * `REACH["toString"]` would otherwise return a function where an array is
- * documented.
+ * The per-stay accessor a reader would expect here is deliberately absent: the
+ * day selector that needs it lands in the next task, and an exported function
+ * nothing calls is an invitation to trust behaviour nothing exercises.
  */
-export function placesInReach(stayId: string): readonly ReachEntry[] {
-  return Object.hasOwn(REACH, stayId) ? REACH[stayId] : [];
-}
-
-/** Whether a stay has a curated reach list at all. */
-export function hasReachList(stayId: string): boolean {
-  return Object.hasOwn(REACH, stayId);
-}
-
-/** Every (stayId, place, reach) triple, for validation and inverse lookups. */
 export function allReachEntries(): { stayId: string; entry: ReachEntry }[] {
   return Object.entries(REACH).flatMap(([stayId, entries]) =>
     entries.map((entry) => ({ stayId, entry }))
