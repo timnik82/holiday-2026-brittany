@@ -77,19 +77,23 @@ export function TodayCard({
         {day.moving && <span className={styles.chip}>Moving from {day.leaving?.place}</span>}
       </p>
       {stay.note && <p>{stay.note}</p>}
-      <p className={styles.todayLinks}>
-        {page && (
-          <>
-            <Link href={`/trip/${page.slug}`}>This stay, day by day →</Link>{" "}
-          </>
-        )}
-        {stay.baseSlug && (
-          <>
-            <Link href={`/bases/${stay.baseSlug}`}>About this base →</Link>{" "}
-            <Link href={`/things-to-do?base=${stay.baseSlug}`}>What is nearby →</Link>
-          </>
-        )}
-      </p>
+      {/* The Nantes stays have neither a page nor a base until their research
+          lands, so the row is omitted rather than rendered empty. */}
+      {(page || stay.baseSlug) && (
+        <p className={styles.todayLinks}>
+          {page && (
+            <>
+              <Link href={`/trip/${page.slug}`}>This stay, day by day →</Link>{" "}
+            </>
+          )}
+          {stay.baseSlug && (
+            <>
+              <Link href={`/bases/${stay.baseSlug}`}>About this base →</Link>{" "}
+              <Link href={`/things-to-do?base=${stay.baseSlug}`}>What is nearby →</Link>
+            </>
+          )}
+        </p>
+      )}
     </section>
   );
 }

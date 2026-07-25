@@ -88,16 +88,19 @@ export function listStays(): StaySummary[] {
   }));
 }
 
-/** One stay by id, with the stays before and after it in travel order. */
-export function findStay(id: string): StayNeighbours | undefined {
+/** Every stay in travel order, each knowing the stays either side of it. */
+export function listStayNeighbours(): StayNeighbours[] {
   const stays = listStays();
-  const index = stays.findIndex((entry) => entry.stay.id === id);
-  if (index === -1) return undefined;
-  return {
-    ...stays[index],
+  return stays.map((entry, index) => ({
+    ...entry,
     previous: stays[index - 1]?.stay ?? null,
     next: stays[index + 1]?.stay ?? null,
-  };
+  }));
+}
+
+/** One stay by id, with the stays before and after it in travel order. */
+export function findStay(id: string): StayNeighbours | undefined {
+  return listStayNeighbours().find((entry) => entry.stay.id === id);
 }
 
 /** Distinct base slugs the booked trip actually stays on, in travel order. */

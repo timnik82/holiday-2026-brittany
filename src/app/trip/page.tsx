@@ -6,7 +6,7 @@ import type { StayPage } from "@/lib/content/registry";
 import { StayTimeline } from "@/components/trip/StayTimeline";
 import { carRequirementLabel } from "@/components/trip/labels";
 import styles from "@/components/trip/trip.module.css";
-import { findStay, listStays } from "@/lib/trip/stays";
+import { listStayNeighbours } from "@/lib/trip/stays";
 import type { StayNeighbours } from "@/lib/trip/stays";
 import { formatDateRange } from "@/lib/trip/format";
 
@@ -46,12 +46,10 @@ function loadTripIndex(): TripIndexData {
   }
   const pageByStayId = getStayPages(allPages);
 
-  const cards: StayCard[] = [];
-  for (const { stay } of listStays()) {
-    const resolved = findStay(stay.id);
-    if (!resolved) continue;
-    cards.push({ stay: resolved, page: pageByStayId.get(stay.id) ?? null });
-  }
+  const cards: StayCard[] = listStayNeighbours().map((stay) => ({
+    stay,
+    page: pageByStayId.get(stay.stay.id) ?? null,
+  }));
 
   return { cards, baseTitles };
 }
