@@ -114,9 +114,13 @@ export interface DayOptionPlace extends DirectoryPlace {
  * (the content validator already guards against that in CI).
  */
 export function loadDayOptionPlaces(stayId: string): DayOptionPlace[] {
+  const reach = reachForStay(stayId);
+  // Nantes / unknown stays have no curated reach — skip the directory scan.
+  if (reach.length === 0) return [];
+
   const bySlug = new Map(loadDirectoryPlaces().map((place) => [place.slug, place]));
   const options: DayOptionPlace[] = [];
-  for (const entry of reachForStay(stayId)) {
+  for (const entry of reach) {
     const place = bySlug.get(entry.place);
     if (!place) continue;
     options.push({ ...place, reach: entry.reach });

@@ -120,13 +120,13 @@ describe("rankDayOptions", () => {
     );
   });
 
-  it("breaks score ties by slug", () => {
+  it("keeps curated input order when scores tie", () => {
     const ranked = rankDayOptions(
-      [place("zeta"), place("alpha")],
+      [place("zeta"), place("alpha"), place("mid")],
       "fair",
       8
     );
-    expect(ranked.map((r) => r.slug)).toEqual(["alpha", "zeta"]);
+    expect(ranked.map((r) => r.slug)).toEqual(["zeta", "alpha", "mid"]);
   });
 });
 

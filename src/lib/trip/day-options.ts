@@ -68,6 +68,9 @@ export function scoreDayOption(
 /**
  * Rank every place in reach. Nothing is dropped — unsuitable options sink with
  * a stated reason so the list degrades gracefully while fields are still sparse.
+ *
+ * Equal scores keep the input order (curated nearby-first from the reach list)
+ * so day conditions only reorder places when their scores actually differ.
  */
 export function rankDayOptions(
   inputs: DayOptionInput[],
@@ -75,11 +78,17 @@ export function rankDayOptions(
   availableHours: DayTimeHours
 ): DayOptionResult[] {
   return inputs
-    .map((input) => scoreDayOption(input, weather, availableHours))
+    .map((input, index) => ({
+      result: scoreDayOption(input, weather, availableHours),
+      index,
+    }))
     .sort((left, right) => {
-      if (left.score !== right.score) return right.score - left.score;
-      return left.slug.localeCompare(right.slug);
-    });
+      if (left.result.score !== right.result.score) {
+        return right.result.score - left.result.score;
+      }
+      return left.index - right.index;
+    })
+    .map(({ result }) => result);
 }
 
 /** Parse `?weather=` — unknown values fall back to fair. */
