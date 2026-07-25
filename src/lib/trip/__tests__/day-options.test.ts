@@ -28,10 +28,57 @@ describe("reachForStay", () => {
     expect(entries.find((e) => e.place === "quimper")?.reach).toBe("nearby");
   });
 
-  it("returns an empty list for Nantes and unknown stays", () => {
-    expect(reachForStay("nantes-arrival")).toEqual([]);
-    expect(reachForStay("nantes-departure")).toEqual([]);
+  it("returns curated entries for Nantes arrival stay", () => {
+    const entries = reachForStay("nantes-arrival");
+    expect(entries.some((e) => e.place === "les-machines-de-l-ile")).toBe(true);
+    expect(entries.find((e) => e.place === "jules-verne-planetarium")?.reach).toBe(
+      "nearby"
+    );
+  });
+
+  it("returns a smaller evening-oriented list for Nantes departure", () => {
+    const entries = reachForStay("nantes-departure");
+    expect(entries.map((e) => e.place)).toEqual([
+      "chateau-des-ducs-nantes",
+      "le-voyage-a-nantes",
+      "les-machines-de-l-ile",
+    ]);
+  });
+
+  it("returns an empty list for unknown stays", () => {
     expect(reachForStay("not-a-stay")).toEqual([]);
+  });
+});
+
+describe("rankDayOptions for Nantes", () => {
+  it("puts indoor options above outdoor ones in rain with two hours free", () => {
+    const ranked = rankDayOptions(
+      [
+        place("jardin-extraordinaire", {
+          weatherFit: "outdoor",
+          durationHours: { min: 2, max: 3 },
+          reach: "nearby",
+        }),
+        place("jules-verne-planetarium", {
+          weatherFit: "indoor",
+          durationHours: { min: 3, max: 4 },
+          reach: "nearby",
+        }),
+        place("chateau-des-ducs-nantes", {
+          weatherFit: "mixed",
+          durationHours: { min: 2, max: 4 },
+          reach: "nearby",
+        }),
+      ],
+      "rain",
+      2
+    );
+
+    expect(ranked[0]?.slug).toBe("chateau-des-ducs-nantes");
+    expect(ranked[ranked.length - 1]?.slug).toBe("jardin-extraordinaire");
+    expect(
+      ranked.find((r) => r.slug === "jardin-extraordinaire")?.reasons
+    ).toContain("outdoor — less suited to rain");
   });
 });
 

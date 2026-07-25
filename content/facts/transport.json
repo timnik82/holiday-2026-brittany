@@ -85,6 +85,50 @@
       "reviewWindowDays": 90,
       "notes": "Fuel and tolls ~€300–400 one way; needs a 2-day split with an overnight stop. Flying plus a local rental is the lighter option.",
       "evidenceRef": "evidence:routes-own-car-impractical"
+    },
+    {
+      "id": "shuttle-nantes-airport",
+      "label": "Nantes airport shuttle",
+      "value": "Every 20 min in summer, last airport departure 00:00, ~20–25 min to city, €10",
+      "officialSource": "Naolib",
+      "sourceUrl": "https://naolib.fr/fr/se-rendre-a-laeroport",
+      "checkedAt": "2026-07-24",
+      "reviewWindowDays": 30,
+      "notes": "Compatible with a 20:05 landing; city stop at gare routière quai A from 30 March 2026.",
+      "evidenceRef": "evidence:nantes-arrival-shuttle"
+    },
+    {
+      "id": "nantes-weekend-free-transport",
+      "label": "Free weekend transport in Nantes",
+      "value": "Tram, bus and navibus free Sat–Sun; airport shuttle excluded",
+      "officialSource": "Naolib",
+      "sourceUrl": "https://naolib.fr/gratuite-des-transports-en-commun",
+      "checkedAt": "2026-07-24",
+      "reviewWindowDays": 30,
+      "notes": "Applies to 8–9 August 2026 during the arrival stay. Do not assume the shuttle is free.",
+      "evidenceRef": "evidence:nantes-transport-weekend-free"
+    },
+    {
+      "id": "nantes-tram-line1-works",
+      "label": "Nantes tram Line 1 summer works",
+      "value": "Partial closure Commerce–François-Mitterrand, 14 Jun–30 Aug 2026",
+      "officialSource": "Naolib / Nantes Métropole",
+      "sourceUrl": "https://naolib.fr/fr/actualites/cet-ete-la-ligne-1-fait-peau-neuve-et-on-soccupe-de-vous",
+      "checkedAt": "2026-07-24",
+      "reviewWindowDays": 30,
+      "notes": "Replacement buses operate; allow extra time for Île de Nantes and west-bank sites. Re-check Naolib before travel.",
+      "evidenceRef": "evidence:nantes-transport-line1-closure"
+    },
+    {
+      "id": "pass-nantes-shuttle",
+      "label": "Pass Nantes airport shuttle",
+      "value": "One return airport shuttle included; activation required",
+      "officialSource": "Pass Nantes FAQ",
+      "sourceUrl": "https://www.levoyageanantes.fr/a-faire/pass-nantes/faq-pass-nantes/",
+      "checkedAt": "2026-07-24",
+      "reviewWindowDays": 30,
+      "notes": "Grand Éléphant is not included; Galerie des Machines and Carrousel des Mondes Marins are included once each.",
+      "evidenceRef": "evidence:nantes-pass-nantes-inclusions"
     }
   ]
 }
