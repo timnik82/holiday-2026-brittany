@@ -1,8 +1,8 @@
 ---
 slug: dinan
 title: Dinan medieval town
-summary: A medieval river town on the Rance estuary with a 14th-century castle, half-timbered houses, and a steep cobbled street down to the port.
-updatedAt: "2026-07-01"
+summary: A medieval river town on the Rance — half-timbered streets, rue du Jerzual to the port, and the Château keep as the indoor wet-day stop.
+updatedAt: "2026-07-25"
 status: review
 category: history
 ageRange: 6+
@@ -16,14 +16,19 @@ durationHours:
 
 ## What it is
 
-<!-- paragraph id="dinan-what" sources="evidence:northern-dinan-medieval-town" -->
-Dinan is a medieval town about 30 km inland on the Rance estuary, with a 14th-century castle, half-timbered houses, and the steep cobbled rue du Jerzual leading down to a picturesque port. It pairs well with Saint-Malo as the calmer, history-led half of the base.
+<!-- paragraph id="dinan-what" sources="evidence:northern-dinan-medieval-town,evidence:northern-chateau-de-dinan" -->
+Dinan is a medieval town about 30–40 minutes inland on the Rance estuary, with half-timbered houses and the steep cobbled rue du Jerzual leading down to a picturesque port. The [Château de Dinan](/things-to-do/chateau-de-dinan) keep adds the indoor half of the day.
 
 ## Planning
 
+<!-- paragraph id="dinan-planning" sources="evidence:northern-dinan-medieval-town,evidence:northern-chateau-de-dinan,evidence:northern-distances-msm-cluster,evidence:northern-dinan-parking" -->
+Start at the castle if the forecast looks wet, then walk the streets and descend Jerzual to the port. In summer a Rance river cruise is an alternative to walking back up the hill.
+
 - **Visit duration:** a full day.
 - **Age fit:** 6+; the castle and the descent to the port appeal to a 9 to 10-year-old.
-- **Weather fit:** mostly outdoor; the castle and small museums offer some cover.
-- **Booking:** the Thursday market needs no booking; castle and museums vary.
-- **Transport:** about 40 minutes by car from Saint-Malo, by train via Rennes, or in summer by a Rance river cruise.
+- **Weather fit:** mostly outdoor; the [castle](/things-to-do/chateau-de-dinan) is the indoor fallback.
+- **Booking:** Thursday market needs no booking; castle walk-up is usually fine.
+- **Parking:** free lots near the station, Esplanade de la Résistance, and the port (rue du Petit Fort); paid barrier options include Duguesclin (~110 m from the castle) and Centre Historique underground.
+- **Transport:** about 30–40 minutes by car from Saint-Malo, by train via Rennes, or in summer by a Rance river cruise.
 - **Safety:** the rue du Jerzual is steep and cobbled — take care with prams or in wet weather.
+- **Castle hours:** see [Château de Dinan](/things-to-do/chateau-de-dinan) for current opening times and tickets.

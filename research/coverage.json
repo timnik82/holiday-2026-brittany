@@ -5025,5 +5025,246 @@
   "brittany-with-kid-claude:b044": {
     "status": "duplicate",
     "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "mont-saint-michel-guide:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-msm-tides-aug-2026"
+  },
+  "mont-saint-michel-guide:b003": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-msm-early-arrival"
+  },
+  "mont-saint-michel-guide:b004": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-mont-saint-michel-day-trip",
+      "evidence:northern-msm-early-arrival",
+      "evidence:northern-msm-parking-2026",
+      "evidence:northern-msm-abbey-tickets-2026",
+      "evidence:northern-msm-shuttle-passeur"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-what",
+      "mont-saint-michel-planning",
+      "stay-saint-malo-day-3"
+    ]
+  },
+  "mont-saint-michel-guide:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-mont-saint-michel-day-trip",
+      "evidence:northern-msm-early-arrival",
+      "evidence:northern-msm-parking-2026",
+      "evidence:northern-msm-abbey-tickets-2026",
+      "evidence:northern-msm-shuttle-passeur"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-what",
+      "mont-saint-michel-planning",
+      "stay-saint-malo-day-3"
+    ]
+  },
+  "mont-saint-michel-guide:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-mont-saint-michel-day-trip",
+      "evidence:northern-msm-early-arrival",
+      "evidence:northern-msm-parking-2026",
+      "evidence:northern-msm-abbey-tickets-2026",
+      "evidence:northern-msm-shuttle-passeur"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-what",
+      "mont-saint-michel-planning",
+      "stay-saint-malo-day-3"
+    ]
+  },
+  "mont-saint-michel-guide:b007": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-mont-saint-michel-day-trip",
+      "evidence:northern-msm-early-arrival",
+      "evidence:northern-msm-parking-2026",
+      "evidence:northern-msm-abbey-tickets-2026",
+      "evidence:northern-msm-shuttle-passeur"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-what",
+      "mont-saint-michel-planning",
+      "stay-saint-malo-day-3"
+    ]
+  },
+  "mont-saint-michel-guide:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-msm-tides-aug-2026"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-tides"
+    ]
+  },
+  "mont-saint-michel-guide:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-mont-saint-michel-day-trip"
+  },
+  "mont-saint-michel-guide:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-msm-bay-crossing"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-planning"
+    ]
+  },
+  "mont-saint-michel-guide:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-msm-bay-crossing"
+  },
+  "mont-saint-michel-guide:b015": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-distances-msm-cluster"
+    ],
+    "paragraphIds": [
+      "stay-saint-malo-arrival",
+      "stay-saint-malo-day-3",
+      "mont-saint-michel-planning"
+    ]
+  },
+  "mont-saint-michel-guide:b016": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-distances-msm-cluster"
+    ],
+    "paragraphIds": [
+      "stay-saint-malo-arrival",
+      "stay-saint-malo-day-3",
+      "mont-saint-michel-planning"
+    ]
+  },
+  "mont-saint-michel-guide:b018": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-saint-malo-aquarium-pricing-2026",
+      "evidence:northern-saint-malo-parking-shuttle"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "saint-malo-walls-planning",
+      "grand-aquarium-what",
+      "grand-aquarium-planning",
+      "stay-saint-malo-day-2",
+      "stay-saint-malo-rain"
+    ]
+  },
+  "mont-saint-michel-guide:b019": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-grand-aquarium",
+      "evidence:northern-saint-malo-aquarium-pricing-2026",
+      "evidence:northern-saint-malo-parking-shuttle"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "saint-malo-walls-planning",
+      "grand-aquarium-what",
+      "grand-aquarium-planning",
+      "stay-saint-malo-day-2",
+      "stay-saint-malo-rain"
+    ]
+  },
+  "mont-saint-michel-guide:b020": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-cancale-oysters",
+      "evidence:northern-cancale-oyster-market-detail"
+    ],
+    "paragraphIds": [
+      "cancale-what",
+      "cancale-planning",
+      "stay-saint-malo-alternatives"
+    ]
+  },
+  "mont-saint-michel-guide:b021": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-chateau-de-dinan"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "dinan-planning",
+      "chateau-de-dinan-what",
+      "chateau-de-dinan-planning",
+      "stay-saint-malo-day-4",
+      "stay-saint-malo-rain"
+    ]
+  },
+  "mont-saint-michel-guide:b022": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town",
+      "evidence:northern-chateau-de-dinan"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "dinan-planning",
+      "chateau-de-dinan-what",
+      "chateau-de-dinan-planning",
+      "stay-saint-malo-day-4",
+      "stay-saint-malo-rain"
+    ]
+  },
+  "mont-saint-michel-guide:b023": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-parking"
+    ],
+    "paragraphIds": [
+      "dinan-planning"
+    ]
+  },
+  "mont-saint-michel-guide:b027": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-distances-msm-cluster"
+    ],
+    "paragraphIds": [
+      "stay-saint-malo-arrival",
+      "stay-saint-malo-day-3",
+      "mont-saint-michel-planning"
+    ]
+  },
+  "mont-saint-michel-guide:b028": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-distances-msm-cluster"
+  },
+  "mont-saint-michel-guide:b030": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-msm-abbey-tickets-2026"
+  },
+  "mont-saint-michel-guide:b032": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-msm-parking-2026"
+  },
+  "mont-saint-michel-guide:b033": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-food"
+  },
+  "mont-saint-michel-guide:b035": {
+    "status": "conflict",
+    "conflictId": "conflict:msm-abbey-price-2026",
+    "evidenceIds": [
+      "evidence:northern-msm-abbey-tickets-2026",
+      "evidence:northern-saint-malo-aquarium-pricing-2026"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-planning",
+      "grand-aquarium-planning"
+    ],
+    "interpretation": "Use the official high-season €16 abbey tariff unless presenting a valid Grand Aquarium ticket that unlocks the €13 rate; ignore reseller pages still showing €13 as the standard price."
   }
 }

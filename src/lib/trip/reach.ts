@@ -84,6 +84,7 @@ const REACH: Record<string, readonly ReachEntry[]> = {
     { place: "grand-aquarium", reach: "nearby" },
     { place: "cancale", reach: "day-trip" },
     { place: "dinan", reach: "day-trip" },
+    { place: "chateau-de-dinan", reach: "day-trip" },
     { place: "cap-frehel-fort-la-latte", reach: "day-trip" },
     { place: "mont-saint-michel", reach: "day-trip" },
   ],

@@ -1,8 +1,8 @@
 ---
 slug: mont-saint-michel
 title: Mont-Saint-Michel
-summary: The signature day trip from Saint-Malo — a tidal abbey-island about one hour away, treated by the research as a natural northern day trip.
-updatedAt: "2026-07-01"
+summary: The signature day trip from Saint-Malo — timed abbey tickets, paid outer car parks, and a free shuttle to the walls; go early in August.
+updatedAt: "2026-07-25"
 status: review
 category: history
 ageRange: 6+
@@ -16,14 +16,27 @@ durationHours:
 
 ## What it is
 
-<!-- paragraph id="mont-saint-michel-what" sources="evidence:northern-mont-saint-michel-day-trip" -->
-Mont-Saint-Michel sits about one hour from Saint-Malo and is repeatedly named the signature day trip from the base. It adds a major historical and cultural anchor without committing the family to a second base. Although administratively in Normandy, the supplied research treats it as a natural northern day trip.
+<!-- paragraph id="mont-saint-michel-what" sources="evidence:northern-mont-saint-michel-day-trip,evidence:northern-distances-msm-cluster" -->
+Mont-Saint-Michel sits about 50–60 minutes from Saint-Malo and is the signature northern day trip from the base. Although administratively in Normandy, the research treats it as a natural add-on without a second check-in.
 
 ## Planning
+
+<!-- paragraph id="mont-saint-michel-planning" sources="evidence:northern-msm-early-arrival,evidence:northern-msm-parking-2026,evidence:northern-msm-abbey-tickets-2026,evidence:northern-msm-shuttle-passeur,evidence:northern-distances-msm-cluster,evidence:northern-msm-bay-crossing" -->
+August peaks between 11:00 and mid-afternoon. Leave Saint-Malo around 07:30–07:45 to be on the car parks by **08:30** — the shuttle alone takes about 12 minutes and still leaves a short walk to the walls, so 08:45 is too late for a reliable 09:00 abbey slot. Book a timed abbey ticket online — ticket-office queues often run 30–60 minutes in July–August.
 
 - **Visit duration:** a full day.
 - **Age fit:** 6+; the abbey, ramparts, and tidal setting suit a 9 to 10-year-old.
 - **Weather fit:** mostly outdoor; the abbey interior offers cover.
-- **Booking:** book abbey tickets in advance for August — crowds are heavy.
-- **Transport:** about one hour by car from Saint-Malo; organised tours and coaches also run.
-- **Safety:** August is extremely busy — arrive early or late in the day to avoid the worst queues and heat.
+- **Parking:** official P2–P13 (~2.5 km out); high season 1 Jul–31 Aug 2026 about €20 / €24 / €28 for up to 3 / 6 / 24 hours; book on [msm-parking.com](https://www.msm-parking.com/). The free evening window does not apply in July–August.
+- **Shuttle:** free Le Passeur every 5–15 minutes in high season (~12 minutes to within 350 m of the walls); walking the bridge takes 35–50 minutes.
+- **Abbey tickets:** 1 Apr–30 Sep 2026 €16 adult on the official site; under-18s free with family. Prefer the official tariff — some resellers still show €13; a Grand Aquarium ticket may unlock a €13 rate.
+- **Hours:** 1 May–31 Aug abbey 09:00–19:00 (last entry one hour before close).
+- **Transport:** about 50–60 minutes by car from Saint-Malo; organised coaches also run.
+- **Optional bay walk:** short guided formats (Balade découverte ~2 h, or Cap sur Tombelaine ~3 h) suit ages about 8–10 — never enter the bay alone.
+- **Safety:** August is extremely busy — arrive early; never walk the bay alone.
+- **Last checked:** parking and abbey tariffs for summer 2026.
+
+## Tides
+
+<!-- paragraph id="mont-saint-michel-tides" sources="evidence:northern-msm-tides-aug-2026" -->
+Strong August 2026 tides peak 13–16 August (coefficient up to 102 on Friday 14 August). The mount fully becomes an island only on the evening of 14 August (high water about 21:28). View from the passerelle or Couesnon dam about two hours before high water — confirm on-site boards before entering the bay.
