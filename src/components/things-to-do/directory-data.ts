@@ -17,6 +17,10 @@ export interface DirectoryPlace {
   ageRange: string | undefined;
   baseSlug: string | undefined;
   baseTitle: string | undefined;
+  /** Undefined where the page states no weather fit; ranks neutral. */
+  weatherFit: ThingsToDoFrontmatter["weatherFit"];
+  /** Undefined where the page states no duration; ranks neutral. */
+  durationHours: ThingsToDoFrontmatter["durationHours"];
   updatedAt: string;
   status: string;
 }
@@ -85,6 +89,8 @@ export function loadDirectoryPlaces(): DirectoryPlace[] {
         ageRange: frontmatter.ageRange,
         baseSlug,
         baseTitle: baseSlug ? baseTitles.get(baseSlug) : undefined,
+        weatherFit: frontmatter.weatherFit,
+        durationHours: frontmatter.durationHours,
         updatedAt: entry.page.updatedAt,
         status: entry.page.status,
       };

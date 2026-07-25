@@ -7,6 +7,7 @@ import {
   SCHEMA_BY_CATEGORY,
   CONTENT_CATEGORIES,
   stayFrontmatterSchema,
+  thingsToDoFrontmatterSchema,
 } from "../../src/lib/content/schemas";
 import {
   validateParsedContent,
@@ -14,6 +15,8 @@ import {
   parseContent,
 } from "../../src/lib/content/parse";
 import { guideConfig } from "../../src/config/guide";
+import { allReachEntries } from "../../src/lib/trip/reach";
+import { RELATED_PLACES } from "../../src/components/bases/related-places-data";
 import { extractBlocks, type SourceBlock } from "../../src/lib/content/source-blocks";
 import {
   sourceManifestSchema,
@@ -71,6 +74,12 @@ function main() {
   const slugOwners = new Map<string, string>();
   // Base pages that exist, checked afterwards against the stays' baseSlug.
   const baseSlugs = new Set<string>();
+  // Reviewed places carrying neither situational field. Reported, not failed:
+  // the fields are derived from what a page already says, and some pages say
+  // nothing. Guessing would be worse than an honest blank.
+  const unmarkedPlaces: string[] = [];
+  // Reviewed place slugs — the same set the directory loads at runtime.
+  const publishedPlaceSlugs = new Set<string>();
 
   for (const category of CONTENT_CATEGORIES) {
     const dir = path.join(CONTENT_ROOT, category);
@@ -104,9 +113,29 @@ function main() {
         if (category === "bases") baseSlugs.add(parsed.data.slug);
       }
 
-      // A stay page is a view onto a booked stay: its dates, place and base
-      // all come from `guideConfig.trip`, so an unresolvable stayId would
-      // render a page with no trip behind it.
+      // Situational fields are optional by design — a place whose page states
+      // no duration or weather fit is left unmarked rather than guessed at, and
+      // ranks neutral. But a place missing *either* field is partly invisible to
+      // the day filter, so it is reported rather than discovered on the road.
+      if (category === "things-to-do") {
+        const place = thingsToDoFrontmatterSchema.safeParse(frontmatter);
+        if (place.success && place.data.status !== "draft") {
+          const missing: string[] = [];
+          if (!place.data.weatherFit) missing.push("weatherFit");
+          if (!place.data.durationHours) missing.push("durationHours");
+          if (missing.length > 0) {
+            unmarkedPlaces.push(`${relPath} — no ${missing.join(", ")}`);
+          }
+          // Reach is checked against this rather than against every place file:
+          // the directory drops drafts at runtime, so a reach entry pointing at
+          // one would pass validation and then vanish from the day's options.
+          publishedPlaceSlugs.add(place.data.slug);
+        }
+      }
+
+      // A stay page is a view onto a booked stay: its dates, place and base all
+      // come from `guideConfig.trip`, so an unresolvable stayId would render a
+      // page with no trip behind it.
       if (category === "trip") {
         const stay = stayFrontmatterSchema.safeParse(frontmatter);
         if (stay.success) {
@@ -145,6 +174,43 @@ function main() {
       const contentErrors = validateParsedContent(body, relPath);
       for (const err of contentErrors) {
         errors.push({ message: err.message });
+      }
+    }
+  }
+
+  // Reach lists name places by slug and nothing else links them, so a renamed
+  // or deleted place would silently drop out of the day's options.
+  for (const { stayId, entry } of allReachEntries()) {
+    if (!bookedStayIds.has(stayId)) {
+      errors.push({
+        message: `src/lib/trip/reach.ts: Reach list "${stayId}" is not a booked stay.`,
+      });
+    }
+    if (!publishedPlaceSlugs.has(entry.place)) {
+      const isDraft = slugOwners.has(`things-to-do/${entry.place}`);
+      errors.push({
+        message: isDraft
+          ? `src/lib/trip/reach.ts: ${stayId} reaches "${entry.place}", which is a draft and never reaches the directory.`
+          : `src/lib/trip/reach.ts: ${stayId} reaches "${entry.place}", which has no page in content/things-to-do/.`,
+      });
+    }
+  }
+
+  // The base→places relation names places by slug too, and has never been
+  // checked. It is a separate relation from reach, not a duplicate of it — a
+  // place belongs to one base but is reachable from any number of stays — so
+  // both lists exist on purpose and both need the same integrity check.
+  for (const [baseSlug, places] of Object.entries(RELATED_PLACES)) {
+    if (!baseSlugs.has(baseSlug)) {
+      errors.push({
+        message: `src/components/bases/related-places-data.ts: "${baseSlug}" has no page in content/bases/.`,
+      });
+    }
+    for (const place of places) {
+      if (!publishedPlaceSlugs.has(place.slug)) {
+        errors.push({
+          message: `src/components/bases/related-places-data.ts: ${baseSlug} lists "${place.slug}", which is not a reviewed page in content/things-to-do/.`,
+        });
       }
     }
   }
@@ -321,6 +387,16 @@ function main() {
           );
         }
       }
+    }
+  }
+
+  if (unmarkedPlaces.length > 0) {
+    // Worded for what happens today: nothing filters on these fields yet, so an
+    // unmarked place is still listed and still visible. Saying it is hidden
+    // would tell an author the gap is already enforced somewhere.
+    console.log("\nℹ️  Places missing a situational field (they rank neutral once the day selector lands):");
+    for (const note of unmarkedPlaces.sort()) {
+      console.log(`  ${note}`);
     }
   }
 

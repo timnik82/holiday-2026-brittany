@@ -32,6 +32,33 @@ export const stayFrontmatterSchema = pageFrontmatterSchema.extend({
 export const thingsToDoFrontmatterSchema = pageFrontmatterSchema.extend({
   category: z.string().min(1),
   ageRange: z.string().optional(),
+  /**
+   * Whether the place has shelter, for reordering options on a wet day.
+   * `mixed` means part of it is under a roof — a museum wing, a visitor centre,
+   * a castle interior. It does not mean "copes with drizzle": a roofless place
+   * that the sources call all-weather is still `outdoor`.
+   */
+  weatherFit: z.enum(["indoor", "mixed", "outdoor"]).optional(),
+  /**
+   * How long a visit takes, in hours, derived from each page's own "Visit
+   * duration" line against one conversion table (half-day 3–4 h, full day
+   * 6–8 h). A range may span both buckets: about a third of the corpus reads
+   * "a half-day to a full day", which becomes 3–8 rather than being forced into
+   * one. Optional: a place whose page states no duration is left unmarked and
+   * ranks neutral rather than being guessed at.
+   */
+  durationHours: z
+    .object({
+      min: z.number().positive(),
+      max: z.number().positive(),
+    })
+    // Reported on `max` rather than on the object, so the error names the field
+    // to edit instead of the pair.
+    .refine((d) => d.max >= d.min, {
+      message: "durationHours.max must be greater than or equal to min",
+      path: ["max"],
+    })
+    .optional(),
 });
 
 export const practicalFrontmatterSchema = pageFrontmatterSchema.extend({

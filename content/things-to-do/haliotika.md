@@ -6,6 +6,10 @@ updatedAt: "2026-07-02"
 status: review
 category: museum
 ageRange: 5+
+weatherFit: mixed
+durationHours:
+  min: 2
+  max: 3
 ---
 
 **Base:** [Quimper / South Finistère](/bases/quimper-south-finistere)

@@ -6,6 +6,10 @@ updatedAt: "2026-07-01"
 status: review
 category: museum
 ageRange: 4+
+weatherFit: indoor
+durationHours:
+  min: 2
+  max: 4
 ---
 
 **Base:** [Saint-Malo / Dinan](/bases/saint-malo-dinan)

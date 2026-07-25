@@ -6,6 +6,10 @@ updatedAt: "2026-07-01"
 status: review
 category: nature
 ageRange: all
+weatherFit: outdoor
+durationHours:
+  min: 6
+  max: 8
 ---
 
 **Base:** [Côte de Granit Rose](/bases/cote-de-granit-rose)

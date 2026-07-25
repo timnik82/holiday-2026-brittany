@@ -6,6 +6,10 @@ updatedAt: "2026-07-02"
 status: review
 category: history
 ageRange: all
+weatherFit: mixed
+durationHours:
+  min: 3
+  max: 8
 ---
 
 **Base:** [Vannes / Carnac / Morbihan](/bases/vannes-carnac-morbihan)

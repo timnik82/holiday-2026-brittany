@@ -6,6 +6,10 @@ updatedAt: "2026-07-02"
 status: review
 category: museum
 ageRange: 6+
+weatherFit: mixed
+durationHours:
+  min: 2
+  max: 4
 ---
 
 **Base:** [Brest / Finistère](/bases/brest-finistere)
