@@ -5,7 +5,7 @@ import { test, expect } from "@playwright/test";
 // webServer in playwright.config.ts (test-only credentials).
 const TEST_PASSWORD = "test-guide-pass-2026";
 
-test("sign-in journey: home, one attraction, and one route", async ({ page }) => {
+test("sign-in journey: home, one attraction, and one stay", async ({ page }) => {
   // Unauthenticated requests are redirected to the login screen by the proxy.
   await page.goto("/");
   await expect(page).toHaveURL(/\/login/);
@@ -34,7 +34,7 @@ test("sign-in journey: home, one attraction, and one route", async ({ page }) =>
 
   for (const label of [
     "Compare bases",
-    "Routes",
+    "The trip",
     "Things to do",
     "Swimming",
     "Plan your trip",
@@ -49,10 +49,13 @@ test("sign-in journey: home, one attraction, and one route", async ({ page }) =>
     page.getByRole("heading", { level: 1, name: /Grand Aquarium/i }),
   ).toBeVisible();
 
-  // Visit one route detail page and confirm it renders content.
-  await page.goto("/routes/cultural");
-  await expect(page).toHaveURL(/\/routes\/cultural/);
+  // Visit one stay detail page and confirm it renders its day-by-day content.
+  await page.goto("/trip/saint-malo-dinan");
+  await expect(page).toHaveURL(/\/trip\/saint-malo-dinan/);
   await expect(
-    page.getByRole("heading", { level: 1, name: /Cultural Brittany/i }),
+    page.getByRole("heading", { level: 1, name: /Saint-Malo and Dinan/i }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { level: 3, name: /20 August — Mont-Saint-Michel/i }),
   ).toBeVisible();
 });

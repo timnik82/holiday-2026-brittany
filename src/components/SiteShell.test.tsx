@@ -18,7 +18,7 @@ describe("SiteShell", () => {
 
     const expectedItems = [
       "Compare bases",
-      "Routes",
+      "The trip",
       "Things to do",
       "Swimming",
       "Plan your trip",

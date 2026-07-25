@@ -2,6 +2,7 @@ import Link from "next/link";
 import { guideConfig } from "@/config/guide";
 import { daysBetween, getTripDay, stayNights } from "@/lib/trip/stays";
 import { formatFullDate } from "@/lib/trip/format";
+import type { StayPage } from "@/lib/content/registry";
 import styles from "./home.module.css";
 
 /**
@@ -12,7 +13,14 @@ import styles from "./home.module.css";
  * but the day. Task 4 adds the weather and time toggles below this card; until
  * then it links straight to the stay's base and its places.
  */
-export function TodayCard({ date }: { date: string }) {
+export function TodayCard({
+  date,
+  stayPages,
+}: {
+  date: string;
+  /** Reviewed stay pages by stay id, so the card never links into a 404. */
+  stayPages: Map<string, StayPage>;
+}) {
   const day = getTripDay(date);
   const { start, stays } = guideConfig.trip;
 
@@ -53,6 +61,7 @@ export function TodayCard({ date }: { date: string }) {
 
   const nightNumber = daysBetween(stay.checkIn, date) + 1;
   const nights = stayNights(stay);
+  const page = stayPages.get(stay.id);
 
   return (
     <section className={styles.today} aria-labelledby="today-heading">
@@ -68,10 +77,21 @@ export function TodayCard({ date }: { date: string }) {
         {day.moving && <span className={styles.chip}>Moving from {day.leaving?.place}</span>}
       </p>
       {stay.note && <p>{stay.note}</p>}
-      {stay.baseSlug && (
+      {/* The Nantes stays have neither a page nor a base until their research
+          lands, so the row is omitted rather than rendered empty. */}
+      {(page || stay.baseSlug) && (
         <p className={styles.todayLinks}>
-          <Link href={`/bases/${stay.baseSlug}`}>About this base →</Link>{" "}
-          <Link href={`/things-to-do?base=${stay.baseSlug}`}>What is nearby →</Link>
+          {page && (
+            <>
+              <Link href={`/trip/${page.slug}`}>This stay, day by day →</Link>{" "}
+            </>
+          )}
+          {stay.baseSlug && (
+            <>
+              <Link href={`/bases/${stay.baseSlug}`}>About this base →</Link>{" "}
+              <Link href={`/things-to-do?base=${stay.baseSlug}`}>What is nearby →</Link>
+            </>
+          )}
         </p>
       )}
     </section>

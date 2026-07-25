@@ -2,8 +2,18 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import { listContentFiles, readContentFile } from "../../src/lib/content/files";
-import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY } from "../../src/lib/content/schemas";
-import { validateParsedContent } from "../../src/lib/content/parse";
+import {
+  pageFrontmatterSchema,
+  SCHEMA_BY_CATEGORY,
+  CONTENT_CATEGORIES,
+  stayFrontmatterSchema,
+} from "../../src/lib/content/schemas";
+import {
+  validateParsedContent,
+  listParagraphIds,
+  parseContent,
+} from "../../src/lib/content/parse";
+import { guideConfig } from "../../src/config/guide";
 import { extractBlocks, type SourceBlock } from "../../src/lib/content/source-blocks";
 import {
   sourceManifestSchema,
@@ -14,7 +24,11 @@ import {
   validateBlockDecisions,
 } from "../../src/lib/content/source-validation";
 import { evidenceRegistrySchema } from "../../src/lib/content/evidence";
-import { coverageSchema, validateCoverage } from "../../src/lib/content/coverage";
+import {
+  coverageSchema,
+  validateCoverage,
+  validateCoverageParagraphs,
+} from "../../src/lib/content/coverage";
 import { baseRankingsSchema } from "../../src/lib/ranking/schema";
 import { RANKING_DIMENSIONS } from "../../src/lib/ranking/weights";
 import { bathingLocationsSchema } from "../../src/lib/ranking/bathing-schema";
@@ -36,11 +50,29 @@ interface ValidationError {
 
 function main() {
   const errors: ValidationError[] = [];
-  const categories = ["plan", "bases", "routes", "things-to-do", "practical"];
 
   let fileCount = 0;
+  // Every paragraph id *declared* anywhere in content/, with the file that
+  // declares it. Paragraph ids must be unique across the whole corpus, not just
+  // within a file: coverage, narration and citations all address a paragraph by
+  // id alone, so a repeated id has no single owner.
+  const paragraphOwners = new Map<string, string>();
+  // The paragraphs the parser actually produced a record for. Coverage is
+  // checked against these, not against the declarations: a marker placed before
+  // a block the parser does not track yields no paragraph, so treating the
+  // declaration as proof would let coverage certify content that never renders.
+  const parsedParagraphIds = new Set<string>();
+  const bookedStayIds = new Set<string>(guideConfig.trip.stays.map((stay) => stay.id));
+  // stayId -> the file that already claimed it. One booked stay gets one page;
+  // a second would silently win or lose depending on directory order.
+  const stayPageOwners = new Map<string, string>();
+  // "category/slug" -> file. Two pages sharing a slug make one of them
+  // unreachable, and which one wins depends on the order the directory is read.
+  const slugOwners = new Map<string, string>();
+  // Base pages that exist, checked afterwards against the stays' baseSlug.
+  const baseSlugs = new Set<string>();
 
-  for (const category of categories) {
+  for (const category of CONTENT_CATEGORIES) {
     const dir = path.join(CONTENT_ROOT, category);
     const files = listContentFiles(dir);
 
@@ -59,6 +91,53 @@ function main() {
             message: `${relPath}: Frontmatter: ${issue.path.join(".")} - ${issue.message}`,
           });
         }
+      } else {
+        const slugKey = `${category}/${parsed.data.slug}`;
+        const slugOwner = slugOwners.get(slugKey);
+        if (slugOwner) {
+          errors.push({
+            message: `${relPath}: Frontmatter: slug "${parsed.data.slug}" is already used by ${slugOwner}. Slugs must be unique within a category.`,
+          });
+        } else {
+          slugOwners.set(slugKey, relPath);
+        }
+        if (category === "bases") baseSlugs.add(parsed.data.slug);
+      }
+
+      // A stay page is a view onto a booked stay: its dates, place and base
+      // all come from `guideConfig.trip`, so an unresolvable stayId would
+      // render a page with no trip behind it.
+      if (category === "trip") {
+        const stay = stayFrontmatterSchema.safeParse(frontmatter);
+        if (stay.success) {
+          if (!bookedStayIds.has(stay.data.stayId)) {
+            errors.push({
+              message: `${relPath}: Frontmatter: stayId "${stay.data.stayId}" does not match any stay in guideConfig.trip.`,
+            });
+          }
+          const claimedBy = stayPageOwners.get(stay.data.stayId);
+          if (claimedBy) {
+            errors.push({
+              message: `${relPath}: Frontmatter: stayId "${stay.data.stayId}" is already used by ${claimedBy}. One booked stay gets one page.`,
+            });
+          } else {
+            stayPageOwners.set(stay.data.stayId, relPath);
+          }
+        }
+      }
+
+      for (const id of listParagraphIds(body)) {
+        const owner = paragraphOwners.get(id);
+        if (owner) {
+          errors.push({
+            message: `${relPath}: Paragraph ID "${id}" is already declared in ${owner}. Paragraph IDs must be unique across content/.`,
+          });
+        } else {
+          paragraphOwners.set(id, relPath);
+        }
+      }
+      for (const record of parseContent(body).paragraphs) {
+        parsedParagraphIds.add(record.id);
       }
 
       // Validate content. `validateParsedContent` already prefixes each
@@ -67,6 +146,17 @@ function main() {
       for (const err of contentErrors) {
         errors.push({ message: err.message });
       }
+    }
+  }
+
+  // Every stay's base must exist as a page. `baseSlug` lives in the trip
+  // config, out of reach of content validation, so a renamed base page would
+  // otherwise leave the home page and the stay cards linking into a 404.
+  for (const stay of guideConfig.trip.stays) {
+    if (stay.baseSlug && !baseSlugs.has(stay.baseSlug)) {
+      errors.push({
+        message: `src/config/guide.ts: Stay "${stay.id}" references baseSlug "${stay.baseSlug}", which has no page in content/bases/.`,
+      });
     }
   }
 
@@ -225,6 +315,9 @@ function main() {
               coverageResult.data,
               knownEvidenceIds
             )
+          );
+          errors.push(
+            ...validateCoverageParagraphs(parsedParagraphIds, coverageResult.data)
           );
         }
       }

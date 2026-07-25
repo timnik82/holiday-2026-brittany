@@ -3,6 +3,7 @@ import { guideConfig } from "@/config/guide";
 import { getTripDay, listStays } from "@/lib/trip/stays";
 import { formatDateRange, formatDay } from "@/lib/trip/format";
 import type { Stay } from "@/config/guide";
+import type { StayPage } from "@/lib/content/registry";
 import styles from "./home.module.css";
 
 /** Whether a stay starts and ends in the same month, so the month is said once. */
@@ -16,7 +17,14 @@ function sharesMonth(stay: Stay): boolean {
  * compare — the choice is made and paid for, so the useful view is the sequence
  * we are actually travelling.
  */
-export function TripOverview({ date }: { date: string }) {
+export function TripOverview({
+  date,
+  stayPages,
+}: {
+  date: string;
+  /** Reviewed stay pages by stay id; stays without one link to their base. */
+  stayPages: Map<string, StayPage>;
+}) {
   const stays = listStays();
   const current = getTripDay(date).stay;
 
@@ -32,6 +40,7 @@ export function TripOverview({ date }: { date: string }) {
       <ol className={styles.stays}>
         {stays.map(({ stay, nights }) => {
           const isCurrent = current?.id === stay.id;
+          const page = stayPages.get(stay.id);
           return (
             <li
               key={stay.id}
@@ -39,7 +48,12 @@ export function TripOverview({ date }: { date: string }) {
               aria-current={isCurrent ? "step" : undefined}
             >
               <span className={styles.stayPlace}>
-                {stay.baseSlug ? (
+                {/* The stay's own day-by-day page is the more useful
+                    destination; the base page is the fallback until a stay is
+                    written up, and plain text when it has neither. */}
+                {page ? (
+                  <Link href={`/trip/${page.slug}`}>{stay.place}</Link>
+                ) : stay.baseSlug ? (
                   <Link href={`/bases/${stay.baseSlug}`}>{stay.place}</Link>
                 ) : (
                   stay.place

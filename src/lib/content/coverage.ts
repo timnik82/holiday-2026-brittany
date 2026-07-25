@@ -62,6 +62,40 @@ function outcomeEvidenceIds(outcome: CoverageOutcome): string[] {
   }
 }
 
+/** Extract every paragraph id referenced by a coverage outcome. */
+function outcomeParagraphIds(outcome: CoverageOutcome): string[] {
+  return outcome.status === "duplicate" ? [] : outcome.paragraphIds;
+}
+
+/**
+ * Verify that every paragraph a coverage outcome claims to have connected its
+ * source block to actually exists in the content.
+ *
+ * Without this, deleting or renaming a page leaves the coverage report quietly
+ * asserting a connection that no longer exists — the build stays green while
+ * "every source block is accounted for" becomes false. Moving paragraphs
+ * between pages is normal editorial work, so this has to be a build-time gate
+ * rather than a convention.
+ */
+export function validateCoverageParagraphs(
+  knownParagraphIds: Set<string>,
+  coverage: Coverage
+): CoverageError[] {
+  const errors: CoverageError[] = [];
+
+  for (const [blockId, outcome] of Object.entries(coverage)) {
+    for (const paragraphId of outcomeParagraphIds(outcome)) {
+      if (!knownParagraphIds.has(paragraphId)) {
+        errors.push({
+          message: `${blockId}: Coverage references paragraph "${paragraphId}", which no longer exists in content/.`,
+        });
+      }
+    }
+  }
+
+  return errors;
+}
+
 /**
  * Verify that every substantive block has exactly one coverage outcome, that
  * no non-substantive or nonexistent block carries coverage, and that every

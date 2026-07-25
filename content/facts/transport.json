@@ -43,7 +43,7 @@
       "officialSource": "SNCF Connect",
       "checkedAt": "2026-07-02",
       "reviewWindowDays": 30,
-      "notes": "The softest door-to-destination transfer of the three routes; onward to Carnac by car or bus.",
+      "notes": "The softest door-to-destination transfer on the trip; onward to Carnac by car or bus.",
       "evidenceRef": "evidence:southern-logistics-nantes"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "car-required-overview",
       "label": "Rental car at Nantes airport",
-      "value": "Recommended across all routes",
+      "value": "Recommended; essential only where sights are dispersed",
       "officialSource": "Synthesis across research sources",
       "checkedAt": "2026-07-02",
       "reviewWindowDays": 90,

@@ -1,12 +1,18 @@
 import path from "node:path";
 import { readContentFile, listContentFiles } from "./files";
-import { pageFrontmatterSchema, SCHEMA_BY_CATEGORY, baseFrontmatterSchema, routeFrontmatterSchema } from "./schemas";
-import type { BaseFrontmatter, PageFrontmatter, RouteFrontmatter } from "./schemas";
+import {
+  pageFrontmatterSchema,
+  SCHEMA_BY_CATEGORY,
+  baseFrontmatterSchema,
+  stayFrontmatterSchema,
+  CONTENT_CATEGORIES,
+} from "./schemas";
+import type { BaseFrontmatter, PageFrontmatter, StayFrontmatter } from "./schemas";
 import { parseContent } from "./parse";
 import type { ContentPage } from "./types";
 
 const CONTENT_ROOT = path.resolve(process.cwd(), "content");
-const CATEGORIES = ["plan", "bases", "routes", "things-to-do", "practical"];
+const CATEGORIES = CONTENT_CATEGORIES;
 
 export interface RegistryEntry {
   page: ContentPage;
@@ -110,18 +116,59 @@ export function getBaseFrontmatter(slug: string): BaseFrontmatter | undefined {
   return parsed.success ? parsed.data : undefined;
 }
 
+export interface StayPage {
+  /** The URL segment the page is served at: `/trip/{slug}`. */
+  readonly slug: string;
+  readonly title: string;
+  readonly summary: string;
+  readonly frontmatter: StayFrontmatter;
+}
+
 /**
- * Read the full, route-specific frontmatter (origin/destination/mode plus
- * trip-level fields like durationDays, pace, bases) for a route page by slug.
- * Mirrors getBaseFrontmatter: the registry's ContentPage only carries generic
- * fields, so the route-specific fields are re-validated here against
- * routeFrontmatterSchema. Returns undefined if the route page does not exist
- * or fails validation.
+ * Reviewed stay pages, keyed by the booked stay they describe.
+ *
+ * Booked stays and written-up stays are not the same set: a stay exists as soon
+ * as it is booked, but its page arrives when its research does. The map carries
+ * the page's own `slug` rather than just the stay id — the two are separate
+ * fields, so building a `/trip/` link out of the stay id would 404 the moment
+ * an author names a file differently.
+ *
+ * The single definition of "a stay page exists" lives here, so route
+ * generation, the trip index and the home page links cannot drift apart.
+ * Callers that already hold a registry load pass it in to avoid a second scan.
  */
-export function getRouteFrontmatter(slug: string): RouteFrontmatter | undefined {
-  const entry = getContentPage(slug, "routes");
+export function getStayPages(
+  entries: RegistryEntry[] = loadContentPages()
+): Map<string, StayPage> {
+  const pages = new Map<string, StayPage>();
+  for (const entry of entries) {
+    if (entry.category !== "trip" || entry.page.status === "draft") continue;
+    const parsed = stayFrontmatterSchema.safeParse(entry.frontmatter);
+    if (!parsed.success) continue;
+    // A duplicate stayId is rejected by the content validator; first-wins here
+    // keeps rendering deterministic if one ever reaches the runtime.
+    if (pages.has(parsed.data.stayId)) continue;
+    pages.set(parsed.data.stayId, {
+      slug: entry.page.slug,
+      title: entry.page.title,
+      summary: entry.page.summary,
+      frontmatter: parsed.data,
+    });
+  }
+  return pages;
+}
+
+/**
+ * Read the full, stay-specific frontmatter (`stayId` and `carRequirement`) for
+ * a trip stay page by slug. Mirrors getBaseFrontmatter: the registry's
+ * ContentPage only carries generic fields, so the stay-specific fields are
+ * re-validated here against stayFrontmatterSchema. Returns undefined if the
+ * stay page does not exist or fails validation.
+ */
+export function getStayFrontmatter(slug: string): StayFrontmatter | undefined {
+  const entry = getContentPage(slug, "trip");
   if (!entry) return undefined;
 
-  const parsed = routeFrontmatterSchema.safeParse(entry.frontmatter);
+  const parsed = stayFrontmatterSchema.safeParse(entry.frontmatter);
   return parsed.success ? parsed.data : undefined;
 }
