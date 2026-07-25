@@ -7,7 +7,6 @@ import {
   resolveDayTime,
   resolveDayWeather,
 } from "@/lib/trip/day-options";
-import { reachForStay } from "@/lib/trip/reach";
 import { getTripDay, resolveViewDate } from "@/lib/trip/stays";
 import { formatDateRange } from "@/lib/trip/format";
 import { TodayCard } from "@/components/home/TodayCard";
@@ -56,7 +55,7 @@ export default async function Home({
       </header>
 
       <TodayCard date={date} stayPages={stayPages} />
-      {day.stay && reachForStay(day.stay.id).length > 0 && (
+      {day.stay && (
         <TodayOptions
           date={date}
           stayId={day.stay.id}

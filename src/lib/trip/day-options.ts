@@ -10,7 +10,7 @@ export type DayTimeHours = 2 | 4 | 8;
 export const DAY_WEATHER_VALUES = ["fair", "rain"] as const satisfies readonly DayWeather[];
 export const DAY_TIME_VALUES = [2, 4, 8] as const satisfies readonly DayTimeHours[];
 
-/** Hours at or below this demote day trips — a spare afternoon is not a drive out. */
+/** Hours free that demote day trips — a spare afternoon is not a drive out. */
 const SHORT_WINDOW_HOURS: DayTimeHours = 2;
 
 const BASE_SCORE = 100;
@@ -28,7 +28,7 @@ export interface DayOptionInput {
 export interface DayOptionResult {
   slug: string;
   score: number;
-  /** Demotion reasons, most specific first. Empty when the place ranks neutrally. */
+  /** Demotion reasons in scoring order (weather, duration, reach). Empty when neutral. */
   reasons: string[];
 }
 
@@ -57,7 +57,7 @@ export function scoreDayOption(
     reasons.push(`does not fit ${availableHours} hours`);
   }
 
-  if (input.reach === "day-trip" && availableHours <= SHORT_WINDOW_HOURS) {
+  if (input.reach === "day-trip" && availableHours === SHORT_WINDOW_HOURS) {
     score -= DAY_TRIP_PENALTY;
     reasons.push("day trip");
   }

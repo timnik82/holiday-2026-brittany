@@ -110,7 +110,7 @@ export function TodayOptions({
             <OptionRow
               key={result.slug}
               place={place}
-              reason={result.reasons[0]}
+              reasons={result.reasons}
             />
           );
         })}
@@ -156,10 +156,10 @@ function ConditionLink({
 
 function OptionRow({
   place,
-  reason,
+  reasons,
 }: {
   place: DayOptionPlace;
-  reason: string | undefined;
+  reasons: string[];
 }) {
   const duration = durationLabel(place.durationHours);
   const weather = weatherFitLabel(place.weatherFit);
@@ -174,7 +174,9 @@ function OptionRow({
         {duration && <span className={styles.chip}>{duration}</span>}
         {weather && <span className={styles.chip}>{weather}</span>}
       </p>
-      {reason && <p className={styles.optionReason}>{reason}</p>}
+      {reasons.length > 0 && (
+        <p className={styles.optionReason}>{reasons.join(" · ")}</p>
+      )}
     </li>
   );
 }
