@@ -856,7 +856,8 @@
     "substantive": true
   },
   "nante-3-days-chatgpt:b011": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Day itinerary section label only"
   },
   "nante-3-days-chatgpt:b012": {
     "substantive": true
@@ -1064,9 +1065,5 @@
   },
   "events-nantes-perplexity:b040": {
     "substantive": true
-  },
-  "events-nantes-perplexity:b041": {
-    "substantive": false,
-    "reason": "Bibliography links only, not substantive claims"
   }
 }

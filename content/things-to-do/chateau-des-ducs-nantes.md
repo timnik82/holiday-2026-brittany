@@ -8,8 +8,8 @@ category: history
 ageRange: 6+
 weatherFit: mixed
 durationHours:
-  min: 2
-  max: 3
+  min: 1.5
+  max: 2
 ---
 
 ## What it is

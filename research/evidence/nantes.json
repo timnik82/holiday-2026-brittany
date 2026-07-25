@@ -6,7 +6,8 @@
     "sourceBlockRefs": ["nante-3-days-chatgpt:b001", "nante2-perplexity:b002", "events-nantes-perplexity:b002"],
     "sourceUrls": ["https://www.levoyageanantes.fr/en/events/the-summer-journey/"],
     "qualifiers": [],
-    "timeSensitive": false
+    "timeSensitive": true,
+    "checkedAt": "2026-07-24"
   },
   {
     "id": "evidence:nantes-stay-strategy",
@@ -21,7 +22,7 @@
     "id": "evidence:nantes-arrival-evening",
     "text": "After the 20:05 landing, keep the first evening deliberately light: hotel check-in and an easy dinner only. An optional short walk to the Water Mirror opposite the castle is enough if energy remains; the ramparts stay open later than the museum but should not be scheduled on arrival night.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b012", "nante2-perplexity:b008"],
+    "sourceBlockRefs": ["nante-3-days-chatgpt:b013", "nante2-perplexity:b008"],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -30,7 +31,7 @@
     "id": "evidence:nantes-arrival-shuttle",
     "text": "The Nantes airport shuttle runs every 20 minutes in summer, seven days a week, with the last departure from the airport at midnight and a journey of about 20–25 minutes to the city. A single ticket costs €10; one return trip is included with Pass Nantes after activation. From 30 March 2026 the city stop is gare routière, quai A.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b011", "nante-3-days-chatgpt:b029", "nante2-perplexity:b008"],
+    "sourceBlockRefs": ["nante-3-days-chatgpt:b012", "nante-3-days-chatgpt:b036", "nante2-perplexity:b008"],
     "sourceUrls": ["https://naolib.fr/fr/se-rendre-a-laeroport"],
     "qualifiers": ["Allow margin for baggage and flight delay after a 20:05 landing."],
     "timeSensitive": true,
@@ -40,7 +41,7 @@
     "id": "evidence:nantes-transport-weekend-free",
     "text": "From 00:00 Saturday to 23:59 Sunday, Nantes tram, bus and navibus are free. The airport shuttle is excluded and still requires a paid ticket. This applies to 8–9 August 2026.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b030", "nante-3-days-chatgpt:b037"],
+    "sourceBlockRefs": ["nante-3-days-chatgpt:b037"],
     "sourceUrls": ["https://naolib.fr/gratuite-des-transports-en-commun"],
     "qualifiers": [],
     "timeSensitive": true,
@@ -50,7 +51,7 @@
     "id": "evidence:nantes-transport-line1-closure",
     "text": "From 14 June to 30 August 2026, tram Line 1 is partially closed between Commerce and François-Mitterrand/Jamet, with replacement buses. The Machines area remains reachable via substitute services plus walking or cycling; allow extra transfer time when heading to Île de Nantes.",
     "kind": "warning",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b017", "nante-3-days-chatgpt:b030"],
+    "sourceBlockRefs": ["nante-3-days-chatgpt:b019", "nante-3-days-chatgpt:b037"],
     "sourceUrls": [
       "https://naolib.fr/fr/actualites/cet-ete-la-ligne-1-fait-peau-neuve-et-on-soccupe-de-vous",
       "https://metropole.nantes.fr/actualites/les-chantiers-de-l-ete-2026-preparent-les-transports-en-commun-de-demain"
@@ -269,7 +270,7 @@
     "id": "evidence:nantes-natural-history-offsite-claim",
     "text": "The events research lists Muséum d'histoire naturelle off-site Voyage exhibitions as family-friendly, implying the museum still contributes to a rainy-day plan — this conflicts with the main building closure until 2029.",
     "kind": "qualification",
-    "sourceBlockRefs": ["events-nantes-perplexity:b017"],
+    "sourceBlockRefs": ["events-nantes-perplexity:b017", "events-nantes-perplexity:b033"],
     "sourceUrls": ["https://museum.nantesmetropole.fr/itinerance.html"],
     "qualifiers": ["Verify any off-site exhibition individually before routing the family."],
     "timeSensitive": true,
@@ -299,7 +300,7 @@
     "id": "evidence:nantes-illusion-price-conflict",
     "text": "Illusion Nantes publishes conflicting tariffs on its homepage/FAQ (€15/€14/€12) versus its tickets page (€12/€11/€9). Treat it as a valid rainy-day indoor backup but confirm the price in the official checkout for the chosen slot rather than quoting a single figure in the guide.",
     "kind": "warning",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b009", "nante2-perplexity:b012"],
+    "sourceBlockRefs": ["nante-3-days-chatgpt:b009", "nante2-perplexity:b007"],
     "sourceUrls": [
       "https://illusionnantes.fr/fr/",
       "https://illusionnantes.fr/fr/tickets"
@@ -322,7 +323,7 @@
     "id": "evidence:nantes-illusion-price-tickets-page",
     "text": "Illusion Nantes tickets page lists adult, concession and child tickets at €12, €11 and €9 respectively.",
     "kind": "price",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b009"],
+    "sourceBlockRefs": ["nante2-perplexity:b007"],
     "sourceUrls": ["https://illusionnantes.fr/fr/tickets"],
     "qualifiers": ["Contradicts the homepage tariff — check checkout before booking."],
     "timeSensitive": true,
@@ -492,8 +493,7 @@
     "sourceBlockRefs": ["nante-food-perplexity:b025"],
     "sourceUrls": [],
     "qualifiers": [],
-    "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "timeSensitive": false
   },
   {
     "id": "evidence:nantes-food-dinner",

@@ -8,8 +8,8 @@ category: museum
 ageRange: 6+
 weatherFit: indoor
 durationHours:
-  min: 2
-  max: 3
+  min: 1.5
+  max: 2
 ---
 
 ## What it is

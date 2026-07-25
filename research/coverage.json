@@ -2591,15 +2591,6 @@
       "stay-nantes-arrival-day-2"
     ]
   },
-  "nante-3-days-chatgpt:b011": {
-    "status": "retained",
-    "evidenceIds": [
-      "evidence:nantes-arrival-evening"
-    ],
-    "paragraphIds": [
-      "stay-nantes-arrival-day-0"
-    ]
-  },
   "nante-3-days-chatgpt:b012": {
     "status": "retained",
     "evidenceIds": [
@@ -3164,13 +3155,16 @@
     ]
   },
   "events-nantes-perplexity:b033": {
-    "status": "retained",
+    "status": "conflict",
+    "conflictId": "conflict:nantes-natural-history-closed",
     "evidenceIds": [
-      "evidence:nantes-musee-arts-summer"
+      "evidence:nantes-natural-history-closed",
+      "evidence:nantes-natural-history-offsite-claim"
     ],
     "paragraphIds": [
       "stay-nantes-arrival-rainy"
-    ]
+    ],
+    "interpretation": "The events source suggests off-site natural history exhibitions; the main building is closed until 2029. Route only to verified off-site programming, not the closed museum."
   },
   "events-nantes-perplexity:b034": {
     "status": "retained",

@@ -53,6 +53,6 @@
     "path": "research/raw/Events-Nantes-Perplexity.md",
     "language": "en",
     "sha256": "5660f457a3a188f3fecd4ed823a0076817297f0c0d92d38ae22f46db14e32ece",
-    "stopHeadings": ["Works cited", "Sources"]
+    "stopHeadings": ["Works cited", "Sources", "References"]
   }
 ]
