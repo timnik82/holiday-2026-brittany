@@ -13,9 +13,9 @@
       "label": "Saint-Malo / Dinan",
       "value": "Apartments €130–300/night, family hotels €120–260",
       "officialSource": "Research corpus ranges (not a live Booking quote)",
-      "checkedAt": "2026-07-25",
+      "checkedAt": "2026-06-30",
       "reviewWindowDays": 30,
-      "notes": "Sources disagree on price (high vs lower range); budget toward the higher range inside the walls or near the Sillon. Book well ahead — August is peak. Dated range from research corpus; re-sample live Booking.com rates before booking (freshness check 2026-07-25, no live re-quote).",
+      "notes": "Sources disagree on price (high vs lower range); budget toward the higher range inside the walls or near the Sillon. Book well ahead — August is peak. Research-range estimate only — re-sample live Booking.com rates before booking.",
       "evidenceRef": "evidence:northern-saint-malo-accommodation-high"
     },
     {
@@ -24,9 +24,9 @@
       "label": "Côte de Granit Rose",
       "value": "Apartments €120–220/night, family hotels €110–260",
       "officialSource": "Research corpus ranges (not a live Booking quote)",
-      "checkedAt": "2026-07-25",
+      "checkedAt": "2026-06-30",
       "reviewWindowDays": 30,
-      "notes": "Somewhat cheaper than Saint-Malo; sea-view and stone-cottage properties carry a steep premium. Dated range from research corpus; re-sample live Booking.com rates before booking (freshness check 2026-07-25, no live re-quote).",
+      "notes": "Somewhat cheaper than Saint-Malo; sea-view and stone-cottage properties carry a steep premium. Research-range estimate only — re-sample live Booking.com rates before booking.",
       "evidenceRef": "evidence:northern-granit-rose-accommodation"
     },
     {
@@ -35,9 +35,9 @@
       "label": "Brest / Finistère",
       "value": "Apartments €70–150/night, family hotels €80–180",
       "officialSource": "Research corpus ranges (not a live Booking quote)",
-      "checkedAt": "2026-07-25",
+      "checkedAt": "2026-07-02",
       "reviewWindowDays": 30,
-      "notes": "Best value of the shortlist; a 3-star family room quoted around €70–90/night. Dated range from research corpus; re-sample live Booking.com rates before booking (freshness check 2026-07-25, no live re-quote).",
+      "notes": "Best value of the shortlist; a 3-star family room quoted around €70–90/night. Research-range estimate only — re-sample live Booking.com rates before booking.",
       "evidenceRef": "evidence:western-brest-accommodation"
     },
     {
@@ -46,9 +46,9 @@
       "label": "Quimper / South Finistère",
       "value": "Apartments €80–160/night, family hotels €90–170",
       "officialSource": "Research corpus ranges (not a live Booking quote)",
-      "checkedAt": "2026-07-25",
+      "checkedAt": "2026-07-02",
       "reviewWindowDays": 30,
-      "notes": "Gentle budget option; gîtes €300–700/week. Some aggregators show August rates dipping below June. Dated range from research corpus; re-sample live Booking.com rates before booking (freshness check 2026-07-25, no live re-quote).",
+      "notes": "Gentle budget option; gîtes €300–700/week. Some aggregators show August rates dipping below June. Research-range estimate only — re-sample live Booking.com rates before booking.",
       "evidenceRef": "evidence:western-quimper-accommodation"
     },
     {
@@ -57,9 +57,9 @@
       "label": "Crozon / Douarnenez",
       "value": "Apartments €100–220/night, family hotels €120–220",
       "officialSource": "Research corpus ranges (not a live Booking quote)",
-      "checkedAt": "2026-07-25",
+      "checkedAt": "2026-07-02",
       "reviewWindowDays": 30,
-      "notes": "Between Brest value and coastal-resort pricing; gîtes €380–900/week. Dated range from research corpus; re-sample live Booking.com rates before booking (freshness check 2026-07-25, no live re-quote).",
+      "notes": "Between Brest value and coastal-resort pricing; gîtes €380–900/week. Research-range estimate only — re-sample live Booking.com rates before booking.",
       "evidenceRef": "evidence:western-crozon-accommodation"
     },
     {
@@ -68,9 +68,9 @@
       "label": "Vannes / Carnac / Morbihan",
       "value": "Apartments €130–260/night, family hotels €110–240",
       "officialSource": "Research corpus ranges (not a live Booking quote)",
-      "checkedAt": "2026-07-25",
+      "checkedAt": "2026-07-02",
       "reviewWindowDays": 30,
-      "notes": "Most expensive zone after Saint-Malo, especially by the sea. A 5-star campsite (La Grande Métairie) runs €1,400–2,200/week. Dated range from research corpus; re-sample live Booking.com rates before booking (freshness check 2026-07-25, no live re-quote).",
+      "notes": "Most expensive zone after Saint-Malo, especially by the sea. A 5-star campsite (La Grande Métairie) runs €1,400–2,200/week. Research-range estimate only — re-sample live Booking.com rates before booking.",
       "evidenceRef": "evidence:southern-accommodation-pressure"
     }
   ]

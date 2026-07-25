@@ -293,7 +293,7 @@
   },
   {
     "id": "evidence:nantes-jardin-extraordinaire",
-    "text": "Jardin Extraordinaire is a terraced quarry garden above the Loire with waterfalls, exotic planting and, from 29 May 2026, a 700 m² children's paddling area. Summer access is free; open from 08:30 until 21:30–22:00 depending on the day. Barbara Schroeder's Voyage work Les Mistériennes sits in the garden.",
+    "text": "Jardin Extraordinaire is a terraced quarry garden above the Loire with waterfalls, exotic planting and, from 29 May 2026, a 700 m² children's paddling area. Summer access is free; Métropole publishes opening hours week by week (mid-July 2026 weeks closed 20:00 after an 08:30 open). The paddling basin runs 11:00–19:45 daily until 6 September 2026. Confirm the day's closing time on the Métropole page before visiting. Barbara Schroeder's Voyage work Les Mistériennes sits in the garden.",
     "kind": "recommendation",
     "sourceBlockRefs": [
       "nante-3-days-chatgpt:b024",
@@ -301,6 +301,7 @@
       "events-nantes-perplexity:b030"
     ],
     "sourceUrls": [
+      "https://metropole.nantes.fr/lieu/le-jardin-extraordinaire",
       "https://www.levoyageanantes.fr/oeuvres/les-misteriennes/",
       "https://metropole.nantes.fr/actualites/nos-cinq-coups-de-coeur-du-voyage-a-nantes-2026"
     ],

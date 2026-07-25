@@ -9,6 +9,7 @@ import {
 } from "@/lib/ranking/bathing-dimensions";
 import type { EvidenceRecord } from "@/lib/content/evidence";
 import { loadEvidenceRegistry } from "@/lib/content/sources-data";
+import { loadBaseRankings } from "@/lib/ranking/data";
 import styles from "./swimming.module.css";
 
 export interface SwimmingRow {
@@ -40,6 +41,9 @@ const WARNING_LABELS: Record<BathingLocation["warningStatus"], string> = {
 export function SwimmingComparison({ rows }: { rows: SwimmingRow[] }) {
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((r) => [r.id, r]));
+  const baseNames = new Map(
+    loadBaseRankings().bases.map((base) => [base.slug, base.name])
+  );
 
   return (
     <section aria-label="Bathing-suitability comparison">
@@ -162,7 +166,9 @@ export function SwimmingComparison({ rows }: { rows: SwimmingRow[] }) {
                   {location.linkedBases.map((slug, index) => (
                     <span key={slug}>
                       {index > 0 && ", "}
-                      <Link href={`/bases/${slug}`}>{slug}</Link>
+                      <Link href={`/bases/${slug}`}>
+                        {baseNames.get(slug) ?? slug}
+                      </Link>
                     </span>
                   ))}
                 </p>

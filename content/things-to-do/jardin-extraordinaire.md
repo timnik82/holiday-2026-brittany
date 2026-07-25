@@ -25,4 +25,4 @@ Jardin Extraordinaire is a dramatic terraced garden in a former quarry above the
 - **Booking:** none; free access in summer.
 - **Transport:** west bank near Jules Verne; pair the two on departure morning.
 - **Safety:** terraces and stairs; supervise paddling and cliff paths.
-- **Price / checked date:** free summer access; open from 08:30 until 21:30–22:00 depending on the day (last reviewed 2026-07-25).
+- **Price / checked date:** free summer access; opens 08:30, closing time published week-by-week on the Métropole page (mid-July 2026 weeks closed 20:00). Paddling basin 11:00–19:45 until 6 September — confirm the day's hours before visiting (last reviewed 2026-07-25).

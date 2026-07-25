@@ -57,7 +57,8 @@
     "qualifiers": [
       "Lifeguard and beach-club seasons change — check locally before relying on them."
     ],
-    "timeSensitive": false
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:southern-carnac-megaliths",
