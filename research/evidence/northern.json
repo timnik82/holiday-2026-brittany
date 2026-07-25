@@ -430,7 +430,7 @@
   },
   {
     "id": "evidence:northern-msm-early-arrival",
-    "text": "In August, Mont-Saint-Michel peaks between 11:00 and 15:00–16:00. Arrive for abbey opening at 09:00, ideally on the car parks by 08:30–08:45; weekday mornings are quieter than weekends. Timed abbey tickets are strongly recommended — July–August ticket-office queues often run 30–60 minutes.",
+    "text": "In August, Mont-Saint-Michel peaks between 11:00 and 15:00–16:00. Arrive for abbey opening at 09:00, ideally on the car parks by 08:30 (the shuttle takes ~12 minutes and still leaves a short walk, so 08:45 is too tight); weekday mornings are quieter than weekends. Timed abbey tickets are strongly recommended — July–August ticket-office queues often run 30–60 minutes.",
     "kind": "recommendation",
     "sourceBlockRefs": [
       "mont-saint-michel-guide:b004",
@@ -568,7 +568,7 @@
   },
   {
     "id": "evidence:northern-distances-msm-cluster",
-    "text": "By car: Mont-Saint-Michel ↔ Saint-Malo ~50–60 minutes; Saint-Malo ↔ Cancale ~25–30 minutes; Saint-Malo ↔ Dinan ~30–40 minutes. Saint-Malo is the practical hub for the trio; a pure MSM day from Saint-Malo means leaving about 07:45 to park by 08:45.",
+    "text": "By car: Mont-Saint-Michel ↔ Saint-Malo ~50–60 minutes; Saint-Malo ↔ Cancale ~25–30 minutes; Saint-Malo ↔ Dinan ~30–40 minutes. Saint-Malo is the practical hub for the trio; a pure MSM day from Saint-Malo means leaving about 07:30–07:45 to park by 08:30.",
     "kind": "fact",
     "sourceBlockRefs": [
       "mont-saint-michel-guide:b015",

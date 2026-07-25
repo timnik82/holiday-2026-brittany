@@ -9,7 +9,7 @@ ageRange: 6+
 weatherFit: indoor
 durationHours:
   min: 0.75
-  max: 1.5
+  max: 1.0
 ---
 
 **Base:** [Saint-Malo / Dinan](/bases/saint-malo-dinan)

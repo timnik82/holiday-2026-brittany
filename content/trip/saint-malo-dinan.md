@@ -38,8 +38,9 @@ Morning on the ramparts and [Plage du Bon-Secours](/things-to-do/bon-secours), t
 
 ### Thursday 20 August — Mont-Saint-Michel
 
-<!-- paragraph id="stay-saint-malo-day-3" sources="evidence:routes-cultural-transfers,evidence:routes-cultural-stay-lengths,evidence:northern-msm-early-arrival,evidence:northern-distances-msm-cluster,evidence:northern-msm-tides-aug-2026" -->
-A day trip to [Mont-Saint-Michel](/things-to-do/mont-saint-michel), about 50–60 minutes away. Leave around 07:45 to park by 08:30–08:45 for abbey opening — August peaks from late morning. Book timed abbey tickets; this is the day the car most obviously pays for itself. Mid-August 2026 also brings strong tides (peak around 14 August) if you want the island-effect views from the passerelle.
+<!-- paragraph id="stay-saint-malo-day-3" sources="evidence:routes-cultural-transfers,evidence:routes-cultural-stay-lengths,evidence:northern-msm-early-arrival,evidence:northern-distances-msm-cluster" -->
+A day trip to [Mont-Saint-Michel](/things-to-do/mont-saint-michel), about 50–60 minutes away. Leave around 07:30–07:45 to park by **08:30** for a realistic 09:00 abbey slot — August peaks from late morning, and the shuttle plus short walk eats the buffer that 08:45 would leave. Book timed abbey tickets; this is the day the car most obviously pays for itself. (The full-island tide effect for 2026 peaks around 14 August — not this day's visit.)
+
 
 ### Friday 21 August — Dinan
 
@@ -57,4 +58,4 @@ Check out and travel back to Nantes for the last night before the flight home. K
 Two days above can be swapped without losing much. [Cap Fréhel and Fort La Latte](/things-to-do/cap-frehel-fort-la-latte) offer clifftop heath, sea views and a headland castle, most practical by car; [Cancale](/things-to-do/cancale) trades the cliffs for oysters at the harbour stalls and a short coastal walk — arrive early for free port parking.
 
 <!-- paragraph id="stay-saint-malo-rain" sources="evidence:routes-cultural-stay-lengths,evidence:northern-saint-malo-aquarium-pricing-2026,evidence:northern-chateau-de-dinan" -->
-The [Grand Aquarium](/things-to-do/grand-aquarium) is the area's main rainy-day anchor and can absorb a full day on its own; paired with the pirate-themed Labyrinthe du Corsaire it covers the worst weather this stay is likely to produce. On a Dinan day, the [Château de Dinan](/things-to-do/chateau-de-dinan) is the second indoor option — about an hour of scenography before or instead of the outdoor streets.
+The [Grand Aquarium](/things-to-do/grand-aquarium) is the area's main rainy-day anchor (typically 2–4 hours); paired with the pirate-themed Labyrinthe du Corsaire it covers a full wet day. On a Dinan day, the [Château de Dinan](/things-to-do/chateau-de-dinan) is the second indoor option — about an hour of scenography before or instead of the outdoor streets.

@@ -30,4 +30,4 @@ Start at the castle if the forecast looks wet, then walk the streets and descend
 - **Booking:** Thursday market needs no booking; castle walk-up is usually fine.
 - **Transport:** about 30–40 minutes by car from Saint-Malo, by train via Rennes, or in summer by a Rance river cruise.
 - **Safety:** the rue du Jerzual is steep and cobbled — take care with prams or in wet weather.
-- **Last checked:** castle hours July–August ~10:30–19:00 (2026-07-25).
+- **Castle hours:** see [Château de Dinan](/things-to-do/chateau-de-dinan) for current opening times and tickets.

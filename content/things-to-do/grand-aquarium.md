@@ -17,7 +17,7 @@ durationHours:
 ## What it is
 
 <!-- paragraph id="grand-aquarium-what" sources="evidence:northern-saint-malo-grand-aquarium,evidence:northern-saint-malo-aquarium-pricing-2026" -->
-The Grand Aquarium de Saint-Malo is consistently named the area's leading family attraction, with a submarine-style Nautibus, Abyssal Descender, and hands-on marine contact. It is the base's main rainy-day anchor and can absorb a full afternoon or day.
+The Grand Aquarium de Saint-Malo is consistently named the area's leading family attraction, with a submarine-style Nautibus, Abyssal Descender, and hands-on marine contact. It is the base's main rainy-day anchor — typically a 2–4 hour visit; pairing it with Labyrinthe du Corsaire fills a full wet day.
 
 ## Planning
 
@@ -29,7 +29,7 @@ High-season hours 11 July–31 August are about 09:30–20:00. An aquarium ticke
 - **Weather fit:** fully indoor — the best rainy-day option in the base.
 - **Tickets:** about €19.90 from age 13 and €15.90 ages 4–12 (under 4 free); Nautibus and Abyssal Descender included.
 - **Parking:** free on site.
-- **Booking:** book ahead in peak August weeks on aquarium-st-malo.com.
+- **Booking:** book ahead in peak August weeks on [aquarium-st-malo.com](https://www.aquarium-st-malo.com/).
 - **Transport:** short drive from the city centre; car-optional with a bus.
 - **Safety:** standard indoor attraction supervision.
 - **Last checked:** high-season hours and prices (2026-07-25).

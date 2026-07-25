@@ -22,7 +22,11 @@ A walk of roughly 2 km along the top of Saint-Malo's ramparts loops the old cors
 ## Planning
 
 <!-- paragraph id="saint-malo-walls-planning" sources="evidence:northern-saint-malo-parking-shuttle,evidence:northern-saint-malo-ramparts-walk" -->
-Intra-Muros street parking is expensive and full in August. Prefer the large intercept car park (~800 spaces, about €3.30/24h) with a free shuttle to the old town every ~20 minutes in summer, or EFFIA parks along the walls; Rocabey is free but a 15–20 minute walk.
+Intra-Muros street parking is expensive and full in August. Prefer an intercept option instead:
+
+- **Intercept car park:** ~800 spaces, about €3.30/24h, with a free shuttle to the old town every ~20 minutes in summer.
+- **EFFIA parks:** along the walls — useful if the intercept lot is full.
+- **Rocabey:** free, but a 15–20 minute walk into Intra-Muros.
 
 - **Visit duration:** half a day, longer if you add the tidal islands.
 - **Age fit:** 6+; the wall-top path is the highlight for a 9 to 10-year-old.
