@@ -126,6 +126,22 @@ export default async function PlanGuidePage({
                     reviewWindowDays={fact.reviewWindowDays}
                   />
                 </span>
+                {fact.officialSource && (
+                  <span className={styles.factSource}>
+                    Source:{" "}
+                    {fact.sourceUrl ? (
+                      <a
+                        href={fact.sourceUrl}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {fact.officialSource}
+                      </a>
+                    ) : (
+                      fact.officialSource
+                    )}
+                  </span>
+                )}
                 {fact.notes && (
                   <span className={styles.factNotes}>{fact.notes}</span>
                 )}

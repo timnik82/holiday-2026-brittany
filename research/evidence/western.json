@@ -3,7 +3,14 @@
     "id": "evidence:western-brest-strongest-west",
     "text": "Brest is a strong western base for a family that wants maximum coolness, a pronounced oceanic character, and high-quality museums rather than postcard medieval charm. It is a large rebuilt port and France's main naval base — less picture-postcard than Saint-Malo or Quimper — but content-rich: Océanopolis, maritime heritage, the roadstead, boats, capes, and lighthouses, with fast access to the western coast and islands. Finistère offers a strong balance between wild nature and educational attractions (aquariums, museums) well suited to a science- and nature-curious child.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b019", "operaai:b019", "gemini-britany:b015", "perplexity:b033", "perplexity:b035", "perplexity:b036"],
+    "sourceBlockRefs": [
+      "chatgpt:b019",
+      "operaai:b019",
+      "gemini-britany:b015",
+      "perplexity:b033",
+      "perplexity:b035",
+      "perplexity:b036"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -12,88 +19,140 @@
     "id": "evidence:western-brest-oceanopolis",
     "text": "Océanopolis is Brest's flagship family attraction and a near-guaranteed hit with a child: one of Europe's largest oceanariums with more than 10,000 marine animals across polar, tropical, and temperate pavilions, plus interactive exhibits and rare polar animals. It is the base's main rainy-day anchor and is positioned by the Brittany tourist office as one of the region's top family magnets.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b019", "operaai:b020", "gemini-britany:b016", "perplexity:b033"],
-    "sourceUrls": ["https://www.oceanopolis.com/"],
-    "qualifiers": ["Opening days, hours, and ticket prices change — re-check on the official site before visiting."],
+    "sourceBlockRefs": [
+      "chatgpt:b019",
+      "operaai:b020",
+      "gemini-britany:b016",
+      "perplexity:b033"
+    ],
+    "sourceUrls": [
+      "https://www.oceanopolis.com/"
+    ],
+    "qualifiers": [
+      "Opening days, hours, and ticket prices change — re-check on the official site before visiting."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-brest-maritime-museum",
     "text": "Maritime history is the base's cultural core: the Château de Brest houses the Musée national de la Marine, and the Les Ateliers des Capucins cultural centre sits across the military harbour. A ride on France's first urban cable car crosses above the military harbour — a novelty for a child.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b019", "operaai:b020", "gemini-britany:b016", "perplexity:b033"],
+    "sourceBlockRefs": [
+      "chatgpt:b019",
+      "operaai:b020",
+      "gemini-britany:b016",
+      "perplexity:b033"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Opening days and hours change — re-check before visiting."],
+    "qualifiers": [
+      "Opening days and hours change — re-check before visiting."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-brest-porto-flight",
     "text": "Brest is unusually competitive to reach from Porto. The official Brest Bretagne Airport destinations list confirms a direct Brest–Porto flight operated by Transavia on Mondays and Fridays from 31 March to 23 October 2026 — twice weekly and covering the whole of August. The original research also noted a direct Porto–Brest flight of roughly 1 h 40 min; live schedule data puts the block time at about 1 h 45 min. From Lisbon a connection via Nantes or Paris is usually required.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b020"],
-    "sourceUrls": ["https://www.brest.aeroport.bzh/destinations"],
+    "sourceBlockRefs": [
+      "chatgpt:b020"
+    ],
+    "sourceUrls": [
+      "https://www.brest.aeroport.bzh/destinations"
+    ],
     "qualifiers": [
       "Flight schedules are seasonal and must be re-checked before booking.",
-      "Official check: Brest Bretagne Airport destinations page, accessed 2026-07-02. The One CLI was unavailable in this environment, so the official airport site was used as the nearest equivalent per the plan's substitution rule."
+      "Confirmed on the official Brest Bretagne Airport destinations page, accessed 2026-07-25."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-brest-airport-access",
     "text": "Brest airport is only about 15 to 20 minutes from the city centre, and public transport line 16 links the airport to the centre and the railway station, making the transfer straightforward without a car.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b020"],
+    "sourceBlockRefs": [
+      "chatgpt:b020"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Bus routes and timetables change — re-check locally before travelling."],
+    "qualifiers": [
+      "Bus routes and timetables change — re-check locally before travelling."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-brest-accommodation",
     "text": "Accommodation in Brest usually beats the famous coastal resorts on price. Indicative August ranges are apartments at €70 to €150 per night, family hotels at €80 to €180 per night, and gîtes at €430 to €900 per week; a 3-star family room in Brest is quoted around €70 to €90 per night. Live aggregator samples show city self-catering from roughly £65 per night and hotels from about $67 to $120. Prices rise sharply for sea-view and beach proximity at Le Conquet, Crozon, or Morgat.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b021", "operaai:b020", "gemini-britany:b016"],
+    "sourceBlockRefs": [
+      "chatgpt:b021",
+      "operaai:b020",
+      "gemini-britany:b016"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["August is peak season; aggregator prices move quickly and should be re-checked for the exact dates before booking."],
+    "qualifiers": [
+      "August is peak season; aggregator prices move quickly and should be re-checked for the exact dates before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-brest-car-tradeoff",
     "text": "Brest works well as a car-free city break — Océanopolis, the port, the museum, the cable car, and the quayside walks can all be reached without driving. But the most beautiful Finistère coasts practically require a car: Pen-Hir, Saint-Mathieu, Crozon, Le Conquet, and the remote beaches only open up by road. Brest is therefore best used as a double base — three to four nights in the city, then three to four nights out in nature, or the reverse.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b022", "operaai:b020"],
+    "sourceBlockRefs": [
+      "chatgpt:b022",
+      "operaai:b020"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Car-hire and bus schedules are seasonal — re-check before booking."],
+    "qualifiers": [
+      "Car-hire and bus schedules are seasonal — re-check before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-brest-climate",
     "text": "Finistère — especially around Brest, Crozon, and Ouessant — is the most oceanic and windswept part of Brittany, with a mild summer and a notably fresh sea breeze even in warm weather. The sea is cool, around 16 to 18 degrees Celsius in August, and often choppy, so sheltered coves and the beaches of the Brest roadstead are the practical choice for a child. This is the least resort-like zone, with the highest exposure to wind and rain.",
     "kind": "fact",
-    "sourceBlockRefs": ["perplexity:b031", "gemini-britany:b016"],
+    "sourceBlockRefs": [
+      "perplexity:b031",
+      "gemini-britany:b016"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Historical August conditions, not a forecast — check a current forecast and sea state before swimming."],
+    "qualifiers": [
+      "Historical August conditions, not a forecast — check a current forecast and sea state before swimming."
+    ],
     "timeSensitive": false
   },
   {
     "id": "evidence:western-brest-islands-park",
     "text": "The wider Brest region opens onto the Armorique Regional Natural Park (forests, hills, and mythic landscapes at Huelgoat and Cranou), the Crozon peninsula, and the islands of Ouessant, Molène, and Sein — each with lighthouses, small museums, marine wildlife, and a distinct end-of-the-world atmosphere reached by boat from the mainland.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["perplexity:b033"],
+    "sourceBlockRefs": [
+      "perplexity:b033"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Boat crossings to the islands are weather- and season-dependent."],
+    "qualifiers": [
+      "Boat crossings to the islands are weather- and season-dependent."
+    ],
     "timeSensitive": false
   },
   {
     "id": "evidence:western-quimper-culture-base",
     "text": "Quimper is the base for a family that wants a handsome historic city with museums, markets, and day trips to the little gems of southern Finistère rather than a beach on the doorstep. Its strengths are architecture, the cathedral core of Saint-Corentin, half-timbered houses, and the faïence quarter; it is described as much more charming than Brest and the cultural capital of Brittany. It sits close to Locronan, Concarneau, Pont-Aven, Fouesnant, and Bénodet, making it a smart cultural-and-coastal hub.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b023", "operaai:b021", "gemini-britany:b017", "perplexity:b038", "gemini-britany:b018", "operaai:b022", "perplexity:b043"],
+    "sourceBlockRefs": [
+      "chatgpt:b023",
+      "operaai:b021",
+      "gemini-britany:b017",
+      "perplexity:b038",
+      "gemini-britany:b018",
+      "operaai:b022",
+      "perplexity:b043"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -102,37 +161,54 @@
     "id": "evidence:western-quimper-family-museums",
     "text": "Quimper works better for a child than it might seem: the Musée des Beaux-Arts offers family formats (livrets-jeux and family encounters), the faïence museum sits nearby, and a tourist Petit Train runs through the medieval centre. The Domaine de Lanniron estate runs a children's club for ages 4 to 13 in July and August. On pure wow objects for children, though, the base still trails Brest and the Côte de Granit Rose.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b024", "operaai:b022"],
+    "sourceBlockRefs": [
+      "chatgpt:b024",
+      "operaai:b022"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Museum opening days and kids-club sessions change — re-check before visiting."],
+    "qualifiers": [
+      "Museum opening days and kids-club sessions change — re-check before visiting."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-quimper-logistics",
     "text": "Quimper is best reached by rail via Nantes (about 2 h 23 min) or Paris (about 3 h 29 min). Its own airport is modest but officially offers a direct Paris link with onward connections, about a 17-minute drive to the city centre. A car-free stay is possible, but a car noticeably improves access to the coast, Locronan, and Pont-Aven.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b025"],
+    "sourceBlockRefs": [
+      "chatgpt:b025"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Train and flight schedules are seasonal and must be re-checked before booking."],
+    "qualifiers": [
+      "Train and flight schedules are seasonal and must be re-checked before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-quimper-accommodation",
     "text": "Quimper is one of the gentler budget options among the bases. Indicative August ranges are apartments at €80 to €160 per night, family hotels at €90 to €170 per night, and gîtes at €300 to €700 per week. Some aggregators even show August hotel rates dipping below June, around $73 to $89 per night, with family properties clustering around $160 or more per night.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b026", "operaai:b022"],
+    "sourceBlockRefs": [
+      "chatgpt:b026",
+      "operaai:b022"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["August is peak season; aggregator prices move quickly and should be re-checked for the exact dates before booking."],
+    "qualifiers": [
+      "August is peak season; aggregator prices move quickly and should be re-checked for the exact dates before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-quimper-food",
     "text": "Food is a strength in Quimper's urban mode: markets, crêperies, pâtisserie, and a cider tradition suit a rhythm of museum or market in the morning, a beach or small town by day, and the historic centre in the evening. Seafood, galettes, and kouign-amann are easy to find for a family.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b027", "perplexity:b038"],
+    "sourceBlockRefs": [
+      "chatgpt:b027",
+      "perplexity:b038"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -141,58 +217,83 @@
     "id": "evidence:western-quimper-south-coast",
     "text": "Southern Finistère adds a more resort-like layer within easy day-trip range of Quimper: broad sandy beaches, family resorts, seafront promenades, ferries to islands such as the Glénan archipelago, and a range of water sports. The summer here is a little warmer than the northern and western coasts but stays moderate and refreshing — a compromise between fresh and resort weather.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["perplexity:b040", "perplexity:b042", "perplexity:b035"],
+    "sourceBlockRefs": [
+      "perplexity:b040",
+      "perplexity:b042",
+      "perplexity:b035"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Historical August conditions, not a forecast."],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
     "timeSensitive": false
   },
   {
     "id": "evidence:western-concarneau-filets-bleus",
     "text": "Concarneau's walled Ville Close, a 14th-century sea fortress reached by bridge, is the town's signature sight. In August 2026 the Festival des Filets Bleus runs from Wednesday 12 to Sunday 16 August — five days of free open-air concerts on the Quai Carnot facing the ramparts, a Grande Parade on the Sunday with more than 2,000 costumed participants, and a Village de la Mer celebrating fishing and maritime life. The original research dates (12 to 16 August) are confirmed by the official festival site.",
     "kind": "fact",
-    "sourceBlockRefs": ["gemini-britany:b018"],
-    "sourceUrls": ["https://www.festivaldesfiletsbleus.bzh/"],
+    "sourceBlockRefs": [
+      "gemini-britany:b018"
+    ],
+    "sourceUrls": [
+      "https://www.festivaldesfiletsbleus.bzh/"
+    ],
     "qualifiers": [
-      "Festival dates and the free-concert programme are confirmed for 2026 but specifics can shift — re-check the official site closer to the date.",
-      "Official check: Festival des Filets Bleus official site, accessed 2026-07-02."
+      "Official check: Festival des Filets Bleus official site, accessed 2026-07-25."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-benodet-glenan",
     "text": "Bénodet pairs a sheltered, well-equipped family beach with regular boats to the protected Glénan archipelago — white sand and clear turquoise water. The crossing is one of southern Finistère's classic day trips.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["gemini-britany:b018", "perplexity:b040"],
+    "sourceBlockRefs": [
+      "gemini-britany:b018",
+      "perplexity:b040"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Boat schedules to the Glénan islands are seasonal and weather-dependent — check and book ahead in August."],
+    "qualifiers": [
+      "Boat schedules to the Glénan islands are seasonal and weather-dependent — check and book ahead in August."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-haliotika",
     "text": "At the port of Le Guilvinec, the Haliotika fishing discovery centre runs interactive programmes for children, including a tour of the trawler Bara Breizh and a look at a working fish auction — a hands-on option that fits a child curious about how fish reach the table.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["gemini-britany:b018"],
+    "sourceBlockRefs": [
+      "gemini-britany:b018"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Tour times and auction-viewing hours change — re-check on the official site before visiting."],
+    "qualifiers": [
+      "Tour times and auction-viewing hours change — re-check on the official site before visiting."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-pointe-du-raz",
     "text": "The Pointe du Raz, one of Brittany's famous wild headlands, is a practical day trip from a Quimper base — dramatic clifftop walks at the end of the land, best in calm, dry weather.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["operaai:b022"],
+    "sourceBlockRefs": [
+      "operaai:b022"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Exposed cliff edges — keep children on marked paths."],
+    "qualifiers": [
+      "Exposed cliff edges — keep children on marked paths."
+    ],
     "timeSensitive": false
   },
   {
     "id": "evidence:western-locronan",
     "text": "Locronan, one of France's most beautiful villages, lies about 20 to 30 minutes from Quimper — a granite medieval village that adds a quieter, picture-postcard contrast to the coastal resorts.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b023", "perplexity:b040"],
+    "sourceBlockRefs": [
+      "chatgpt:b023",
+      "perplexity:b040"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -201,7 +302,10 @@
     "id": "evidence:western-pont-aven",
     "text": "Pont-Aven, the riverside painters' town made famous by Gauguin, is another small gem within day-trip range of Quimper — galleries, waterside walks, and crêperies rather than beaches.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b023", "perplexity:b040"],
+    "sourceBlockRefs": [
+      "chatgpt:b023",
+      "perplexity:b040"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -210,7 +314,11 @@
     "id": "evidence:western-crozon-wild-coast",
     "text": "The Crozon peninsula (with Douarnenez) is the shortlist's strongest pick for genuine wild Brittany: rocks, capes, geology, open ocean, a strong end-of-the-land feel, and an especially refreshing August. Pen-Hir, the Cap de la Chèvre, Morgat, and geological trails make the zone exceptionally strong on nature, while the Maison des Minéraux adds a family geology layer.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b033", "gemini-britany:b016", "perplexity:b033"],
+    "sourceBlockRefs": [
+      "chatgpt:b033",
+      "gemini-britany:b016",
+      "perplexity:b033"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -219,27 +327,38 @@
     "id": "evidence:western-crozon-logistics-car",
     "text": "The base's weak point is logistics. For a car-free family it is a compromise, because the point of the area is to drive between dispersed viewpoints. The sensible approach is to fly into Brest (from Porto) or come via Quimper and then rent a car. For an easy, low-effort first Brittany trip, Crozon is better as a second Brittany than a first; but if landscape, cool air, and wild beaches are the priority, it is very strong.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b034"],
+    "sourceBlockRefs": [
+      "chatgpt:b034"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Flight, ferry, and car-hire availability are seasonal — re-check before booking."],
+    "qualifiers": [
+      "Flight, ferry, and car-hire availability are seasonal — re-check before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-crozon-accommodation",
     "text": "Crozon and Morgat are usually pricier than Brest itself but often cheaper than Saint-Malo or Carnac at a comparable class. Indicative August ranges are apartments at €100 to €220 per night, family hotels at €120 to €220 per night, and gîtes at €380 to €900 per week; hotel rates in Crozon start around $117 per night.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b035", "gemini-britany:b016"],
+    "sourceBlockRefs": [
+      "chatgpt:b035",
+      "gemini-britany:b016"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["August is peak season; aggregator prices move quickly and should be re-checked for the exact dates before booking."],
+    "qualifiers": [
+      "August is peak season; aggregator prices move quickly and should be re-checked for the exact dates before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-morgat-beach",
     "text": "Morgat has a golden sandy beach set in an enclosed bay on the Crozon peninsula, where kayaks and paddleboards can be rented — the most sheltered family swimming spot in the area.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["gemini-britany:b016"],
+    "sourceBlockRefs": [
+      "gemini-britany:b016"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -248,28 +367,41 @@
     "id": "evidence:western-ile-vierge-restricted",
     "text": "Plage de l'Île Vierge is famed for turquoise, Caribbean-like water, but access to the beach is restricted for safety reasons. It is best admired from the GR34 rocky path above rather than treated as a normal swimming beach; check local access guidance before attempting any descent.",
     "kind": "warning",
-    "sourceBlockRefs": ["gemini-britany:b016"],
+    "sourceBlockRefs": [
+      "gemini-britany:b016"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Access status can change — follow on-site safety signs and official local guidance."],
+    "qualifiers": [
+      "Access status can change — follow on-site safety signs and official local guidance."
+    ],
     "timeSensitive": false
   },
   {
     "id": "evidence:western-maison-des-mineraux",
     "text": "The Maison des Minéraux adds an excellent family layer for a child who likes to understand how landscapes are made, interpreting the peninsula's geology alongside the outdoor trails.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b033"],
+    "sourceBlockRefs": [
+      "chatgpt:b033"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Opening days change — re-check before visiting."],
+    "qualifiers": [
+      "Opening days change — re-check before visiting."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:western-crozon-climate",
     "text": "Crozon shares Finistère's freshest, most oceanic conditions: very low heat risk, with the corresponding trade-off of wind and changeable rain and the coolest sea — so it suits a family that packs layers and plans around the weather.",
     "kind": "qualification",
-    "sourceBlockRefs": ["gemini-britany:b016", "perplexity:b031"],
+    "sourceBlockRefs": [
+      "gemini-britany:b016",
+      "perplexity:b031"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Historical August conditions, not a forecast."],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
     "timeSensitive": false
   }
 ]

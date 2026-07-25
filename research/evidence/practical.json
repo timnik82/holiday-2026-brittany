@@ -3,7 +3,13 @@
     "id": "evidence:practical-climate-overview",
     "text": "August in Brittany gives long days (about 14 h 15 to 14 h 30 of daylight) without Mediterranean heat: average daytime maxima of 20 to 24 degrees Celsius, cool nights of 12 to 14 degrees, and rare heat waves thanks to the Atlantic. The region's microclimate splits noticeably — the north-east and south coast are milder coastal zones, while western Finistère is wetter and windier on average. This is the core reason the family is choosing Brittany over Portugal in August.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b006", "chatgpt:b007", "operaai:b010", "operaai:b012", "perplexity:b008"],
+    "sourceBlockRefs": [
+      "chatgpt:b006",
+      "chatgpt:b007",
+      "operaai:b010",
+      "operaai:b012",
+      "perplexity:b008"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "These are long-run August climate normals, not a 2026 forecast — check a current forecast before travelling."
@@ -14,7 +20,9 @@
     "id": "evidence:practical-daylight-hours",
     "text": "Daylight in mid-August Brittany runs about 14 h 25 to 14 h 30 on the north and west coasts, and about 14 h 15 in the southern Morbihan — enough for a full morning-to-evening day with a relaxed pace.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b006"],
+    "sourceBlockRefs": [
+      "chatgpt:b006"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -23,7 +31,11 @@
     "id": "evidence:practical-climate-microclimate-split",
     "text": "Brittany's microclimates divide sharply. The Observatoire de l'environnement en Bretagne climate map places the north-east and south coast in milder coastal zones, while western Finistère is wetter and windier on average. Practical effect: the west is the freshest choice for a heat-averse family, while the Morbihan south coast runs marginally warmer and drier — better for water time but a slightly higher heat risk.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b007", "gemini-britany:b003", "operaai:b010"],
+    "sourceBlockRefs": [
+      "chatgpt:b007",
+      "gemini-britany:b003",
+      "operaai:b010"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -32,7 +44,10 @@
     "id": "evidence:practical-weather-variability",
     "text": "Brittany's weather is changeable even in August — a sunny morning can turn to sea fog, drizzle or wind on the same day, especially on the exposed west and north coasts. Packing layers and a light rain shell, and planning one flexible rainy-day activity per base, is the standard advice rather than treating any day as guaranteed sun.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["operaai:b010", "perplexity:b008"],
+    "sourceBlockRefs": [
+      "operaai:b010",
+      "perplexity:b008"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -41,19 +56,27 @@
     "id": "evidence:practical-accommodation-budget-overview",
     "text": "For a family of two adults and one child, realistic August accommodation is roughly €100 to €160 per night for a good family apartment or gîte booked early, and €140 to €220 per night for a 3 to 4-star hotel. Brittany offers over 79,000 rental properties from basic camping pitches upward, but August is peak season — book well ahead, and expect the famous coastal resorts (Saint-Malo, Carnac) to sit at the top of the range.",
     "kind": "price",
-    "sourceBlockRefs": ["perplexity:b014", "perplexity:b015", "operaai:b025", "chatgpt:b036"],
+    "sourceBlockRefs": [
+      "perplexity:b014",
+      "perplexity:b015",
+      "operaai:b025",
+      "chatgpt:b036"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Live availability and pricing for both August 2026 date windows still needs a Booking.com check before booking."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-06-30"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:practical-accommodation-book-early",
     "text": "August is peak season across Brittany and the most sought-after family properties (sea-view apartments, walkable old-town hotels, 4 to 5-star family campsites) book out months ahead. The consistent advice is to lock in accommodation before flights, especially for Saint-Malo, Carnac and the Côte de Granit Rose.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b036", "perplexity:b014"],
+    "sourceBlockRefs": [
+      "chatgpt:b036",
+      "perplexity:b014"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -62,7 +85,10 @@
     "id": "evidence:practical-accommodation-types",
     "text": "Brittany's accommodation spans camping (including 4 to 5-star family resorts like La Grande Métairie in Carnac with pools and kids' clubs), gîtes and self-catering apartments, family hotels, and resort residences. For a family with a child, the campsites and apartment/gîte options tend to give the best space-to-price ratio, while old-town hotels trade space for walkability.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["perplexity:b014", "chatgpt:b036"],
+    "sourceBlockRefs": [
+      "perplexity:b014",
+      "chatgpt:b036"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -71,7 +97,11 @@
     "id": "evidence:practical-transport-two-scenarios",
     "text": "From Portugal there are two viable travel scenarios: fly into Nantes (or Brest) and rent a car locally, or drive the family's own car the full 1,600 to 1,900 km. The flight-plus-local-rental is the lighter, cheaper and faster option for a family with a child; the own-car option only pays off when combining the trip with an extended Iberian or French road tour.",
     "kind": "qualification",
-    "sourceBlockRefs": ["gemini-britany:b004", "operaai:b002", "operaai:b003"],
+    "sourceBlockRefs": [
+      "gemini-britany:b004",
+      "operaai:b002",
+      "operaai:b003"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -80,7 +110,13 @@
     "id": "evidence:practical-car-tradeoffs",
     "text": "Across all bases, a rental car is the single biggest enabler of a flexible family trip. The old cities (Saint-Malo, Vannes, Quimper, Brest) are walkable and rail-connected, but beaches, megalith sites, capes, island ferries and the best viewpoints are dispersed along local roads that public transport (trains, BreizhGo buses) does not reliably cover. The trade-off is parking and toll costs versus reach; for a single-base trip a car is recommended, for Crozon it is effectively essential.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b036", "operaai:b004", "operaai:b005", "operaai:b006", "perplexity:b014"],
+    "sourceBlockRefs": [
+      "chatgpt:b036",
+      "operaai:b004",
+      "operaai:b005",
+      "operaai:b006",
+      "perplexity:b014"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -89,7 +125,11 @@
     "id": "evidence:practical-food-overview",
     "text": "Food is a clear strength of Brittany and gets the same 15% ranking weight as accommodation. The family-friendly staples are crêpes and savoury galettes (buckwheat), moules-frites, fresh seafood and oysters (Cancale, Quiberon), cider, and Breton butter biscuits (kouign-amann, palets). Markets, harbour stalls and crêperies make family meals easy, distinctive and affordable across every base; children's menus and simple dishes are widely available.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b036", "chatgpt:b037", "operaai:b025"],
+    "sourceBlockRefs": [
+      "chatgpt:b036",
+      "chatgpt:b037",
+      "operaai:b025"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -98,7 +138,10 @@
     "id": "evidence:practical-food-regional-highlights",
     "text": "Each base has a food signature: Cancale oysters at the harbour stalls and Dinan's Thursday market in the north; Quimper's crêperies and Pont-Aven around the south-Finistère; Carnac and Quiberon seafood plus Morbihan gulf oysters in the south; and cider and kouign-amann throughout. For a child, galettes, crêpes, moules-frites and simple fish dishes are easy to find everywhere.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b037", "operaai:b025"],
+    "sourceBlockRefs": [
+      "chatgpt:b037",
+      "operaai:b025"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -107,7 +150,11 @@
     "id": "evidence:practical-packing",
     "text": "August packing for Brittany should layer for changeable weather: light rain shell and wind layer (especially on the exposed west and north coasts), swimwear and a shorty wetsuit for children if they tolerate cool sea swimming poorly, sturdy walking shoes for coastal paths (GR34, Cap de la Chèvre), and sun protection for the long daylight hours. Tides matter everywhere — packing a printed or offline tide table for the stay is the single most useful planning item on the north coast.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["operaai:b010", "operaai:b012", "perplexity:b008"],
+    "sourceBlockRefs": [
+      "operaai:b010",
+      "operaai:b012",
+      "perplexity:b008"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -116,9 +163,16 @@
     "id": "evidence:practical-swimming-sea-temperature-by-coast",
     "text": "August sea temperatures vary sharply by coast and drive where family swimming is most comfortable. Saint-Malo reaches about 18.6 degrees Celsius (up to 20 degrees Celsius on warm days), but a child may need a shorty wetsuit for long spells in the water. The Côte de Granit Rose is colder at roughly 16 to 17 degrees and described as cold bathing; Brest and western Finistère peak near 16 to 16.5 degrees. The standout for families is the Morbihan south coast — Carnac and the Gulf of Morbihan average about 17.6 to 18.7 degrees in a gulf sheltered from the open ocean, described as swimmable and safe for children, with the warmest and calmest bathing water of the shortlist.",
     "kind": "qualification",
-    "sourceBlockRefs": ["operaai:b014", "operaai:b023", "operaai:b027", "perplexity:b004"],
+    "sourceBlockRefs": [
+      "operaai:b014",
+      "operaai:b023",
+      "operaai:b027",
+      "perplexity:b004"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Historical August sea-temperature ranges, not a forecast — and separate from the official microbiological water-quality status, which the swimming page checks per site."],
+    "qualifiers": [
+      "Historical August sea-temperature ranges, not a forecast — and separate from the official microbiological water-quality status, which the swimming page checks per site."
+    ],
     "timeSensitive": false
   }
 ]

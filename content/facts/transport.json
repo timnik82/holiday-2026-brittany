@@ -10,7 +10,7 @@
       "label": "Primary gateway: Nantes (NTE)",
       "value": "Direct seasonal flights from Lisbon and Porto",
       "officialSource": "Nantes Atlantique Airport",
-      "checkedAt": "2026-06-30",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Nantes is the primary gateway for all three route styles, with fast onward trains. Flight schedules are seasonal — re-check days before booking.",
       "evidenceRef": "evidence:nantes-primary-gateway-from-portugal"
@@ -21,7 +21,7 @@
       "value": "Direct Transavia flight from Porto, Mon/Fri from 31 Mar 2026",
       "officialSource": "Brest Bretagne Airport destinations",
       "sourceUrl": "https://www.brest.aeroport.bzh/destinations",
-      "checkedAt": "2026-07-02",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Cuts the long transfer to the Côte de Granit Rose. No direct Lisbon–Brest flight for summer 2026.",
       "evidenceRef": "evidence:western-brest-porto-flight"
@@ -31,37 +31,40 @@
       "label": "Train Nantes → Saint-Malo",
       "value": "from 2 h 24 min",
       "officialSource": "SNCF Connect",
-      "checkedAt": "2026-06-30",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Airport shuttle to Gare Sud ~25 min, then direct train. Schedules are seasonal — re-check before booking.",
-      "evidenceRef": "evidence:northern-saint-malo-logistics-rail"
+      "evidenceRef": "evidence:northern-saint-malo-logistics-rail",
+      "sourceUrl": "https://www.sncf-connect.com/en-en/train/timetables/nantes/st-malo"
     },
     {
       "id": "train-nantes-vannes",
       "label": "Train Nantes → Vannes",
       "value": "from 1 h 12 min",
       "officialSource": "SNCF Connect",
-      "checkedAt": "2026-07-02",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "The softest door-to-destination transfer on the trip; onward to Carnac by car or bus.",
-      "evidenceRef": "evidence:southern-logistics-nantes"
+      "evidenceRef": "evidence:southern-logistics-nantes",
+      "sourceUrl": "https://www.sncf-connect.com/train/horaires/nantes/vannes"
     },
     {
       "id": "train-nantes-quimper",
       "label": "Train Nantes → Quimper",
       "value": "about 2 h 23 min",
       "officialSource": "SNCF Connect",
-      "checkedAt": "2026-07-02",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Quimper also reachable from Paris in about 3 h 29 min.",
-      "evidenceRef": "evidence:western-quimper-logistics"
+      "evidenceRef": "evidence:western-quimper-logistics",
+      "sourceUrl": "https://www.sncf-connect.com/en-en/train/route/nantes/quimper"
     },
     {
       "id": "train-brest-lannion",
       "label": "Train Brest → Lannion (Côte de Granit Rose)",
       "value": "from 1 h 15 min",
       "officialSource": "SNCF Connect / TER Bretagne",
-      "checkedAt": "2026-06-30",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Combines with the direct Porto–Brest flight for an efficient arrival onto the north coast.",
       "evidenceRef": "evidence:northern-granit-rose-logistics-car"
@@ -92,7 +95,7 @@
       "value": "Every 20 min in summer, last airport departure 00:00, ~20–25 min to city, €10",
       "officialSource": "Naolib",
       "sourceUrl": "https://naolib.fr/fr/se-rendre-a-laeroport",
-      "checkedAt": "2026-07-24",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Compatible with a 20:05 landing; city stop at gare routière quai A from 30 March 2026.",
       "evidenceRef": "evidence:nantes-arrival-shuttle"
@@ -103,7 +106,7 @@
       "value": "Tram, bus and navibus free Sat–Sun; airport shuttle excluded",
       "officialSource": "Naolib",
       "sourceUrl": "https://naolib.fr/gratuite-des-transports-en-commun",
-      "checkedAt": "2026-07-24",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Applies to 8–9 August 2026 during the arrival stay. Do not assume the shuttle is free.",
       "evidenceRef": "evidence:nantes-transport-weekend-free"
@@ -114,7 +117,7 @@
       "value": "Partial closure Commerce–François-Mitterrand, 14 Jun–30 Aug 2026",
       "officialSource": "Naolib / Nantes Métropole",
       "sourceUrl": "https://naolib.fr/fr/actualites/cet-ete-la-ligne-1-fait-peau-neuve-et-on-soccupe-de-vous",
-      "checkedAt": "2026-07-24",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Replacement buses operate; allow extra time for Île de Nantes and west-bank sites. Re-check Naolib before travel.",
       "evidenceRef": "evidence:nantes-transport-line1-closure"
@@ -125,7 +128,7 @@
       "value": "One return airport shuttle included; activation required",
       "officialSource": "Pass Nantes FAQ",
       "sourceUrl": "https://www.levoyageanantes.fr/a-faire/pass-nantes/faq-pass-nantes/",
-      "checkedAt": "2026-07-24",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "notes": "Grand Éléphant is not included; Galerie des Machines and Carrousel des Mondes Marins are included once each.",
       "evidenceRef": "evidence:nantes-pass-nantes-inclusions"

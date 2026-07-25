@@ -25,4 +25,4 @@ Château des ducs de Bretagne works on two levels: the courtyard, moat gardens a
 - **Booking:** no booking for ramparts; museum tickets at the desk or online in peak season.
 - **Transport:** walkable from Bouffay and Commerce; pairs with the Water Mirror opposite.
 - **Safety:** rampart walls and moat edges need supervision.
-- **Price / checked date:** museum about €9 adult, free under 18; ramparts free (last reviewed 2026-07-24).
+- **Price / checked date:** museum about €9 adult, free under 18; ramparts free (last reviewed 2026-07-25).

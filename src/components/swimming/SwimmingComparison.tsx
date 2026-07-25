@@ -16,6 +16,12 @@ export interface SwimmingRow {
   result: BathingSuitabilityResult;
 }
 
+export interface SwimmingComparisonProps {
+  rows: SwimmingRow[];
+  /** base slug → display name, resolved by the page/data layer. */
+  baseNames: ReadonlyMap<string, string>;
+}
+
 const TYPE_LABELS: Record<BathingLocation["type"], string> = {
   sea: "Sea beach",
   lake: "Lake",
@@ -37,7 +43,7 @@ const WARNING_LABELS: Record<BathingLocation["warningStatus"], string> = {
  * and a freshness label. Loads the evidence registry once to resolve any
  * corpus-backed dimension rationales to their source.
  */
-export function SwimmingComparison({ rows }: { rows: SwimmingRow[] }) {
+export function SwimmingComparison({ rows, baseNames }: SwimmingComparisonProps) {
   const evidence = loadEvidenceRegistry();
   const evidenceById = new Map(evidence.map((r) => [r.id, r]));
 
@@ -162,7 +168,9 @@ export function SwimmingComparison({ rows }: { rows: SwimmingRow[] }) {
                   {location.linkedBases.map((slug, index) => (
                     <span key={slug}>
                       {index > 0 && ", "}
-                      <Link href={`/bases/${slug}`}>{slug}</Link>
+                      <Link href={`/bases/${slug}`}>
+                        {baseNames.get(slug) ?? slug}
+                      </Link>
                     </span>
                   ))}
                 </p>

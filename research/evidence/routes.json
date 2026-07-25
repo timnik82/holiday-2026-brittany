@@ -3,19 +3,29 @@
     "id": "evidence:routes-entry-airports",
     "text": "Nantes is the primary gateway into Brittany from Portugal for all three route styles, with direct flights from Lisbon and Porto. For the nature route on the north coast, Brest is a useful alternative gateway when flying from Porto, cutting the long transfer to the Côte de Granit Rose. Rennes is a secondary rail hub for the cultural route.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b043", "chatgpt:b050", "operaai:b028", "perplexity:b009"],
+    "sourceBlockRefs": [
+      "chatgpt:b043",
+      "chatgpt:b050",
+      "operaai:b028",
+      "perplexity:b009"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Flight schedules are seasonal; re-check direct routes and days before booking."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:routes-car-required-flexible",
     "text": "Across all three route styles, the sources treat a rental car picked up at Nantes airport as effectively required for a flexible family trip. Public transport (trains, BreizhGo buses) connects the main cities and resorts but does not reliably reach beaches, megalith sites, capes and island ferries, so a car materially expands what a family can reach in a day.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["gemini-britany:b007", "perplexity:b013", "operaai:b009", "operaai:b028"],
+    "sourceBlockRefs": [
+      "gemini-britany:b007",
+      "perplexity:b013",
+      "operaai:b009",
+      "operaai:b028"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Saint-Malo's old town itself is walkable; the car matters most for day trips and rural bases."
@@ -26,7 +36,13 @@
     "id": "evidence:routes-own-car-impractical",
     "text": "Driving the family's own car from Portugal to Brittany is described as a long haul — roughly 1,640 km and 15–16 hours from Coimbra to Saint-Malo, or 1,715–1,900 km and 16–19 hours from Lisbon — with one-way fuel and tolls around €300–400. The sources recommend splitting it across two days with an overnight stop, and treat flying plus a local rental as the lighter option for a family with a child.",
     "kind": "qualification",
-    "sourceBlockRefs": ["operaai:b007", "operaai:b008", "perplexity:b012", "gemini-britany:b008", "gemini-britany:b009"],
+    "sourceBlockRefs": [
+      "operaai:b007",
+      "operaai:b008",
+      "perplexity:b012",
+      "gemini-britany:b008",
+      "gemini-britany:b009"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -35,7 +51,13 @@
     "id": "evidence:routes-cultural-overview",
     "text": "The cultural route works best on a Saint-Malo / Dinan base, entering via Nantes or Rennes. It pairs a walled corsair city with a separate medieval river town, and stacks day trips to Mont-Saint-Michel, Cap Fréhel and Cancale on top. The sources describe it as the route that lands best when a child likes castles and knights.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b043", "chatgpt:b046", "chatgpt:b047", "operaai:b029", "perplexity:b056"],
+    "sourceBlockRefs": [
+      "chatgpt:b043",
+      "chatgpt:b046",
+      "chatgpt:b047",
+      "operaai:b029",
+      "perplexity:b056"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -44,7 +66,12 @@
     "id": "evidence:routes-cultural-sequencing",
     "text": "The cultural itinerary sequences the coast first and the medieval town last: several nights in Saint-Malo, then a short hop to Dinan for the stone medieval finale, exiting via Rennes because Dinan–Rennes is only about 55 minutes. The sources keep Saint-Malo and Dinan together rather than splitting them, treating the move between them as a short transfer rather than a travel day.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b044", "chatgpt:b047", "operaai:b030", "perplexity:b058"],
+    "sourceBlockRefs": [
+      "chatgpt:b044",
+      "chatgpt:b047",
+      "operaai:b030",
+      "perplexity:b058"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -53,19 +80,29 @@
     "id": "evidence:routes-cultural-transfers",
     "text": "Transfer times on the cultural route: Nantes airport to Gare Sud shuttle about 25 minutes, then train Nantes–Saint-Malo from 2 h 24 min, giving a soft first day with no long car move. Saint-Malo to Dinan is roughly 40 minutes by car. Mont-Saint-Michel is about one hour from Saint-Malo. Dinan to Rennes (for the return leg) is from 55 minutes.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b045", "chatgpt:b047", "operaai:b030", "perplexity:b058"],
+    "sourceBlockRefs": [
+      "chatgpt:b045",
+      "chatgpt:b047",
+      "operaai:b030",
+      "perplexity:b058"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Train and ferry schedules are seasonal — re-check times before booking."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:routes-cultural-stay-lengths",
     "text": "For the cultural route the sources allocate about 4 nights in Saint-Malo and 2–3 nights in Dinan, fitting an 8–10 day trip. The Saint-Malo nights cover the walls, beaches, Grand Aquarium, a tide-walk to the fort islands, and day trips to Mont-Saint-Michel, Cap Fréhel and Cancale; the Dinan nights cover the medieval town, castle and port.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b044", "chatgpt:b046", "operaai:b030", "perplexity:b058"],
+    "sourceBlockRefs": [
+      "chatgpt:b044",
+      "chatgpt:b046",
+      "operaai:b030",
+      "perplexity:b058"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -74,7 +111,12 @@
     "id": "evidence:routes-cultural-quimper-extension",
     "text": "Quimper is consistently positioned by the sources as the strongest south-Finistère cultural base — a walkable historic centre with a cathedral, faience museums and varied coastal day trips (Locronan, Concarneau, Pont-Aven, Pointe du Raz). However, no single source chains Saint-Malo/Dinan and Quimper into one itinerary; Quimper normally pairs with the nature route via Crozon. Treating Quimper as the southern leg of a longer cultural trip is a synthesis across base-level evidence, not a source-endorsed single itinerary.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b023", "operaai:b031", "perplexity:b040", "gemini-britany:b027"],
+    "sourceBlockRefs": [
+      "chatgpt:b023",
+      "operaai:b031",
+      "perplexity:b040",
+      "gemini-britany:b027"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -83,7 +125,12 @@
     "id": "evidence:routes-nature-overview",
     "text": "The nature route is built on the Côte de Granit Rose, and for a stronger oceanic version the sources extend it to the Crozon peninsula (and Brest/Finistère). It is pitched at families who want every day to be visually striking but without exhausting drives, and pairs pink-granit geology, the GR34 customs path, seabird boat trips and a major ocean-science aquarium.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b048", "chatgpt:b051", "operaai:b031", "perplexity:b060"],
+    "sourceBlockRefs": [
+      "chatgpt:b048",
+      "chatgpt:b051",
+      "operaai:b031",
+      "perplexity:b060"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -92,7 +139,13 @@
     "id": "evidence:routes-nature-sequencing",
     "text": "The nature itinerary sequences the Côte de Granit Rose first, then moves south to Crozon / Finistère. One source explicitly splits the trip into two bases — around 4 days in the Perros-Guirec area and 4 days around Quimper, with a Crozon peninsula day and an Océanopolis (Brest) day from the Quimper base. The move between the two regions is the single travel day of the trip.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b049", "chatgpt:b052", "operaai:b031", "operaai:b032", "perplexity:b062"],
+    "sourceBlockRefs": [
+      "chatgpt:b049",
+      "chatgpt:b052",
+      "operaai:b031",
+      "operaai:b032",
+      "perplexity:b062"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -101,19 +154,29 @@
     "id": "evidence:routes-nature-transfers",
     "text": "Transfer options on the nature route: a direct Porto–Brest flight followed by the train Brest–Lannion from 1 h 15 min is described as one of the most efficient ways onto the north coast. Alternatively, fly into Nantes and drive north to the Côte de Granit Rose — about 260 km on day one, a longer first-day transfer that argues for an early arrival. From Rennes, the drive to the Granit Rose coast is about 2 hours.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b050", "gemini-britany:b030", "perplexity:b028", "operaai:b032"],
+    "sourceBlockRefs": [
+      "chatgpt:b050",
+      "gemini-britany:b030",
+      "perplexity:b028",
+      "operaai:b032"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Direct Porto–Brest flights are seasonal — confirm before planning around them."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:routes-nature-stay-lengths",
     "text": "For the nature route the sources allocate roughly 5 nights around Lannion / Perros-Guirec (with a possible 2–3 final nights nearer Trégastel / Trébeurden to cut daily moves), then 3–4 nights around Crozon or Quimper. Staying all nights in Perros-Guirec is offered as the lower-move alternative when a family prefers a single base.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b049", "chatgpt:b052", "operaai:b031", "perplexity:b062"],
+    "sourceBlockRefs": [
+      "chatgpt:b049",
+      "chatgpt:b052",
+      "operaai:b031",
+      "perplexity:b062"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -122,7 +185,13 @@
     "id": "evidence:routes-relaxed-overview",
     "text": "The relaxed family route is built on Vannes and Carnac / the Golfe du Morbihan. The sources describe it as the most even, lowest-stress option, with the warmest and calmest bathing water in Brittany, sandy beaches, island boats, and a slower pace — well suited to a child who tires on long transfers.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b053", "chatgpt:b056", "operaai:b033", "perplexity:b064", "gemini-britany:b031"],
+    "sourceBlockRefs": [
+      "chatgpt:b053",
+      "chatgpt:b056",
+      "operaai:b033",
+      "perplexity:b064",
+      "gemini-britany:b031"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -131,7 +200,13 @@
     "id": "evidence:routes-relaxed-sequencing",
     "text": "The relaxed itinerary sequences Vannes first (old town, walls, market, island boats, Suscinio), then Carnac / La Trinité-sur-Mer (megaliths, Grande Plage, oyster lunch). The split minimises moves: a single base on the Morbihan gulf, or two close bases, with no long travel day inside the trip.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b054", "chatgpt:b056", "chatgpt:b057", "operaai:b034", "perplexity:b066"],
+    "sourceBlockRefs": [
+      "chatgpt:b054",
+      "chatgpt:b056",
+      "chatgpt:b057",
+      "operaai:b034",
+      "perplexity:b066"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -140,19 +215,28 @@
     "id": "evidence:routes-relaxed-transfers",
     "text": "Transfer on the relaxed route: fly into Nantes, shuttle to Gare Sud, then train Nantes–Vannes from 1 h 12 min — described as one of the softest door-to-destination scenarios in all of Brittany. Nantes to Carnac by car is about 135 km; Nantes to the Morbihan coast around 1.5 hours. This is the lightest first-day transfer of the three routes.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b055", "gemini-britany:b032", "operaai:b034"],
+    "sourceBlockRefs": [
+      "chatgpt:b055",
+      "gemini-britany:b032",
+      "operaai:b034"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Train schedules are seasonal — re-check times before booking."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:routes-relaxed-stay-lengths",
     "text": "For the relaxed route the sources allocate about 4 nights in Vannes and 3–4 nights in Carnac / La Trinité-sur-Mer, fitting a 7–9 day trip. The Carnac block keeps one day as a weather reserve — an extra beach, an oyster lunch for the adults, a crêperie and a short market or souvenir stop.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b054", "chatgpt:b057", "operaai:b034", "perplexity:b066"],
+    "sourceBlockRefs": [
+      "chatgpt:b054",
+      "chatgpt:b057",
+      "operaai:b034",
+      "perplexity:b066"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -161,19 +245,27 @@
     "id": "evidence:routes-relaxed-pace",
     "text": "The relaxed route is explicitly built to stretch without becoming a race: the sources note it can easily extend to 9–10 days, and that its main virtue is a calm rhythm of beaches, an island, a little history and the megaliths, with warmer sea and still-moderate climate. One source recommends a 4–5-star family camping base (e.g. La Grande Métairie in Carnac) for the on-site pools and kids' infrastructure.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b057", "operaai:b033", "perplexity:b067", "gemini-britany:b031"],
+    "sourceBlockRefs": [
+      "chatgpt:b057",
+      "operaai:b033",
+      "perplexity:b067",
+      "gemini-britany:b031"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Camping opening dates and pool availability change — confirm before booking."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-02"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:routes-relaxed-inland-extension",
     "text": "An inland extension to the Brocéliande forest (Paimpont) and Lac de Trémelin adds a shaded, legendary-forest and freshwater-swim counterpoint to the Morbihan coast. Brocéliande is mentioned by one source as a cultural-route stop (about 95 km from Nantes, with the Merlin-themed La Porte des Secrets in Paimpont); Lac de Trémelin is a quieter inland freshwater option on the same axis. This leg has thinner direct support than the coastal Morbihan days and is best read as an optional, lower-confidence extension rather than a source-endorsed core of the relaxed route.",
     "kind": "qualification",
-    "sourceBlockRefs": ["gemini-britany:b028", "gemini-britany:b027"],
+    "sourceBlockRefs": [
+      "gemini-britany:b028",
+      "gemini-britany:b027"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false

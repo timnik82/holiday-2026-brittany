@@ -4,10 +4,12 @@
       "slug": "bon-secours-tidal-pool",
       "name": "Plage de Bon-Secours (tidal pool)",
       "type": "tidal-pool",
-      "linkedBases": ["saint-malo-dinan"],
+      "linkedBases": [
+        "saint-malo-dinan"
+      ],
       "officialSource": "ARS Bretagne / baignades.sante.gouv.fr — Bon Secours (Saint-Malo, 35)",
       "sourceUrl": "https://baignades.sante.gouv.fr/baignades/genererPDF.do?am1=checkbox&am2=checkbox&am3=checkbox&am4=checkbox&gen=yes&image.x=55&image.y=10&selDpt=035&selEau=TOUT",
-      "checkedAt": "2026-07-03",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "warningStatus": "advisory",
       "notes": "Official 4-year classification 2022–2025 is Insufficient (G→S→I→I). The site is open and the ARS reports no poor in-season results in 2026 to date, but it remains under active remediation; treat as a water-quality advisory and heed on-site flags. The unique seawater tidal pool with a diving tower, sheltered inside the city walls, is the family highlight.",
@@ -15,22 +17,30 @@
         "temperatureShelter": {
           "score": 8,
           "rationale": "Seawater tidal pool set against the city walls offers a sheltered, swimmable basin regardless of tide state, unlike the exposed Sillon beach.",
-          "evidenceRefs": ["evidence:northern-bon-secours-tidal-pool"]
+          "evidenceRefs": [
+            "evidence:northern-bon-secours-tidal-pool"
+          ]
         },
         "tides": {
           "score": 8,
           "rationale": "The tidal pool holds water through the tidal cycle, so swimming is available even at low tide — the main reason it beats the open Sillon beach for families.",
-          "evidenceRefs": ["evidence:northern-bon-secours-tidal-pool"]
+          "evidenceRefs": [
+            "evidence:northern-bon-secours-tidal-pool"
+          ]
         },
         "easyAccess": {
           "score": 9,
           "rationale": "Walkable from inside walled Saint-Malo; no car needed and direct from the old town.",
-          "evidenceRefs": ["evidence:northern-bon-secours-tidal-pool"]
+          "evidenceRefs": [
+            "evidence:northern-bon-secours-tidal-pool"
+          ]
         },
         "lifeguards": {
           "score": 7,
           "rationale": "Monitored during the summer season with a first-aid post; verify daily coverage on site.",
-          "evidenceRefs": ["evidence:northern-bon-secours-tidal-pool"]
+          "evidenceRefs": [
+            "evidence:northern-bon-secours-tidal-pool"
+          ]
         },
         "waterQuality": {
           "score": 6,
@@ -39,7 +49,9 @@
         "alternatives": {
           "score": 9,
           "rationale": "Saint-Malo has 14 monitored bathing sites nearby (Sillon, Rochebonne, Bas Sablons) plus Cancale beaches a short drive away, giving many fallbacks.",
-          "evidenceRefs": ["evidence:northern-bon-secours-tidal-pool"]
+          "evidenceRefs": [
+            "evidence:northern-bon-secours-tidal-pool"
+          ]
         }
       }
     },
@@ -47,10 +59,12 @@
       "slug": "lac-de-tremelin",
       "name": "Lac de Trémelin",
       "type": "lake",
-      "linkedBases": ["vannes-carnac-morbihan"],
+      "linkedBases": [
+        "vannes-carnac-morbihan"
+      ],
       "officialSource": "ARS Bretagne / baignades.sante.gouv.fr — Lac de Trémelin (Iffendic, 35)",
       "sourceUrl": "https://baignades.sante.gouv.fr/baignades/genererPDF.do?am1=checkbox&am2=checkbox&am3=checkbox&am4=checkbox&gen=yes&image.x=55&image.y=10&selDpt=035&selEau=TOUT",
-      "checkedAt": "2026-07-03",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "warningStatus": "none",
       "notes": "Official 4-year classification 2022–2025 is Excellent throughout. Blue Flag, lifeguarded 13:30–19:00 late June to end of August; ARS water sampling runs all season. A freshwater inland counterpoint to the Morbihan coast on the Brocéliande axis.",
@@ -85,10 +99,12 @@
       "slug": "lac-de-guerledan",
       "name": "Lac de Guerlédan",
       "type": "lake",
-      "linkedBases": ["quimper-south-finistere"],
+      "linkedBases": [
+        "quimper-south-finistere"
+      ],
       "officialSource": "ARS Bretagne / baignades.sante.gouv.fr — Anse de Guerlédan (Guerlédan, 22)",
       "sourceUrl": "https://baignades.sante.gouv.fr/baignades/consultSite.do?annee=2025&dptddass=022&isite=022001432&plv=02200163043&site=022001432",
-      "checkedAt": "2026-07-03",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "warningStatus": "none",
       "notes": "Official 4-year classification 2022–2025 is Excellent (two monitored inlets, Anse de Guerlédan and Anse de Landroannec, both E every year). Brittany's largest freshwater lake, sitting between the Quimper/South-Finistère and Côte-de-Granit-Rose areas; no corpus coverage so provenance here is official-source only.",
@@ -123,10 +139,12 @@
       "slug": "lac-au-duc",
       "name": "Lac au Duc",
       "type": "lake",
-      "linkedBases": ["vannes-carnac-morbihan"],
+      "linkedBases": [
+        "vannes-carnac-morbihan"
+      ],
       "officialSource": "ARS Bretagne / baignades.sante.gouv.fr — Lac au Duc (Taupont, 56)",
       "sourceUrl": "https://baignades.sante.gouv.fr/baignades/consultSite.do?annee=2025&dptddass=056&isite=056000840&plv=all&site=056000840",
-      "checkedAt": "2026-07-03",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "warningStatus": "none",
       "notes": "Official 4-year classification 2022–2025 is Excellent throughout. A freshwater lake near Ploërmel on the Morbihan inland axis; no corpus coverage, so provenance is official-source only. Seasonal sampling showed occasional 'Moyen' (average) readings late August 2024, all within compliance and the overall grade stayed Excellent.",
@@ -161,10 +179,12 @@
       "slug": "morgat-bay",
       "name": "Plage de Morgat",
       "type": "sea",
-      "linkedBases": ["crozon-douarnenez"],
+      "linkedBases": [
+        "crozon-douarnenez"
+      ],
       "officialSource": "ARS Bretagne / baignades.sante.gouv.fr — Morgat (Le Loc'h & Toul an Trez), Crozon (29)",
       "sourceUrl": "https://baignades.sante.gouv.fr/baignades/genererPDF.do?am1=checkbox&am2=checkbox&am3=checkbox&am4=checkbox&gen=yes&image.x=24&image.y=14&selDpt=029&selEau=MER",
-      "checkedAt": "2026-07-03",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "warningStatus": "none",
       "notes": "Official 4-year classification 2022–2025 Excellent at both monitored Morgat points (Le Loc'h and Toul an Trez). An enclosed bay on the Crozon peninsula described as the area's most sheltered family swimming spot, with kayak and paddleboard hire.",
@@ -172,7 +192,9 @@
         "temperatureShelter": {
           "score": 7,
           "rationale": "Enclosed bay shelters the beach from open-ocean swell; sea water stays ~18 °C in August (refreshing, not warm) but the bay is calmer than the exposed Crozon headlands.",
-          "evidenceRefs": ["evidence:western-morgat-beach"]
+          "evidenceRefs": [
+            "evidence:western-morgat-beach"
+          ]
         },
         "tides": {
           "score": 8,
@@ -181,7 +203,9 @@
         "easyAccess": {
           "score": 8,
           "rationale": "Town beach in Morgat with direct access and water-sport hire; a car is effectively essential to reach the Crozon peninsula, however.",
-          "evidenceRefs": ["evidence:western-morgat-beach"]
+          "evidenceRefs": [
+            "evidence:western-morgat-beach"
+          ]
         },
         "lifeguards": {
           "score": 7,
@@ -194,7 +218,9 @@
         "alternatives": {
           "score": 8,
           "rationale": "The Crozon peninsula clusters several monitored beaches (Aber, Kersiguenou, Kador) plus the Île Vierge viewpoint, giving real variety within a short drive.",
-          "evidenceRefs": ["evidence:western-morgat-beach"]
+          "evidenceRefs": [
+            "evidence:western-morgat-beach"
+          ]
         }
       }
     },
@@ -202,10 +228,12 @@
       "slug": "carnac-grande-plage",
       "name": "Grande Plage de Carnac",
       "type": "sea",
-      "linkedBases": ["vannes-carnac-morbihan"],
+      "linkedBases": [
+        "vannes-carnac-morbihan"
+      ],
       "officialSource": "ARS Bretagne / baignades.sante.gouv.fr — Carnac Grande Plage (56)",
       "sourceUrl": "https://baignades.sante.gouv.fr/baignades/genererPDF.do?am1=checkbox&am2=checkbox&am3=checkbox&am4=checkbox&gen=yes&image.x=55&image.y=10&selDpt=056&selEau=MER",
-      "checkedAt": "2026-07-03",
+      "checkedAt": "2026-07-25",
       "reviewWindowDays": 30,
       "warningStatus": "none",
       "notes": "Official 4-year classification 2022–2025 Excellent. Blue Flag family beach ~2 km long, sheltered by the Quiberon peninsula from heavy swell, with lifeguards and beach clubs running in August; the warmest and calmest bathing water in the shortlist.",
@@ -213,7 +241,9 @@
         "temperatureShelter": {
           "score": 8,
           "rationale": "The Morbihan south coast is the warmest part of the shortlist — sea water reaches ~19 °C in August — and the Quiberon peninsula shelters the beach from open swell.",
-          "evidenceRefs": ["evidence:southern-protected-water-beaches"]
+          "evidenceRefs": [
+            "evidence:southern-protected-water-beaches"
+          ]
         },
         "tides": {
           "score": 8,
@@ -222,7 +252,9 @@
         "easyAccess": {
           "score": 9,
           "rationale": "A resort beach with direct town access, beach clubs, facilities and a gentle slope — purpose-built for families.",
-          "evidenceRefs": ["evidence:southern-protected-water-beaches"]
+          "evidenceRefs": [
+            "evidence:southern-protected-water-beaches"
+          ]
         },
         "lifeguards": {
           "score": 9,
@@ -235,7 +267,9 @@
         "alternatives": {
           "score": 8,
           "rationale": "Carnac has several Blue Flag beaches (Grande Plage, Saint-Colomban) and the Quiberon peninsula's beaches and ferries are close by.",
-          "evidenceRefs": ["evidence:southern-protected-water-beaches"]
+          "evidenceRefs": [
+            "evidence:southern-protected-water-beaches"
+          ]
         }
       }
     }

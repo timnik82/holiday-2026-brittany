@@ -121,6 +121,18 @@
   margin-top: 0.15rem;
 }
 
+.factSource {
+  grid-column: 1 / -1;
+  color: #3a5f6f;
+  font-size: 0.82rem;
+}
+
+.factSource a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .factFreshness {
   justify-self: end;
 }

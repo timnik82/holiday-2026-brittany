@@ -25,4 +25,4 @@ Jardin des Plantes is more than a pretty garden: it has a children's play area, 
 - **Booking:** none; free public garden.
 - **Transport:** short walk from the castle and Commerce area.
 - **Safety:** water play areas need usual supervision.
-- **Price / checked date:** free entry; summer hours from 08:30 until 21:30 (last reviewed 2026-07-24).
+- **Price / checked date:** free entry; summer hours from 08:30 until 21:30 (last reviewed 2026-07-25).
