@@ -39,3 +39,30 @@ export function ageLabel(value: string | undefined): string {
   if (!value) return "—";
   return AGE_LABELS[value] ?? value;
 }
+
+/**
+ * Weather fit, worded for a reader deciding what to do in the rain.
+ *
+ * `mixed` deliberately does not say "indoor": it means part of the place has a
+ * roof, not that the whole visit is sheltered. Only two places in the corpus
+ * are genuinely indoor, so overstating the middle value would send a family out
+ * to a castle courtyard expecting a museum.
+ */
+export const WEATHER_FIT_LABELS: Record<string, string> = {
+  indoor: "Indoor",
+  mixed: "Some shelter",
+  outdoor: "Outdoor",
+};
+
+export function weatherFitLabel(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  return WEATHER_FIT_LABELS[value] ?? value;
+}
+
+/** "2–4 h", or a single figure when the range has no spread. */
+export function durationLabel(
+  value: { min: number; max: number } | undefined
+): string | undefined {
+  if (!value) return undefined;
+  return value.min === value.max ? `${value.min} h` : `${value.min}–${value.max} h`;
+}
