@@ -5026,17 +5026,13 @@
     "status": "duplicate",
     "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
   },
-  "mont-saint-michel-guide:b001": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
-  },
   "mont-saint-michel-guide:b002": {
     "status": "duplicate",
     "retainedEvidenceId": "evidence:northern-msm-tides-aug-2026"
   },
   "mont-saint-michel-guide:b003": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-msm-early-arrival"
   },
   "mont-saint-michel-guide:b004": {
     "status": "retained",
@@ -5231,13 +5227,9 @@
       "dinan-planning"
     ]
   },
-  "mont-saint-michel-guide:b024": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
-  },
   "mont-saint-michel-guide:b026": {
     "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+    "retainedEvidenceId": "evidence:northern-distances-msm-cluster"
   },
   "mont-saint-michel-guide:b027": {
     "status": "retained",

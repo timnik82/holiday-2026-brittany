@@ -2390,7 +2390,8 @@
     "substantive": true
   },
   "mont-saint-michel-guide:b001": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Alternate two-base plan with overnight at MSM; trip stays four nights in Saint-Malo"
   },
   "mont-saint-michel-guide:b002": {
     "substantive": true
@@ -2463,7 +2464,8 @@
     "substantive": true
   },
   "mont-saint-michel-guide:b024": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Section label for alternate overnight-at-MSM itinerary"
   },
   "mont-saint-michel-guide:b025": {
     "substantive": false,
