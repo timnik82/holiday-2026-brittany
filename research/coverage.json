@@ -5227,10 +5227,6 @@
       "dinan-planning"
     ]
   },
-  "mont-saint-michel-guide:b026": {
-    "status": "duplicate",
-    "retainedEvidenceId": "evidence:northern-distances-msm-cluster"
-  },
   "mont-saint-michel-guide:b027": {
     "status": "retained",
     "evidenceIds": [

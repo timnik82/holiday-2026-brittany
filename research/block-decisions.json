@@ -2472,7 +2472,8 @@
     "reason": "Alternate multi-day itinerary with overnight at MSM; not used in the guide trip plan"
   },
   "mont-saint-michel-guide:b026": {
-    "substantive": true
+    "substantive": false,
+    "reason": "Section label only"
   },
   "mont-saint-michel-guide:b027": {
     "substantive": true
