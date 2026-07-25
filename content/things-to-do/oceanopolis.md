@@ -1,30 +1,33 @@
 ---
 slug: oceanopolis
 title: Océanopolis
-summary: One of Europe's largest oceanariums and Brest's flagship family attraction — polar, tropical, and temperate pavilions and the base's main rainy-day anchor.
-updatedAt: "2026-07-02"
+summary: Brest's flagship oceanarium — still the big indoor day trip from Quimper in 2026 during Métamorphose works, with Tropical reopened and Austral due in 2027.
+updatedAt: "2026-07-25"
 status: review
 category: museum
 ageRange: 4+
 weatherFit: indoor
 durationHours:
-  min: 3
-  max: 8
+  min: 2
+  max: 4
 ---
 
 **Base:** [Brest / Finistère](/bases/brest-finistere)
 
 ## What it is
 
-<!-- paragraph id="oceanopolis-what" sources="evidence:western-brest-oceanopolis" -->
-Océanopolis is Brest's flagship family attraction and a near-guaranteed hit with a child: one of Europe's largest oceanariums with more than 10,000 marine animals across polar, tropical, and temperate pavilions, plus interactive exhibits and rare polar animals. It is the base's main rainy-day anchor and is positioned by the Brittany tourist office as one of the region's top family magnets.
+<!-- paragraph id="oceanopolis-what" sources="evidence:western-brest-oceanopolis,evidence:western-oceanopolis-2026-works" -->
+Océanopolis is Brest's flagship family attraction. In 2026 it is mid-Métamorphose renovation: Tropical reopened 4 July 2026, Austral is due early 2027, and Brittany pavilion, otter trail and Cité des Océanautes stay open under special tariffs.
 
 ## Planning
 
-- **Visit duration:** a half-day to a full day across the three pavilions.
-- **Age fit:** 4+; strong for a 9 to 10-year-old.
-- **Weather fit:** fully indoor — the best rainy-day option in the base.
-- **Booking:** check the official site for current opening days, hours, and ticket prices; book ahead in peak August weeks.
-- **Transport:** short drive or bus from the city centre; car-optional.
+<!-- paragraph id="oceanopolis-planning" sources="evidence:western-oceanopolis-2026-works,evidence:western-oceanopolis-festivals-closure-note" -->
+Plan 2.5–3 hours and buy timed tickets online. A festivals note still said Tropical and Austral were both closed — prefer the Métamorphose timeline unless oceanopolis.com says otherwise. Treat it as a day trip from Quimper, not a reason to move north.
+
+- **Visit duration:** about 2.5–3 hours during works.
+- **Age fit:** 4+; Cité des Océanautes suits ages 6–12.
+- **Weather fit:** fully indoor — the biggest wet-day trip from Quimper.
+- **Booking:** timed online tickets; check which pavilions are open.
+- **Transport:** short hop from Brest centre; about an hour from Crozon, longer from Quimper.
 - **Safety:** standard indoor attraction supervision.
-- **Price / checked date:** opening days, hours, and prices change — re-check on the official site before visiting (last reviewed against the supplied research on 2026-07-02).
+- **Price / checked date:** special 2026 tariffs (~€14 adult / €6.50 child concession) — re-check oceanopolis.com (last reviewed 2026-07-25).

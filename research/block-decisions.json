@@ -1984,5 +1984,409 @@
   "castles-largest-perplexity:b016": {
     "substantive": false,
     "reason": "Formatting-only decorative divider"
+  },
+  "historical-cities-chatgpt:b001": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b002": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-chatgpt:b003": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-chatgpt:b004": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b005": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b006": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b007": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b008": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b009": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b010": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b011": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b012": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b013": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b014": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b015": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-chatgpt:b016": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b017": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b018": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b019": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b020": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b021": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-chatgpt:b022": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b023": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b024": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b025": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b026": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b027": {
+    "substantive": true
+  },
+  "historical-cities-chatgpt:b028": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-chatgpt:b029": {
+    "substantive": true
+  },
+  "historical-cities-claude:b001": {
+    "substantive": true
+  },
+  "historical-cities-claude:b002": {
+    "substantive": true
+  },
+  "historical-cities-claude:b003": {
+    "substantive": true
+  },
+  "historical-cities-claude:b004": {
+    "substantive": true
+  },
+  "historical-cities-claude:b005": {
+    "substantive": true
+  },
+  "historical-cities-claude:b006": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-claude:b007": {
+    "substantive": true
+  },
+  "historical-cities-claude:b008": {
+    "substantive": true
+  },
+  "historical-cities-claude:b009": {
+    "substantive": true
+  },
+  "historical-cities-claude:b010": {
+    "substantive": true
+  },
+  "historical-cities-claude:b011": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-claude:b012": {
+    "substantive": true
+  },
+  "historical-cities-claude:b013": {
+    "substantive": true
+  },
+  "historical-cities-claude:b014": {
+    "substantive": true
+  },
+  "historical-cities-claude:b015": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "historical-cities-claude:b016": {
+    "substantive": true
+  },
+  "historical-cities-claude:b017": {
+    "substantive": true
+  },
+  "historical-cities-claude:b018": {
+    "substantive": true
+  },
+  "historical-cities-claude:b019": {
+    "substantive": true
+  },
+  "historical-cities-claude:b020": {
+    "substantive": true
+  },
+  "historical-cities-claude:b021": {
+    "substantive": true
+  },
+  "festivals-claude:b001": {
+    "substantive": true
+  },
+  "festivals-claude:b002": {
+    "substantive": true
+  },
+  "festivals-claude:b003": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b004": {
+    "substantive": true
+  },
+  "festivals-claude:b005": {
+    "substantive": true
+  },
+  "festivals-claude:b006": {
+    "substantive": true
+  },
+  "festivals-claude:b007": {
+    "substantive": true
+  },
+  "festivals-claude:b008": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b009": {
+    "substantive": true
+  },
+  "festivals-claude:b010": {
+    "substantive": true
+  },
+  "festivals-claude:b011": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b012": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b013": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b014": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b015": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b016": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b017": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b018": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b019": {
+    "substantive": true
+  },
+  "festivals-claude:b020": {
+    "substantive": true
+  },
+  "festivals-claude:b021": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b022": {
+    "substantive": true
+  },
+  "festivals-claude:b023": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b024": {
+    "substantive": true
+  },
+  "festivals-claude:b025": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b026": {
+    "substantive": true
+  },
+  "festivals-claude:b027": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "festivals-claude:b028": {
+    "substantive": true
+  },
+  "festivals-claude:b029": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b001": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b002": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b003": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b004": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b005": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b006": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b007": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b008": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b009": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b010": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b011": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b012": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b013": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b014": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b015": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b016": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b017": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b018": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b019": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b020": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b021": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b022": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b023": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b024": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b025": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b026": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b027": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b028": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b029": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b030": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b031": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b032": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b033": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b034": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b035": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b036": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b037": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b038": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b039": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b040": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b041": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b042": {
+    "substantive": false,
+    "reason": "Outside Quimper-reach priorities for this intake; not retained as guide evidence"
+  },
+  "brittany-with-kid-claude:b043": {
+    "substantive": true
+  },
+  "brittany-with-kid-claude:b044": {
+    "substantive": true
   }
 }

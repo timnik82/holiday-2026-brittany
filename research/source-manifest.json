@@ -168,5 +168,48 @@
       "Works cited",
       "Sources"
     ]
+  },
+  {
+    "slug": "historical-cities-chatgpt",
+    "path": "research/raw/Historical-Cities-ChatGPT.md",
+    "language": "en",
+    "stopHeadings": [
+      "Works cited",
+      "Sources"
+    ],
+    "sha256": "b9c8daf0eb3d99878d55bc67feb318dd9014f76d122df9c187821c7ae8d5bbb5"
+  },
+  {
+    "slug": "historical-cities-claude",
+    "path": "research/raw/Historical-Cities-Claude.md",
+    "language": "ru",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ],
+    "sha256": "ee8af8e2fb8f14558786876c5743249c7af9f7709d4a992633b554fde8454ad8"
+  },
+  {
+    "slug": "festivals-claude",
+    "path": "research/raw/Festivals-Claude.md",
+    "language": "ru",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ],
+    "sha256": "8d025e9d834a5ecdac5ae1018e27396ffb443ef9171679125f95e5ffddb5fa04"
+  },
+  {
+    "slug": "brittany-with-kid-claude",
+    "path": "research/raw/Brittany-with-kid-Claude.md",
+    "language": "ru",
+    "stopHeadings": [
+      "Works cited",
+      "Sources",
+      "Источники"
+    ],
+    "sha256": "bb685a1e6eee25dd3761cb47afe9d2547348832a59252c7683128f044ba1989d"
   }
 ]

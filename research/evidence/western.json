@@ -25,7 +25,8 @@
       "gemini-britany:b016",
       "perplexity:b033",
       "museums-brittany-perplexity:b008",
-      "museums-brittany-perplexity:b016"
+      "museums-brittany-perplexity:b016",
+      "brittany-with-kid-claude:b031"
     ],
     "sourceUrls": [
       "https://www.oceanopolis.com/"
@@ -155,7 +156,9 @@
       "perplexity:b038",
       "gemini-britany:b018",
       "operaai:b022",
-      "perplexity:b043"
+      "perplexity:b043",
+      "historical-cities-chatgpt:b012",
+      "historical-cities-claude:b009"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -169,7 +172,8 @@
       "chatgpt:b024",
       "operaai:b022",
       "museums-brittany-perplexity:b064",
-      "museums-brittany-perplexity:b070"
+      "museums-brittany-perplexity:b070",
+      "museums-brittany-perplexity:b066"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -239,7 +243,9 @@
     "text": "Concarneau's walled Ville Close, a 14th-century sea fortress reached by bridge, is the town's signature sight. In August 2026 the Festival des Filets Bleus runs from Wednesday 12 to Sunday 16 August — five days of free open-air concerts on the Quai Carnot facing the ramparts, a Grande Parade on the Sunday with more than 2,000 costumed participants, and a Village de la Mer celebrating fishing and maritime life. The original research dates (12 to 16 August) are confirmed by the official festival site.",
     "kind": "fact",
     "sourceBlockRefs": [
-      "gemini-britany:b018"
+      "gemini-britany:b018",
+      "festivals-claude:b005",
+      "brittany-with-kid-claude:b030"
     ],
     "sourceUrls": [
       "https://www.festivaldesfiletsbleus.bzh/"
@@ -285,7 +291,8 @@
     "text": "The Pointe du Raz, one of Brittany's famous wild headlands, is a practical day trip from a Quimper base — dramatic clifftop walks at the end of the land, best in calm, dry weather.",
     "kind": "recommendation",
     "sourceBlockRefs": [
-      "operaai:b022"
+      "operaai:b022",
+      "brittany-with-kid-claude:b027"
     ],
     "sourceUrls": [],
     "qualifiers": [
@@ -299,7 +306,8 @@
     "kind": "recommendation",
     "sourceBlockRefs": [
       "chatgpt:b023",
-      "perplexity:b040"
+      "perplexity:b040",
+      "brittany-with-kid-claude:b028"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -324,7 +332,8 @@
     "sourceBlockRefs": [
       "chatgpt:b033",
       "gemini-britany:b016",
-      "perplexity:b033"
+      "perplexity:b033",
+      "brittany-with-kid-claude:b025"
     ],
     "sourceUrls": [],
     "qualifiers": [],
@@ -409,6 +418,101 @@
     "qualifiers": [
       "Historical August conditions, not a forecast."
     ],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:western-musee-beaux-arts-quimper",
+    "text": "The Musée des Beaux-Arts de Quimper shows about 600 works across roughly 20 rooms, with a strong Breton nineteenth-century and Pont-Aven school collection plus older European schools. Family tours, workshops and youth events run regularly; allow 1.5–2 hours and combine with Saint-Corentin cathedral and the old town.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "museums-brittany-perplexity:b064",
+      "museums-brittany-perplexity:b066",
+      "museums-brittany-perplexity:b068",
+      "historical-cities-chatgpt:b012",
+      "historical-cities-claude:b009"
+    ],
+    "sourceUrls": [
+      "https://www.mbaq.fr/"
+    ],
+    "qualifiers": [
+      "Official tourism notes reported a renovation closure from October 2024 into spring 2026 — confirm August 2026 opening on mbaq.fr before relying on it as the wet-day plan."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:western-filets-bleus-practical",
+    "text": "During Filets Bleus (12–16 August 2026) park at the station or shuttle car parks and use Coralie buses (lines 1 and 4) rather than driving into the centre. The Sunday Grande Parade starts about 10:00 with a support badge roughly €5–10, free for children under 10; concerts on Quai Carnot are free.",
+    "kind": "fact",
+    "sourceBlockRefs": [
+      "festivals-claude:b005",
+      "brittany-with-kid-claude:b030",
+      "brittany-with-kid-claude:b041"
+    ],
+    "sourceUrls": [
+      "https://www.festivaldesfiletsbleus.bzh/"
+    ],
+    "qualifiers": [
+      "Parade badge prices and shuttle details can shift — re-check the festival site closer to the date."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:western-oceanopolis-2026-works",
+    "text": "In 2026 Océanopolis is mid-Métamorphose renovation (~€45m). The Tropical pavilion reopened 4 July 2026; the Austral (former polar) pavilion is due early 2027. Brittany pavilion, otter trail, Cité des Océanautes (ages 6–12) and Océanolab stay open. Special reduced tariffs apply during works (about €14 adult / €6.50 child concession) — buy timed tickets online; plan 2.5–3 hours.",
+    "kind": "qualification",
+    "sourceBlockRefs": [
+      "brittany-with-kid-claude:b031"
+    ],
+    "sourceUrls": [
+      "https://www.oceanopolis.com/"
+    ],
+    "qualifiers": [
+      "Pavilion status and special tariffs change — re-check oceanopolis.com before visiting."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:western-oceanopolis-festivals-closure-note",
+    "text": "A festivals research note from the same corpus still described Tropical and Austral pavilions as closed under a special 2026 tariff, without the July 2026 Tropical reopening detail.",
+    "kind": "qualification",
+    "sourceBlockRefs": [
+      "festivals-claude:b024"
+    ],
+    "sourceUrls": [
+      "https://www.oceanopolis.com/"
+    ],
+    "qualifiers": [
+      "Prefer the Métamorphose timeline that includes the 4 July 2026 Tropical reopening unless the official site says otherwise."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
+  },
+  {
+    "id": "evidence:western-crozon-pen-hir-detail",
+    "text": "On the Crozon peninsula, Pointe de Pen-Hir rises about 63 m above the sea with the distinctive Tas de Pois rock stacks — the strongest end-of-the-land viewpoint on a Quimper-based day. Pair with Cap de la Chèvre walks and keep wind layers ready.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "brittany-with-kid-claude:b025",
+      "brittany-with-kid-claude:b023"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
+  },
+  {
+    "id": "evidence:western-quimper-historic-depth",
+    "text": "Quimper ranks as Brittany's strongest inland cultural historic city for a family that wants cathedral, half-timbered streets and museums without a fortress-first vibe. ChatGPT places it fourth overall among historical cities; Claude calls it the soul of Cornouaille — more urban and cultural than Saint-Malo or Dinan, still walkable with a child.",
+    "kind": "recommendation",
+    "sourceBlockRefs": [
+      "historical-cities-chatgpt:b012",
+      "historical-cities-chatgpt:b013",
+      "historical-cities-claude:b009"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
     "timeSensitive": false
   }
 ]

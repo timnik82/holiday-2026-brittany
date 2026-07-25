@@ -3392,21 +3392,29 @@
   "museums-brittany-perplexity:b064": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:western-quimper-culture-base",
+      "evidence:western-musee-beaux-arts-quimper",
       "evidence:western-quimper-family-museums"
     ],
     "paragraphIds": [
-      "quimper-what"
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "quimper-what",
+      "quimper-family-museums",
+      "stay-quimper-rain"
     ]
   },
   "museums-brittany-perplexity:b066": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:western-quimper-culture-base",
+      "evidence:western-musee-beaux-arts-quimper",
       "evidence:western-quimper-family-museums"
     ],
     "paragraphIds": [
-      "quimper-what"
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "quimper-what",
+      "quimper-family-museums",
+      "stay-quimper-rain"
     ]
   },
   "museums-brittany-perplexity:b068": {
@@ -3416,11 +3424,15 @@
   "museums-brittany-perplexity:b070": {
     "status": "retained",
     "evidenceIds": [
-      "evidence:western-quimper-culture-base",
+      "evidence:western-musee-beaux-arts-quimper",
       "evidence:western-quimper-family-museums"
     ],
     "paragraphIds": [
-      "quimper-what"
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "quimper-what",
+      "quimper-family-museums",
+      "stay-quimper-rain"
     ]
   },
   "museums-brittany-perplexity:b071": {
@@ -4425,5 +4437,583 @@
   "castles-largest-perplexity:b015": {
     "status": "duplicate",
     "retainedEvidenceId": "evidence:southern-suscinio"
+  },
+  "historical-cities-chatgpt:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "historical-cities-chatgpt:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b006": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-allround-base"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "saint-malo-verdict"
+    ]
+  },
+  "historical-cities-chatgpt:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "historical-cities-chatgpt:b008": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "saint-malo-dinan-town"
+    ]
+  },
+  "historical-cities-chatgpt:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-vannes-town",
+      "evidence:southern-base-rhythm"
+    ],
+    "paragraphIds": [
+      "vannes-what",
+      "morbihan-verdict"
+    ]
+  },
+  "historical-cities-chatgpt:b011": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "historical-cities-chatgpt:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-historic-depth",
+      "evidence:western-musee-beaux-arts-quimper"
+    ],
+    "paragraphIds": [
+      "quimper-what",
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "stay-quimper-day-1",
+      "stay-quimper-rain",
+      "quimper-verdict",
+      "quimper-family-museums"
+    ]
+  },
+  "historical-cities-chatgpt:b013": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-historic-depth",
+      "evidence:western-musee-beaux-arts-quimper"
+    ],
+    "paragraphIds": [
+      "quimper-what",
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "stay-quimper-day-1",
+      "stay-quimper-rain",
+      "quimper-verdict",
+      "quimper-family-museums"
+    ]
+  },
+  "historical-cities-chatgpt:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "historical-cities-chatgpt:b017": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "historical-cities-chatgpt:b018": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-concarneau-filets-bleus",
+      "evidence:western-filets-bleus-practical"
+    ],
+    "paragraphIds": [
+      "concarneau-what",
+      "concarneau-planning",
+      "stay-quimper-day-4",
+      "quimper-day-trips"
+    ]
+  },
+  "historical-cities-chatgpt:b019": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b020": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "historical-cities-chatgpt:b022": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b023": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b024": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-locronan"
+  },
+  "historical-cities-chatgpt:b025": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "historical-cities-chatgpt:b026": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-chatgpt:b027": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "historical-cities-chatgpt:b029": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b003": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-allround-base"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "saint-malo-verdict"
+    ]
+  },
+  "historical-cities-claude:b004": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "saint-malo-dinan-town"
+    ]
+  },
+  "historical-cities-claude:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-vannes-town",
+      "evidence:southern-base-rhythm"
+    ],
+    "paragraphIds": [
+      "vannes-what",
+      "morbihan-verdict"
+    ]
+  },
+  "historical-cities-claude:b007": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-concarneau-filets-bleus",
+      "evidence:western-filets-bleus-practical"
+    ],
+    "paragraphIds": [
+      "concarneau-what",
+      "concarneau-planning",
+      "stay-quimper-day-4",
+      "quimper-day-trips"
+    ]
+  },
+  "historical-cities-claude:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "historical-cities-claude:b009": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-historic-depth",
+      "evidence:western-musee-beaux-arts-quimper"
+    ],
+    "paragraphIds": [
+      "quimper-what",
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "stay-quimper-day-1",
+      "stay-quimper-rain",
+      "quimper-verdict",
+      "quimper-family-museums"
+    ]
+  },
+  "historical-cities-claude:b010": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-mont-saint-michel-day-trip"
+  },
+  "historical-cities-claude:b012": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b013": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b014": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b016": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b017": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-locronan"
+  },
+  "historical-cities-claude:b018": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b019": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b020": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "historical-cities-claude:b021": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "festivals-claude:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "festivals-claude:b002": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "festivals-claude:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "festivals-claude:b005": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-concarneau-filets-bleus",
+      "evidence:western-filets-bleus-practical"
+    ],
+    "paragraphIds": [
+      "concarneau-what",
+      "concarneau-planning",
+      "stay-quimper-day-4",
+      "quimper-day-trips"
+    ]
+  },
+  "festivals-claude:b006": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "festivals-claude:b007": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "festivals-claude:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "festivals-claude:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-locronan"
+    ],
+    "paragraphIds": [
+      "locronan-what",
+      "stay-quimper-day-2"
+    ]
+  },
+  "festivals-claude:b019": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "festivals-claude:b020": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "festivals-claude:b022": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "festivals-claude:b024": {
+    "status": "conflict",
+    "conflictId": "conflict:oceanopolis-2026-pavilion-status",
+    "evidenceIds": [
+      "evidence:western-oceanopolis-2026-works",
+      "evidence:western-oceanopolis-festivals-closure-note"
+    ],
+    "paragraphIds": [
+      "oceanopolis-what",
+      "oceanopolis-planning",
+      "stay-quimper-oceanopolis"
+    ],
+    "interpretation": "Prefer the Métamorphose timeline (Tropical reopened 4 July 2026; Austral due early 2027) over the festivals note that still listed both Tropical and Austral as closed."
+  },
+  "festivals-claude:b026": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "festivals-claude:b028": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
+  },
+  "brittany-with-kid-claude:b001": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "brittany-with-kid-claude:b004": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "brittany-with-kid-claude:b005": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "brittany-with-kid-claude:b008": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "brittany-with-kid-claude:b009": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "brittany-with-kid-claude:b010": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-mont-saint-michel-day-trip"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-what",
+      "stay-saint-malo-day-3"
+    ]
+  },
+  "brittany-with-kid-claude:b011": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-mont-saint-michel-day-trip"
+    ],
+    "paragraphIds": [
+      "mont-saint-michel-what",
+      "stay-saint-malo-day-3"
+    ]
+  },
+  "brittany-with-kid-claude:b012": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-saint-malo-ramparts-walk",
+      "evidence:northern-saint-malo-allround-base"
+    ],
+    "paragraphIds": [
+      "saint-malo-walls-what",
+      "saint-malo-verdict"
+    ]
+  },
+  "brittany-with-kid-claude:b013": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-dinan-medieval-town"
+    ],
+    "paragraphIds": [
+      "dinan-what",
+      "saint-malo-dinan-town"
+    ]
+  },
+  "brittany-with-kid-claude:b014": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:northern-cap-frehel-fort-la-latte"
+    ],
+    "paragraphIds": [
+      "cap-frehel-what",
+      "saint-malo-day-trips"
+    ]
+  },
+  "brittany-with-kid-claude:b015": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-dinan-medieval-town"
+  },
+  "brittany-with-kid-claude:b023": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-crozon-wild-coast",
+      "evidence:western-crozon-pen-hir-detail",
+      "evidence:western-pointe-du-raz"
+    ],
+    "paragraphIds": [
+      "crozon-pen-hir-what",
+      "crozon-pen-hir-planning",
+      "stay-quimper-day-3",
+      "pointe-du-raz-what"
+    ]
+  },
+  "brittany-with-kid-claude:b024": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "brittany-with-kid-claude:b025": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-crozon-wild-coast",
+      "evidence:western-crozon-pen-hir-detail",
+      "evidence:western-pointe-du-raz"
+    ],
+    "paragraphIds": [
+      "crozon-pen-hir-what",
+      "crozon-pen-hir-planning",
+      "stay-quimper-day-3",
+      "pointe-du-raz-what"
+    ]
+  },
+  "brittany-with-kid-claude:b026": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "brittany-with-kid-claude:b027": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-crozon-wild-coast",
+      "evidence:western-crozon-pen-hir-detail",
+      "evidence:western-pointe-du-raz"
+    ],
+    "paragraphIds": [
+      "crozon-pen-hir-what",
+      "crozon-pen-hir-planning",
+      "stay-quimper-day-3",
+      "pointe-du-raz-what"
+    ]
+  },
+  "brittany-with-kid-claude:b028": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-locronan"
+    ],
+    "paragraphIds": [
+      "locronan-what",
+      "stay-quimper-day-2"
+    ]
+  },
+  "brittany-with-kid-claude:b029": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-quimper-culture-base",
+      "evidence:western-quimper-historic-depth",
+      "evidence:western-musee-beaux-arts-quimper"
+    ],
+    "paragraphIds": [
+      "quimper-what",
+      "musee-beaux-arts-quimper-what",
+      "musee-beaux-arts-quimper-planning",
+      "stay-quimper-day-1",
+      "stay-quimper-rain",
+      "quimper-verdict",
+      "quimper-family-museums"
+    ]
+  },
+  "brittany-with-kid-claude:b030": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-concarneau-filets-bleus",
+      "evidence:western-filets-bleus-practical"
+    ],
+    "paragraphIds": [
+      "concarneau-what",
+      "concarneau-planning",
+      "stay-quimper-day-4",
+      "quimper-day-trips"
+    ]
+  },
+  "brittany-with-kid-claude:b031": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:western-brest-oceanopolis",
+      "evidence:western-oceanopolis-2026-works"
+    ],
+    "paragraphIds": [
+      "oceanopolis-what",
+      "oceanopolis-planning",
+      "stay-quimper-oceanopolis"
+    ]
+  },
+  "brittany-with-kid-claude:b032": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "brittany-with-kid-claude:b033": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "brittany-with-kid-claude:b034": {
+    "status": "retained",
+    "evidenceIds": [
+      "evidence:southern-vannes-town",
+      "evidence:southern-base-rhythm"
+    ],
+    "paragraphIds": [
+      "vannes-what",
+      "morbihan-verdict"
+    ]
+  },
+  "brittany-with-kid-claude:b035": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "brittany-with-kid-claude:b036": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "brittany-with-kid-claude:b037": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "brittany-with-kid-claude:b038": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "brittany-with-kid-claude:b039": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:southern-vannes-town"
+  },
+  "brittany-with-kid-claude:b040": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-quimper-culture-base"
+  },
+  "brittany-with-kid-claude:b041": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-locronan"
+  },
+  "brittany-with-kid-claude:b043": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:northern-saint-malo-ramparts-walk"
+  },
+  "brittany-with-kid-claude:b044": {
+    "status": "duplicate",
+    "retainedEvidenceId": "evidence:western-concarneau-filets-bleus"
   }
 }
