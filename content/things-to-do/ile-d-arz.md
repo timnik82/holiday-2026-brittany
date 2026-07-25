@@ -6,6 +6,10 @@ updatedAt: "2026-07-02"
 status: review
 category: nature
 ageRange: all
+weatherFit: outdoor
+durationHours:
+  min: 6
+  max: 8
 ---
 
 **Base:** [Vannes / Carnac / Morbihan](/bases/vannes-carnac-morbihan)

@@ -6,6 +6,10 @@ updatedAt: "2026-07-02"
 status: review
 category: culture
 ageRange: all
+weatherFit: outdoor
+durationHours:
+  min: 3
+  max: 4
 ---
 
 **Base:** [Quimper / South Finistère](/bases/quimper-south-finistere)

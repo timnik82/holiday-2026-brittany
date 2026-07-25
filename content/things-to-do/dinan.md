@@ -6,6 +6,10 @@ updatedAt: "2026-07-01"
 status: review
 category: history
 ageRange: 6+
+weatherFit: mixed
+durationHours:
+  min: 6
+  max: 8
 ---
 
 **Base:** [Saint-Malo / Dinan](/bases/saint-malo-dinan)

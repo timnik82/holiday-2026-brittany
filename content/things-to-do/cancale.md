@@ -6,6 +6,10 @@ updatedAt: "2026-07-01"
 status: review
 category: food
 ageRange: all
+weatherFit: outdoor
+durationHours:
+  min: 2
+  max: 4
 ---
 
 **Base:** [Saint-Malo / Dinan](/bases/saint-malo-dinan)

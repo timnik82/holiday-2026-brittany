@@ -6,6 +6,10 @@ updatedAt: "2026-07-01"
 status: review
 category: beach
 ageRange: all
+weatherFit: outdoor
+durationHours:
+  min: 1
+  max: 3
 ---
 
 **Base:** [Saint-Malo / Dinan](/bases/saint-malo-dinan)

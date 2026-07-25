@@ -7,6 +7,7 @@ import {
   SCHEMA_BY_CATEGORY,
   CONTENT_CATEGORIES,
   stayFrontmatterSchema,
+  thingsToDoFrontmatterSchema,
 } from "../../src/lib/content/schemas";
 import {
   validateParsedContent,
@@ -14,6 +15,7 @@ import {
   parseContent,
 } from "../../src/lib/content/parse";
 import { guideConfig } from "../../src/config/guide";
+import { allReachEntries } from "../../src/lib/trip/reach";
 import { extractBlocks, type SourceBlock } from "../../src/lib/content/source-blocks";
 import {
   sourceManifestSchema,
@@ -71,6 +73,10 @@ function main() {
   const slugOwners = new Map<string, string>();
   // Base pages that exist, checked afterwards against the stays' baseSlug.
   const baseSlugs = new Set<string>();
+  // Reviewed places carrying neither situational field. Reported, not failed:
+  // the fields are derived from what a page already says, and some pages say
+  // nothing. Guessing would be worse than an honest blank.
+  const unmarkedPlaces: string[] = [];
 
   for (const category of CONTENT_CATEGORIES) {
     const dir = path.join(CONTENT_ROOT, category);
@@ -107,6 +113,22 @@ function main() {
       // A stay page is a view onto a booked stay: its dates, place and base
       // all come from `guideConfig.trip`, so an unresolvable stayId would
       // render a page with no trip behind it.
+      // Situational fields are optional by design — a place whose page states
+      // no duration or weather fit is left unmarked rather than guessed at, and
+      // ranks neutral. But an unmarked place is invisible to the day filter, so
+      // the list is reported rather than left to be discovered on the road.
+      if (category === "things-to-do") {
+        const place = thingsToDoFrontmatterSchema.safeParse(frontmatter);
+        if (
+          place.success &&
+          place.data.status !== "draft" &&
+          !place.data.weatherFit &&
+          !place.data.durationHours
+        ) {
+          unmarkedPlaces.push(place.data.slug);
+        }
+      }
+
       if (category === "trip") {
         const stay = stayFrontmatterSchema.safeParse(frontmatter);
         if (stay.success) {
@@ -146,6 +168,21 @@ function main() {
       for (const err of contentErrors) {
         errors.push({ message: err.message });
       }
+    }
+  }
+
+  // Reach lists name places by slug and nothing else links them, so a renamed
+  // or deleted place would silently drop out of the day's options.
+  for (const { stayId, entry } of allReachEntries()) {
+    if (!bookedStayIds.has(stayId)) {
+      errors.push({
+        message: `src/lib/trip/reach.ts: Reach list "${stayId}" is not a booked stay.`,
+      });
+    }
+    if (!slugOwners.has(`things-to-do/${entry.place}`)) {
+      errors.push({
+        message: `src/lib/trip/reach.ts: ${stayId} reaches "${entry.place}", which has no page in content/things-to-do/.`,
+      });
     }
   }
 
@@ -321,6 +358,13 @@ function main() {
           );
         }
       }
+    }
+  }
+
+  if (unmarkedPlaces.length > 0) {
+    console.log("\nℹ️  Places with no weather fit or duration (invisible to the day filter):");
+    for (const slug of unmarkedPlaces.sort()) {
+      console.log(`  content/things-to-do/${slug}.md`);
     }
   }
 

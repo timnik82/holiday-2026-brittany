@@ -6,6 +6,10 @@ updatedAt: "2026-07-02"
 status: review
 category: nature
 ageRange: all
+weatherFit: mixed
+durationHours:
+  min: 3
+  max: 8
 ---
 
 **Inland linked place** — part of the relaxed route, not part of the coastal base.

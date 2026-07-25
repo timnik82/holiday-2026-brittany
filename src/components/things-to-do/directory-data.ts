@@ -1,6 +1,7 @@
 import { loadContentPages } from "@/lib/content/registry";
 import { RELATED_PLACES } from "@/components/bases/related-places-data";
 import type { ThingsToDoFrontmatter } from "@/lib/content/schemas";
+import { allReachEntries, type ReachTag } from "@/lib/trip/reach";
 import { ageLabel, categoryLabel } from "./labels";
 
 /**
@@ -17,6 +18,16 @@ export interface DirectoryPlace {
   ageRange: string | undefined;
   baseSlug: string | undefined;
   baseTitle: string | undefined;
+  /** Undefined where the page states no weather fit; ranks neutral. */
+  weatherFit: ThingsToDoFrontmatter["weatherFit"];
+  /** Undefined where the page states no duration; ranks neutral. */
+  durationHours: ThingsToDoFrontmatter["durationHours"];
+  /**
+   * Which booked stays this place is reachable from, and how. Separate from
+   * `baseSlug`: a place can sit in a base we never sleep in and still be a day
+   * trip from one we do.
+   */
+  reachFrom: readonly { stayId: string; reach: ReachTag }[];
   updatedAt: string;
   status: string;
 }
@@ -45,6 +56,22 @@ function buildPlaceToBaseMap(): Map<string, string> {
 }
 
 const PLACE_TO_BASE = buildPlaceToBaseMap();
+
+/**
+ * Invert the reach lists (stay → places) into place → stays. Built once at
+ * module init, like the base map above.
+ */
+function buildPlaceToStaysMap(): Map<string, { stayId: string; reach: ReachTag }[]> {
+  const map = new Map<string, { stayId: string; reach: ReachTag }[]>();
+  for (const { stayId, entry } of allReachEntries()) {
+    const list = map.get(entry.place) ?? [];
+    list.push({ stayId, reach: entry.reach });
+    map.set(entry.place, list);
+  }
+  return map;
+}
+
+const PLACE_TO_STAYS = buildPlaceToStaysMap();
 
 /**
  * Build a baseSlug → baseTitle lookup from a single registry load, so the
@@ -85,6 +112,9 @@ export function loadDirectoryPlaces(): DirectoryPlace[] {
         ageRange: frontmatter.ageRange,
         baseSlug,
         baseTitle: baseSlug ? baseTitles.get(baseSlug) : undefined,
+        weatherFit: frontmatter.weatherFit,
+        durationHours: frontmatter.durationHours,
+        reachFrom: PLACE_TO_STAYS.get(entry.page.slug) ?? [],
         updatedAt: entry.page.updatedAt,
         status: entry.page.status,
       };
