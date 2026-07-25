@@ -130,7 +130,13 @@ export default async function PlanGuidePage({
                   <span className={styles.factSource}>
                     Source:{" "}
                     {fact.sourceUrl ? (
-                      <a href={fact.sourceUrl}>{fact.officialSource}</a>
+                      <a
+                        href={fact.sourceUrl}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {fact.officialSource}
+                      </a>
                     ) : (
                       fact.officialSource
                     )}

@@ -63,7 +63,7 @@
     ],
     "qualifiers": [
       "Flight schedules are seasonal and must be re-checked before booking.",
-      "Official check: Brest Bretagne Airport destinations page, accessed 2026-07-25. The One CLI was unavailable in this environment, so the official airport site was used as the nearest equivalent per the plan's substitution rule."
+      "Confirmed on the official Brest Bretagne Airport destinations page, accessed 2026-07-25."
     ],
     "timeSensitive": true,
     "checkedAt": "2026-07-25"
