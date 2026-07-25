@@ -32,7 +32,7 @@ For reference, Quimper is reachable by rail via Nantes in about 2 h 23 min, and 
 ### Friday 14 August — arrival and the old city
 
 <!-- paragraph id="stay-quimper-day-1" sources="evidence:western-quimper-family-museums,evidence:western-quimper-historic-depth,evidence:western-musee-beaux-arts-quimper" -->
-Arrive from Vannes and walk [Quimper](/things-to-do/quimper) itself. Start with the cathedral quarter and, if rain threatens, the [Musée des Beaux-Arts](/things-to-do/musee-beaux-arts-quimper) — confirm it is open after the 2024–2026 works. The faïence museum and Petit Train fill a softer afternoon.
+Arrive from Vannes and walk [Quimper](/things-to-do/quimper) itself — cathedral quarter, half-timbered streets and a soft first afternoon. If the weather closes in, use the indoor fallback below rather than forcing a coastal day.
 
 ### Saturday 15 August — Locronan and the Pointe du Raz
 

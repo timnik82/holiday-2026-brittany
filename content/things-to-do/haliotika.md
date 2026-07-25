@@ -27,4 +27,4 @@ At the port of Le Guilvinec, the Haliotika fishing discovery centre runs interac
 - **Booking:** check tour times and auction-viewing hours before visiting.
 - **Transport:** day-trip range of Quimper; a car is recommended.
 - **Safety:** standard attraction and quayside supervision.
-- **Price / checked date:** tour times change — re-check before visiting (last reviewed 2026-07-25).
+- **Last checked:** tour times change — re-check before visiting (2026-07-25).

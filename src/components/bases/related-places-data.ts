@@ -57,6 +57,11 @@ export const RELATED_PLACES: Record<string, RelatedPlace[]> = {
   ],
   "quimper-south-finistere": [
     { slug: "quimper", title: "Quimper historic centre", note: "On-site" },
+    {
+      slug: "musee-beaux-arts-quimper",
+      title: "Musée des Beaux-Arts de Quimper",
+      note: "Indoor · walkable",
+    },
     { slug: "locronan", title: "Locronan", note: "~20–30 min · car" },
     { slug: "concarneau", title: "Concarneau & Filets Bleus", note: "~30 min · car" },
     { slug: "pont-aven", title: "Pont-Aven", note: "Day trip · car" },

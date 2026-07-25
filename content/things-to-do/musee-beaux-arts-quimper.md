@@ -30,4 +30,4 @@ Allow 1.5–2 hours and combine with Saint-Corentin cathedral next door. Tourism
 - **Booking:** check mbaq.fr for current opening; workshops may need booking.
 - **Transport:** central Quimper, walkable from the historic centre.
 - **Safety:** standard museum supervision.
-- **Price / checked date:** re-check opening after the 2024–2026 works (last reviewed 2026-07-25).
+- **Last checked:** confirm opening after the 2024–2026 works on mbaq.fr (2026-07-25).
