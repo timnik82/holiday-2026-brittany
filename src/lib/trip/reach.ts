@@ -74,14 +74,20 @@ const REACH: Record<string, readonly ReachEntry[]> = {
   ],
 };
 
-/** Everything reachable from one stay, most local first; empty if unwritten. */
+/**
+ * Everything reachable from one stay, most local first; empty if unwritten.
+ *
+ * Own-property lookups only: a plain object inherits `toString` and friends, so
+ * `REACH["toString"]` would otherwise return a function where an array is
+ * documented.
+ */
 export function placesInReach(stayId: string): readonly ReachEntry[] {
-  return REACH[stayId] ?? [];
+  return Object.hasOwn(REACH, stayId) ? REACH[stayId] : [];
 }
 
 /** Whether a stay has a curated reach list at all. */
 export function hasReachList(stayId: string): boolean {
-  return stayId in REACH;
+  return Object.hasOwn(REACH, stayId);
 }
 
 /** Every (stayId, place, reach) triple, for validation and inverse lookups. */

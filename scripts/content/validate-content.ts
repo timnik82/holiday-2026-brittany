@@ -112,31 +112,29 @@ function main() {
         if (category === "bases") baseSlugs.add(parsed.data.slug);
       }
 
-      // A stay page is a view onto a booked stay: its dates, place and base
-      // all come from `guideConfig.trip`, so an unresolvable stayId would
-      // render a page with no trip behind it.
       // Situational fields are optional by design — a place whose page states
       // no duration or weather fit is left unmarked rather than guessed at, and
-      // ranks neutral. But an unmarked place is invisible to the day filter, so
-      // the list is reported rather than left to be discovered on the road.
+      // ranks neutral. But a place missing *either* field is partly invisible to
+      // the day filter, so it is reported rather than discovered on the road.
       if (category === "things-to-do") {
         const place = thingsToDoFrontmatterSchema.safeParse(frontmatter);
-        if (
-          place.success &&
-          place.data.status !== "draft" &&
-          !place.data.weatherFit &&
-          !place.data.durationHours
-        ) {
-          unmarkedPlaces.push(place.data.slug);
-        }
-        // Reach is checked against this rather than against every place file:
-        // the directory drops drafts at runtime, so a reach entry pointing at
-        // one would pass validation and then vanish from the day's options.
         if (place.success && place.data.status !== "draft") {
+          const missing: string[] = [];
+          if (!place.data.weatherFit) missing.push("weatherFit");
+          if (!place.data.durationHours) missing.push("durationHours");
+          if (missing.length > 0) {
+            unmarkedPlaces.push(`${relPath} — no ${missing.join(", ")}`);
+          }
+          // Reach is checked against this rather than against every place file:
+          // the directory drops drafts at runtime, so a reach entry pointing at
+          // one would pass validation and then vanish from the day's options.
           publishedPlaceSlugs.add(place.data.slug);
         }
       }
 
+      // A stay page is a view onto a booked stay: its dates, place and base all
+      // come from `guideConfig.trip`, so an unresolvable stayId would render a
+      // page with no trip behind it.
       if (category === "trip") {
         const stay = stayFrontmatterSchema.safeParse(frontmatter);
         if (stay.success) {
@@ -373,9 +371,9 @@ function main() {
   }
 
   if (unmarkedPlaces.length > 0) {
-    console.log("\nℹ️  Places with no weather fit or duration (invisible to the day filter):");
-    for (const slug of unmarkedPlaces.sort()) {
-      console.log(`  content/things-to-do/${slug}.md`);
+    console.log("\nℹ️  Places missing a situational field (partly invisible to the day filter):");
+    for (const note of unmarkedPlaces.sort()) {
+      console.log(`  ${note}`);
     }
   }
 
