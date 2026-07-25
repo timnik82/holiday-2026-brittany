@@ -52,8 +52,11 @@ export const thingsToDoFrontmatterSchema = pageFrontmatterSchema.extend({
       min: z.number().positive(),
       max: z.number().positive(),
     })
+    // Reported on `max` rather than on the object, so the error names the field
+    // to edit instead of the pair.
     .refine((d) => d.max >= d.min, {
       message: "durationHours.max must be greater than or equal to min",
+      path: ["max"],
     })
     .optional(),
 });
