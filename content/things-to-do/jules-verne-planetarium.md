@@ -21,11 +21,11 @@ Musée Jules Verne is a compact imagination-and-invention museum in the writer's
 
 - **Visit duration:** about an hour for Jules Verne; add 45–60 minutes for one Planetarium session.
 - **Age fit:** 6+; Planetarium lists 6–10 and 8+ programmes.
-- **Weather fit:** fully indoor; the best rainy-day anchor on the west bank.
+- **Weather fit:** fully indoor; the Planetarium is air-conditioned, Jules Verne is not (hours may shorten in heatwaves).
 - **Booking:** check Planetarium session times and book by phone if using Pass Nantes.
 - **Transport:** about ten minutes' walk from Gare Maritime; tram Line 1 disruption Jun–Aug 2026 may mean bus plus walk.
 - **Safety:** standard museum supervision.
-- **Price / checked date:** museum about €4 adult, free under 18; Planetarium about €7 / €3 reduced (last reviewed 2026-07-24).
+- **Price / checked date:** museum about €4 adult, free under 18; Planetarium about €7 / €3 reduced (last reviewed 2026-07-25).
 
 <!-- paragraph id="nantes-jules-verne-planning" sources="evidence:nantes-planetarium,evidence:nantes-jules-verne" -->
 Pair Jules Verne with Jardin Extraordinaire on a departure morning; add the Planetarium only when a 6–10 session fits before the train. Pass Nantes holders must phone to book Planetarium slots.

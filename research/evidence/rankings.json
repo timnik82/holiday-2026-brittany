@@ -3,321 +3,672 @@
     "id": "evidence:ranking-saint-malo-dinan-climate",
     "text": "Saint-Malo and Dinan combine a mild coastal August climate with rare extreme heat; wind and tidal exposure keep the coast feeling cooler than inland areas.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b008", "perplexity:b052", "gemini-britany:b011", "operaai:b015"],
-    "sourceUrls": [], "qualifiers": ["Historical August conditions, not a forecast."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b008",
+      "perplexity:b052",
+      "gemini-britany:b011",
+      "operaai:b015"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-saint-malo-dinan-nature",
     "text": "The base offers sandy beaches, dramatic tides, walkable coastal scenery, the Rance estuary and short trips to cliffs and headlands.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b009", "perplexity:b017", "gemini-britany:b012", "operaai:b016"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b009",
+      "perplexity:b017",
+      "gemini-britany:b012",
+      "operaai:b016"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-saint-malo-dinan-culture",
     "text": "Walled Saint-Malo, medieval Dinan, tidal forts and nearby castles form the shortlist's strongest compact history offering.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b009", "perplexity:b017", "gemini-britany:b012", "operaai:b016"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b009",
+      "perplexity:b017",
+      "gemini-britany:b012",
+      "operaai:b016"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-saint-malo-dinan-family-activities",
     "text": "The Grand Aquarium, ramparts, family beaches, forts and short excursions provide strong variety for a 9–10-year-old in both fair and wet weather.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b009", "chatgpt:b013", "perplexity:b021", "gemini-britany:b012", "operaai:b016"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b009",
+      "chatgpt:b013",
+      "perplexity:b021",
+      "gemini-britany:b012",
+      "operaai:b016"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-saint-malo-dinan-logistics",
     "text": "Rail access and walkable centres allow a useful car-free stay, while a car remains helpful for Cap Fréhel, Fort La Latte and other day trips.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b010", "perplexity:b052", "gemini-britany:b012", "operaai:b016"],
-    "sourceUrls": [], "qualifiers": ["Schedules require a fresh check before booking."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b010",
+      "perplexity:b052",
+      "gemini-britany:b012",
+      "operaai:b016"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Schedules require a fresh check before booking."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-saint-malo-dinan-accommodation",
     "text": "Saint-Malo is consistently described as one of the shortlist's more expensive August bases, especially near the walls and beach.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b011", "chatgpt:b036", "perplexity:b052", "operaai:b025"],
-    "sourceUrls": [], "qualifiers": ["Planning signal only; exact dates need a live price check."], "timeSensitive": true, "checkedAt": "2026-06-30"
+    "sourceBlockRefs": [
+      "chatgpt:b011",
+      "chatgpt:b036",
+      "perplexity:b052",
+      "operaai:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Planning signal only; exact dates need a live price check."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:ranking-saint-malo-dinan-food",
     "text": "Seafood, Cancale oysters, markets and abundant crêperies make the area one of the strongest and easiest family food bases.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b012", "gemini-britany:b023", "gemini-britany:b024", "gemini-britany:b025", "operaai:b016"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b012",
+      "gemini-britany:b023",
+      "gemini-britany:b024",
+      "gemini-britany:b025",
+      "operaai:b016"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
-
   {
     "id": "evidence:ranking-cote-de-granit-rose-climate",
     "text": "Côte de Granit Rose is among the coolest and breeziest coastal choices, with very low heat risk and cold sea water.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b008", "perplexity:b052", "gemini-britany:b013", "operaai:b017"],
-    "sourceUrls": [], "qualifiers": ["Historical August conditions, not a forecast."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b008",
+      "perplexity:b052",
+      "gemini-britany:b013",
+      "operaai:b017"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-cote-de-granit-rose-nature",
     "text": "Pink granite formations, the GR34, beaches, islands and birdlife make this the strongest nature-led base in the northern shortlist.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b014", "perplexity:b024", "gemini-britany:b014", "operaai:b018"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b014",
+      "perplexity:b024",
+      "gemini-britany:b014",
+      "operaai:b018"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-cote-de-granit-rose-culture",
     "text": "Lannion and coastal heritage add cultural interest, but the source comparisons consistently describe a thinner urban history and castle layer than Saint-Malo and Dinan.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b039", "perplexity:b054", "gemini-britany:b014", "operaai:b027"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b039",
+      "perplexity:b054",
+      "gemini-britany:b014",
+      "operaai:b027"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-cote-de-granit-rose-family-activities",
     "text": "Parc du Radôme, Cité des Télécoms, the planetarium, wildlife boats, beaches and manageable coastal walks create a distinctive science-and-outdoors mix.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b015", "perplexity:b026", "gemini-britany:b014", "operaai:b018"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b015",
+      "perplexity:b026",
+      "gemini-britany:b014",
+      "operaai:b018"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-cote-de-granit-rose-logistics",
     "text": "Lannion provides a rail anchor, but the dispersed beaches, viewpoints and smaller towns are substantially easier to reach by car.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b016", "perplexity:b028", "gemini-britany:b014", "operaai:b018"],
-    "sourceUrls": [], "qualifiers": ["Schedules require a fresh check before booking."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b016",
+      "perplexity:b028",
+      "gemini-britany:b014",
+      "operaai:b018"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Schedules require a fresh check before booking."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-cote-de-granit-rose-accommodation",
     "text": "Typical accommodation is below the most expensive Saint-Malo options, but peak-season sea-view properties carry a substantial premium.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b017", "perplexity:b052", "operaai:b025"],
-    "sourceUrls": [], "qualifiers": ["Planning signal only; exact dates need a live price check."], "timeSensitive": true, "checkedAt": "2026-06-30"
+    "sourceBlockRefs": [
+      "chatgpt:b017",
+      "perplexity:b052",
+      "operaai:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Planning signal only; exact dates need a live price check."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:ranking-cote-de-granit-rose-food",
     "text": "Lannion's market, crêperies and small seafood restaurants make family eating reliable, though less concentrated than in Saint-Malo or Morbihan.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b018", "gemini-britany:b023", "gemini-britany:b025"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b018",
+      "gemini-britany:b023",
+      "gemini-britany:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
-
   {
     "id": "evidence:ranking-brest-finistere-climate",
     "text": "Brest is the most oceanic and heat-resistant base in the shortlist, with strong breezes and a corresponding increase in rain exposure.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b008", "perplexity:b052", "gemini-britany:b015", "operaai:b019"],
-    "sourceUrls": [], "qualifiers": ["Historical August conditions, not a forecast."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b008",
+      "perplexity:b052",
+      "gemini-britany:b015",
+      "operaai:b019"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-brest-finistere-nature",
     "text": "Brest gives access to islands, Armorique, headlands and Crozon's wild coast, although most major nature experiences sit outside the city.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b019", "perplexity:b035", "gemini-britany:b016", "operaai:b020"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b019",
+      "perplexity:b035",
+      "gemini-britany:b016",
+      "operaai:b020"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-brest-finistere-culture",
     "text": "Brest has strong naval and maritime heritage, but its rebuilt urban character provides less medieval atmosphere than Saint-Malo, Dinan or Quimper.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b019", "perplexity:b054", "gemini-britany:b016", "operaai:b027"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b019",
+      "perplexity:b054",
+      "gemini-britany:b016",
+      "operaai:b027"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-brest-finistere-family-activities",
     "text": "Océanopolis is the major family anchor, supported by the maritime museum and Les Ateliers des Capucins as strong wet-weather choices.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b019", "perplexity:b035", "gemini-britany:b016", "operaai:b020"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b019",
+      "perplexity:b035",
+      "gemini-britany:b016",
+      "operaai:b020"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-brest-finistere-logistics",
     "text": "The city itself can work without a car and acts as a western transport hub; the most rewarding coast and nature trips are easier by car.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b020", "chatgpt:b022", "perplexity:b052", "gemini-britany:b016"],
-    "sourceUrls": [], "qualifiers": ["Flight and rail schedules require a fresh check before booking."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b020",
+      "chatgpt:b022",
+      "perplexity:b052",
+      "gemini-britany:b016"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Flight and rail schedules require a fresh check before booking."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-brest-finistere-accommodation",
     "text": "Brest city accommodation is generally better value than the best-known coastal resorts in the shortlist.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b021", "chatgpt:b036", "operaai:b020", "operaai:b025"],
-    "sourceUrls": [], "qualifiers": ["Planning signal only; exact dates need a live price check."], "timeSensitive": true, "checkedAt": "2026-06-30"
+    "sourceBlockRefs": [
+      "chatgpt:b021",
+      "chatgpt:b036",
+      "operaai:b020",
+      "operaai:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Planning signal only; exact dates need a live price check."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:ranking-brest-finistere-food",
     "text": "Seafood and the wider Breton crêpe and market culture are available, but none of the source rankings treats food as Brest's main differentiator.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b019", "gemini-britany:b023", "gemini-britany:b025"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b019",
+      "gemini-britany:b023",
+      "gemini-britany:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
-
   {
     "id": "evidence:ranking-quimper-south-finistere-climate",
     "text": "Quimper and South Finistère remain moderate in August but are slightly warmer than Brest and the exposed northern coast.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b008", "perplexity:b052", "gemini-britany:b017", "operaai:b021"],
-    "sourceUrls": [], "qualifiers": ["Historical August conditions, not a forecast."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b008",
+      "perplexity:b052",
+      "gemini-britany:b017",
+      "operaai:b021"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-quimper-south-finistere-nature",
     "text": "Beaches, Pointe du Raz and attractive fishing and art towns are available as day trips rather than directly from an inland city stay.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b023", "perplexity:b040", "gemini-britany:b018", "operaai:b022"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b023",
+      "perplexity:b040",
+      "gemini-britany:b018",
+      "operaai:b022"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-quimper-south-finistere-culture",
     "text": "Quimper's medieval centre, cathedral, museums and nearby art and fishing towns make it one of the shortlist's strongest cultural bases.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b023", "perplexity:b038", "gemini-britany:b018", "operaai:b021", "operaai:b022"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b023",
+      "perplexity:b038",
+      "gemini-britany:b018",
+      "operaai:b021",
+      "operaai:b022"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-quimper-south-finistere-family-activities",
     "text": "Family museum formats, the small tourist train and nearby beaches and maritime attractions provide variety, but require more day-trip planning.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b024", "perplexity:b042", "gemini-britany:b018", "operaai:b022"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b024",
+      "perplexity:b042",
+      "gemini-britany:b018",
+      "operaai:b022"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-quimper-south-finistere-logistics",
     "text": "Quimper has useful rail access and a walkable centre; beaches and smaller South Finistère destinations are much easier with a car.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b025", "perplexity:b052", "gemini-britany:b018", "operaai:b022"],
-    "sourceUrls": [], "qualifiers": ["Schedules require a fresh check before booking."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b025",
+      "perplexity:b052",
+      "gemini-britany:b018",
+      "operaai:b022"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Schedules require a fresh check before booking."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-quimper-south-finistere-accommodation",
     "text": "The sources consistently position Quimper as one of the more affordable bases, particularly compared with famous coastal resorts.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b026", "chatgpt:b036", "perplexity:b052", "operaai:b022", "operaai:b025"],
-    "sourceUrls": [], "qualifiers": ["Planning signal only; exact dates need a live price check."], "timeSensitive": true, "checkedAt": "2026-06-30"
+    "sourceBlockRefs": [
+      "chatgpt:b026",
+      "chatgpt:b036",
+      "perplexity:b052",
+      "operaai:b022",
+      "operaai:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Planning signal only; exact dates need a live price check."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:ranking-quimper-south-finistere-food",
     "text": "Markets, crêperies, pastry, cider and a walkable city setting make Quimper a strong, convenient family food base.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b027", "gemini-britany:b023", "gemini-britany:b025"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b027",
+      "gemini-britany:b023",
+      "gemini-britany:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
-
   {
     "id": "evidence:ranking-vannes-carnac-morbihan-climate",
     "text": "Vannes, Carnac and Morbihan are warmer and generally drier than western Brittany, improving water time but increasing the shortlist's heat risk.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b008", "perplexity:b045", "perplexity:b052", "gemini-britany:b019", "operaai:b023"],
-    "sourceUrls": [], "qualifiers": ["Historical August conditions, not a forecast."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b008",
+      "perplexity:b045",
+      "perplexity:b052",
+      "gemini-britany:b019",
+      "operaai:b023"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-vannes-carnac-morbihan-nature",
     "text": "The gulf, islands, sheltered bays, beaches and the Quiberon peninsula provide varied and relatively accessible coastal nature.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b028", "perplexity:b047", "gemini-britany:b020", "operaai:b024"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b028",
+      "perplexity:b047",
+      "gemini-britany:b020",
+      "operaai:b024"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-vannes-carnac-morbihan-culture",
     "text": "Carnac's megaliths, historic Vannes and Château de Suscinio give the relaxed coastal area substantial archaeological and historical depth.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b029", "perplexity:b047", "gemini-britany:b020", "operaai:b024"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b029",
+      "perplexity:b047",
+      "gemini-britany:b020",
+      "operaai:b024"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-vannes-carnac-morbihan-family-activities",
     "text": "Sheltered beaches, islands, boats, Branféré, megaliths and adventure activities make Morbihan exceptionally well suited to a 9–10-year-old.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b029", "chatgpt:b032", "perplexity:b049", "gemini-britany:b020", "operaai:b024"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b029",
+      "chatgpt:b032",
+      "perplexity:b049",
+      "gemini-britany:b020",
+      "operaai:b024"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-vannes-carnac-morbihan-logistics",
     "text": "Vannes is a convenient rail-backed urban base; reaching Carnac, beaches, islands and the wider gulf is substantially easier with a car.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b030", "perplexity:b052", "gemini-britany:b020", "operaai:b024"],
-    "sourceUrls": [], "qualifiers": ["Schedules require a fresh check before booking."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b030",
+      "perplexity:b052",
+      "gemini-britany:b020",
+      "operaai:b024"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Schedules require a fresh check before booking."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-vannes-carnac-morbihan-accommodation",
     "text": "Carnac and the Morbihan coast face high August demand and are among the more expensive choices in the shortlist.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b031", "chatgpt:b036", "perplexity:b052", "operaai:b024", "operaai:b025"],
-    "sourceUrls": [], "qualifiers": ["Planning signal only; exact dates need a live price check."], "timeSensitive": true, "checkedAt": "2026-06-30"
+    "sourceBlockRefs": [
+      "chatgpt:b031",
+      "chatgpt:b036",
+      "perplexity:b052",
+      "operaai:b024",
+      "operaai:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Planning signal only; exact dates need a live price check."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:ranking-vannes-carnac-morbihan-food",
     "text": "Markets, oysters, seafood and crêperies are a prominent part of Morbihan's relaxed family appeal.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b028", "gemini-britany:b023", "gemini-britany:b025", "operaai:b024"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b028",
+      "gemini-britany:b023",
+      "gemini-britany:b025",
+      "operaai:b024"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
-
   {
     "id": "evidence:ranking-crozon-douarnenez-climate",
     "text": "Crozon and Douarnenez have very low heat risk because of Atlantic exposure, balanced by strong wind and changeable weather.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b008", "chatgpt:b033", "perplexity:b035", "gemini-britany:b015", "operaai:b019"],
-    "sourceUrls": [], "qualifiers": ["Historical August conditions, not a forecast."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b008",
+      "chatgpt:b033",
+      "perplexity:b035",
+      "gemini-britany:b015",
+      "operaai:b019"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Historical August conditions, not a forecast."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-crozon-douarnenez-nature",
     "text": "Headlands, cliffs, coves, open ocean and geology make Crozon and Douarnenez the shortlist's most dramatic wilderness-led base.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b033", "perplexity:b035", "perplexity:b062", "gemini-britany:b016", "operaai:b020"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b033",
+      "perplexity:b035",
+      "perplexity:b062",
+      "gemini-britany:b016",
+      "operaai:b020"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-crozon-douarnenez-culture",
     "text": "Maritime and fishing heritage adds interest, but the source material recommends this area primarily for landscape rather than urban culture.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b033", "chatgpt:b041", "perplexity:b062"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b033",
+      "chatgpt:b041",
+      "perplexity:b062"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-crozon-douarnenez-family-activities",
     "text": "Beaches, boats, geology and outdoor exploration work well in fair weather, with fewer major wet-weather anchors than the city bases.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b033", "perplexity:b062", "gemini-britany:b016", "operaai:b020"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b033",
+      "perplexity:b062",
+      "gemini-britany:b016",
+      "operaai:b020"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-crozon-douarnenez-logistics",
     "text": "The area's best sights are dispersed and public transport is limited, making a car effectively essential for a family base.",
     "kind": "warning",
-    "sourceBlockRefs": ["chatgpt:b034", "chatgpt:b036", "perplexity:b062", "gemini-britany:b016"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b034",
+      "chatgpt:b036",
+      "perplexity:b062",
+      "gemini-britany:b016"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-crozon-douarnenez-accommodation",
     "text": "Crozon and Douarnenez generally sit between better-value Brest and the most expensive famous coastal resorts, with fewer urban choices.",
     "kind": "price",
-    "sourceBlockRefs": ["chatgpt:b035", "chatgpt:b036"],
-    "sourceUrls": [], "qualifiers": ["Planning signal only; exact dates need a live price check."], "timeSensitive": true, "checkedAt": "2026-06-30"
+    "sourceBlockRefs": [
+      "chatgpt:b035",
+      "chatgpt:b036"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "Planning signal only; exact dates need a live price check."
+    ],
+    "timeSensitive": true,
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:ranking-crozon-douarnenez-food",
     "text": "Fishing-port food and seafood support a pleasant stay, but the source comparisons do not identify food as the area's leading advantage.",
     "kind": "qualification",
-    "sourceBlockRefs": ["chatgpt:b033", "gemini-britany:b023", "gemini-britany:b025"],
-    "sourceUrls": [], "qualifiers": [], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b033",
+      "gemini-britany:b023",
+      "gemini-britany:b025"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [],
+    "timeSensitive": false
   },
-
   {
     "id": "evidence:ranking-source-chatgpt-overall",
     "text": "ChatGPT ranks Saint-Malo and Dinan first overall, followed by Côte de Granit Rose and Carnac or Morbihan; Brest, Crozon and Quimper follow as more specialised choices.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b036", "chatgpt:b038", "chatgpt:b039", "chatgpt:b040", "chatgpt:b041"],
-    "sourceUrls": [], "qualifiers": ["This source's overall order conflicts with the other supplied rankings."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "chatgpt:b036",
+      "chatgpt:b038",
+      "chatgpt:b039",
+      "chatgpt:b040",
+      "chatgpt:b041"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "This source's overall order conflicts with the other supplied rankings."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-source-perplexity-overall",
     "text": "Perplexity ranks Brest and Finistère first, then Saint-Malo and Dinan, Carnac and Morbihan, Côte de Granit Rose, and Quimper.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["perplexity:b054"],
-    "sourceUrls": [], "qualifiers": ["This source's overall order conflicts with the other supplied rankings."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "perplexity:b054"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "This source's overall order conflicts with the other supplied rankings."
+    ],
+    "timeSensitive": false
   },
   {
     "id": "evidence:ranking-source-operaai-overall",
     "text": "OperaAI ranks Carnac and Vannes first, Saint-Malo second, Quimper third, Côte de Granit Rose fourth and Brest fifth.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["operaai:b027"],
-    "sourceUrls": [], "qualifiers": ["This source's overall order conflicts with the other supplied rankings and omits Crozon as a standalone base."], "timeSensitive": false
+    "sourceBlockRefs": [
+      "operaai:b027"
+    ],
+    "sourceUrls": [],
+    "qualifiers": [
+      "This source's overall order conflicts with the other supplied rankings and omits Crozon as a standalone base."
+    ],
+    "timeSensitive": false
   }
 ]

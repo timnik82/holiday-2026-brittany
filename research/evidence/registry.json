@@ -19,7 +19,9 @@
     "id": "evidence:sea-temperature-narrow",
     "text": "August sea temperatures along the Brittany coast are approximately 17 to 18.5 degrees Celsius, making swimming refreshing rather than warm.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b001"],
+    "sourceBlockRefs": [
+      "chatgpt:b001"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "ChatGPT gives a narrower range than the other three sources."
@@ -47,7 +49,10 @@
     "id": "evidence:saint-malo-best-overall-base",
     "text": "Saint-Malo and Dinan together form the strongest all-round base for a family that wants history, tidal forts, medieval streets, and family beaches in equal measure. The combination is workable without a rental car thanks to rail links.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["chatgpt:b003", "chatgpt:b009"],
+    "sourceBlockRefs": [
+      "chatgpt:b003",
+      "chatgpt:b009"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "ChatGPT ranks it as the most balanced base overall."
@@ -58,12 +63,16 @@
     "id": "evidence:nantes-primary-gateway-from-portugal",
     "text": "Nantes is the primary gateway into Brittany from Portugal, with seasonal direct flights from Lisbon and Porto and fast onward trains to Vannes, Saint-Malo, Quimper, and Lannion. Brest offers a direct Porto summer flight, and Rennes suits transfer-based itineraries around Saint-Malo and Dinan.",
     "kind": "fact",
-    "sourceBlockRefs": ["chatgpt:b002", "gemini-britany:b034", "operaai:b001"],
+    "sourceBlockRefs": [
+      "chatgpt:b002",
+      "gemini-britany:b034",
+      "operaai:b001"
+    ],
     "sourceUrls": [],
     "qualifiers": [
       "Flight schedules are seasonal and must be re-checked before booking."
     ],
     "timeSensitive": true,
-    "checkedAt": "2026-06-30"
+    "checkedAt": "2026-07-25"
   }
 ]

@@ -25,7 +25,7 @@ Les Machines de l'Île is the headline family stop in Nantes: three ticketed exp
 - **Booking:** priority booking for the Grand Éléphant in August — reserve weeks ahead or arrive at ticket-office opening. Pass Nantes covers Galerie and Carrousel once each but not the Elephant.
 - **Transport:** tram to Île de Nantes; Line 1 is partially replaced by buses Jun–Aug 2026 — allow extra transfer time.
 - **Safety:** moving machinery and crowds in peak season; hold hands near ride boarding.
-- **Price / checked date:** Elephant €12 adult / €10 teen / €8 child 4–12 (last reviewed 2026-07-24); rides can cancel in wind or extreme heat.
+- **Price / checked date:** Elephant €12 adult / €10 teen / €8 child 4–12 (last reviewed 2026-07-25); rides can cancel in wind or extreme heat.
 
 <!-- paragraph id="nantes-machines-planning" sources="evidence:nantes-machines-elephant-booking,evidence:nantes-pass-nantes-inclusions,evidence:nantes-machines-elephant-pricing" -->
 Pass Nantes includes one Galerie and one Carrousel visit but not the Grand Éléphant — book the Elephant separately. August Fridays need advance booking or an early ticket-office queue; same-day Elephant tickets are not guaranteed.

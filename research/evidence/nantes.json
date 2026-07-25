@@ -3,17 +3,26 @@
     "id": "evidence:nantes-itinerary-overview",
     "text": "For 6–9 August 2026 the family plan is three themed days: Friday for Les Machines de l'Île and the island shipyard, Saturday for the castle, Jardin des Plantes and the historic centre, and Sunday for Jules Verne and the west-bank gardens before moving on to Brittany. The Summer Journey runs 4 July–6 September 2026, so the city is at its most playful during the stay.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b001", "nante2-perplexity:b002", "events-nantes-perplexity:b002"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/en/events/the-summer-journey/"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b001",
+      "nante2-perplexity:b002",
+      "events-nantes-perplexity:b002"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/en/events/the-summer-journey/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-stay-strategy",
     "text": "Organise the stay around one headline child-magnet — Les Machines de l'Île — then layer a compact historic core, free public art and a few science or curiosity-driven indoor backups. Stay centrally near Commerce tram hub and Bouffay so walking and tram hops stay realistic; do not try to check off every museum.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b002", "nante2-perplexity:b003"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b002",
+      "nante2-perplexity:b003"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -22,7 +31,10 @@
     "id": "evidence:nantes-arrival-evening",
     "text": "After the 20:05 landing, keep the first evening deliberately light: hotel check-in and an easy dinner only. An optional short walk to the Water Mirror opposite the castle is enough if energy remains; the ramparts stay open later than the museum but should not be scheduled on arrival night.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b013", "nante2-perplexity:b008"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b013",
+      "nante2-perplexity:b008"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -31,54 +43,82 @@
     "id": "evidence:nantes-arrival-shuttle",
     "text": "The Nantes airport shuttle runs every 20 minutes in summer, seven days a week, with the last departure from the airport at midnight and a journey of about 20–25 minutes to the city. A single ticket costs €10; one return trip is included with Pass Nantes after activation. From 30 March 2026 the city stop is gare routière, quai A.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b012", "nante-3-days-chatgpt:b036", "nante2-perplexity:b008"],
-    "sourceUrls": ["https://naolib.fr/fr/se-rendre-a-laeroport"],
-    "qualifiers": ["Allow margin for baggage and flight delay after a 20:05 landing."],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b012",
+      "nante-3-days-chatgpt:b036",
+      "nante2-perplexity:b008"
+    ],
+    "sourceUrls": [
+      "https://naolib.fr/fr/se-rendre-a-laeroport"
+    ],
+    "qualifiers": [
+      "Allow margin for baggage and flight delay after a 20:05 landing."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-transport-weekend-free",
     "text": "From 00:00 Saturday to 23:59 Sunday, Nantes tram, bus and navibus are free. The airport shuttle is excluded and still requires a paid ticket. This applies to 8–9 August 2026.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b037"],
-    "sourceUrls": ["https://naolib.fr/gratuite-des-transports-en-commun"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b037"
+    ],
+    "sourceUrls": [
+      "https://naolib.fr/gratuite-des-transports-en-commun"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-transport-line1-closure",
-    "text": "From 14 June to 30 August 2026, tram Line 1 is partially closed between Commerce and François-Mitterrand/Jamet, with replacement buses. The Machines area remains reachable via substitute services plus walking or cycling; allow extra transfer time when heading to Île de Nantes.",
+    "text": "From 14 June to 30 August 2026, tram Line 1 is partially closed between Commerce and François-Mitterrand, with a bus relais between Hôtel Dieu and François-Mitterrand. Track works run on the Médiathèque–Gare Maritime section. The Machines area remains reachable via substitute services plus walking or cycling; allow extra transfer time when heading to Île de Nantes.",
     "kind": "warning",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b019", "nante-3-days-chatgpt:b037"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b019",
+      "nante-3-days-chatgpt:b037"
+    ],
     "sourceUrls": [
       "https://naolib.fr/fr/actualites/cet-ete-la-ligne-1-fait-peau-neuve-et-on-soccupe-de-vous",
       "https://metropole.nantes.fr/actualites/les-chantiers-de-l-ete-2026-preparent-les-transports-en-commun-de-demain"
     ],
-    "qualifiers": ["Re-check Naolib a few days before travel — bus relais routing may shift."],
+    "qualifiers": [
+      "Re-check Naolib a few days before travel — bus relais routing may shift."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-pass-nantes-inclusions",
     "text": "Pass Nantes (about €49 adult / €31 reduced for 72 hours) includes one visit each to the Galerie des Machines and Carrousel des Mondes Marins, unlimited city transport during its validity, one airport-shuttle return, and many museums — but it does not include the Grand Éléphant ride. Weekend free transport makes the pass worthwhile only if several paid museums and Machines experiences are used.",
     "kind": "qualification",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b031", "nante-3-days-chatgpt:b038", "nante2-perplexity:b007"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b031",
+      "nante-3-days-chatgpt:b038",
+      "nante2-perplexity:b007"
+    ],
     "sourceUrls": [
       "https://www.levoyageanantes.fr/a-faire/pass-nantes/faq-pass-nantes/",
       "https://www.lesmachines-nantes.fr/pratique/tarifs-billetteries/"
     ],
-    "qualifiers": ["Each included service may need its own reservation."],
+    "qualifiers": [
+      "Each included service may need its own reservation."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-machines-overview",
     "text": "Les Machines de l'Île is the single strongest family must-see: three ticketed experiences — the Galerie des Machines (about 1 hour), the Marine Worlds Carrousel (about 50 minutes) and the Grand Éléphant ride (about 30 minutes). The shipyard setting, Titan cranes and riverfront art make the wider Parc des Chantiers part of the visit, not just the ticketed halls.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b004", "nante2-perplexity:b004"],
-    "sourceUrls": ["https://www.lesmachines-nantes.fr/"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b004",
+      "nante2-perplexity:b004"
+    ],
+    "sourceUrls": [
+      "https://www.lesmachines-nantes.fr/"
+    ],
     "qualifiers": [],
     "timeSensitive": false
   },
@@ -86,30 +126,44 @@
     "id": "evidence:nantes-machines-elephant-pricing",
     "text": "For summer 2026 the Grand Éléphant costs €12 adult, €10 concession/13–17 years, €8 child 4–12, free under 4. Online booking for 1 June–30 August opens from 22 May 2026; some same-day tickets are held for on-site sale but are not guaranteed in August.",
     "kind": "price",
-    "sourceBlockRefs": ["nante2-perplexity:b007", "nante-3-days-chatgpt:b014"],
+    "sourceBlockRefs": [
+      "nante2-perplexity:b007",
+      "nante-3-days-chatgpt:b014"
+    ],
     "sourceUrls": [
       "https://www.lesmachines-nantes.fr/pratique/tarifs-billetteries/",
       "https://www.lesmachines-nantes.fr/galerie-des-machines-voyage-en-grand-elephant/"
     ],
-    "qualifiers": ["Rides can be cancelled in strong wind or very high heat."],
+    "qualifiers": [
+      "Rides can be cancelled in strong wind or very high heat."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-machines-elephant-booking",
     "text": "Treat Les Machines de l'Île as priority booking, especially for the Grand Éléphant on a Friday in French school holidays. Reserve several weeks ahead when possible; otherwise arrive when the ticket office opens. Pass Nantes does not replace an Elephant ticket.",
     "kind": "warning",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b032", "nante-3-days-chatgpt:b039", "nante2-perplexity:b010"],
-    "sourceUrls": ["https://www.lesmachines-nantes.fr/pratique/tarifs-billetteries/"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b032",
+      "nante-3-days-chatgpt:b039",
+      "nante2-perplexity:b010"
+    ],
+    "sourceUrls": [
+      "https://www.lesmachines-nantes.fr/pratique/tarifs-billetteries/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-day-7-machines",
     "text": "Friday 7 August is the headline Machines day: start early at Les Machines de l'Île for Galerie plus either Grand Éléphant or Carrousel, allow 2.5–3.5 hours on site, then explore Parc des Chantiers and the riverfront. Add the free INTERSTELLAR exhibition at HAB Galerie on the same island if energy allows.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b013", "nante2-perplexity:b009"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b013",
+      "nante2-perplexity:b009"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -118,27 +172,41 @@
     "id": "evidence:nantes-le-voyage-dring-shuttle",
     "text": "During the Summer Journey a free Dring! shuttle runs short guided circuits through Parc des Chantiers from the Naves toward the Titan crane — a lightweight, physical extra that works well with children between Machines visits.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante2-perplexity:b011"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/"],
-    "qualifiers": ["Summer-only service — confirm on the Voyage agenda before relying on it."],
+    "sourceBlockRefs": [
+      "nante2-perplexity:b011"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/"
+    ],
+    "qualifiers": [
+      "Summer-only service — confirm on the Voyage agenda before relying on it."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-le-voyage-hab-galerie",
     "text": "INTERSTELLAR: Ré-imaginer la Terre runs at HAB Galerie on Île de Nantes daily 10:00–19:00 from 4 July to 6 September 2026 with free access — an easy no-pressure extension after Machines.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b015", "events-nantes-perplexity:b012"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b015",
+      "events-nantes-perplexity:b012"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-memorial-passage",
     "text": "The Memorial to the Abolition of Slavery on the riverfront is free, open daily in summer 09:00–20:00, and works as a short parent-guided stop rather than a long interpretive visit. Passage Pommeraye is a short atmospheric architectural detour in the Graslin area.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b010", "nante-3-days-chatgpt:b016"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b010",
+      "nante-3-days-chatgpt:b016"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -147,17 +215,25 @@
     "id": "evidence:nantes-chateau-overview",
     "text": "Château des ducs de Bretagne works on two levels: the courtyard, moat gardens and ramparts are free, while the history museum inside adds depth. A family discover kit helps with a ten-year-old. In August 2026 the museum is open 10:00–19:00 daily; ramparts 08:30–20:00; museum €9 adult, free under 18.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b005", "nante2-perplexity:b015"],
-    "sourceUrls": ["https://www.chateaunantes.fr/"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b005",
+      "nante2-perplexity:b015"
+    ],
+    "sourceUrls": [
+      "https://www.chateaunantes.fr/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-day-8-castle-garden",
     "text": "Saturday 8 August centres on the castle in the morning, then the Water Mirror and Jardin des Plantes for a slower picnic-style pause. Follow the green line through Bouffay and Place Royale in the evening; city transport is free all day.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b018", "nante2-perplexity:b013"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b018",
+      "nante2-perplexity:b013"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -166,53 +242,80 @@
     "id": "evidence:nantes-jardin-des-plantes",
     "text": "Jardin des Plantes combines botanical collections with a children's play area, water play, animal enclosures and summer artistic installations including Pierrick Sorin's Voyage work Hortulanus mirabilis. In high summer it opens from 08:30 until 21:30; allow 2–3 hours with breaks.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b006", "nante2-perplexity:b014", "events-nantes-perplexity:b030"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b006",
+      "nante2-perplexity:b014",
+      "events-nantes-perplexity:b030"
+    ],
     "sourceUrls": [
       "https://www.levoyageanantes.fr/oeuvres/hortulanus-mirabilis/",
       "https://metropole.nantes.fr/actualites/nos-cinq-coups-de-coeur-du-voyage-a-nantes-2026"
     ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-jules-verne",
-    "text": "Musée Jules Verne is a compact imagination-and-invention museum on the west bank: summer 2026 hours 10:00–19:00 daily, €4 adult, €1.50 concession, free under 18. About ten minutes' walk from Gare Maritime; pair naturally with Jardin Extraordinaire.",
+    "text": "Musée Jules Verne is a compact imagination-and-invention museum on the west bank: summer 2026 hours 10:00–19:00 daily (4 July–31 August), €4 adult, €1.50 concession, free under 18. About ten minutes' walk from Gare Maritime; pair naturally with Jardin Extraordinaire. The building is not air-conditioned — hours may shorten in heatwaves.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b008", "nante2-perplexity:b018"],
-    "sourceUrls": [],
-    "qualifiers": ["Not a hands-on science centre — frame it as literary adventure rather than experiments."],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b008",
+      "nante2-perplexity:b018"
+    ],
+    "sourceUrls": [
+      "https://julesverne.nantesmetropole.fr/preparer-sa-visite/"
+    ],
+    "qualifiers": [
+      "Not a hands-on science centre — frame it as literary adventure rather than experiments."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-planetarium",
-    "text": "The Nantes Planetarium runs age-graded sessions including 6–10 and 8+ programmes in an air-conditioned dome — useful in August heat or rain. About €7 full / €3 reduced; Pass Nantes holders must book by phone. Check session times against the departure window on 9 August.",
+    "text": "The Nantes Planetarium runs age-graded sessions including 6–10 and 8+ programmes in an air-conditioned dome — useful in August heat or rain. About €7 full / €3 reduced (children's sessions €3); Pass Nantes holders must book by phone. Check session times against the departure window on 9 August.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b007", "nante-3-days-chatgpt:b025", "nante2-perplexity:b019"],
-    "sourceUrls": [],
-    "qualifiers": ["Insert only if a session fits cleanly before leaving for Brittany."],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b007",
+      "nante-3-days-chatgpt:b025",
+      "nante2-perplexity:b019"
+    ],
+    "sourceUrls": [
+      "https://planetarium.nantesmetropole.fr/",
+      "https://metropole.nantes.fr/que-faire-a-nantes/agenda/planetarium-de-nantes"
+    ],
+    "qualifiers": [
+      "Insert only if a session fits cleanly before leaving for Brittany."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-jardin-extraordinaire",
     "text": "Jardin Extraordinaire is a terraced quarry garden above the Loire with waterfalls, exotic planting and, from 29 May 2026, a 700 m² children's paddling area. Summer access is free; open from 08:30 until 21:30–22:00 depending on the day. Barbara Schroeder's Voyage work Les Mistériennes sits in the garden.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b024", "nante2-perplexity:b019", "events-nantes-perplexity:b030"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b024",
+      "nante2-perplexity:b019",
+      "events-nantes-perplexity:b030"
+    ],
     "sourceUrls": [
       "https://www.levoyageanantes.fr/oeuvres/les-misteriennes/",
       "https://metropole.nantes.fr/actualites/nos-cinq-coups-de-coeur-du-voyage-a-nantes-2026"
     ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-day-9-jules-verne",
     "text": "Sunday 9 August is intentionally half-day sized before the train to Vannes: Jules Verne Museum at opening, then Jardin Extraordinaire for a last run-around, with Planetarium only if a session fits the departure window.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b022", "nante2-perplexity:b017"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b022",
+      "nante2-perplexity:b017"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -221,7 +324,9 @@
     "id": "evidence:nantes-day-9-departure",
     "text": "On departure morning repeat Jardin des Plantes or a short green-line stroll only if time allows before the onward transfer; do not stack another major ticketed site ahead of the Vannes train.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante2-perplexity:b020"],
+    "sourceBlockRefs": [
+      "nante2-perplexity:b020"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -230,7 +335,9 @@
     "id": "evidence:nantes-must-do-core",
     "text": "The essential Nantes core is Les Machines de l'Île, Château des ducs de Bretagne, Jardin des Plantes and the free green-line fabric around the Water Mirror, memorial and Passage Pommeraye — mechanical, historical, outdoor and walkable balance without museum fatigue.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b026"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b026"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -239,7 +346,9 @@
     "id": "evidence:nantes-desirable-second-tier",
     "text": "Second-tier additions include Jules Verne Museum, Planetarium, Dobrée Museum, LU Tower panorama and the free HAB Galerie INTERSTELLAR exhibition — each adds a distinct tone without duplicating the core trio.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b027"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b027"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -248,7 +357,10 @@
     "id": "evidence:nantes-rainy-fallbacks",
     "text": "Rain or heat pivots: Planetarium, Musée d'arts (summer hours), Dobrée Museum, Illusion Nantes (price unconfirmed — check checkout), HAB Galerie, or Château museum interiors. Illusion Nantes is fully indoor; Natural History Museum main building is closed until 2029.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b028", "nante2-perplexity:b006"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b028",
+      "nante2-perplexity:b006"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -257,83 +369,119 @@
     "id": "evidence:nantes-natural-history-closed",
     "text": "Muséum de Nantes (Natural History Museum) closed on 3 November 2025 for major restructuring and is expected to reopen in 2029. Do not route the family to the main building; off-site Voyage programming may exist but does not replace the museum visit.",
     "kind": "warning",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b003", "events-nantes-perplexity:b017"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b003",
+      "events-nantes-perplexity:b017"
+    ],
     "sourceUrls": [
       "https://museum.nantesmetropole.fr/home/venir/horaires.html",
       "https://museum.nantesmetropole.fr/itinerance.html"
     ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-natural-history-offsite-claim",
     "text": "The events research lists Muséum d'histoire naturelle off-site Voyage exhibitions as family-friendly, implying the museum still contributes to a rainy-day plan — this conflicts with the main building closure until 2029.",
     "kind": "qualification",
-    "sourceBlockRefs": ["events-nantes-perplexity:b017", "events-nantes-perplexity:b033"],
-    "sourceUrls": ["https://museum.nantesmetropole.fr/itinerance.html"],
-    "qualifiers": ["Verify any off-site exhibition individually before routing the family."],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b017",
+      "events-nantes-perplexity:b033"
+    ],
+    "sourceUrls": [
+      "https://museum.nantesmetropole.fr/itinerance.html"
+    ],
+    "qualifiers": [
+      "Verify any off-site exhibition individually before routing the family."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-musee-arts-summer",
     "text": "Musée d'arts de Nantes runs a summer schedule 1 July–31 August 2026: 10:00–19:00 daily, Thursdays until 21:00. On Tuesdays the permanent collection is closed but the Anne et Patrick Poirier exhibition Odyssée de l'oubli runs at reduced fare. Adults about €9, under-18s free.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b020", "events-nantes-perplexity:b016"],
-    "sourceUrls": ["https://museedartsdenantes.nantesmetropole.fr/actualites/le-musee-aux-heures-d-ete/"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b020",
+      "events-nantes-perplexity:b016"
+    ],
+    "sourceUrls": [
+      "https://museedartsdenantes.nantesmetropole.fr/actualites/le-musee-aux-heures-d-ete/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-dobree-museum",
     "text": "Dobrée Museum suits children who prefer odd architecture and eclectic collections over paintings: neo-medieval palace, 15th-century manor and modern reception in an Anglo-Norman garden. July–August 2026 open 10:00–19:00 Wed–Sun; €9 adult, free under-26.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b021"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b021"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Less central than Musée d'arts — swap only if the child prefers treasure-house atmosphere."],
+    "qualifiers": [
+      "Less central than Musée d'arts — swap only if the child prefers treasure-house atmosphere."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-illusion-price-conflict",
     "text": "Illusion Nantes publishes conflicting tariffs on its homepage/FAQ (€15/€14/€12) versus its tickets page (€12/€11/€9). Treat it as a valid rainy-day indoor backup but confirm the price in the official checkout for the chosen slot rather than quoting a single figure in the guide.",
     "kind": "warning",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b009", "nante2-perplexity:b007"],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b009",
+      "nante2-perplexity:b007"
+    ],
     "sourceUrls": [
       "https://illusionnantes.fr/fr/",
       "https://illusionnantes.fr/fr/tickets"
     ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-illusion-price-homepage",
     "text": "Illusion Nantes homepage and FAQ list adult, concession and child tickets at €15, €14 and €12 respectively.",
     "kind": "price",
-    "sourceBlockRefs": ["nante-3-days-chatgpt:b009"],
-    "sourceUrls": ["https://illusionnantes.fr/fr/faq"],
-    "qualifiers": ["Contradicts the tickets-page tariff — see conflict interpretation."],
+    "sourceBlockRefs": [
+      "nante-3-days-chatgpt:b009"
+    ],
+    "sourceUrls": [
+      "https://illusionnantes.fr/fr/faq"
+    ],
+    "qualifiers": [
+      "Contradicts the tickets-page tariff — see conflict interpretation."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-illusion-price-tickets-page",
     "text": "Illusion Nantes tickets page lists adult, concession and child tickets at €12, €11 and €9 respectively.",
     "kind": "price",
-    "sourceBlockRefs": ["nante2-perplexity:b007"],
-    "sourceUrls": ["https://illusionnantes.fr/fr/tickets"],
-    "qualifiers": ["Contradicts the homepage tariff — check checkout before booking."],
+    "sourceBlockRefs": [
+      "nante2-perplexity:b007"
+    ],
+    "sourceUrls": [
+      "https://illusionnantes.fr/fr/tickets"
+    ],
+    "qualifiers": [
+      "Contradicts the homepage tariff — check checkout before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-pace-balance",
     "text": "Each day holds two to three anchor activities with slack between them: Machines plus one indoor fallback; market or garden plus castle; Jules Verne plus one west-bank garden. Drop a tier rather than compressing transfers when the child tires.",
     "kind": "qualification",
-    "sourceBlockRefs": ["nante2-perplexity:b021"],
+    "sourceBlockRefs": [
+      "nante2-perplexity:b021"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -342,18 +490,28 @@
     "id": "evidence:nantes-le-voyage-overview",
     "text": "Le Voyage à Nantes 2026 runs 4 July–6 September as the 15th summer edition, opening a four-year EARTH-themed cycle. Most temporary works and partner exhibitions are operational 7–9 August; many outdoor installations are free to view.",
     "kind": "fact",
-    "sourceBlockRefs": ["events-nantes-perplexity:b002", "events-nantes-perplexity:b003"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/en/events/the-summer-journey/"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b002",
+      "events-nantes-perplexity:b003"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/en/events/the-summer-journey/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-le-voyage-earth-theme",
     "text": "The 2026 EARTH theme invites nine contemporary artists to interpret earth as matter, memory and fragile vessel across squares, gardens, castle moats and cathedral crypts — structuring perception at different scales across the city.",
     "kind": "fact",
-    "sourceBlockRefs": ["events-nantes-perplexity:b005", "events-nantes-perplexity:b006"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/en/events/the-summer-journey/"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b005",
+      "events-nantes-perplexity:b006"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/en/events/the-summer-journey/"
+    ],
     "qualifiers": [],
     "timeSensitive": false
   },
@@ -361,8 +519,13 @@
     "id": "evidence:nantes-le-voyage-green-line",
     "text": "The green line is a painted trail of roughly 20 km linking about 130 permanent artworks and summer ephemeral works from the centre through Île de Nantes, Jardin des Plantes and Graslin toward the Loire estuary. Follow it on foot between castle, island and garden days without treating it as a single hike.",
     "kind": "fact",
-    "sourceBlockRefs": ["events-nantes-perplexity:b007", "nante-3-days-chatgpt:b001"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/en/to-see/the-endless-journey/"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b007",
+      "nante-3-days-chatgpt:b001"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/en/to-see/the-endless-journey/"
+    ],
     "qualifiers": [],
     "timeSensitive": false
   },
@@ -370,47 +533,68 @@
     "id": "evidence:nantes-le-voyage-installations",
     "text": "Highlighted summer 2026 works on the itinerary include Théo Mercier at Place Graslin, Louis Guillaume Notre dit pays in the castle moats, Pierrick Sorin at Jardin des Plantes, Barbara Schroeder at Jardin Extraordinaire, and installations in cathedral crypts and central squares — all expected open 7–9 August.",
     "kind": "fact",
-    "sourceBlockRefs": ["events-nantes-perplexity:b009", "events-nantes-perplexity:b011"],
-    "sourceUrls": ["https://metropole.nantes.fr/actualites/nos-cinq-coups-de-coeur-du-voyage-a-nantes-2026"],
-    "qualifiers": ["Interior crypt or chapel access may need timed entry — check each venue."],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b009",
+      "events-nantes-perplexity:b011"
+    ],
+    "sourceUrls": [
+      "https://metropole.nantes.fr/actualites/nos-cinq-coups-de-coeur-du-voyage-a-nantes-2026"
+    ],
+    "qualifiers": [
+      "Interior crypt or chapel access may need timed entry — check each venue."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-le-voyage-pass-voyage",
     "text": "A separate Pass Voyage (about €30/24h, €40/48h, €49/72h, €75/7 days) covers certain Voyage animations; many outdoor works remain free. Distinct from Pass Nantes — check which paid components you actually intend to use before buying either.",
     "kind": "qualification",
-    "sourceBlockRefs": ["events-nantes-perplexity:b004", "events-nantes-perplexity:b036"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b004",
+      "events-nantes-perplexity:b036"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-le-voyage-exhibitions",
     "text": "Castle-linked summer exhibitions include Expression(s) décoloniale(s) #4 (more conceptual) and Ce que la terre retient at Musée d'arts — adult-oriented but open during the stay. Ticketed museum hours typically 10:00–19:00 in August.",
     "kind": "fact",
-    "sourceBlockRefs": ["events-nantes-perplexity:b014"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b014"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-le-voyage-food-installations",
     "text": "Seasonal Voyage food stops include Station Nuage and La Cantine du Voyage near the Loire — informal family-friendly meal breaks between art visits, generally paying only for food and drinks.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["events-nantes-perplexity:b019"],
-    "sourceUrls": ["https://www.levoyageanantes.fr/"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b019"
+    ],
+    "sourceUrls": [
+      "https://www.levoyageanantes.fr/"
+    ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-le-voyage-family-appeal",
     "text": "For a ten-year-old the strongest Voyage elements are Pierrick Sorin's playful illusions at Jardin des Plantes, Barbara Schroeder's garden work, Louis Guillaume in the castle moats combined with ramparts, and free riverfront sculptures — plan 1–1.5 hours per garden stop.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["events-nantes-perplexity:b029", "events-nantes-perplexity:b030"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b029",
+      "events-nantes-perplexity:b030"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -419,21 +603,29 @@
     "id": "evidence:nantes-aux-heures-dete-dates",
     "text": "Aux Heures d'Été 2026 runs 7 July–7 August and ends on the first day of the stay window; do not promise moat concerts on 8–9 August. Check the official agenda for any one-off 7 August events only.",
     "kind": "warning",
-    "sourceBlockRefs": ["events-nantes-perplexity:b021", "events-nantes-perplexity:b023"],
+    "sourceBlockRefs": [
+      "events-nantes-perplexity:b021",
+      "events-nantes-perplexity:b023"
+    ],
     "sourceUrls": [
       "https://metropole.nantes.fr/actualites/cinq-rendez-vous-a-ne-pas-manquer-aux-heures-d-ete-2026",
       "https://www.chateaunantes.fr/evenements/aux-heures-dete-2026/"
     ],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-food-strategy",
     "text": "Eat in Bouffay, Graslin and Île de Nantes within walking distance of the itinerary. Mix market picnics, crêperies and one sit-down dinner; Les Tables de Nantes lists vetted local restaurants but verify each venue before August.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-food-perplexity:b004", "nante-food-perplexity:b005"],
-    "sourceUrls": ["https://www.lestablesdenantes.fr/"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b004",
+      "nante-food-perplexity:b005"
+    ],
+    "sourceUrls": [
+      "https://www.lestablesdenantes.fr/"
+    ],
     "qualifiers": [],
     "timeSensitive": false
   },
@@ -441,7 +633,9 @@
     "id": "evidence:nantes-food-local-dishes",
     "text": "Local staples to seek in Nantes include galettes complète, seafood from the Loire estuary, Muscadet by the glass, and butter-rich pastries from central boulangeries — the research treats crêperies as the reliable family default.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-food-perplexity:b006"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b006"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -450,47 +644,63 @@
     "id": "evidence:nantes-food-talensac",
     "text": "Marché de Talensac is the main covered market: 08:00–13:00 Tue–Fri and from 08:00 Sat–Sun near the city centre. Ideal for Saturday-morning picnic supplies before Jardin des Plantes — pastries, cheese, fruit and juice rather than a seated meal.",
     "kind": "fact",
-    "sourceBlockRefs": ["nante-food-perplexity:b007", "nante2-perplexity:b014"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b007",
+      "nante2-perplexity:b014"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Market stalls and hours shift seasonally — confirm before relying on a specific vendor."],
+    "qualifiers": [
+      "Market stalls and hours shift seasonally — confirm before relying on a specific vendor."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-food-chez-cannelle",
     "text": "Crêperie Chez Cannelle on Île de Nantes offers terrace galettes and crêpes in a quiet street near rue Fouré — useful for a relaxed island breakfast or brunch after Machines (about €8–15 per person in the research).",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-food-perplexity:b011"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b011"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Verify summer hours on the official site before visiting."],
+    "qualifiers": [
+      "Verify summer hours on the official site before visiting."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-food-barapom",
     "text": "Barapom in Bouffay (Rue de la Juiverie) serves galettes and crêpes in paper cones for eating on the move — about €6–12 per person, child-friendly sweet crêpes, handy between castle and green-line walks.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-food-perplexity:b015", "nante-food-perplexity:b021"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b015",
+      "nante-food-perplexity:b021"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-food-sainte-croix",
     "text": "Crêperie Sainte-Croix near Bouffay (founded 1948) offers set lunch menus around €10 (galette plus drink) and classic complète galettes — book in high season for Saturday lunch after the castle.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-food-perplexity:b017"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b017"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   },
   {
     "id": "evidence:nantes-food-ile-nantes",
     "text": "Île de Nantes has informal lunch options near Machines and HAB Galerie — crêperies and cantine-style spots suit a post-shipyard meal without returning to the old town.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-food-perplexity:b025"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b025"
+    ],
     "sourceUrls": [],
     "qualifiers": [],
     "timeSensitive": false
@@ -499,10 +709,14 @@
     "id": "evidence:nantes-food-dinner",
     "text": "For a special dinner the research shortlists central bistros and wine bars in Bouffay/Graslin in the €25–45 per adult range; book ahead for Saturday evening in August and confirm child-friendly seating.",
     "kind": "recommendation",
-    "sourceBlockRefs": ["nante-food-perplexity:b029"],
+    "sourceBlockRefs": [
+      "nante-food-perplexity:b029"
+    ],
     "sourceUrls": [],
-    "qualifiers": ["Restaurant names and prices in the source need direct verification before booking."],
+    "qualifiers": [
+      "Restaurant names and prices in the source need direct verification before booking."
+    ],
     "timeSensitive": true,
-    "checkedAt": "2026-07-24"
+    "checkedAt": "2026-07-25"
   }
 ]

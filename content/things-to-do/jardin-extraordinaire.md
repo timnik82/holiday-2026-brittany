@@ -25,4 +25,4 @@ Jardin Extraordinaire is a dramatic terraced garden in a former quarry above the
 - **Booking:** none; free access in summer.
 - **Transport:** west bank near Jules Verne; pair the two on departure morning.
 - **Safety:** terraces and stairs; supervise paddling and cliff paths.
-- **Price / checked date:** free summer access; open from 08:30 until 21:30–22:00 depending on the day (last reviewed 2026-07-24).
+- **Price / checked date:** free summer access; open from 08:30 until 21:30–22:00 depending on the day (last reviewed 2026-07-25).
