@@ -10,8 +10,7 @@ import styles from "./home.module.css";
  *
  * This replaces the old "which base should we pick" verdict as the first thing
  * on the page: the trip is booked, so the open question is no longer the choice
- * but the day. Task 4 adds the weather and time toggles below this card; until
- * then it links straight to the stay's base and its places.
+ * but the day. Weather and time toggles live in `TodayOptions` below this card.
  */
 export function TodayCard({
   date,

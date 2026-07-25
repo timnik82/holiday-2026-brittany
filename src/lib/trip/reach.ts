@@ -75,11 +75,16 @@ const REACH: Record<string, readonly ReachEntry[]> = {
 };
 
 /**
+ * Places reachable from a stay, most local first. Unknown stay ids (including
+ * the two Nantes stays, whose places arrive later) return an empty list rather
+ * than throwing — the day selector treats empty as "nothing curated yet".
+ */
+export function reachForStay(stayId: string): readonly ReachEntry[] {
+  return REACH[stayId] ?? [];
+}
+
+/**
  * Every (stayId, place, reach) triple, for validation and inverse lookups.
- *
- * The per-stay accessor a reader would expect here is deliberately absent: the
- * day selector that needs it lands in the next task, and an exported function
- * nothing calls is an invitation to trust behaviour nothing exercises.
  */
 export function allReachEntries(): { stayId: string; entry: ReachEntry }[] {
   return Object.entries(REACH).flatMap(([stayId, entries]) =>

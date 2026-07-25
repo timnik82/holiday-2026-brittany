@@ -3,9 +3,14 @@ import Link from "next/link";
 import { guideConfig } from "@/config/guide";
 import { loadBaseRankings } from "@/lib/ranking/data";
 import { getStayPages } from "@/lib/content/registry";
-import { resolveViewDate } from "@/lib/trip/stays";
+import {
+  resolveDayTime,
+  resolveDayWeather,
+} from "@/lib/trip/day-options";
+import { getTripDay, resolveViewDate } from "@/lib/trip/stays";
 import { formatDateRange } from "@/lib/trip/format";
 import { TodayCard } from "@/components/home/TodayCard";
+import { TodayOptions } from "@/components/home/TodayOptions";
 import { TripOverview } from "@/components/home/TripOverview";
 import { CriticalWarnings } from "@/components/home/CriticalWarnings";
 import styles from "@/components/home/home.module.css";
@@ -17,14 +22,21 @@ export function generateMetadata(): Metadata {
   };
 }
 
+function firstParam(value: string | string[] | undefined): string | undefined {
+  if (Array.isArray(value)) return value[0];
+  return value;
+}
+
 export default async function Home({
   searchParams,
 }: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const params = await searchParams;
-  const requested = Array.isArray(params.date) ? params.date[0] : params.date;
-  const date = resolveViewDate(requested);
+  const date = resolveViewDate(firstParam(params.date));
+  const weather = resolveDayWeather(firstParam(params.weather));
+  const time = resolveDayTime(firstParam(params.time));
+  const day = getTripDay(date);
   const rankings = loadBaseRankings();
   const stayPages = getStayPages();
 
@@ -43,6 +55,14 @@ export default async function Home({
       </header>
 
       <TodayCard date={date} stayPages={stayPages} />
+      {day.stay && (
+        <TodayOptions
+          date={date}
+          stayId={day.stay.id}
+          weather={weather}
+          time={time}
+        />
+      )}
       <TripOverview date={date} stayPages={stayPages} />
       <CriticalWarnings bases={rankings.bases} />
 
