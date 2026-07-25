@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { guideConfig } from "@/config/guide";
 import { loadBaseRankings } from "@/lib/ranking/data";
-import { getWrittenStayIds } from "@/lib/content/registry";
+import { getStayPages } from "@/lib/content/registry";
 import { resolveViewDate } from "@/lib/trip/stays";
 import { formatDateRange } from "@/lib/trip/format";
 import { TodayCard } from "@/components/home/TodayCard";
@@ -26,7 +26,7 @@ export default async function Home({
   const requested = Array.isArray(params.date) ? params.date[0] : params.date;
   const date = resolveViewDate(requested);
   const rankings = loadBaseRankings();
-  const writtenStayIds = getWrittenStayIds();
+  const stayPages = getStayPages();
 
   return (
     <div className={styles.page}>
@@ -42,8 +42,8 @@ export default async function Home({
         </p>
       </header>
 
-      <TodayCard date={date} writtenStayIds={writtenStayIds} />
-      <TripOverview date={date} writtenStayIds={writtenStayIds} />
+      <TodayCard date={date} stayPages={stayPages} />
+      <TripOverview date={date} stayPages={stayPages} />
       <CriticalWarnings bases={rankings.bases} />
 
       <section

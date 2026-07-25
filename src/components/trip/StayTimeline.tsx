@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { StayFrontmatter } from "@/lib/content/schemas";
 import type { StayNeighbours } from "@/lib/trip/stays";
-import { formatDateRange } from "@/lib/trip/format";
+import { formatDay } from "@/lib/trip/format";
 import { carRequirementLabel } from "./labels";
 import styles from "./trip.module.css";
 
@@ -35,15 +35,20 @@ export function StayTimeline({
 }: StayTimelineProps) {
   const { stay: booked, nights, previous, next } = stay;
   const baseTitle = booked.baseSlug ? baseTitles.get(booked.baseSlug) : undefined;
+  // When both dates fall in one month, the month is said once, on the second.
+  const sharesMonth = booked.checkIn.slice(0, 7) === booked.checkOut.slice(0, 7);
 
   return (
     <dl className={styles.timeline}>
       <div className={styles.timelineRow}>
         <dt>Dates</dt>
+        {/* Two machine-readable dates rather than one wrapping the whole range,
+            so the markup states check-in and check-out rather than labelling a
+            range with a single date. Matches TripOverview. */}
         <dd>
-          <time dateTime={booked.checkIn}>
-            {formatDateRange(booked.checkIn, booked.checkOut)}
-          </time>
+          <time dateTime={booked.checkIn}>{formatDay(booked.checkIn, !sharesMonth)}</time>
+          {" – "}
+          <time dateTime={booked.checkOut}>{formatDay(booked.checkOut, true)}</time>
         </dd>
       </div>
       <div className={styles.timelineRow}>

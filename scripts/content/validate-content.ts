@@ -48,10 +48,16 @@ function main() {
   const errors: ValidationError[] = [];
 
   let fileCount = 0;
-  // Every paragraph id declared anywhere in content/, collected so the
-  // coverage report can be checked against pages that actually exist.
-  const knownParagraphIds = new Set<string>();
+  // Every paragraph id declared anywhere in content/, with the file that
+  // declares it, so the coverage report can be checked against pages that
+  // actually exist. Paragraph ids must be unique across the whole corpus, not
+  // just within a file: coverage, narration and citations all address a
+  // paragraph by id alone, so a repeated id has no single owner.
+  const paragraphOwners = new Map<string, string>();
   const bookedStayIds = new Set<string>(guideConfig.trip.stays.map((stay) => stay.id));
+  // stayId -> the file that already claimed it. One booked stay gets one page;
+  // a second would silently win or lose depending on directory order.
+  const stayPageOwners = new Map<string, string>();
 
   for (const category of CONTENT_CATEGORIES) {
     const dir = path.join(CONTENT_ROOT, category);
@@ -79,15 +85,32 @@ function main() {
       // render a page with no trip behind it.
       if (category === "trip") {
         const stay = stayFrontmatterSchema.safeParse(frontmatter);
-        if (stay.success && !bookedStayIds.has(stay.data.stayId)) {
-          errors.push({
-            message: `${relPath}: Frontmatter: stayId "${stay.data.stayId}" does not match any stay in guideConfig.trip.`,
-          });
+        if (stay.success) {
+          if (!bookedStayIds.has(stay.data.stayId)) {
+            errors.push({
+              message: `${relPath}: Frontmatter: stayId "${stay.data.stayId}" does not match any stay in guideConfig.trip.`,
+            });
+          }
+          const claimedBy = stayPageOwners.get(stay.data.stayId);
+          if (claimedBy) {
+            errors.push({
+              message: `${relPath}: Frontmatter: stayId "${stay.data.stayId}" is already used by ${claimedBy}. One booked stay gets one page.`,
+            });
+          } else {
+            stayPageOwners.set(stay.data.stayId, relPath);
+          }
         }
       }
 
       for (const id of listParagraphIds(body)) {
-        knownParagraphIds.add(id);
+        const owner = paragraphOwners.get(id);
+        if (owner) {
+          errors.push({
+            message: `${relPath}: Paragraph ID "${id}" is already declared in ${owner}. Paragraph IDs must be unique across content/.`,
+          });
+        } else {
+          paragraphOwners.set(id, relPath);
+        }
       }
 
       // Validate content. `validateParsedContent` already prefixes each
@@ -256,7 +279,10 @@ function main() {
             )
           );
           errors.push(
-            ...validateCoverageParagraphs(knownParagraphIds, coverageResult.data)
+            ...validateCoverageParagraphs(
+              new Set(paragraphOwners.keys()),
+              coverageResult.data
+            )
           );
         }
       }

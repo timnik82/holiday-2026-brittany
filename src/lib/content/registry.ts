@@ -116,21 +116,46 @@ export function getBaseFrontmatter(slug: string): BaseFrontmatter | undefined {
   return parsed.success ? parsed.data : undefined;
 }
 
+export interface StayPage {
+  /** The URL segment the page is served at: `/trip/{slug}`. */
+  readonly slug: string;
+  readonly title: string;
+  readonly summary: string;
+  readonly frontmatter: StayFrontmatter;
+}
+
 /**
- * The stay ids that have a reviewed page under `content/trip/`.
+ * Reviewed stay pages, keyed by the booked stay they describe.
  *
  * Booked stays and written-up stays are not the same set: a stay exists as soon
- * as it is booked, but its page arrives when its research does. Callers use
- * this to link only where a page will actually resolve.
+ * as it is booked, but its page arrives when its research does. The map carries
+ * the page's own `slug` rather than just the stay id — the two are separate
+ * fields, so building a `/trip/` link out of the stay id would 404 the moment
+ * an author names a file differently.
+ *
+ * The single definition of "a stay page exists" lives here, so route
+ * generation, the trip index and the home page links cannot drift apart.
+ * Callers that already hold a registry load pass it in to avoid a second scan.
  */
-export function getWrittenStayIds(): Set<string> {
-  const ids = new Set<string>();
-  for (const entry of loadContentPages()) {
+export function getStayPages(
+  entries: RegistryEntry[] = loadContentPages()
+): Map<string, StayPage> {
+  const pages = new Map<string, StayPage>();
+  for (const entry of entries) {
     if (entry.category !== "trip" || entry.page.status === "draft") continue;
     const parsed = stayFrontmatterSchema.safeParse(entry.frontmatter);
-    if (parsed.success) ids.add(parsed.data.stayId);
+    if (!parsed.success) continue;
+    // A duplicate stayId is rejected by the content validator; first-wins here
+    // keeps rendering deterministic if one ever reaches the runtime.
+    if (pages.has(parsed.data.stayId)) continue;
+    pages.set(parsed.data.stayId, {
+      slug: entry.page.slug,
+      title: entry.page.title,
+      summary: entry.page.summary,
+      frontmatter: parsed.data,
+    });
   }
-  return ids;
+  return pages;
 }
 
 /**

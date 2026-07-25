@@ -1,15 +1,14 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { guideConfig } from "@/config/guide";
-import { loadContentPages } from "@/lib/content/registry";
+import { getStayPages, loadContentPages } from "@/lib/content/registry";
+import type { StayPage } from "@/lib/content/registry";
 import { StayTimeline } from "@/components/trip/StayTimeline";
 import { carRequirementLabel } from "@/components/trip/labels";
 import styles from "@/components/trip/trip.module.css";
 import { findStay, listStays } from "@/lib/trip/stays";
 import type { StayNeighbours } from "@/lib/trip/stays";
 import { formatDateRange } from "@/lib/trip/format";
-import { stayFrontmatterSchema } from "@/lib/content/schemas";
-import type { StayFrontmatter } from "@/lib/content/schemas";
 
 export function generateMetadata(): Metadata {
   return {
@@ -18,17 +17,10 @@ export function generateMetadata(): Metadata {
   };
 }
 
-interface StayPageSummary {
-  slug: string;
-  title: string;
-  summary: string;
-  frontmatter: StayFrontmatter;
-}
-
 interface StayCard {
   stay: StayNeighbours;
   /** The written-up page for this stay, or null while it is still to come. */
-  page: StayPageSummary | null;
+  page: StayPage | null;
 }
 
 interface TripIndexData {
@@ -41,31 +33,18 @@ interface TripIndexData {
  *
  * The itinerary is the source of truth: every stay appears in travel order
  * whether or not it has been written up yet, so a stay awaiting its research
- * reads as work outstanding rather than as a gap in the trip. Pages are matched
- * by `stayId` from a single registry load, mirroring the directory-data
- * pattern — the registry cache is disabled in dev, so one scan here avoids
- * repeat disk reads per request.
+ * reads as work outstanding rather than as a gap in the trip. Which stays have
+ * pages is decided by `getStayPages`, the single definition shared with the
+ * home page, and it is handed the registry load made here — the registry cache
+ * is disabled in dev, so one scan avoids repeat disk reads per request.
  */
 function loadTripIndex(): TripIndexData {
   const allPages = loadContentPages();
   const baseTitles = new Map<string, string>();
-  const pageByStayId = new Map<string, StayPageSummary>();
-
   for (const entry of allPages) {
-    if (entry.category === "bases") {
-      baseTitles.set(entry.page.slug, entry.page.title);
-      continue;
-    }
-    if (entry.category !== "trip" || entry.page.status === "draft") continue;
-    const parsed = stayFrontmatterSchema.safeParse(entry.frontmatter);
-    if (!parsed.success) continue;
-    pageByStayId.set(parsed.data.stayId, {
-      slug: entry.page.slug,
-      title: entry.page.title,
-      summary: entry.page.summary,
-      frontmatter: parsed.data,
-    });
+    if (entry.category === "bases") baseTitles.set(entry.page.slug, entry.page.title);
   }
+  const pageByStayId = getStayPages(allPages);
 
   const cards: StayCard[] = [];
   for (const { stay } of listStays()) {

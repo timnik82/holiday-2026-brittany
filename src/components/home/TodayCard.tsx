@@ -2,6 +2,7 @@ import Link from "next/link";
 import { guideConfig } from "@/config/guide";
 import { daysBetween, getTripDay, stayNights } from "@/lib/trip/stays";
 import { formatFullDate } from "@/lib/trip/format";
+import type { StayPage } from "@/lib/content/registry";
 import styles from "./home.module.css";
 
 /**
@@ -14,11 +15,11 @@ import styles from "./home.module.css";
  */
 export function TodayCard({
   date,
-  writtenStayIds,
+  stayPages,
 }: {
   date: string;
-  /** Stay ids with a page under /trip, so the card never links into a 404. */
-  writtenStayIds: Set<string>;
+  /** Reviewed stay pages by stay id, so the card never links into a 404. */
+  stayPages: Map<string, StayPage>;
 }) {
   const day = getTripDay(date);
   const { start, stays } = guideConfig.trip;
@@ -60,6 +61,7 @@ export function TodayCard({
 
   const nightNumber = daysBetween(stay.checkIn, date) + 1;
   const nights = stayNights(stay);
+  const page = stayPages.get(stay.id);
 
   return (
     <section className={styles.today} aria-labelledby="today-heading">
@@ -76,9 +78,9 @@ export function TodayCard({
       </p>
       {stay.note && <p>{stay.note}</p>}
       <p className={styles.todayLinks}>
-        {writtenStayIds.has(stay.id) && (
+        {page && (
           <>
-            <Link href={`/trip/${stay.id}`}>This stay, day by day →</Link>{" "}
+            <Link href={`/trip/${page.slug}`}>This stay, day by day →</Link>{" "}
           </>
         )}
         {stay.baseSlug && (

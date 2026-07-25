@@ -59,14 +59,8 @@ export const SCHEMA_BY_CATEGORY: Record<string, z.ZodType<PageFrontmatter>> = {
 };
 
 /**
- * Content categories, in the order they are scanned. Shared by the runtime
- * registry and the CLI validator so a new category cannot be validated by one
- * and ignored by the other.
+ * Content categories, in the order they are scanned. Derived from the schema
+ * map rather than listed again, so registering a category and scanning for it
+ * cannot drift apart. Shared by the runtime registry and the CLI validator.
  */
-export const CONTENT_CATEGORIES = [
-  "plan",
-  "bases",
-  "trip",
-  "things-to-do",
-  "practical",
-] as const;
+export const CONTENT_CATEGORIES = Object.keys(SCHEMA_BY_CATEGORY);
