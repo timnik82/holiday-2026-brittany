@@ -37,10 +37,15 @@ describe("session token", () => {
 
   it("returns false for a tampered token", async () => {
     const token = await createSessionToken();
-    // Flip the last base64url char to a different one.
-    const last = token[token.length - 1];
-    const replacement = last === "A" ? "B" : "A";
-    const tampered = token.slice(0, -1) + replacement;
+    // Change the first signature character. The final base64url character can
+    // contain unused padding bits, so changing it does not always alter bytes.
+    const signatureStart = token.lastIndexOf(".") + 1;
+    const signatureFirst = token[signatureStart];
+    const replacement = signatureFirst === "A" ? "B" : "A";
+    const tampered =
+      token.slice(0, signatureStart) +
+      replacement +
+      token.slice(signatureStart + 1);
     expect(await verifySessionToken(tampered)).toBe(false);
   });
 
